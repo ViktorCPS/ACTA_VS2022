@@ -1,0 +1,693 @@
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Text;
+using System.Windows.Forms;
+
+using System.Globalization;
+using System.Resources;
+
+using Common;
+using Util;
+using TransferObjects;
+using System.IO;
+
+using System.Configuration;
+using Microsoft.Office.Interop;
+using System.Runtime.InteropServices;
+
+
+using System.Threading;
+
+namespace Reports
+{
+    public partial class ReportForSalaryForecast : Form
+    {
+        private CultureInfo culture;
+        private ResourceManager rm;
+        DebugLog debug;
+        bool isForecast;
+        public ReportForSalaryForecast()
+        {
+            InitializeComponent();
+            this.CenterToScreen();
+
+            // Debug
+            string logFilePath = Constants.logFilePath + NotificationController.GetApplicationName() + "Log.txt";
+            debug = new DebugLog(logFilePath);
+
+            // Language
+            culture = CultureInfo.CreateSpecificCulture(NotificationController.GetLanguage());
+            rm = new ResourceManager("Reports.ReportResource", typeof(LocationsReports).Assembly);
+            setLanguage();
+
+            this.labelMessage.Text = rm.GetString("msgHistoryPassesForecast", culture);
+            isForecast = false;
+        }
+
+        private void setLanguage()
+        {
+            try
+            {
+                this.Text = rm.GetString("menuMonthlyTypeReport", culture);
+                this.btnGenerateReport.Text = rm.GetString("btnGenerateReport", culture);
+                this.gbChooseMonth.Text = rm.GetString("gbChooseMonth", culture);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Dogodila se greška:\n" + ex.Message);
+                debug.writeLog(DateTime.Now + " Reports.ReportForSalaryForecast.setLanguage() " + ex.Message);
+            }
+        }
+
+        private void MonthlyPresenceTracking_Load(object sender, EventArgs e)
+        {
+
+
+
+        }
+
+        private void btnGenerateReport_Click(object sender, EventArgs e)
+        {
+            try
+            {
+
+
+
+                //this.labelMessage.Text = rm.GetString("msgHistoryPassesForecast", culture);
+                this.labelMessage.Text = this.labelMessage.Text = rm.GetString("PrikupljanjeProlaska", culture);
+                Employee zaPozivanjeFja = new Employee();
+                List<EmployeeTO> spisakProlazaka = new List<EmployeeTO>();
+                DateTime mesec = new DateTime(dtpMesec.Value.Year, dtpMesec.Value.Month, 1, 0, 0, 0);
+                if (mesec == new DateTime(DateTime.Now.Year, DateTime.Now.Month, 1, 0, 0, 0))
+                {
+                    isForecast = true;
+                }
+                else
+                {
+                    isForecast = false;
+                }
+                List<EmployeeTO> spisakZaposlenih = new List<EmployeeTO>();
+                spisakProlazaka = zaPozivanjeFja.ProlasciZaForecast(mesec);
+                List<EmployeeTO> spisakPredvidjenihProlazaka = new List<EmployeeTO>();
+                if (isForecast)
+                {
+                    this.labelMessage.Text = this.labelMessage.Text = rm.GetString("ProlasciZaForecast", culture);
+                    spisakPredvidjenihProlazaka = zaPozivanjeFja.ForecastProlasci(mesec.AddMonths(1));
+                }
+                List<EmployeeTO> listaa = new List<EmployeeTO>();
+                /* foreach(EmployeeTO empl in spisakPredvidjenihProlazaka)
+                 {
+                     if (empl.EmployeeID == 10)
+                     {
+                       
+                         listaa.Add(empl);
+                     }
+                     else { continue; }
+                 }*/
+                this.labelMessage.Text = this.labelMessage.Text = rm.GetString("ZavrsenoPrikupljanjePodataka", culture);
+                this.labelMessage.Text = this.labelMessage.Text = rm.GetString("PocetakObradeProlazaka", culture);
+
+
+                Dictionary<int, int[]> zapNizMinuta = new Dictionary<int, int[]>();
+
+                int lastEmplID = 0;
+
+
+                int brZap = zaPozivanjeFja.BrZaposlenihDoOvogMeseca(mesec);
+
+
+                int[][] niz = new int[brZap][];
+                for (int i = 0; i < brZap; i++)
+                    niz[i] = new int[30];
+                int[] poslednjaVrednostNiza = new int[29];
+
+                int bf = 0;
+                int a = 0;
+                for (int i = 0; i < spisakProlazaka.Count; i++)
+                {
+                    if (spisakProlazaka[i].EmployeeID != lastEmplID)
+                    {
+                        if (lastEmplID != 0)
+                        {
+                            bool uneo1 = false;
+                            int pbf = bf;
+                            if (isForecast)
+                            {
+                                while (bf < spisakPredvidjenihProlazaka.Count && spisakPredvidjenihProlazaka[bf].EmployeeID <= lastEmplID) //Nenad 27. XI 2018. bf was bigger than list count in some situations
+                                // if (spisakProlazaka[i].EmployeeID == spisakPredvidjenihProlazaka[bf].EmployeeID)
+                                {
+                                    if (spisakPredvidjenihProlazaka[bf].EmployeeID == lastEmplID)
+                                    {
+                                        poslednjaVrednostNiza = CreateArray(spisakPredvidjenihProlazaka[bf].WorkingUnitID, spisakPredvidjenihProlazaka[bf].OrgUnitID, poslednjaVrednostNiza);
+                                        uneo1 = true;
+                                    }
+                                    bf++;
+                                }
+                            }
+                            if (uneo1 || pbf == bf)
+                            {
+                                zapNizMinuta.Add(lastEmplID, poslednjaVrednostNiza); //unos prethodnog zaposlenog i njegov niz minuta 
+                                a++;
+                            }
+
+                        }
+
+                        //prvi unos 
+                        Array.Clear(niz[a], 0, niz[a].Length); // svaki element je 0, samo za prvi unos                        
+                        lastEmplID = spisakProlazaka[i].EmployeeID;
+                        poslednjaVrednostNiza = CreateArray(spisakProlazaka[i].WorkingUnitID, spisakProlazaka[i].OrgUnitID, niz[a]); // prvi unos minuta odredjenog tipa prolaska od datog zaposlenog
+
+                        EmployeeTO empl = new EmployeeTO();
+                        empl.EmployeeID = spisakProlazaka[i].EmployeeID;
+                        empl.FirstName = spisakProlazaka[i].FirstName;
+                        empl.WorkingUnitName = spisakProlazaka[i].WorkingUnitName;
+                        empl.LastName = spisakProlazaka[i].LastName;
+                        empl.CreatedBy = spisakProlazaka[i].CreatedBy;
+                        spisakZaposlenih.Add(empl);
+                    }
+                    else
+                    {
+                        niz[a] = poslednjaVrednostNiza;
+                        poslednjaVrednostNiza = CreateArray(spisakProlazaka[i].WorkingUnitID, spisakProlazaka[i].OrgUnitID, niz[a]); // svaki sledeci unos minuta odredjenog tipa prolaska od datog zaposleno
+                    }
+
+                }
+
+                //unos poslednjeg saposlenog
+                //mm bool uneoPosl = false;
+                if (isForecast)
+                {
+                    while (bf < spisakPredvidjenihProlazaka.Count && spisakPredvidjenihProlazaka[bf].EmployeeID <= lastEmplID) //Nenad 27. XI 2018. bf was bigger than list count in some situations
+                    {
+                        if (spisakPredvidjenihProlazaka[bf].EmployeeID == lastEmplID)
+                        {
+                            poslednjaVrednostNiza = CreateArray(spisakPredvidjenihProlazaka[bf].WorkingUnitID, spisakPredvidjenihProlazaka[bf].OrgUnitID, poslednjaVrednostNiza);//  Forecast predvidjanja, unos minuta odredjenog tipa prolaska od datog zaposleno
+                            //mm uneoPosl = true;
+                        }
+                        if (bf + 1 < spisakPredvidjenihProlazaka.Count)
+                            bf++;
+                        else
+                        {
+                            break;
+                        }
+
+                    }
+                }
+                //if (uneoPosl) Miodrag, neophodno je uneti niz prolazaka u svakom slucaju jer za poslednjeg zaposlenoh svakako nije unet. 
+                //{
+                zapNizMinuta.Add(lastEmplID, poslednjaVrednostNiza); // unos poslednjeg zaposlenog i  njegov niz minuta
+                //}
+
+
+                string logFilePath = Constants.LPath + "\\" + "template.xls";
+                this.progressBar1.Value = 0;
+                this.progressBar1.Step = 1;
+                this.progressBar1.Maximum = spisakZaposlenih.Count;
+                this.progressBar1.Visible = true;
+                this.labelMessage.Text = this.labelMessage.Text = rm.GetString("NeDiraj", culture);
+                Thread.CurrentThread.CurrentCulture = new CultureInfo("en-US");
+                Microsoft.Office.Interop.Excel.Application excel = new Microsoft.Office.Interop.Excel.Application();
+                excel.Visible = false;
+                Microsoft.Office.Interop.Excel.Workbook wb =
+                    excel.Workbooks.Open(logFilePath, Type.Missing, false, Type.Missing, Type.Missing, Type.Missing, true,
+                    Type.Missing, Type.Missing, true, false, Type.Missing, false, Type.Missing, Type.Missing);
+                Microsoft.Office.Interop.Excel.Worksheet oSheets;
+                oSheets = (Microsoft.Office.Interop.Excel.Worksheet)wb.Sheets[1];
+
+                int rb = 0, red = 4;
+                bool desilaSeGreska = false;
+                foreach (EmployeeTO zap in spisakZaposlenih)
+                {
+                    //if (zap.EmployeeID == 701)
+                    //{
+
+                    //}
+                    try
+                    {
+
+                        int k = 0;
+                        rb++;
+                        //Informacije o zaposlenom
+                        oSheets.Cells[rb + 3, 1] = rb;//redni broj
+                        oSheets.Cells[rb + 3, 2] = zap.EmployeeID;
+                        oSheets.Cells[rb + 3, 3] = zap.FirstName;
+                        oSheets.Cells[rb + 3, 4] = zap.LastName;
+                        oSheets.Cells[rb + 3, 5] = zap.WorkingUnitName;
+                        oSheets.Cells[rb + 3, 6] = zap.CreatedBy;
+                        for (int j = 0; j < 30; j++)
+                        {
+
+                            if (zapNizMinuta.ContainsKey(zap.EmployeeID))
+                            {
+                                //if (j != 27)
+                                //{
+                                    oSheets.Cells[rb + 3, 24 + j + k] = zapNizMinuta[zap.EmployeeID][j] / ((float)1440);
+                                //}
+                                //else
+                                //{
+                                //    oSheets.Cells[rb + 3, 53] = zapNizMinuta[zap.EmployeeID][j] / ((float)1440);
+                                //}
+                            }
+                            //if (j > 23)
+                            //{
+                            //    if (j == 24)
+                            //    {
+                            //        k = 3;
+                            //    }
+                            //    else if (j == 26)
+                            //    {
+                            //        k++;
+                            //    }
+                            //    else if (j == 27)
+                            //    {
+                            //        k++;
+                            //    }
+                            //}
+                            //zapNizMinuta<zap.EmployeeID,niz[j]>;
+                        }
+
+                        //oSheets.Cells[red, 52] = "=SUM(P" + red + ":AJ" + red + ",AR" + red + ",AT" + red + ")";
+                        //oSheets.Cells[red, 53] = "=SUM(P" + red + ":AK" + red + ",AO" + red + ":AP" + red + ",AR" + red + ",AT" + red++ + ")";
+                        oSheets.Cells[red, 58] = "=SUM(P" + red + ":AP" + red + ",AX" + red + ",AZ" + red + ")";
+                        oSheets.Cells[red, 59] = "=SUM(P" + red + ":AT" + red + ",AU" + red + ":AV" + red + ",AX" + red + ",AZ" + red++ + ")";
+                        this.progressBar1.PerformStep();
+                    }
+                    catch (Exception exc)
+                    {
+                        desilaSeGreska = true;
+                        debug.writeLog(DateTime.Now + " Greska prilikom generisanja izvestaja : " + exc.Message);
+                    }
+                    //}
+                    //else
+                    //{
+                    //    continue;
+                    //}
+                }
+                if (desilaSeGreska)
+                    MessageBox.Show("Izveštaj nece biti potpun!!!");
+                Microsoft.Office.Interop.Excel.Range r = oSheets.get_Range(oSheets.Cells[1, 1], oSheets.Cells[--red, 54]);
+                r.Borders.LineStyle = Microsoft.Office.Interop.Excel.XlLineStyle.xlContinuous;
+                r.Borders.Weight = Microsoft.Office.Interop.Excel.XlBorderWeight.xlMedium;
+
+
+                this.labelMessage.Text = this.labelMessage.Text = rm.GetString("GotovaObrada", culture);
+                this.progressBar1.Visible = false;
+                SaveFileDialog saveFileDialog = new SaveFileDialog();
+                saveFileDialog.Filter = "Excel File|*.xls";
+                saveFileDialog.Title = "Save an Excel File";
+
+                if (saveFileDialog.ShowDialog() == DialogResult.OK) //ukoliko je izabrana validna putanja
+                {
+                    if (saveFileDialog.FileName != "") //i dato ime fajla
+                    {
+                        wb.SaveAs(saveFileDialog.FileName, Microsoft.Office.Interop.Excel.XlFileFormat.xlWorkbookNormal,
+                                                Type.Missing, Type.Missing,
+                                                false, false, Microsoft.Office.Interop.Excel.XlSaveAsAccessMode.xlNoChange,
+                                                Type.Missing, Type.Missing, Type.Missing,
+                                                Type.Missing, Type.Missing);
+                        Thread.Sleep(500);
+                        excel.Visible = true;
+                        this.labelMessage.Text = this.labelMessage.Text = rm.GetString("MozetePogledatiIzvestaj", culture);
+                    }
+                }
+                else
+                {
+                    this.labelMessage.Text = this.labelMessage.Text = rm.GetString("NisiSacuvao", culture);
+                    wb.Close(false, "", "");
+                }
+                excel.Visible = false;
+                excel.Quit();
+                Marshal.ReleaseComObject(oSheets);
+                Marshal.ReleaseComObject(wb);
+                Marshal.ReleaseComObject(excel);
+
+                oSheets = null;
+                wb = null;
+                excel = null;
+                GC.GetTotalMemory(false);
+                GC.Collect();
+                GC.WaitForPendingFinalizers();
+                GC.Collect();
+                GC.GetTotalMemory(true);
+            }
+            catch (Exception ex1)
+            {
+                this.progressBar1.Visible = false;
+                this.labelMessage.Text = this.labelMessage.Text = rm.GetString("ProbajteOpet", culture);
+                debug.writeLog(DateTime.Now + " Greska prilikom generisanja izvestaja : " + ex1.Message);
+                MessageBox.Show(ex1.ToString(),"Error!",MessageBoxButtons.OK,MessageBoxIcon.Error);
+            }
+        }
+
+        // proveri da li se niz menja i vraca izmenjen
+        private int[] CreateArray(int passType, int min, int[] sniz)
+        {
+            int[] niz = sniz;
+
+            EmployeeTO empl = new EmployeeTO();
+            // empl.WorkingUnitID tip
+            //   empl.ogr        minuti
+
+            switch (passType)
+            {
+
+                // P  - Redovan rad danju u Srbiji
+                case 1:
+                case 42:
+                    niz[0] += min;
+                    break;
+                //Q - Redovan rad danju u Poljskoj
+                //case 102:
+                //    niz[1] += min;
+                //    break;
+                //R - Službeni put- Business trip-RAD DANJU
+                case 104:
+                case 2:
+                    niz[1] += min;
+                    break;
+                //S - Službeni put- Business trip-RAD NOCU
+                case 105:
+                    niz[2] += min;
+                    break;
+                //T - Redovan rad nocu u Srbiji
+                case 6:
+                    niz[3] += min;
+                    break;
+                // U - Redovan rad nocu u Poljskoj UPUCIVANJE
+                case 98:
+                    niz[4] += min;
+                    break;
+                //V - Godisnji odmor u SRBIJI
+                case 8:
+                    niz[5] += min;
+                    break;
+                //W - Godišnji odmor u Poljskoj
+                //case 106:
+                //    niz[7] += min;
+                //    break;
+                //X - Drzavni praznik
+                case 10:
+                    niz[6] += min;
+                    break;
+                //Y - Verski praznik (ukljucujuci slavu)
+                case 12:
+                    niz[7] += min;
+                    break;
+                //Z - Placeno odsustvo
+                case 11:
+                case 20:
+                case 21:
+                case 31:
+                case 32:
+                case 34:
+                case 35:
+                case 17:
+                case 24:
+                case 108:
+                case 79:
+
+                    niz[8] += min;
+                    break;
+                //AA - Neopravdano odsustvo
+                case -100:
+                case 59:
+                    niz[11] += min;
+                    break;
+                //AB - Neopravdano odsustvo u Poljskoj
+                //case 107:
+                //    niz[12] += min;
+                //    break;
+                //AC - bolovanje do 30d - prouzrokovana bolescu ili povredom van rada
+                case 25:
+                    niz[12] += min;
+                    break;
+                //AD - bolovanje do 30d - prouzrokovana povredom na radu ili profesionalnom bolescu i odrzavanje trudnoce
+                case 90:
+                case 26:
+                    niz[13] += min;
+                    break;
+                //AC - bolovanje preko 30d - prouzrokovana bolescu ili povredom van rada
+                case 27:
+                    niz[14] += min;
+                    break;
+                //AF - bolovanje preko 30d -prouzrokovana povredom na radu ili profesionalnom bolescu
+                case 40:
+                    niz[15] += min;
+                    break;
+                //AG - bolovanje preko 30d -  odrzavanje trudnoce-porodiljsko
+                case 43:
+                    niz[16] += min;
+                    break;
+                //AH - Bolovanje na službenom putu
+                case 111:
+                    niz[17] += min;
+                    break;
+                //AI- Bolovanje na upucivanju na rad u Poljsku
+                case 101:
+                    niz[18] += min;
+                    break;
+                //AJ - Odsustvo radi nege deteta (posebna nega deteta)
+                case 28:
+                    niz[19] += min;
+                    break;
+                //  ODSUSTVO RADI NEGE DETETA DO 3 GODINE  26.07.2019. BOJAN
+                case 200:
+                    niz[20] += min;
+                    break;
+                // odsustvo radi nege deteta preko 3 godine
+                case 1000:
+                    niz[21] += min;
+                    break;
+                //BOLOVANJE=POSEBNA NEGA DETETA
+                case 199:
+                    niz[22] += min;
+                    break;
+                //  SUSPENZIJA  26.07.2019. BOJAN
+                case 23:
+                case 38:
+                    niz[23] += min;
+                    break;
+                //AK - Prekovremeni rad u Srbiji
+                case 4:
+                    niz[24] += min;
+                    break;
+                //AO - Prekovremeni i nocni rad subotom u Srbiji
+                case 55:
+                    niz[25] += min;
+                    break;
+                //case 55:
+                //    niz[25] += min;   // tamara 13.07.2018.
+                //    break;
+                //AP - Prekovremeni rad NEDELJA 26% x 2
+                case 99:
+                    niz[26] += min;
+                    break;
+                // prekovremeni i nocni rad radnim danima
+                case 112:
+                    niz[27] += min;
+                    break;
+                //AR - Rad za vreme drzavnog praznika
+                case 5:
+                    niz[28] += min;
+                    break;
+                //AT - RAD ZA VREME VERSKOG PRAZNIKA
+                case 103:
+                    niz[29] += min;
+                    break;
+                //Placeno odsustvo 60%
+                case 1110:
+                    niz[9] += min;
+                    break;
+                    //Placeno odsustvo
+                case 1111:
+                    niz[10] += min;
+                    break;
+
+            }
+
+
+            //switch (passType)
+            //{
+
+            //    // P  - Redovan rad danju u Srbiji
+            //    case 1:
+            //    case 42:
+            //        niz[0] += min;
+            //        break;
+            //    //Q - Redovan rad danju u Poljskoj
+            //    //case 102:
+            //    //    niz[1] += min;
+            //    //    break;
+            //    //R - Službeni put- Business trip-RAD DANJU
+            //    case 104:
+            //    case 2:
+            //        niz[1] += min;
+            //        break;
+            //    //S - Službeni put- Business trip-RAD NOCU
+            //    case 105:
+            //        niz[2] += min;
+            //        break;
+            //    //T - Redovan rad nocu u Srbiji
+            //    case 6:
+            //        niz[3] += min;
+            //        break;
+            //    // U - Redovan rad nocu u Poljskoj UPUCIVANJE
+            //    case 98:
+            //        niz[4] += min;
+            //        break;
+            //    //V - Godisnji odmor u SRBIJI
+            //    case 8:
+            //        niz[5] += min;
+            //        break;
+            //    //W - Godišnji odmor u Poljskoj
+            //    //case 106:
+            //    //    niz[7] += min;
+            //    //    break;
+            //    //X - Drzavni praznik
+            //    case 10:
+            //        niz[6] += min;
+            //        break;
+            //    //Y - Verski praznik (ukljucujuci slavu)
+            //    case 12:
+            //        niz[7] += min;
+            //        break;
+            //    //Z - Placeno odsustvo
+            //    case 11:
+            //    case 20:
+            //    case 21:
+            //    case 31:
+            //    case 32:
+            //    case 34:
+            //    case 35:
+            //    case 17:
+            //    case 24:
+            //    case 108:
+            //    case 79:
+
+            //        niz[8] += min;
+            //        break;
+            //    //AA - Neopravdano odsustvo
+            //    case -100:
+            //    case 59:
+            //        niz[10] += min;
+            //        break;
+            //    //AB - Neopravdano odsustvo u Poljskoj
+            //    //case 107:
+            //    //    niz[12] += min;
+            //    //    break;
+            //    //AC - bolovanje do 30d - prouzrokovana bolescu ili povredom van rada
+            //    case 25:
+            //        niz[11] += min;
+            //        break;
+            //    //AD - bolovanje do 30d - prouzrokovana povredom na radu ili profesionalnom bolescu i odrzavanje trudnoce
+            //    case 90:
+            //    case 26:
+            //        niz[12] += min;
+            //        break;
+            //    //AC - bolovanje preko 30d - prouzrokovana bolescu ili povredom van rada
+            //    case 27:
+            //        niz[13] += min;
+            //        break;
+            //    //AF - bolovanje preko 30d -prouzrokovana povredom na radu ili profesionalnom bolescu
+            //    case 40:
+            //        niz[14] += min;
+            //        break;
+            //    //AG - bolovanje preko 30d -  odrzavanje trudnoce-porodiljsko
+            //    case 43:
+            //        niz[15] += min;
+            //        break;
+            //    //AH - Bolovanje na službenom putu
+            //    case 111:
+            //        niz[16] += min;
+            //        break;
+            //    //AI- Bolovanje na upucivanju na rad u Poljsku
+            //    case 101:
+            //        niz[17] += min;
+            //        break;
+            //    //AJ - Odsustvo radi nege deteta (posebna nega deteta)
+            //    case 28:
+            //    case 1000:
+            //        niz[18] += min;
+            //        break;
+            //    //  ODSUSTVO RADI NEGE DETETA DO 3 GODINE  26.07.2019. BOJAN
+            //    case 200:
+            //        niz[19] += min;
+            //        break;
+            //    //BOLOVANJE=POSEBNA NEGA DETETA
+            //    case 199:
+            //        niz[20] += min;
+            //        break;
+            //    //  SUSPENZIJA  26.07.2019. BOJAN
+            //    case 23:
+            //    case 38:
+            //        niz[21] += min;
+            //        break;
+            //    //AK - Prekovremeni rad u Srbiji
+            //    case 4:
+            //        niz[22] += min;
+            //        break;
+            //    //AO - Prekovremeni i nocni rad subotom u Srbiji
+            //    case 55:
+            //        niz[23] += min;
+            //        break;
+            //    //case 55:
+            //    //    niz[25] += min;   // tamara 13.07.2018.
+            //    //    break;
+            //    //AP - Prekovremeni rad NEDELJA 26% x 2
+            //    case 99:
+            //        niz[24] += min;
+            //        break;
+            //    // prekovremeni i nocni rad radnim danima
+            //    case 112:
+            //        niz[25] += min;
+            //        break;
+            //    //AR - Rad za vreme drzavnog praznika
+            //    case 5:
+            //        niz[26] += min;
+            //        break;
+            //    //AT - RAD ZA VREME VERSKOG PRAZNIKA
+            //    case 103:
+            //        niz[27] += min;
+            //        break;
+            //    case 1110:
+            //        niz[9] += min;
+            //        break;
+
+            //}
+
+
+            return niz;
+        }
+
+
+
+        private void dtpMesec_ValueChanged(object sender, EventArgs e)
+        {
+            DateTime selectedM = dtpMesec.Value;
+
+            DateTime currentM = DateTime.Now.Date;
+
+            if (selectedM.Month == currentM.Month)
+            {
+                this.btnGenerateReport.Enabled = true;
+                this.labelMessage.Text = rm.GetString("msgHistoryPassesForecast", culture); //"Izvestaj na osnovu prolazaka do danasnjeg datuma, a od danasnjeg datuma je predvidjanje!";
+            }
+            else if (selectedM < currentM)
+            {
+                this.btnGenerateReport.Enabled = true;
+                this.labelMessage.Text = rm.GetString("msgHistoryPasses", culture); //"Izvestaj na osnovu prolazaka!";
+            }
+
+            else if (selectedM > currentM)
+            {
+                this.btnGenerateReport.Enabled = false;
+                this.labelMessage.Text = rm.GetString("msgForecast", culture);// " Forecast izvestaj! Izvestaj na osnovu  predvidjanja!";
+            }
+        }
+
+
+    }
+}

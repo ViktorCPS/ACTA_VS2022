@@ -1,0 +1,115 @@
+﻿body { background-color:#EBF0E6; }
+
+.navigationTable { background-color:Transparent; border-style:none; }
+.navigationCell { border-style:none; vertical-align:bottom; }
+.navigationLBtn { font-weight:bold; color:Black; font-family:"Verdana"; font-size:small; }
+
+.hdrTable { background-color:#C2D1B2; border-style:none; height:25px; }
+.hdrCell { border-style:none; vertical-align:middle; }
+.hdrTitle { color:Black; text-align:center; font-weight:bold; text-transform:uppercase; font-family:"Verdana"; font-size:small; }
+.loginUserText { color:Black; text-align:right; font-weight:bold; font-style:italic; font-family:"Verdana"; font-size:small; }
+.loginUserTextLeft { color:Black; text-align:left; font-weight:bold; font-style:italic; font-family:"Verdana"; font-size:small; }
+
+.hdrListTable { background-color:#A64D4D; border-style:none; }
+.hdrListCell { border-style:none; vertical-align:middle; }
+.hdrListTitle { color:White; text-align:center; font-family:"Verdana"; font-size:x-small; }
+.resultFooterTable { background-color:#FFE0A3; border:solid 1px #A64D4D; }
+
+.footerTable { background-color:#C2D1B2; border-style:none; height:25px; }
+.footerCell { border-style:none; vertical-align:middle; }
+
+.errorText { color:Red; text-align:center; font-style:italic; font-family:"Verdana"; font-size:x-small; }
+.infoText { color:Black; text-align:left; font-style:italic; font-family:"Verdana"; font-size:x-small; }
+.contentErrorTable { background-color:#D6E0CC; border-color:#C2D1B2; border-width:2px; border-left-style:solid; border-bottom-style:solid; border-top-style:none; border-right-style:solid; }
+.contentTable { background-color:#D6E0CC; border-color:#C2D1B2; border-width:2px; border-left-style:solid; border-bottom-style:none; border-top-style:none; border-right-style:solid; }
+.contentSeparatorRow { height:5px; border-style:none; }
+.contentCell { border-style:none; vertical-align:middle; }
+.contentMenuCell { border-style:none; vertical-align:top; }
+.contentLbl { color:Black; text-align:right; font-family:"Verdana"; font-size:x-small; }
+.contentSmallLbl { color:Black; text-align:right; font-family:"Verdana"; font-size:xx-small; }
+.contentLblLeft { color:Black; text-align:left; font-family:"Verdana"; font-size:x-small; }
+.contentLblLeftBold { color:Black;font-weight:bold; text-align:left; font-family:"Verdana"; font-size:x-small; }
+.contentLblRight { color:Black; text-align:right; font-family:"Verdana"; font-size:x-small; }
+.contentLblLeftBorderDay { color:Black; text-align:left; vertical-align:bottom; font-family:"Verdana"; font-size:x-small;border:solid 1px #000099; border-left-style:none; }
+.contentLblLeftBorderWeekendDay { color:Black; text-align:left; vertical-align:bottom; font-family:"Verdana"; font-size:x-small;border:solid 1px #000099; border-left-style:none; }
+.contentLblLeftBorderNationalHolidayDay { color:Black; text-align:left; vertical-align:bottom; font-family:"Verdana"; font-size:x-small;border:solid 1px #000099; border-left-style:none; }
+.contentLblLeftBorderPersonalHolidayDay { color:Black; text-align:left; vertical-align:bottom; font-family:"Verdana"; font-size:x-small;border:solid 1px #000099; border-left-style:none; }
+.contentLblLeftDay { color:Black; text-align:left; vertical-align:bottom; font-family:"Verdana"; font-size:x-small; }
+.contentLblCenterBackBlue { color:Black;background-color:#99CCFF; text-align:center; font-family:"Verdana"; font-size:x-small; }
+.contentBoldBlueLbl { color:Blue; text-align:left; vertical-align:bottom; font-family:"Verdana"; font-size:medium; font-weight:bold; }
+.contentBoldBlueBorderLbl { color:Blue; text-align:left; vertical-align:bottom; font-family:"Verdana"; font-size:medium; font-weight:bold;border:solid 1px #000099; border-right-style:none; }
+.contentBoldBlueBorderWeekendLbl { color:Blue; text-align:left; vertical-align:bottom; font-family:"Verdana"; font-size:medium; font-weight:bold;border:solid 1px #000099; border-right-style:none; }
+.contentBoldBlueBorderNationalHolidayLbl { color:Blue; text-align:left; vertical-align:bottom; font-family:"Verdana"; font-size:medium; font-weight:bold;border:solid 1px #000099; border-right-style:none; }
+.contentBoldBlueBorderPersonalHolidayLbl { color:Blue; text-align:left; vertical-align:bottom; font-family:"Verdana"; font-size:medium; font-weight:bold;border:solid 1px #000099; border-right-style:none; }
+.contentCalendarWorkingDayLbl { background-color:#FFFF99; text-align:left; vertical-align:bottom; font-family:"Verdana"; font-size:medium; font-weight:bold;border:solid 1px Black; }
+.contentCalendarWeekendLbl { background-color:#FFCC99; text-align:left; vertical-align:bottom; font-family:"Verdana"; font-size:medium; font-weight:bold;border:solid 1px Black; }
+.contentCalendarNationalHolidayLbl { background-color:#FFCCCC; text-align:left; vertical-align:bottom; font-family:"Verdana"; font-size:medium; font-weight:bold;border:solid 1px Black; }
+.contentCalendarPersonalHolidayLbl { background-color:#CCCCFF; text-align:left; vertical-align:bottom; font-family:"Verdana"; font-size:medium; font-weight:bold;border:solid 1px Black; }
+.contentSmallLblLeft { color:Black; text-align:left; font-family:"Verdana"; font-size:xx-small; }
+.contentLb { color:Black; text-align:left; font-family:"Verdana"; font-size:x-small; }
+.contentRb { color:Black; text-align:left; font-family:"Verdana"; font-size:x-small; }
+.contentHdrLbl { color:Black; text-align:left; font-family:"Verdana"; font-size:x-small; font-weight:bold; }
+.contentBoldLbl { color:Black; text-align:right; font-family:"Verdana"; font-size:x-small; font-weight:bold; }
+.contentGraphPeriodLbl { color:Black; text-align:center; font-family:"Verdana"; font-size:small; font-weight:bold; }
+.contentHelpLbl { color:Black; text-align:left; font-family:"Verdana"; font-size:xx-small; font-style:italic; }
+.contentTb { color:Black; text-align:left; font-family:"Verdana"; font-size:x-small; }
+.contentTbDisabled { color:Black; text-align:left; font-family:"Verdana"; font-size:x-small; background-color:#E6E6E6; }
+.contentTbDisabledRight { color:Black; text-align:right; font-family:"Verdana"; font-size:x-small; background-color:#E6E6E6; }
+.contentTbHidden { color:Black; text-align:left; font-family:"Verdana"; font-size:xx-small; }
+.contentBtn { background-color:#CCCCCC; color:Black; text-align:center; font-family:"Verdana"; font-size:x-small; font-weight:bold; }
+.contentChb { color:Black; text-align:left; font-family:"Verdana"; font-size:x-small; }
+.contentLBtn { font-weight:bold; color:Black; font-family:"Verdana"; font-size:x-small; }
+.contentImgBtn { height:20px; width:20px; vertical-align:middle; }
+.contentDDList { color:Black; text-align:left; font-family:"Verdana"; font-size:x-small; }
+.counterLbl { color:Gray; text-align:center; font-family:"Verdana"; font-size:small; font-weight:bold; border:solid 1px Grey; }
+.counterSmallLbl { color:Gray; text-align:center; font-family:"Verdana"; font-size:xx-small; font-weight:bold; border:solid 1px Grey; }
+.counterMiddleLblLeft { color:Gray; text-align:left; font-family:"Verdana"; font-size:x-small; font-weight:bold; border:solid 1px Grey; }
+.emplWorkingDayUCLbl { color:Black; text-align:left; vertical-align:bottom; font-family:"Verdana"; font-size:8pt; border:solid 1px #A9A9A9; border-top-color:White; }
+.emplWorkingDayUCAltLbl { color:Black; text-align:left; vertical-align:bottom; font-family:"Verdana"; font-size:8pt; border:solid 1px #A9A9A9; border-top-color:#E6E6E6; }
+.emplWorkingDayUCFirstLbl { color:Black; text-align:left; vertical-align:bottom; font-family:"Verdana"; font-size:8pt; border:solid 1px #A9A9A9; }
+.emplWorkingDayHeaderUCLbl { color:Black; text-align:left; vertical-align:bottom; font-family:"Verdana"; font-size:8pt; font-style:italic; font-weight:bold; border:solid 1px #A9A9A9; border-top-color:White; }
+.emplWorkingDayHeaderUCAltLbl { color:Black; text-align:left; vertical-align:bottom; font-family:"Verdana"; font-size:8pt; font-style:italic; font-weight:bold; border:solid 1px #A9A9A9; border-top-color:#E6E6E6; }
+.emplWorkingDayHeaderUCFirstLbl { color:Black; text-align:left; vertical-align:bottom; font-family:"Verdana"; font-size:8pt; font-style:italic; font-weight:bold; border:solid 1px #A9A9A9; }
+.emplDataLbl { color:Gray; text-align:left; font-family:"Verdana"; font-size:smaller; border:solid 1px Gray; }
+.counterTb { color:Black; text-align:center; font-family:"Verdana"; font-size:medium; font-weight:bold; }
+.counterTbReadOnly { color:Black; text-align:center; font-family:"Verdana"; font-size:medium; font-weight:bold; background-color:#E6E6E6; }
+.counterSmallLblLeft { color:Black; text-align:left; font-family:"Verdana"; font-size:xx-small; }
+.legendLbl { color:Black; vertical-align:bottom; text-align:left; font-family:"Verdana"; font-size:x-small; }
+
+.pageIframe { margin:0px; width:100%; }
+.resultPanel { background-color:#D6E0CC; }
+.resultGrid { color:Black; text-align:left; vertical-align:middle; font-family:"Courier New"; font-size:8pt; }
+.resultSelCol { text-align:center; vertical-align:middle; border:solid 1px #E6E6E6; width:30px; }
+.resultItem { background-color:	#FFEBC2; height:15px; }
+.resultAltItem { background-color:White; height:15px; }
+.reportView { background-color:White; }
+
+.calendar { text-align:center; font-family:"Verdana"; font-size:10pt; color:Black; border:solid 1px Gray; }
+.calendarToday { background-color:#ADC299; border:solid 2px #70944D; }
+.calendarSelector { background-color:#ADC299; border:solid 1px Gray; }
+.calendarDayHdr { background-color:#70944D; font-weight:bold; border:solid 1px Gray; }
+.calendarOtherMonth { background-color:#CCCCCC; border:solid 1px Gray; }
+.calendarTitle { font-size:small; font-weight:bold; background-color:#70944D; border:solid 1px Gray; }
+.calendarDay { border:solid 1px Gray; }
+.calendarNextPrev { text-align:center; font-weight:bold; font-size:small; }
+.calendarWeekend { background-color:#D6E0CC; border:solid 1px Gray; }
+
+.menu { background-color:#D6E0CC; }
+.menuItem { background-color:#D6E0CC; height:30px; width:100px; text-align:center; font-family:"Verdana"; font-size:small; color:Black; }
+.menuItemHover { background-color:#FFE0A3; border:solid 1px Blue; }
+
+.tabTable { background-color:#D6E0CC; border:solid 1px #C2D1B2; }
+.tabNoBorderTable { background-color:#D6E0CC; border-style:none; }
+.tabHdrTable { background-color:#EBF0E6; border-style:none; }
+.tabSeparatorRow { height:5px; border-style:none; }
+.tabCell { border-style:none; vertical-align:top; }
+.tabCellBorder { border:solid 1px #C2D1B2; vertical-align:middle; }
+.tabMidAlignCell { border-style:none; vertical-align:middle; }
+.nonactiveTab { background-color:#9BA591; height:25px; text-align:right; font-family:"Verdana"; font-size:small; font-weight:bold; color:Black; }
+.activeTab { background-color:#D6E0CC; }
+.menuTab { height:25px; text-align:right; font-family:"Verdana"; font-size:small; font-weight:bold; color:Black; }
+
+.treeViewNode {text-align:left; font-family:"Verdana"; font-size:x-small; font-weight:bold; color:Black; }
+
+
+

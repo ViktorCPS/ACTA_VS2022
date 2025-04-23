@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ServiceReference>
+	<ProxyGenerationParameters
+		ServiceReferenceUri="http://localhost:44454/DataProcessingService"
+		Name="DataProcessingService"
+		NotifyPropertyChange="True"
+		UseObservableCollection="False">
+	</ProxyGenerationParameters>
+	<EndPoints>
+		<EndPoint
+			Address="http://localhost:44454/DataProcessingService/DataProcessing"
+			BindingConfiguration="BasicHttpBinding_IDataProcessingService"
+			Contract="DataProcessingServiceWinClient.DataProcessingService.IDataProcessingService"
+			>
+		</EndPoint>
+	</EndPoints>
+</ServiceReference>

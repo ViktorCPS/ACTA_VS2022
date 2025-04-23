@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<ArrayOfLogTO xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <LogTO>
+    <LogID>0</LogID>
+    <ReaderID>14</ReaderID>
+    <TagID>3730799900</TagID>
+    <Antenna>1</Antenna>
+    <EventHappened>4</EventHappened>
+    <ActionCommited>22</ActionCommited>
+    <Button>-1</Button>
+    <PassGenUsed>0</PassGenUsed>
+    <EventTime>2018-11-24T17:20:00</EventTime>
+  </LogTO>
+</ArrayOfLogTO>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="IOPairsReport" targetNamespace="http://tempuri.org/IOPairsReport.xsd" xmlns:mstns="http://tempuri.org/IOPairsReport.xsd" xmlns="http://tempuri.org/IOPairsReport.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" xmlns:NameSpace1="urn:schemas-microsoft-com:xml-msdatasource" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+        </Connections>
+        <Tables>
+        </Tables>
+        <Sources>
+        </Sources>
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="IOPairsReport" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="IOPairsReport" msprop:Generator_DataSetName="IOPairsReport">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="IO_pairs" msprop:Generator_UserTableName="IO_pairs" msprop:Generator_RowDeletedName="IO_pairsRowDeleted" msprop:Generator_RowChangedName="IO_pairsRowChanged" msprop:Generator_RowClassName="IO_pairsRow" msprop:Generator_RowChangingName="IO_pairsRowChanging" msprop:Generator_RowEvArgName="IO_pairsRowChangeEvent" msprop:Generator_RowEvHandlerName="IO_pairsRowChangeEventHandler" msprop:Generator_TableClassName="IO_pairsDataTable" msprop:Generator_TableVarName="tableIO_pairs" msprop:Generator_RowDeletingName="IO_pairsRowDeleting" msprop:Generator_TablePropName="IO_pairs">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="start_time" msdata:Caption="date" msprop:Generator_UserColumnName="start_time" msprop:Generator_ColumnVarNameInTable="columnstart_time" msprop:Generator_ColumnPropNameInRow="start_time" msprop:Generator_ColumnPropNameInTable="start_timeColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="first_name" msprop:Generator_UserColumnName="first_name" msprop:Generator_ColumnVarNameInTable="columnfirst_name" msprop:Generator_ColumnPropNameInRow="first_name" msprop:Generator_ColumnPropNameInTable="first_nameColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="last_name" msprop:Generator_UserColumnName="last_name" msprop:Generator_ColumnVarNameInTable="columnlast_name" msprop:Generator_ColumnPropNameInRow="last_name" msprop:Generator_ColumnPropNameInTable="last_nameColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="end_time" msdata:Caption="employee_id" msprop:Generator_UserColumnName="end_time" msprop:Generator_ColumnVarNameInTable="columnend_time" msprop:Generator_ColumnPropNameInRow="end_time" msprop:Generator_ColumnPropNameInTable="end_timeColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="imageID" msprop:Generator_UserColumnName="imageID" msprop:Generator_ColumnVarNameInTable="columnimageID" msprop:Generator_ColumnPropNameInRow="imageID" msprop:Generator_ColumnPropNameInTable="imageIDColumn" type="xs:byte" minOccurs="0" />
+              <xs:element name="pass_type" msprop:Generator_UserColumnName="pass_type" msprop:Generator_ColumnVarNameInTable="columnpass_type" msprop:Generator_ColumnPropNameInRow="pass_type" msprop:Generator_ColumnPropNameInTable="pass_typeColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="location" msprop:Generator_UserColumnName="location" msprop:Generator_ColumnVarNameInTable="columnlocation" msprop:Generator_ColumnPropNameInRow="location" msprop:Generator_ColumnPropNameInTable="locationColumn" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="images" msprop:Generator_UserTableName="images" msprop:Generator_RowDeletedName="imagesRowDeleted" msprop:Generator_RowChangedName="imagesRowChanged" msprop:Generator_RowClassName="imagesRow" msprop:Generator_RowChangingName="imagesRowChanging" msprop:Generator_RowEvArgName="imagesRowChangeEvent" msprop:Generator_RowEvHandlerName="imagesRowChangeEventHandler" msprop:Generator_TableClassName="imagesDataTable" msprop:Generator_TableVarName="tableimages" msprop:Generator_RowDeletingName="imagesRowDeleting" msprop:Generator_TablePropName="images">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="image" msprop:Generator_UserColumnName="image" msprop:Generator_ColumnVarNameInTable="columnimage" msprop:Generator_ColumnPropNameInRow="image" msprop:Generator_ColumnPropNameInTable="imageColumn" type="xs:base64Binary" minOccurs="0" />
+              <xs:element name="imageID" msprop:Generator_UserColumnName="imageID" msprop:Generator_ColumnVarNameInTable="columnimageID" msprop:Generator_ColumnPropNameInRow="imageID" msprop:Generator_ColumnPropNameInTable="imageIDColumn" type="xs:byte" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

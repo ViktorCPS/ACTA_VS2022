@@ -1,0 +1,3 @@
+10:35:17	Exception in buttonSetRegime_Click: Reader programming failed
+14:37:33	Exception in buttonSetRegime_Click: Reader programming failed
+14:37:52	Exception in buttonSetRegime_Click: Reader programming failed

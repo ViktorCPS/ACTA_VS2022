@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="MealOrderedAndUsed" targetNamespace="http://tempuri.org/MealOrderedAndUsed.xsd" xmlns:mstns="http://tempuri.org/MealOrderedAndUsed.xsd" xmlns="http://tempuri.org/MealOrderedAndUsed.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="MealOrderedAndUsed" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="MealOrderedAndUsed" msprop:Generator_DataSetName="MealOrderedAndUsed" msprop:EnableTableAdapterManager="true">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="details" msprop:Generator_UserTableName="details" msprop:Generator_RowDeletedName="detailsRowDeleted" msprop:Generator_RowChangedName="detailsRowChanged" msprop:Generator_RowClassName="detailsRow" msprop:Generator_RowChangingName="detailsRowChanging" msprop:Generator_RowEvArgName="detailsRowChangeEvent" msprop:Generator_RowEvHandlerName="detailsRowChangeEventHandler" msprop:Generator_TableClassName="detailsDataTable" msprop:Generator_TableVarName="tabledetails" msprop:Generator_RowDeletingName="detailsRowDeleting" msprop:Generator_TablePropName="details">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="workingUnit" msprop:Generator_UserColumnName="workingUnit" msprop:Generator_ColumnPropNameInRow="workingUnit" msprop:Generator_ColumnVarNameInTable="columnworkingUnit" msprop:Generator_ColumnPropNameInTable="workingUnitColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="employee" msprop:Generator_UserColumnName="employee" msprop:Generator_ColumnPropNameInRow="employee" msprop:Generator_ColumnVarNameInTable="columnemployee" msprop:Generator_ColumnPropNameInTable="employeeColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="ordered" msprop:Generator_UserColumnName="ordered" msprop:Generator_ColumnPropNameInRow="ordered" msprop:Generator_ColumnVarNameInTable="columnordered" msprop:Generator_ColumnPropNameInTable="orderedColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="used" msprop:Generator_UserColumnName="used" msprop:Generator_ColumnPropNameInRow="used" msprop:Generator_ColumnVarNameInTable="columnused" msprop:Generator_ColumnPropNameInTable="usedColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="emplID" msprop:Generator_UserColumnName="emplID" msprop:Generator_ColumnPropNameInRow="emplID" msprop:Generator_ColumnVarNameInTable="columnemplID" msprop:Generator_ColumnPropNameInTable="emplIDColumn" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="summary" msprop:Generator_UserTableName="summary" msprop:Generator_RowDeletedName="summaryRowDeleted" msprop:Generator_RowChangedName="summaryRowChanged" msprop:Generator_RowClassName="summaryRow" msprop:Generator_RowChangingName="summaryRowChanging" msprop:Generator_RowEvArgName="summaryRowChangeEvent" msprop:Generator_RowEvHandlerName="summaryRowChangeEventHandler" msprop:Generator_TableClassName="summaryDataTable" msprop:Generator_TableVarName="tablesummary" msprop:Generator_RowDeletingName="summaryRowDeleting" msprop:Generator_TablePropName="summary">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="workingUnitSum" msprop:Generator_UserColumnName="workingUnitSum" msprop:Generator_ColumnVarNameInTable="columnworkingUnitSum" msprop:Generator_ColumnPropNameInRow="workingUnitSum" msprop:Generator_ColumnPropNameInTable="workingUnitSumColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="orderedSum" msprop:Generator_UserColumnName="orderedSum" msprop:Generator_ColumnVarNameInTable="columnorderedSum" msprop:Generator_ColumnPropNameInRow="orderedSum" msprop:Generator_ColumnPropNameInTable="orderedSumColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="usedSum" msprop:Generator_UserColumnName="usedSum" msprop:Generator_ColumnVarNameInTable="columnusedSum" msprop:Generator_ColumnPropNameInRow="usedSum" msprop:Generator_ColumnPropNameInTable="usedSumColumn" type="xs:int" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="075ba522-6d47-4b87-9137-33e69c3e550c" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:44457/ACTASynchronizationService" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="ACTASynchronizationService.xsd" MetadataType="Schema" ID="8578daea-cf02-41be-93fa-93f447d0e75b" SourceId="1" SourceUrl="http://localhost:44457/ACTASynchronizationService?xsd=xsd1" />
+    <MetadataFile FileName="ACTASynchronizationService1.xsd" MetadataType="Schema" ID="32f8fdc8-db34-457e-a193-a6f3d1061532" SourceId="1" SourceUrl="http://localhost:44457/ACTASynchronizationService?xsd=xsd0" />
+    <MetadataFile FileName="ACTASynchronizationService.wsdl" MetadataType="Wsdl" ID="40aa144b-ed8e-4848-851b-f45603eac913" SourceId="1" SourceUrl="http://localhost:44457/ACTASynchronizationService?wsdl=wsdl0" />
+    <MetadataFile FileName="ACTASynchronizationService1.wsdl" MetadataType="Wsdl" ID="86d99dd8-5f79-4869-8bc7-c2022a67e4f8" SourceId="1" SourceUrl="http://localhost:44457/ACTASynchronizationService?wsdl" />
+    <MetadataFile FileName="ACTASynchronizationService.disco" MetadataType="Disco" ID="7088055b-f373-45c2-b827-684e9d8a7813" SourceId="1" SourceUrl="http://localhost:44457/ACTASynchronizationService?disco" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

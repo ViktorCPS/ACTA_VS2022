@@ -1,0 +1,603 @@
+﻿<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{E1FDC614-0752-4D40-803A-FADDC8EF9177}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ACTAWebUI</RootNamespace>
+    <AssemblyName>ACTAWebUI</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="itextsharp, Version=5.4.0.0, Culture=neutral, PublicKeyToken=8354ae6d2174ddca, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\lib\itextsharp.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=12.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c" />
+    <Reference Include="Microsoft.ReportViewer.WebForms, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.DirectoryServices.AccountManagement">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Web.Extensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.Mobile" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ADAMLogin.aspx.cs">
+      <DependentUpon>ADAMLogin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ADAMLogin.aspx.designer.cs">
+      <DependentUpon>ADAMLogin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BufferReport.aspx.cs">
+      <DependentUpon>BufferReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BufferReport.aspx.designer.cs">
+      <DependentUpon>BufferReport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CountersPage.aspx.cs">
+      <DependentUpon>CountersPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CountersPage.aspx.designer.cs">
+      <DependentUpon>CountersPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CounterUC.ascx.cs">
+      <DependentUpon>CounterUC.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CounterUC.ascx.designer.cs">
+      <DependentUpon>CounterUC.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="DayOfCalendarUC.ascx.cs">
+      <DependentUpon>DayOfCalendarUC.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DayOfCalendarUC.ascx.designer.cs">
+      <DependentUpon>DayOfCalendarUC.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="DefaultPage.aspx.cs">
+      <DependentUpon>DefaultPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DefaultPage.aspx.designer.cs">
+      <DependentUpon>DefaultPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EmplAnagraphicalDataPage.aspx.cs">
+      <DependentUpon>EmplAnagraphicalDataPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EmplAnagraphicalDataPage.aspx.designer.cs">
+      <DependentUpon>EmplAnagraphicalDataPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EmplDisabilitiesPage.aspx.cs">
+      <DependentUpon>EmplDisabilitiesPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EmplDisabilitiesPage.aspx.designer.cs">
+      <DependentUpon>EmplDisabilitiesPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EmplOnDemandAppointmentsPage.aspx.cs">
+      <DependentUpon>EmplOnDemandAppointmentsPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EmplOnDemandAppointmentsPage.aspx.designer.cs">
+      <DependentUpon>EmplOnDemandAppointmentsPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EmployeeSchedulesPage.aspx.cs">
+      <DependentUpon>EmployeeSchedulesPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EmployeeSchedulesPage.aspx.designer.cs">
+      <DependentUpon>EmployeeSchedulesPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EmplRiskManagementDataPage.aspx.cs">
+      <DependentUpon>EmplRiskManagementDataPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EmplRiskManagementDataPage.aspx.designer.cs">
+      <DependentUpon>EmplRiskManagementDataPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EmplVaccinesPage.aspx.cs">
+      <DependentUpon>EmplVaccinesPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EmplVaccinesPage.aspx.designer.cs">
+      <DependentUpon>EmplVaccinesPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EmplVisitsManagementPage.aspx.cs">
+      <DependentUpon>EmplVisitsManagementPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EmplVisitsManagementPage.aspx.designer.cs">
+      <DependentUpon>EmplVisitsManagementPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EmplWeightHeightPage.aspx.cs">
+      <DependentUpon>EmplWeightHeightPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EmplWeightHeightPage.aspx.designer.cs">
+      <DependentUpon>EmplWeightHeightPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HoursLineControlUC.ascx.cs">
+      <DependentUpon>HoursLineControlUC.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HoursLineControlUC.ascx.designer.cs">
+      <DependentUpon>HoursLineControlUC.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="HRSSCConfirmationPage.aspx.cs">
+      <DependentUpon>HRSSCConfirmationPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HRSSCConfirmationPage.aspx.designer.cs">
+      <DependentUpon>HRSSCConfirmationPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HRSSCCountersPage.aspx.cs">
+      <DependentUpon>HRSSCCountersPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HRSSCCountersPage.aspx.designer.cs">
+      <DependentUpon>HRSSCCountersPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HRSSCOutstandingDataPage.aspx.cs">
+      <DependentUpon>HRSSCOutstandingDataPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HRSSCOutstandingDataPage.aspx.designer.cs">
+      <DependentUpon>HRSSCOutstandingDataPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="IOPairBarChange.aspx.cs">
+      <DependentUpon>IOPairBarChange.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="IOPairBarChange.aspx.designer.cs">
+      <DependentUpon>IOPairBarChange.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="IOPairBarPreview.aspx.cs">
+      <DependentUpon>IOPairBarPreview.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="IOPairBarPreview.aspx.designer.cs">
+      <DependentUpon>IOPairBarPreview.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="IOPairDataUC.ascx.cs">
+      <DependentUpon>IOPairDataUC.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="IOPairDataUC.ascx.designer.cs">
+      <DependentUpon>IOPairDataUC.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="LegendUC.ascx.cs">
+      <DependentUpon>LegendUC.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LegendUC.ascx.designer.cs">
+      <DependentUpon>LegendUC.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="LogOutPage.aspx.cs">
+      <DependentUpon>LogOutPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LogOutPage.aspx.designer.cs">
+      <DependentUpon>LogOutPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MCEmployeeDataPage.aspx.cs">
+      <DependentUpon>MCEmployeeDataPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MCEmployeeDataPage.aspx.designer.cs">
+      <DependentUpon>MCEmployeeDataPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MCEmployeeSchedulesPage.aspx.cs">
+      <DependentUpon>MCEmployeeSchedulesPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MCEmployeeSchedulesPage.aspx.designer.cs">
+      <DependentUpon>MCEmployeeSchedulesPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MCReportsPage.aspx.cs">
+      <DependentUpon>MCReportsPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MCReportsPage.aspx.designer.cs">
+      <DependentUpon>MCReportsPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MCSchedulingPage.aspx.cs">
+      <DependentUpon>MCSchedulingPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MCSchedulingPage.aspx.designer.cs">
+      <DependentUpon>MCSchedulingPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MCVisitHistoryPage.aspx.cs">
+      <DependentUpon>MCVisitHistoryPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MCVisitHistoryPage.aspx.designer.cs">
+      <DependentUpon>MCVisitHistoryPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MCVisitsSearchPage.aspx.cs">
+      <DependentUpon>MCVisitsSearchPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MCVisitsSearchPage.aspx.designer.cs">
+      <DependentUpon>MCVisitsSearchPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PassesOnMapPage.aspx.cs">
+      <DependentUpon>PassesOnMapPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PassesOnMapPage.aspx.designer.cs">
+      <DependentUpon>PassesOnMapPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PassesOnMapBing.aspx.cs">
+      <DependentUpon>PassesOnMapBing.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PassesOnMapBing.aspx.designer.cs">
+      <DependentUpon>PassesOnMapBing.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Resource.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resource.resx</DependentUpon>
+    </Compile>
+    <Compile Include="ResultPage.aspx.cs">
+      <DependentUpon>ResultPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ResultPage.aspx.designer.cs">
+      <DependentUpon>ResultPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SchedulesPage.aspx.cs">
+      <DependentUpon>SchedulesPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SchedulesPage.aspx.designer.cs">
+      <DependentUpon>SchedulesPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SmallResultPage.aspx.cs">
+      <DependentUpon>SmallResultPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SmallResultPage.aspx.designer.cs">
+      <DependentUpon>SmallResultPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TabPage.aspx.cs">
+      <DependentUpon>TabPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TabPage.aspx.designer.cs">
+      <DependentUpon>TabPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ACTAWebPage.aspx.cs">
+      <DependentUpon>ACTAWebPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ACTAWebPage.aspx.designer.cs">
+      <DependentUpon>ACTAWebPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TestReport.aspx.cs">
+      <DependentUpon>TestReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TestReport.aspx.designer.cs">
+      <DependentUpon>TestReport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TimeSchemaAssignMultipleEmployeesPage.aspx.cs">
+      <DependentUpon>TimeSchemaAssignMultipleEmployeesPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TimeSchemaAssignMultipleEmployeesPage.aspx.designer.cs">
+      <DependentUpon>TimeSchemaAssignMultipleEmployeesPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TimeSchemaAssignSingleEmployeePage.aspx.cs">
+      <DependentUpon>TimeSchemaAssignSingleEmployeePage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TimeSchemaAssignSingleEmployeePage.aspx.designer.cs">
+      <DependentUpon>TimeSchemaAssignSingleEmployeePage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TLAnnualLeavePage.aspx.cs">
+      <DependentUpon>TLAnnualLeavePage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TLAnnualLeavePage.aspx.designer.cs">
+      <DependentUpon>TLAnnualLeavePage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TLClockDataPage.aspx.cs">
+      <DependentUpon>TLClockDataPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TLClockDataPage.aspx.designer.cs">
+      <DependentUpon>TLClockDataPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TLDetailedDataPage.aspx.cs">
+      <DependentUpon>TLDetailedDataPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TLDetailedDataPage.aspx.designer.cs">
+      <DependentUpon>TLDetailedDataPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TLLoansPage.aspx.cs">
+      <DependentUpon>TLLoansPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TLLoansPage.aspx.designer.cs">
+      <DependentUpon>TLLoansPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TLMassiveInputPage.aspx.cs">
+      <DependentUpon>TLMassiveInputPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TLMassiveInputPage.aspx.designer.cs">
+      <DependentUpon>TLMassiveInputPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TLReportsPage.aspx.cs">
+      <DependentUpon>TLReportsPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TLReportsPage.aspx.designer.cs">
+      <DependentUpon>TLReportsPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TLTMDataPage.aspx.cs">
+      <DependentUpon>TLTMDataPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TLTMDataPage.aspx.designer.cs">
+      <DependentUpon>TLTMDataPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WCAnnualLeavePage.aspx.cs">
+      <DependentUpon>WCAnnualLeavePage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WCAnnualLeavePage.aspx.designer.cs">
+      <DependentUpon>WCAnnualLeavePage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WCClockDataPage.aspx.cs">
+      <DependentUpon>WCClockDataPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WCClockDataPage.aspx.designer.cs">
+      <DependentUpon>WCClockDataPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WCDetailsPage.aspx.cs">
+      <DependentUpon>WCDetailsPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WCDetailsPage.aspx.designer.cs">
+      <DependentUpon>WCDetailsPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WCFormsPage.aspx.cs">
+      <DependentUpon>WCFormsPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WCFormsPage.aspx.designer.cs">
+      <DependentUpon>WCFormsPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WCManagerVerificationPage.aspx.cs">
+      <DependentUpon>WCManagerVerificationPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WCManagerVerificationPage.aspx.designer.cs">
+      <DependentUpon>WCManagerVerificationPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WCPayslips.aspx.cs">
+      <DependentUpon>WCPayslips.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WCPayslips.aspx.designer.cs">
+      <DependentUpon>WCPayslips.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WCReportsPage.aspx.cs">
+      <DependentUpon>WCReportsPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WCReportsPage.aspx.designer.cs">
+      <DependentUpon>WCReportsPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WCSelfTMDataPage.aspx.cs">
+      <DependentUpon>WCSelfTMDataPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WCSelfTMDataPage.aspx.designer.cs">
+      <DependentUpon>WCSelfTMDataPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TLWUStatisticalReportsPage.aspx.cs">
+      <DependentUpon>TLWUStatisticalReportsPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TLWUStatisticalReportsPage.aspx.designer.cs">
+      <DependentUpon>TLWUStatisticalReportsPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WorkAnalyzeReports.aspx.cs">
+      <DependentUpon>WorkAnalyzeReports.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WorkAnalyzeReports.aspx.designer.cs">
+      <DependentUpon>WorkAnalyzeReports.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="ADAMLogin.aspx" />
+    <Content Include="BufferReport.aspx" />
+    <Content Include="CountersPage.aspx" />
+    <Content Include="CounterUC.ascx" />
+    <Content Include="DayOfCalendarUC.ascx" />
+    <Content Include="DefaultPage.aspx" />
+    <Content Include="EmplAnagraphicalDataPage.aspx" />
+    <Content Include="EmplDisabilitiesPage.aspx" />
+    <Content Include="EmplOnDemandAppointmentsPage.aspx" />
+    <Content Include="EmployeeSchedulesPage.aspx" />
+    <Content Include="EmplRiskManagementDataPage.aspx" />
+    <Content Include="EmplVaccinesPage.aspx" />
+    <Content Include="EmplVisitsManagementPage.aspx" />
+    <Content Include="EmplWeightHeightPage.aspx" />
+    <Content Include="HoursLineControlUC.ascx" />
+    <Content Include="HRSSCConfirmationPage.aspx" />
+    <Content Include="HRSSCCountersPage.aspx" />
+    <Content Include="HRSSCOutstandingDataPage.aspx" />
+    <Content Include="IOPairBarChange.aspx" />
+    <Content Include="IOPairBarPreview.aspx" />
+    <Content Include="IOPairDataUC.ascx" />
+    <Content Include="LegendUC.ascx" />
+    <Content Include="LogOutPage.aspx" />
+    <Content Include="MCEmployeeDataPage.aspx" />
+    <Content Include="MCEmployeeSchedulesPage.aspx" />
+    <Content Include="MCReportsPage.aspx" />
+    <Content Include="MCSchedulingPage.aspx" />
+    <Content Include="MCVisitHistoryPage.aspx" />
+    <Content Include="MCVisitsSearchPage.aspx" />
+    <Content Include="PassesOnMapPage.aspx" />
+    <Content Include="PassesOnMapBing.aspx" />
+    <Content Include="ResultPage.aspx" />
+    <Content Include="SchedulesPage.aspx" />
+    <Content Include="SmallResultPage.aspx" />
+    <Content Include="TabPage.aspx" />
+    <Content Include="ACTAWebPage.aspx" />
+    <Content Include="TestReport.aspx" />
+    <Content Include="TimeSchemaAssignMultipleEmployeesPage.aspx" />
+    <Content Include="TimeSchemaAssignSingleEmployeePage.aspx" />
+    <Content Include="TLAnnualLeavePage.aspx" />
+    <Content Include="TLClockDataPage.aspx" />
+    <Content Include="TLDetailedDataPage.aspx" />
+    <Content Include="TLLoansPage.aspx" />
+    <Content Include="TLMassiveInputPage.aspx" />
+    <Content Include="TLReportsPage.aspx" />
+    <Content Include="TLTMDataPage.aspx" />
+    <Content Include="WCAnnualLeavePage.aspx" />
+    <Content Include="WCClockDataPage.aspx" />
+    <Content Include="WCDetailsPage.aspx" />
+    <Content Include="WCFormsPage.aspx" />
+    <Content Include="WCManagerVerificationPage.aspx" />
+    <Content Include="WCPayslips.aspx" />
+    <Content Include="WCReportsPage.aspx" />
+    <Content Include="WCSelfTMDataPage.aspx" />
+    <Content Include="TLWUStatisticalReportsPage.aspx" />
+    <Content Include="WorkAnalyzeReports.aspx" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ACTAWorkAnalysisReports\ACTAWorkAnalysisReports.csproj">
+      <Project>{2BF25639-7885-4374-A91F-9826DD2F7C0B}</Project>
+      <Name>ACTAWorkAnalysisReports</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CommonWeb\CommonWeb.csproj">
+      <Project>{33482678-3901-4585-B05A-6F0DF5D268CC}</Project>
+      <Name>CommonWeb</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Common\Common.csproj">
+      <Project>{BD526A30-C79F-4124-9C13-6B514F82A1CC}</Project>
+      <Name>Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Controls\Controls.csproj">
+      <Project>{22F0E707-18F9-4A1A-A7FF-12EDA6728C02}</Project>
+      <Name>Controls</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\PieChart\PieChart3DWebcontrol.csproj">
+      <Project>{696E929A-6A4A-4C6D-A8B2-C4F25F781940}</Project>
+      <Name>PieChart3DWebcontrol</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ReportsWeb\ReportsWeb.csproj">
+      <Project>{D053B71B-C9CE-46E9-820E-29F589F09A3D}</Project>
+      <Name>ReportsWeb</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\TransferObjects\TransferObjects.csproj">
+      <Project>{5C8540C2-8781-4EAE-BA2E-1A303779CCE3}</Project>
+      <Name>TransferObjects</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Util\Util.csproj">
+      <Project>{B9716E70-6794-4C27-ABF1-35D52CE595A6}</Project>
+      <Name>Util</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resource.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resource.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resource.sr.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v9.0\WebApplications\Microsoft.WebApplication.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>59748</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

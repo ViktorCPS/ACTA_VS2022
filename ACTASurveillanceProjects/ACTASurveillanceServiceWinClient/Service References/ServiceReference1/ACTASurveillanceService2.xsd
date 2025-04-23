@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/TransferObjects" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/TransferObjects" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:complexType name="CardOwnerTO">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="antennaNum" type="xs:int" />
+      <xs:element minOccurs="0" name="cardSerialNumber" type="xs:unsignedInt" />
+      <xs:element minOccurs="0" name="employee" nillable="true" type="tns:EmployeeTO" />
+      <xs:element minOccurs="0" name="entrancePermitted" type="xs:boolean" />
+      <xs:element minOccurs="0" name="eventTime" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="reader" nillable="true" type="tns:ReaderTO" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="CardOwnerTO" nillable="true" type="tns:CardOwnerTO" />
+  <xs:complexType name="EmployeeTO">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="AccessGroupID" type="xs:int" />
+      <xs:element minOccurs="0" name="AddressID" type="xs:int" />
+      <xs:element minOccurs="0" name="EmployeeID" type="xs:int" />
+      <xs:element minOccurs="0" name="FirstName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="HasTag" type="xs:boolean" />
+      <xs:element minOccurs="0" name="LastName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="MealTypeName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Password" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Picture" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ScheduleDate" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="SchemaName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Status" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="TagID" type="xs:unsignedInt" />
+      <xs:element minOccurs="0" name="Type" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="WorkingGroupID" type="xs:int" />
+      <xs:element minOccurs="0" name="WorkingUnitID" type="xs:int" />
+      <xs:element minOccurs="0" name="WorkingUnitName" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="EmployeeTO" nillable="true" type="tns:EmployeeTO" />
+  <xs:complexType name="ReaderTO">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="A0Direction" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="A0GateID" type="xs:int" />
+      <xs:element minOccurs="0" name="A0IsCounter" type="xs:int" />
+      <xs:element minOccurs="0" name="A0LocID" type="xs:int" />
+      <xs:element minOccurs="0" name="A0SecDirection" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="A0SecLocID" type="xs:int" />
+      <xs:element minOccurs="0" name="A1Direction" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="A1GateID" type="xs:int" />
+      <xs:element minOccurs="0" name="A1IsCounter" type="xs:int" />
+      <xs:element minOccurs="0" name="A1LocID" type="xs:int" />
+      <xs:element minOccurs="0" name="A1SecDirection" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="A1SecLocID" type="xs:int" />
+      <xs:element minOccurs="0" name="ConnectionAddress" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ConnectionType" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Description" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="DownloadEraseCounter" type="xs:int" />
+      <xs:element minOccurs="0" name="DownloadInterval" type="xs:int" />
+      <xs:element minOccurs="0" name="DownloadStartTime" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="LastReadTime" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="MemoryOccupation" type="xs:int" />
+      <xs:element minOccurs="0" name="ReaderID" type="xs:int" />
+      <xs:element minOccurs="0" name="Settings" type="xs:unsignedByte" />
+      <xs:element minOccurs="0" name="Status" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="TechType" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ReaderTO" nillable="true" type="tns:ReaderTO" />
+</xs:schema>

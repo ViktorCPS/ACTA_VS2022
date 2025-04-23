@@ -1,0 +1,335 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="anomaly" xml:space="preserve">
+    <value>Anomaly category</value>
+  </data>
+  <data name="dataIntervention" xml:space="preserve">
+    <value>There are data that require intervention:</value>
+  </data>
+  <data name="date" xml:space="preserve">
+    <value>Date</value>
+  </data>
+  <data name="Employee" xml:space="preserve">
+    <value>Employee</value>
+  </data>
+  <data name="end" xml:space="preserve">
+    <value>End time</value>
+  </data>
+  <data name="notcofirmed" xml:space="preserve">
+    <value>Notconfirmed data</value>
+  </data>
+  <data name="notverified" xml:space="preserve">
+    <value>Notverified data</value>
+  </data>
+  <data name="overtime" xml:space="preserve">
+    <value>Overtime to justify hours</value>
+  </data>
+  <data name="pleaseDoNot" xml:space="preserve">
+    <value>PLEASE DO NOT ANSWER TO THIS MESSAGE</value>
+  </data>
+  <data name="start" xml:space="preserve">
+    <value>Start time</value>
+  </data>
+  <data name="title" xml:space="preserve">
+    <value>TM - reminder</value>
+  </data>
+  <data name="unjustified" xml:space="preserve">
+    <value>Unjustified absence</value>
+  </data>
+  <data name="wType" xml:space="preserve">
+    <value>Wage type</value>
+  </data>
+  <data name="lblMessage1" xml:space="preserve">
+    <value>THIS IS A TRIAL SYSTEM MESSAGE THAT INFORMS YOU ABOUT PASSES OF EMPLOYEES FROM HR SECTOR.
+
+</value>
+  </data>
+  <data name="lblMessage2" xml:space="preserve">
+    <value>IF YOU HAVE ANY OUTSTANDING DATA YOU WILL RECEIVE A MESSAGE LIKE THIS EVERY DAY.</value>
+  </data>
+  <data name="emailSupport" xml:space="preserve">
+    <value>Email for support</value>
+  </data>
+  <data name="emailHR" xml:space="preserve">
+    <value>hr-services-serbia@fiatservices.com.</value>
+  </data>
+  <data name="payslipBody" xml:space="preserve">
+    <value>We inform you that your payslip for  </value>
+  </data>
+  <data name="payslipBody1" xml:space="preserve">
+    <value>is available on your personal TM system (tab </value>
+  </data>
+  <data name="payslipBody2" xml:space="preserve">
+    <value>on WC SELFSERVICE  role).</value>
+  </data>
+  <data name="payslipBody3" xml:space="preserve">
+    <value>If you have any problems viewing  or downloading it, please contact HRSSC at </value>
+  </data>
+  <data name="payslipTab" xml:space="preserve">
+    <value>Payslips </value>
+  </data>
+  <data name="titlePayslips" xml:space="preserve">
+    <value>TM - notification</value>
+  </data>
+  <data name="ambulance" xml:space="preserve">
+    <value>, ambulance </value>
+  </data>
+  <data name="couponAppointment" xml:space="preserve">
+    <value>Medical appointment</value>
+  </data>
+  <data name="couponDoctor" xml:space="preserve">
+    <value>The attending physician</value>
+  </data>
+  <data name="couponEmployeeBeen" xml:space="preserve">
+    <value>The Employee has been examined at medical room ________________________ at ______________________.</value>
+  </data>
+  <data name="couponPrevention" xml:space="preserve">
+    <value>Prevention of occupational diseases</value>
+  </data>
+  <data name="couponResponsible" xml:space="preserve">
+    <value>The Responsible (Surname and name / Company / Telephone)</value>
+  </data>
+  <data name="couponSuccVisit" xml:space="preserve">
+    <value>Successful visit: </value>
+  </data>
+  <data name="hdrCompany" xml:space="preserve">
+    <value>Company</value>
+  </data>
+  <data name="hdrEmployee" xml:space="preserve">
+    <value>Employee: </value>
+  </data>
+  <data name="hdrEmplRisk" xml:space="preserve">
+    <value>Risk: </value>
+  </data>
+  <data name="hdrEmplType" xml:space="preserve">
+    <value>Type: </value>
+  </data>
+  <data name="hdrID" xml:space="preserve">
+    <value>ID: </value>
+  </data>
+  <data name="hdrInterval" xml:space="preserve">
+    <value>Interval: </value>
+  </data>
+  <data name="hdrShift" xml:space="preserve">
+    <value>Shift: </value>
+  </data>
+  <data name="hdrStringone" xml:space="preserve">
+    <value>Stringone: </value>
+  </data>
+  <data name="hdrVisitID" xml:space="preserve">
+    <value>Visit ID: </value>
+  </data>
+  <data name="visitAppointmentDate" xml:space="preserve">
+    <value>Medical appointment date </value>
+  </data>
+  <data name="visitAppointmentTime" xml:space="preserve">
+    <value>, time </value>
+  </data>
+  <data name="visitMonth" xml:space="preserve">
+    <value>Visit month:  </value>
+  </data>
+  <data name="changedCoupon1" xml:space="preserve">
+    <value>We inform you that your previously scheduled medical check appointment (ID:</value>
+  </data>
+  <data name="changedCoupon2" xml:space="preserve">
+    <value> on </value>
+  </data>
+  <data name="changedCoupon3" xml:space="preserve">
+    <value>Please, find details in attached coupon.</value>
+  </data>
+  <data name="changedCoupon4" xml:space="preserve">
+    <value>If you have any problems viewing or downloading it, please contact HRSSC at hr-services-serbia@fiatservices.com.</value>
+  </data>
+  <data name="changedCoupon5" xml:space="preserve">
+    <value> is rescheduled.</value>
+  </data>
+  <data name="changedCouponBC1" xml:space="preserve">
+    <value>We inform you that some medical check appointments for employees you are responsible for are</value>
+  </data>
+  <data name="changedCouponBC2" xml:space="preserve">
+    <value> rescheduled: </value>
+  </data>
+  <data name="changedCouponBC3" xml:space="preserve">
+    <value />
+  </data>
+  <data name="changedCouponBC4" xml:space="preserve">
+    <value />
+  </data>
+  <data name="changedCouponSerb1" xml:space="preserve">
+    <value>We inform you that your previously scheduled medical check appointment (ID:</value>
+  </data>
+  <data name="changedCouponSerb2" xml:space="preserve">
+    <value />
+  </data>
+  <data name="changedCouponSerb3" xml:space="preserve">
+    <value />
+  </data>
+  <data name="deletedCoupon1" xml:space="preserve">
+    <value>We inform you that your previously scheduled medical check appointment (ID:</value>
+  </data>
+  <data name="deletedCoupon2" xml:space="preserve">
+    <value>) is </value>
+  </data>
+  <data name="deletedCoupon3" xml:space="preserve">
+    <value>canceled. </value>
+  </data>
+  <data name="deletedCouponBC1" xml:space="preserve">
+    <value>We inform you that some medical check appointments for employees you are responsible for are</value>
+  </data>
+  <data name="deletedCouponBC2" xml:space="preserve">
+    <value> canceled: </value>
+  </data>
+  <data name="deletedCouponBC3" xml:space="preserve">
+    <value />
+  </data>
+  <data name="deletedCouponBC4" xml:space="preserve">
+    <value />
+  </data>
+  <data name="newCouponBC1" xml:space="preserve">
+    <value>We inform you that there are some medical check appointments scheduled for employees you are responsible for:</value>
+  </data>
+  <data name="newCouponBC2" xml:space="preserve">
+    <value>Please, find details in the medical check tool.</value>
+  </data>
+  <data name="newCouponBC3" xml:space="preserve">
+    <value>If you have any questions, please contact HRSSC at hr-services-serbia@fiatservices.com.</value>
+  </data>
+  <data name="newCouponMedical" xml:space="preserve">
+    <value>We inform you that a medical check appointment is scheduled for You. </value>
+  </data>
+  <data name="newCouponMedical1" xml:space="preserve">
+    <value>Please, find details in the attached coupon. </value>
+  </data>
+  <data name="newCouponMedical2" xml:space="preserve">
+    <value>If you have any problems viewing or downloading it, please contact HRSSC at hr-services-serbia@fiatservices.com.</value>
+  </data>
+  <data name="titleMedical" xml:space="preserve">
+    <value>Medical check - notification</value>
+  </data>
+  <data name="confirmed" xml:space="preserve">
+    <value>Confirmed</value>
+  </data>
+  <data name="EmployeeID" xml:space="preserve">
+    <value>Employee ID</value>
+  </data>
+  <data name="passtype" xml:space="preserve">
+    <value>Pass type</value>
+  </data>
+</root>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="UNIPROMIOPairsDS" targetNamespace="http://tempuri.org/UNIPROMIOPairsDS.xsd" xmlns:mstns="http://tempuri.org/UNIPROMIOPairsDS.xsd" xmlns="http://tempuri.org/UNIPROMIOPairsDS.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" xmlns:NameSpace1="urn:schemas-microsoft-com:xml-msdatasource" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+        </Connections>
+        <Tables>
+        </Tables>
+        <Sources>
+        </Sources>
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="UNIPROMIOPairsDS" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="UNIPROMIOPairsDS" msprop:Generator_DataSetName="UNIPROMIOPairsDS">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="iopairs" msprop:Generator_UserTableName="iopairs" msprop:Generator_RowDeletedName="iopairsRowDeleted" msprop:Generator_RowChangedName="iopairsRowChanged" msprop:Generator_RowClassName="iopairsRow" msprop:Generator_RowChangingName="iopairsRowChanging" msprop:Generator_RowEvArgName="iopairsRowChangeEvent" msprop:Generator_RowEvHandlerName="iopairsRowChangeEventHandler" msprop:Generator_TableClassName="iopairsDataTable" msprop:Generator_TableVarName="tableiopairs" msprop:Generator_RowDeletingName="iopairsRowDeleting" msprop:Generator_TablePropName="iopairs">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="direction" msdata:Caption="date" msprop:Generator_UserColumnName="direction" msprop:Generator_ColumnVarNameInTable="columndirection" msprop:Generator_ColumnPropNameInRow="direction" msprop:Generator_ColumnPropNameInTable="directionColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="event_time" msprop:Generator_UserColumnName="event_time" msprop:Generator_ColumnVarNameInTable="columnevent_time" msprop:Generator_ColumnPropNameInRow="event_time" msprop:Generator_ColumnPropNameInTable="event_timeColumn" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="employee" msdata:Caption="employee_id" msprop:Generator_UserColumnName="employee" msprop:Generator_ColumnVarNameInTable="columnemployee" msprop:Generator_ColumnPropNameInRow="employee" msprop:Generator_ColumnPropNameInTable="employeeColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="imageID" msprop:Generator_UserColumnName="imageID" msprop:Generator_ColumnVarNameInTable="columnimageID" msprop:Generator_ColumnPropNameInRow="imageID" msprop:Generator_ColumnPropNameInTable="imageIDColumn" type="xs:byte" minOccurs="0" />
+              <xs:element name="licence_num" msprop:Generator_UserColumnName="licence_num" msprop:Generator_ColumnPropNameInRow="licence_num" msprop:Generator_ColumnVarNameInTable="columnlicence_num" msprop:Generator_ColumnPropNameInTable="licence_numColumn" type="xs:string" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="images" msprop:Generator_UserTableName="images" msprop:Generator_RowDeletedName="imagesRowDeleted" msprop:Generator_RowChangedName="imagesRowChanged" msprop:Generator_RowClassName="imagesRow" msprop:Generator_RowChangingName="imagesRowChanging" msprop:Generator_RowEvArgName="imagesRowChangeEvent" msprop:Generator_RowEvHandlerName="imagesRowChangeEventHandler" msprop:Generator_TableClassName="imagesDataTable" msprop:Generator_TableVarName="tableimages" msprop:Generator_RowDeletingName="imagesRowDeleting" msprop:Generator_TablePropName="images">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="image" msprop:Generator_UserColumnName="image" msprop:Generator_ColumnVarNameInTable="columnimage" msprop:Generator_ColumnPropNameInRow="image" msprop:Generator_ColumnPropNameInTable="imageColumn" type="xs:base64Binary" minOccurs="0" />
+              <xs:element name="imageID" msprop:Generator_UserColumnName="imageID" msprop:Generator_ColumnVarNameInTable="columnimageID" msprop:Generator_ColumnPropNameInRow="imageID" msprop:Generator_ColumnPropNameInTable="imageIDColumn" type="xs:byte" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="totals" msprop:Generator_UserTableName="iopairs" msprop:Generator_RowDeletedName="iopairsRowDeleted" msprop:Generator_RowChangedName="iopairsRowChanged" msprop:Generator_RowClassName="iopairsRow" msprop:Generator_RowChangingName="iopairsRowChanging" msprop:Generator_RowEvArgName="iopairsRowChangeEvent" msprop:Generator_RowEvHandlerName="iopairsRowChangeEventHandler" msprop:Generator_TableClassName="iopairsDataTable" msprop:Generator_TableVarName="tableiopairs" msprop:Generator_RowDeletingName="iopairsRowDeleting" msprop:Generator_TablePropName="iopairs">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="inside" msdata:Caption="date" msprop:Generator_UserColumnName="direction" msprop:Generator_ColumnVarNameInTable="columndirection" msprop:Generator_ColumnPropNameInRow="direction" msprop:Generator_ColumnPropNameInTable="directionColumn" type="xs:string" minOccurs="0" />
+        <xs:element name="outside" msprop:Generator_UserColumnName="event_time" msprop:Generator_ColumnVarNameInTable="columnevent_time" msprop:Generator_ColumnPropNameInRow="event_time" msprop:Generator_ColumnPropNameInTable="event_timeColumn" type="xs:string" minOccurs="0" />
+        <xs:element name="without_driver" msdata:Caption="employee_id" msprop:Generator_UserColumnName="employee" msprop:Generator_ColumnVarNameInTable="columnemployee" msprop:Generator_ColumnPropNameInRow="employee" msprop:Generator_ColumnPropNameInTable="employeeColumn" type="xs:string" minOccurs="0" />
+        <xs:element name="imageID" msprop:Generator_UserColumnName="imageID" msprop:Generator_ColumnVarNameInTable="columnimageID" msprop:Generator_ColumnPropNameInRow="imageID" msprop:Generator_ColumnPropNameInTable="imageIDColumn" type="xs:byte" minOccurs="0" />
+        <xs:element name="licence_num" msprop:Generator_UserColumnName="licence_num" msprop:Generator_ColumnPropNameInRow="licence_num" msprop:Generator_ColumnVarNameInTable="columnlicence_num" msprop:Generator_ColumnPropNameInTable="licence_numColumn" type="xs:string" />
+        <xs:element name="open_pairs" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="MealsEmployeeScheduleDS" targetNamespace="http://tempuri.org/MealsEmployeeScheduleDS.xsd" xmlns:mstns="http://tempuri.org/MealsEmployeeScheduleDS.xsd" xmlns="http://tempuri.org/MealsEmployeeScheduleDS.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="MealsEmployeeScheduleDS" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_DataSetName="MealsEmployeeScheduleDS" msprop:Generator_UserDSName="MealsEmployeeScheduleDS" msprop:EnableTableAdapterManager="true">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="meals_empl_schedule" msprop:Generator_UserTableName="meals_empl_schedule" msprop:Generator_RowDeletedName="meals_empl_scheduleRowDeleted" msprop:Generator_TableClassName="meals_empl_scheduleDataTable" msprop:Generator_RowChangedName="meals_empl_scheduleRowChanged" msprop:Generator_RowClassName="meals_empl_scheduleRow" msprop:Generator_RowChangingName="meals_empl_scheduleRowChanging" msprop:Generator_RowEvArgName="meals_empl_scheduleRowChangeEvent" msprop:Generator_RowEvHandlerName="meals_empl_scheduleRowChangeEventHandler" msprop:Generator_TablePropName="meals_empl_schedule" msprop:Generator_TableVarName="tablemeals_empl_schedule" msprop:Generator_RowDeletingName="meals_empl_scheduleRowDeleting">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="work_unit" msprop:Generator_UserColumnName="work_unit" msprop:Generator_ColumnPropNameInRow="work_unit" msprop:Generator_ColumnVarNameInTable="columnwork_unit" msprop:Generator_ColumnPropNameInTable="work_unitColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="employee" msprop:Generator_UserColumnName="employee" msprop:Generator_ColumnPropNameInRow="employee" msprop:Generator_ColumnVarNameInTable="columnemployee" msprop:Generator_ColumnPropNameInTable="employeeColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="date" msprop:Generator_UserColumnName="date" msprop:Generator_ColumnPropNameInRow="date" msprop:Generator_ColumnVarNameInTable="columndate" msprop:Generator_ColumnPropNameInTable="dateColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="meal_type" msprop:Generator_UserColumnName="meal_type" msprop:Generator_ColumnPropNameInRow="meal_type" msprop:Generator_ColumnVarNameInTable="columnmeal_type" msprop:Generator_ColumnPropNameInTable="meal_typeColumn" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

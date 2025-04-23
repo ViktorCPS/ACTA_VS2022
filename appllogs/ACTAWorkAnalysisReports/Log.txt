@@ -1,0 +1,2 @@
++ Started presence and absence report!  for company: -2 07.11.2024 08:51:50
++ Finished presence and absence report!  for company: -2 07.11.2024 08:53:44

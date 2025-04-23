@@ -1,0 +1,432 @@
+/* _lcid="1033" _version="14.0.4762"
+_LocalBinding */
+.ms-postcalendardateboxtop{
+margin-top:5px;
+/* [RecolorImage(themeColor:"Accent1",method:"Tinting")] */ /* [ReplaceColor(themeColor:"Accent1")] */ background:#0072bc url("/_layouts/images/calTopBkgd.png") repeat-x bottom left;
+width:75px;
+height:13px;
+border:1px solid;
+/* [ReplaceColor(themeColor:"Accent1-Darker",themeTint:"0.91")] */ border-color:#00558d #004572 #003d66 #00558d;
+margin-right:7px;
+}
+.ms-postcalendardateboxbottom{
+width:75px;
+max-width:75px;
+min-height:38px;
+padding:4px 0px 2px 0px;
+border:1px solid;
+/* [ReplaceColor(themeColor:"Light2-Darker")] */ border-color:#c1c7cd #9ea3a8 #91959a #c1c7cd;
+border-top-style:hidden;
+font:1.1em verdana;
+/* [ReplaceColor(themeColor:"Dark2-Darker")] */ color:#65686b;
+/* [RecolorImage(themeColor:"Light2-Darkest",method:"Filling")] */ /* [ReplaceColor(themeColor:"Light2-Lightest")] */ background:#f1f1f1 url("/_layouts/images/calMainBkgd.png") repeat-x bottom left;
+margin-right:7px;
+font:1.1em verdana;
+word-wrap:break-word;
+text-align:center;
+color:#65686b;
+word-spacing:10em;
+line-height:1.3em;
+display:table;
+table-layout:fixed;
+}
+.ms-catviewtitle{
+width:100%;
+}
+.ms-formvalidation{
+color:#ff0000;
+font-family:verdana;
+font-size:8pt;
+}
+.ms-blogqllink{
+display:block;
+/* [ReplaceColor(themeColor:"Dark2")] */ color:#000;
+margin:0px;
+padding:5px 4px 5px 10px;
+border-width:1px 0px;
+border-style:solid;
+border-color:transparent;
+word-wrap:break-word;
+overflow-x:hidden;
+}
+.ms-blogRightZone
+{
+width:65px;
+}
+.ms-leftblogdate
+{
+width:75px;
+padding-right:10px;
+}
+.ms-rightblogpost
+{
+word-wrap:break-word;
+overflow-x:hidden;
+width:680px;
+}
+.ms-aboutblogimage
+{
+width:96px;
+height:96px;
+align:center;
+padding:2px;
+border:1px solid #cccccc
+}
+.ms-aboutblogtext
+{
+width:100%;
+vertical-align:middle;
+font-size:8pt;
+}
+.ms-blogpostdatecol
+{
+vertical-align:top;
+}
+.ms-ButtonHeightWidth
+{
+width:7.5em;
+font:8pt tahoma;
+height:2.1em;
+padding-top:0.1em;
+padding-bottom:0.4em;
+}
+.ms-ButtonHeightWidth2
+{
+height:2.1em;
+font:8pt tahoma;
+width:11.72em;
+padding-top:0.1em;
+padding-bottom:0.4em;
+}
+ul.ms-blogAdminLinks
+{
+list-style:none;
+margin:4px 10px 0 0;
+padding:0 0 0 4px;
+}
+ul.ms-blogAdminLinks li
+{
+padding:0 0 3px 0px;
+}
+ul.ms-blogAdminLinks li a{
+/* [ReplaceColor(themeColor:"Accent3")] */ color:#003399;
+}
+div.ms-blogAdminLinks
+{
+list-style:none;
+margin:4px 10px 0 0;
+padding:0 0 0 4px;
+}
+div.ms-blogAdminLinks a{
+color:#003399;
+}
+.imglink{
+vertical-align:middle;
+border:none;
+margin:0 0 0 0;
+padding:0 0 0 0;
+}
+.ms-PostWrapper,.ms-CommentsWrapper
+{
+/* [ReplaceColor(themeColor:"Dark1-Medium")] */ color:#4c4c4c;
+width:629px;
+}
+.ms-blogrss
+{
+/* [ReplaceColor(themeColor:"Dark1-Medium")] */ color:#4c4c4c;
+width:100%;
+}
+.ms-blogrssnav{
+ /* [ReplaceColor(themeColor:"Dark1-Medium")] */ color:#4c4c4c;
+padding-bottom:5px;
+padding-top:5px;
+padding-left:5px;
+ /* [ReplaceColor(themeColor:"Accent3-Lighter")] */ border-top:solid 1px #add1ff;
+}
+.ms-blogrssnav a{
+ /* [ReplaceColor(themeColor:"Accent3")] */ color:#003399;
+text-decoration:none;
+font-weight:bold;
+font-size:8pt;
+}
+.ms-blogrssnav img{
+border:none;
+}
+.ms-PostTitle{
+font-size:16pt;
+/* [ReplaceColor(themeColor:"Accent3-Lightest")] */
+padding-top:0px;
+width:600px;
+word-wrap:break-word;
+overflow-x:hidden;
+}
+.ms-PostTitle span{
+position:relative;
+left:-2px;
+right:auto;
+}
+.ms-PostTitle a
+{
+/* [ReplaceColor(themeColor:"Dark1-Medium")] */ color:#4c4c4c;
+text-decoration:none;
+}
+.ms-PostFooter,.ms-CommentFooter{
+font-size:8pt;
+/* [ReplaceColor(themeColor:"Light1-Darker")] */ color:#666666;
+padding-bottom:22px;
+}
+.ms-postfootercolor
+{
+color:#666666;
+}
+.ms-CommentFooter div{
+width:775px;
+}
+.ms-PostFooter a,.ms-CommentFooter a{
+/* [ReplaceColor(themeColor:"Accent3-Medium")] */ color:#6c90d8;
+white-space:nowrap;
+}
+.ms-PostBody
+{
+/* [ReplaceColor(themeColor:"Dark1-Medium")] */ color:#4c4c4c;
+font-size:8pt;
+line-height:1.7em;
+padding-top:6px;
+padding-bottom:12px;
+}
+.ms-PostBody a{
+/* [ReplaceColor(themeColor:"Accent3-Darker")] */ color:#0000CC;
+}
+.ms-PostBody p{
+margin:0 0 1em 0;
+}
+h3.ms-PostDate
+{
+font-size:8pt;
+/* [ReplaceColor(themeColor:"Dark1-Lightest")] */ color:#7f7f7f;
+margin:0;
+/* [ReplaceColor(themeColor:"Accent5-Medium")] */ border-bottom:solid 1px #6f9dd9;
+padding-bottom:5px;
+}
+h3.ms-CommentHeader
+{
+font-size:1.6em;
+color:#666666;
+font-weight:normal;
+/* [ReplaceColor(themeColor:"Light1-Darker")] */ color:#666666;
+margin:0 0 0 0;
+padding:0 0 0 0;
+position:relative;
+top:-.25em;
+left:-2px;
+right:auto;
+}
+h4.ms-CommentTitle
+{
+/* [ReplaceColor(themeColor:"Dark1-Lighter")] */ color:#666666;
+font-size:8pt;
+line-height:1.7em;
+padding:0px 0 0 0;
+margin:0px;
+}
+.ms-CommentBody{
+/* [ReplaceColor(themeColor:"Dark1-Medium")] */ color:#4c4c4c;
+font-size:8pt;
+line-height:1.7em;
+padding-bottom:12px;
+padding-top:6px;
+width:775px;
+}
+.ms-commentsempty{
+/* [ReplaceColor(themeColor:"Dark1-Medium")] */ color:#4c4c4c;
+font-size:8pt;
+padding-bottom:22px;
+padding-top:6px;
+width:775px;
+}
+.ms-blogedit{
+font-size:8pt;
+line-height:1.7em;
+vertical-align:top;
+/* [ReplaceColor(themeColor:"Accent3-Lightest")] */;
+}
+.ms-blogedit a{
+height:22px;
+padding:0px 5px 0 5px;
+/* [ReplaceColor(themeColor:"Accent3")] */ color:#003399;
+background-image:url("/_layouts/images/toolgrad.gif");
+/* [ReplaceColor(themeColor:"Accent3-Lightest")] */ background-color:#d6e8ff;
+/* [ReplaceColor(themeColor:"Accent3-Darker")] */ border:1px solid #83b0ec;
+}
+.ms-blogrss
+{
+font-size:8pt;
+/* [ReplaceColor(themeColor:"Accent3-Lightest")] */ border-top:solid 1px #e3efff;
+padding-top:5px;
+}
+.ms-blogrss a{
+/* [ReplaceColor(themeColor:"Accent3")] */ color:#003399;
+}
+.ms-blogrss img
+{
+vertical-align:middle;
+border:none;
+}
+.ms-commenttable{
+margin:15px 0 0 0;
+padding:0px;
+width:775px;
+}
+.ms-commenttable td{
+/* [ReplaceColor(themeColor:"Accent3-Lightest")] */ border-top:solid 1px #d6e8ff;
+}
+.ms-CommentFooter a
+{
+padding-top:4px;
+margin:0;
+}
+.ms-CategoryTitleCell
+{
+padding:0px 0px 0px 0px;
+}
+.ms-CategoryTitleCell a
+{
+display:block;
+background:transparent url("/_layouts/images/navbullet.gif");
+background-position:left top;
+background-repeat:no-repeat;
+margin:0px;
+padding:3px 0px 3px 16px;
+}
+.ms-BlogEmptyListText
+{
+padding:2px 2px 2px 10px;
+}
+.ms-BlogNavigator p.ms-descriptiontext
+{
+display:none;
+}
+.ms-blog-addnew{
+padding:3px 4px 4px 10px;
+margin-top:10px;
+}
+.ms-blog-addnew-img{
+margin-right:5px;
+display:inline-block;
+}
+.ms-BlogNavigator div.ms-navheader{
+/* [ReplaceColor(themeColor:"Accent3-Lightest")] */ background-color:#d6e8ff;
+/* [ReplaceColor(themeColor:"Light1-Lightest")] */ border-top:solid 1px #f2f8ff;
+/* [ReplaceColor(themeColor:"Light1-Lightest")] */ border-left:solid 1px #f2f8ff;
+/* [ReplaceColor(themeColor:"Accent3-Lighter")] */ border-bottom:1px solid #add1ff;
+padding:1px 6px 3px 6px;
+}
+.ms-BlogNavigator div.ms-navheader a{
+/* [ReplaceColor(themeColor:"Accent3")] */ color:#003399;
+}
+.ms-BlogNavigator div.ms-navheader{
+/* [ReplaceColor(themeColor:"Dark1-Medium")] */ color:#4c4c4c;
+font-weight:bold;
+}
+.ms-BlogNavigator .ms-quicklaunch table td{
+border-top:none;
+}
+.ms-blogquicklaunch table td{
+border-top:none;
+}
+.ms-BlogNavigator div.ms-WPBody{
+/* [ReplaceColor(themeColor:"Accent3-Lighter")] */ border-top:solid 1px #add1ff;
+}
+.ms-BlogNavigator div.ms-PartSpacingVertical
+{
+font-size:1pt;
+margin-top:0px;
+}
+.ms-BlogNavigator td.ms-addnew{
+padding-left:6px;
+}
+.ms-BlogNavigator td.ms-addnew img{
+margin-right:2px;
+}
+.ms-BlogEmptyListText{
+padding:4px 4px 2px 6px;
+/* [ReplaceColor(themeColor:"Dark1-Medium")] */ color:#4c4c4c;
+}
+.ms-PostRightFooter
+{
+font-size:8pt;
+/* [ReplaceColor(themeColor:"Light1-Darker")] */ color:#999999;
+vertical-align:bottom;
+text-align:left;
+/* [ReplaceColor(themeColor:"Accent3-Lightest")] */ border-top:solid 1px #e3efff;
+padding-top:6px;
+}
+.ms-CategoryTitle{
+font-size:16pt;
+/* [ReplaceColor(themeColor:"Accent3-Lightest")] */ border-top:solid 1px #e3efff;
+padding-top:6px;
+}
+.ms-CategoryTitle span{
+position:relative;
+left:-2px;
+right:auto;
+}
+.ms-CategoryTitle a
+{
+/* [ReplaceColor(themeColor:"Dark1-Medium")] */ color:#4c4c4c;
+text-decoration:none;
+}
+.ms-CategoryTitleMonth{
+font-size:16pt;
+padding-top:6px;
+padding-bottom:6px;
+}
+.ms-ArchiveTitle{
+font-size:16pt;
+padding-top:10px;
+padding-bottom:10px;
+}
+.ms-ArchiveYearRow{
+/* [ReplaceColor(themeColor:"Light1")] */ background-color:#ffffff;
+font-weight:bold;
+padding-bottom:6px;
+padding-top:6px;
+}
+.ms-ArchiveYearCell
+{
+font-size:10pt;
+padding-top:6px;
+padding-bottom:6px;
+}
+.ms-ArchiveMonthRow{
+height:16px;
+/* [ReplaceColor(themeColor:"Light1")] */ background-color:#ffffff;
+}
+.ms-ArchiveMonthCell a
+{
+display:block;
+background:transparent;
+background-position:left top;
+background-repeat:no-repeat;
+margin:0px;
+}
+.ms-YearTitle{
+font-size:14pt;
+padding-top:3px;
+padding-bottom:3px;
+}
+.ms-MonthTitle{
+font-size:12pt;
+padding-top:1px;
+padding-bottom:1px;
+}
+.ms-long{
+width:386px;
+font-size:8pt;
+font-family:Verdana,sans-serif;
+}
+@media print{
+.ms-buttonheightwidth2{
+display:none;
+}
+}

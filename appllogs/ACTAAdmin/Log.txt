@@ -1,0 +1,719 @@
+﻿02/13/2024 09:31:47 OPEN SESSIONS NUM: 6
+
+02/13/2024 09:49:02 OPEN SESSIONS NUM: 6
+
+02/13/2024 09:52:26 OPEN SESSIONS NUM: 6
+
+02/13/2024 13:19:26 OPEN SESSIONS NUM: 6
+
+02/23/2024 15:48:51 OPEN SESSIONS NUM: 0
+
+02/24/2024 15:30:01 OPEN SESSIONS NUM: 0
+
+02/24/2024 16:06:02 OPEN SESSIONS NUM: 0
+
+02/24/2024 16:36:28 OPEN SESSIONS NUM: 0
+
+02/24/2024 17:23:17 OPEN SESSIONS NUM: 0
+
+03/18/2024 16:04:14 OPEN SESSIONS NUM: 6
+
+03/20/2024 11:18:12 OPEN SESSIONS NUM: 8
+
+03/20/2024 11:18:12 ACTA.checkVisibility(): Object reference not set to an instance of an object.Šifarnici_Mašine
+
+03/20/2024 11:18:13 ACTA.checkVisibility(): Object reference not set to an instance of an object.Intervencije_Evidencija pauza
+
+03/20/2024 11:21:36 OPEN SESSIONS NUM: 8
+
+03/20/2024 11:21:36 ACTA.checkVisibility(): Object reference not set to an instance of an object.Šifarnici_Mašine
+
+03/20/2024 11:21:38 ACTA.checkVisibility(): Object reference not set to an instance of an object.Intervencije_Evidencija pauza
+
+03/20/2024 11:29:29 OPEN SESSIONS NUM: 8
+
+03/20/2024 11:29:30 ACTA.checkVisibility(): Object reference not set to an instance of an object.Šifarnici_Mašine
+
+03/20/2024 11:29:32 ACTA.checkVisibility(): Object reference not set to an instance of an object.Intervencije_Evidencija pauza
+
+03/20/2024 12:18:41 OPEN SESSIONS NUM: 8
+
+03/20/2024 12:18:42 ACTA.checkVisibility(): Object reference not set to an instance of an object.Šifarnici_Mašine
+
+03/20/2024 12:18:43 ACTA.checkVisibility(): Object reference not set to an instance of an object.Intervencije_Evidencija pauza
+
+03/20/2024 14:16:01 OPEN SESSIONS NUM: 8
+
+03/20/2024 14:16:01 ACTA.checkVisibility(): Object reference not set to an instance of an object.Šifarnici_Mašine
+
+03/20/2024 14:16:03 ACTA.checkVisibility(): Object reference not set to an instance of an object.Intervencije_Evidencija pauza
+
+03/20/2024 14:17:23 OPEN SESSIONS NUM: 8
+
+03/20/2024 14:17:23 ACTA.checkVisibility(): Object reference not set to an instance of an object.Šifarnici_Mašine
+
+03/20/2024 14:17:25 ACTA.checkVisibility(): Object reference not set to an instance of an object.Intervencije_Evidencija pauza
+
+03/20/2024 14:47:10 OPEN SESSIONS NUM: 8
+
+03/20/2024 14:47:10 ACTA.checkVisibility(): Object reference not set to an instance of an object.Šifarnici_Mašine
+
+03/20/2024 14:47:15 ACTA.checkVisibility(): Object reference not set to an instance of an object.Intervencije_Evidencija pauza
+
+03/20/2024 15:23:54 OPEN SESSIONS NUM: 8
+
+03/20/2024 15:23:55 ACTA.checkVisibility(): Object reference not set to an instance of an object.Šifarnici_Mašine
+
+03/20/2024 15:23:56 ACTA.checkVisibility(): Object reference not set to an instance of an object.Intervencije_Evidencija pauza
+
+03/22/2024 10:59:48 ACTA.checkVisibility(): Object reference not set to an instance of an object.Šifarnici_Mašine
+
+03/22/2024 10:59:49 ACTA.checkVisibility(): Object reference not set to an instance of an object.Intervencije_Evidencija pauza
+
+03/25/2024 08:35:34 OPEN SESSIONS NUM: 8
+
+03/25/2024 08:35:34 ACTA.checkVisibility(): Object reference not set to an instance of an object.Šifarnici_Mašine
+
+03/25/2024 08:35:36 ACTA.checkVisibility(): Object reference not set to an instance of an object.Intervencije_Evidencija pauza
+
+04/10/2024 11:50:15ACTA.ACTA_Load() : Postojeća funkcionalnost nije odgovarala licenciranoj funkcionalnosti.
+
+04/10/2024 11:50:17 ACTA.checkVisibility(): Object reference not set to an instance of an object.Izveštaji_Posebni izveštaji_Hyatt
+
+04/10/2024 11:50:18 ACTA.checkVisibility(): Object reference not set to an instance of an object.Izveštaji_Posebni izveštaji_Magna
+
+04/10/2024 12:07:33 OPEN SESSIONS NUM: 0
+
+04/10/2024 12:07:35ACTA.ACTA_Load() : Postojeća funkcionalnost nije odgovarala licenciranoj funkcionalnosti.
+
+04/10/2024 12:07:37 ACTA.checkVisibility(): Object reference not set to an instance of an object.Izveštaji_Posebni izveštaji_Hyatt
+
+04/10/2024 12:07:37 ACTA.checkVisibility(): Object reference not set to an instance of an object.Izveštaji_Posebni izveštaji_Magna
+
+04/24/2024 08:27:13 ApplUserLog.SearchOpenSessions(): Invalid column name 'login_chanel'.
+
+04/24/2024 08:27:13 Exception in: Common.NotificationController.testLicence() :    at Common.ApplUserLog.SearchOpenSessions(String userID, String host, String chanel) in E:\CP Security\ACTA solutions\ACTA verzija sa USB svi browseri Web\HUTCHINSON pmo\Common\ApplUserLog.cs:line 149
+   at Common.NotificationController.testLicence() in E:\CP Security\ACTA solutions\ACTA verzija sa USB svi browseri Web\HUTCHINSON pmo\Common\NotificationController.cs:line 546
+
+04/24/2024 08:30:23 OPEN SESSIONS NUM: 0
+
+04/24/2024 08:30:24ACTA.ACTA_Load() : Postojeća funkcionalnost nije odgovarala licenciranoj funkcionalnosti.
+
+04/24/2024 08:30:25Common.ApplUserLog.btnLogIn_Click(): Invalid column name 'login_status'.
+Invalid column name 'login_type'.
+
+04/24/2024 08:30:25 ACTA.checkVisibility(): Object reference not set to an instance of an object.Šifarnici_Organizacione jedinice
+
+04/24/2024 08:30:26 ACTA.checkVisibility(): Object reference not set to an instance of an object.Šifarnici_Medicinski pregled
+
+04/24/2024 08:30:27 ACTA.checkVisibility(): Object reference not set to an instance of an object.Šifarnici_Mašine
+
+04/24/2024 08:30:27 ACTA.checkVisibility(): Object reference not set to an instance of an object.Izveštaji_Standardni izveštaji_Izveštaji o prisutnosti_Izveštaji po jedinicama
+
+04/24/2024 08:30:28 ACTA.checkVisibility(): Object reference not set to an instance of an object.Izveštaji_Standardni izveštaji_Izveštaji o prisutnosti_Mesečni izveštaj o dolascima zaposlenih
+
+04/24/2024 08:30:28 ACTA.checkVisibility(): Object reference not set to an instance of an object.Izveštaji_Standardni izveštaji_Izveštaji o prisutnosti_Izveštaj za plate (Forecast)
+
+04/24/2024 08:30:28 ACTA.checkVisibility(): Object reference not set to an instance of an object.Izveštaji_Standardni izveštaji_Izveštaji o prisutnosti_Izveštaji o otvorenim parovima zaposlenih
+
+04/24/2024 08:30:29 ACTA.checkVisibility(): Object reference not set to an instance of an object.Izveštaji_Standardni izveštaji_Izveštaji o radnom vremenu_Izveštaji o godišnjim odmorima zaposlenih
+
+04/24/2024 08:30:30 ACTA.checkVisibility(): Object reference not set to an instance of an object.Izveštaji_Posebni izveštaji_Mittal izveštaji_Izveštaji po jedinicama
+
+04/24/2024 08:30:31 ACTA.checkVisibility(): Object reference not set to an instance of an object.Izveštaji_Posebni izveštaji_FIAT
+
+04/24/2024 08:30:32 ACTA.checkVisibility(): Object reference not set to an instance of an object.Izveštaji_Posebni izveštaji_Lames
+
+04/24/2024 08:30:32 ACTA.checkVisibility(): Object reference not set to an instance of an object.Izveštaji_Posebni izveštaji_WakerNeuson izveštaji
+
+04/24/2024 08:30:32 ACTA.checkVisibility(): Object reference not set to an instance of an object.Izveštaji_Posebni izveštaji_Confezioni Andrea izveštaji
+
+04/24/2024 08:30:33 ACTA.checkVisibility(): Object reference not set to an instance of an object.Izveštaji_Posebni izveštaji_PMC izveštaji
+
+04/24/2024 08:30:33 ACTA.checkVisibility(): Object reference not set to an instance of an object.Izveštaji_Posebni izveštaji_Geox izveštaji
+
+04/24/2024 08:30:33 ACTA.checkVisibility(): Object reference not set to an instance of an object.Izveštaji_Posebni izveštaji_Grundfos
+
+04/24/2024 08:30:34 ACTA.checkVisibility(): Object reference not set to an instance of an object.Izveštaji_Posebni izveštaji_Hyatt
+
+04/24/2024 08:30:34 ACTA.checkVisibility(): Object reference not set to an instance of an object.Izveštaji_Posebni izveštaji_Magna
+
+04/24/2024 08:30:34 ACTA.checkVisibility(): Object reference not set to an instance of an object.Izveštaji_Manipulacija dokumentima
+
+04/24/2024 08:30:35 ACTA.checkVisibility(): Object reference not set to an instance of an object.Intervencije_Masovni unos
+
+04/24/2024 08:30:35 ACTA.checkVisibility(): Object reference not set to an instance of an object.Intervencije_Evidencija pauza
+
+04/24/2024 08:30:37 ACTA.checkVisibility(): Object reference not set to an instance of an object.Održavanje_Restartovanje brojača
+
+04/24/2024 08:30:37 ACTA.checkVisibility(): Object reference not set to an instance of an object.Održavanje_Sinhronizacija
+
+04/24/2024 08:30:38 ACTA.checkVisibility(): Object reference not set to an instance of an object.Podešavanje_Pristup podacima_Podešavanje odgovornih osoba
+
+04/24/2024 08:30:39 ACTA.checkVisibility(): Object reference not set to an instance of an object.Podešavanje_Podešavanje pravila
+
+04/24/2024 08:30:39 ACTA.checkVisibility(): Object reference not set to an instance of an object.Podešavanje_Podešavanje cut off date-a
+
+04/24/2024 08:30:40 ACTA.checkVisibility(): Object reference not set to an instance of an object.Podešavanje_Sistem
+
+04/24/2024 08:30:47 ApplUsersXWU.FindWUForUser(): Exception: Column 'code' does not belong to table WorkingUnit.
+
+04/24/2024 08:30:47 MealAssigned.btnClear_Click(): Exception: Column 'code' does not belong to table WorkingUnit.
+
+05/24/2024 13:34:02 OPEN SESSIONS NUM: 1
+
+05/24/2024 13:36:27 OPEN SESSIONS NUM: 1
+
+05/24/2024 13:55:02 OPEN SESSIONS NUM: 1
+
+05/24/2024 14:42:37 OPEN SESSIONS NUM: 1
+
+05/24/2024 14:57:56 OPEN SESSIONS NUM: 1
+
+05/24/2024 15:29:41 OPEN SESSIONS NUM: 1
+
+05/27/2024 09:19:23ACTA.ACTA_Load() : Postojeća funkcionalnost nije odgovarala licenciranoj funkcionalnosti.
+
+05/27/2024 09:20:59 OPEN SESSIONS NUM: 1
+
+05/27/2024 09:20:59ACTA.ACTA_Load() : Postojeća funkcionalnost nije odgovarala licenciranoj funkcionalnosti.
+
+05/27/2024 09:21:00 ACTA.checkVisibility(): Object reference not set to an instance of an object.Izveštaji_Posebni izveštaji_Mittal izveštaji_Izveštaji po jedinicama
+
+05/27/2024 09:21:01 ACTA.checkVisibility(): Object reference not set to an instance of an object.Izveštaji_Posebni izveštaji_Hyatt
+
+05/27/2024 09:21:01 ACTA.checkVisibility(): Object reference not set to an instance of an object.Izveštaji_Posebni izveštaji_Magna
+
+05/27/2024 09:21:22 OPEN SESSIONS NUM: 1
+
+05/27/2024 09:21:23ACTA.ACTA_Load() : Postojeća funkcionalnost nije odgovarala licenciranoj funkcionalnosti.
+
+05/27/2024 09:22:24 MealAssignedAdd.populateMealTypeCombo(): Cannot bind to the new display member.
+Parameter name: newDisplayMember
+
+05/27/2024 09:22:39 MealAssignedAdd.btnAssign_Click(): Object reference not set to an instance of an object.
+
+05/27/2024 09:22:42 MealAssignedAdd.btnAssign_Click(): Object reference not set to an instance of an object.
+
+05/27/2024 09:52:32 IOPair.getIOPairsForBreaks(): Exception: Incorrect syntax near ')'.
+
+07/16/2024 13:13:30 Greska prilikom generisanja izvestaja : Index was outside the bounds of the array.
+07/16/2024 13:13:31 Greska prilikom generisanja izvestaja : Index was outside the bounds of the array.
+07/16/2024 13:13:31 Greska prilikom generisanja izvestaja : Index was outside the bounds of the array.
+07/16/2024 13:13:32 Greska prilikom generisanja izvestaja : Index was outside the bounds of the array.
+07/16/2024 13:13:32 Greska prilikom generisanja izvestaja : Index was outside the bounds of the array.
+07/16/2024 13:13:33 Greska prilikom generisanja izvestaja : Index was outside the bounds of the array.
+07/16/2024 13:13:33 Greska prilikom generisanja izvestaja : Index was outside the bounds of the array.
+07/16/2024 13:13:34 Greska prilikom generisanja izvestaja : Index was outside the bounds of the array.
+07/16/2024 13:13:34 Greska prilikom generisanja izvestaja : Index was outside the bounds of the array.
+07/16/2024 13:13:35 Greska prilikom generisanja izvestaja : Index was outside the bounds of the array.
+07/16/2024 13:13:35 Greska prilikom generisanja izvestaja : Index was outside the bounds of the array.
+07/16/2024 13:13:36 Greska prilikom generisanja izvestaja : Index was outside the bounds of the array.
+07/16/2024 13:13:36 Greska prilikom generisanja izvestaja : Index was outside the bounds of the array.
+07/16/2024 13:13:37 Greska prilikom generisanja izvestaja : Index was outside the bounds of the array.
+07/16/2024 13:13:37 Greska prilikom generisanja izvestaja : Index was outside the bounds of the array.
+07/16/2024 13:13:38 Greska prilikom generisanja izvestaja : Index was outside the bounds of the array.
+07/16/2024 13:13:38 Greska prilikom generisanja izvestaja : Index was outside the bounds of the array.
+07/16/2024 13:13:39 Greska prilikom generisanja izvestaja : Index was outside the bounds of the array.
+07/16/2024 13:13:40 Greska prilikom generisanja izvestaja : Index was outside the bounds of the array.
+07/16/2024 13:13:40 Greska prilikom generisanja izvestaja : Index was outside the bounds of the array.
+07/16/2024 13:13:41 Greska prilikom generisanja izvestaja : Index was outside the bounds of the array.
+07/16/2024 13:13:41 Greska prilikom generisanja izvestaja : Index was outside the bounds of the array.
+07/16/2024 13:13:42 Greska prilikom generisanja izvestaja : Index was outside the bounds of the array.
+07/16/2024 13:13:42 Greska prilikom generisanja izvestaja : Index was outside the bounds of the array.
+07/16/2024 13:13:43 Greska prilikom generisanja izvestaja : Index was outside the bounds of the array.
+07/16/2024 13:13:43 Greska prilikom generisanja izvestaja : Index was outside the bounds of the array.
+07/16/2024 13:13:44 Greska prilikom generisanja izvestaja : Index was outside the bounds of the array.
+07/16/2024 13:13:45 Greska prilikom generisanja izvestaja : Index was outside the bounds of the array.
+07/16/2024 13:13:45 Greska prilikom generisanja izvestaja : Index was outside the bounds of the array.
+07/16/2024 13:13:46 Greska prilikom generisanja izvestaja : Index was outside the bounds of the array.
+07/16/2024 13:23:04 OPEN SESSIONS NUM: 1
+
+09/03/2024 09:47:31 OPEN SESSIONS NUM: 8
+
+09/03/2024 09:47:31 ACTA.checkVisibility(): Object reference not set to an instance of an object.Šifarnici_Mašine
+
+09/03/2024 09:47:35 ACTA.checkVisibility(): Object reference not set to an instance of an object.Intervencije_Evidencija pauza
+
+09/03/2024 10:43:39 OPEN SESSIONS NUM: 8
+
+09/03/2024 10:43:40 ACTA.checkVisibility(): Object reference not set to an instance of an object.Šifarnici_Mašine
+
+09/03/2024 10:43:41 ACTA.checkVisibility(): Object reference not set to an instance of an object.Intervencije_Evidencija pauza
+
+09/03/2024 10:56:08 OPEN SESSIONS NUM: 8
+
+09/03/2024 10:56:08 ACTA.checkVisibility(): Object reference not set to an instance of an object.Šifarnici_Mašine
+
+09/03/2024 10:56:09 ACTA.checkVisibility(): Object reference not set to an instance of an object.Intervencije_Evidencija pauza
+
+09/03/2024 10:58:45 OPEN SESSIONS NUM: 8
+
+09/03/2024 10:58:46 ACTA.checkVisibility(): Object reference not set to an instance of an object.Šifarnici_Mašine
+
+09/03/2024 10:58:47 ACTA.checkVisibility(): Object reference not set to an instance of an object.Intervencije_Evidencija pauza
+
+09/03/2024 11:17:48 OPEN SESSIONS NUM: 8
+
+09/03/2024 11:17:48 ACTA.checkVisibility(): Object reference not set to an instance of an object.Šifarnici_Mašine
+
+09/03/2024 11:17:49 ACTA.checkVisibility(): Object reference not set to an instance of an object.Intervencije_Evidencija pauza
+
+09/03/2024 11:20:51 OPEN SESSIONS NUM: 8
+
+09/03/2024 11:20:52 ACTA.checkVisibility(): Object reference not set to an instance of an object.Šifarnici_Mašine
+
+09/03/2024 11:20:53 ACTA.checkVisibility(): Object reference not set to an instance of an object.Intervencije_Evidencija pauza
+
+09/03/2024 11:21:00 Employee.GetNumberOfDaysVacationPerEmployees(): Input string was not in a correct format.
+
+09/03/2024 11:21:00 ACTA.menuVacationReport_Click(): Input string was not in a correct format.
+
+09/03/2024 11:21:57 Employee.GetNumberOfDaysVacationPerEmployees(): Input string was not in a correct format.
+
+09/03/2024 11:21:57 ACTA.menuVacationReport_Click(): Input string was not in a correct format.
+
+09/03/2024 12:43:36 OPEN SESSIONS NUM: 8
+
+09/03/2024 12:43:36 ACTA.checkVisibility(): Object reference not set to an instance of an object.Šifarnici_Mašine
+
+09/03/2024 12:43:37 ACTA.checkVisibility(): Object reference not set to an instance of an object.Intervencije_Evidencija pauza
+
+11/05/2024 09:56:08 OPEN SESSIONS NUM: 2
+
+11/05/2024 09:56:13ACTA.ACTA_Load() : Postojeća funkcionalnost nije odgovarala licenciranoj funkcionalnosti.
+
+11/05/2024 09:56:15 ACTA.checkVisibility(): Object reference not set to an instance of an object.Izveštaji_Posebni izveštaji_Mittal izveštaji_Izveštaji po jedinicama
+
+11/05/2024 09:56:16 ACTA.checkVisibility(): Object reference not set to an instance of an object.Izveštaji_Posebni izveštaji_Hyatt
+
+11/05/2024 09:56:17 ACTA.checkVisibility(): Object reference not set to an instance of an object.Izveštaji_Posebni izveštaji_Magna
+
+11/05/2024 10:24:49 OPEN SESSIONS NUM: 2
+
+11/05/2024 10:24:49 ACTA.checkVisibility(): Object reference not set to an instance of an object.Izveštaji_Posebni izveštaji_Mittal izveštaji_Izveštaji po jedinicama
+
+11/05/2024 10:24:51 ACTA.checkVisibility(): Object reference not set to an instance of an object.Izveštaji_Posebni izveštaji_Hyatt
+
+11/05/2024 10:24:51 ACTA.checkVisibility(): Object reference not set to an instance of an object.Izveštaji_Posebni izveštaji_Magna
+
+11/05/2024 12:31:56 OPEN SESSIONS NUM: 2
+
+11/05/2024 12:31:56 ACTA.checkVisibility(): Object reference not set to an instance of an object.Izveštaji_Posebni izveštaji_Mittal izveštaji_Izveštaji po jedinicama
+
+11/05/2024 12:31:58 ACTA.checkVisibility(): Object reference not set to an instance of an object.Izveštaji_Posebni izveštaji_Hyatt
+
+11/05/2024 12:31:58 ACTA.checkVisibility(): Object reference not set to an instance of an object.Izveštaji_Posebni izveštaji_Magna
+
+11/05/2024 13:04:04 OPEN SESSIONS NUM: 2
+
+11/05/2024 13:04:05 ACTA.checkVisibility(): Object reference not set to an instance of an object.Izveštaji_Posebni izveštaji_Mittal izveštaji_Izveštaji po jedinicama
+
+11/05/2024 13:04:06 ACTA.checkVisibility(): Object reference not set to an instance of an object.Izveštaji_Posebni izveštaji_Hyatt
+
+11/05/2024 13:04:07 ACTA.checkVisibility(): Object reference not set to an instance of an object.Izveštaji_Posebni izveštaji_Magna
+
+11/05/2024 13:07:47 OPEN SESSIONS NUM: 2
+
+11/05/2024 13:07:48 ACTA.checkVisibility(): Object reference not set to an instance of an object.Izveštaji_Posebni izveštaji_Mittal izveštaji_Izveštaji po jedinicama
+
+11/05/2024 13:07:50 ACTA.checkVisibility(): Object reference not set to an instance of an object.Izveštaji_Posebni izveštaji_Hyatt
+
+11/05/2024 13:07:50 ACTA.checkVisibility(): Object reference not set to an instance of an object.Izveštaji_Posebni izveštaji_Magna
+
+11/05/2024 13:14:36 OPEN SESSIONS NUM: 2
+
+11/05/2024 13:14:37 ACTA.checkVisibility(): Object reference not set to an instance of an object.Izveštaji_Posebni izveštaji_Mittal izveštaji_Izveštaji po jedinicama
+
+11/05/2024 13:14:39 ACTA.checkVisibility(): Object reference not set to an instance of an object.Izveštaji_Posebni izveštaji_Hyatt
+
+11/05/2024 13:14:39 ACTA.checkVisibility(): Object reference not set to an instance of an object.Izveštaji_Posebni izveštaji_Magna
+
+11/05/2024 13:26:39 OPEN SESSIONS NUM: 2
+
+11/05/2024 13:26:40 ACTA.checkVisibility(): Object reference not set to an instance of an object.Izveštaji_Posebni izveštaji_Mittal izveštaji_Izveštaji po jedinicama
+
+11/05/2024 13:26:41 ACTA.checkVisibility(): Object reference not set to an instance of an object.Izveštaji_Posebni izveštaji_Hyatt
+
+11/05/2024 13:26:41 ACTA.checkVisibility(): Object reference not set to an instance of an object.Izveštaji_Posebni izveštaji_Magna
+
+11/05/2024 14:05:35 OPEN SESSIONS NUM: 2
+
+11/05/2024 14:05:35 ACTA.checkVisibility(): Object reference not set to an instance of an object.Izveštaji_Posebni izveštaji_Mittal izveštaji_Izveštaji po jedinicama
+
+11/05/2024 14:05:37 ACTA.checkVisibility(): Object reference not set to an instance of an object.Izveštaji_Posebni izveštaji_Hyatt
+
+11/05/2024 14:05:37 ACTA.checkVisibility(): Object reference not set to an instance of an object.Izveštaji_Posebni izveštaji_Magna
+
+11/05/2024 14:16:38 OPEN SESSIONS NUM: 2
+
+11/05/2024 14:16:42ACTA.ACTA_Load() : Postojeća funkcionalnost nije odgovarala licenciranoj funkcionalnosti.
+
+11/12/2024 10:05:14 OPEN SESSIONS NUM: 2
+
+11/12/2024 10:05:15 ACTA.checkVisibility(): Object reference not set to an instance of an object.Izveštaji_Standardni izveštaji_Izveštaji o prisutnosti_Report for SMP --- Broj prisutnih i odsutnih
+
+11/12/2024 10:09:05 OPEN SESSIONS NUM: 2
+
+11/12/2024 10:36:52 OPEN SESSIONS NUM: 2
+
+11/12/2024 11:10:04 OPEN SESSIONS NUM: 2
+
+11/12/2024 11:14:35 OPEN SESSIONS NUM: 2
+
+11/12/2024 11:23:29 OPEN SESSIONS NUM: 2
+
+11/12/2024 11:52:08 OPEN SESSIONS NUM: 2
+
+11/12/2024 11:52:18 Employee.listaRadnikaZaWU(): Exception in MSSQLEmployeeDAO.listaRadnikaZaWU() : Incorrect syntax near 'SMP'.
+
+11/12/2024 11:55:21 OPEN SESSIONS NUM: 2
+
+11/12/2024 12:26:26 OPEN SESSIONS NUM: 2
+
+11/12/2024 12:48:56 OPEN SESSIONS NUM: 2
+
+11/12/2024 12:50:52 OPEN SESSIONS NUM: 2
+
+11/12/2024 12:56:01 OPEN SESSIONS NUM: 2
+
+11/12/2024 13:31:24 OPEN SESSIONS NUM: 2
+
+11/12/2024 13:38:37 OPEN SESSIONS NUM: 2
+
+11/12/2024 14:14:03 OPEN SESSIONS NUM: 2
+
+11/12/2024 14:26:51 OPEN SESSIONS NUM: 2
+
+11/12/2024 14:40:27 OPEN SESSIONS NUM: 2
+
+11/12/2024 14:48:03 OPEN SESSIONS NUM: 2
+
+11/12/2024 14:54:05 OPEN SESSIONS NUM: 2
+
+11/12/2024 15:01:25 OPEN SESSIONS NUM: 2
+
+11/12/2024 15:09:29 OPEN SESSIONS NUM: 2
+
+11/12/2024 15:24:48 OPEN SESSIONS NUM: 2
+
+11/12/2024 15:26:38 OPEN SESSIONS NUM: 2
+
+11/12/2024 15:28:32 OPEN SESSIONS NUM: 2
+
+11/12/2024 15:29:57 Employee.listaRadnikaZaWU(): Exception in MSSQLEmployeeDAO.listaRadnikaZaWU() : Subquery returned more than 1 value. This is not permitted when the subquery follows =, !=, <, <= , >, >= or when the subquery is used as an expression.
+
+11/12/2024 15:34:55 OPEN SESSIONS NUM: 2
+
+11/12/2024 15:50:48 OPEN SESSIONS NUM: 2
+
+11/13/2024 08:11:39 OPEN SESSIONS NUM: 2
+
+11/13/2024 08:23:54 OPEN SESSIONS NUM: 2
+
+11/13/2024 08:26:22 OPEN SESSIONS NUM: 2
+
+11/13/2024 08:30:34 OPEN SESSIONS NUM: 2
+
+11/13/2024 08:44:31 OPEN SESSIONS NUM: 2
+
+11/13/2024 08:48:45 OPEN SESSIONS NUM: 2
+
+11/13/2024 09:23:00 OPEN SESSIONS NUM: 2
+
+11/13/2024 09:26:45 OPEN SESSIONS NUM: 2
+
+11/13/2024 09:30:34 OPEN SESSIONS NUM: 2
+
+11/13/2024 09:37:40 OPEN SESSIONS NUM: 2
+
+11/13/2024 09:49:38 OPEN SESSIONS NUM: 2
+
+11/13/2024 12:19:26 OPEN SESSIONS NUM: 2
+
+11/13/2024 12:22:18 OPEN SESSIONS NUM: 2
+
+11/13/2024 12:27:02 OPEN SESSIONS NUM: 2
+
+11/13/2024 13:03:25 OPEN SESSIONS NUM: 2
+
+11/13/2024 14:35:08 OPEN SESSIONS NUM: 2
+
+11/13/2024 14:36:39 OPEN SESSIONS NUM: 2
+
+11/13/2024 14:48:47 OPEN SESSIONS NUM: 2
+
+11/13/2024 14:53:17 OPEN SESSIONS NUM: 2
+
+11/13/2024 14:59:57 OPEN SESSIONS NUM: 2
+
+11/13/2024 15:05:53 OPEN SESSIONS NUM: 2
+
+11/13/2024 15:14:25 OPEN SESSIONS NUM: 2
+
+11/13/2024 15:25:49 OPEN SESSIONS NUM: 2
+
+11/13/2024 15:32:58 OPEN SESSIONS NUM: 2
+
+11/13/2024 15:53:51 OPEN SESSIONS NUM: 2
+
+11/14/2024 08:18:03 OPEN SESSIONS NUM: 2
+
+11/14/2024 09:41:01 OPEN SESSIONS NUM: 2
+
+11/14/2024 10:09:22 OPEN SESSIONS NUM: 2
+
+11/14/2024 10:20:42 OPEN SESSIONS NUM: 2
+
+11/14/2024 10:25:29 OPEN SESSIONS NUM: 2
+
+11/14/2024 10:32:26 OPEN SESSIONS NUM: 2
+
+11/14/2024 12:15:58 OPEN SESSIONS NUM: 2
+
+11/14/2024 12:17:55 OPEN SESSIONS NUM: 2
+
+11/14/2024 12:20:38 OPEN SESSIONS NUM: 2
+
+11/14/2024 12:57:01 OPEN SESSIONS NUM: 2
+
+11/14/2024 12:59:03 OPEN SESSIONS NUM: 2
+
+11/14/2024 13:00:22 OPEN SESSIONS NUM: 2
+
+11/14/2024 13:27:43 OPEN SESSIONS NUM: 2
+
+11/14/2024 13:33:35 OPEN SESSIONS NUM: 2
+
+11/14/2024 13:42:12 OPEN SESSIONS NUM: 2
+
+11/14/2024 13:48:41 OPEN SESSIONS NUM: 2
+
+11/14/2024 13:51:18 OPEN SESSIONS NUM: 2
+
+11/14/2024 14:12:13 OPEN SESSIONS NUM: 2
+
+11/14/2024 14:14:39 OPEN SESSIONS NUM: 2
+
+11/14/2024 14:17:57 OPEN SESSIONS NUM: 2
+
+11/14/2024 14:20:45 OPEN SESSIONS NUM: 2
+
+11/14/2024 14:26:28 OPEN SESSIONS NUM: 2
+
+11/14/2024 14:28:41 OPEN SESSIONS NUM: 2
+
+11/14/2024 14:37:38 OPEN SESSIONS NUM: 2
+
+11/14/2024 14:38:38 OPEN SESSIONS NUM: 2
+
+11/15/2024 08:48:26 OPEN SESSIONS NUM: 3
+
+11/15/2024 09:17:58 OPEN SESSIONS NUM: 3
+
+11/15/2024 09:20:02 OPEN SESSIONS NUM: 3
+
+11/15/2024 09:22:56 OPEN SESSIONS NUM: 3
+
+11/15/2024 09:29:00 OPEN SESSIONS NUM: 3
+
+11/15/2024 09:32:52 OPEN SESSIONS NUM: 3
+
+11/15/2024 11:49:04 OPEN SESSIONS NUM: 3
+
+11/15/2024 12:00:14 OPEN SESSIONS NUM: 3
+
+11/18/2024 08:20:33 OPEN SESSIONS NUM: 3
+
+11/18/2024 08:23:59 OPEN SESSIONS NUM: 3
+
+11/18/2024 08:24:03ACTA.ACTA_Load() : Postojeća funkcionalnost nije odgovarala licenciranoj funkcionalnosti.
+
+11/18/2024 08:24:04 ACTA.checkVisibility(): Object reference not set to an instance of an object.Izveštaji_Standardni izveštaji_Izveštaji o prisutnosti_Report for SMP --- Broj prisutnih i odsutnih
+
+11/18/2024 08:24:05 ACTA.checkVisibility(): Object reference not set to an instance of an object.Izveštaji_Posebni izveštaji_Mittal izveštaji_Izveštaji po jedinicama
+
+11/18/2024 08:24:06 ACTA.checkVisibility(): Object reference not set to an instance of an object.Izveštaji_Posebni izveštaji_Hyatt
+
+11/18/2024 08:24:07 ACTA.checkVisibility(): Object reference not set to an instance of an object.Izveštaji_Posebni izveštaji_Magna
+
+11/18/2024 08:26:54 OPEN SESSIONS NUM: 3
+
+11/18/2024 08:26:55ACTA.ACTA_Load() : Postojeća funkcionalnost nije odgovarala licenciranoj funkcionalnosti.
+
+11/18/2024 08:39:42 OPEN SESSIONS NUM: 3
+
+11/18/2024 08:48:20 OPEN SESSIONS NUM: 3
+
+11/18/2024 08:57:44 OPEN SESSIONS NUM: 3
+
+11/18/2024 10:01:17 OPEN SESSIONS NUM: 3
+
+11/18/2024 10:07:58 OPEN SESSIONS NUM: 3
+
+11/18/2024 11:28:48 OPEN SESSIONS NUM: 3
+
+11/18/2024 13:38:42 OPEN SESSIONS NUM: 3
+
+11/18/2024 13:43:38 Selected items: 1
+
+11/18/2024 13:43:38 SchemaID: 4
+
+11/18/2024 13:43:38 SchemaName: Fleksibilna centralna smena
+
+11/18/2024 13:43:39 WTSchemaAdd: Enter UpdateClick
+
+11/18/2024 13:43:39 WTSchemaAdd: Item selected
+
+11/18/2024 13:43:39 WTSchemaAdd: Time Schema selected
+
+11/18/2024 13:43:39 WTSchemaAdd: Enter Constructor
+
+11/18/2024 13:43:39 WTSchemaAdd: Leave Constructor
+
+11/18/2024 13:43:39 WTSchemaAdd: Form initialised
+
+11/18/2024 13:43:39 WTSchemaAdd: Enter Load method
+
+11/18/2024 13:43:39 WTSchemaAdd: Leave Load method
+
+11/18/2024 13:44:16 WTSchemaAdd: Form closed
+
+11/19/2024 08:42:00 OPEN SESSIONS NUM: 3
+
+11/19/2024 08:59:04 OPEN SESSIONS NUM: 3
+
+11/19/2024 09:08:10 OPEN SESSIONS NUM: 3
+
+11/19/2024 09:18:11 OPEN SESSIONS NUM: 3
+
+11/19/2024 09:28:46 OPEN SESSIONS NUM: 3
+
+11/19/2024 09:41:43 OPEN SESSIONS NUM: 3
+
+11/19/2024 09:57:56 OPEN SESSIONS NUM: 3
+
+11/19/2024 10:00:54 OPEN SESSIONS NUM: 3
+
+11/19/2024 10:03:13 OPEN SESSIONS NUM: 3
+
+11/19/2024 10:24:54 OPEN SESSIONS NUM: 3
+
+11/19/2024 10:34:02 OPEN SESSIONS NUM: 3
+
+11/19/2024 10:36:25 OPEN SESSIONS NUM: 3
+
+11/19/2024 11:24:05 OPEN SESSIONS NUM: 3
+
+11/19/2024 11:27:46 OPEN SESSIONS NUM: 3
+
+11/19/2024 11:37:31 OPEN SESSIONS NUM: 3
+
+11/19/2024 11:46:36 OPEN SESSIONS NUM: 3
+
+11/19/2024 11:58:24 OPEN SESSIONS NUM: 3
+
+11/19/2024 12:06:31 OPEN SESSIONS NUM: 3
+
+11/19/2024 12:09:59 OPEN SESSIONS NUM: 3
+
+11/19/2024 12:15:40 OPEN SESSIONS NUM: 3
+
+11/19/2024 12:19:22 OPEN SESSIONS NUM: 3
+
+11/19/2024 12:29:44 OPEN SESSIONS NUM: 3
+
+11/19/2024 12:52:38 OPEN SESSIONS NUM: 3
+
+11/19/2024 13:25:10 OPEN SESSIONS NUM: 3
+
+11/19/2024 13:42:54 OPEN SESSIONS NUM: 3
+
+11/19/2024 13:49:43 OPEN SESSIONS NUM: 3
+
+11/20/2024 12:10:05 OPEN SESSIONS NUM: 3
+
+11/20/2024 12:27:02 OPEN SESSIONS NUM: 4
+
+11/20/2024 12:27:06ACTA.ACTA_Load() : Postojeća funkcionalnost nije odgovarala licenciranoj funkcionalnosti.
+
+11/20/2024 12:27:07 ACTA.checkVisibility(): Object reference not set to an instance of an object.Izveštaji_Standardni izveštaji_Izveštaji o prisutnosti_Report for SMP --- Broj prisutnih i odsutnih
+
+11/20/2024 12:28:59 OPEN SESSIONS NUM: 4
+
+12/25/2024 11:49:22ACTA.ACTA_Load() : Postojeća funkcionalnost nije odgovarala licenciranoj funkcionalnosti.
+
+12/25/2024 11:49:24 ACTA.checkVisibility(): Object reference not set to an instance of an object.Izveštaji_Posebni izveštaji_Mittal izveštaji_Izveštaji po jedinicama
+
+12/25/2024 11:49:26 ACTA.checkVisibility(): Object reference not set to an instance of an object.Izveštaji_Posebni izveštaji_Hyatt
+
+12/25/2024 11:49:27 ACTA.checkVisibility(): Object reference not set to an instance of an object.Izveštaji_Posebni izveštaji_Magna
+
+12/25/2024 11:53:40 AccessControlFile.SearchLastIssuedACFiles(): Invalid object name 'ACTA_SMP_files.actamgr.access_control_files'.
+
+12/25/2024 11:53:40 LastTerminalReading.populateListView(): Invalid object name 'ACTA_SMP_files.actamgr.access_control_files'.
+
+12/26/2024 12:15:30ACTA.ACTA_Load() : Postojeća funkcionalnost nije odgovarala licenciranoj funkcionalnosti.
+
+12/26/2024 12:24:42 OPEN SESSIONS NUM: 5
+
+01/15/2025 11:45:37 OPEN SESSIONS NUM: 4
+
+01/15/2025 11:49:44 OPEN SESSIONS NUM: 4
+
+01/15/2025 12:10:29 OPEN SESSIONS NUM: 4
+
+01/15/2025 12:16:40 OPEN SESSIONS NUM: 4
+
+01/24/2025 08:58:59 OPEN SESSIONS NUM: 4
+
+01/24/2025 09:45:01 OPEN SESSIONS NUM: 4
+
+01/24/2025 11:29:34 OPEN SESSIONS NUM: 4
+
+01/24/2025 11:41:01 WTSchemaAdd: Enter Load method
+
+01/24/2025 11:41:02 WTSchemaAdd: Leave Load method
+
+01/24/2025 11:41:24 Selected items: 1
+
+01/24/2025 11:41:24 SchemaID: 10
+
+01/24/2025 11:41:24 SchemaName: Smena 16h-24h
+
+01/24/2025 11:41:25 Selected items: 0
+
+01/24/2025 11:41:25 Selected items: 1
+
+01/24/2025 11:41:25 SchemaID: 8
+
+01/24/2025 11:41:25 SchemaName: Smena 9-17 10-18
+
+01/24/2025 11:41:26 WTSchemaAdd: Enter UpdateClick
+
+01/24/2025 11:41:26 WTSchemaAdd: Item selected
+
+01/24/2025 11:41:26 WTSchemaAdd: Time Schema selected
+
+01/24/2025 11:41:26 WTSchemaAdd: Enter Constructor
+
+01/24/2025 11:41:26 WTSchemaAdd: Leave Constructor
+
+01/24/2025 11:41:26 WTSchemaAdd: Form initialised
+
+01/24/2025 11:41:26 WTSchemaAdd: Enter Load method
+
+01/24/2025 11:41:26 WTSchemaAdd: Leave Load method
+
+01/24/2025 11:42:09 WTSchemaAdd: Form closed
+
+01/29/2025 08:24:04 OPEN SESSIONS NUM: 4
+
+02/28/2025 14:50:55 OPEN SESSIONS NUM: 4
+
+02/28/2025 15:39:49 OPEN SESSIONS NUM: 4
+
+02/28/2025 15:55:45 OPEN SESSIONS NUM: 4
+
+03/26/2025 11:50:55 OPEN SESSIONS NUM: 4
+

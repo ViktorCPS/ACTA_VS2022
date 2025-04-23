@@ -1,0 +1,352 @@
+CREATE TABLE employee_positions
+(
+working_unit_id          INTEGER         NOT NULL,
+position_id              INTEGER         NOT NULL,
+position_code            NVARCHAR(20)    NOT NULL,
+position_title_sr        NVARCHAR(MAX)   NOT NULL,
+position_title_en        NVARCHAR(MAX)   NOT NULL,
+desc_sr                  NVARCHAR(MAX)      NULL,
+desc_en                  NVARCHAR(MAX)      NULL,
+status                   NVARCHAR(50)    NOT NULL,
+created_by		  VARCHAR(20)        NULL,
+created_time    	 DATETIME            NULL,
+modified_by		 VARCHAR(20)         NULL,
+modified_time            DATETIME            NULL
+);
+
+ALTER TABLE employee_positions
+   ADD CONSTRAINT PK_employee_positions PRIMARY KEY (position_id);
+
+ALTER TABLE employee_positions
+   ADD CONSTRAINT UNIQ_employee_positions_working_unit_id_code UNIQUE (working_unit_id,position_code);
+
+ALTER TABLE employee_positions
+   ADD CONSTRAINT CHK_employee_positions_status CHECK (status IN ('ACTIVE', 'RETIRED'));
+
+ALTER TABLE employee_positions
+   ADD CONSTRAINT FK_employee_positions_x_working_units FOREIGN KEY (working_unit_id)
+       REFERENCES working_units (working_unit_id);
+
+
+
+CREATE TABLE risks
+(
+working_unit_id          INTEGER         NOT NULL,
+risk_id                  INTEGER         NOT NULL,
+risk_code                NVARCHAR(20)    NOT NULL,
+desc_sr                  NVARCHAR(1000)  NOT NULL,
+desc_en                  NVARCHAR(1000)  NOT NULL,
+default_rotation         INTEGER         NOT NULL,
+created_by		 VARCHAR(20)         NULL,
+created_time    	 DATETIME            NULL,
+modified_by		 VARCHAR(20)         NULL,
+modified_time            DATETIME            NULL
+);
+
+ALTER TABLE risks
+   ADD CONSTRAINT PK_risks PRIMARY KEY (risk_id);
+
+ALTER TABLE risks
+   ADD CONSTRAINT UNIQ_risks_working_unit_id_code UNIQUE  (working_unit_id,risk_code);
+
+
+ALTER TABLE risks
+   ADD CONSTRAINT FK_risks_x_working_units FOREIGN KEY (working_unit_id)
+       REFERENCES working_units (working_unit_id);
+
+CREATE TABLE employees_x_risks
+(
+rec_id                   BIGINT           NOT NULL IDENTITY (1,1),
+employee_id              INTEGER          NOT NULL,
+risk_id                   INTEGER         NOT NULL,
+date_start               DATETIME         NOT NULL,
+date_end                 DATETIME             NULL,
+rotation                 INTEGER          NOT NULL,
+last_date_performed      DATETIME             NULL,
+last_visit_rec_id	 BIGINT             NULL,
+last_schedule_date       DATETIME             NULL,
+created_by		 VARCHAR(20)         NULL,
+created_time    	 DATETIME            NULL,
+modified_by		 VARCHAR(20)         NULL,
+modified_time            DATETIME            NULL
+);
+ALTER TABLE employees_x_risks
+   ADD CONSTRAINT PK_employees_x_risks PRIMARY KEY (rec_id);
+
+ALTER TABLE employees_x_risks
+   ADD CONSTRAINT UNIQ_employees_x_risks UNIQUE (employee_id,risk_id,date_start);
+
+ALTER TABLE employees_x_risks
+   ADD CONSTRAINT FK_employees_x_risks_employees FOREIGN KEY (employee_id)
+       REFERENCES employees (employee_id);
+
+ALTER TABLE employees_x_risks
+   ADD CONSTRAINT FK_employees_x_risks_risks FOREIGN KEY (risk_id)
+       REFERENCES risks (risk_id);
+
+CREATE TABLE employee_positions_x_risks
+(
+position_id              INTEGER          NOT NULL,
+risk_id                  INTEGER          NOT NULL,
+rotation                 INTEGER          NOT NULL,
+created_by		 VARCHAR(20)         NULL,
+created_time    	 DATETIME            NULL,
+modified_by		 VARCHAR(20)         NULL,
+modified_time            DATETIME            NULL
+);
+ALTER TABLE employee_positions_x_risks
+   ADD CONSTRAINT PK_employee_positions_x_risks PRIMARY KEY (position_id,risk_id);
+
+ALTER TABLE employee_positions_x_risks
+   ADD CONSTRAINT FK_employee_positions_x_risks_x_risks FOREIGN KEY (risk_id)
+       REFERENCES risks (risk_id);
+
+ALTER TABLE employee_positions_x_risks
+   ADD CONSTRAINT FK_employee_positions_x_risks_x_employee_positions FOREIGN KEY (position_id)
+       REFERENCES employee_positions (position_id);
+
+CREATE TABLE medical_chk_points
+(
+point_id                 INTEGER         NOT NULL,
+description              NVARCHAR(50)    NOT NULL,
+created_by		 VARCHAR(20)         NULL,
+created_time    	 DATETIME            NULL,
+modified_by		 VARCHAR(20)         NULL,
+modified_time            DATETIME            NULL
+);
+
+ALTER TABLE medical_chk_points
+   ADD CONSTRAINT PK_medical_chk_points PRIMARY KEY (point_id);
+
+
+CREATE TABLE medical_chk_visits_hdr
+(
+visit_id                 BIGINT          NOT NULL IDENTITY (1,1),
+employee_id              INTEGER         NOT NULL,
+schedule_date            DATETIME        NOT NULL,
+point_id                 INTEGER         NOT NULL,
+status                   VARCHAR(20)     NOT NULL,
+flag_email               INTEGER         NOT NULL,
+flag_email_created_time  DATETIME            NULL,
+flag_change              INTEGER         NOT NULL,
+created_by		 VARCHAR(20)         NULL,
+created_time    	 DATETIME            NULL,
+modified_by		 VARCHAR(20)         NULL,
+modified_time            DATETIME            NULL
+);
+
+ALTER TABLE medical_chk_visits_hdr
+  ADD CONSTRAINT PK_medical_chk_visits_hdr PRIMARY KEY (visit_id);
+
+--ALTER TABLE medical_chk_visits_hdr
+--   ADD CONSTRAINT UNIQ_medical_chk_visits_hdr_employee_id_schedule_date UNIQUE  (employee_id,schedule_date);
+
+ALTER TABLE medical_chk_visits_hdr
+   ADD CONSTRAINT CHK_medical_chk_visits_status CHECK (status IN ('WR','RND','DONE','DEMANDED','DELETED'));
+
+
+ALTER TABLE medical_chk_visits_hdr
+   ADD CONSTRAINT FK_medical_chk_visits_hdr_x_employees FOREIGN KEY (employee_id)
+       REFERENCES employees (employee_id);
+
+ALTER TABLE medical_chk_visits_hdr
+   ADD CONSTRAINT FK_medical_chk_visits_hdr_x_employee_medical_chk_points FOREIGN KEY (point_id)
+       REFERENCES medical_chk_points (point_id);
+
+
+CREATE TABLE medical_chk_visits_dtl
+(
+rec_id                   BIGINT          NOT NULL IDENTITY (1,1),
+visit_id                 BIGINT          NOT NULL,
+check_id                 INTEGER         NOT NULL,
+type                     VARCHAR(20)     NOT NULL,
+result                   VARCHAR(20)         NULL,
+date_performed           DATETIME            NULL,
+created_by		 VARCHAR(20)         NULL,
+created_time    	 DATETIME            NULL,
+modified_by		 VARCHAR(20)         NULL,
+modified_time            DATETIME            NULL
+);
+ALTER TABLE medical_chk_visits_dtl
+  ADD CONSTRAINT PK_medical_chk_visits_dtl PRIMARY KEY (rec_id);
+
+ALTER TABLE medical_chk_visits_dtl
+  ADD CONSTRAINT UNIQ_medical_chk_visits_dtl UNIQUE (visit_id,check_id,type);
+  
+ALTER TABLE medical_chk_visits_dtl
+  ADD CONSTRAINT CHK_medical_chk_visits_dtl_type CHECK(type  IN ('V','R'));
+
+
+ALTER TABLE medical_chk_visits_dtl
+   ADD CONSTRAINT FK_medical_chk_visits_dtl_x_medical_chk_visits_hdr FOREIGN KEY (visit_id)
+       REFERENCES medical_chk_visits_hdr (visit_id);
+
+
+-------
+CREATE TABLE medical_chk_visits_hdr_hist
+(
+rec_id                   BIGINT          NOT NULL IDENTITY (1,1),
+visit_id                 BIGINT          NOT NULL,
+employee_id              INTEGER         NOT NULL,
+schedule_date            DATETIME        NOT NULL,
+point_id                 INTEGER         NOT NULL,
+status                   VARCHAR(20)     NOT NULL,
+flag_email               INTEGER         NOT NULL,
+flag_email_created_time  DATETIME            NULL,
+created_by		 VARCHAR(20)         NULL,
+created_time    	 DATETIME            NULL,
+modified_by		 VARCHAR(20)         NULL,
+modified_time            DATETIME            NULL
+);
+
+ALTER TABLE medical_chk_visits_hdr_hist
+  ADD CONSTRAINT PK_medical_chk_visits_hdr_hist PRIMARY KEY (rec_id);
+
+
+ALTER TABLE medical_chk_visits_hdr_hist
+   ADD CONSTRAINT CHK_medical_chk_visits_hdr_hist_status CHECK (status IN ('WR','RND','DONE','DEMANDED','DELETED'));
+
+CREATE TABLE medical_chk_visits_dtl_hist
+(
+rec_id_hist              BIGINT          NOT NULL IDENTITY (1,1),
+rec_id                   BIGINT          NOT NULL,
+visit_id                 BIGINT          NOT NULL,
+check_id                 INTEGER         NOT NULL,
+type                     VARCHAR(20)     NOT NULL,
+result                   VARCHAR(20)         NULL,
+date_performed           DATETIME            NULL,
+created_by		 VARCHAR(20)         NULL,
+created_time    	 DATETIME            NULL,
+modified_by		 VARCHAR(20)         NULL,
+modified_time            DATETIME            NULL
+);
+ALTER TABLE medical_chk_visits_dtl_hist
+   ADD CONSTRAINT PK_medical_chk_visits_dtl_hist PRIMARY KEY (rec_id_hist);
+
+-------
+
+CREATE TABLE medical_chk_disabilities
+(
+working_unit_id          INTEGER         NOT NULL,
+disability_id             INTEGER         NOT NULL,
+disability_code          NVARCHAR(20)    NOT NULL,
+desc_sr                  NVARCHAR(1000)  NOT NULL,
+desc_en                  NVARCHAR(1000)  NOT NULL,
+status                   VARCHAR(20)         NULL,
+created_by		 VARCHAR(20)         NULL,
+created_time    	 DATETIME            NULL,
+modified_by		 VARCHAR(20)         NULL,
+modified_time            DATETIME            NULL
+);
+
+ALTER TABLE medical_chk_disabilities
+   ADD CONSTRAINT PK_medical_chk_disabilities PRIMARY KEY (disability_id);
+
+ALTER TABLE medical_chk_disabilities
+   ADD CONSTRAINT CHK_medical_chk_disabilities_status CHECK (status IN ('ACTIVE','RETIRED'));
+
+ALTER TABLE medical_chk_disabilities
+   ADD CONSTRAINT UNIQ_medical_chk_disabilities_working_unit_id_disabilty_code UNIQUE (working_unit_id,disability_code);
+
+ALTER TABLE medical_chk_disabilities
+   ADD CONSTRAINT FK_medical_chk_disabilities_x_working_units FOREIGN KEY (working_unit_id)
+       REFERENCES working_units (working_unit_id);
+
+
+CREATE TABLE employees_x_medical_chk_disabilities
+(
+rec_id                   BIGINT           NOT NULL IDENTITY (1,1),
+employee_id              INTEGER          NOT NULL,
+disability_id             INTEGER          NOT NULL,
+type                     VARCHAR(20)      NOT NULL,
+date_start               DATETIME         NOT NULL,
+date_end                 DATETIME             NULL,
+note			 NVARCHAR(500)	     NULL,
+flag_email               INTEGER         NOT NULL,
+flag_email_created_time  DATETIME            NULL,
+created_by		 VARCHAR(20)         NULL,
+created_time    	 DATETIME            NULL,
+modified_by		 VARCHAR(20)         NULL,
+modified_time            DATETIME            NULL
+);
+ALTER TABLE employees_x_medical_chk_disabilities
+   ADD CONSTRAINT PK_employees_x_medical_chk_disabilities PRIMARY KEY (rec_id);
+
+ALTER TABLE employees_x_medical_chk_disabilities
+   ADD CONSTRAINT UNIQ_employees_x_medical_chk_disabilities UNIQUE (employee_id,disability_id,date_start);
+
+ALTER TABLE employees_x_medical_chk_disabilities
+   ADD CONSTRAINT CHK_employees_x_medical_chk_disabilities CHECK (type IN ('TEMPORARY','PERMANENT'));
+ 
+ALTER TABLE employees_x_medical_chk_disabilities
+   ADD CONSTRAINT FK_employees_x_medical_chk_disabilities_x_employees FOREIGN KEY (employee_id)
+       REFERENCES employees (employee_id);
+
+ALTER TABLE employees_x_medical_chk_disabilities
+   ADD CONSTRAINT FK_employees_x_medical_chk_disabilities_x_medical_chk_disabilities FOREIGN KEY (disability_id)
+       REFERENCES medical_chk_disabilities (disability_id);
+
+CREATE TABLE vaccines
+(
+vaccine_id                  INTEGER         NOT NULL,
+vaccine_type                NVARCHAR(50)    NOT NULL,
+desc_sr                  NVARCHAR(1000)  NOT NULL,
+desc_en                  NVARCHAR(1000)  NOT NULL,
+created_by		 VARCHAR(20)         NULL,
+created_time    	 DATETIME            NULL,
+modified_by		 VARCHAR(20)         NULL,
+modified_time            DATETIME            NULL
+);
+
+ALTER TABLE vaccines
+   ADD CONSTRAINT PK_vaccines PRIMARY KEY (vaccine_id);
+
+ALTER TABLE vaccines
+   ADD CONSTRAINT UNIQ_vaccines_vaccine_type UNIQUE  (vaccine_type);
+
+CREATE TABLE employee_x_vaccines
+(
+rec_id                   BIGINT          NOT NULL IDENTITY (1,1),
+vaccine_id               INTEGER         NOT NULL,
+employee_id              INTEGER         NOT NULL,
+date_performed           DATETIME        NOT NULL,
+rotation                 INTEGER             NULL,
+rotation_flag_used       INTEGER         NOT NULL,
+created_by		 VARCHAR(20)         NULL,
+created_time    	 DATETIME            NULL,
+modified_by		 VARCHAR(20)         NULL,
+modified_time            DATETIME            NULL
+);
+
+ALTER TABLE employee_x_vaccines
+   ADD CONSTRAINT PK_employee_x_vaccines PRIMARY KEY (rec_id);
+
+
+ALTER TABLE employee_x_vaccines
+   ADD CONSTRAINT FK_employee_x_vaccines_x_vaccines FOREIGN KEY (vaccine_id )
+       REFERENCES vaccines (vaccine_id );
+
+ALTER TABLE employee_x_vaccines
+   ADD CONSTRAINT FK_employee_x_vaccines_x_employees FOREIGN KEY (employee_id)
+       REFERENCES employees (employee_id);
+
+CREATE TABLE employee_physical_data
+(
+rec_id                   BIGINT          NOT NULL IDENTITY (1,1),
+employee_id              INTEGER         NOT NULL,
+date_performed           DATETIME        NOT NULL,
+weight                   DECIMAL(8,2)	 NOT NULL,
+height                   DECIMAL(8,2)    NOT NULL,
+created_by		 VARCHAR(20)     NULL,
+created_time    	 DATETIME        NULL,
+modified_by		 VARCHAR(20)     NULL,
+modified_time            DATETIME        NULL
+);
+
+ALTER TABLE employee_physical_data
+   ADD CONSTRAINT PK_employee_physical_data PRIMARY KEY (rec_id);
+
+ALTER TABLE employee_physical_data
+   ADD CONSTRAINT FK_employee_physical_data_x_employees FOREIGN KEY (employee_id)
+       REFERENCES employees (employee_id);
+

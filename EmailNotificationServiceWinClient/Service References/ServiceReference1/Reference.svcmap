@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="9f044fff-213a-4187-acac-9c1951c807fd" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:44459/EmailNotificationService" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="EmailNotificationService.disco" MetadataType="Disco" ID="2fa9b82c-4fab-4f63-acc8-92c45f9eea15" SourceId="1" SourceUrl="http://localhost:44459/EmailNotificationService?disco" />
+    <MetadataFile FileName="EmailNotificationService.xsd" MetadataType="Schema" ID="3dcc7cd2-fc31-44a2-b400-50e8f40e8a3d" SourceId="1" SourceUrl="http://localhost:44459/EmailNotificationService?xsd=xsd0" />
+    <MetadataFile FileName="EmailNotificationService.wsdl" MetadataType="Wsdl" ID="353062bc-9b24-46ec-b816-f21df1fc768f" SourceId="1" SourceUrl="http://localhost:44459/EmailNotificationService?wsdl" />
+    <MetadataFile FileName="EmailNotificationService1.wsdl" MetadataType="Wsdl" ID="45c990d9-a483-47e6-b89c-0ed6ca2f1f05" SourceId="1" SourceUrl="http://localhost:44459/EmailNotificationService?wsdl=wsdl0" />
+    <MetadataFile FileName="EmailNotificationService1.xsd" MetadataType="Schema" ID="e4e2473f-71f2-4833-a426-bb9d9f0554e6" SourceId="1" SourceUrl="http://localhost:44459/EmailNotificationService?xsd=xsd1" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

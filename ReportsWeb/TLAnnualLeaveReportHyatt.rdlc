@@ -1,0 +1,735 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Report xmlns="http://schemas.microsoft.com/sqlserver/reporting/2005/01/reportdefinition" xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner">
+  <DataSources>
+    <DataSource Name="DummyDataSource">
+      <rd:DataSourceID>e667291e-e763-4adf-9258-0a04c718d28e</rd:DataSourceID>
+      <ConnectionProperties>
+        <DataProvider>SQL</DataProvider>
+        <ConnectString />
+      </ConnectionProperties>
+    </DataSource>
+  </DataSources>
+  <InteractiveHeight>11in</InteractiveHeight>
+  <rd:DrawGrid>true</rd:DrawGrid>
+  <InteractiveWidth>8.5in</InteractiveWidth>
+  <rd:SnapToGrid>true</rd:SnapToGrid>
+  <LeftMargin>0.3in</LeftMargin>
+  <rd:ReportID>b2faea19-1c75-4ec8-b979-b06ee1a60757</rd:ReportID>
+  <DataSets>
+    <DataSet Name="AnnualLeave_annualLeave">
+      <Fields>
+        <Field Name="employee">
+          <DataField>employee</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="working_unit">
+          <DataField>working_unit</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="inital_an">
+          <DataField>inital_an</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="length">
+          <DataField>length</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="start">
+          <DataField>start</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="end">
+          <DataField>end</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="from_previous">
+          <DataField>from_previous</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="from_current">
+          <DataField>from_current</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="total_left">
+          <DataField>total_left</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="previous_left">
+          <DataField>previous_left</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="current_left">
+          <DataField>current_left</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="hiring_date">
+          <DataField>hiring_date</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="contract">
+          <DataField>contract</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="printDate">
+          <DataField>printDate</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+      </Fields>
+      <Query>
+        <DataSourceName>DummyDataSource</DataSourceName>
+        <CommandText />
+        <rd:UseGenericDesigner>true</rd:UseGenericDesigner>
+      </Query>
+      <rd:DataSetInfo>
+        <rd:DataSetName>AnnualLeave</rd:DataSetName>
+        <rd:TableName>annualLeave</rd:TableName>
+      </rd:DataSetInfo>
+    </DataSet>
+  </DataSets>
+  <Code />
+  <Width>7.75in</Width>
+  <Body>
+    <ReportItems>
+      <List Name="list1">
+        <DataSetName>AnnualLeave_annualLeave</DataSetName>
+        <ReportItems>
+          <Textbox Name="textbox2">
+            <Top>9.5in</Top>
+            <Width>2.625in</Width>
+            <Style>
+              <FontFamily>Calibri</FontFamily>
+              <FontSize>11pt</FontSize>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+            <ZIndex>33</ZIndex>
+            <CanGrow>true</CanGrow>
+            <Left>0.125in</Left>
+            <Height>0.5in</Height>
+            <Value>___________________________ 
+Odeljenje ljudskih resursa                                                                                                                              
+</Value>
+          </Textbox>
+          <Textbox Name="textbox69">
+            <Top>4in</Top>
+            <Width>3in</Width>
+            <Style>
+              <BorderStyle>
+                <Default>Solid</Default>
+              </BorderStyle>
+              <FontFamily>Calibri</FontFamily>
+              <FontSize>11pt</FontSize>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+            <ZIndex>32</ZIndex>
+            <CanGrow>true</CanGrow>
+            <Left>0.25in</Left>
+            <Height>0.25in</Height>
+            <Value>Preostali broj dana odmora</Value>
+          </Textbox>
+          <Textbox Name="textbox1">
+            <Top>9.5in</Top>
+            <Style>
+              <FontFamily>Calibri</FontFamily>
+              <FontSize>11pt</FontSize>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+            <ZIndex>31</ZIndex>
+            <CanGrow>true</CanGrow>
+            <Left>4.125in</Left>
+            <Height>0.5in</Height>
+            <Value>="___________________________ "+ System.Environment.NewLine +"Zaposleni ("+Fields!employee.Value+")"</Value>
+          </Textbox>
+          <Textbox Name="textbox18">
+            <Top>2.5in</Top>
+            <Width>3.875in</Width>
+            <Style>
+              <BorderStyle>
+                <Default>Solid</Default>
+              </BorderStyle>
+              <FontFamily>Calibri</FontFamily>
+              <FontSize>11pt</FontSize>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+            <ZIndex>30</ZIndex>
+            <CanGrow>true</CanGrow>
+            <Left>3.25in</Left>
+            <Height>0.25in</Height>
+            <Value>=Fields!end.Value + "."</Value>
+          </Textbox>
+          <Textbox Name="textbox79">
+            <rd:DefaultName>textbox79</rd:DefaultName>
+            <Top>8.75in</Top>
+            <Width>2.625in</Width>
+            <Style>
+              <FontFamily>Calibri</FontFamily>
+              <FontSize>11pt</FontSize>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+            <ZIndex>29</ZIndex>
+            <CanGrow>true</CanGrow>
+            <Left>0.125in</Left>
+            <Height>0.5in</Height>
+            <Value>___________________________ 
+Šef odeljenja                                                                                                                             
+</Value>
+          </Textbox>
+          <Textbox Name="textbox78">
+            <rd:DefaultName>textbox78</rd:DefaultName>
+            <Top>8in</Top>
+            <Width>3.125in</Width>
+            <Style>
+              <FontFamily>Calibri</FontFamily>
+              <FontSize>11pt</FontSize>
+              <FontWeight>700</FontWeight>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+            <ZIndex>28</ZIndex>
+            <CanGrow>true</CanGrow>
+            <Left>0.125in</Left>
+            <Height>0.625in</Height>
+            <Value>POSLODAVAC
+BMP AD NOVI BEOGRAD, Milentija Popovića 5
+</Value>
+          </Textbox>
+          <Textbox Name="textbox77">
+            <rd:DefaultName>textbox77</rd:DefaultName>
+            <Top>8.25in</Top>
+            <Width>3.625in</Width>
+            <Style>
+              <FontFamily>Calibri</FontFamily>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+            <ZIndex>27</ZIndex>
+            <CanGrow>true</CanGrow>
+            <Left>4in</Left>
+            <Height>0.5in</Height>
+            <Value>-        Zaposlenom ______________________
+-        Odeljenju ljudskih resursa
+</Value>
+          </Textbox>
+          <Textbox Name="textbox76">
+            <rd:DefaultName>textbox76</rd:DefaultName>
+            <Top>8in</Top>
+            <Width>1in</Width>
+            <Style>
+              <FontFamily>Calibri</FontFamily>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+            <ZIndex>26</ZIndex>
+            <CanGrow>true</CanGrow>
+            <Left>4in</Left>
+            <Height>0.25in</Height>
+            <Value>Dostavljeno:</Value>
+          </Textbox>
+          <Textbox Name="textbox75">
+            <rd:DefaultName>textbox75</rd:DefaultName>
+            <Top>7.625in</Top>
+            <Width>7.5in</Width>
+            <Style>
+              <FontFamily>Calibri</FontFamily>
+              <FontSize>11pt</FontSize>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+            <ZIndex>25</ZIndex>
+            <CanGrow>true</CanGrow>
+            <Left>0.125in</Left>
+            <Height>0.25in</Height>
+            <Value>Protiv ovog  rešenja može se pokrenuti spor pred nadležnim sudom u roku od 60 dana od dana dostavljanja.</Value>
+          </Textbox>
+          <Textbox Name="textbox74">
+            <rd:DefaultName>textbox74</rd:DefaultName>
+            <Top>7.375in</Top>
+            <Width>2.125in</Width>
+            <Style>
+              <FontFamily>Calibri</FontFamily>
+              <FontSize>12pt</FontSize>
+              <FontWeight>700</FontWeight>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+            <ZIndex>24</ZIndex>
+            <CanGrow>true</CanGrow>
+            <Left>0.125in</Left>
+            <Height>0.25in</Height>
+            <Value>POUKA O PRAVNOM LEKU:</Value>
+          </Textbox>
+          <Textbox Name="textbox73">
+            <rd:DefaultName>textbox73</rd:DefaultName>
+            <Top>6in</Top>
+            <Width>7.5in</Width>
+            <Style>
+              <FontFamily>Calibri</FontFamily>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+            <ZIndex>23</ZIndex>
+            <CanGrow>true</CanGrow>
+            <Left>0.125in</Left>
+            <Height>1.375in</Height>
+            <Value>="	Ugovorom o radu, a u skladu sa Zakonom o radu, predviđeno je pravo zaposlenog na godišnji odmor posle mesec dana neprekidog rada od dana zasnivanja radnog odnosa kod poslodavca u trajanju od " + Fields!inital_an.Value + " radnih dana za punu godinu rada kod poslodavca, kao i da zaposleni ima pravo na dvanaestinu godišnjeg odmora za svaki mesec rada u kalendarskoj godini u kojoj je zasnovao radni odnos. Istim Ugovorom o radu je predviđeno da će se termin i način korišćenja godišnjeg odmora utvrđivati uz saglasnost neposrednog rukovodioca." +  System.Environment.NewLine + "	U skladu sa zahtevom zaposlenog, a shodno navedenom, poštujući potrebe organizacije rada i poslovanja poslodavca odlučeno je kao u dispozitivu."</Value>
+          </Textbox>
+          <Textbox Name="textbox72">
+            <Top>5.75in</Top>
+            <Width>1in</Width>
+            <Style>
+              <FontStyle>Italic</FontStyle>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+            <ZIndex>22</ZIndex>
+            <CanGrow>true</CanGrow>
+            <Left>3.625in</Left>
+            <Height>0.25in</Height>
+            <Value>Obrazloženje</Value>
+          </Textbox>
+          <Textbox Name="textbox71">
+            <Top>5.375in</Top>
+            <Width>6.625in</Width>
+            <Style>
+              <FontFamily>Calibri</FontFamily>
+              <FontSize>11pt</FontSize>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+            <ZIndex>21</ZIndex>
+            <CanGrow>true</CanGrow>
+            <Height>0.375in</Height>
+            <Value>5.    U toku korišćenja godišnjeg odmora, na poverenim poslovima zaposlenog menja_______________.</Value>
+          </Textbox>
+          <Textbox Name="textbox70">
+            <Top>4.875in</Top>
+            <Width>6.625in</Width>
+            <Style>
+              <FontFamily>Calibri</FontFamily>
+              <FontSize>11pt</FontSize>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+            <ZIndex>20</ZIndex>
+            <CanGrow>true</CanGrow>
+            <Height>0.5in</Height>
+            <Value>4.    Zaposlenom za vreme korišćenja godišnjeg odmora pripada naknada zarade u visini prosečne zarade ostvarene u prethodnih 12 meseci.</Value>
+          </Textbox>
+          <Textbox Name="textbox64">
+            <Top>4.5in</Top>
+            <Width>3in</Width>
+            <Style>
+              <BorderStyle>
+                <Default>Solid</Default>
+              </BorderStyle>
+              <FontFamily>Calibri</FontFamily>
+              <FontSize>11pt</FontSize>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+            <ZIndex>19</ZIndex>
+            <CanGrow>true</CanGrow>
+            <Left>0.25in</Left>
+            <Height>0.25in</Height>
+            <Value>="Od čega se na  " + Today().ToString("yyyy")+". godinu odnosi"</Value>
+          </Textbox>
+          <Textbox Name="textbox65">
+            <Top>4.25in</Top>
+            <Width>3.875in</Width>
+            <Style>
+              <BorderStyle>
+                <Default>Solid</Default>
+              </BorderStyle>
+              <FontFamily>Calibri</FontFamily>
+              <FontSize>11pt</FontSize>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+            <ZIndex>18</ZIndex>
+            <CanGrow>true</CanGrow>
+            <Left>3.25in</Left>
+            <Height>0.25in</Height>
+            <Value>=Fields!previous_left.Value</Value>
+          </Textbox>
+          <Textbox Name="textbox58">
+            <Width>7.5in</Width>
+            <Style>
+              <FontFamily>Calibri</FontFamily>
+              <FontSize>11pt</FontSize>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+            <ZIndex>17</ZIndex>
+            <CanGrow>true</CanGrow>
+            <Height>0.625in</Height>
+            <Value>="Na osnovu člana 68 do 75 i člana 192 Zakona o radu (Sl. glasnik RS, br. 24/2005, 61/2005, 54/2009, 32/2013 i 75/2014) HOTELIJERSKO AKCIONARSKO DRUŠTVO BEOGRADSKO MEŠOVITO PREDUZEĆE AD BEOGRAD, dana " + Fields!printDate.Value + ". godine, donosi sledeće"</Value>
+          </Textbox>
+          <Textbox Name="textbox66">
+            <Top>4.5in</Top>
+            <Width>3.875in</Width>
+            <Style>
+              <BorderStyle>
+                <Default>Solid</Default>
+              </BorderStyle>
+              <FontFamily>Calibri</FontFamily>
+              <FontSize>11pt</FontSize>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+            <ZIndex>16</ZIndex>
+            <CanGrow>true</CanGrow>
+            <Left>3.25in</Left>
+            <Height>0.25in</Height>
+            <Value>=Fields!current_left.Value</Value>
+          </Textbox>
+          <Textbox Name="textbox67">
+            <Top>4in</Top>
+            <Width>3.875in</Width>
+            <Style>
+              <BorderStyle>
+                <Default>Solid</Default>
+              </BorderStyle>
+              <FontFamily>Calibri</FontFamily>
+              <FontSize>11pt</FontSize>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+            <ZIndex>15</ZIndex>
+            <CanGrow>true</CanGrow>
+            <Left>3.25in</Left>
+            <Height>0.25in</Height>
+            <Value>=Fields!total_left.Value</Value>
+          </Textbox>
+          <Textbox Name="textbox68">
+            <Top>4.25in</Top>
+            <Width>3in</Width>
+            <Style>
+              <BorderStyle>
+                <Default>Solid</Default>
+              </BorderStyle>
+              <FontFamily>Calibri</FontFamily>
+              <FontSize>11pt</FontSize>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+            <ZIndex>14</ZIndex>
+            <CanGrow>true</CanGrow>
+            <Left>0.25in</Left>
+            <Height>0.25in</Height>
+            <Value>="Od čega se na  " + DateAdd("yyyy",-1,Today()).ToString("yyyy")+". godinu odnosi"</Value>
+          </Textbox>
+          <Textbox Name="textbox42">
+            <Top>3.375in</Top>
+            <Width>7.5in</Width>
+            <Style>
+              <FontFamily>Calibri</FontFamily>
+              <FontSize>11pt</FontSize>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+            <ZIndex>13</ZIndex>
+            <CanGrow>true</CanGrow>
+            <Height>0.625in</Height>
+            <Value>="3.    Ostatak godišnjeg odmora zaposleni će koristiti u zavisnosti od potreba posla kod poslodavca i uz saglasnost neposrednog rukovodioca, a najkasnije do 30.06." + DateAdd(DateInterval.Year,1, Today()) .ToString("yyyy") + ". godine."</Value>
+          </Textbox>
+          <Textbox Name="textbox45">
+            <Top>2.75in</Top>
+            <Width>3.875in</Width>
+            <Style>
+              <BorderStyle>
+                <Default>Solid</Default>
+              </BorderStyle>
+              <FontFamily>Calibri</FontFamily>
+              <FontSize>11pt</FontSize>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+            <ZIndex>12</ZIndex>
+            <CanGrow>true</CanGrow>
+            <Left>3.25in</Left>
+            <Height>0.25in</Height>
+            <Value>=Fields!from_previous.Value</Value>
+          </Textbox>
+          <Textbox Name="textbox47">
+            <Top>2.75in</Top>
+            <Width>3in</Width>
+            <Style>
+              <BorderStyle>
+                <Default>Solid</Default>
+              </BorderStyle>
+              <FontFamily>Calibri</FontFamily>
+              <FontSize>11pt</FontSize>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+            <ZIndex>11</ZIndex>
+            <CanGrow>true</CanGrow>
+            <Left>0.25in</Left>
+            <Height>0.25in</Height>
+            <Value>="Od čega se na  " + DateAdd("yyyy",-1,Today()).ToString("yyyy")+". godinu odnosi"</Value>
+          </Textbox>
+          <Textbox Name="textbox48">
+            <Top>2.5in</Top>
+            <Width>3in</Width>
+            <Style>
+              <BorderStyle>
+                <Default>Solid</Default>
+              </BorderStyle>
+              <FontFamily>Calibri</FontFamily>
+              <FontSize>11pt</FontSize>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+            <ZIndex>10</ZIndex>
+            <CanGrow>true</CanGrow>
+            <Left>0.25in</Left>
+            <Height>0.25in</Height>
+            <Value>Zadnji dan korišćenja odmora</Value>
+          </Textbox>
+          <Textbox Name="textbox49">
+            <Top>2.25in</Top>
+            <Width>3.875in</Width>
+            <Style>
+              <BorderStyle>
+                <Default>Solid</Default>
+              </BorderStyle>
+              <FontFamily>Calibri</FontFamily>
+              <FontSize>11pt</FontSize>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+            <ZIndex>9</ZIndex>
+            <CanGrow>true</CanGrow>
+            <Left>3.25in</Left>
+            <Height>0.25in</Height>
+            <Value>=Fields!start.Value + "."</Value>
+          </Textbox>
+          <Textbox Name="textbox50">
+            <Top>2in</Top>
+            <Width>3.875in</Width>
+            <Style>
+              <BorderStyle>
+                <Default>Solid</Default>
+              </BorderStyle>
+              <FontFamily>Calibri</FontFamily>
+              <FontSize>11pt</FontSize>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+            <ZIndex>8</ZIndex>
+            <CanGrow>true</CanGrow>
+            <Left>3.25in</Left>
+            <Height>0.25in</Height>
+            <Value>=Fields!length.Value</Value>
+          </Textbox>
+          <Textbox Name="textbox51">
+            <Top>2.25in</Top>
+            <Width>3in</Width>
+            <Style>
+              <BorderStyle>
+                <Default>Solid</Default>
+              </BorderStyle>
+              <FontFamily>Calibri</FontFamily>
+              <FontSize>11pt</FontSize>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+            <ZIndex>7</ZIndex>
+            <CanGrow>true</CanGrow>
+            <Left>0.25in</Left>
+            <Height>0.25in</Height>
+            <Value>Datum početka korišćenja odmora</Value>
+          </Textbox>
+          <Textbox Name="textbox52">
+            <Top>2in</Top>
+            <Width>3in</Width>
+            <Style>
+              <BorderStyle>
+                <Default>Solid</Default>
+              </BorderStyle>
+              <FontFamily>Calibri</FontFamily>
+              <FontSize>11pt</FontSize>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+            <ZIndex>6</ZIndex>
+            <CanGrow>true</CanGrow>
+            <Left>0.25in</Left>
+            <Height>0.25in</Height>
+            <Value>Dužina trajanja odmora</Value>
+          </Textbox>
+          <Textbox Name="textbox55">
+            <Top>0.875in</Top>
+            <Width>2.9375in</Width>
+            <Style>
+              <FontFamily>Calibri</FontFamily>
+              <FontSize>14pt</FontSize>
+              <FontWeight>700</FontWeight>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+            <ZIndex>5</ZIndex>
+            <CanGrow>true</CanGrow>
+            <Left>2.625in</Left>
+            <Height>0.375in</Height>
+            <Value>o korišćenju godišnjeg odmora</Value>
+          </Textbox>
+          <Textbox Name="textbox53">
+            <Top>1.75in</Top>
+            <Width>7.625in</Width>
+            <Style>
+              <FontFamily>Calibri</FontFamily>
+              <FontSize>11pt</FontSize>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+            <ZIndex>4</ZIndex>
+            <CanGrow>true</CanGrow>
+            <Height>0.25in</Height>
+            <Value>2.     Zaposlenom se odobrava korišćenje godišnjeg odmora u delovima i to:</Value>
+          </Textbox>
+          <Textbox Name="textbox54">
+            <Top>1.25in</Top>
+            <Width>7.625in</Width>
+            <Style>
+              <FontFamily>Calibri</FontFamily>
+              <FontSize>11pt</FontSize>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+            <ZIndex>3</ZIndex>
+            <CanGrow>true</CanGrow>
+            <Height>0.5in</Height>
+            <Value>="1.     Zaposlenom " + Fields!employee.Value + ", na poziciji " + Fields!working_unit.Value + ", određuje se korišćenje godišnjeg odmora za " + Today().ToString("yyyy") + ". godinu u trajanju od " + Fields!inital_an.Value + " radnih dana."</Value>
+          </Textbox>
+          <Textbox Name="textbox56">
+            <Top>0.625in</Top>
+            <Width>1in</Width>
+            <Style>
+              <FontFamily>Calibri</FontFamily>
+              <FontSize>14pt</FontSize>
+              <FontWeight>700</FontWeight>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+            <ZIndex>2</ZIndex>
+            <CanGrow>true</CanGrow>
+            <Left>3.625in</Left>
+            <Height>0.25in</Height>
+            <Value>REŠENJE</Value>
+          </Textbox>
+          <Textbox Name="textbox43">
+            <Top>3in</Top>
+            <Width>3.875in</Width>
+            <Style>
+              <BorderStyle>
+                <Default>Solid</Default>
+              </BorderStyle>
+              <FontFamily>Calibri</FontFamily>
+              <FontSize>11pt</FontSize>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+            <ZIndex>1</ZIndex>
+            <CanGrow>true</CanGrow>
+            <Left>3.25in</Left>
+            <Height>0.25in</Height>
+            <Value>=Fields!from_current.Value</Value>
+          </Textbox>
+          <Textbox Name="textbox44">
+            <Top>3in</Top>
+            <Width>3in</Width>
+            <Style>
+              <BorderStyle>
+                <Default>Solid</Default>
+              </BorderStyle>
+              <FontFamily>Calibri</FontFamily>
+              <FontSize>11pt</FontSize>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+            <CanGrow>true</CanGrow>
+            <Left>0.25in</Left>
+            <Height>0.25in</Height>
+            <Value>="Od čega se na  " + Today().ToString("yyyy")+". godinu odnosi"</Value>
+          </Textbox>
+        </ReportItems>
+      </List>
+    </ReportItems>
+    <Height>10.375in</Height>
+  </Body>
+  <Language>en-US</Language>
+  <TopMargin>0.3in</TopMargin>
+</Report>

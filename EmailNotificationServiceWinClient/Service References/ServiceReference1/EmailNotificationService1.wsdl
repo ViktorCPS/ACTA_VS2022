@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:tns="http://EmailNotificationService" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" targetNamespace="http://EmailNotificationService" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://EmailNotificationService/Imports">
+      <xsd:import schemaLocation="http://localhost:44459/EmailNotificationService?xsd=xsd0" namespace="http://EmailNotificationService" />
+      <xsd:import schemaLocation="http://localhost:44459/EmailNotificationService?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IEmailNotificationService_StartNotification_InputMessage">
+    <wsdl:part name="parameters" element="tns:StartNotification" />
+  </wsdl:message>
+  <wsdl:message name="IEmailNotificationService_StartNotification_OutputMessage">
+    <wsdl:part name="parameters" element="tns:StartNotificationResponse" />
+  </wsdl:message>
+  <wsdl:message name="IEmailNotificationService_StopNotification_InputMessage">
+    <wsdl:part name="parameters" element="tns:StopNotification" />
+  </wsdl:message>
+  <wsdl:message name="IEmailNotificationService_StopNotification_OutputMessage">
+    <wsdl:part name="parameters" element="tns:StopNotificationResponse" />
+  </wsdl:message>
+  <wsdl:message name="IEmailNotificationService_GetServiceStatus_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetServiceStatus" />
+  </wsdl:message>
+  <wsdl:message name="IEmailNotificationService_GetServiceStatus_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetServiceStatusResponse" />
+  </wsdl:message>
+  <wsdl:message name="IEmailNotificationService_GetNotificationStatus_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetNotificationStatus" />
+  </wsdl:message>
+  <wsdl:message name="IEmailNotificationService_GetNotificationStatus_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetNotificationStatusResponse" />
+  </wsdl:message>
+  <wsdl:portType name="IEmailNotificationService">
+    <wsdl:operation name="StartNotification">
+      <wsdl:input wsaw:Action="http://EmailNotificationService/IEmailNotificationService/StartNotification" message="tns:IEmailNotificationService_StartNotification_InputMessage" />
+      <wsdl:output wsaw:Action="http://EmailNotificationService/IEmailNotificationService/StartNotificationResponse" message="tns:IEmailNotificationService_StartNotification_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="StopNotification">
+      <wsdl:input wsaw:Action="http://EmailNotificationService/IEmailNotificationService/StopNotification" message="tns:IEmailNotificationService_StopNotification_InputMessage" />
+      <wsdl:output wsaw:Action="http://EmailNotificationService/IEmailNotificationService/StopNotificationResponse" message="tns:IEmailNotificationService_StopNotification_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetServiceStatus">
+      <wsdl:input wsaw:Action="http://EmailNotificationService/IEmailNotificationService/GetServiceStatus" message="tns:IEmailNotificationService_GetServiceStatus_InputMessage" />
+      <wsdl:output wsaw:Action="http://EmailNotificationService/IEmailNotificationService/GetServiceStatusResponse" message="tns:IEmailNotificationService_GetServiceStatus_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetNotificationStatus">
+      <wsdl:input wsaw:Action="http://EmailNotificationService/IEmailNotificationService/GetNotificationStatus" message="tns:IEmailNotificationService_GetNotificationStatus_InputMessage" />
+      <wsdl:output wsaw:Action="http://EmailNotificationService/IEmailNotificationService/GetNotificationStatusResponse" message="tns:IEmailNotificationService_GetNotificationStatus_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+</wsdl:definitions>

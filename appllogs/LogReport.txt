@@ -1,0 +1,20 @@
+Start 08.01.2018 12:21:24
+0
+21187
+21187 08.01.2018 12:21:24
+D:\Work\Hut novogodisnji\appllogs\Temp\SYS_DetailedDataReport08-01-2018 122124\DetailedDataReport.xls
+21187  08.01.2018 12:21:24
+Close  08.01.2018 12:21:24
+Start detailed 12:21:24
+Flush  12:21:25
+Session clear 12:21:25
+Start 15.11.2023 09:39:56
+0
+10
+10 15.11.2023 09:39:56
+D:\CP Security\ACTA solutions\SMP FRIKOM\verzija ko ja je  kod njih 1\HUTCHINSON pmo\appllogs\Temp\SYS_DetailedDataReport15-11-2023 093956\DetailedDataReport.xls
+10  15.11.2023 09:39:56
+Close  15.11.2023 09:39:56
+Start detailed 09:39:56
+Flush  09:39:56
+Session clear 09:39:56

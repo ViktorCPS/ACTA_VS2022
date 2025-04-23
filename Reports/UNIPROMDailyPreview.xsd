@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="UNIPROMDailyPreview" targetNamespace="http://tempuri.org/UNIPROMDailyPreview.xsd" elementFormDefault="qualified" attributeFormDefault="qualified" xmlns="http://tempuri.org/UNIPROMDailyPreview.xsd" xmlns:mstns="http://tempuri.org/UNIPROMDailyPreview.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop">
+  <xs:element name="UNIPROMDailyPreview" msdata:IsDataSet="true" msdata:UseCurrentLocale="true">
+    <xs:complexType>
+      <xs:choice maxOccurs="unbounded">
+        <xs:element name="iopairs" msprop:Generator_UserTableName="iopairs" msprop:Generator_RowDeletedName="iopairsRowDeleted" msprop:Generator_RowChangedName="iopairsRowChanged" msprop:Generator_RowClassName="iopairsRow" msprop:Generator_RowChangingName="iopairsRowChanging" msprop:Generator_RowEvArgName="iopairsRowChangeEvent" msprop:Generator_RowEvHandlerName="iopairsRowChangeEventHandler" msprop:Generator_TableClassName="iopairsDataTable" msprop:Generator_TableVarName="tableiopairs" msprop:Generator_RowDeletingName="iopairsRowDeleting" msprop:Generator_TablePropName="iopairs">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="name" msdata:Caption="date" msprop:Generator_UserColumnName="direction" msprop:Generator_ColumnVarNameInTable="columndirection" msprop:Generator_ColumnPropNameInRow="direction" msprop:Generator_ColumnPropNameInTable="directionColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="date1" msprop:Generator_UserColumnName="event_time" msprop:Generator_ColumnVarNameInTable="columnevent_time" msprop:Generator_ColumnPropNameInRow="event_time" msprop:Generator_ColumnPropNameInTable="event_timeColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="time1" msdata:Caption="employee_id" msprop:Generator_UserColumnName="employee" msprop:Generator_ColumnVarNameInTable="columnemployee" msprop:Generator_ColumnPropNameInRow="employee" msprop:Generator_ColumnPropNameInTable="employeeColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="imageID" msprop:Generator_UserColumnName="imageID" msprop:Generator_ColumnVarNameInTable="columnimageID" msprop:Generator_ColumnPropNameInRow="imageID" msprop:Generator_ColumnPropNameInTable="imageIDColumn" type="xs:byte" minOccurs="0" />
+              <xs:element name="direction1" msprop:Generator_UserColumnName="licence_num" msprop:Generator_ColumnPropNameInRow="licence_num" msprop:Generator_ColumnVarNameInTable="columnlicence_num" msprop:Generator_ColumnPropNameInTable="licence_numColumn" type="xs:string" />
+              <xs:element name="date2" type="xs:string" />
+              <xs:element name="time2" type="xs:string" />
+              <xs:element name="direction2" type="xs:string" />
+              <xs:element name="hours" type="xs:int" />
+              <xs:element name="wu" type="xs:string" />
+              <xs:element name="type" type="xs:string" />
+              <xs:element name="date" type="xs:dateTime" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="images" msprop:Generator_UserTableName="images" msprop:Generator_RowDeletedName="imagesRowDeleted" msprop:Generator_RowChangedName="imagesRowChanged" msprop:Generator_RowClassName="imagesRow" msprop:Generator_RowChangingName="imagesRowChanging" msprop:Generator_RowEvArgName="imagesRowChangeEvent" msprop:Generator_RowEvHandlerName="imagesRowChangeEventHandler" msprop:Generator_TableClassName="imagesDataTable" msprop:Generator_TableVarName="tableimages" msprop:Generator_RowDeletingName="imagesRowDeleting" msprop:Generator_TablePropName="images">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="image" msprop:Generator_UserColumnName="image" msprop:Generator_ColumnVarNameInTable="columnimage" msprop:Generator_ColumnPropNameInRow="image" msprop:Generator_ColumnPropNameInTable="imageColumn" type="xs:base64Binary" minOccurs="0" />
+              <xs:element name="imageID" msprop:Generator_UserColumnName="imageID" msprop:Generator_ColumnVarNameInTable="columnimageID" msprop:Generator_ColumnPropNameInRow="imageID" msprop:Generator_ColumnPropNameInTable="imageIDColumn" type="xs:byte" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="empl_presence" msprop:Generator_UserTableName="iopairs" msprop:Generator_RowDeletedName="iopairsRowDeleted" msprop:Generator_RowChangedName="iopairsRowChanged" msprop:Generator_RowClassName="iopairsRow" msprop:Generator_RowChangingName="iopairsRowChanging" msprop:Generator_RowEvArgName="iopairsRowChangeEvent" msprop:Generator_RowEvHandlerName="iopairsRowChangeEventHandler" msprop:Generator_TableClassName="iopairsDataTable" msprop:Generator_TableVarName="tableiopairs" msprop:Generator_RowDeletingName="iopairsRowDeleting" msprop:Generator_TablePropName="iopairs">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="wu" msdata:Caption="date" msprop:Generator_UserColumnName="direction" msprop:Generator_ColumnVarNameInTable="columndirection" msprop:Generator_ColumnPropNameInRow="direction" msprop:Generator_ColumnPropNameInTable="directionColumn" type="xs:string" minOccurs="0" />
+        <xs:element name="present" msprop:Generator_UserColumnName="event_time" msprop:Generator_ColumnVarNameInTable="columnevent_time" msprop:Generator_ColumnPropNameInRow="event_time" msprop:Generator_ColumnPropNameInTable="event_timeColumn" type="xs:int" minOccurs="0" />
+        <xs:element name="sickLeave" msdata:Caption="employee_id" msprop:Generator_UserColumnName="employee" msprop:Generator_ColumnVarNameInTable="columnemployee" msprop:Generator_ColumnPropNameInRow="employee" msprop:Generator_ColumnPropNameInTable="employeeColumn" type="xs:int" minOccurs="0" />
+        <xs:element name="vacation" msprop:Generator_UserColumnName="imageID" msprop:Generator_ColumnVarNameInTable="columnimageID" msprop:Generator_ColumnPropNameInRow="imageID" msprop:Generator_ColumnPropNameInTable="imageIDColumn" type="xs:int" minOccurs="0" />
+        <xs:element name="dayOff" msprop:Generator_UserColumnName="licence_num" msprop:Generator_ColumnPropNameInRow="licence_num" msprop:Generator_ColumnVarNameInTable="columnlicence_num" msprop:Generator_ColumnPropNameInTable="licence_numColumn" type="xs:int" />
+        <xs:element name="absent" type="xs:int" />
+        <xs:element name="date" type="xs:dateTime" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

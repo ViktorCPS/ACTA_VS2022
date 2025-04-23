@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<ArrayOfLogTO xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <LogTO>
+    <LogID>0</LogID>
+    <ReaderID>18</ReaderID>
+    <TagID>66387156</TagID>
+    <Antenna>224</Antenna>
+    <EventHappened>4</EventHappened>
+    <ActionCommited>22</ActionCommited>
+    <Button>224</Button>
+    <PassGenUsed>0</PassGenUsed>
+    <EventTime>2018-12-06T16:29:20</EventTime>
+  </LogTO>
+  <LogTO>
+    <LogID>0</LogID>
+    <ReaderID>18</ReaderID>
+    <TagID>66387156</TagID>
+    <Antenna>226</Antenna>
+    <EventHappened>4</EventHappened>
+    <ActionCommited>22</ActionCommited>
+    <Button>226</Button>
+    <PassGenUsed>0</PassGenUsed>
+    <EventTime>2018-12-25T11:34:33</EventTime>
+  </LogTO>
+  <LogTO>
+    <LogID>0</LogID>
+    <ReaderID>18</ReaderID>
+    <TagID>66387156</TagID>
+    <Antenna>227</Antenna>
+    <EventHappened>4</EventHappened>
+    <ActionCommited>22</ActionCommited>
+    <Button>227</Button>
+    <PassGenUsed>0</PassGenUsed>
+    <EventTime>2018-12-25T11:34:38</EventTime>
+  </LogTO>
+</ArrayOfLogTO>

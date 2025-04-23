@@ -1,0 +1,1359 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "lib", "lib", "{1E085292-4B8B-4649-B6AB-05FDC806EA90}"
+	ProjectSection(SolutionItems) = preProject
+		lib\bthwid.dll = lib\bthwid.dll
+		lib\btw.bat = lib\btw.bat
+		lib\btwapi.dll = lib\btwapi.dll
+		lib\CelikApi.dll = lib\CelikApi.dll
+		lib\CelikWrapper.dll = lib\CelikWrapper.dll
+		lib\DocumentFormat.OpenXml.dll = lib\DocumentFormat.OpenXml.dll
+		lib\hid.dll = lib\hid.dll
+		lib\HitagWrapper.dll = lib\HitagWrapper.dll
+		lib\ICSharpCode.SharpZipLib.dll = lib\ICSharpCode.SharpZipLib.dll
+		lib\Ionic.Zip.dll = lib\Ionic.Zip.dll
+		lib\Ionic.Zip.xml = lib\Ionic.Zip.xml
+		lib\itextsharp.dll = lib\itextsharp.dll
+		lib\Mifare.dll = lib\Mifare.dll
+		lib\MySql.Data.dll = lib\MySql.Data.dll
+		lib\PieChart.dll = lib\PieChart.dll
+		lib\SecuritySwitch.dll = lib\SecuritySwitch.dll
+		lib\SerialPorts.dll = lib\SerialPorts.dll
+		lib\wia.bat = lib\wia.bat
+		lib\wiaaut.dll = lib\wiaaut.dll
+		lib\XKdll.dll = lib\XKdll.dll
+		lib\XKWrapper.dll = lib\XKWrapper.dll
+		lib\ZedGraph.dll = lib\ZedGraph.dll
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Help", "Help", "{23A2CCA7-096F-4FE5-8046-673C86A4C383}"
+	ProjectSection(SolutionItems) = preProject
+		Help\ACTAAdmin Manual.html = Help\ACTAAdmin Manual.html
+		Help\ACTAAdmin Manual.pdf = Help\ACTAAdmin Manual.pdf
+		Help\ACTAGate Manual.pdf = Help\ACTAGate Manual.pdf
+		Help\ACTAReaderControlAndDataProcessing Manual.pdf = Help\ACTAReaderControlAndDataProcessing Manual.pdf
+		Help\Kartice-Uputstvo za koriscenje.doc = Help\Kartice-Uputstvo za koriscenje.doc
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ACTAAdmin Manual_files", "ACTAAdmin Manual_files", "{51D3D95C-2695-4DE9-B687-B1105D1D7E34}"
+	ProjectSection(SolutionItems) = preProject
+		Help\ACTAAdmin Manual_files\ACTAAdmin Manual_clip_image002.jpg = Help\ACTAAdmin Manual_files\ACTAAdmin Manual_clip_image002.jpg
+		Help\ACTAAdmin Manual_files\ACTAAdmin Manual_clip_image004.jpg = Help\ACTAAdmin Manual_files\ACTAAdmin Manual_clip_image004.jpg
+		Help\ACTAAdmin Manual_files\ACTAAdmin Manual_clip_image006.jpg = Help\ACTAAdmin Manual_files\ACTAAdmin Manual_clip_image006.jpg
+		Help\ACTAAdmin Manual_files\ACTAAdmin Manual_clip_image008.jpg = Help\ACTAAdmin Manual_files\ACTAAdmin Manual_clip_image008.jpg
+		Help\ACTAAdmin Manual_files\ACTAAdmin Manual_clip_image010.jpg = Help\ACTAAdmin Manual_files\ACTAAdmin Manual_clip_image010.jpg
+		Help\ACTAAdmin Manual_files\CurrentEmplLoc.jpg = Help\ACTAAdmin Manual_files\CurrentEmplLoc.jpg
+		Help\ACTAAdmin Manual_files\CurrentEmplLocReport.jpg = Help\ACTAAdmin Manual_files\CurrentEmplLocReport.jpg
+		Help\ACTAAdmin Manual_files\DaysSelection.jpg = Help\ACTAAdmin Manual_files\DaysSelection.jpg
+		Help\ACTAAdmin Manual_files\Dodavanje kontrolnih tacaka-terminal.JPG = Help\ACTAAdmin Manual_files\Dodavanje kontrolnih tacaka-terminal.JPG
+		Help\ACTAAdmin Manual_files\Dodavanje kontrolnih tacaka.JPG = Help\ACTAAdmin Manual_files\Dodavanje kontrolnih tacaka.JPG
+		Help\ACTAAdmin Manual_files\Dodavanje menze.jpg = Help\ACTAAdmin Manual_files\Dodavanje menze.jpg
+		Help\ACTAAdmin Manual_files\Dodavanje putanja-terminal.JPG = Help\ACTAAdmin Manual_files\Dodavanje putanja-terminal.JPG
+		Help\ACTAAdmin Manual_files\Dodavanje putanja.JPG = Help\ACTAAdmin Manual_files\Dodavanje putanja.JPG
+		Help\ACTAAdmin Manual_files\Dodavanje termminala-terminal.JPG = Help\ACTAAdmin Manual_files\Dodavanje termminala-terminal.JPG
+		Help\ACTAAdmin Manual_files\Dodavanje termminala.JPG = Help\ACTAAdmin Manual_files\Dodavanje termminala.JPG
+		Help\ACTAAdmin Manual_files\Dodavanje vrste obroka-zaposleni.jpg = Help\ACTAAdmin Manual_files\Dodavanje vrste obroka-zaposleni.jpg
+		Help\ACTAAdmin Manual_files\Dodavanje vrste obroka.jpg = Help\ACTAAdmin Manual_files\Dodavanje vrste obroka.jpg
+		Help\ACTAAdmin Manual_files\Dodela rasporeda-terminal.JPG = Help\ACTAAdmin Manual_files\Dodela rasporeda-terminal.JPG
+		Help\ACTAAdmin Manual_files\Dodela rasporeda.JPG = Help\ACTAAdmin Manual_files\Dodela rasporeda.JPG
+		Help\ACTAAdmin Manual_files\Dodeljeni obroci.jpg = Help\ACTAAdmin Manual_files\Dodeljeni obroci.jpg
+		Help\ACTAAdmin Manual_files\Dodeljivanje obroka.jpg = Help\ACTAAdmin Manual_files\Dodeljivanje obroka.jpg
+		Help\ACTAAdmin Manual_files\emplAbsence.jpg.jpg = Help\ACTAAdmin Manual_files\emplAbsence.jpg.jpg
+		Help\ACTAAdmin Manual_files\emplAbsenceReport.jpg.jpg = Help\ACTAAdmin Manual_files\emplAbsenceReport.jpg.jpg
+		Help\ACTAAdmin Manual_files\enter.jpg = Help\ACTAAdmin Manual_files\enter.jpg
+		Help\ACTAAdmin Manual_files\exit.jpg = Help\ACTAAdmin Manual_files\exit.jpg
+		Help\ACTAAdmin Manual_files\ExtraHoursUsing.gif = Help\ACTAAdmin Manual_files\ExtraHoursUsing.gif
+		Help\ACTAAdmin Manual_files\ExtraHoursUsingAhead.jpg = Help\ACTAAdmin Manual_files\ExtraHoursUsingAhead.jpg
+		Help\ACTAAdmin Manual_files\filelist.xml = Help\ACTAAdmin Manual_files\filelist.xml
+		Help\ACTAAdmin Manual_files\formExemple.jpg = Help\ACTAAdmin Manual_files\formExemple.jpg
+		Help\ACTAAdmin Manual_files\header.html = Help\ACTAAdmin Manual_files\header.html
+		Help\ACTAAdmin Manual_files\image001.png = Help\ACTAAdmin Manual_files\image001.png
+		Help\ACTAAdmin Manual_files\image002.jpg = Help\ACTAAdmin Manual_files\image002.jpg
+		Help\ACTAAdmin Manual_files\image003.jpg = Help\ACTAAdmin Manual_files\image003.jpg
+		Help\ACTAAdmin Manual_files\image004.jpg = Help\ACTAAdmin Manual_files\image004.jpg
+		Help\ACTAAdmin Manual_files\image005.jpg = Help\ACTAAdmin Manual_files\image005.jpg
+		Help\ACTAAdmin Manual_files\image006.jpg = Help\ACTAAdmin Manual_files\image006.jpg
+		Help\ACTAAdmin Manual_files\image007.jpg = Help\ACTAAdmin Manual_files\image007.jpg
+		Help\ACTAAdmin Manual_files\image008.jpg = Help\ACTAAdmin Manual_files\image008.jpg
+		Help\ACTAAdmin Manual_files\image009.jpg = Help\ACTAAdmin Manual_files\image009.jpg
+		Help\ACTAAdmin Manual_files\image010.jpg = Help\ACTAAdmin Manual_files\image010.jpg
+		Help\ACTAAdmin Manual_files\image011.jpg = Help\ACTAAdmin Manual_files\image011.jpg
+		Help\ACTAAdmin Manual_files\image012.jpg = Help\ACTAAdmin Manual_files\image012.jpg
+		Help\ACTAAdmin Manual_files\image013.jpg = Help\ACTAAdmin Manual_files\image013.jpg
+		Help\ACTAAdmin Manual_files\image014.emz = Help\ACTAAdmin Manual_files\image014.emz
+		Help\ACTAAdmin Manual_files\image015.gif = Help\ACTAAdmin Manual_files\image015.gif
+		Help\ACTAAdmin Manual_files\image016.png = Help\ACTAAdmin Manual_files\image016.png
+		Help\ACTAAdmin Manual_files\image017.jpg = Help\ACTAAdmin Manual_files\image017.jpg
+		Help\ACTAAdmin Manual_files\image018.jpg = Help\ACTAAdmin Manual_files\image018.jpg
+		Help\ACTAAdmin Manual_files\image019.jpg = Help\ACTAAdmin Manual_files\image019.jpg
+		Help\ACTAAdmin Manual_files\image020.jpg = Help\ACTAAdmin Manual_files\image020.jpg
+		Help\ACTAAdmin Manual_files\image021.jpg = Help\ACTAAdmin Manual_files\image021.jpg
+		Help\ACTAAdmin Manual_files\image022.jpg = Help\ACTAAdmin Manual_files\image022.jpg
+		Help\ACTAAdmin Manual_files\image023.jpg = Help\ACTAAdmin Manual_files\image023.jpg
+		Help\ACTAAdmin Manual_files\image024.png = Help\ACTAAdmin Manual_files\image024.png
+		Help\ACTAAdmin Manual_files\image025.jpg = Help\ACTAAdmin Manual_files\image025.jpg
+		Help\ACTAAdmin Manual_files\image026.emz = Help\ACTAAdmin Manual_files\image026.emz
+		Help\ACTAAdmin Manual_files\image027.gif = Help\ACTAAdmin Manual_files\image027.gif
+		Help\ACTAAdmin Manual_files\image028.emz = Help\ACTAAdmin Manual_files\image028.emz
+		Help\ACTAAdmin Manual_files\image029.gif = Help\ACTAAdmin Manual_files\image029.gif
+		Help\ACTAAdmin Manual_files\image030.emz = Help\ACTAAdmin Manual_files\image030.emz
+		Help\ACTAAdmin Manual_files\image031.gif = Help\ACTAAdmin Manual_files\image031.gif
+		Help\ACTAAdmin Manual_files\image032.png = Help\ACTAAdmin Manual_files\image032.png
+		Help\ACTAAdmin Manual_files\image033.jpg = Help\ACTAAdmin Manual_files\image033.jpg
+		Help\ACTAAdmin Manual_files\image034.emz = Help\ACTAAdmin Manual_files\image034.emz
+		Help\ACTAAdmin Manual_files\image035.gif = Help\ACTAAdmin Manual_files\image035.gif
+		Help\ACTAAdmin Manual_files\image036.emz = Help\ACTAAdmin Manual_files\image036.emz
+		Help\ACTAAdmin Manual_files\image037.gif = Help\ACTAAdmin Manual_files\image037.gif
+		Help\ACTAAdmin Manual_files\image038.emz = Help\ACTAAdmin Manual_files\image038.emz
+		Help\ACTAAdmin Manual_files\image039.gif = Help\ACTAAdmin Manual_files\image039.gif
+		Help\ACTAAdmin Manual_files\image040.jpg = Help\ACTAAdmin Manual_files\image040.jpg
+		Help\ACTAAdmin Manual_files\image041.jpg = Help\ACTAAdmin Manual_files\image041.jpg
+		Help\ACTAAdmin Manual_files\image042.jpg = Help\ACTAAdmin Manual_files\image042.jpg
+		Help\ACTAAdmin Manual_files\image043.jpg = Help\ACTAAdmin Manual_files\image043.jpg
+		Help\ACTAAdmin Manual_files\image044.jpg = Help\ACTAAdmin Manual_files\image044.jpg
+		Help\ACTAAdmin Manual_files\image045.jpg = Help\ACTAAdmin Manual_files\image045.jpg
+		Help\ACTAAdmin Manual_files\image046.jpg = Help\ACTAAdmin Manual_files\image046.jpg
+		Help\ACTAAdmin Manual_files\image047.jpg = Help\ACTAAdmin Manual_files\image047.jpg
+		Help\ACTAAdmin Manual_files\image048.png = Help\ACTAAdmin Manual_files\image048.png
+		Help\ACTAAdmin Manual_files\image049.jpg = Help\ACTAAdmin Manual_files\image049.jpg
+		Help\ACTAAdmin Manual_files\image050.jpg = Help\ACTAAdmin Manual_files\image050.jpg
+		Help\ACTAAdmin Manual_files\image051.jpg = Help\ACTAAdmin Manual_files\image051.jpg
+		Help\ACTAAdmin Manual_files\image052.jpg = Help\ACTAAdmin Manual_files\image052.jpg
+		Help\ACTAAdmin Manual_files\image053.jpg = Help\ACTAAdmin Manual_files\image053.jpg
+		Help\ACTAAdmin Manual_files\image054.jpg = Help\ACTAAdmin Manual_files\image054.jpg
+		Help\ACTAAdmin Manual_files\image055.jpg = Help\ACTAAdmin Manual_files\image055.jpg
+		Help\ACTAAdmin Manual_files\image056.jpg = Help\ACTAAdmin Manual_files\image056.jpg
+		Help\ACTAAdmin Manual_files\image057.jpg = Help\ACTAAdmin Manual_files\image057.jpg
+		Help\ACTAAdmin Manual_files\image058.jpg = Help\ACTAAdmin Manual_files\image058.jpg
+		Help\ACTAAdmin Manual_files\image059.jpg = Help\ACTAAdmin Manual_files\image059.jpg
+		Help\ACTAAdmin Manual_files\image060.png = Help\ACTAAdmin Manual_files\image060.png
+		Help\ACTAAdmin Manual_files\image061.jpg = Help\ACTAAdmin Manual_files\image061.jpg
+		Help\ACTAAdmin Manual_files\image062.png = Help\ACTAAdmin Manual_files\image062.png
+		Help\ACTAAdmin Manual_files\image063.jpg = Help\ACTAAdmin Manual_files\image063.jpg
+		Help\ACTAAdmin Manual_files\image064.jpg = Help\ACTAAdmin Manual_files\image064.jpg
+		Help\ACTAAdmin Manual_files\image065.jpg = Help\ACTAAdmin Manual_files\image065.jpg
+		Help\ACTAAdmin Manual_files\image066.jpg = Help\ACTAAdmin Manual_files\image066.jpg
+		Help\ACTAAdmin Manual_files\image067.jpg = Help\ACTAAdmin Manual_files\image067.jpg
+		Help\ACTAAdmin Manual_files\image068.jpg = Help\ACTAAdmin Manual_files\image068.jpg
+		Help\ACTAAdmin Manual_files\image069.jpg = Help\ACTAAdmin Manual_files\image069.jpg
+		Help\ACTAAdmin Manual_files\image070.jpg = Help\ACTAAdmin Manual_files\image070.jpg
+		Help\ACTAAdmin Manual_files\image071.jpg = Help\ACTAAdmin Manual_files\image071.jpg
+		Help\ACTAAdmin Manual_files\image072.png = Help\ACTAAdmin Manual_files\image072.png
+		Help\ACTAAdmin Manual_files\image073.jpg = Help\ACTAAdmin Manual_files\image073.jpg
+		Help\ACTAAdmin Manual_files\image074.jpg = Help\ACTAAdmin Manual_files\image074.jpg
+		Help\ACTAAdmin Manual_files\image075.jpg = Help\ACTAAdmin Manual_files\image075.jpg
+		Help\ACTAAdmin Manual_files\image076.jpg = Help\ACTAAdmin Manual_files\image076.jpg
+		Help\ACTAAdmin Manual_files\image077.jpg = Help\ACTAAdmin Manual_files\image077.jpg
+		Help\ACTAAdmin Manual_files\image078.emz = Help\ACTAAdmin Manual_files\image078.emz
+		Help\ACTAAdmin Manual_files\image079.gif = Help\ACTAAdmin Manual_files\image079.gif
+		Help\ACTAAdmin Manual_files\image080.emz = Help\ACTAAdmin Manual_files\image080.emz
+		Help\ACTAAdmin Manual_files\image081.gif = Help\ACTAAdmin Manual_files\image081.gif
+		Help\ACTAAdmin Manual_files\image082.emz = Help\ACTAAdmin Manual_files\image082.emz
+		Help\ACTAAdmin Manual_files\image083.gif = Help\ACTAAdmin Manual_files\image083.gif
+		Help\ACTAAdmin Manual_files\image084.emz = Help\ACTAAdmin Manual_files\image084.emz
+		Help\ACTAAdmin Manual_files\image085.gif = Help\ACTAAdmin Manual_files\image085.gif
+		Help\ACTAAdmin Manual_files\image086.emz = Help\ACTAAdmin Manual_files\image086.emz
+		Help\ACTAAdmin Manual_files\image087.gif = Help\ACTAAdmin Manual_files\image087.gif
+		Help\ACTAAdmin Manual_files\image088.emz = Help\ACTAAdmin Manual_files\image088.emz
+		Help\ACTAAdmin Manual_files\image089.gif = Help\ACTAAdmin Manual_files\image089.gif
+		Help\ACTAAdmin Manual_files\image090.emz = Help\ACTAAdmin Manual_files\image090.emz
+		Help\ACTAAdmin Manual_files\image091.gif = Help\ACTAAdmin Manual_files\image091.gif
+		Help\ACTAAdmin Manual_files\image092.emz = Help\ACTAAdmin Manual_files\image092.emz
+		Help\ACTAAdmin Manual_files\image093.gif = Help\ACTAAdmin Manual_files\image093.gif
+		Help\ACTAAdmin Manual_files\image094.emz = Help\ACTAAdmin Manual_files\image094.emz
+		Help\ACTAAdmin Manual_files\image095.gif = Help\ACTAAdmin Manual_files\image095.gif
+		Help\ACTAAdmin Manual_files\image096.emz = Help\ACTAAdmin Manual_files\image096.emz
+		Help\ACTAAdmin Manual_files\image097.gif = Help\ACTAAdmin Manual_files\image097.gif
+		Help\ACTAAdmin Manual_files\image098.emz = Help\ACTAAdmin Manual_files\image098.emz
+		Help\ACTAAdmin Manual_files\image099.gif = Help\ACTAAdmin Manual_files\image099.gif
+		Help\ACTAAdmin Manual_files\image100.emz = Help\ACTAAdmin Manual_files\image100.emz
+		Help\ACTAAdmin Manual_files\image101.gif = Help\ACTAAdmin Manual_files\image101.gif
+		Help\ACTAAdmin Manual_files\image102.emz = Help\ACTAAdmin Manual_files\image102.emz
+		Help\ACTAAdmin Manual_files\image103.gif = Help\ACTAAdmin Manual_files\image103.gif
+		Help\ACTAAdmin Manual_files\image104.emz = Help\ACTAAdmin Manual_files\image104.emz
+		Help\ACTAAdmin Manual_files\image104.png = Help\ACTAAdmin Manual_files\image104.png
+		Help\ACTAAdmin Manual_files\image105.gif = Help\ACTAAdmin Manual_files\image105.gif
+		Help\ACTAAdmin Manual_files\image105.jpg = Help\ACTAAdmin Manual_files\image105.jpg
+		Help\ACTAAdmin Manual_files\image106.emz = Help\ACTAAdmin Manual_files\image106.emz
+		Help\ACTAAdmin Manual_files\image106.png = Help\ACTAAdmin Manual_files\image106.png
+		Help\ACTAAdmin Manual_files\image107.gif = Help\ACTAAdmin Manual_files\image107.gif
+		Help\ACTAAdmin Manual_files\image107.jpg = Help\ACTAAdmin Manual_files\image107.jpg
+		Help\ACTAAdmin Manual_files\image108.emz = Help\ACTAAdmin Manual_files\image108.emz
+		Help\ACTAAdmin Manual_files\image109.gif = Help\ACTAAdmin Manual_files\image109.gif
+		Help\ACTAAdmin Manual_files\image110.emz = Help\ACTAAdmin Manual_files\image110.emz
+		Help\ACTAAdmin Manual_files\image111.gif = Help\ACTAAdmin Manual_files\image111.gif
+		Help\ACTAAdmin Manual_files\image112.emz = Help\ACTAAdmin Manual_files\image112.emz
+		Help\ACTAAdmin Manual_files\image113.gif = Help\ACTAAdmin Manual_files\image113.gif
+		Help\ACTAAdmin Manual_files\image114.emz = Help\ACTAAdmin Manual_files\image114.emz
+		Help\ACTAAdmin Manual_files\image114.png = Help\ACTAAdmin Manual_files\image114.png
+		Help\ACTAAdmin Manual_files\image115.jpg = Help\ACTAAdmin Manual_files\image115.jpg
+		Help\ACTAAdmin Manual_files\image116.emz = Help\ACTAAdmin Manual_files\image116.emz
+		Help\ACTAAdmin Manual_files\image116.png = Help\ACTAAdmin Manual_files\image116.png
+		Help\ACTAAdmin Manual_files\image117.gif = Help\ACTAAdmin Manual_files\image117.gif
+		Help\ACTAAdmin Manual_files\image117.jpg = Help\ACTAAdmin Manual_files\image117.jpg
+		Help\ACTAAdmin Manual_files\image118.png = Help\ACTAAdmin Manual_files\image118.png
+		Help\ACTAAdmin Manual_files\image119.jpg = Help\ACTAAdmin Manual_files\image119.jpg
+		Help\ACTAAdmin Manual_files\image120.png = Help\ACTAAdmin Manual_files\image120.png
+		Help\ACTAAdmin Manual_files\image121.jpg = Help\ACTAAdmin Manual_files\image121.jpg
+		Help\ACTAAdmin Manual_files\image122.png = Help\ACTAAdmin Manual_files\image122.png
+		Help\ACTAAdmin Manual_files\image123.jpg = Help\ACTAAdmin Manual_files\image123.jpg
+		Help\ACTAAdmin Manual_files\image124.png = Help\ACTAAdmin Manual_files\image124.png
+		Help\ACTAAdmin Manual_files\image125.jpg = Help\ACTAAdmin Manual_files\image125.jpg
+		Help\ACTAAdmin Manual_files\image126.png = Help\ACTAAdmin Manual_files\image126.png
+		Help\ACTAAdmin Manual_files\image127.jpg = Help\ACTAAdmin Manual_files\image127.jpg
+		Help\ACTAAdmin Manual_files\image128.png = Help\ACTAAdmin Manual_files\image128.png
+		Help\ACTAAdmin Manual_files\image129.jpg = Help\ACTAAdmin Manual_files\image129.jpg
+		Help\ACTAAdmin Manual_files\image130.png = Help\ACTAAdmin Manual_files\image130.png
+		Help\ACTAAdmin Manual_files\image131.jpg = Help\ACTAAdmin Manual_files\image131.jpg
+		Help\ACTAAdmin Manual_files\image132.png = Help\ACTAAdmin Manual_files\image132.png
+		Help\ACTAAdmin Manual_files\image133.jpg = Help\ACTAAdmin Manual_files\image133.jpg
+		Help\ACTAAdmin Manual_files\image134.png = Help\ACTAAdmin Manual_files\image134.png
+		Help\ACTAAdmin Manual_files\image135.jpg = Help\ACTAAdmin Manual_files\image135.jpg
+		Help\ACTAAdmin Manual_files\image136.png = Help\ACTAAdmin Manual_files\image136.png
+		Help\ACTAAdmin Manual_files\image137.jpg = Help\ACTAAdmin Manual_files\image137.jpg
+		Help\ACTAAdmin Manual_files\image138.png = Help\ACTAAdmin Manual_files\image138.png
+		Help\ACTAAdmin Manual_files\image139.jpg = Help\ACTAAdmin Manual_files\image139.jpg
+		Help\ACTAAdmin Manual_files\image140.jpg = Help\ACTAAdmin Manual_files\image140.jpg
+		Help\ACTAAdmin Manual_files\image140.png = Help\ACTAAdmin Manual_files\image140.png
+		Help\ACTAAdmin Manual_files\image141.jpg = Help\ACTAAdmin Manual_files\image141.jpg
+		Help\ACTAAdmin Manual_files\image142.emz = Help\ACTAAdmin Manual_files\image142.emz
+		Help\ACTAAdmin Manual_files\image142.png = Help\ACTAAdmin Manual_files\image142.png
+		Help\ACTAAdmin Manual_files\image143.gif = Help\ACTAAdmin Manual_files\image143.gif
+		Help\ACTAAdmin Manual_files\image143.jpg = Help\ACTAAdmin Manual_files\image143.jpg
+		Help\ACTAAdmin Manual_files\image144.jpg = Help\ACTAAdmin Manual_files\image144.jpg
+		Help\ACTAAdmin Manual_files\image145.jpg = Help\ACTAAdmin Manual_files\image145.jpg
+		Help\ACTAAdmin Manual_files\image146.emz = Help\ACTAAdmin Manual_files\image146.emz
+		Help\ACTAAdmin Manual_files\image147.gif = Help\ACTAAdmin Manual_files\image147.gif
+		Help\ACTAAdmin Manual_files\image148.emz = Help\ACTAAdmin Manual_files\image148.emz
+		Help\ACTAAdmin Manual_files\image148.jpg = Help\ACTAAdmin Manual_files\image148.jpg
+		Help\ACTAAdmin Manual_files\image149.gif = Help\ACTAAdmin Manual_files\image149.gif
+		Help\ACTAAdmin Manual_files\image149.jpg = Help\ACTAAdmin Manual_files\image149.jpg
+		Help\ACTAAdmin Manual_files\image150.emz = Help\ACTAAdmin Manual_files\image150.emz
+		Help\ACTAAdmin Manual_files\image151.gif = Help\ACTAAdmin Manual_files\image151.gif
+		Help\ACTAAdmin Manual_files\image152.emz = Help\ACTAAdmin Manual_files\image152.emz
+		Help\ACTAAdmin Manual_files\image153.gif = Help\ACTAAdmin Manual_files\image153.gif
+		Help\ACTAAdmin Manual_files\image154.emz = Help\ACTAAdmin Manual_files\image154.emz
+		Help\ACTAAdmin Manual_files\image155.gif = Help\ACTAAdmin Manual_files\image155.gif
+		Help\ACTAAdmin Manual_files\image156.emz = Help\ACTAAdmin Manual_files\image156.emz
+		Help\ACTAAdmin Manual_files\image157.gif = Help\ACTAAdmin Manual_files\image157.gif
+		Help\ACTAAdmin Manual_files\image158.emz = Help\ACTAAdmin Manual_files\image158.emz
+		Help\ACTAAdmin Manual_files\image159.gif = Help\ACTAAdmin Manual_files\image159.gif
+		Help\ACTAAdmin Manual_files\image160.emz = Help\ACTAAdmin Manual_files\image160.emz
+		Help\ACTAAdmin Manual_files\image161.gif = Help\ACTAAdmin Manual_files\image161.gif
+		Help\ACTAAdmin Manual_files\image162.emz = Help\ACTAAdmin Manual_files\image162.emz
+		Help\ACTAAdmin Manual_files\image163.gif = Help\ACTAAdmin Manual_files\image163.gif
+		Help\ACTAAdmin Manual_files\image164.emz = Help\ACTAAdmin Manual_files\image164.emz
+		Help\ACTAAdmin Manual_files\image165.gif = Help\ACTAAdmin Manual_files\image165.gif
+		Help\ACTAAdmin Manual_files\image166.emz = Help\ACTAAdmin Manual_files\image166.emz
+		Help\ACTAAdmin Manual_files\image167.gif = Help\ACTAAdmin Manual_files\image167.gif
+		Help\ACTAAdmin Manual_files\image168.emz = Help\ACTAAdmin Manual_files\image168.emz
+		Help\ACTAAdmin Manual_files\image169.gif = Help\ACTAAdmin Manual_files\image169.gif
+		Help\ACTAAdmin Manual_files\image170.emz = Help\ACTAAdmin Manual_files\image170.emz
+		Help\ACTAAdmin Manual_files\image170.png = Help\ACTAAdmin Manual_files\image170.png
+		Help\ACTAAdmin Manual_files\image171.gif = Help\ACTAAdmin Manual_files\image171.gif
+		Help\ACTAAdmin Manual_files\image171.jpg = Help\ACTAAdmin Manual_files\image171.jpg
+		Help\ACTAAdmin Manual_files\image172.emz = Help\ACTAAdmin Manual_files\image172.emz
+		Help\ACTAAdmin Manual_files\image172.png = Help\ACTAAdmin Manual_files\image172.png
+		Help\ACTAAdmin Manual_files\image173.jpg = Help\ACTAAdmin Manual_files\image173.jpg
+		Help\ACTAAdmin Manual_files\image174.emz = Help\ACTAAdmin Manual_files\image174.emz
+		Help\ACTAAdmin Manual_files\image174.png = Help\ACTAAdmin Manual_files\image174.png
+		Help\ACTAAdmin Manual_files\image175.gif = Help\ACTAAdmin Manual_files\image175.gif
+		Help\ACTAAdmin Manual_files\image176.png = Help\ACTAAdmin Manual_files\image176.png
+		Help\ACTAAdmin Manual_files\image177.jpg = Help\ACTAAdmin Manual_files\image177.jpg
+		Help\ACTAAdmin Manual_files\image178.emz = Help\ACTAAdmin Manual_files\image178.emz
+		Help\ACTAAdmin Manual_files\image178.png = Help\ACTAAdmin Manual_files\image178.png
+		Help\ACTAAdmin Manual_files\image179.jpg = Help\ACTAAdmin Manual_files\image179.jpg
+		Help\ACTAAdmin Manual_files\image180.jpg = Help\ACTAAdmin Manual_files\image180.jpg
+		Help\ACTAAdmin Manual_files\image180.png = Help\ACTAAdmin Manual_files\image180.png
+		Help\ACTAAdmin Manual_files\image181.jpg = Help\ACTAAdmin Manual_files\image181.jpg
+		Help\ACTAAdmin Manual_files\image182.emz = Help\ACTAAdmin Manual_files\image182.emz
+		Help\ACTAAdmin Manual_files\image182.png = Help\ACTAAdmin Manual_files\image182.png
+		Help\ACTAAdmin Manual_files\image183.gif = Help\ACTAAdmin Manual_files\image183.gif
+		Help\ACTAAdmin Manual_files\image184.emz = Help\ACTAAdmin Manual_files\image184.emz
+		Help\ACTAAdmin Manual_files\image184.jpg = Help\ACTAAdmin Manual_files\image184.jpg
+		Help\ACTAAdmin Manual_files\image185.gif = Help\ACTAAdmin Manual_files\image185.gif
+		Help\ACTAAdmin Manual_files\image186.emz = Help\ACTAAdmin Manual_files\image186.emz
+		Help\ACTAAdmin Manual_files\image186.jpg = Help\ACTAAdmin Manual_files\image186.jpg
+		Help\ACTAAdmin Manual_files\image187.gif = Help\ACTAAdmin Manual_files\image187.gif
+		Help\ACTAAdmin Manual_files\image187.jpg = Help\ACTAAdmin Manual_files\image187.jpg
+		Help\ACTAAdmin Manual_files\image188.emz = Help\ACTAAdmin Manual_files\image188.emz
+		Help\ACTAAdmin Manual_files\image188.jpg = Help\ACTAAdmin Manual_files\image188.jpg
+		Help\ACTAAdmin Manual_files\image189.gif = Help\ACTAAdmin Manual_files\image189.gif
+		Help\ACTAAdmin Manual_files\image189.jpg = Help\ACTAAdmin Manual_files\image189.jpg
+		Help\ACTAAdmin Manual_files\image190.jpg = Help\ACTAAdmin Manual_files\image190.jpg
+		Help\ACTAAdmin Manual_files\image191.jpg = Help\ACTAAdmin Manual_files\image191.jpg
+		Help\ACTAAdmin Manual_files\image192.jpg = Help\ACTAAdmin Manual_files\image192.jpg
+		Help\ACTAAdmin Manual_files\image193.jpg = Help\ACTAAdmin Manual_files\image193.jpg
+		Help\ACTAAdmin Manual_files\image194.jpg = Help\ACTAAdmin Manual_files\image194.jpg
+		Help\ACTAAdmin Manual_files\image195.jpg = Help\ACTAAdmin Manual_files\image195.jpg
+		Help\ACTAAdmin Manual_files\image196.jpg = Help\ACTAAdmin Manual_files\image196.jpg
+		Help\ACTAAdmin Manual_files\image197.jpg = Help\ACTAAdmin Manual_files\image197.jpg
+		Help\ACTAAdmin Manual_files\image198.jpg = Help\ACTAAdmin Manual_files\image198.jpg
+		Help\ACTAAdmin Manual_files\image199.jpg = Help\ACTAAdmin Manual_files\image199.jpg
+		Help\ACTAAdmin Manual_files\image200.jpg = Help\ACTAAdmin Manual_files\image200.jpg
+		Help\ACTAAdmin Manual_files\image201.jpg = Help\ACTAAdmin Manual_files\image201.jpg
+		Help\ACTAAdmin Manual_files\image202.jpg = Help\ACTAAdmin Manual_files\image202.jpg
+		Help\ACTAAdmin Manual_files\image203.jpg = Help\ACTAAdmin Manual_files\image203.jpg
+		Help\ACTAAdmin Manual_files\image204.jpg = Help\ACTAAdmin Manual_files\image204.jpg
+		Help\ACTAAdmin Manual_files\image204.png = Help\ACTAAdmin Manual_files\image204.png
+		Help\ACTAAdmin Manual_files\image205.jpg = Help\ACTAAdmin Manual_files\image205.jpg
+		Help\ACTAAdmin Manual_files\image206.jpg = Help\ACTAAdmin Manual_files\image206.jpg
+		Help\ACTAAdmin Manual_files\image206.png = Help\ACTAAdmin Manual_files\image206.png
+		Help\ACTAAdmin Manual_files\image207.jpg = Help\ACTAAdmin Manual_files\image207.jpg
+		Help\ACTAAdmin Manual_files\image208.png = Help\ACTAAdmin Manual_files\image208.png
+		Help\ACTAAdmin Manual_files\image209.jpg = Help\ACTAAdmin Manual_files\image209.jpg
+		Help\ACTAAdmin Manual_files\image210.png = Help\ACTAAdmin Manual_files\image210.png
+		Help\ACTAAdmin Manual_files\image211.jpg = Help\ACTAAdmin Manual_files\image211.jpg
+		Help\ACTAAdmin Manual_files\image214.png = Help\ACTAAdmin Manual_files\image214.png
+		Help\ACTAAdmin Manual_files\image215.jpg = Help\ACTAAdmin Manual_files\image215.jpg
+		Help\ACTAAdmin Manual_files\image216.jpg = Help\ACTAAdmin Manual_files\image216.jpg
+		Help\ACTAAdmin Manual_files\image217.jpg = Help\ACTAAdmin Manual_files\image217.jpg
+		Help\ACTAAdmin Manual_files\Iskorisceni obroci.jpg = Help\ACTAAdmin Manual_files\Iskorisceni obroci.jpg
+		Help\ACTAAdmin Manual_files\Izmena terminala-terminal.JPG = Help\ACTAAdmin Manual_files\Izmena terminala-terminal.JPG
+		Help\ACTAAdmin Manual_files\Izmena terminala.JPG = Help\ACTAAdmin Manual_files\Izmena terminala.JPG
+		Help\ACTAAdmin Manual_files\Izvestaji o obilascima-terminal.JPG = Help\ACTAAdmin Manual_files\Izvestaji o obilascima-terminal.JPG
+		Help\ACTAAdmin Manual_files\Izvestaji o obilascima.JPG = Help\ACTAAdmin Manual_files\Izvestaji o obilascima.JPG
+		Help\ACTAAdmin Manual_files\Kontrolne tacke-terminal.JPG = Help\ACTAAdmin Manual_files\Kontrolne tacke-terminal.JPG
+		Help\ACTAAdmin Manual_files\Kontrolne tacke.JPG = Help\ACTAAdmin Manual_files\Kontrolne tacke.JPG
+		Help\ACTAAdmin Manual_files\LocationList.jpg = Help\ACTAAdmin Manual_files\LocationList.jpg
+		Help\ACTAAdmin Manual_files\LocationTree.jpg = Help\ACTAAdmin Manual_files\LocationTree.jpg
+		Help\ACTAAdmin Manual_files\Locking1.jpg = Help\ACTAAdmin Manual_files\Locking1.jpg
+		Help\ACTAAdmin Manual_files\Locking2.jpg = Help\ACTAAdmin Manual_files\Locking2.jpg
+		Help\ACTAAdmin Manual_files\MapAdding.jpg = Help\ACTAAdmin Manual_files\MapAdding.jpg
+		Help\ACTAAdmin Manual_files\MapObjects.jpg = Help\ACTAAdmin Manual_files\MapObjects.jpg
+		Help\ACTAAdmin Manual_files\MapPreview.jpg = Help\ACTAAdmin Manual_files\MapPreview.jpg
+		Help\ACTAAdmin Manual_files\Maps.jpg = Help\ACTAAdmin Manual_files\Maps.jpg
+		Help\ACTAAdmin Manual_files\MDIParent1.jpg = Help\ACTAAdmin Manual_files\MDIParent1.jpg
+		Help\ACTAAdmin Manual_files\MDIParent2.jpg = Help\ACTAAdmin Manual_files\MDIParent2.jpg
+		Help\ACTAAdmin Manual_files\Menze.jpg = Help\ACTAAdmin Manual_files\Menze.jpg
+		Help\ACTAAdmin Manual_files\Odrzavanje putanja-terminal.JPG = Help\ACTAAdmin Manual_files\Odrzavanje putanja-terminal.JPG
+		Help\ACTAAdmin Manual_files\Odrzavanje putanja.JPG = Help\ACTAAdmin Manual_files\Odrzavanje putanja.JPG
+		Help\ACTAAdmin Manual_files\PassAdd.jpg = Help\ACTAAdmin Manual_files\PassAdd.jpg
+		Help\ACTAAdmin Manual_files\Passes.jpg = Help\ACTAAdmin Manual_files\Passes.jpg
+		Help\ACTAAdmin Manual_files\PermissionAddAdvanced.jpg = Help\ACTAAdmin Manual_files\PermissionAddAdvanced.jpg
+		Help\ACTAAdmin Manual_files\Preview.jpg = Help\ACTAAdmin Manual_files\Preview.jpg
+		Help\ACTAAdmin Manual_files\preview.wmf = Help\ACTAAdmin Manual_files\preview.wmf
+		Help\ACTAAdmin Manual_files\Promena kontrolnih tacaka-terminal.JPG = Help\ACTAAdmin Manual_files\Promena kontrolnih tacaka-terminal.JPG
+		Help\ACTAAdmin Manual_files\Promena rasporeda-terminal.JPG = Help\ACTAAdmin Manual_files\Promena rasporeda-terminal.JPG
+		Help\ACTAAdmin Manual_files\Promena rasporeda.JPG = Help\ACTAAdmin Manual_files\Promena rasporeda.JPG
+		Help\ACTAAdmin Manual_files\Raspored obilazaka-terminal.JPG = Help\ACTAAdmin Manual_files\Raspored obilazaka-terminal.JPG
+		Help\ACTAAdmin Manual_files\Raspored obilazaka.JPG = Help\ACTAAdmin Manual_files\Raspored obilazaka.JPG
+		Help\ACTAAdmin Manual_files\scenDoc.jpg = Help\ACTAAdmin Manual_files\scenDoc.jpg
+		Help\ACTAAdmin Manual_files\TagSearch.jpg = Help\ACTAAdmin Manual_files\TagSearch.jpg
+		Help\ACTAAdmin Manual_files\TagsSum.jpg = Help\ACTAAdmin Manual_files\TagsSum.jpg
+		Help\ACTAAdmin Manual_files\Terminali-terminal.JPG = Help\ACTAAdmin Manual_files\Terminali-terminal.JPG
+		Help\ACTAAdmin Manual_files\TreeViewExemple.jpg = Help\ACTAAdmin Manual_files\TreeViewExemple.jpg
+		Help\ACTAAdmin Manual_files\Ucitavanje loga-terminal.JPG = Help\ACTAAdmin Manual_files\Ucitavanje loga-terminal.JPG
+		Help\ACTAAdmin Manual_files\VacAdding.jpg = Help\ACTAAdmin Manual_files\VacAdding.jpg
+		Help\ACTAAdmin Manual_files\VacationEvidence.jpg = Help\ACTAAdmin Manual_files\VacationEvidence.jpg
+		Help\ACTAAdmin Manual_files\VacDetails.jpg = Help\ACTAAdmin Manual_files\VacDetails.jpg
+		Help\ACTAAdmin Manual_files\VacRep.jpg = Help\ACTAAdmin Manual_files\VacRep.jpg
+		Help\ACTAAdmin Manual_files\VacRepDetails.jpg = Help\ACTAAdmin Manual_files\VacRepDetails.jpg
+		Help\ACTAAdmin Manual_files\visitors.jpg = Help\ACTAAdmin Manual_files\visitors.jpg
+		Help\ACTAAdmin Manual_files\visitorsDocDelete.jpg = Help\ACTAAdmin Manual_files\visitorsDocDelete.jpg
+		Help\ACTAAdmin Manual_files\visitorsDocDump.jpg = Help\ACTAAdmin Manual_files\visitorsDocDump.jpg
+		Help\ACTAAdmin Manual_files\visitorsEnter.jpg = Help\ACTAAdmin Manual_files\visitorsEnter.jpg
+		Help\ACTAAdmin Manual_files\Vrste obroka po zaposlenima.jpg = Help\ACTAAdmin Manual_files\Vrste obroka po zaposlenima.jpg
+		Help\ACTAAdmin Manual_files\Vrste obroka.jpg = Help\ACTAAdmin Manual_files\Vrste obroka.jpg
+		Help\ACTAAdmin Manual_files\WUList.jpg = Help\ACTAAdmin Manual_files\WUList.jpg
+		Help\ACTAAdmin Manual_files\WUTree.jpg = Help\ACTAAdmin Manual_files\WUTree.jpg
+		Help\ACTAAdmin Manual_files\Zaposleni-termnal.JPG = Help\ACTAAdmin Manual_files\Zaposleni-termnal.JPG
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "data", "data", "{C9593797-80D0-4D36-94B0-517DC418CC2E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "LOG", "LOG", "{CFBF2A67-A564-4C11-BB15-8A964B9DB2BF}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "XMLSource", "XMLSource", "{72DC4B9D-943D-4F2F-BA34-9210A0FD0CAB}"
+	ProjectSection(SolutionItems) = preProject
+		data\XMLSource\Employees.xml = data\XMLSource\Employees.xml
+		data\XMLSource\Location.xml = data\XMLSource\Location.xml
+		data\XMLSource\PassTypes.xml = data\XMLSource\PassTypes.xml
+		data\XMLSource\Readers.xml = data\XMLSource\Readers.xml
+		data\XMLSource\Tags.xml = data\XMLSource\Tags.xml
+		data\XMLSource\Visits.xml = data\XMLSource\Visits.xml
+		data\XMLSource\Visits_20061026.xml = data\XMLSource\Visits_20061026.xml
+		data\XMLSource\Visits_20061027.xml = data\XMLSource\Visits_20061027.xml
+		data\XMLSource\Visits_20061114.xml = data\XMLSource\Visits_20061114.xml
+		data\XMLSource\Visits_20061215.xml = data\XMLSource\Visits_20061215.xml
+		data\XMLSource\Visits_20061216.xml = data\XMLSource\Visits_20061216.xml
+		data\XMLSource\Visits_2007111.xml = data\XMLSource\Visits_2007111.xml
+		data\XMLSource\WorkingUnits.xml = data\XMLSource\WorkingUnits.xml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "XMLUpdate", "XMLUpdate", "{D59FC43A-E6EE-45C9-AC56-4F74265558EB}"
+	ProjectSection(SolutionItems) = preProject
+		data\XMLUpdate\Dummy.xml = data\XMLUpdate\Dummy.xml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "RWD", "RWD", "{33DD386B-0DD8-4640-8C9B-30347549AE37}"
+	ProjectSection(SolutionItems) = preProject
+		RWD\ABCpdf.DLL = RWD\ABCpdf.DLL
+		RWD\AcasData.dll = RWD\AcasData.dll
+		RWD\CardManipulation.dll = RWD\CardManipulation.dll
+		RWD\Cards.dat = RWD\Cards.dat
+		RWD\Common.dll = RWD\Common.dll
+		RWD\DBAccess.dll = RWD\DBAccess.dll
+		RWD\Hitag.dll = RWD\Hitag.dll
+		RWD\HitagWrapper.dll = RWD\HitagWrapper.dll
+		RWD\ICSharpCode.SharpZipLib.dll = RWD\ICSharpCode.SharpZipLib.dll
+		RWD\Mifare.dll = RWD\Mifare.dll
+		RWD\MySql.Data.dll = RWD\MySql.Data.dll
+		RWD\ReaderInterface.dll = RWD\ReaderInterface.dll
+		RWD\RegistryDataApplication.exe = RWD\RegistryDataApplication.exe
+		RWD\RegistryDataApplication.exe.config = RWD\RegistryDataApplication.exe.config
+		RWD\RFIDDevice.dll = RWD\RFIDDevice.dll
+		RWD\RWD.exe = RWD\RWD.exe
+		RWD\SerialPorts.dll = RWD\SerialPorts.dll
+		RWD\Test.rwd = RWD\Test.rwd
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "L", "L", "{51B069E7-872D-46CF-8F32-71831F43B48F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "archived", "archived", "{8151DF50-E6F1-40A7-9974-C8086A307C8C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "cards", "cards", "{77A9FC5B-E2F3-4236-A072-2A46E4CA6386}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "monitoring", "monitoring", "{63573BE6-B534-43F9-BC2C-FDBE8C4B6389}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "timeaccessprofiles", "timeaccessprofiles", "{8C0D70FA-09F3-47FC-8E67-CCD231F5F7B5}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "unprocessed", "unprocessed", "{65F85581-DA83-40DE-A4C8-3C5D485783EB}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "trash", "trash", "{0ED7F7EA-C78E-4C6D-B441-DCA01148C09E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "appllogs", "appllogs", "{2DC5DFF2-117A-4946-B469-247A1019037B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ACTAAdmin", "ACTAAdmin", "{29F84314-5201-4EB0-8475-7AB01FEEB58D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ACTADataProcessing", "ACTADataProcessing", "{CAFCB8C8-5407-466C-B48F-0CF71895B58D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ACTAGate", "ACTAGate", "{E0624870-2F70-49D5-84EB-82E920F78E0F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ACTAMonitor", "ACTAMonitor", "{D51D7D5D-D2CB-424D-AEE8-5492A5D19BE4}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ACTAReaderControl", "ACTAReaderControl", "{5D185B3D-BED2-4838-AAF8-51344491C634}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ACTAWeb", "ACTAWeb", "{62D4988B-8E2E-4143-8FAD-13EB9E2636CB}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "report", "report", "{AD2E781C-F7A0-4A63-B536-08CC3A7A8614}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "csv", "csv", "{CF6888E9-29FD-4E7B-BCA5-0B8189ADA15C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "pdf", "pdf", "{E1B13898-7EE8-4453-AF75-A1AC69E828C5}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "templates", "templates", "{50CA81A4-3598-4F00-9D62-E180B1ECE0A7}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "txt", "txt", "{502B9635-B92D-4F93-B274-381ABA7BF82F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "resources", "resources", "{74AFD73B-A8BF-4B01-AB2B-F2BBDE89E9FA}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "icons", "icons", "{A8DA5888-A7C9-49CE-917B-2A078BCEEDCA}"
+	ProjectSection(SolutionItems) = preProject
+		resources\icons\Admin.ico = resources\icons\Admin.ico
+		resources\icons\CALENDAR.ICO = resources\icons\CALENDAR.ICO
+		resources\icons\Card.ico = resources\icons\Card.ico
+		resources\icons\citac.JPG = resources\icons\citac.JPG
+		resources\icons\CLOCK1.ICO = resources\icons\CLOCK1.ICO
+		resources\icons\clock16.ico = resources\icons\clock16.ico
+		resources\icons\CLOCK2.ICO = resources\icons\CLOCK2.ICO
+		resources\icons\CLOCK3.ICO = resources\icons\CLOCK3.ICO
+		resources\icons\clock32.ico = resources\icons\clock32.ico
+		resources\icons\CLOCK4.ICO = resources\icons\CLOCK4.ICO
+		resources\icons\CLOCK5.ICO = resources\icons\CLOCK5.ICO
+		resources\icons\DatabaseSetup.ico = resources\icons\DatabaseSetup.ico
+		resources\icons\DataProcessing.ico = resources\icons\DataProcessing.ico
+		resources\icons\Gate.ico = resources\icons\Gate.ico
+		resources\icons\ico_ipsmsnap0006.ico = resources\icons\ico_ipsmsnap0006.ico
+		resources\icons\kamera.jpg = resources\icons\kamera.jpg
+		resources\icons\kapija.JPG = resources\icons\kapija.JPG
+		resources\icons\Monitor.ico = resources\icons\Monitor.ico
+		resources\icons\NET01.ICO = resources\icons\NET01.ICO
+		resources\icons\ReaderControl.ico = resources\icons\ReaderControl.ico
+		resources\icons\Report.ico = resources\icons\Report.ico
+		resources\icons\SelectMap.PNG = resources\icons\SelectMap.PNG
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "logos", "logos", "{A9DD26A9-D7C5-46E2-95D1-F650C193FAA4}"
+	ProjectSection(SolutionItems) = preProject
+		resources\logos\ClientLogo-Report.bmp = resources\logos\ClientLogo-Report.bmp
+		resources\logos\ClientLogo-Report.jpg = resources\logos\ClientLogo-Report.jpg
+		resources\logos\ClientLogo.jpg = resources\logos\ClientLogo.jpg
+		resources\logos\SDDITGLogo.jpg = resources\logos\SDDITGLogo.jpg
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "photos", "photos", "{2C2C23C0-5D88-405D-98F8-05FCF0CA1BB5}"
+	ProjectSection(SolutionItems) = preProject
+		resources\photos\DefaultMeal.jpg = resources\photos\DefaultMeal.jpg
+		Util\Resources\KeteringPricaFirstPage.jpg = Util\Resources\KeteringPricaFirstPage.jpg
+		resources\photos\whitehead.jpg = resources\photos\whitehead.jpg
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ACTAConfigManipulation", "ACTAConfigManipulation\ACTAConfigManipulation.csproj", "{2D18C79A-3B35-4E6E-9AB1-6FB0373D8167}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Util", "Util\Util.csproj", "{B9716E70-6794-4C27-ABF1-35D52CE595A6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TransferObjects", "TransferObjects\TransferObjects.csproj", "{5C8540C2-8781-4EAE-BA2E-1A303779CCE3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataAccess", "DataAccess\DataAccess.csproj", "{6CAC101D-949E-4F27-AAEF-53BD52672368}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Common", "Common\Common.csproj", "{BD526A30-C79F-4124-9C13-6B514F82A1CC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReaderManagement", "ReaderManagement\ReaderManagement.csproj", "{DC390DFC-245F-4873-BD35-67C3349A764E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ACTARFIDDesktop", "ACTARFIDDesktop\ACTARFIDDesktop.csproj", "{7852A6FD-048F-43B7-A2BB-D45F2EDC8D17}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReaderControlService", "ReaderControlService\ReaderControlService.csproj", "{E30E6ABC-D04E-4C9B-B5D9-1448D9E83032}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ACTAReaderControl", "ACTAReaderControl\ACTAReaderControl.csproj", "{CEC97658-2588-4D18-86C9-D310323A960A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ACTAReaderControlServiceWinClient", "ACTAReaderControlServiceWinClient\ACTAReaderControlServiceWinClient.csproj", "{DE089BBE-4C14-4AC7-8DCC-16EE84A3EBD5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ACTAReaderControlServiceWinServiceHost", "ACTAReaderControlServiceWinServiceHost\ACTAReaderControlServiceWinServiceHost.csproj", "{E027DAD7-CDCE-4042-847B-25E978203F0E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ACTAMonitorLib", "ACTAMonitorLib\ACTAMonitorLib.csproj", "{FAFDA198-5686-4E14-A63A-313A87249463}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ACTAMonitor", "ACTAMonitor\ACTAMonitor.csproj", "{8540FC71-9421-416B-851D-20C902E40DBA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UIFeatures", "UIFeatures\UIFeatures.csproj", "{64C8ABE2-9B49-4FB2-9C24-B2949F162F41}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UI", "UI\UI.csproj", "{83CF224E-D9D9-4489-98EC-CA981BD38644}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RestaurantSelfService", "RestaurantSelfService\RestaurantSelfService.csproj", "{11952A5B-D5F6-4139-BD38-7682E12DF6A7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataProcessingService", "DataProcessingService\DataProcessingService.csproj", "{A725BB6A-E7E0-44DD-A08F-A620BA46E02C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ACTADataProcessing", "ACTADataProcessing\ACTADataProcessing.csproj", "{7F897788-DE14-44B4-B523-896231216A91}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ACTADataProcessingServiceWinClient", "ACTADataProcessingServiceWinClient\ACTADataProcessingServiceWinClient.csproj", "{FA6CEAB9-8C17-4D0A-B6A9-100967BF8A88}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ACTADataProcessingServiceWinServiceHost", "ACTADataProcessingServiceWinServiceHost\ACTADataProcessingServiceWinServiceHost.csproj", "{880F6AD1-1C7D-4CB5-90B9-95471F4387D7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ACTAAdmin", "ACTAAdmin\ACTAAdmin.csproj", "{6792F38F-46D5-4E04-9DA8-ABA6BD73864B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ACTASelftService", "ACTASelftService\ACTASelftService.csproj", "{F616AB6C-2662-490E-9557-A5E73A6C79C4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ACTAGate", "ACTAGate\ACTAGate.csproj", "{E519203C-9A69-4071-A7D0-6A53410C2386}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ACTADBSetup", "ACTADBSetup\ACTADBSetup.csproj", "{2F67FDB8-7233-4B03-BF2F-1DE05E73F9D5}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "emailNotificationProjects", "emailNotificationProjects", "{23B4E2C9-0291-4B92-9F26-D1055C7D656C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ACTAEmailNotification", "ACTAEmailNotification\ACTAEmailNotification.csproj", "{CEC848E8-7502-4818-BA15-D0988C8A0875}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmailNotificationManagement", "EmailNotificationManagement\EmailNotificationManagement.csproj", "{EE33C2EE-0AC0-448C-B4A3-0129C3FD02C9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmailNotificationService", "EmailNotificationService\EmailNotificationService.csproj", "{02D4FA08-EF7A-4431-818B-2339C19FD599}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Setups", "Setups", "{42B716BF-109D-4F66-A5CD-A7241DE07921}"
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "ACTADataProcessingServiceSetup", "ACTADataProcessingServiceSetup\ACTADataProcessingServiceSetup.vdproj", "{2725044C-D9D8-4F9B-9850-DCF0E7EC2BBB}"
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "ACTAReaderControlServiceSetup", "ACTAReaderControlServiceSetup\ACTAReaderControlServiceSetup.vdproj", "{283C86E1-FB81-42E9-B087-6B8799FE70B5}"
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "ACTASetup", "ACTASetup\ACTASetup.vdproj", "{EF8BC7EA-FE99-4165-B17B-88584BB80086}"
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "EmailNotificationSetup", "EmailNotificationSetup\EmailNotificationSetup.vdproj", "{0472AC9B-915F-42BC-8398-826A2D982926}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Installation", "Installation\Installation.csproj", "{C4A0D55D-6726-4CB7-AADD-4D08DE284C58}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ACTAWebApplication", "ACTAWebApplication", "{E55082CA-3947-45B6-9931-5D45C163512E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ACTAWeb", "ACTAWeb.csproj", "{50B20C41-AD3C-4BB6-87E6-1CD798314D99}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CommonWeb", "CommonWeb\CommonWeb.csproj", "{33482678-3901-4585-B05A-6F0DF5D268CC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ACTAWebUI", "ACTAWebUI\ACTAWebUI.csproj", "{E1FDC614-0752-4D40-803A-FADDC8EF9177}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReportsWeb", "ReportsWeb\ReportsWeb.csproj", "{D053B71B-C9CE-46E9-820E-29F589F09A3D}"
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "ACTAWebSetup", "ACTAWebSetup\ACTAWebSetup.vdproj", "{A43CAF53-AFD1-4147-AB40-6FCC6F0923AE}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ACTASurveillanceProjects", "ACTASurveillanceProjects", "{6CD6622B-4EF9-407D-9E3A-9B101D66555C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ACTASurveillance", "ACTASurveillanceProjects\ACTASurveillance\ACTASurveillance.csproj", "{82B5288C-8E5A-4DBF-901D-BB691AC14D6C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ACTASurveillanceManagement", "ACTASurveillanceProjects\ACTASurveillanceManagement\ACTASurveillanceManagement.csproj", "{942E2988-52F9-47D8-ABF3-27EB412DEA29}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestNotificationSystem", "TestNotificationSystem\TestNotificationSystem.csproj", "{AD8F270C-0723-4ED9-8A74-38257A95A4A7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ACTASurveillanceService", "ACTASurveillanceProjects\ACTASurveillanceService\ACTASurveillanceService.csproj", "{2B09D34B-2BEB-43DD-8F45-2BD0898185EC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ACTASurveillanceServiceWinServiceHost", "ACTASurveillanceProjects\ACTASurveillanceServiceWinServiceHost\ACTASurveillanceServiceWinServiceHost.csproj", "{E876AAB9-4469-4354-8B81-43960AF4E7A5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ACTASurveillanceServiceWinClient", "ACTASurveillanceProjects\ACTASurveillanceServiceWinClient\ACTASurveillanceServiceWinClient.csproj", "{F2EC59E8-EBBB-4170-AE19-7595C136B886}"
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "ACTASurveillanceServiceSetup", "ACTASurveillanceServiceSetup\ACTASurveillanceServiceSetup.vdproj", "{D62C849A-8C9A-4700-BDCD-7E12FAD2A370}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestNotficationSystemWeb", "TestNotficationSystemWeb\TestNotficationSystemWeb.csproj", "{5B52D479-5D43-4CF2-8CFA-DAF54436AEEF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PieChart3DWebcontrol", "PieChart\PieChart3DWebcontrol.csproj", "{696E929A-6A4A-4C6D-A8B2-C4F25F781940}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SynchronizationProjects", "SynchronizationProjects", "{024915F8-2355-468A-A30F-5827C6DD78C2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SyncDataAccess", "SynchronizationProjects\SyncDataAccess\SyncDataAccess.csproj", "{9AD7AEC7-84F4-40B7-A76E-69DCE7783635}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ACTASynchronization", "SynchronizationProjects\ACTASynchronization\ACTASynchronization.csproj", "{80A165B7-F699-479B-99FF-D89209ED0617}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ACTASyncManagement", "SynchronizationProjects\ACTASyncManagement\ACTASyncManagement.csproj", "{B35692B7-CC33-4824-A60A-3333F93865A0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PasswordTextBox", "PasswordTextBox\PasswordTextBox.csproj", "{9B7266A3-D18B-496C-9815-BD63F9D157AB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ACTASynchronizationService", "SynchronizationProjects\ACTASynchronizationService\ACTASynchronizationService.csproj", "{F1BE8A2F-502E-4092-9A69-B9E3983F02F6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ACTASynchronizationServiceWinServiceHost", "SynchronizationProjects\ACTASynchronizationServiceWinServiceHost\ACTASynchronizationServiceWinServiceHost.csproj", "{BC8346BB-2CAC-4A56-87F1-D69E73BF8A10}"
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "ACTASynchronizationServiceSetup", "ACTASynchronizationServiceSetup\ACTASynchronizationServiceSetup.vdproj", "{CABADECF-08A2-4661-929E-BA80AAF1A0BB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ACTASynchronizationServiceWinClient", "SynchronizationProjects\ACTASynchronizationServiceWinClient\ACTASynchronizationServiceWinClient.csproj", "{1A5C21F3-D1E0-4CA4-8C54-724532EEDB0E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ACTAWorkAnalysisReports", "ACTAWorkAnalysisReports\ACTAWorkAnalysisReports.csproj", "{2BF25639-7885-4374-A91F-9826DD2F7C0B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ACTAWorkAnalysisService", "ACTAWorkAnalysisService\ACTAWorkAnalysisService.csproj", "{3BD913F4-3AAA-46A3-878C-78A155FCC16B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ACTAWorkAnalysisWinServiceHost", "ACTAWorkAnalysisWinServiceHost\ACTAWorkAnalysisWinServiceHost.csproj", "{C53B5A00-080F-42EE-ADB1-B636CCE9576F}"
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "ACTAWorkAnalysisSetup", "ACTAWorkAnalysisSetup\ACTAWorkAnalysisSetup.vdproj", "{5F379495-AA89-412A-8A19-81D6B0CC5B9B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HTTPSTestApplication", "HTTPSTestApplication\HTTPSTestApplication.csproj", "{E096D874-6B03-4941-83FA-24811B43F375}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ReaderRemoteControlProjects", "ReaderRemoteControlProjects", "{526ACE20-70DE-4E7E-9265-8EF1EEFEB47E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ACTAReaderRemoteControlProcessing", "ReaderRemoteControlProjects\ACTAReaderRemoteControlProcessing\ACTAReaderRemoteControlProcessing.csproj", "{8A563461-6E8D-4487-A776-B79BEF9700AE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReaderRemoteControl", "ReaderRemoteControlProjects\ReaderRemoteControl\ReaderRemoteControl.csproj", "{B926A9FC-737E-4725-AD00-727A56527AAA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReaderRemoteControlService", "ReaderRemoteControlProjects\ReaderRemoteControlService\ReaderRemoteControlService.csproj", "{E8BD0B19-0EC6-4F05-9E97-3243EB56BB6D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReaderRemoteControlWinServiceHost", "ReaderRemoteControlProjects\ReaderRemoteControlWinServiceHost\ReaderRemoteControlWinServiceHost.csproj", "{4E77F541-6B7D-486F-9565-7FC7F6ED48CB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReaderRemoteManagement", "ReaderRemoteControlProjects\ReaderRemoteManagement\ReaderRemoteManagement.csproj", "{8519AE42-DC8F-4E8A-8909-70D75501F7F3}"
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "ReaderRemoteSetup", "ReaderRemoteControlProjects\ReaderRemoteSetup\ReaderRemoteSetup.vdproj", "{FAB5AE8D-8C1B-4DDD-A492-A2BDB6D43151}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ACTAReaderMonitorProjects", "ACTAReaderMonitorProjects", "{91D0064B-E0F2-46D2-8D99-A7F8B78DC7E9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ACTAReaderMonitorManagement", "ACTAReaderMonitorProjects\ACTAReaderMonitorManagement\ACTAReaderMonitorManagement.csproj", "{3538ABBF-000D-480A-AF2C-77DA22B9C678}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ACTAReaderMonitor", "ACTAReaderMonitorProjects\ACTAReaderMonitor\ACTAReaderMonitor.csproj", "{BF6D9958-0862-48D4-9CD1-3EB97C9FCFD7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ACTAReaderMonitorService", "ACTAReaderMonitorProjects\ACTAReaderMonitorService\ACTAReaderMonitorService.csproj", "{BB47EBE4-EAA4-4250-ADAB-48B0D248D247}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ACTAReaderMonitorWinServiceHost", "ACTAReaderMonitorProjects\ACTAReaderMonitorWinServiceHost\ACTAReaderMonitorWinServiceHost.csproj", "{27450CE7-9775-4930-937E-BF98B181D8C2}"
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "ACTAReaderMonitorServiceSetup", "ACTAReaderMonitorProjects\ACTAReaderMonitorServiceSetup\ACTAReaderMonitorServiceSetup.vdproj", "{D4E3783D-807B-4ACC-B591-85B3F8A4EEA4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Controls", "Controls\Controls.csproj", "{22F0E707-18F9-4A1A-A7FF-12EDA6728C02}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "LongRangeReaderRemoteProjects", "LongRangeReaderRemoteProjects", "{F3EDCE36-255F-4920-913D-9E11D7DAF78D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LRRremote", "LongRangeReaderRemoteProjects\LRRremote\LRRremote.csproj", "{E1D352B4-F690-4202-B65D-679A6705F61F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SiemensProjects", "SiemensProjects", "{ADDFA0AC-893F-4F47-94A5-420EC18455D8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ACTAReaderInterfaceS", "SiemensProjects\ACTAReaderInterfaceS\ACTAReaderInterfaceS.csproj", "{06573BAF-E8BD-4647-95F5-B8D52C7BA36B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ACTAReaderInterfaceSServiceWinClient", "SiemensProjects\ACTAReaderInterfaceSServiceWinClient\ACTAReaderInterfaceSServiceWinClient.csproj", "{4AEBC5D5-F9A7-462E-8356-22A669AF9D15}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ACTAReaderInterfaceSServiceWinServiceHost", "SiemensProjects\ACTAReaderInterfaceSServiceWinServiceHost\ACTAReaderInterfaceSServiceWinServiceHost.csproj", "{56DA34BB-ADC5-41AE-AD58-C6CD85456BB1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReaderInterfaceSManagement", "SiemensProjects\ReaderInterfaceSManagement\ReaderInterfaceSManagement.csproj", "{1FD76872-4CEB-4BEA-9A4B-549FF647C626}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReaderInterfaceSService", "SiemensProjects\ReaderInterfaceSService\ReaderInterfaceSService.csproj", "{020E786C-324C-4A27-8ED3-9A14E235A16E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SiemensDataAccess", "SiemensProjects\SiemensDataAccess\SiemensDataAccess.csproj", "{D8A5B09D-41F3-4266-A7D0-FBE0CEF49980}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SiemensUI", "SiemensProjects\SiemensUI\SiemensUI.csproj", "{FD01709E-394B-4EE2-A9B3-4CD4AB9808D1}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "resources", "resources", "{200305E0-796B-414A-AA2E-F617374645D5}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "icons", "icons", "{D14A7224-1ED4-41EF-B6CD-D95AE6D58148}"
+	ProjectSection(SolutionItems) = preProject
+		SiemensProjects\resources\icons\Data.ico = SiemensProjects\resources\icons\Data.ico
+		SiemensProjects\resources\icons\ReaderControl.ico = SiemensProjects\resources\icons\ReaderControl.ico
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SiemensTransfer", "SiemensProjects\SiemensTransfer\SiemensTransfer.csproj", "{AC94DB0A-F8E4-461B-8AD3-8743177E3302}"
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "ACTAReaderInterfaceSSetup", "SiemensProjects\ACTAReaderInterfaceSSetup\ACTAReaderInterfaceSSetup.vdproj", "{68E68FEF-D95A-4333-99D5-A9F85FEA7088}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DeviceRFID", "RFIDDevice\DeviceRFID.csproj", "{01FBE6AA-D0F2-49B8-A543-5796AAC21C5E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ACTAReaderControlMobileProjects", "ACTAReaderControlMobileProjects", "{CE8E94DF-83C3-4D27-8BDE-40DEA70530F1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ACTAReaderControlMobile", "ACTAReaderControlMobileProjects\ACTAReaderControlMobile\ACTAReaderControlMobile.csproj", "{49C9953E-030E-4850-ADA0-22947D9EC64E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReaderMobileManagement", "ACTAReaderControlMobileProjects\ReaderMobileManagement\ReaderMobileManagement.csproj", "{04E92F26-69CE-4371-8A2B-60B5A27967B0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmailNotificationServiceWinServiceHost", "EmailNotificationServiceWinServiceHost\EmailNotificationServiceWinServiceHost.csproj", "{D416BC5B-84D5-401F-9447-A5D9E5571113}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ACTAMealsOrder", "ACTAMealsOrder\ACTAMealsOrder.csproj", "{106FAD7B-FDF0-4270-9FA5-52A4167E6183}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Winforms.Components", "Winforms.Components\Winforms.Components.csproj", "{C93CD6B7-7890-48D9-98AA-9F447F519654}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmailNotificationServiceWinClient", "EmailNotificationServiceWinClient\EmailNotificationServiceWinClient.csproj", "{7A9BF183-B422-4D04-B9B5-D78C1800B5A7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReaderRemoteDataAccess", "ReaderRemoteControlProjects\ReaderRemoteDataAccess\ReaderRemoteDataAccess.csproj", "{28BB6075-443B-4E82-86BF-145E01F8BD90}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ACSEventsApp", "ACSEventsApp\ACSEventsApp.csproj", "{DDAD36AE-F05B-4AF0-9960-069B9CA41F69}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ACTARFIDLogin", "ACTARFIDLogin\ACTARFIDLogin.csproj", "{1D002D89-0851-450C-AFD8-B561F0D50F4A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Reports", "Reports\Reports.csproj", "{BE11A9DE-C796-4D46-8C78-962D189E76DD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|x86 = Debug|x86
+		Release|Any CPU = Release|Any CPU
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2D18C79A-3B35-4E6E-9AB1-6FB0373D8167}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2D18C79A-3B35-4E6E-9AB1-6FB0373D8167}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2D18C79A-3B35-4E6E-9AB1-6FB0373D8167}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{2D18C79A-3B35-4E6E-9AB1-6FB0373D8167}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2D18C79A-3B35-4E6E-9AB1-6FB0373D8167}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2D18C79A-3B35-4E6E-9AB1-6FB0373D8167}.Release|x86.ActiveCfg = Release|Any CPU
+		{B9716E70-6794-4C27-ABF1-35D52CE595A6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B9716E70-6794-4C27-ABF1-35D52CE595A6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B9716E70-6794-4C27-ABF1-35D52CE595A6}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{B9716E70-6794-4C27-ABF1-35D52CE595A6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B9716E70-6794-4C27-ABF1-35D52CE595A6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B9716E70-6794-4C27-ABF1-35D52CE595A6}.Release|x86.ActiveCfg = Release|Any CPU
+		{5C8540C2-8781-4EAE-BA2E-1A303779CCE3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5C8540C2-8781-4EAE-BA2E-1A303779CCE3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5C8540C2-8781-4EAE-BA2E-1A303779CCE3}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{5C8540C2-8781-4EAE-BA2E-1A303779CCE3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5C8540C2-8781-4EAE-BA2E-1A303779CCE3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5C8540C2-8781-4EAE-BA2E-1A303779CCE3}.Release|x86.ActiveCfg = Release|Any CPU
+		{6CAC101D-949E-4F27-AAEF-53BD52672368}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6CAC101D-949E-4F27-AAEF-53BD52672368}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6CAC101D-949E-4F27-AAEF-53BD52672368}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{6CAC101D-949E-4F27-AAEF-53BD52672368}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6CAC101D-949E-4F27-AAEF-53BD52672368}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6CAC101D-949E-4F27-AAEF-53BD52672368}.Release|x86.ActiveCfg = Release|Any CPU
+		{BD526A30-C79F-4124-9C13-6B514F82A1CC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BD526A30-C79F-4124-9C13-6B514F82A1CC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BD526A30-C79F-4124-9C13-6B514F82A1CC}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{BD526A30-C79F-4124-9C13-6B514F82A1CC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BD526A30-C79F-4124-9C13-6B514F82A1CC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BD526A30-C79F-4124-9C13-6B514F82A1CC}.Release|x86.ActiveCfg = Release|Any CPU
+		{DC390DFC-245F-4873-BD35-67C3349A764E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DC390DFC-245F-4873-BD35-67C3349A764E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DC390DFC-245F-4873-BD35-67C3349A764E}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{DC390DFC-245F-4873-BD35-67C3349A764E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DC390DFC-245F-4873-BD35-67C3349A764E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DC390DFC-245F-4873-BD35-67C3349A764E}.Release|x86.ActiveCfg = Release|Any CPU
+		{7852A6FD-048F-43B7-A2BB-D45F2EDC8D17}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7852A6FD-048F-43B7-A2BB-D45F2EDC8D17}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7852A6FD-048F-43B7-A2BB-D45F2EDC8D17}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{7852A6FD-048F-43B7-A2BB-D45F2EDC8D17}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7852A6FD-048F-43B7-A2BB-D45F2EDC8D17}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7852A6FD-048F-43B7-A2BB-D45F2EDC8D17}.Release|x86.ActiveCfg = Release|Any CPU
+		{E30E6ABC-D04E-4C9B-B5D9-1448D9E83032}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E30E6ABC-D04E-4C9B-B5D9-1448D9E83032}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E30E6ABC-D04E-4C9B-B5D9-1448D9E83032}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{E30E6ABC-D04E-4C9B-B5D9-1448D9E83032}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E30E6ABC-D04E-4C9B-B5D9-1448D9E83032}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E30E6ABC-D04E-4C9B-B5D9-1448D9E83032}.Release|x86.ActiveCfg = Release|Any CPU
+		{CEC97658-2588-4D18-86C9-D310323A960A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CEC97658-2588-4D18-86C9-D310323A960A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CEC97658-2588-4D18-86C9-D310323A960A}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{CEC97658-2588-4D18-86C9-D310323A960A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CEC97658-2588-4D18-86C9-D310323A960A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CEC97658-2588-4D18-86C9-D310323A960A}.Release|x86.ActiveCfg = Release|Any CPU
+		{DE089BBE-4C14-4AC7-8DCC-16EE84A3EBD5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DE089BBE-4C14-4AC7-8DCC-16EE84A3EBD5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DE089BBE-4C14-4AC7-8DCC-16EE84A3EBD5}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{DE089BBE-4C14-4AC7-8DCC-16EE84A3EBD5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DE089BBE-4C14-4AC7-8DCC-16EE84A3EBD5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DE089BBE-4C14-4AC7-8DCC-16EE84A3EBD5}.Release|x86.ActiveCfg = Release|Any CPU
+		{E027DAD7-CDCE-4042-847B-25E978203F0E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E027DAD7-CDCE-4042-847B-25E978203F0E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E027DAD7-CDCE-4042-847B-25E978203F0E}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{E027DAD7-CDCE-4042-847B-25E978203F0E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E027DAD7-CDCE-4042-847B-25E978203F0E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E027DAD7-CDCE-4042-847B-25E978203F0E}.Release|x86.ActiveCfg = Release|Any CPU
+		{FAFDA198-5686-4E14-A63A-313A87249463}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FAFDA198-5686-4E14-A63A-313A87249463}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FAFDA198-5686-4E14-A63A-313A87249463}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{FAFDA198-5686-4E14-A63A-313A87249463}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FAFDA198-5686-4E14-A63A-313A87249463}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FAFDA198-5686-4E14-A63A-313A87249463}.Release|x86.ActiveCfg = Release|Any CPU
+		{8540FC71-9421-416B-851D-20C902E40DBA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8540FC71-9421-416B-851D-20C902E40DBA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8540FC71-9421-416B-851D-20C902E40DBA}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{8540FC71-9421-416B-851D-20C902E40DBA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8540FC71-9421-416B-851D-20C902E40DBA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8540FC71-9421-416B-851D-20C902E40DBA}.Release|x86.ActiveCfg = Release|Any CPU
+		{64C8ABE2-9B49-4FB2-9C24-B2949F162F41}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{64C8ABE2-9B49-4FB2-9C24-B2949F162F41}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{64C8ABE2-9B49-4FB2-9C24-B2949F162F41}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{64C8ABE2-9B49-4FB2-9C24-B2949F162F41}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{64C8ABE2-9B49-4FB2-9C24-B2949F162F41}.Release|Any CPU.Build.0 = Release|Any CPU
+		{64C8ABE2-9B49-4FB2-9C24-B2949F162F41}.Release|x86.ActiveCfg = Release|Any CPU
+		{83CF224E-D9D9-4489-98EC-CA981BD38644}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{83CF224E-D9D9-4489-98EC-CA981BD38644}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{83CF224E-D9D9-4489-98EC-CA981BD38644}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{83CF224E-D9D9-4489-98EC-CA981BD38644}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{83CF224E-D9D9-4489-98EC-CA981BD38644}.Release|Any CPU.Build.0 = Release|Any CPU
+		{83CF224E-D9D9-4489-98EC-CA981BD38644}.Release|x86.ActiveCfg = Release|Any CPU
+		{11952A5B-D5F6-4139-BD38-7682E12DF6A7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{11952A5B-D5F6-4139-BD38-7682E12DF6A7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{11952A5B-D5F6-4139-BD38-7682E12DF6A7}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{11952A5B-D5F6-4139-BD38-7682E12DF6A7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{11952A5B-D5F6-4139-BD38-7682E12DF6A7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{11952A5B-D5F6-4139-BD38-7682E12DF6A7}.Release|x86.ActiveCfg = Release|Any CPU
+		{A725BB6A-E7E0-44DD-A08F-A620BA46E02C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A725BB6A-E7E0-44DD-A08F-A620BA46E02C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A725BB6A-E7E0-44DD-A08F-A620BA46E02C}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{A725BB6A-E7E0-44DD-A08F-A620BA46E02C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A725BB6A-E7E0-44DD-A08F-A620BA46E02C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A725BB6A-E7E0-44DD-A08F-A620BA46E02C}.Release|x86.ActiveCfg = Release|Any CPU
+		{7F897788-DE14-44B4-B523-896231216A91}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7F897788-DE14-44B4-B523-896231216A91}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7F897788-DE14-44B4-B523-896231216A91}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{7F897788-DE14-44B4-B523-896231216A91}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7F897788-DE14-44B4-B523-896231216A91}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7F897788-DE14-44B4-B523-896231216A91}.Release|x86.ActiveCfg = Release|Any CPU
+		{FA6CEAB9-8C17-4D0A-B6A9-100967BF8A88}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FA6CEAB9-8C17-4D0A-B6A9-100967BF8A88}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FA6CEAB9-8C17-4D0A-B6A9-100967BF8A88}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{FA6CEAB9-8C17-4D0A-B6A9-100967BF8A88}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FA6CEAB9-8C17-4D0A-B6A9-100967BF8A88}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FA6CEAB9-8C17-4D0A-B6A9-100967BF8A88}.Release|x86.ActiveCfg = Release|Any CPU
+		{880F6AD1-1C7D-4CB5-90B9-95471F4387D7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{880F6AD1-1C7D-4CB5-90B9-95471F4387D7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{880F6AD1-1C7D-4CB5-90B9-95471F4387D7}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{880F6AD1-1C7D-4CB5-90B9-95471F4387D7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{880F6AD1-1C7D-4CB5-90B9-95471F4387D7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{880F6AD1-1C7D-4CB5-90B9-95471F4387D7}.Release|x86.ActiveCfg = Release|Any CPU
+		{6792F38F-46D5-4E04-9DA8-ABA6BD73864B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6792F38F-46D5-4E04-9DA8-ABA6BD73864B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6792F38F-46D5-4E04-9DA8-ABA6BD73864B}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{6792F38F-46D5-4E04-9DA8-ABA6BD73864B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6792F38F-46D5-4E04-9DA8-ABA6BD73864B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6792F38F-46D5-4E04-9DA8-ABA6BD73864B}.Release|x86.ActiveCfg = Release|Any CPU
+		{F616AB6C-2662-490E-9557-A5E73A6C79C4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F616AB6C-2662-490E-9557-A5E73A6C79C4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F616AB6C-2662-490E-9557-A5E73A6C79C4}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{F616AB6C-2662-490E-9557-A5E73A6C79C4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F616AB6C-2662-490E-9557-A5E73A6C79C4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F616AB6C-2662-490E-9557-A5E73A6C79C4}.Release|x86.ActiveCfg = Release|Any CPU
+		{E519203C-9A69-4071-A7D0-6A53410C2386}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E519203C-9A69-4071-A7D0-6A53410C2386}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E519203C-9A69-4071-A7D0-6A53410C2386}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{E519203C-9A69-4071-A7D0-6A53410C2386}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E519203C-9A69-4071-A7D0-6A53410C2386}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E519203C-9A69-4071-A7D0-6A53410C2386}.Release|x86.ActiveCfg = Release|Any CPU
+		{2F67FDB8-7233-4B03-BF2F-1DE05E73F9D5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2F67FDB8-7233-4B03-BF2F-1DE05E73F9D5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2F67FDB8-7233-4B03-BF2F-1DE05E73F9D5}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{2F67FDB8-7233-4B03-BF2F-1DE05E73F9D5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2F67FDB8-7233-4B03-BF2F-1DE05E73F9D5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2F67FDB8-7233-4B03-BF2F-1DE05E73F9D5}.Release|x86.ActiveCfg = Release|Any CPU
+		{CEC848E8-7502-4818-BA15-D0988C8A0875}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CEC848E8-7502-4818-BA15-D0988C8A0875}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CEC848E8-7502-4818-BA15-D0988C8A0875}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{CEC848E8-7502-4818-BA15-D0988C8A0875}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CEC848E8-7502-4818-BA15-D0988C8A0875}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CEC848E8-7502-4818-BA15-D0988C8A0875}.Release|x86.ActiveCfg = Release|Any CPU
+		{EE33C2EE-0AC0-448C-B4A3-0129C3FD02C9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EE33C2EE-0AC0-448C-B4A3-0129C3FD02C9}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{EE33C2EE-0AC0-448C-B4A3-0129C3FD02C9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EE33C2EE-0AC0-448C-B4A3-0129C3FD02C9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EE33C2EE-0AC0-448C-B4A3-0129C3FD02C9}.Release|x86.ActiveCfg = Release|Any CPU
+		{02D4FA08-EF7A-4431-818B-2339C19FD599}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{02D4FA08-EF7A-4431-818B-2339C19FD599}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{02D4FA08-EF7A-4431-818B-2339C19FD599}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{02D4FA08-EF7A-4431-818B-2339C19FD599}.Release|Any CPU.Build.0 = Release|Any CPU
+		{02D4FA08-EF7A-4431-818B-2339C19FD599}.Release|x86.ActiveCfg = Release|Any CPU
+		{2725044C-D9D8-4F9B-9850-DCF0E7EC2BBB}.Debug|Any CPU.ActiveCfg = Debug
+		{2725044C-D9D8-4F9B-9850-DCF0E7EC2BBB}.Debug|x86.ActiveCfg = Debug
+		{2725044C-D9D8-4F9B-9850-DCF0E7EC2BBB}.Debug|x86.Build.0 = Debug
+		{2725044C-D9D8-4F9B-9850-DCF0E7EC2BBB}.Release|Any CPU.ActiveCfg = Release
+		{2725044C-D9D8-4F9B-9850-DCF0E7EC2BBB}.Release|Any CPU.Build.0 = Release
+		{2725044C-D9D8-4F9B-9850-DCF0E7EC2BBB}.Release|x86.ActiveCfg = Release
+		{2725044C-D9D8-4F9B-9850-DCF0E7EC2BBB}.Release|x86.Build.0 = Release
+		{283C86E1-FB81-42E9-B087-6B8799FE70B5}.Debug|Any CPU.ActiveCfg = Debug
+		{283C86E1-FB81-42E9-B087-6B8799FE70B5}.Debug|x86.ActiveCfg = Debug
+		{283C86E1-FB81-42E9-B087-6B8799FE70B5}.Debug|x86.Build.0 = Debug
+		{283C86E1-FB81-42E9-B087-6B8799FE70B5}.Release|Any CPU.ActiveCfg = Release
+		{283C86E1-FB81-42E9-B087-6B8799FE70B5}.Release|Any CPU.Build.0 = Release
+		{283C86E1-FB81-42E9-B087-6B8799FE70B5}.Release|x86.ActiveCfg = Release
+		{283C86E1-FB81-42E9-B087-6B8799FE70B5}.Release|x86.Build.0 = Release
+		{EF8BC7EA-FE99-4165-B17B-88584BB80086}.Debug|Any CPU.ActiveCfg = Debug
+		{EF8BC7EA-FE99-4165-B17B-88584BB80086}.Debug|x86.ActiveCfg = Debug
+		{EF8BC7EA-FE99-4165-B17B-88584BB80086}.Debug|x86.Build.0 = Debug
+		{EF8BC7EA-FE99-4165-B17B-88584BB80086}.Release|Any CPU.ActiveCfg = Release
+		{EF8BC7EA-FE99-4165-B17B-88584BB80086}.Release|Any CPU.Build.0 = Release
+		{EF8BC7EA-FE99-4165-B17B-88584BB80086}.Release|x86.ActiveCfg = Release
+		{EF8BC7EA-FE99-4165-B17B-88584BB80086}.Release|x86.Build.0 = Release
+		{0472AC9B-915F-42BC-8398-826A2D982926}.Debug|Any CPU.ActiveCfg = Debug
+		{0472AC9B-915F-42BC-8398-826A2D982926}.Debug|x86.ActiveCfg = Debug
+		{0472AC9B-915F-42BC-8398-826A2D982926}.Debug|x86.Build.0 = Debug
+		{0472AC9B-915F-42BC-8398-826A2D982926}.Release|Any CPU.ActiveCfg = Release
+		{0472AC9B-915F-42BC-8398-826A2D982926}.Release|Any CPU.Build.0 = Release
+		{0472AC9B-915F-42BC-8398-826A2D982926}.Release|x86.ActiveCfg = Release
+		{0472AC9B-915F-42BC-8398-826A2D982926}.Release|x86.Build.0 = Release
+		{C4A0D55D-6726-4CB7-AADD-4D08DE284C58}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C4A0D55D-6726-4CB7-AADD-4D08DE284C58}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C4A0D55D-6726-4CB7-AADD-4D08DE284C58}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{C4A0D55D-6726-4CB7-AADD-4D08DE284C58}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C4A0D55D-6726-4CB7-AADD-4D08DE284C58}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C4A0D55D-6726-4CB7-AADD-4D08DE284C58}.Release|x86.ActiveCfg = Release|Any CPU
+		{50B20C41-AD3C-4BB6-87E6-1CD798314D99}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{50B20C41-AD3C-4BB6-87E6-1CD798314D99}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{50B20C41-AD3C-4BB6-87E6-1CD798314D99}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{50B20C41-AD3C-4BB6-87E6-1CD798314D99}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{50B20C41-AD3C-4BB6-87E6-1CD798314D99}.Release|Any CPU.Build.0 = Release|Any CPU
+		{50B20C41-AD3C-4BB6-87E6-1CD798314D99}.Release|x86.ActiveCfg = Release|Any CPU
+		{33482678-3901-4585-B05A-6F0DF5D268CC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{33482678-3901-4585-B05A-6F0DF5D268CC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{33482678-3901-4585-B05A-6F0DF5D268CC}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{33482678-3901-4585-B05A-6F0DF5D268CC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{33482678-3901-4585-B05A-6F0DF5D268CC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{33482678-3901-4585-B05A-6F0DF5D268CC}.Release|x86.ActiveCfg = Release|Any CPU
+		{E1FDC614-0752-4D40-803A-FADDC8EF9177}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E1FDC614-0752-4D40-803A-FADDC8EF9177}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E1FDC614-0752-4D40-803A-FADDC8EF9177}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{E1FDC614-0752-4D40-803A-FADDC8EF9177}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E1FDC614-0752-4D40-803A-FADDC8EF9177}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E1FDC614-0752-4D40-803A-FADDC8EF9177}.Release|x86.ActiveCfg = Release|Any CPU
+		{D053B71B-C9CE-46E9-820E-29F589F09A3D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D053B71B-C9CE-46E9-820E-29F589F09A3D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D053B71B-C9CE-46E9-820E-29F589F09A3D}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{D053B71B-C9CE-46E9-820E-29F589F09A3D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D053B71B-C9CE-46E9-820E-29F589F09A3D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D053B71B-C9CE-46E9-820E-29F589F09A3D}.Release|x86.ActiveCfg = Release|Any CPU
+		{A43CAF53-AFD1-4147-AB40-6FCC6F0923AE}.Debug|Any CPU.ActiveCfg = Debug
+		{A43CAF53-AFD1-4147-AB40-6FCC6F0923AE}.Debug|x86.ActiveCfg = Debug
+		{A43CAF53-AFD1-4147-AB40-6FCC6F0923AE}.Debug|x86.Build.0 = Debug
+		{A43CAF53-AFD1-4147-AB40-6FCC6F0923AE}.Release|Any CPU.ActiveCfg = Release
+		{A43CAF53-AFD1-4147-AB40-6FCC6F0923AE}.Release|Any CPU.Build.0 = Release
+		{A43CAF53-AFD1-4147-AB40-6FCC6F0923AE}.Release|x86.ActiveCfg = Release
+		{A43CAF53-AFD1-4147-AB40-6FCC6F0923AE}.Release|x86.Build.0 = Release
+		{82B5288C-8E5A-4DBF-901D-BB691AC14D6C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{82B5288C-8E5A-4DBF-901D-BB691AC14D6C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{82B5288C-8E5A-4DBF-901D-BB691AC14D6C}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{82B5288C-8E5A-4DBF-901D-BB691AC14D6C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{82B5288C-8E5A-4DBF-901D-BB691AC14D6C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{82B5288C-8E5A-4DBF-901D-BB691AC14D6C}.Release|x86.ActiveCfg = Release|Any CPU
+		{942E2988-52F9-47D8-ABF3-27EB412DEA29}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{942E2988-52F9-47D8-ABF3-27EB412DEA29}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{942E2988-52F9-47D8-ABF3-27EB412DEA29}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{942E2988-52F9-47D8-ABF3-27EB412DEA29}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{942E2988-52F9-47D8-ABF3-27EB412DEA29}.Release|Any CPU.Build.0 = Release|Any CPU
+		{942E2988-52F9-47D8-ABF3-27EB412DEA29}.Release|x86.ActiveCfg = Release|Any CPU
+		{AD8F270C-0723-4ED9-8A74-38257A95A4A7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AD8F270C-0723-4ED9-8A74-38257A95A4A7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AD8F270C-0723-4ED9-8A74-38257A95A4A7}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{AD8F270C-0723-4ED9-8A74-38257A95A4A7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AD8F270C-0723-4ED9-8A74-38257A95A4A7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AD8F270C-0723-4ED9-8A74-38257A95A4A7}.Release|x86.ActiveCfg = Release|Any CPU
+		{2B09D34B-2BEB-43DD-8F45-2BD0898185EC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2B09D34B-2BEB-43DD-8F45-2BD0898185EC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2B09D34B-2BEB-43DD-8F45-2BD0898185EC}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{2B09D34B-2BEB-43DD-8F45-2BD0898185EC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2B09D34B-2BEB-43DD-8F45-2BD0898185EC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2B09D34B-2BEB-43DD-8F45-2BD0898185EC}.Release|x86.ActiveCfg = Release|Any CPU
+		{E876AAB9-4469-4354-8B81-43960AF4E7A5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E876AAB9-4469-4354-8B81-43960AF4E7A5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E876AAB9-4469-4354-8B81-43960AF4E7A5}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{E876AAB9-4469-4354-8B81-43960AF4E7A5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E876AAB9-4469-4354-8B81-43960AF4E7A5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E876AAB9-4469-4354-8B81-43960AF4E7A5}.Release|x86.ActiveCfg = Release|Any CPU
+		{F2EC59E8-EBBB-4170-AE19-7595C136B886}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F2EC59E8-EBBB-4170-AE19-7595C136B886}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F2EC59E8-EBBB-4170-AE19-7595C136B886}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{F2EC59E8-EBBB-4170-AE19-7595C136B886}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F2EC59E8-EBBB-4170-AE19-7595C136B886}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F2EC59E8-EBBB-4170-AE19-7595C136B886}.Release|x86.ActiveCfg = Release|Any CPU
+		{D62C849A-8C9A-4700-BDCD-7E12FAD2A370}.Debug|Any CPU.ActiveCfg = Debug
+		{D62C849A-8C9A-4700-BDCD-7E12FAD2A370}.Debug|x86.ActiveCfg = Debug
+		{D62C849A-8C9A-4700-BDCD-7E12FAD2A370}.Debug|x86.Build.0 = Debug
+		{D62C849A-8C9A-4700-BDCD-7E12FAD2A370}.Release|Any CPU.ActiveCfg = Release
+		{D62C849A-8C9A-4700-BDCD-7E12FAD2A370}.Release|Any CPU.Build.0 = Release
+		{D62C849A-8C9A-4700-BDCD-7E12FAD2A370}.Release|x86.ActiveCfg = Release
+		{D62C849A-8C9A-4700-BDCD-7E12FAD2A370}.Release|x86.Build.0 = Release
+		{5B52D479-5D43-4CF2-8CFA-DAF54436AEEF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5B52D479-5D43-4CF2-8CFA-DAF54436AEEF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5B52D479-5D43-4CF2-8CFA-DAF54436AEEF}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{5B52D479-5D43-4CF2-8CFA-DAF54436AEEF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5B52D479-5D43-4CF2-8CFA-DAF54436AEEF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5B52D479-5D43-4CF2-8CFA-DAF54436AEEF}.Release|x86.ActiveCfg = Release|Any CPU
+		{696E929A-6A4A-4C6D-A8B2-C4F25F781940}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{696E929A-6A4A-4C6D-A8B2-C4F25F781940}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{696E929A-6A4A-4C6D-A8B2-C4F25F781940}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{696E929A-6A4A-4C6D-A8B2-C4F25F781940}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{696E929A-6A4A-4C6D-A8B2-C4F25F781940}.Release|Any CPU.Build.0 = Release|Any CPU
+		{696E929A-6A4A-4C6D-A8B2-C4F25F781940}.Release|x86.ActiveCfg = Release|Any CPU
+		{9AD7AEC7-84F4-40B7-A76E-69DCE7783635}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9AD7AEC7-84F4-40B7-A76E-69DCE7783635}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9AD7AEC7-84F4-40B7-A76E-69DCE7783635}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{9AD7AEC7-84F4-40B7-A76E-69DCE7783635}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9AD7AEC7-84F4-40B7-A76E-69DCE7783635}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9AD7AEC7-84F4-40B7-A76E-69DCE7783635}.Release|x86.ActiveCfg = Release|Any CPU
+		{80A165B7-F699-479B-99FF-D89209ED0617}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{80A165B7-F699-479B-99FF-D89209ED0617}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{80A165B7-F699-479B-99FF-D89209ED0617}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{80A165B7-F699-479B-99FF-D89209ED0617}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{80A165B7-F699-479B-99FF-D89209ED0617}.Release|Any CPU.Build.0 = Release|Any CPU
+		{80A165B7-F699-479B-99FF-D89209ED0617}.Release|x86.ActiveCfg = Release|Any CPU
+		{B35692B7-CC33-4824-A60A-3333F93865A0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B35692B7-CC33-4824-A60A-3333F93865A0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B35692B7-CC33-4824-A60A-3333F93865A0}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{B35692B7-CC33-4824-A60A-3333F93865A0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B35692B7-CC33-4824-A60A-3333F93865A0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B35692B7-CC33-4824-A60A-3333F93865A0}.Release|x86.ActiveCfg = Release|Any CPU
+		{9B7266A3-D18B-496C-9815-BD63F9D157AB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9B7266A3-D18B-496C-9815-BD63F9D157AB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9B7266A3-D18B-496C-9815-BD63F9D157AB}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{9B7266A3-D18B-496C-9815-BD63F9D157AB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9B7266A3-D18B-496C-9815-BD63F9D157AB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9B7266A3-D18B-496C-9815-BD63F9D157AB}.Release|x86.ActiveCfg = Release|Any CPU
+		{F1BE8A2F-502E-4092-9A69-B9E3983F02F6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F1BE8A2F-502E-4092-9A69-B9E3983F02F6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F1BE8A2F-502E-4092-9A69-B9E3983F02F6}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{F1BE8A2F-502E-4092-9A69-B9E3983F02F6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F1BE8A2F-502E-4092-9A69-B9E3983F02F6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F1BE8A2F-502E-4092-9A69-B9E3983F02F6}.Release|x86.ActiveCfg = Release|Any CPU
+		{BC8346BB-2CAC-4A56-87F1-D69E73BF8A10}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BC8346BB-2CAC-4A56-87F1-D69E73BF8A10}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BC8346BB-2CAC-4A56-87F1-D69E73BF8A10}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{BC8346BB-2CAC-4A56-87F1-D69E73BF8A10}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BC8346BB-2CAC-4A56-87F1-D69E73BF8A10}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BC8346BB-2CAC-4A56-87F1-D69E73BF8A10}.Release|x86.ActiveCfg = Release|Any CPU
+		{CABADECF-08A2-4661-929E-BA80AAF1A0BB}.Debug|Any CPU.ActiveCfg = Debug
+		{CABADECF-08A2-4661-929E-BA80AAF1A0BB}.Debug|x86.ActiveCfg = Debug
+		{CABADECF-08A2-4661-929E-BA80AAF1A0BB}.Debug|x86.Build.0 = Debug
+		{CABADECF-08A2-4661-929E-BA80AAF1A0BB}.Release|Any CPU.ActiveCfg = Release
+		{CABADECF-08A2-4661-929E-BA80AAF1A0BB}.Release|x86.ActiveCfg = Release
+		{CABADECF-08A2-4661-929E-BA80AAF1A0BB}.Release|x86.Build.0 = Release
+		{1A5C21F3-D1E0-4CA4-8C54-724532EEDB0E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1A5C21F3-D1E0-4CA4-8C54-724532EEDB0E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1A5C21F3-D1E0-4CA4-8C54-724532EEDB0E}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{1A5C21F3-D1E0-4CA4-8C54-724532EEDB0E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1A5C21F3-D1E0-4CA4-8C54-724532EEDB0E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1A5C21F3-D1E0-4CA4-8C54-724532EEDB0E}.Release|x86.ActiveCfg = Release|Any CPU
+		{2BF25639-7885-4374-A91F-9826DD2F7C0B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2BF25639-7885-4374-A91F-9826DD2F7C0B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2BF25639-7885-4374-A91F-9826DD2F7C0B}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{2BF25639-7885-4374-A91F-9826DD2F7C0B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2BF25639-7885-4374-A91F-9826DD2F7C0B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2BF25639-7885-4374-A91F-9826DD2F7C0B}.Release|x86.ActiveCfg = Release|Any CPU
+		{3BD913F4-3AAA-46A3-878C-78A155FCC16B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3BD913F4-3AAA-46A3-878C-78A155FCC16B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3BD913F4-3AAA-46A3-878C-78A155FCC16B}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{3BD913F4-3AAA-46A3-878C-78A155FCC16B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3BD913F4-3AAA-46A3-878C-78A155FCC16B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3BD913F4-3AAA-46A3-878C-78A155FCC16B}.Release|x86.ActiveCfg = Release|Any CPU
+		{C53B5A00-080F-42EE-ADB1-B636CCE9576F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C53B5A00-080F-42EE-ADB1-B636CCE9576F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C53B5A00-080F-42EE-ADB1-B636CCE9576F}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{C53B5A00-080F-42EE-ADB1-B636CCE9576F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C53B5A00-080F-42EE-ADB1-B636CCE9576F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C53B5A00-080F-42EE-ADB1-B636CCE9576F}.Release|x86.ActiveCfg = Release|Any CPU
+		{5F379495-AA89-412A-8A19-81D6B0CC5B9B}.Debug|Any CPU.ActiveCfg = Debug
+		{5F379495-AA89-412A-8A19-81D6B0CC5B9B}.Debug|x86.ActiveCfg = Debug
+		{5F379495-AA89-412A-8A19-81D6B0CC5B9B}.Debug|x86.Build.0 = Debug
+		{5F379495-AA89-412A-8A19-81D6B0CC5B9B}.Release|Any CPU.ActiveCfg = Release
+		{5F379495-AA89-412A-8A19-81D6B0CC5B9B}.Release|x86.ActiveCfg = Release
+		{5F379495-AA89-412A-8A19-81D6B0CC5B9B}.Release|x86.Build.0 = Release
+		{E096D874-6B03-4941-83FA-24811B43F375}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E096D874-6B03-4941-83FA-24811B43F375}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E096D874-6B03-4941-83FA-24811B43F375}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{E096D874-6B03-4941-83FA-24811B43F375}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E096D874-6B03-4941-83FA-24811B43F375}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E096D874-6B03-4941-83FA-24811B43F375}.Release|x86.ActiveCfg = Release|Any CPU
+		{8A563461-6E8D-4487-A776-B79BEF9700AE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8A563461-6E8D-4487-A776-B79BEF9700AE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8A563461-6E8D-4487-A776-B79BEF9700AE}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{8A563461-6E8D-4487-A776-B79BEF9700AE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8A563461-6E8D-4487-A776-B79BEF9700AE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8A563461-6E8D-4487-A776-B79BEF9700AE}.Release|x86.ActiveCfg = Release|Any CPU
+		{B926A9FC-737E-4725-AD00-727A56527AAA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B926A9FC-737E-4725-AD00-727A56527AAA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B926A9FC-737E-4725-AD00-727A56527AAA}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{B926A9FC-737E-4725-AD00-727A56527AAA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B926A9FC-737E-4725-AD00-727A56527AAA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B926A9FC-737E-4725-AD00-727A56527AAA}.Release|x86.ActiveCfg = Release|Any CPU
+		{E8BD0B19-0EC6-4F05-9E97-3243EB56BB6D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E8BD0B19-0EC6-4F05-9E97-3243EB56BB6D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E8BD0B19-0EC6-4F05-9E97-3243EB56BB6D}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{E8BD0B19-0EC6-4F05-9E97-3243EB56BB6D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E8BD0B19-0EC6-4F05-9E97-3243EB56BB6D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E8BD0B19-0EC6-4F05-9E97-3243EB56BB6D}.Release|x86.ActiveCfg = Release|Any CPU
+		{4E77F541-6B7D-486F-9565-7FC7F6ED48CB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4E77F541-6B7D-486F-9565-7FC7F6ED48CB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4E77F541-6B7D-486F-9565-7FC7F6ED48CB}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{4E77F541-6B7D-486F-9565-7FC7F6ED48CB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4E77F541-6B7D-486F-9565-7FC7F6ED48CB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4E77F541-6B7D-486F-9565-7FC7F6ED48CB}.Release|x86.ActiveCfg = Release|Any CPU
+		{8519AE42-DC8F-4E8A-8909-70D75501F7F3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8519AE42-DC8F-4E8A-8909-70D75501F7F3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8519AE42-DC8F-4E8A-8909-70D75501F7F3}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{8519AE42-DC8F-4E8A-8909-70D75501F7F3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8519AE42-DC8F-4E8A-8909-70D75501F7F3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8519AE42-DC8F-4E8A-8909-70D75501F7F3}.Release|x86.ActiveCfg = Release|Any CPU
+		{FAB5AE8D-8C1B-4DDD-A492-A2BDB6D43151}.Debug|Any CPU.ActiveCfg = Debug
+		{FAB5AE8D-8C1B-4DDD-A492-A2BDB6D43151}.Debug|Any CPU.Build.0 = Debug
+		{FAB5AE8D-8C1B-4DDD-A492-A2BDB6D43151}.Debug|x86.ActiveCfg = Debug
+		{FAB5AE8D-8C1B-4DDD-A492-A2BDB6D43151}.Debug|x86.Build.0 = Debug
+		{FAB5AE8D-8C1B-4DDD-A492-A2BDB6D43151}.Release|Any CPU.ActiveCfg = Release
+		{FAB5AE8D-8C1B-4DDD-A492-A2BDB6D43151}.Release|Any CPU.Build.0 = Release
+		{FAB5AE8D-8C1B-4DDD-A492-A2BDB6D43151}.Release|x86.ActiveCfg = Release
+		{FAB5AE8D-8C1B-4DDD-A492-A2BDB6D43151}.Release|x86.Build.0 = Release
+		{3538ABBF-000D-480A-AF2C-77DA22B9C678}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3538ABBF-000D-480A-AF2C-77DA22B9C678}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3538ABBF-000D-480A-AF2C-77DA22B9C678}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{3538ABBF-000D-480A-AF2C-77DA22B9C678}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3538ABBF-000D-480A-AF2C-77DA22B9C678}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3538ABBF-000D-480A-AF2C-77DA22B9C678}.Release|x86.ActiveCfg = Release|Any CPU
+		{BF6D9958-0862-48D4-9CD1-3EB97C9FCFD7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BF6D9958-0862-48D4-9CD1-3EB97C9FCFD7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BF6D9958-0862-48D4-9CD1-3EB97C9FCFD7}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{BF6D9958-0862-48D4-9CD1-3EB97C9FCFD7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BF6D9958-0862-48D4-9CD1-3EB97C9FCFD7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BF6D9958-0862-48D4-9CD1-3EB97C9FCFD7}.Release|x86.ActiveCfg = Release|Any CPU
+		{BB47EBE4-EAA4-4250-ADAB-48B0D248D247}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BB47EBE4-EAA4-4250-ADAB-48B0D248D247}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BB47EBE4-EAA4-4250-ADAB-48B0D248D247}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{BB47EBE4-EAA4-4250-ADAB-48B0D248D247}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BB47EBE4-EAA4-4250-ADAB-48B0D248D247}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BB47EBE4-EAA4-4250-ADAB-48B0D248D247}.Release|x86.ActiveCfg = Release|Any CPU
+		{27450CE7-9775-4930-937E-BF98B181D8C2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{27450CE7-9775-4930-937E-BF98B181D8C2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{27450CE7-9775-4930-937E-BF98B181D8C2}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{27450CE7-9775-4930-937E-BF98B181D8C2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{27450CE7-9775-4930-937E-BF98B181D8C2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{27450CE7-9775-4930-937E-BF98B181D8C2}.Release|x86.ActiveCfg = Release|Any CPU
+		{D4E3783D-807B-4ACC-B591-85B3F8A4EEA4}.Debug|Any CPU.ActiveCfg = Debug
+		{D4E3783D-807B-4ACC-B591-85B3F8A4EEA4}.Debug|x86.ActiveCfg = Debug
+		{D4E3783D-807B-4ACC-B591-85B3F8A4EEA4}.Debug|x86.Build.0 = Debug
+		{D4E3783D-807B-4ACC-B591-85B3F8A4EEA4}.Release|Any CPU.ActiveCfg = Release
+		{D4E3783D-807B-4ACC-B591-85B3F8A4EEA4}.Release|x86.ActiveCfg = Release
+		{D4E3783D-807B-4ACC-B591-85B3F8A4EEA4}.Release|x86.Build.0 = Release
+		{22F0E707-18F9-4A1A-A7FF-12EDA6728C02}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{22F0E707-18F9-4A1A-A7FF-12EDA6728C02}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{22F0E707-18F9-4A1A-A7FF-12EDA6728C02}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{22F0E707-18F9-4A1A-A7FF-12EDA6728C02}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{22F0E707-18F9-4A1A-A7FF-12EDA6728C02}.Release|Any CPU.Build.0 = Release|Any CPU
+		{22F0E707-18F9-4A1A-A7FF-12EDA6728C02}.Release|x86.ActiveCfg = Release|Any CPU
+		{E1D352B4-F690-4202-B65D-679A6705F61F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E1D352B4-F690-4202-B65D-679A6705F61F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E1D352B4-F690-4202-B65D-679A6705F61F}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{E1D352B4-F690-4202-B65D-679A6705F61F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E1D352B4-F690-4202-B65D-679A6705F61F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E1D352B4-F690-4202-B65D-679A6705F61F}.Release|x86.ActiveCfg = Release|Any CPU
+		{06573BAF-E8BD-4647-95F5-B8D52C7BA36B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{06573BAF-E8BD-4647-95F5-B8D52C7BA36B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{06573BAF-E8BD-4647-95F5-B8D52C7BA36B}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{06573BAF-E8BD-4647-95F5-B8D52C7BA36B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{06573BAF-E8BD-4647-95F5-B8D52C7BA36B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{06573BAF-E8BD-4647-95F5-B8D52C7BA36B}.Release|x86.ActiveCfg = Release|Any CPU
+		{4AEBC5D5-F9A7-462E-8356-22A669AF9D15}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4AEBC5D5-F9A7-462E-8356-22A669AF9D15}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4AEBC5D5-F9A7-462E-8356-22A669AF9D15}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{4AEBC5D5-F9A7-462E-8356-22A669AF9D15}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4AEBC5D5-F9A7-462E-8356-22A669AF9D15}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4AEBC5D5-F9A7-462E-8356-22A669AF9D15}.Release|x86.ActiveCfg = Release|Any CPU
+		{56DA34BB-ADC5-41AE-AD58-C6CD85456BB1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{56DA34BB-ADC5-41AE-AD58-C6CD85456BB1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{56DA34BB-ADC5-41AE-AD58-C6CD85456BB1}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{56DA34BB-ADC5-41AE-AD58-C6CD85456BB1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{56DA34BB-ADC5-41AE-AD58-C6CD85456BB1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{56DA34BB-ADC5-41AE-AD58-C6CD85456BB1}.Release|x86.ActiveCfg = Release|Any CPU
+		{1FD76872-4CEB-4BEA-9A4B-549FF647C626}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1FD76872-4CEB-4BEA-9A4B-549FF647C626}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1FD76872-4CEB-4BEA-9A4B-549FF647C626}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{1FD76872-4CEB-4BEA-9A4B-549FF647C626}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1FD76872-4CEB-4BEA-9A4B-549FF647C626}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1FD76872-4CEB-4BEA-9A4B-549FF647C626}.Release|x86.ActiveCfg = Release|Any CPU
+		{020E786C-324C-4A27-8ED3-9A14E235A16E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{020E786C-324C-4A27-8ED3-9A14E235A16E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{020E786C-324C-4A27-8ED3-9A14E235A16E}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{020E786C-324C-4A27-8ED3-9A14E235A16E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{020E786C-324C-4A27-8ED3-9A14E235A16E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{020E786C-324C-4A27-8ED3-9A14E235A16E}.Release|x86.ActiveCfg = Release|Any CPU
+		{D8A5B09D-41F3-4266-A7D0-FBE0CEF49980}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D8A5B09D-41F3-4266-A7D0-FBE0CEF49980}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D8A5B09D-41F3-4266-A7D0-FBE0CEF49980}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{D8A5B09D-41F3-4266-A7D0-FBE0CEF49980}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D8A5B09D-41F3-4266-A7D0-FBE0CEF49980}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D8A5B09D-41F3-4266-A7D0-FBE0CEF49980}.Release|x86.ActiveCfg = Release|Any CPU
+		{FD01709E-394B-4EE2-A9B3-4CD4AB9808D1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FD01709E-394B-4EE2-A9B3-4CD4AB9808D1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FD01709E-394B-4EE2-A9B3-4CD4AB9808D1}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{FD01709E-394B-4EE2-A9B3-4CD4AB9808D1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FD01709E-394B-4EE2-A9B3-4CD4AB9808D1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FD01709E-394B-4EE2-A9B3-4CD4AB9808D1}.Release|x86.ActiveCfg = Release|Any CPU
+		{AC94DB0A-F8E4-461B-8AD3-8743177E3302}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AC94DB0A-F8E4-461B-8AD3-8743177E3302}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AC94DB0A-F8E4-461B-8AD3-8743177E3302}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{AC94DB0A-F8E4-461B-8AD3-8743177E3302}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AC94DB0A-F8E4-461B-8AD3-8743177E3302}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AC94DB0A-F8E4-461B-8AD3-8743177E3302}.Release|x86.ActiveCfg = Release|Any CPU
+		{68E68FEF-D95A-4333-99D5-A9F85FEA7088}.Debug|Any CPU.ActiveCfg = Debug
+		{68E68FEF-D95A-4333-99D5-A9F85FEA7088}.Debug|x86.ActiveCfg = Debug
+		{68E68FEF-D95A-4333-99D5-A9F85FEA7088}.Debug|x86.Build.0 = Debug
+		{68E68FEF-D95A-4333-99D5-A9F85FEA7088}.Release|Any CPU.ActiveCfg = Release
+		{68E68FEF-D95A-4333-99D5-A9F85FEA7088}.Release|x86.ActiveCfg = Release
+		{68E68FEF-D95A-4333-99D5-A9F85FEA7088}.Release|x86.Build.0 = Release
+		{01FBE6AA-D0F2-49B8-A543-5796AAC21C5E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{01FBE6AA-D0F2-49B8-A543-5796AAC21C5E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{01FBE6AA-D0F2-49B8-A543-5796AAC21C5E}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{01FBE6AA-D0F2-49B8-A543-5796AAC21C5E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{01FBE6AA-D0F2-49B8-A543-5796AAC21C5E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{01FBE6AA-D0F2-49B8-A543-5796AAC21C5E}.Release|x86.ActiveCfg = Release|Any CPU
+		{49C9953E-030E-4850-ADA0-22947D9EC64E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{49C9953E-030E-4850-ADA0-22947D9EC64E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{49C9953E-030E-4850-ADA0-22947D9EC64E}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{49C9953E-030E-4850-ADA0-22947D9EC64E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{49C9953E-030E-4850-ADA0-22947D9EC64E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{49C9953E-030E-4850-ADA0-22947D9EC64E}.Release|x86.ActiveCfg = Release|Any CPU
+		{04E92F26-69CE-4371-8A2B-60B5A27967B0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{04E92F26-69CE-4371-8A2B-60B5A27967B0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{04E92F26-69CE-4371-8A2B-60B5A27967B0}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{04E92F26-69CE-4371-8A2B-60B5A27967B0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{04E92F26-69CE-4371-8A2B-60B5A27967B0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{04E92F26-69CE-4371-8A2B-60B5A27967B0}.Release|x86.ActiveCfg = Release|Any CPU
+		{D416BC5B-84D5-401F-9447-A5D9E5571113}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D416BC5B-84D5-401F-9447-A5D9E5571113}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{D416BC5B-84D5-401F-9447-A5D9E5571113}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D416BC5B-84D5-401F-9447-A5D9E5571113}.Release|x86.ActiveCfg = Release|Any CPU
+		{106FAD7B-FDF0-4270-9FA5-52A4167E6183}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{106FAD7B-FDF0-4270-9FA5-52A4167E6183}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{106FAD7B-FDF0-4270-9FA5-52A4167E6183}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{106FAD7B-FDF0-4270-9FA5-52A4167E6183}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{106FAD7B-FDF0-4270-9FA5-52A4167E6183}.Release|Any CPU.Build.0 = Release|Any CPU
+		{106FAD7B-FDF0-4270-9FA5-52A4167E6183}.Release|x86.ActiveCfg = Release|Any CPU
+		{C93CD6B7-7890-48D9-98AA-9F447F519654}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C93CD6B7-7890-48D9-98AA-9F447F519654}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C93CD6B7-7890-48D9-98AA-9F447F519654}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{C93CD6B7-7890-48D9-98AA-9F447F519654}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C93CD6B7-7890-48D9-98AA-9F447F519654}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C93CD6B7-7890-48D9-98AA-9F447F519654}.Release|x86.ActiveCfg = Release|Any CPU
+		{7A9BF183-B422-4D04-B9B5-D78C1800B5A7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7A9BF183-B422-4D04-B9B5-D78C1800B5A7}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{7A9BF183-B422-4D04-B9B5-D78C1800B5A7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7A9BF183-B422-4D04-B9B5-D78C1800B5A7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7A9BF183-B422-4D04-B9B5-D78C1800B5A7}.Release|x86.ActiveCfg = Release|Any CPU
+		{28BB6075-443B-4E82-86BF-145E01F8BD90}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{28BB6075-443B-4E82-86BF-145E01F8BD90}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{28BB6075-443B-4E82-86BF-145E01F8BD90}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{28BB6075-443B-4E82-86BF-145E01F8BD90}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{28BB6075-443B-4E82-86BF-145E01F8BD90}.Release|Any CPU.Build.0 = Release|Any CPU
+		{28BB6075-443B-4E82-86BF-145E01F8BD90}.Release|x86.ActiveCfg = Release|Any CPU
+		{DDAD36AE-F05B-4AF0-9960-069B9CA41F69}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DDAD36AE-F05B-4AF0-9960-069B9CA41F69}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DDAD36AE-F05B-4AF0-9960-069B9CA41F69}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{DDAD36AE-F05B-4AF0-9960-069B9CA41F69}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DDAD36AE-F05B-4AF0-9960-069B9CA41F69}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DDAD36AE-F05B-4AF0-9960-069B9CA41F69}.Release|x86.ActiveCfg = Release|Any CPU
+		{1D002D89-0851-450C-AFD8-B561F0D50F4A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1D002D89-0851-450C-AFD8-B561F0D50F4A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1D002D89-0851-450C-AFD8-B561F0D50F4A}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{1D002D89-0851-450C-AFD8-B561F0D50F4A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1D002D89-0851-450C-AFD8-B561F0D50F4A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1D002D89-0851-450C-AFD8-B561F0D50F4A}.Release|x86.ActiveCfg = Release|Any CPU
+		{BE11A9DE-C796-4D46-8C78-962D189E76DD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BE11A9DE-C796-4D46-8C78-962D189E76DD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BE11A9DE-C796-4D46-8C78-962D189E76DD}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{BE11A9DE-C796-4D46-8C78-962D189E76DD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BE11A9DE-C796-4D46-8C78-962D189E76DD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BE11A9DE-C796-4D46-8C78-962D189E76DD}.Release|x86.ActiveCfg = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{1E085292-4B8B-4649-B6AB-05FDC806EA90} = {F3EDCE36-255F-4920-913D-9E11D7DAF78D}
+		{E1D352B4-F690-4202-B65D-679A6705F61F} = {F3EDCE36-255F-4920-913D-9E11D7DAF78D}
+		{51D3D95C-2695-4DE9-B687-B1105D1D7E34} = {23A2CCA7-096F-4FE5-8046-673C86A4C383}
+		{CFBF2A67-A564-4C11-BB15-8A964B9DB2BF} = {C9593797-80D0-4D36-94B0-517DC418CC2E}
+		{72DC4B9D-943D-4F2F-BA34-9210A0FD0CAB} = {C9593797-80D0-4D36-94B0-517DC418CC2E}
+		{D59FC43A-E6EE-45C9-AC56-4F74265558EB} = {C9593797-80D0-4D36-94B0-517DC418CC2E}
+		{8151DF50-E6F1-40A7-9974-C8086A307C8C} = {51B069E7-872D-46CF-8F32-71831F43B48F}
+		{77A9FC5B-E2F3-4236-A072-2A46E4CA6386} = {51B069E7-872D-46CF-8F32-71831F43B48F}
+		{63573BE6-B534-43F9-BC2C-FDBE8C4B6389} = {51B069E7-872D-46CF-8F32-71831F43B48F}
+		{8C0D70FA-09F3-47FC-8E67-CCD231F5F7B5} = {51B069E7-872D-46CF-8F32-71831F43B48F}
+		{65F85581-DA83-40DE-A4C8-3C5D485783EB} = {51B069E7-872D-46CF-8F32-71831F43B48F}
+		{0ED7F7EA-C78E-4C6D-B441-DCA01148C09E} = {51B069E7-872D-46CF-8F32-71831F43B48F}
+		{29F84314-5201-4EB0-8475-7AB01FEEB58D} = {2DC5DFF2-117A-4946-B469-247A1019037B}
+		{CAFCB8C8-5407-466C-B48F-0CF71895B58D} = {2DC5DFF2-117A-4946-B469-247A1019037B}
+		{E0624870-2F70-49D5-84EB-82E920F78E0F} = {2DC5DFF2-117A-4946-B469-247A1019037B}
+		{D51D7D5D-D2CB-424D-AEE8-5492A5D19BE4} = {2DC5DFF2-117A-4946-B469-247A1019037B}
+		{5D185B3D-BED2-4838-AAF8-51344491C634} = {2DC5DFF2-117A-4946-B469-247A1019037B}
+		{62D4988B-8E2E-4143-8FAD-13EB9E2636CB} = {2DC5DFF2-117A-4946-B469-247A1019037B}
+		{CF6888E9-29FD-4E7B-BCA5-0B8189ADA15C} = {AD2E781C-F7A0-4A63-B536-08CC3A7A8614}
+		{E1B13898-7EE8-4453-AF75-A1AC69E828C5} = {AD2E781C-F7A0-4A63-B536-08CC3A7A8614}
+		{50CA81A4-3598-4F00-9D62-E180B1ECE0A7} = {AD2E781C-F7A0-4A63-B536-08CC3A7A8614}
+		{502B9635-B92D-4F93-B274-381ABA7BF82F} = {AD2E781C-F7A0-4A63-B536-08CC3A7A8614}
+		{A8DA5888-A7C9-49CE-917B-2A078BCEEDCA} = {74AFD73B-A8BF-4B01-AB2B-F2BBDE89E9FA}
+		{A9DD26A9-D7C5-46E2-95D1-F650C193FAA4} = {74AFD73B-A8BF-4B01-AB2B-F2BBDE89E9FA}
+		{2C2C23C0-5D88-405D-98F8-05FCF0CA1BB5} = {74AFD73B-A8BF-4B01-AB2B-F2BBDE89E9FA}
+		{CEC848E8-7502-4818-BA15-D0988C8A0875} = {23B4E2C9-0291-4B92-9F26-D1055C7D656C}
+		{EE33C2EE-0AC0-448C-B4A3-0129C3FD02C9} = {23B4E2C9-0291-4B92-9F26-D1055C7D656C}
+		{02D4FA08-EF7A-4431-818B-2339C19FD599} = {23B4E2C9-0291-4B92-9F26-D1055C7D656C}
+		{D416BC5B-84D5-401F-9447-A5D9E5571113} = {23B4E2C9-0291-4B92-9F26-D1055C7D656C}
+		{7A9BF183-B422-4D04-B9B5-D78C1800B5A7} = {23B4E2C9-0291-4B92-9F26-D1055C7D656C}
+		{2725044C-D9D8-4F9B-9850-DCF0E7EC2BBB} = {42B716BF-109D-4F66-A5CD-A7241DE07921}
+		{283C86E1-FB81-42E9-B087-6B8799FE70B5} = {42B716BF-109D-4F66-A5CD-A7241DE07921}
+		{EF8BC7EA-FE99-4165-B17B-88584BB80086} = {42B716BF-109D-4F66-A5CD-A7241DE07921}
+		{0472AC9B-915F-42BC-8398-826A2D982926} = {42B716BF-109D-4F66-A5CD-A7241DE07921}
+		{C4A0D55D-6726-4CB7-AADD-4D08DE284C58} = {42B716BF-109D-4F66-A5CD-A7241DE07921}
+		{A43CAF53-AFD1-4147-AB40-6FCC6F0923AE} = {42B716BF-109D-4F66-A5CD-A7241DE07921}
+		{D62C849A-8C9A-4700-BDCD-7E12FAD2A370} = {42B716BF-109D-4F66-A5CD-A7241DE07921}
+		{CABADECF-08A2-4661-929E-BA80AAF1A0BB} = {42B716BF-109D-4F66-A5CD-A7241DE07921}
+		{5F379495-AA89-412A-8A19-81D6B0CC5B9B} = {42B716BF-109D-4F66-A5CD-A7241DE07921}
+		{50B20C41-AD3C-4BB6-87E6-1CD798314D99} = {E55082CA-3947-45B6-9931-5D45C163512E}
+		{33482678-3901-4585-B05A-6F0DF5D268CC} = {E55082CA-3947-45B6-9931-5D45C163512E}
+		{E1FDC614-0752-4D40-803A-FADDC8EF9177} = {E55082CA-3947-45B6-9931-5D45C163512E}
+		{D053B71B-C9CE-46E9-820E-29F589F09A3D} = {E55082CA-3947-45B6-9931-5D45C163512E}
+		{5B52D479-5D43-4CF2-8CFA-DAF54436AEEF} = {E55082CA-3947-45B6-9931-5D45C163512E}
+		{696E929A-6A4A-4C6D-A8B2-C4F25F781940} = {E55082CA-3947-45B6-9931-5D45C163512E}
+		{9B7266A3-D18B-496C-9815-BD63F9D157AB} = {E55082CA-3947-45B6-9931-5D45C163512E}
+		{E096D874-6B03-4941-83FA-24811B43F375} = {E55082CA-3947-45B6-9931-5D45C163512E}
+		{22F0E707-18F9-4A1A-A7FF-12EDA6728C02} = {E55082CA-3947-45B6-9931-5D45C163512E}
+		{82B5288C-8E5A-4DBF-901D-BB691AC14D6C} = {6CD6622B-4EF9-407D-9E3A-9B101D66555C}
+		{942E2988-52F9-47D8-ABF3-27EB412DEA29} = {6CD6622B-4EF9-407D-9E3A-9B101D66555C}
+		{2B09D34B-2BEB-43DD-8F45-2BD0898185EC} = {6CD6622B-4EF9-407D-9E3A-9B101D66555C}
+		{E876AAB9-4469-4354-8B81-43960AF4E7A5} = {6CD6622B-4EF9-407D-9E3A-9B101D66555C}
+		{F2EC59E8-EBBB-4170-AE19-7595C136B886} = {6CD6622B-4EF9-407D-9E3A-9B101D66555C}
+		{9AD7AEC7-84F4-40B7-A76E-69DCE7783635} = {024915F8-2355-468A-A30F-5827C6DD78C2}
+		{80A165B7-F699-479B-99FF-D89209ED0617} = {024915F8-2355-468A-A30F-5827C6DD78C2}
+		{B35692B7-CC33-4824-A60A-3333F93865A0} = {024915F8-2355-468A-A30F-5827C6DD78C2}
+		{F1BE8A2F-502E-4092-9A69-B9E3983F02F6} = {024915F8-2355-468A-A30F-5827C6DD78C2}
+		{BC8346BB-2CAC-4A56-87F1-D69E73BF8A10} = {024915F8-2355-468A-A30F-5827C6DD78C2}
+		{1A5C21F3-D1E0-4CA4-8C54-724532EEDB0E} = {024915F8-2355-468A-A30F-5827C6DD78C2}
+		{2BF25639-7885-4374-A91F-9826DD2F7C0B} = {024915F8-2355-468A-A30F-5827C6DD78C2}
+		{8A563461-6E8D-4487-A776-B79BEF9700AE} = {526ACE20-70DE-4E7E-9265-8EF1EEFEB47E}
+		{B926A9FC-737E-4725-AD00-727A56527AAA} = {526ACE20-70DE-4E7E-9265-8EF1EEFEB47E}
+		{E8BD0B19-0EC6-4F05-9E97-3243EB56BB6D} = {526ACE20-70DE-4E7E-9265-8EF1EEFEB47E}
+		{4E77F541-6B7D-486F-9565-7FC7F6ED48CB} = {526ACE20-70DE-4E7E-9265-8EF1EEFEB47E}
+		{8519AE42-DC8F-4E8A-8909-70D75501F7F3} = {526ACE20-70DE-4E7E-9265-8EF1EEFEB47E}
+		{FAB5AE8D-8C1B-4DDD-A492-A2BDB6D43151} = {526ACE20-70DE-4E7E-9265-8EF1EEFEB47E}
+		{28BB6075-443B-4E82-86BF-145E01F8BD90} = {526ACE20-70DE-4E7E-9265-8EF1EEFEB47E}
+		{3538ABBF-000D-480A-AF2C-77DA22B9C678} = {91D0064B-E0F2-46D2-8D99-A7F8B78DC7E9}
+		{BF6D9958-0862-48D4-9CD1-3EB97C9FCFD7} = {91D0064B-E0F2-46D2-8D99-A7F8B78DC7E9}
+		{BB47EBE4-EAA4-4250-ADAB-48B0D248D247} = {91D0064B-E0F2-46D2-8D99-A7F8B78DC7E9}
+		{27450CE7-9775-4930-937E-BF98B181D8C2} = {91D0064B-E0F2-46D2-8D99-A7F8B78DC7E9}
+		{D4E3783D-807B-4ACC-B591-85B3F8A4EEA4} = {91D0064B-E0F2-46D2-8D99-A7F8B78DC7E9}
+		{06573BAF-E8BD-4647-95F5-B8D52C7BA36B} = {ADDFA0AC-893F-4F47-94A5-420EC18455D8}
+		{4AEBC5D5-F9A7-462E-8356-22A669AF9D15} = {ADDFA0AC-893F-4F47-94A5-420EC18455D8}
+		{56DA34BB-ADC5-41AE-AD58-C6CD85456BB1} = {ADDFA0AC-893F-4F47-94A5-420EC18455D8}
+		{1FD76872-4CEB-4BEA-9A4B-549FF647C626} = {ADDFA0AC-893F-4F47-94A5-420EC18455D8}
+		{020E786C-324C-4A27-8ED3-9A14E235A16E} = {ADDFA0AC-893F-4F47-94A5-420EC18455D8}
+		{D8A5B09D-41F3-4266-A7D0-FBE0CEF49980} = {ADDFA0AC-893F-4F47-94A5-420EC18455D8}
+		{FD01709E-394B-4EE2-A9B3-4CD4AB9808D1} = {ADDFA0AC-893F-4F47-94A5-420EC18455D8}
+		{200305E0-796B-414A-AA2E-F617374645D5} = {ADDFA0AC-893F-4F47-94A5-420EC18455D8}
+		{AC94DB0A-F8E4-461B-8AD3-8743177E3302} = {ADDFA0AC-893F-4F47-94A5-420EC18455D8}
+		{68E68FEF-D95A-4333-99D5-A9F85FEA7088} = {ADDFA0AC-893F-4F47-94A5-420EC18455D8}
+		{D14A7224-1ED4-41EF-B6CD-D95AE6D58148} = {200305E0-796B-414A-AA2E-F617374645D5}
+		{49C9953E-030E-4850-ADA0-22947D9EC64E} = {CE8E94DF-83C3-4D27-8BDE-40DEA70530F1}
+		{04E92F26-69CE-4371-8A2B-60B5A27967B0} = {CE8E94DF-83C3-4D27-8BDE-40DEA70530F1}
+	EndGlobalSection
+EndGlobal

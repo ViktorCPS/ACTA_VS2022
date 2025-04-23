@@ -1,0 +1,15 @@
+USE [master]
+RESTORE DATABASE ACTA WITH RECOVERY;
+
+
+USE [master]
+RESTORE DATABASE ACTA_files WITH RECOVERY;
+
+
+USE ACTA;
+EXEC sp_change_users_login 'Update_One', 'actamgr', 'actamgr';
+
+USE ACTA_files;
+EXEC sp_change_users_login 'Update_One', 'actamgr', 'actamgr';
+
+--Licencirati ACTAAdmin

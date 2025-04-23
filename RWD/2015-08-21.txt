@@ -1,0 +1,4 @@
+10:22:6	Exception in buttonSetRegime_Click: Reader programming failed
+10:24:59	Exception in buttonSetRegime_Click: Reader programming failed
+10:25:5	Exception in buttonSetRegime_Click: Reader programming failed
+10:25:12	Exception in buttonSetTime_Click: Error getting time

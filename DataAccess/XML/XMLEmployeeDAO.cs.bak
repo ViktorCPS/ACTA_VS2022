@@ -1,0 +1,622 @@
+using System;
+using System.Collections;
+using System.Collections.Generic;
+using System.Configuration;
+using System.Data;
+using System.IO;
+using System.Xml;
+using System.Xml.Serialization;
+using System.Text;
+
+using TransferObjects;
+using Util;
+
+namespace DataAccess
+{
+	/// <summary>
+	/// DAO implementation for managing Employees data form XML files, 
+	/// using serialization/deserialization.
+	/// </summary>
+	public class XMLEmployeeDAO : EmployeeDAO
+	{
+		private static DataSet cachedEmployeesTO = new DataSet();
+		private const string tableName = "AllEmployees";
+		private const string resultTableName = "resultRows";
+		
+		private DataSet getCachedEmployees()
+		{
+			if ((!cachedEmployeesTO.Tables.Contains(tableName)) || 
+				((DataTable) cachedEmployeesTO.Tables[tableName]).Rows.Count == 0)
+			{
+				deserializeToCache();
+			}
+			return cachedEmployeesTO;
+		}
+
+		public XMLEmployeeDAO()
+		{
+			
+		}
+
+		#region EmployeeDAO Members
+
+        public void SetDBConnection(Object dbConnection)
+        {
+        }
+        
+        public int insert(string EmployeeID, string FirstName, string LastName, string WorkingUnitID, string Status, string Password, string AddressID, string Picture, string WorkingGroupID, string type, string accessGroupID, bool doCommit)
+		{
+			// TODO:  Add XMLEmployeeDAO.insert implementation
+			return 0;
+		}
+
+        public int insert(EmployeeTO empl, bool doCommit)
+        {
+            // TODO:  Add XMLEmployeeDAO.insert implementation
+            return 0;
+        }
+
+		public bool delete(string empolyeeID)
+		{
+			// TODO:  Add XMLEmployeeDAO.delete implementation
+			return false;
+		}
+
+        public bool updatePassword(string employeeID, string password)
+        {
+            return false;
+        }
+
+		public bool update(string EmployeeID, string FirstName, string LastName, string WorkingUnitID, string Status, string Password, string AddressID, string Picture, string WorkingGroupID, string type, string accessGroupID)
+		{
+			// TODO:  Add XMLEmployeeDAO.update implementation
+			return false;
+		}
+
+        public bool update(string EmployeeID, string FirstName, string LastName, string WorkingUnitID, string Status, string Password, string AddressID, string Picture, string WorkingGroupID, string type, string accessGroupID,int orgunitID, bool doCommit)
+        {
+            // TODO:  Add XMLEmployeeDAO.update implementation
+            return false;
+        }
+
+        public bool update(string EmployeeID, string FirstName, string LastName, string WorkingUnitID, string Status, string Password, string AddressID, string Picture, string WorkingGroupID, string type, string accessGroupID, bool doCommit)
+        {
+            // TODO:  Add XMLEmployeeDAO.update implementation
+            return false;
+        }
+
+        public bool update(EmployeeTO empl, bool doCommit)
+        {
+            // TODO:  Add XMLEmployeeDAO.update implementation
+            return false;
+        }
+
+        public EmployeeTO findUserEmployee(string userID)
+        {
+            // TODO:  Add XMLEmployeeDAO.find implementation
+            return null;
+        }
+
+		public EmployeeTO find(string EmployeeID)
+		{
+			// TODO:  Add XMLEmployeeDAO.find implementation
+			return null;
+		}
+
+        public EmployeeTO find(string EmployeeID, IDbTransaction trans)
+        {
+            // TODO:  Add XMLEmployeeDAO.find implementation
+            return null;
+        }
+
+        public List<EmployeeTO> getEmployees(EmployeeTO emplTO, IDbTransaction trans)
+        {
+            return null;
+        }
+
+        public List<int> getEmployeesIDs()
+        {
+            return null;
+        }
+
+        public List<EmployeeTO> getEmployeesWUResponsible(string wuID, List<int> typesVisible, DateTime from, DateTime to)
+        {
+            return null;
+        }
+
+        public List<EmployeeTO> getEmployeesOUResponsible(string ouID, List<int> typesVisible, DateTime from, DateTime to)
+        {
+            return null;
+        }
+
+        public List<EmployeeTO> getEmployees(string emplIDs)
+        {
+            return null;
+        }
+
+        public string getActiveIDsForScheduling()
+        {
+            return null;
+        }
+
+        public List<EmployeeTO> getEmplNumByWUnits()
+        {
+            return null;
+        }
+
+        public List<EmployeeTO> getEmployeesByOU(string ounits, int emplID, List<int> typesVisible, DateTime from, DateTime to)
+        {
+            return null;
+        }
+
+        public Dictionary<int, int> getEmployeesGroups(string emplIDs, IDbTransaction trans)
+        {
+            return null;
+        }
+
+        public List<EmployeeTO> getEmployeesByWULoans(string wunits, int emplID, List<int> typesVisible, DateTime from, DateTime to)
+        {
+            return null;
+        }
+
+		/// <summary>
+		/// Get Employees data from specified XML file, populate EmployeeTO objects
+		/// </summary>
+		/// <param name="EmployeeID"></param>
+		/// <param name="FirstName"></param>
+		/// <param name="LastName"></param>
+		/// <param name="WorkingUnitID"></param>
+		/// <param name="Status"></param>
+		/// <param name="Password"></param>
+		/// <param name="AddressID"></param>
+		/// <param name="Picture"></param>
+		/// <param name="WorkingGroupID"></param>
+		/// <returns>Array List of EmployeeTO</returns>
+		public List<EmployeeTO> getEmployees(EmployeeTO emplTO)
+		{
+			List<EmployeeTO> employeeList = new List<EmployeeTO>();
+			StringBuilder sb = new StringBuilder();
+			string select = "";
+			DataTable resulttable = new DataTable(resultTableName);
+
+			try
+			{
+				DataSet dataset = getCachedEmployees();
+
+				if (dataset.Tables.Contains(tableName))
+				{
+					DataTable table = dataset.Tables[tableName];
+					resulttable = table.Clone();
+
+					table.CaseSensitive = false;
+
+                    if ((emplTO.EmployeeID != -1) ||
+                        (!emplTO.FirstName.Trim().Equals("")) ||
+                        (!emplTO.LastName.Trim().Equals("")) ||
+                        (emplTO.WorkingUnitID != -1) ||
+                        (!emplTO.Status.Trim().Equals("")) ||
+                        (!emplTO.Password.Trim().Equals("")) ||
+                        (emplTO.AddressID != -1) ||
+                        (!emplTO.Picture.Trim().Equals("")) ||
+                        (emplTO.WorkingGroupID != -1) ||
+                        (!emplTO.Type.Trim().Equals("")))
+					{
+
+                        if (emplTO.EmployeeID != -1)
+						{
+                            sb.Append(" EmployeeID like '" + emplTO.EmployeeID.ToString().Trim() + "' and");
+						}
+                        if (!emplTO.FirstName.Trim().Equals(""))
+						{
+                            sb.Append(" FirstName like '" + emplTO.FirstName.Trim().ToUpper() + "' and");
+						}
+                        if (!emplTO.LastName.Trim().Equals(""))
+						{
+                            sb.Append(" LastName like '" + emplTO.LastName.Trim().ToUpper() + "' and");
+						}
+                        if (emplTO.WorkingUnitID != -1)
+						{
+                            sb.Append(" WorkingUnitID like '" + emplTO.WorkingUnitID.ToString().Trim() + "' and");
+						}
+                        if (!emplTO.Status.Trim().Equals(""))
+						{
+                            sb.Append(" Status like '" + emplTO.Status.Trim().ToUpper() + "' and");
+						}
+                        if (!emplTO.Password.Trim().Equals(""))
+						{
+                            sb.Append(" Password like '" + emplTO.Password.Trim().ToUpper() + "' and");
+						}
+                        if (emplTO.AddressID != -1)
+						{
+                            sb.Append(" AddressID like '" + emplTO.AddressID.ToString().ToUpper() + "' and");
+						}
+                        if (!emplTO.Picture.Trim().Equals(""))
+						{
+                            sb.Append(" Picture like '" + emplTO.Picture.Trim().ToUpper() + "' and");
+						}
+                        if (emplTO.WorkingGroupID != -1)
+						{
+                            sb.Append(" WorkingGroupID like '" + emplTO.WorkingGroupID.ToString().Trim() + "' and");
+						}
+                        if (!emplTO.Type.Trim().Equals(""))
+						{
+                            sb.Append(" Type like '" + emplTO.Type.Trim().ToUpper() + "' and");
+						}
+
+						select = sb.ToString(0, sb.ToString().Length - 3);
+
+						DataRow[] rows = table.Select(select);
+
+						// Push rows to resultTable
+						foreach(DataRow row in rows)
+						{
+							resulttable.ImportRow(row);
+						}
+					}
+					else
+					{
+						resulttable = table;
+					}
+
+					employeeList = dataTable2ArrayList(resulttable);
+				}
+				
+			}
+			catch(Exception ex)
+			{
+				throw ex;
+			}
+			return employeeList;
+		}
+        // TODO: to be implemeted
+        public Dictionary<int, EmployeeTO> getEmployeesDictionaryWithASCO(EmployeeTO emplTO)
+        {
+            return null;
+        }
+        // TODO: to be implemeted
+        public Dictionary<int, EmployeeTO> getEmployeesDictionary(EmployeeTO emplTO)
+        {
+            return null;
+        }
+        public Dictionary<int, EmployeeTO> getEmployeesDictionary(string emplIDs)
+        {
+            return null;
+        }
+        public Dictionary<int, EmployeeTO> getEmployeesDictionaryWCSelfService()
+        {
+            return null;
+        }
+		public List<EmployeeTO> getEmployesWithStatus(EmployeeTO emplTO, List<string> statuses, string wuString)
+		{
+			// TODO:  Add XMLEmployeeDAO.getEmployesWithStatus implementation
+			return null;
+		}
+
+        public List<EmployeeTO> getEmployesWithStatusNotInGroup(List<string> statuses, string wuString, int groupID)
+        {            
+            return null;
+        }
+
+		// TODO: to be implemeted
+		public List<EmployeeTO> getEmployeesByWU(string wUnits)
+		{
+			return null;
+		}
+
+        // TODO: to be implemeted
+        public List<EmployeeTO> getEmployeesNotInWU(string wUnits)
+        {
+            return null;
+        }
+
+		// TODO: to be implemeted
+        public List<EmployeeTO> getEmployeesByWUWithStatuses(string wUnits, List<string> statuses)
+		{
+			return null;
+		}
+
+		// TODO: to be implemeted
+		public List<EmployeeTO> getEmployesTagsWithStatus(EmployeeTO emplTO, List<string> statuses, string wUnits, int hasTag)
+		{
+			return null;
+		}
+
+		public TagTO findActive(int ownerID)
+		{
+			// TODO:  Add XMLEmployeeDAO.findActive implementation
+			return null;
+		}
+
+		#endregion
+
+		public void serialize(List<EmployeeTO> employeesTO)
+		{
+			try
+			{
+				//string filename = Constants.XMLDataSourceDir + ConfigurationManager.AppSettings["XMLEmployeesFile"];
+                string filename = Constants.XMLDataSourceDir + Constants.XMLEmployeesFile;
+				Stream stream = File.Open(filename, FileMode.Create);
+
+				EmployeeTO[] employeeArray = (EmployeeTO[]) employeesTO.ToArray();
+
+				XmlSerializer bformatter = new XmlSerializer(typeof(EmployeeTO[]));
+				bformatter.Serialize(stream, employeeArray);
+				stream.Close();
+			}
+			catch(Exception ex)
+			{
+				throw ex;
+			}
+		}
+
+		private void deserializeToCache()
+		{
+			try
+			{
+				//if (File.Exists(Constants.XMLDataSourceDir + ConfigurationManager.AppSettings["XMLEmployeesFile"]))
+                if (File.Exists(Constants.XMLDataSourceDir + Constants.XMLEmployeesFile))
+				{
+					//string filename = Constants.XMLDataSourceDir + ConfigurationManager.AppSettings["XMLEmployeesFile"];
+                    string filename = Constants.XMLDataSourceDir + Constants.XMLEmployeesFile;
+					Stream stream = File.Open(filename, FileMode.Open);
+
+					XmlSerializer bformatter = new XmlSerializer(typeof(EmployeeTO[]));
+					EmployeeTO[] deserialized = (EmployeeTO[]) bformatter.Deserialize(stream);
+					ArrayList emplListTO = ArrayList.Adapter(deserialized);
+
+                    List<EmployeeTO> emplList = new List<EmployeeTO>();
+                    foreach (EmployeeTO empl in emplListTO)
+                    {
+                        emplList.Add(empl);
+                    }
+					stream.Close();
+
+					cachedEmployeesTO = toDataSet(emplList);
+				}
+				else
+				{
+					cachedEmployeesTO = new DataSet();
+					DataTable dataTable = new DataTable();
+					cachedEmployeesTO.Tables.Add(tableName);
+				}
+			}
+			catch(Exception ex)
+			{
+				throw ex;
+			}
+		}
+
+		private DataSet toDataSet(List<EmployeeTO> list)
+		{
+			DataSet dataset = new DataSet();
+
+			try
+			{
+				DataTable dataTable = new DataTable();
+
+				dataset.Tables.Add(tableName);
+				dataTable = dataset.Tables[tableName];
+
+				dataTable.Columns.Add("EmployeeID", typeof(string));
+				dataTable.Columns.Add("FirstName", typeof(string));
+				dataTable.Columns.Add("LastName", typeof(string));
+				dataTable.Columns.Add("WorkingUnitID", typeof(string));
+				dataTable.Columns.Add("Status", typeof(string));
+				dataTable.Columns.Add("Password", typeof(string));
+				dataTable.Columns.Add("AddressID", typeof(string));
+				dataTable.Columns.Add("Picture", typeof(string));
+				dataTable.Columns.Add("WorkingGroupID", typeof(string));
+				dataTable.Columns.Add("Type", typeof(string));
+
+				foreach(EmployeeTO empl in list)
+				{
+					DataRow row = dataTable.NewRow();
+
+					row["EmployeeID"] = empl.EmployeeID.ToString();
+					row["FirstName"] = empl.FirstName;
+					row["LastName"] = empl.LastName;
+					row["WorkingUnitID"] = empl.WorkingUnitID.ToString();
+					row["Status"] = empl.Status;
+					row["Password"] = empl.Password;
+					row["AddressID"] = empl.AddressID.ToString();
+					row["Picture"] = empl.Picture;
+					row["WorkingGroupID"] = empl.WorkingGroupID.ToString();
+					row["Type"] = empl.Type;
+					
+					dataTable.Rows.Add(row);
+				}
+			}
+			catch(Exception ex)
+			{
+				throw ex;
+			}
+
+			return dataset;
+		}
+
+
+		private List<EmployeeTO> dataTable2ArrayList(DataTable dataTable)
+		{
+			List<EmployeeTO> employees = new List<EmployeeTO>();
+
+			try
+			{
+				EmployeeTO emplTO = new EmployeeTO();
+
+				foreach(DataRow row in dataTable.Rows)
+				{
+					emplTO = new EmployeeTO();
+
+					emplTO.EmployeeID = Int32.Parse(row["EmployeeID"].ToString());
+					emplTO.FirstName = row["FirstName"].ToString();
+					emplTO.LastName = row["LastName"].ToString();
+					emplTO.WorkingUnitID = Int32.Parse(row["WorkingUnitID"].ToString());
+					emplTO.Status = row["Status"].ToString();
+					emplTO.Password = row["Password"].ToString();
+					emplTO.AddressID = Int32.Parse(row["AddressID"].ToString());
+					emplTO.Picture = row["Picture"].ToString();
+					emplTO.WorkingGroupID = Int32.Parse(row["WorkingGroupID"].ToString());
+					emplTO.Type = row["Type"].ToString();
+
+					employees.Add(emplTO);
+				}
+			}
+			catch(Exception ex)
+			{
+				throw ex;
+			}
+
+			return employees;
+		}
+
+		public List<EmployeeTO> getEmployeesByWUGetAccessGroup(string wUnits)
+		{
+			return null;
+		}
+
+        public List<EmployeeTO> getEmployeesByAccessGroup(string accessGroupID)
+		{
+			return null;
+		}
+
+        public List<EmployeeTO> getEmployeesNotInAccessGroup(string accessGroupID)
+		{
+			return null;
+		}
+
+        public List<EmployeeTO> getEmployeesVisitors(string wUnits, List<string> statuses, string type)
+        {
+            return null;
+        }
+
+        public List<EmployeeTO> getEmployeesByTags(string tags)
+        {
+            return null;
+        }
+        public EmployeeTO getEmployeesByTag(string tagID)
+        {
+            return null;
+        }
+
+        public Dictionary<uint,EmployeeTO> getEmployeesByTagsDictionary(string tags)
+        {
+            return null;
+        }
+        public List<EmployeeTO> getEmployeesByBlockedTags(string tags)
+        {
+            return null;
+        }
+
+		public bool beginTransaction()
+		{
+			return false;
+		}
+
+		public void commitTransaction()
+		{
+		}
+
+		public void rollbackTransaction()
+		{
+		}
+
+        public void setTransaction(IDbTransaction trans)
+        { 
+        }
+
+        public IDbTransaction getTransaction()
+        {
+            return null;
+        }
+
+		public bool updateAccessGroup(string  EmployeeID, string AccessGroupID, bool doCommit)
+		{
+			return true;
+		}
+        
+        public bool updateWU(string EmployeeID, string WorkingUnitID, bool doCommit)
+        {
+            return true;
+        }
+
+        public bool updateOU(string EmployeeID, string ouID, bool doCommit)
+        {
+            return true;
+        }
+
+        public EmployeeTO findEmplMealType(uint tagID)
+        {
+            return null;
+        }
+        public bool updatePicture(int employeeID, string picture, bool doCommit)
+        {
+            return false;
+        }
+        //natalija08112017
+        public bool update(EmployeeTO empl, int emplGroupID, IDbTransaction trans)
+        {
+            return false;
+        }
+
+        //  10.06.2019. BOJAN za izvestaj za godisnje odmore zaposlenih
+        public List<EmployeeTO> getNumberOfDaysVacationPerEmployees(DateTime date) {
+            return null;
+        }
+        //  18.06.2019. BOJAN
+        public  List<EmployeeTO> getEmployeesByOUandWU(int orgUnitID, int workingUnitID) 
+        {
+            return null;
+        }
+
+        public List<EmployeeTO> getAllEmployees()
+        {
+            return  null;
+        }
+        public int insert(string EmployeeID, string FirstName, string LastName, string WorkingUnitID,
+           string Status, string Password, string AddressID, string Picture, string WorkingGroupID,
+           string type, string accessGroupID, string user, bool doCommit)
+        {
+            return 0;
+        }
+        public int insert(string EmployeeID, string FirstName, string LastName, string WorkingUnitID,
+           string Status, string Password, string AddressID, string Picture, string WorkingGroupID,
+           string type, string accessGroupID, int orgUnitID, bool doCommit)
+        {
+            return 0;
+        }
+        public bool updateSiemens(int emplID, string firstName, string lastName, int wuID, int addressID)
+        {
+            return false;
+        }
+        public string getAddressLine3(int emplID)
+        {
+            return null;
+        }
+        public List<int> SyncDataWithNav()
+        {
+            return new List<int>();
+        }
+        public List<EmployeeTO> ForKastProlasci(DateTime dateTime)
+        {
+            return new List<EmployeeTO>();
+        }
+        public List<EmployeeTO> ProlasciZaForKast(DateTime dateTime)
+        {
+            return new List<EmployeeTO>();
+        }
+        public int BrZaposlenih(DateTime mesec)
+        {
+            return new int();
+        }
+
+        #region EmployeeDAO Members
+
+
+        public List<EmployeeTO> getEmployeesByOU(string oUnits)
+        {
+            throw new NotImplementedException();
+        }
+
+        #endregion
+    }
+}

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="ZINPresencePreviewDS" targetNamespace="http://tempuri.org/ZINPresencePreviewDS.xsd" elementFormDefault="qualified" attributeFormDefault="qualified" xmlns="http://tempuri.org/ZINPresencePreviewDS.xsd" xmlns:mstns="http://tempuri.org/ZINPresencePreviewDS.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop">
+  <xs:element name="ZinPresencePreview" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="Tags" msprop:Generator_DataSetName="Tags">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="wUnits" msprop:Generator_UserTableName="tag" msprop:Generator_RowDeletedName="tagRowDeleted" msprop:Generator_RowChangedName="tagRowChanged" msprop:Generator_RowClassName="tagRow" msprop:Generator_RowChangingName="tagRowChanging" msprop:Generator_RowEvArgName="tagRowChangeEvent" msprop:Generator_RowEvHandlerName="tagRowChangeEventHandler" msprop:Generator_TableClassName="tagDataTable" msprop:Generator_TableVarName="tabletag" msprop:Generator_RowDeletingName="tagRowDeleting" msprop:Generator_TablePropName="tag">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="working_unit" msprop:Generator_UserColumnName="first_name" msprop:Generator_ColumnVarNameInTable="columnfirst_name" msprop:Generator_ColumnPropNameInRow="first_name" msprop:Generator_ColumnPropNameInTable="first_nameColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="present" msprop:Generator_UserColumnName="owner_id" msprop:Generator_ColumnVarNameInTable="columnowner_id" msprop:Generator_ColumnPropNameInRow="owner_id" msprop:Generator_ColumnPropNameInTable="owner_idColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="total" msprop:Generator_UserColumnName="issued" msprop:Generator_ColumnVarNameInTable="columnissued" msprop:Generator_ColumnPropNameInRow="issued" msprop:Generator_ColumnPropNameInTable="issuedColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="absent" msprop:Generator_UserColumnName="valid_to" msprop:Generator_ColumnVarNameInTable="columnvalid_to" msprop:Generator_ColumnPropNameInRow="valid_to" msprop:Generator_ColumnPropNameInTable="valid_toColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="imageID" msprop:Generator_UserColumnName="imageID" msprop:Generator_ColumnPropNameInRow="imageID" msprop:Generator_ColumnVarNameInTable="columnimageID" msprop:Generator_ColumnPropNameInTable="imageIDColumn" type="xs:byte" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="images" msprop:Generator_UserTableName="images" msprop:Generator_RowDeletedName="imagesRowDeleted" msprop:Generator_TableClassName="imagesDataTable" msprop:Generator_RowChangedName="imagesRowChanged" msprop:Generator_RowClassName="imagesRow" msprop:Generator_RowChangingName="imagesRowChanging" msprop:Generator_RowEvArgName="imagesRowChangeEvent" msprop:Generator_RowEvHandlerName="imagesRowChangeEventHandler" msprop:Generator_TablePropName="images" msprop:Generator_TableVarName="tableimages" msprop:Generator_RowDeletingName="imagesRowDeleting">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="image" msprop:Generator_UserColumnName="image" msprop:Generator_ColumnPropNameInRow="image" msprop:Generator_ColumnVarNameInTable="columnimage" msprop:Generator_ColumnPropNameInTable="imageColumn" type="xs:base64Binary" minOccurs="0" />
+              <xs:element name="imageID" msprop:Generator_UserColumnName="imageID" msprop:Generator_ColumnPropNameInRow="imageID" msprop:Generator_ColumnVarNameInTable="columnimageID" msprop:Generator_ColumnPropNameInTable="imageIDColumn" type="xs:byte" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

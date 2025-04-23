@@ -1,0 +1,18 @@
+13:54:21	Collect log starts, readerID=01
+13:54:42	comPort=COM169084928:10001 Exception in MifareCardsManipulator; GetLog(comPort,nodeString,deleteLog); mifare.SetMode(RFIDDevice.REMOTE)Exception in MifareCardsManipulator: Cannot set REMOTE mode
+13:54:42	buttonGetLog_ClickException in MifareCardsManipulator: Cannot set REMOTE mode
+13:56:59	Collect log starts, readerID=01
+13:56:59	comPort=COM169085131:10001 1200 bytes taken;
+13:56:59	buttonGetLog_ClickAccess to the path 'C:\Back up ACTA 3.0\ACTA-3.0\RWD\Log.dat' is denied.
+13:58:48	Collect log starts, readerID=01
+13:58:48	comPort=COM169085131:10001 1216 bytes taken;
+13:58:48	buttonGetLog_ClickAccess to the path 'C:\Back up ACTA 3.0\ACTA-3.0\RWD\Log.dat' is denied.
+13:59:41	Collect log starts, readerID=01
+13:59:41	comPort=COM169085131:10001 1216 bytes taken;
+13:59:41	buttonGetLog_ClickAccess to the path 'C:\Back up ACTA 3.0\ACTA-3.0\RWD\Log.dat' is denied.
+13:59:46	Collect log starts, readerID=01
+13:59:46	comPort=COM169085131:10001 0 bytes taken;
+13:59:46	buttonGetLog_ClickAccess to the path 'C:\Back up ACTA 3.0\ACTA-3.0\RWD\Log.dat' is denied.
+14:23:18	Collect log starts, readerID=01
+14:23:18	comPort=COM169085131:10001 32 bytes taken;
+14:23:18	buttonGetLog_ClickAccess to the path 'C:\Back up ACTA 3.0\ACTA-3.0\RWD\Log.dat' is denied.

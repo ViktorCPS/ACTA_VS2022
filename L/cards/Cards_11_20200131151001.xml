@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<ArrayOfTagTO xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <TagTO TagID="294052244">
+    <WorkingUnit />
+    <CreatedBy />
+    <RecordID>1</RecordID>
+    <OwnerID>1</OwnerID>
+    <Issued>0001-01-01T00:00:00</Issued>
+    <ValidTO>0001-01-01T00:00:00</ValidTO>
+    <Status>ACTIVE</Status>
+    <Description />
+    <EmployeeName />
+    <ModifiedBy />
+    <ModifiedTime>0001-01-01T00:00:00</ModifiedTime>
+    <AccessGroupID>0</AccessGroupID>
+  </TagTO>
+</ArrayOfTagTO>

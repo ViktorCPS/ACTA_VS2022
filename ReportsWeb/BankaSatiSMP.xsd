@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="BankaSatiSMP" targetNamespace="http://tempuri.org/BankaSatiSMP.xsd" xmlns:mstns="http://tempuri.org/BankaSatiSMP.xsd" xmlns="http://tempuri.org/BankaSatiSMP.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="BankaSatiSMP" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="BankaSatiSMP" msprop:Generator_DataSetName="BankaSatiSMP" msprop:EnableTableAdapterManager="true">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="emplBankHrs" msprop:Generator_UserTableName="emplBankHrs" msprop:Generator_RowDeletedName="emplBankHrsRowDeleted" msprop:Generator_RowChangedName="emplBankHrsRowChanged" msprop:Generator_RowClassName="emplBankHrsRow" msprop:Generator_RowChangingName="emplBankHrsRowChanging" msprop:Generator_RowEvArgName="emplBankHrsRowChangeEvent" msprop:Generator_RowEvHandlerName="emplBankHrsRowChangeEventHandler" msprop:Generator_TableClassName="emplBankHrsDataTable" msprop:Generator_TableVarName="tableemplBankHrs" msprop:Generator_RowDeletingName="emplBankHrsRowDeleting" msprop:Generator_TablePropName="emplBankHrs">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ID" msprop:Generator_UserColumnName="ID" msprop:Generator_ColumnVarNameInTable="columnID" msprop:Generator_ColumnPropNameInRow="ID" msprop:Generator_ColumnPropNameInTable="IDColumn" type="xs:int" />
+              <xs:element name="Ime_x0020_i_x0020_prezime" msprop:Generator_UserColumnName="Ime i prezime" msprop:Generator_ColumnVarNameInTable="columnIme_i_prezime" msprop:Generator_ColumnPropNameInRow="Ime_i_prezime" msprop:Generator_ColumnPropNameInTable="Ime_i_prezimeColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="Banka_x0020_sati" msprop:Generator_UserColumnName="Banka sati" msprop:Generator_ColumnVarNameInTable="columnBanka_sati" msprop:Generator_ColumnPropNameInRow="Banka_sati" msprop:Generator_ColumnPropNameInTable="Banka_satiColumn" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:emplBankHrs" />
+      <xs:field xpath="mstns:ID" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

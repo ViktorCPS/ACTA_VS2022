@@ -1,0 +1,4809 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<!-- 
+		Microsoft ResX Schema
+
+		Version 1.3
+
+		The primary goals of this format is to allow a simple XML format 
+		that is mostly human readable. The generation and parsing of the 
+		various data types are done through the TypeConverter classes 
+		associated with the data types.
+
+		Example:
+
+		... ado.net/XML headers & schema ...
+		<resheader name="resmimetype">text/microsoft-resx</resheader>
+		<resheader name="version">1.3</resheader>
+		<resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+		<resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+		<data name="Name1">this is my long string</data>
+		<data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+		<data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+			[base64 mime encoded serialized .NET Framework object]
+		</data>
+		<data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+			[base64 mime encoded string representing a byte array form of the .NET Framework object]
+		</data>
+
+		There are any number of "resheader" rows that contain simple 
+		name/value pairs.
+
+		Each data row contains a name, and value. The row also contains a 
+		type or mimetype. Type corresponds to a .NET class that support 
+		text/value conversion through the TypeConverter architecture. 
+		Classes that don't support this are serialized and stored with the 
+		mimetype set.
+
+		The mimetype is used for serialized objects, and tells the 
+		ResXResourceReader how to depersist the object. This is currently not 
+		extensible. For a given mimetype the value must be set accordingly:
+
+		Note - application/x-microsoft.net.object.binary.base64 is the format 
+		that the ResXResourceWriter will generate, however the reader can 
+		read any of the formats listed below.
+
+		mimetype: application/x-microsoft.net.object.binary.base64
+		value   : The object must be serialized with 
+			: System.Serialization.Formatters.Binary.BinaryFormatter
+			: and then encoded with base64 encoding.
+
+		mimetype: application/x-microsoft.net.object.soap.base64
+		value   : The object must be serialized with 
+			: System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+			: and then encoded with base64 encoding.
+
+		mimetype: application/x-microsoft.net.object.bytearray.base64
+		value   : The object must be serialized into a byte array 
+			: using a System.ComponentModel.TypeConverter
+			: and then encoded with base64 encoding.
+	-->
+	
+	<xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+		<xsd:element name="root" msdata:IsDataSet="true">
+			<xsd:complexType>
+				<xsd:choice maxOccurs="unbounded">
+					<xsd:element name="data">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+								<xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+							</xsd:sequence>
+							<xsd:attribute name="name" type="xsd:string" msdata:Ordinal="1" />
+							<xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+							<xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+						</xsd:complexType>
+					</xsd:element>
+					<xsd:element name="resheader">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+							</xsd:sequence>
+							<xsd:attribute name="name" type="xsd:string" use="required" />
+						</xsd:complexType>
+					</xsd:element>
+				</xsd:choice>
+			</xsd:complexType>
+		</xsd:element>
+	</xsd:schema>
+	<resheader name="resmimetype">
+		<value>text/microsoft-resx</value>
+	</resheader>
+	<resheader name="version">
+		<value>1.3</value>
+	</resheader>
+	<resheader name="reader">
+		<value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.3500.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+	</resheader>
+	<resheader name="writer">
+		<value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.3500.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+	</resheader>
+  <data name="btnSave" xml:space="preserve">
+    <value>Save</value>
+  </data>
+  <data name="btnUpdate" xml:space="preserve">
+    <value>Update</value>
+  </data>
+  <data name="btnDelete" xml:space="preserve">
+    <value>Delete</value>
+  </data>
+  <data name="btnSearch" xml:space="preserve">
+    <value>Search</value>
+  </data>
+  <data name="lblEployeeID" xml:space="preserve">
+    <value>Employee ID:</value>
+  </data>
+  <data name="lblTagNum" xml:space="preserve">
+    <value>Tag number:</value>
+  </data>
+  <data name="lblFirstName" xml:space="preserve">
+    <value>First name:</value>
+  </data>
+  <data name="lblLastName" xml:space="preserve">
+    <value>Last name:</value>
+  </data>
+  <data name="lblLocationID" xml:space="preserve">
+    <value>Location ID:</value>
+  </data>
+  <data name="lblName" xml:space="preserve">
+    <value>Name:</value>
+  </data>
+  <data name="lblDescription" xml:space="preserve">
+    <value>Description:</value>
+  </data>
+  <data name="lblParentLocationID" xml:space="preserve">
+    <value>Parent location ID:</value>
+  </data>
+  <data name="lblWorkingUnitID" xml:space="preserve">
+    <value>Working unit ID:</value>
+  </data>
+  <data name="lblParentWUID" xml:space="preserve">
+    <value>Parent working unit ID:</value>
+  </data>
+  <data name="lblPassTypeID" xml:space="preserve">
+    <value>Pass type ID:</value>
+  </data>
+  <data name="lblButton" xml:space="preserve">
+    <value>Button:</value>
+  </data>
+  <data name="lblIsPass" xml:space="preserve">
+    <value>Is pass:</value>
+  </data>
+  <data name="menuLibraries" xml:space="preserve">
+    <value>Libraries</value>
+  </data>
+  <data name="menuEmployees" xml:space="preserve">
+    <value>Employees</value>
+  </data>
+  <data name="menuWorkingUnits" xml:space="preserve">
+    <value>Working units</value>
+  </data>
+  <data name="menuLocations" xml:space="preserve">
+    <value>Locations</value>
+  </data>
+  <data name="menuPassTypes" xml:space="preserve">
+    <value>Pass types</value>
+  </data>
+  <data name="lblStatus" xml:space="preserve">
+    <value>Status:</value>
+  </data>
+  <data name="lblPassword" xml:space="preserve">
+    <value>Password:</value>
+  </data>
+  <data name="btnAddress" xml:space="preserve">
+    <value>Address &gt;&gt;&gt;</value>
+  </data>
+  <data name="btnFormClear" xml:space="preserve">
+    <value>Clear</value>
+  </data>
+  <data name="lblAddressID" xml:space="preserve">
+    <value>Address ID:</value>
+  </data>
+  <data name="lblAddrLine1" xml:space="preserve">
+    <value>Address line 1:</value>
+  </data>
+  <data name="lblAddrLine2" xml:space="preserve">
+    <value>Address line 2:</value>
+  </data>
+  <data name="lblAddrLine3" xml:space="preserve">
+    <value>Address line 3:</value>
+  </data>
+  <data name="lblCityName" xml:space="preserve">
+    <value>City name:</value>
+  </data>
+  <data name="lblCountry" xml:space="preserve">
+    <value>Country:</value>
+  </data>
+  <data name="lblState" xml:space="preserve">
+    <value>State:</value>
+  </data>
+  <data name="lblPostalZipCode" xml:space="preserve">
+    <value>Postal zip code:</value>
+  </data>
+  <data name="lblTelNum1" xml:space="preserve">
+    <value>Tel number 1:</value>
+  </data>
+  <data name="lblTelNum2" xml:space="preserve">
+    <value>Tel number 2:</value>
+  </data>
+  <data name="lblTelNum3" xml:space="preserve">
+    <value>Tel number 3:</value>
+  </data>
+  <data name="lblFaxNum1" xml:space="preserve">
+    <value>Fax number 1:</value>
+  </data>
+  <data name="lblFaxNum2" xml:space="preserve">
+    <value>Fax number 2:</value>
+  </data>
+  <data name="lblFaxNum3" xml:space="preserve">
+    <value>Fax number 3:</value>
+  </data>
+  <data name="btnOK" xml:space="preserve">
+    <value>OK</value>
+  </data>
+  <data name="menuReaders" xml:space="preserve">
+    <value>Terminals</value>
+  </data>
+  <data name="lblReaderID" xml:space="preserve">
+    <value>Terminal ID:</value>
+  </data>
+  <data name="lblTech" xml:space="preserve">
+    <value>Technology:</value>
+  </data>
+  <data name="lblDesc" xml:space="preserve">
+    <value>Description:</value>
+  </data>
+  <data name="lblPrimaryLoc" xml:space="preserve">
+    <value>Primary location:</value>
+  </data>
+  <data name="lblPrimDirect" xml:space="preserve">
+    <value>Direction:</value>
+  </data>
+  <data name="lblConnType" xml:space="preserve">
+    <value>Connection type:</value>
+  </data>
+  <data name="rbSerial" xml:space="preserve">
+    <value>Serial</value>
+  </data>
+  <data name="btnAddvance" xml:space="preserve">
+    <value>Advance &gt;&gt;&gt;</value>
+  </data>
+  <data name="lblConnAddress" xml:space="preserve">
+    <value>Connection address:</value>
+  </data>
+  <data name="Ant0Loc" xml:space="preserve">
+    <value>Ant0 location: </value>
+  </data>
+  <data name="Ant1Loc" xml:space="preserve">
+    <value>Ant1 location:</value>
+  </data>
+  <data name="lblTagID" xml:space="preserve">
+    <value>Tag ID:</value>
+  </data>
+  <data name="btnCancel" xml:space="preserve">
+    <value>Cancel</value>
+  </data>
+  <data name="btnTag" xml:space="preserve">
+    <value>Active tag &gt;&gt;&gt;</value>
+  </data>
+  <data name="gbAntenna0" xml:space="preserve">
+    <value>Antenna 0</value>
+  </data>
+  <data name="gbAntenna1" xml:space="preserve">
+    <value>Antenna 1</value>
+  </data>
+  <data name="cbWorkTimeCounter1" xml:space="preserve">
+    <value>Is work time counter</value>
+  </data>
+  <data name="btnReaderSettings" xml:space="preserve">
+    <value>Show terminal setings &gt;&gt;&gt;</value>
+  </data>
+  <data name="btnNew" xml:space="preserve">
+    <value>New tag</value>
+  </data>
+  <data name="btnAdd" xml:space="preserve">
+    <value>Add</value>
+  </data>
+  <data name="btnClose" xml:space="preserve">
+    <value>Close</value>
+  </data>
+  <data name="messageLocUpd1" xml:space="preserve">
+    <value>You must select location to update first.</value>
+  </data>
+  <data name="messageLocUpd2" xml:space="preserve">
+    <value>More than one locations are selected. Please select single location to update.</value>
+  </data>
+  <data name="messageLocDel1" xml:space="preserve">
+    <value>Are you sure you want to delete selected locations?</value>
+  </data>
+  <data name="messageLocDel2" xml:space="preserve">
+    <value>Some terminals are on this location.</value>
+  </data>
+  <data name="messageLocDel3" xml:space="preserve">
+    <value>This is a parent location. Please remove all it's child locations first.</value>
+  </data>
+  <data name="messageLocDel4" xml:space="preserve">
+    <value>No selected locations to delete.</value>
+  </data>
+  <data name="messageLocSave1" xml:space="preserve">
+    <value>You must enter location ID.</value>
+  </data>
+  <data name="messageLocSave2" xml:space="preserve">
+    <value>Location ID must be number.</value>
+  </data>
+  <data name="messageLocSave3" xml:space="preserve">
+    <value>Address ID must be number.</value>
+  </data>
+  <data name="messageLocSave4" xml:space="preserve">
+    <value>You must set default or valid parent location.</value>
+  </data>
+  <data name="messageLocSave5" xml:space="preserve">
+    <value>Location successfully inserted.</value>
+  </data>
+  <data name="gbLocations" xml:space="preserve">
+    <value>Search locations</value>
+  </data>
+  <data name="messageLocUpd3" xml:space="preserve">
+    <value>Location successfully updated.</value>
+  </data>
+  <data name="messageWUDel1" xml:space="preserve">
+    <value>Are you sure you want to delete selected working units?</value>
+  </data>
+  <data name="messageWUDel2" xml:space="preserve">
+    <value>Working unit contains employees and cannot be deleted.</value>
+  </data>
+  <data name="messageWUDel3" xml:space="preserve">
+    <value>This working unit is a parent unit to some others. You must delete them first.</value>
+  </data>
+  <data name="messageWUDel4" xml:space="preserve">
+    <value>No selected working unit to delete.</value>
+  </data>
+  <data name="messageLocSearch1" xml:space="preserve">
+    <value>No found locations for selected criteria.</value>
+  </data>
+  <data name="messageWUSearch1" xml:space="preserve">
+    <value>No found working units for selected criteria.</value>
+  </data>
+  <data name="messageWUUpd1" xml:space="preserve">
+    <value>No selected working unit to update.</value>
+  </data>
+  <data name="messageWUUpd2" xml:space="preserve">
+    <value>More than one selected working unit. Please select single working unit to update.</value>
+  </data>
+  <data name="messageWUSave1" xml:space="preserve">
+    <value>You must enter working unit ID.</value>
+  </data>
+  <data name="messageWUSave2" xml:space="preserve">
+    <value>Working unit ID must be number.</value>
+  </data>
+  <data name="messageWUSave3" xml:space="preserve">
+    <value>You must select default or valid parent working unit.</value>
+  </data>
+  <data name="messageWUSave4" xml:space="preserve">
+    <value>Working unit successfully inserted. Updateing access rights for this working unit...</value>
+  </data>
+  <data name="messageWUUpd3" xml:space="preserve">
+    <value>Working unit successfully updated.</value>
+  </data>
+  <data name="messageAddrSave1" xml:space="preserve">
+    <value>You must enter address ID.</value>
+  </data>
+  <data name="messageAddrSave2" xml:space="preserve">
+    <value>Address ID must be number.</value>
+  </data>
+  <data name="messageAddrSave3" xml:space="preserve">
+    <value>Address successfully inserted.</value>
+  </data>
+  <data name="messageAddrUpd1" xml:space="preserve">
+    <value>Address successfully updated.</value>
+  </data>
+  <data name="gbTags" xml:space="preserve">
+    <value>Tags</value>
+  </data>
+  <data name="hdrPassTypeID" xml:space="preserve">
+    <value>Pass type ID</value>
+  </data>
+  <data name="hdrButton" xml:space="preserve">
+    <value>Button</value>
+  </data>
+  <data name="hdrIsPass" xml:space="preserve">
+    <value>Is pass</value>
+  </data>
+  <data name="isPassTrue" xml:space="preserve">
+    <value>Yes</value>
+  </data>
+  <data name="isPassFalse" xml:space="preserve">
+    <value>No</value>
+  </data>
+  <data name="addPassType" xml:space="preserve">
+    <value>Add pass type</value>
+  </data>
+  <data name="updatePassType" xml:space="preserve">
+    <value>Update pass type</value>
+  </data>
+  <data name="messageTagSave1" xml:space="preserve">
+    <value>Tag ID must be number.</value>
+  </data>
+  <data name="messageTagNew1" xml:space="preserve">
+    <value>This employee already has active tag. First deactivate existing tag.</value>
+  </data>
+  <data name="menuReports" xml:space="preserve">
+    <value>Reports</value>
+  </data>
+  <data name="menuRepLoc" xml:space="preserve">
+    <value>Reports for locations</value>
+  </data>
+  <data name="menuRepWU" xml:space="preserve">
+    <value>Reports for working units</value>
+  </data>
+  <data name="menuRepEmpl" xml:space="preserve">
+    <value>Reports for employees</value>
+  </data>
+  <data name="menuProcessingTables" xml:space="preserve">
+    <value>Processing tables</value>
+  </data>
+  <data name="menuLogToPasses" xml:space="preserve">
+    <value>Log to Passes</value>
+  </data>
+  <data name="menuPassesToIOPairs" xml:space="preserve">
+    <value>Passes to IOPairs</value>
+  </data>
+  <data name="hdrEmployeeID" xml:space="preserve">
+    <value>Employee ID</value>
+  </data>
+  <data name="hdrFirstName" xml:space="preserve">
+    <value>First name</value>
+  </data>
+  <data name="hdrLastName" xml:space="preserve">
+    <value>Last name</value>
+  </data>
+  <data name="hdrWorkingUnit" xml:space="preserve">
+    <value>Working unit</value>
+  </data>
+  <data name="hdrStatus" xml:space="preserve">
+    <value>Status</value>
+  </data>
+  <data name="hdrPassword" xml:space="preserve">
+    <value>Password</value>
+  </data>
+  <data name="hdrDescripton" xml:space="preserve">
+    <value>Description</value>
+  </data>
+  <data name="addEmployee" xml:space="preserve">
+    <value>Add employee</value>
+  </data>
+  <data name="updateEmployee" xml:space="preserve">
+    <value>Update employee</value>
+  </data>
+  <data name="messageEmployeeNotSelected" xml:space="preserve">
+    <value>Please select employee from the list first.</value>
+  </data>
+  <data name="hdrReaderID" xml:space="preserve">
+    <value>Terminal ID</value>
+  </data>
+  <data name="hdrConnType" xml:space="preserve">
+    <value>Connection type</value>
+  </data>
+  <data name="hdrConnAddress" xml:space="preserve">
+    <value>Connection address</value>
+  </data>
+  <data name="hdrAntenna0Loc" xml:space="preserve">
+    <value>Antenna 0 location</value>
+  </data>
+  <data name="hdrAntenna1Loc" xml:space="preserve">
+    <value>Antenna 1 location</value>
+  </data>
+  <data name="messageSelectReader" xml:space="preserve">
+    <value>Please select terminal from the list first.</value>
+  </data>
+  <data name="addReader" xml:space="preserve">
+    <value>Add terminal</value>
+  </data>
+  <data name="updateReader" xml:space="preserve">
+    <value>Update terminal</value>
+  </data>
+  <data name="advanceReaderSettings" xml:space="preserve">
+    <value>Terminal advance settings</value>
+  </data>
+  <data name="all" xml:space="preserve">
+    <value>*</value>
+  </data>
+  <data name="updateAddress" xml:space="preserve">
+    <value>Update address</value>
+  </data>
+  <data name="addAddress" xml:space="preserve">
+    <value>Add new address</value>
+  </data>
+  <data name="messageEmployeeIDNotSet" xml:space="preserve">
+    <value>You must enter employee ID.</value>
+  </data>
+  <data name="messageEmployeeFirstNameNotSet" xml:space="preserve">
+    <value>Please set employee's first name.</value>
+  </data>
+  <data name="messageEmployeeLastNameNotSet" xml:space="preserve">
+    <value>Please enter employee's last name.</value>
+  </data>
+  <data name="messageEmployeeWUNotSet" xml:space="preserve">
+    <value>Please select working unit.</value>
+  </data>
+  <data name="messageEmployeeStatusNotSet" xml:space="preserve">
+    <value>Please select employee's status.</value>
+  </data>
+  <data name="messagePasswordNotSet" xml:space="preserve">
+    <value>Please enter password.</value>
+  </data>
+  <data name="updateLocation" xml:space="preserve">
+    <value>Update location</value>
+  </data>
+  <data name="addLocation" xml:space="preserve">
+    <value>Add location</value>
+  </data>
+  <data name="locationForm" xml:space="preserve">
+    <value>Locations</value>
+  </data>
+  <data name="newTag" xml:space="preserve">
+    <value>New tag</value>
+  </data>
+  <data name="blockTag" xml:space="preserve">
+    <value>Blocking tag</value>
+  </data>
+  <data name="retireTag" xml:space="preserve">
+    <value>Retireing tag</value>
+  </data>
+  <data name="activeTag" xml:space="preserve">
+    <value>Activating tag</value>
+  </data>
+  <data name="changeTag" xml:space="preserve">
+    <value>Changing tag</value>
+  </data>
+  <data name="tagForm" xml:space="preserve">
+    <value>Tags</value>
+  </data>
+  <data name="WUForm" xml:space="preserve">
+    <value>Working units</value>
+  </data>
+  <data name="updateWU" xml:space="preserve">
+    <value>Update working unit</value>
+  </data>
+  <data name="addWU" xml:space="preserve">
+    <value>Add working unit</value>
+  </data>
+  <data name="messageEmployeeIDMustBeNum" xml:space="preserve">
+    <value>Employee ID must be number.</value>
+  </data>
+  <data name="messageAddressIDMustBeNumber" xml:space="preserve">
+    <value>Address ID must be number.</value>
+  </data>
+  <data name="messageEmployeeInserted" xml:space="preserve">
+    <value>Employee successfully inserted. Do you want to enter new employee?</value>
+  </data>
+  <data name="messageEmployeeUpdated" xml:space="preserve">
+    <value>Employee successfully updated.</value>
+  </data>
+  <data name="messageEmployeeExist" xml:space="preserve">
+    <value>Employee with given ID already exists.</value>
+  </data>
+  <data name="messagePassTypeIDNotSet" xml:space="preserve">
+    <value>You must enter pass type ID.</value>
+  </data>
+  <data name="messagePassTypeIDMustBeNum" xml:space="preserve">
+    <value>Pass type ID must be number.</value>
+  </data>
+  <data name="messagePassTypeButton" xml:space="preserve">
+    <value>Button must be number.</value>
+  </data>
+  <data name="messagePassTypeInserted" xml:space="preserve">
+    <value>Pass type successfully inserted.</value>
+  </data>
+  <data name="messagePassTypeUpdated" xml:space="preserve">
+    <value>Pass type successfully updated.</value>
+  </data>
+  <data name="messageReaderIDNotSet" xml:space="preserve">
+    <value>Please enter valid terminal ID.</value>
+  </data>
+  <data name="messageReaderTechType" xml:space="preserve">
+    <value>Please select valid technology type.</value>
+  </data>
+  <data name="messageReaderA0PrimLoc" xml:space="preserve">
+    <value>Please select valid primary location for antenna 0.</value>
+  </data>
+  <data name="messageReaderA0PrimDir" xml:space="preserve">
+    <value>Please select valid primary direction for antenna 0.</value>
+  </data>
+  <data name="messageReaderA1PrimDir" xml:space="preserve">
+    <value>Please select valid primary direction for antenna 1.</value>
+  </data>
+  <data name="messageReaderA1PrimLoc" xml:space="preserve">
+    <value>Please select valid primary location for antenna 1.</value>
+  </data>
+  <data name="messageAddrSave4" xml:space="preserve">
+    <value>Address with given ID already exists.</value>
+  </data>
+  <data name="messageEmployeeIDexists" xml:space="preserve">
+    <value>Employee with given ID already exists.</value>
+  </data>
+  <data name="messageLocSave6" xml:space="preserve">
+    <value>Location already exists.</value>
+  </data>
+  <data name="messageReaderIDexists" xml:space="preserve">
+    <value>Terminal with given ID already exists.</value>
+  </data>
+  <data name="messagePassTypeExist" xml:space="preserve">
+    <value>Pass type already exists.</value>
+  </data>
+  <data name="messageWUIDExists" xml:space="preserve">
+    <value>Working unit already exist.</value>
+  </data>
+  <data name="messageTagSave2" xml:space="preserve">
+    <value>Tag with given record ID already exists.</value>
+  </data>
+  <data name="messageDeleteEmpl" xml:space="preserve">
+    <value>Are you sure you want to delete selected employees?</value>
+  </data>
+  <data name="emplNotFound" xml:space="preserve">
+    <value>No found employees for selected criteria.</value>
+  </data>
+  <data name="passTypeNotFound" xml:space="preserve">
+    <value>No found pass types for selected criteria.</value>
+  </data>
+  <data name="emplUpd" xml:space="preserve">
+    <value>Employee successfully updated.</value>
+  </data>
+  <data name="tagEmplNotFound" xml:space="preserve">
+    <value>Employee does not exist.</value>
+  </data>
+  <data name="messageReaderA0SecLoc" xml:space="preserve">
+    <value>Please select valid secondary location to antenna 0.</value>
+  </data>
+  <data name="messageReaderA0SecDir" xml:space="preserve">
+    <value>Please select valid secondary direction to antenna 0.</value>
+  </data>
+  <data name="messageReaderA1SecLoc" xml:space="preserve">
+    <value>Please select valid secondary location to antenna 1.</value>
+  </data>
+  <data name="messageReaderA1SecDir" xml:space="preserve">
+    <value>Please select valid secondary direction to antenna 1.</value>
+  </data>
+  <data name="WTSchemaTitle" xml:space="preserve">
+    <value>Work time schemas</value>
+  </data>
+  <data name="WTSchemaGroup" xml:space="preserve">
+    <value>Search work time schema</value>
+  </data>
+  <data name="lblLength" xml:space="preserve">
+    <value>Length:</value>
+  </data>
+  <data name="WTSchemaAddTitle" xml:space="preserve">
+    <value>Add work time schema</value>
+  </data>
+  <data name="btnDetails" xml:space="preserve">
+    <value>Details  &gt;&gt;&gt;</value>
+  </data>
+  <data name="WTSchemaDetails" xml:space="preserve">
+    <value>Working time schema details</value>
+  </data>
+  <data name="WTSchPeriod" xml:space="preserve">
+    <value>Work time interval</value>
+  </data>
+  <data name="lblEndTime" xml:space="preserve">
+    <value>End time:</value>
+  </data>
+  <data name="lblStartTime" xml:space="preserve">
+    <value>Start time:</value>
+  </data>
+  <data name="lblTolernce" xml:space="preserve">
+    <value>Tolerance:</value>
+  </data>
+  <data name="lblMin" xml:space="preserve">
+    <value>min</value>
+  </data>
+  <data name="gbGroups" xml:space="preserve">
+    <value>Search working groups</value>
+  </data>
+  <data name="gbGroupsAdd" xml:space="preserve">
+    <value>Give name and group description</value>
+  </data>
+  <data name="gbGroupsUpd" xml:space="preserve">
+    <value>Update name and group description</value>
+  </data>
+  <data name="menuWTGroups" xml:space="preserve">
+    <value>Working groups</value>
+  </data>
+  <data name="groupInserted" xml:space="preserve">
+    <value>Working group successfully inserted. Do you want to add employees to it?</value>
+  </data>
+  <data name="groupExist" xml:space="preserve">
+    <value>Working group already exists.</value>
+  </data>
+  <data name="noSelGrp" xml:space="preserve">
+    <value>No selected group to update.</value>
+  </data>
+  <data name="lblSchema" xml:space="preserve">
+    <value>Schema:</value>
+  </data>
+  <data name="lblType" xml:space="preserve">
+    <value>Type:</value>
+  </data>
+  <data name="lblDuration" xml:space="preserve">
+    <value>Cycle duration </value>
+  </data>
+  <data name="WTSchemaUpdateTitle" xml:space="preserve">
+    <value>Update wotk time schema</value>
+  </data>
+  <data name="btnAddInterval" xml:space="preserve">
+    <value>Add interval</value>
+  </data>
+  <data name="btnUpdateInterval" xml:space="preserve">
+    <value>Update interval</value>
+  </data>
+  <data name="btnDeleteInterval" xml:space="preserve">
+    <value>Delete interval</value>
+  </data>
+  <data name="noSelGrpDel" xml:space="preserve">
+    <value>No selected working group to delete.</value>
+  </data>
+  <data name="groupDeleted" xml:space="preserve">
+    <value>Working group successfully deleted.</value>
+  </data>
+  <data name="grpUpd" xml:space="preserve">
+    <value>Working group successfully updated.</value>
+  </data>
+  <data name="groupHasEmpl" xml:space="preserve">
+    <value>Selected working group contains employees and cannot be deleted.</value>
+  </data>
+  <data name="hdrDayNum" xml:space="preserve">
+    <value>Day number</value>
+  </data>
+  <data name="hdrIntervalNumber" xml:space="preserve">
+    <value>Interval</value>
+  </data>
+  <data name="hdrSartTime" xml:space="preserve">
+    <value>Start time</value>
+  </data>
+  <data name="hdrEndTime" xml:space="preserve">
+    <value>End time</value>
+    <comment>more</comment>
+  </data>
+  <data name="hdrTolerance" xml:space="preserve">
+    <value>Tolerance</value>
+  </data>
+  <data name="gbDaysIntervals" xml:space="preserve">
+    <value>Days and intervals</value>
+  </data>
+  <data name="btnTimeSchedule" xml:space="preserve">
+    <value>Time schedule assigning</value>
+  </data>
+  <data name="employeesTimeSchedule" xml:space="preserve">
+    <value>Employees time schedule</value>
+  </data>
+  <data name="btnAssign" xml:space="preserve">
+    <value>Assign</value>
+  </data>
+  <data name="lblMonth" xml:space="preserve">
+    <value>Month:</value>
+  </data>
+  <data name="Mon" xml:space="preserve">
+    <value>Mon</value>
+  </data>
+  <data name="Tue" xml:space="preserve">
+    <value>Tue</value>
+  </data>
+  <data name="Wed" xml:space="preserve">
+    <value>Wed</value>
+  </data>
+  <data name="Thr" xml:space="preserve">
+    <value>Thr</value>
+  </data>
+  <data name="Fri" xml:space="preserve">
+    <value>Fri</value>
+  </data>
+  <data name="Sat" xml:space="preserve">
+    <value>Sat</value>
+  </data>
+  <data name="Sun" xml:space="preserve">
+    <value>Sun</value>
+  </data>
+  <data name="lblEAT" xml:space="preserve">
+    <value>Earliest attendance time:</value>
+  </data>
+  <data name="lblST" xml:space="preserve">
+    <value>Start time:</value>
+  </data>
+  <data name="lblLAT" xml:space="preserve">
+    <value>Latest atendance time:</value>
+  </data>
+  <data name="lblELT" xml:space="preserve">
+    <value>Earliest left time:</value>
+  </data>
+  <data name="lblET" xml:space="preserve">
+    <value>End time:</value>
+  </data>
+  <data name="lblSchemaType" xml:space="preserve">
+    <value>Schema type:</value>
+  </data>
+  <data name="cbUniformTolerance" xml:space="preserve">
+    <value>Uniform time tolerance</value>
+  </data>
+  <data name="selectOneDay" xml:space="preserve">
+    <value>You must select start day of selected schema.</value>
+  </data>
+  <data name="selectSchema" xml:space="preserve">
+    <value>You must select schema.</value>
+  </data>
+  <data name="Schema" xml:space="preserve">
+    <value>Time schema</value>
+  </data>
+  <data name="SchemaDay" xml:space="preserve">
+    <value>Day</value>
+  </data>
+  <data name="msgRemoveSchema" xml:space="preserve">
+    <value>Are you sure you want to delete work time schema?</value>
+  </data>
+  <data name="assignEachDay" xml:space="preserve">
+    <value>There are days without time schema assigned. Please assign time schema to each day.</value>
+  </data>
+  <data name="emplScheduleSaved" xml:space="preserve">
+    <value>Time schedule successufully saved. Changes are valid only for this month!</value>
+  </data>
+  <data name="msgEnterDayNum" xml:space="preserve">
+    <value>Please enter day number.</value>
+  </data>
+  <data name="msgEnterInterNum" xml:space="preserve">
+    <value>Please enter interval number.</value>
+  </data>
+  <data name="IOPairsTitle" xml:space="preserve">
+    <value>IO pairs</value>
+  </data>
+  <data name="lblShowPairs" xml:space="preserve">
+    <value>Show pairs</value>
+  </data>
+  <data name="lblWorkingUnit" xml:space="preserve">
+    <value>Working unit:</value>
+  </data>
+  <data name="lblLocation" xml:space="preserve">
+    <value>Location:</value>
+  </data>
+  <data name="lblTo" xml:space="preserve">
+    <value>To:</value>
+  </data>
+  <data name="lblFrom" xml:space="preserve">
+    <value>From:</value>
+  </data>
+  <data name="hdrLocation" xml:space="preserve">
+    <value>Location</value>
+  </data>
+  <data name="menuIOPairs" xml:space="preserve">
+    <value>IO Pairs</value>
+  </data>
+  <data name="noEmplInGroup" xml:space="preserve">
+    <value>This working group does not contain any employee.</value>
+  </data>
+  <data name="lblGroupID" xml:space="preserve">
+    <value>Group ID:</value>
+  </data>
+  <data name="menuPasses" xml:space="preserve">
+    <value>Passes</value>
+  </data>
+  <data name="lblWU" xml:space="preserve">
+    <value>Working unit:</value>
+  </data>
+  <data name="lblEmployee" xml:space="preserve">
+    <value>Employee:</value>
+  </data>
+  <data name="lblPassType" xml:space="preserve">
+    <value>Pass type:</value>
+  </data>
+  <data name="hdrPassID" xml:space="preserve">
+    <value>Pass ID</value>
+  </data>
+  <data name="hdrDirection" xml:space="preserve">
+    <value>Direction</value>
+  </data>
+  <data name="hdrEventTime" xml:space="preserve">
+    <value>Event time</value>
+  </data>
+  <data name="hdrIsWrkHrs" xml:space="preserve">
+    <value>WH*</value>
+  </data>
+  <data name="hdrLocationID" xml:space="preserve">
+    <value>Location ID</value>
+  </data>
+  <data name="hdrPairGenUsed" xml:space="preserve">
+    <value>Processed</value>
+  </data>
+  <data name="hdrManualCreated" xml:space="preserve">
+    <value>MM**</value>
+  </data>
+  <data name="noPassesFound" xml:space="preserve">
+    <value>No passes found for selected criteria.</value>
+  </data>
+  <data name="noSelPassDel" xml:space="preserve">
+    <value>No selected pass to delete.</value>
+  </data>
+  <data name="passesDel" xml:space="preserve">
+    <value>Passes successufully deleted.</value>
+  </data>
+  <data name="noPassDel" xml:space="preserve">
+    <value>Some passes are not deleted.</value>
+  </data>
+  <data name="menuPassesAdd" xml:space="preserve">
+    <value>Add pass</value>
+  </data>
+  <data name="menuPassesUpd" xml:space="preserve">
+    <value>Update pass</value>
+  </data>
+  <data name="lblEventTime" xml:space="preserve">
+    <value>Event time:</value>
+  </data>
+  <data name="chkbIsWrkHrs" xml:space="preserve">
+    <value>Is work hours</value>
+  </data>
+  <data name="passNoEmpl" xml:space="preserve">
+    <value>You must enter employee.</value>
+  </data>
+  <data name="passNoDirect" xml:space="preserve">
+    <value>You must enter direction.</value>
+  </data>
+  <data name="passNoEventTime" xml:space="preserve">
+    <value>You must enter event time.</value>
+  </data>
+  <data name="passNoPassType" xml:space="preserve">
+    <value>You must enter pass type.</value>
+  </data>
+  <data name="passNoLoc" xml:space="preserve">
+    <value>You must enter location.</value>
+  </data>
+  <data name="IOPairAdd" xml:space="preserve">
+    <value>Add IO pair</value>
+  </data>
+  <data name="IOPairUpdate" xml:space="preserve">
+    <value>Update IO pair</value>
+  </data>
+  <data name="passInserted" xml:space="preserve">
+    <value>Pass successufully inserted. Do you want to enter some other pass?</value>
+  </data>
+  <data name="lblStart" xml:space="preserve">
+    <value>Entering time:</value>
+  </data>
+  <data name="lblEnd" xml:space="preserve">
+    <value>Leaving time:</value>
+  </data>
+  <data name="selectOnePass" xml:space="preserve">
+    <value>Select one pass to update.</value>
+  </data>
+  <data name="passUpdated" xml:space="preserve">
+    <value>Pass successufully updated.</value>
+  </data>
+  <data name="lblUnknown" xml:space="preserve">
+    <value>Unknown</value>
+  </data>
+  <data name="isPassOther" xml:space="preserve">
+    <value>Other payment codes</value>
+  </data>
+  <data name="isPassReader" xml:space="preserve">
+    <value>Pass on terminal</value>
+  </data>
+  <data name="isPassWholeDayAbsence" xml:space="preserve">
+    <value>Whole day absence</value>
+  </data>
+  <data name="hdrPassType" xml:space="preserve">
+    <value>Pass type</value>
+  </data>
+  <data name="msgPassTypeDel" xml:space="preserve">
+    <value>Are you sure you want to delete selected pass types?</value>
+  </data>
+  <data name="menuEmployeeAbsences" xml:space="preserve">
+    <value>Employee absences</value>
+  </data>
+  <data name="lblAbsence" xml:space="preserve">
+    <value>Absence type:</value>
+  </data>
+  <data name="lblStartDate" xml:space="preserve">
+    <value>Start date:</value>
+  </data>
+  <data name="lblEndDate" xml:space="preserve">
+    <value>End date:</value>
+  </data>
+  <data name="hdrRecID" xml:space="preserve">
+    <value>Record ID</value>
+  </data>
+  <data name="hdrAbsID" xml:space="preserve">
+    <value>Absence type</value>
+  </data>
+  <data name="hdrStartDate" xml:space="preserve">
+    <value>Start date</value>
+  </data>
+  <data name="hdrEndDate" xml:space="preserve">
+    <value>End date</value>
+  </data>
+  <data name="noEmplAbsFound" xml:space="preserve">
+    <value>No employee absence found for selected criteria.</value>
+  </data>
+  <data name="noSelAbsDel" xml:space="preserve">
+    <value>No selected employee absence to delete.</value>
+  </data>
+  <data name="AbsencesDel" xml:space="preserve">
+    <value>Selected employee absences are deleted.</value>
+  </data>
+  <data name="noAbsDel" xml:space="preserve">
+    <value>Some employee absences could not be deleted.</value>
+  </data>
+  <data name="msgLocNotSelected" xml:space="preserve">
+    <value>Please select location.</value>
+  </data>
+  <data name="msg" xml:space="preserve">
+    <value>msg</value>
+  </data>
+  <data name="lblWorkTime" xml:space="preserve">
+    <value>Regular work</value>
+  </data>
+  <data name="msgNotValidDayNum" xml:space="preserve">
+    <value>Please enter valid day number.</value>
+  </data>
+  <data name="msgNotValidIntNum" xml:space="preserve">
+    <value>Please enter valid interval number.</value>
+  </data>
+  <data name="msgTimeNotCorrect" xml:space="preserve">
+    <value>Start or end time not valid.</value>
+  </data>
+  <data name="msgNoDaysFound" xml:space="preserve">
+    <value>Time schema must contains at least one day and one interval to be saved.</value>
+  </data>
+  <data name="msgTolNotCorrect" xml:space="preserve">
+    <value>Tolerance must be greater than zero.</value>
+  </data>
+  <data name="msgSelectSchema" xml:space="preserve">
+    <value>Please select time schema first.</value>
+  </data>
+  <data name="msgIOPairSaved" xml:space="preserve">
+    <value>IO pair successfully saved.</value>
+  </data>
+  <data name="msgIOPairUpdate" xml:space="preserve">
+    <value>IO pair sucessfully updated.</value>
+  </data>
+  <data name="menuEmployeeAbsencesAdd" xml:space="preserve">
+    <value>Employee absence add</value>
+  </data>
+  <data name="menuEmployeeAbsencesUpdate" xml:space="preserve">
+    <value>Employee absence update</value>
+  </data>
+  <data name="selectOneAbs" xml:space="preserve">
+    <value>Select one employee absence to update.</value>
+  </data>
+  <data name="absNoEmpl" xml:space="preserve">
+    <value>You must select employee.</value>
+  </data>
+  <data name="absNoAbsType" xml:space="preserve">
+    <value>You must select absence type.</value>
+  </data>
+  <data name="absNoStartDate" xml:space="preserve">
+    <value>You must select absence start date.</value>
+  </data>
+  <data name="absNoEndDate" xml:space="preserve">
+    <value>You must select absence end date.</value>
+  </data>
+  <data name="absInserted" xml:space="preserve">
+    <value>Employee absence successufully inserted.</value>
+  </data>
+  <data name="absUpdated" xml:space="preserve">
+    <value>Employee absence successufully updated.</value>
+  </data>
+  <data name="messageActiveTag" xml:space="preserve">
+    <value>Active tag does not exist.  Do you want to create one?</value>
+  </data>
+  <data name="msgIntervalsNotValid" xml:space="preserve">
+    <value>Both days and intervals must take  successive values. </value>
+  </data>
+  <data name="msgPassType" xml:space="preserve">
+    <value>You must select pass type.</value>
+  </data>
+  <data name="passTypeButtonNotNull" xml:space="preserve">
+    <value>You must enter button.</value>
+  </data>
+  <data name="lblType1" xml:space="preserve">
+    <value>Type:</value>
+  </data>
+  <data name="normal" xml:space="preserve">
+    <value>NORMAL</value>
+  </data>
+  <data name="other" xml:space="preserve">
+    <value>OTHER</value>
+  </data>
+  <data name="passTypeButtonExists" xml:space="preserve">
+    <value>Button already exists.</value>
+  </data>
+  <data name="yes" xml:space="preserve">
+    <value>Yes</value>
+  </data>
+  <data name="no" xml:space="preserve">
+    <value>No</value>
+  </data>
+  <data name="btnClear" xml:space="preserve">
+    <value>Clear</value>
+  </data>
+  <data name="menuPresenceEmpl" xml:space="preserve">
+    <value>Monthly presence tracking reports</value>
+  </data>
+  <data name="lblGroup" xml:space="preserve">
+    <value>Working group:</value>
+  </data>
+  <data name="readerAdvSettingsForm" xml:space="preserve">
+    <value>Terminal advance settings</value>
+  </data>
+  <data name="emplDeleted" xml:space="preserve">
+    <value>Employees are successufully deleted.</value>
+  </data>
+  <data name="wuDeleted" xml:space="preserve">
+    <value>Working units are successufully deleted.</value>
+  </data>
+  <data name="locDeleted" xml:space="preserve">
+    <value>Locations are successufully deleted.</value>
+  </data>
+  <data name="passTypeDeleted" xml:space="preserve">
+    <value>Pass types are successufully deleted.</value>
+  </data>
+  <data name="noIOPairsFound" xml:space="preserve">
+    <value>No IO Pairs found for selected criteria.</value>
+  </data>
+  <data name="noSchemaFound" xml:space="preserve">
+    <value>No time schema found for selected criteria.</value>
+  </data>
+  <data name="noReadersFound" xml:space="preserve">
+    <value>No terminals found for selected criteria.</value>
+  </data>
+  <data name="menuRegister" xml:space="preserve">
+    <value>Register pass</value>
+  </data>
+  <data name="menuDisplay" xml:space="preserve">
+    <value>Display pass</value>
+  </data>
+  <data name="menuVisitors" xml:space="preserve">
+    <value>Visitors</value>
+  </data>
+  <data name="menuExit" xml:space="preserve">
+    <value>Exit</value>
+  </data>
+  <data name="menuHelp" xml:space="preserve">
+    <value>Help</value>
+  </data>
+  <data name="menuAbout" xml:space="preserve">
+    <value>About</value>
+  </data>
+  <data name="visitInserted" xml:space="preserve">
+    <value>Visit successufully saved.</value>
+  </data>
+  <data name="menuLibExport" xml:space="preserve">
+    <value>Export libraries</value>
+  </data>
+  <data name="menuImportData" xml:space="preserve">
+    <value>Import data</value>
+  </data>
+  <data name="menuInterventions" xml:space="preserve">
+    <value>Interventions</value>
+  </data>
+  <data name="menuMaintaining" xml:space="preserve">
+    <value>Maintenance</value>
+  </data>
+  <data name="gateForm" xml:space="preserve">
+    <value>Gates</value>
+  </data>
+  <data name="lblGateID" xml:space="preserve">
+    <value>Gate ID:</value>
+  </data>
+  <data name="menuGates" xml:space="preserve">
+    <value>Gates</value>
+  </data>
+  <data name="noGatesFound" xml:space="preserve">
+    <value>No gates found for selected criteria.</value>
+  </data>
+  <data name="selOneGate" xml:space="preserve">
+    <value>You must select one gate to update.</value>
+  </data>
+  <data name="noSelGateDel" xml:space="preserve">
+    <value>No selected gates to delete.</value>
+  </data>
+  <data name="gatesDel" xml:space="preserve">
+    <value>Selected gates successufully deleted.</value>
+  </data>
+  <data name="noGateDel" xml:space="preserve">
+    <value>Some gates could not be deleted.</value>
+  </data>
+  <data name="defaultGate" xml:space="preserve">
+    <value>Default gate could not be deleted.</value>
+  </data>
+  <data name="updateGate" xml:space="preserve">
+    <value>Update gate</value>
+  </data>
+  <data name="addGate" xml:space="preserve">
+    <value>Add gate</value>
+  </data>
+  <data name="gateSaved" xml:space="preserve">
+    <value>Gate successufully saved.</value>
+  </data>
+  <data name="gateUpdated" xml:space="preserve">
+    <value>Gate successufully updated.</value>
+  </data>
+  <data name="messageReaderA0Gate" xml:space="preserve">
+    <value>Please select valid gate for antenna 0.</value>
+  </data>
+  <data name="messageReaderA1Gate" xml:space="preserve">
+    <value>Please select valid gate for antenna 1.</value>
+  </data>
+  <data name="lblGate" xml:space="preserve">
+    <value>Gate:</value>
+  </data>
+  <data name="messageReaderA0SecLocDir" xml:space="preserve">
+    <value>Please enter both secondary location and secondary direction for antenna 0.</value>
+  </data>
+  <data name="messageReaderA1SecLocDir" xml:space="preserve">
+    <value>Please enter both secondary location and secondary direction for antenna 1.</value>
+  </data>
+  <data name="messageReaderIDNotNum" xml:space="preserve">
+    <value>Terminal ID must be number.</value>
+  </data>
+  <data name="readerDeleted" xml:space="preserve">
+    <value>Selected terminals successufully deleted.</value>
+  </data>
+  <data name="readerNotDeleted" xml:space="preserve">
+    <value>Some terminals could not be deleted.</value>
+  </data>
+  <data name="readerSaved" xml:space="preserve">
+    <value>Terminal succesufully saved.</value>
+  </data>
+  <data name="readerUpdated" xml:space="preserve">
+    <value>Terminal successufully updated.</value>
+  </data>
+  <data name="empty" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="menuConfiguration" xml:space="preserve">
+    <value>Configuration</value>
+  </data>
+  <data name="menuDataAccess" xml:space="preserve">
+    <value>Data access</value>
+  </data>
+  <data name="menuEmplAccess" xml:space="preserve">
+    <value>Employee access</value>
+  </data>
+  <data name="formUserXWU" xml:space="preserve">
+    <value>User &lt;-&gt; Working unit</value>
+  </data>
+  <data name="tabPageUsers" xml:space="preserve">
+    <value>Users</value>
+  </data>
+  <data name="tabPageWU" xml:space="preserve">
+    <value>Working units</value>
+  </data>
+  <data name="tabPageUserXWU" xml:space="preserve">
+    <value>User &lt;-&gt; Working unit</value>
+  </data>
+  <data name="lblUserID" xml:space="preserve">
+    <value>User ID:</value>
+  </data>
+  <data name="lblWUForUsers" xml:space="preserve">
+    <value>Working units:</value>
+  </data>
+  <data name="lblUserForWU" xml:space="preserve">
+    <value>Users:</value>
+  </data>
+  <data name="lblUsersForWU" xml:space="preserve">
+    <value>Not granted:</value>
+  </data>
+  <data name="lblSelUsers" xml:space="preserve">
+    <value>Granted:</value>
+  </data>
+  <data name="applUserXWUSaved" xml:space="preserve">
+    <value>Changes succesufully saved.</value>
+  </data>
+  <data name="SelectWU" xml:space="preserve">
+    <value>Select working unit first.</value>
+  </data>
+  <data name="menuUsers" xml:space="preserve">
+    <value>Users</value>
+  </data>
+  <data name="userForm" xml:space="preserve">
+    <value>Users</value>
+  </data>
+  <data name="lblNumOfTries" xml:space="preserve">
+    <value>Number of login tries:</value>
+  </data>
+  <data name="lblPrivilegeLvl" xml:space="preserve">
+    <value>Privilege level:</value>
+  </data>
+  <data name="btnUserRole" xml:space="preserve">
+    <value>User &lt;-&gt; Role</value>
+  </data>
+  <data name="lblLanguage" xml:space="preserve">
+    <value>Language:</value>
+  </data>
+  <data name="noUsersFound" xml:space="preserve">
+    <value>No users found for selected criteria.</value>
+  </data>
+  <data name="noSelUserDel" xml:space="preserve">
+    <value>No selected users to delete.</value>
+  </data>
+  <data name="defaultUser" xml:space="preserve">
+    <value>Default user cannot be deleted.</value>
+  </data>
+  <data name="usersDel" xml:space="preserve">
+    <value>Selected users successufully deleted.</value>
+  </data>
+  <data name="noUserDel" xml:space="preserve">
+    <value>Some users could not be deleted.</value>
+  </data>
+  <data name="updateUser" xml:space="preserve">
+    <value>Update user</value>
+  </data>
+  <data name="addUser" xml:space="preserve">
+    <value>Add user</value>
+  </data>
+  <data name="lblConfirmPassword" xml:space="preserve">
+    <value>Confirm password:</value>
+  </data>
+  <data name="updUserNoUserID" xml:space="preserve">
+    <value>You must enter user ID.</value>
+  </data>
+  <data name="updUserPasswordNotMatch" xml:space="preserve">
+    <value>Password is not confirmed correctely. Please enter password again.</value>
+  </data>
+  <data name="updUserNumOfTriesNotNum" xml:space="preserve">
+    <value>Number of login tries must be number.</value>
+  </data>
+  <data name="userInserted" xml:space="preserve">
+    <value>User successufully inserted.</value>
+  </data>
+  <data name="userExists" xml:space="preserve">
+    <value>User already exists.</value>
+  </data>
+  <data name="userUpdated" xml:space="preserve">
+    <value>User successufully updated.</value>
+  </data>
+  <data name="menuUserRoles" xml:space="preserve">
+    <value>Users and roles</value>
+  </data>
+  <data name="menuRoles" xml:space="preserve">
+    <value>Roles</value>
+  </data>
+  <data name="menuUsersRoles" xml:space="preserve">
+    <value>Users &lt;-&gt; Roles</value>
+  </data>
+  <data name="UserXWUSaveChanges" xml:space="preserve">
+    <value>Users who are granted to this working unit are changed. Do you want to save changes?</value>
+  </data>
+  <data name="roleForm" xml:space="preserve">
+    <value>Roles</value>
+  </data>
+  <data name="btnRolePermitions" xml:space="preserve">
+    <value>Roles permissions</value>
+  </data>
+  <data name="hdrRoleID" xml:space="preserve">
+    <value>Role ID:</value>
+  </data>
+  <data name="noSelRoleDel" xml:space="preserve">
+    <value>No selected role to delete.</value>
+  </data>
+  <data name="defaultRole" xml:space="preserve">
+    <value>Default role could not be deleted.</value>
+  </data>
+  <data name="rolesDel" xml:space="preserve">
+    <value>Selected roles successufuly deleted.</value>
+  </data>
+  <data name="noRoleDel" xml:space="preserve">
+    <value>Some roles could not be deleted.</value>
+  </data>
+  <data name="addRole" xml:space="preserve">
+    <value>Add role</value>
+  </data>
+  <data name="addRoleNameEmpty" xml:space="preserve">
+    <value>You must enter role name.</value>
+  </data>
+  <data name="allRolesUsed" xml:space="preserve">
+    <value>All roles are already used.</value>
+  </data>
+  <data name="roleAdded" xml:space="preserve">
+    <value>Role successufully added. Do you want to set privileges now?</value>
+  </data>
+  <data name="tabPageRoles" xml:space="preserve">
+    <value>Roles</value>
+  </data>
+  <data name="tabPageUserXRoles" xml:space="preserve">
+    <value>User &lt;-&gt; Role</value>
+  </data>
+  <data name="formUserXRole" xml:space="preserve">
+    <value>User &lt;-&gt; Role</value>
+  </data>
+  <data name="lblRolesForUsers" xml:space="preserve">
+    <value>Roles:</value>
+  </data>
+  <data name="lblUserForRole" xml:space="preserve">
+    <value>Users:</value>
+  </data>
+  <data name="lblRole" xml:space="preserve">
+    <value>Role:</value>
+  </data>
+  <data name="lblUsersForRole" xml:space="preserve">
+    <value>Not granted:</value>
+  </data>
+  <data name="lblSelUsersForRole" xml:space="preserve">
+    <value>Granted:</value>
+  </data>
+  <data name="UserXRoleSaveChanges" xml:space="preserve">
+    <value>Users who are granted to this role are changed. Do you want to save changes?</value>
+  </data>
+  <data name="SelectRole" xml:space="preserve">
+    <value>Select role first.</value>
+  </data>
+  <data name="applUserXRoleSaved" xml:space="preserve">
+    <value>Changes successufully saved. Changes will be seen after next log in.</value>
+  </data>
+  <data name="rolePermForm" xml:space="preserve">
+    <value>Roles permissions</value>
+  </data>
+  <data name="lblLegend" xml:space="preserve">
+    <value>Abbreviations:</value>
+  </data>
+  <data name="lblA" xml:space="preserve">
+    <value>A - Add permission</value>
+  </data>
+  <data name="lblRE" xml:space="preserve">
+    <value>R/E - Read/Execute permission</value>
+  </data>
+  <data name="lblU" xml:space="preserve">
+    <value>U - Update permission</value>
+  </data>
+  <data name="lblD" xml:space="preserve">
+    <value>D - Delete permission</value>
+  </data>
+  <data name="menuRoleMaintainence" xml:space="preserve">
+    <value>Maintenance</value>
+  </data>
+  <data name="menuRolePrivileges" xml:space="preserve">
+    <value>Privileges</value>
+  </data>
+  <data name="legendText" xml:space="preserve">
+    <value>R/E    A     U     D</value>
+  </data>
+  <data name="selRolePerm" xml:space="preserve">
+    <value>Select roles to which you want to set privileges.</value>
+  </data>
+  <data name="permissionsSaved" xml:space="preserve">
+    <value>Permissions are successufully saved. Changes will be seen after next log in.</value>
+  </data>
+  <data name="permissionsNotSaved" xml:space="preserve">
+    <value>Some permissions could not be saved.</value>
+  </data>
+  <data name="btnFromReader" xml:space="preserve">
+    <value>Read tag from terminal</value>
+  </data>
+  <data name="noTagOnReader" xml:space="preserve">
+    <value>No tag on terminal.</value>
+  </data>
+  <data name="defaultWUDel" xml:space="preserve">
+    <value>Default working unit could not be deleted.</value>
+  </data>
+  <data name="defaultLocDel" xml:space="preserve">
+    <value>Default location could not be deleted.</value>
+  </data>
+  <data name="defaultPassTypeDel" xml:space="preserve">
+    <value>Default pass type could not be deleted.</value>
+  </data>
+  <data name="deleteReaders" xml:space="preserve">
+    <value>Are you sure you want to delete selected terminals?</value>
+  </data>
+  <data name="deleteWorkingGroups" xml:space="preserve">
+    <value>Are you sure you want to delete selected working group?</value>
+  </data>
+  <data name="defaultWorkingGroup" xml:space="preserve">
+    <value>Default working group could not be deleted.</value>
+  </data>
+  <data name="deleteGates" xml:space="preserve">
+    <value>Are you sure you want to delete selected gates?</value>
+  </data>
+  <data name="msgPleaseSelect" xml:space="preserve">
+    <value>No selected IO pairs to delete.</value>
+  </data>
+  <data name="deleteIOPairs" xml:space="preserve">
+    <value>Are you sure you want to delete selected IO pairs?</value>
+  </data>
+  <data name="deletePasses" xml:space="preserve">
+    <value>Are you sure you want to delete selected passes?</value>
+  </data>
+  <data name="deleteEmplAbsences" xml:space="preserve">
+    <value>Are you sure you want to delete selected employee absences?</value>
+  </data>
+  <data name="deleteUsers" xml:space="preserve">
+    <value>Are you sure you want to delete selected users?</value>
+  </data>
+  <data name="deleteRoles" xml:space="preserve">
+    <value>Are you sure you want to delete selected roles?</value>
+  </data>
+  <data name="selConnAddress" xml:space="preserve">
+    <value>You must enter connection address.</value>
+  </data>
+  <data name="schemaDeleted" xml:space="preserve">
+    <value>Selected time schemas successufully deleted.</value>
+  </data>
+  <data name="schemaNotDeleted" xml:space="preserve">
+    <value>Some time schemas could not be deleted.</value>
+  </data>
+  <data name="schemaIntChanged" xml:space="preserve">
+    <value>Time schema interval successufully changed.</value>
+  </data>
+  <data name="schemaIntSaved" xml:space="preserve">
+    <value>Time schema interval successufully saved.</value>
+  </data>
+  <data name="selOneSchemaInt" xml:space="preserve">
+    <value>Select one time schema interval to update.</value>
+  </data>
+  <data name="schemaSaved" xml:space="preserve">
+    <value>Time schema successufully saved.</value>
+  </data>
+  <data name="schemaChanged" xml:space="preserve">
+    <value>Time schema successufully changed.</value>
+  </data>
+  <data name="lblPicture" xml:space="preserve">
+    <value>Picture:</value>
+  </data>
+  <data name="btnBrowse" xml:space="preserve">
+    <value>Browse</value>
+  </data>
+  <data name="browsePhoto" xml:space="preserve">
+    <value>Browse photo</value>
+  </data>
+  <data name="photoNotSaved" xml:space="preserve">
+    <value>Employee photo could not be saved.</value>
+  </data>
+  <data name="btnLogIn" xml:space="preserve">
+    <value>Log in</value>
+  </data>
+  <data name="logInForm" xml:space="preserve">
+    <value>ACTA Log In</value>
+  </data>
+  <data name="lblUser" xml:space="preserve">
+    <value>User:</value>
+  </data>
+  <data name="userNotExist" xml:space="preserve">
+    <value>User does not exist.</value>
+  </data>
+  <data name="passwordNotExist" xml:space="preserve">
+    <value>Incorrect password.</value>
+  </data>
+  <data name="noMoreLogIn" xml:space="preserve">
+    <value>You do not have permission to try log in anymore.</value>
+  </data>
+  <data name="noActiveUser" xml:space="preserve">
+    <value>User is not active and have not permission to log in.</value>
+  </data>
+  <data name="menuImportLog" xml:space="preserve">
+    <value>Import log</value>
+  </data>
+  <data name="readersOnGate" xml:space="preserve">
+    <value>There are terminals on this gate and it cannot be deleted.</value>
+  </data>
+  <data name="wuNotDeleted" xml:space="preserve">
+    <value>Some working units could not be deleted.</value>
+  </data>
+  <data name="wuHasVisits" xml:space="preserve">
+    <value>Working unit has visits and could not be deleted.</value>
+  </data>
+  <data name="wuHasUsers" xml:space="preserve">
+    <value>Some users are granted to this working unit and it could not be deleted.</value>
+  </data>
+  <data name="locNotDeleted" xml:space="preserve">
+    <value>Some locations could not be deleted.</value>
+  </data>
+  <data name="locHasVisits" xml:space="preserve">
+    <value>Location has visits and could not be deleted.</value>
+  </data>
+  <data name="locHasPasses" xml:space="preserve">
+    <value>Passes exist on this location and it could not be deleted.</value>
+  </data>
+  <data name="locHasIOPairs" xml:space="preserve">
+    <value>IO pairs exist for this location and it could not be deleted.</value>
+  </data>
+  <data name="ptHasPasses" xml:space="preserve">
+    <value>Passes exist for this pass type and it could not be deleted.</value>
+  </data>
+  <data name="ptHasIOPairs" xml:space="preserve">
+    <value>IO pairs exist for this pass type and it could not be deleted.</value>
+  </data>
+  <data name="ptHasEmplAbsences" xml:space="preserve">
+    <value>Employee absences exist for this pass type and it could not be deleted.</value>
+  </data>
+  <data name="passTypeNotDeleted" xml:space="preserve">
+    <value>Some pass types could not be deleted.</value>
+  </data>
+  <data name="userHasWU" xml:space="preserve">
+    <value>User is granted to some working units and it could not be deleted.</value>
+  </data>
+  <data name="userHasRoles" xml:space="preserve">
+    <value>Roles have been granted to this user and it could not be deleted.</value>
+  </data>
+  <data name="roleHasUsers" xml:space="preserve">
+    <value>Role is granted to some users and it could not be deleted.</value>
+  </data>
+  <data name="userXRolesNotSaved" xml:space="preserve">
+    <value>Changes are canceled.</value>
+  </data>
+  <data name="userXWUNotSaved" xml:space="preserve">
+    <value>Changes are canceled and will not be saved.</value>
+  </data>
+  <data name="roleNameExists" xml:space="preserve">
+    <value>Role with name entered already exists.</value>
+  </data>
+  <data name="gateNameExists" xml:space="preserve">
+    <value>Gate with name entered already exists.</value>
+  </data>
+  <data name="uniquePassExists" xml:space="preserve">
+    <value>Pass with selected employee, direction, event time and pass type already exists.</value>
+  </data>
+  <data name="adminRoleNoUpd" xml:space="preserve">
+    <value>You can not change permissions for admin role.</value>
+  </data>
+  <data name="SYSAllPermission" xml:space="preserve">
+    <value>You can not remove SYS user becouse it has all permissions.</value>
+  </data>
+  <data name="menuReader" xml:space="preserve">
+    <value>Terminal</value>
+  </data>
+  <data name="menuReaderGetLog" xml:space="preserve">
+    <value>Get log</value>
+  </data>
+  <data name="noDBConn" xml:space="preserve">
+    <value>No database connection.</value>
+  </data>
+  <data name="wuNameExists" xml:space="preserve">
+    <value>Working unit with name entered already exists.</value>
+  </data>
+  <data name="visitsWUDel" xml:space="preserve">
+    <value>Visitors working unit could not be deleted.</value>
+  </data>
+  <data name="menuEmployeeLocations" xml:space="preserve">
+    <value>Current employee locations</value>
+  </data>
+  <data name="menuEmplReport" xml:space="preserve">
+    <value>Reports for employee - analytic</value>
+  </data>
+  <data name="menuPresence" xml:space="preserve">
+    <value>Presence reports</value>
+  </data>
+  <data name="menuTimeSchedule" xml:space="preserve">
+    <value>Time schedule reports</value>
+  </data>
+  <data name="StartProcLog" xml:space="preserve">
+    <value>Do you want to start automatic processing of data downloaded from terminals?</value>
+  </data>
+  <data name="LogProcStopped" xml:space="preserve">
+    <value>Automatic processing of data downloaded from terminals stopped successfully.</value>
+  </data>
+  <data name="LogProcCantStop" xml:space="preserve">
+    <value>Can't stop automatic processing of data downloaded from terminals.</value>
+  </data>
+  <data name="StopProcLog" xml:space="preserve">
+    <value>Automatic processing is already started. Do you want to stop automatic processing?</value>
+  </data>
+  <data name="LogProcStarted" xml:space="preserve">
+    <value>Automatic processing started successfully.</value>
+  </data>
+  <data name="btnRefresh" xml:space="preserve">
+    <value>Refresh</value>
+  </data>
+  <data name="noEmplLocFound" xml:space="preserve">
+    <value>No employee location found for selected criteria.</value>
+  </data>
+  <data name="msgToLessThenFrom" xml:space="preserve">
+    <value>End time is less then start time.</value>
+  </data>
+  <data name="noSelIOPairUpd" xml:space="preserve">
+    <value>You must select one IO pair to update.</value>
+  </data>
+  <data name="SettingsFailed" xml:space="preserve">
+    <value>Directory "unprocessed" or "archived" don't exists. Please check settings and try again.</value>
+  </data>
+  <data name="Date" xml:space="preserve">
+    <value>Date:</value>
+  </data>
+  <data name="UserName" xml:space="preserve">
+    <value>User name:</value>
+  </data>
+  <data name="LogInTime" xml:space="preserve">
+    <value>Log in time:</value>
+  </data>
+  <data name="ACTAAdminForm" xml:space="preserve">
+    <value>ACTAAdmin</value>
+  </data>
+  <data name="lblDownloadStart" xml:space="preserve">
+    <value>Download start time:</value>
+  </data>
+  <data name="lblDownloadInterval" xml:space="preserve">
+    <value>Download interval:</value>
+  </data>
+  <data name="lblDownloadEraseCounter" xml:space="preserve">
+    <value>Download erase counter:</value>
+  </data>
+  <data name="GateIntervalNotNull" xml:space="preserve">
+    <value>You must enter download interval.</value>
+  </data>
+  <data name="GateIntervalNotNumber" xml:space="preserve">
+    <value>Download interval must be positive number.</value>
+  </data>
+  <data name="GateEraseCounterNotNull" xml:space="preserve">
+    <value>You must enter download erase counter.</value>
+  </data>
+  <data name="GateEraseCounterNotNumber" xml:space="preserve">
+    <value>Download erase counter must be positive number.</value>
+  </data>
+  <data name="ExitPermAddForm" xml:space="preserve">
+    <value>Exit permissions add</value>
+  </data>
+  <data name="rbTag" xml:space="preserve">
+    <value>Tag</value>
+  </data>
+  <data name="rbEmployee" xml:space="preserve">
+    <value>Employee</value>
+  </data>
+  <data name="lblDateAndTime" xml:space="preserve">
+    <value>Date and time:</value>
+  </data>
+  <data name="ExitPermissionsForm" xml:space="preserve">
+    <value>Exit permissions</value>
+  </data>
+  <data name="lblOffset" xml:space="preserve">
+    <value>Offset:</value>
+  </data>
+  <data name="noEmployeeForTag" xml:space="preserve">
+    <value>No employee found for this tag.</value>
+  </data>
+  <data name="menuExitPermissions" xml:space="preserve">
+    <value>Exit permissions</value>
+  </data>
+  <data name="gbExitPerm" xml:space="preserve">
+    <value>Search exit permissions</value>
+  </data>
+  <data name="hdrEmployee" xml:space="preserve">
+    <value>Employee</value>
+  </data>
+  <data name="hdrDateTime" xml:space="preserve">
+    <value>Date &amp; time</value>
+  </data>
+  <data name="hdrIssuedBy" xml:space="preserve">
+    <value>Issued by</value>
+  </data>
+  <data name="hdrOffset" xml:space="preserve">
+    <value>Offset</value>
+  </data>
+  <data name="hdrUsed" xml:space="preserve">
+    <value>Used</value>
+  </data>
+  <data name="hdrDescription" xml:space="preserve">
+    <value>Description</value>
+  </data>
+  <data name="lblUsed" xml:space="preserve">
+    <value>Used:</value>
+  </data>
+  <data name="lblIssuedBy" xml:space="preserve">
+    <value>Issued by:</value>
+  </data>
+  <data name="btnStart" xml:space="preserve">
+    <value>Start</value>
+  </data>
+  <data name="btnStop" xml:space="preserve">
+    <value>Stop</value>
+  </data>
+  <data name="ReaderControl" xml:space="preserve">
+    <value>Terminal control</value>
+  </data>
+  <data name="noExitPermFound" xml:space="preserve">
+    <value>No exit permissions found for selected searching criteria.</value>
+  </data>
+  <data name="noSelExitPermDel" xml:space="preserve">
+    <value>No selected exit permissions to delete.</value>
+  </data>
+  <data name="deleteExitPerm" xml:space="preserve">
+    <value>Are you sure you want to delete selected exit permissions?</value>
+  </data>
+  <data name="ExitPermDel" xml:space="preserve">
+    <value>Selected exit permissions are successufully deleted.</value>
+  </data>
+  <data name="noExitPermDel" xml:space="preserve">
+    <value>Some of selected exit permissions could not be deleted.</value>
+  </data>
+  <data name="noPassesForExitPermFound" xml:space="preserve">
+    <value>For selected employee and date no passes found.</value>
+  </data>
+  <data name="lblCurrFile" xml:space="preserve">
+    <value>Currently processed file:</value>
+  </data>
+  <data name="lblNextTime" xml:space="preserve">
+    <value>Next processing at:</value>
+  </data>
+  <data name="activated" xml:space="preserve">
+    <value>Activated</value>
+  </data>
+  <data name="stopped" xml:space="preserve">
+    <value>Stopped</value>
+  </data>
+  <data name="exitPermEmployeeNotNull" xml:space="preserve">
+    <value>You must select employee.</value>
+  </data>
+  <data name="exitPermPassTypeNotNull" xml:space="preserve">
+    <value>You must select pass type.</value>
+  </data>
+  <data name="exitPermStartTimeNotNull" xml:space="preserve">
+    <value>You must select start time.</value>
+  </data>
+  <data name="ExitPermOffsetNotNumber" xml:space="preserve">
+    <value>Offset must be positive number.</value>
+  </data>
+  <data name="exitPermSaved" xml:space="preserve">
+    <value>Exit permissions successufully saved.</value>
+  </data>
+  <data name="selPassExitPerm" xml:space="preserve">
+    <value>No selected pass for exit permission.</value>
+  </data>
+  <data name="processing" xml:space="preserve">
+    <value>Processing ...</value>
+  </data>
+  <data name="selExitPermUpd" xml:space="preserve">
+    <value>You must select one exit permission to update.</value>
+  </data>
+  <data name="usedExitPermUpd" xml:space="preserve">
+    <value>You can not update used exit permission.</value>
+  </data>
+  <data name="ExitPermUpdForm" xml:space="preserve">
+    <value>Exit permissions update</value>
+  </data>
+  <data name="exitPermUpdated" xml:space="preserve">
+    <value>Exit permission successufully updated.</value>
+  </data>
+  <data name="nextTime" xml:space="preserve">
+    <value>Next processing at:</value>
+  </data>
+  <data name="gbUser" xml:space="preserve">
+    <value>Search users</value>
+  </data>
+  <data name="gbEmployeeLocations" xml:space="preserve">
+    <value>Search employee locations</value>
+  </data>
+  <data name="gbEmployeeAbsences" xml:space="preserve">
+    <value>Search employee absences</value>
+  </data>
+  <data name="gbEmployees" xml:space="preserve">
+    <value>Search employees</value>
+  </data>
+  <data name="gbGate" xml:space="preserve">
+    <value>Search gates</value>
+  </data>
+  <data name="gbPassTypes" xml:space="preserve">
+    <value>Search pass types</value>
+  </data>
+  <data name="gbReaders" xml:space="preserve">
+    <value>Search terminals</value>
+  </data>
+  <data name="gbWorkingUnits" xml:space="preserve">
+    <value>Search working units</value>
+  </data>
+  <data name="gbPasses" xml:space="preserve">
+    <value>Search passes</value>
+  </data>
+  <data name="gbIOPairs" xml:space="preserve">
+    <value>Search IO pairs</value>
+  </data>
+  <data name="IOPairsDeleted" xml:space="preserve">
+    <value>Selected IO pairs are successufully deleted.</value>
+  </data>
+  <data name="IOPairsNotDeleted" xml:space="preserve">
+    <value>Some of selected IO pairs could not be deleted.</value>
+  </data>
+  <data name="lblPayCode" xml:space="preserve">
+    <value>Payment code:</value>
+  </data>
+  <data name="hdrPayCode" xml:space="preserve">
+    <value>Payment code</value>
+  </data>
+  <data name="messagePassTypePayCode" xml:space="preserve">
+    <value>Payment code must be 4 digit number.</value>
+  </data>
+  <data name="PassTypePayCodeUpd" xml:space="preserve">
+    <value>You cannot update other payment codes.</value>
+  </data>
+  <data name="holidayForm" xml:space="preserve">
+    <value>Holidays</value>
+  </data>
+  <data name="gbHolidays" xml:space="preserve">
+    <value>Search holidays</value>
+  </data>
+  <data name="hdrDate" xml:space="preserve">
+    <value>Date</value>
+  </data>
+  <data name="noHolidaysFound" xml:space="preserve">
+    <value>No holidays found for selected search criteria.</value>
+  </data>
+  <data name="updateTagsNow" xml:space="preserve">
+    <value>Do you want to update tags now?</value>
+  </data>
+  <data name="noSelHolidayDel" xml:space="preserve">
+    <value>No selected holidays to delete.</value>
+  </data>
+  <data name="deleteHolidays" xml:space="preserve">
+    <value>Are you sure you want to delete selected holidays?</value>
+  </data>
+  <data name="HolidaysDel" xml:space="preserve">
+    <value>Selected holidays successufully deleted.</value>
+  </data>
+  <data name="noHolidayDel" xml:space="preserve">
+    <value>Some of selected holidays could not be deleted.</value>
+  </data>
+  <data name="selOneHoliday" xml:space="preserve">
+    <value>Select one holiday you want to update.</value>
+  </data>
+  <data name="updateHoliday" xml:space="preserve">
+    <value>Update holiday</value>
+  </data>
+  <data name="addHoliday" xml:space="preserve">
+    <value>Add holiday</value>
+  </data>
+  <data name="holidaySaved" xml:space="preserve">
+    <value>Holiday successufully saved.</value>
+  </data>
+  <data name="holidayUpdated" xml:space="preserve">
+    <value>Holiday successufully updated.</value>
+  </data>
+  <data name="menuWT" xml:space="preserve">
+    <value>Work time</value>
+  </data>
+  <data name="menuHolidays" xml:space="preserve">
+    <value>Holidays</value>
+  </data>
+  <data name="holidayExists" xml:space="preserve">
+    <value>Holiday already exists for selected date.</value>
+  </data>
+  <data name="ParentWUPermission" xml:space="preserve">
+    <value>You can not remove this user becouse it has permissions under parent working unit.</value>
+  </data>
+  <data name="readerConnNotValid" xml:space="preserve">
+    <value>Please enter valid connection address.</value>
+  </data>
+  <data name="exitPermNotSaved" xml:space="preserve">
+    <value>Some of exit permissions could not be saved.</value>
+  </data>
+  <data name="noPassesForExitPermissionsFound" xml:space="preserve">
+    <value>For some of selected employees and date no passes found so some exit permissions could not be saved.</value>
+  </data>
+  <data name="emplNotDeleted" xml:space="preserve">
+    <value>Some of selected employees could not be deleted.</value>
+  </data>
+  <data name="selectOneDayCalendar" xml:space="preserve">
+    <value>You must select day on calendar.</value>
+  </data>
+  <data name="gbAutoClose" xml:space="preserve">
+    <value>Automatic closing</value>
+  </data>
+  <data name="rbWithout" xml:space="preserve">
+    <value>No closing</value>
+  </data>
+  <data name="rbStart" xml:space="preserve">
+    <value>Close starts</value>
+  </data>
+  <data name="rbEnd" xml:space="preserve">
+    <value>Close ends</value>
+  </data>
+  <data name="rbStartEnd" xml:space="preserve">
+    <value>Close starts and/or ends</value>
+  </data>
+  <data name="hdrAutoClose" xml:space="preserve">
+    <value>Auto close</value>
+  </data>
+  <data name="lblPurpose" xml:space="preserve">
+    <value>Purpose:</value>
+  </data>
+  <data name="SelectPurpose" xml:space="preserve">
+    <value>You must select purpose.</value>
+  </data>
+  <data name="hdrName" xml:space="preserve">
+    <value>Name</value>
+  </data>
+  <data name="hdrDownloadStartTime" xml:space="preserve">
+    <value>Download start time</value>
+  </data>
+  <data name="hdrDownloadInterval" xml:space="preserve">
+    <value>Download interval</value>
+  </data>
+  <data name="hdrDownloadEraseCounter" xml:space="preserve">
+    <value>Download erase counter</value>
+  </data>
+  <data name="selWTGroup" xml:space="preserve">
+    <value>You must select working group.</value>
+  </data>
+  <data name="menuStandardRep" xml:space="preserve">
+    <value>Standard reports</value>
+  </data>
+  <data name="menuMittalRep" xml:space="preserve">
+    <value>Mittal reports</value>
+  </data>
+  <data name="emplPhotoOpen" xml:space="preserve">
+    <value>Employee photo could not be opened.</value>
+  </data>
+  <data name="noEmplPassPrivilege" xml:space="preserve">
+    <value>You do not have privilege to see passes of any employee.</value>
+  </data>
+  <data name="noEmplIOPairPrivilege" xml:space="preserve">
+    <value>You do not have privilege to see IO pairs of any employee.</value>
+  </data>
+  <data name="menuReadersSettings" xml:space="preserve">
+    <value>Terminals settings</value>
+  </data>
+  <data name="noEmplLocationPrivilege" xml:space="preserve">
+    <value>You do not have privilege to see locations of any employee.</value>
+  </data>
+  <data name="passesGreaterThenAllowed" xml:space="preserve">
+    <value>There are too meny passes that satisfy selected criteria. Showing could last couple of minutes. Do you want to proceed?</value>
+  </data>
+  <data name="IOPairsGreaterThenAllowed" xml:space="preserve">
+    <value>There are too meny IO pairs that satisfy selected criteria. Showing could last couple of minutes. Do you want to proceed?</value>
+  </data>
+  <data name="hdrHasTag" xml:space="preserve">
+    <value>Has tag</value>
+  </data>
+  <data name="lblHasTag" xml:space="preserve">
+    <value>Has tag:</value>
+  </data>
+  <data name="lblTotal" xml:space="preserve">
+    <value>Total: </value>
+  </data>
+  <data name="msgToFromNull" xml:space="preserve">
+    <value>At least one of start and end time must be known.</value>
+  </data>
+  <data name="menuManual" xml:space="preserve">
+    <value>Manual</value>
+  </data>
+  <data name="manualNotOpened" xml:space="preserve">
+    <value>Manual could not be opened.</value>
+  </data>
+  <data name="menuPaymentRep" xml:space="preserve">
+    <value>Payrolls</value>
+  </data>
+  <data name="applRunning" xml:space="preserve">
+    <value>Application running already.</value>
+  </data>
+  <data name="cbChangePass" xml:space="preserve">
+    <value>Change password</value>
+  </data>
+  <data name="changePassword" xml:space="preserve">
+    <value>Change password</value>
+  </data>
+  <data name="lblDay" xml:space="preserve">
+    <value>Day:</value>
+  </data>
+  <data name="WTAdvanceTitle" xml:space="preserve">
+    <value>Advance time settings</value>
+  </data>
+  <data name="msgPleaseSelectPassType" xml:space="preserve">
+    <value>Please select pass type from list.</value>
+  </data>
+  <data name="secLocation" xml:space="preserve">
+    <value>Secondary location:</value>
+  </data>
+  <data name="DBConnNotEstablished" xml:space="preserve">
+    <value>No connection to database.</value>
+  </data>
+  <data name="msgSchemaName" xml:space="preserve">
+    <value>You must enter time schema name.</value>
+  </data>
+  <data name="msgSchemaType" xml:space="preserve">
+    <value>You must select time schema type.</value>
+  </data>
+  <data name="noEmplPrivilege" xml:space="preserve">
+    <value>You do not have permission to see any employee.</value>
+  </data>
+  <data name="conn" xml:space="preserve">
+    <value>Conn</value>
+  </data>
+  <data name="data" xml:space="preserve">
+    <value>Data</value>
+  </data>
+  <data name="unknown" xml:space="preserve">
+    <value>Unknown</value>
+  </data>
+  <data name="emplOrdinary" xml:space="preserve">
+    <value>ORDINARY</value>
+  </data>
+  <data name="emplExtraOrdinary" xml:space="preserve">
+    <value>EXTRAORDINARY</value>
+  </data>
+  <data name="emplSpecial" xml:space="preserve">
+    <value>SPECIAL</value>
+  </data>
+  <data name="hdrType" xml:space="preserve">
+    <value>Type</value>
+  </data>
+  <data name="messageEmployeeAddrMustBeNum" xml:space="preserve">
+    <value>Employee address must be number.</value>
+  </data>
+  <data name="messageTypeNotSet" xml:space="preserve">
+    <value>You must select employee type.</value>
+  </data>
+  <data name="noEmplPermPrivilege" xml:space="preserve">
+    <value>You do not have privilege to see exit permission of any employee.</value>
+  </data>
+  <data name="noEmplAbsPrivilege" xml:space="preserve">
+    <value>You do not have privilege to see absence of any employee.</value>
+  </data>
+  <data name="hdrAbsUsed" xml:space="preserve">
+    <value>Processed</value>
+  </data>
+  <data name="error" xml:space="preserve">
+    <value>Error</value>
+  </data>
+  <data name="absExists" xml:space="preserve">
+    <value>For some of selected days of absence, some other absence is already defined. You can not defined two absences for same day.</value>
+  </data>
+  <data name="startGreaterThenEnd" xml:space="preserve">
+    <value>Start date could not be greater than end date.</value>
+  </data>
+  <data name="menuRetiredTags" xml:space="preserve">
+    <value>Retired tags</value>
+  </data>
+  <data name="tagsReports" xml:space="preserve">
+    <value>Retired tags reports</value>
+  </data>
+  <data name="menuProlongTS" xml:space="preserve">
+    <value>Prolonging time schedules</value>
+  </data>
+  <data name="ProlongTSForm" xml:space="preserve">
+    <value>Prolonging time schedules</value>
+  </data>
+  <data name="btnProlongTS" xml:space="preserve">
+    <value>Prolong time schedule</value>
+  </data>
+  <data name="hdrSchema" xml:space="preserve">
+    <value>Schema</value>
+  </data>
+  <data name="usedPermissionsDelete" xml:space="preserve">
+    <value>Some of selected exit permissions are already used and could not be deleted.</value>
+  </data>
+  <data name="cbWorkDayStart" xml:space="preserve">
+    <value>Working day beggining exit permission (retroactive)</value>
+  </data>
+  <data name="lblWorkDayBeginning" xml:space="preserve">
+    <value>Working day beginning:</value>
+  </data>
+  <data name="lblFirstIN" xml:space="preserve">
+    <value>First IN:</value>
+  </data>
+  <data name="lblPermissionPair" xml:space="preserve">
+    <value>Exit permission will cover period:</value>
+  </data>
+  <data name="ExitPermWorkDayBeginningForm" xml:space="preserve">
+    <value>Working day beginning exit permission</value>
+  </data>
+  <data name="exitPermBeginNotSaved" xml:space="preserve">
+    <value>Exit permission could not be saved. You selected not working day, or employee does not have any entries for that day.</value>
+  </data>
+  <data name="msgDefaultSchemaDel" xml:space="preserve">
+    <value>You can not delete default time schema.</value>
+  </data>
+  <data name="noSelectedReader" xml:space="preserve">
+    <value>Select terminals first.</value>
+  </data>
+  <data name="exitApplication" xml:space="preserve">
+    <value>Are you sure you want to stop the application?</value>
+  </data>
+  <data name="Name" xml:space="preserve">
+    <value>Name</value>
+  </data>
+  <data name="lblHost" xml:space="preserve">
+    <value>Host</value>
+  </data>
+  <data name="lblLoginTime" xml:space="preserve">
+    <value>Login time</value>
+  </data>
+  <data name="lblLogoutTime" xml:space="preserve">
+    <value>Logout time</value>
+  </data>
+  <data name="lblDurationLogin" xml:space="preserve">
+    <value>Duration</value>
+  </data>
+  <data name="btnLogView" xml:space="preserve">
+    <value>Login View</value>
+  </data>
+  <data name="lblUsersLogFrom" xml:space="preserve">
+    <value>From:</value>
+  </data>
+  <data name="lblUsersLogTo" xml:space="preserve">
+    <value>To:</value>
+  </data>
+  <data name="gbOperaterLog" xml:space="preserve">
+    <value>Operators</value>
+  </data>
+  <data name="formUsersLog" xml:space="preserve">
+    <value>Log view</value>
+  </data>
+  <data name="lblName_lv" xml:space="preserve">
+    <value>Name</value>
+  </data>
+  <data name="lblUserID_lv" xml:space="preserve">
+    <value>UserID</value>
+  </data>
+  <data name="lblDate" xml:space="preserve">
+    <value>Date:</value>
+  </data>
+  <data name="accessGroupsForm" xml:space="preserve">
+    <value>Access groups</value>
+  </data>
+  <data name="btnEmployeeAccessGroups" xml:space="preserve">
+    <value>Employee &lt;-&gt; Access groups</value>
+  </data>
+  <data name="noSelAccessGroupDel" xml:space="preserve">
+    <value>No selected access groups to delete.</value>
+  </data>
+  <data name="deleteAccessGroups" xml:space="preserve">
+    <value>Are you sure you want to delete selected access groups?</value>
+  </data>
+  <data name="defaultAccessGroup" xml:space="preserve">
+    <value>Default access group could not be deleted.</value>
+  </data>
+  <data name="accessGroupHasEmployees" xml:space="preserve">
+    <value>Some employees belongs to this access group and it could not be deleted.</value>
+  </data>
+  <data name="accessGroupDel" xml:space="preserve">
+    <value>Selected access groups successufully deleted.</value>
+  </data>
+  <data name="noAccessGroupDel" xml:space="preserve">
+    <value>Some of selected access groups could not be deleted.</value>
+  </data>
+  <data name="selOneAccessGroup" xml:space="preserve">
+    <value>Select one access group you want to update.</value>
+  </data>
+  <data name="updateAccessGroup" xml:space="preserve">
+    <value>Update access group</value>
+  </data>
+  <data name="addAccessGroup" xml:space="preserve">
+    <value>Add access group</value>
+  </data>
+  <data name="addAccessGroupNameEmpty" xml:space="preserve">
+    <value>You must enter access group name.</value>
+  </data>
+  <data name="accessGroupSaved" xml:space="preserve">
+    <value>Access group successufully saved.</value>
+  </data>
+  <data name="accessGroupExists" xml:space="preserve">
+    <value>Access group already exists for selected name.</value>
+  </data>
+  <data name="accessGroupUpdated" xml:space="preserve">
+    <value>Access group successufully updated.</value>
+  </data>
+  <data name="menuAccessControl" xml:space="preserve">
+    <value>Access control</value>
+  </data>
+  <data name="menuAccessControlGroups" xml:space="preserve">
+    <value>Access control groups</value>
+  </data>
+  <data name="menuEmployeeAccessControlGroups" xml:space="preserve">
+    <value>Employee &lt;-&gt; Access control groups</value>
+  </data>
+  <data name="menuAccessControlGroupsGates" xml:space="preserve">
+    <value>Access control groups &lt;-&gt; Gates</value>
+  </data>
+  <data name="menuAccessProfiles" xml:space="preserve">
+    <value>Profiles</value>
+  </data>
+  <data name="menuTimeAccessProfiles" xml:space="preserve">
+    <value>Weekly access schedules</value>
+  </data>
+  <data name="menuGateAccessProfiles" xml:space="preserve">
+    <value>Gate access profiles</value>
+  </data>
+  <data name="menuAssignGateProfile" xml:space="preserve">
+    <value>Gates &lt;-&gt; Weekly access schedules</value>
+  </data>
+  <data name="employeesXAccessGroupsForm" xml:space="preserve">
+    <value>Employees &lt;-&gt; Access groups</value>
+  </data>
+  <data name="tabPageEmployees" xml:space="preserve">
+    <value>Employees</value>
+  </data>
+  <data name="tabPageAccessGroups" xml:space="preserve">
+    <value>Access groups</value>
+  </data>
+  <data name="tabPageEmployeesXAccessGroups" xml:space="preserve">
+    <value>Employee &lt;-&gt; Access groups</value>
+  </data>
+  <data name="gbEmployeeAccessGroup" xml:space="preserve">
+    <value>Access group that selected employee belongs to</value>
+  </data>
+  <data name="btnAccessGroupMaintenance" xml:space="preserve">
+    <value>Access group maintenance</value>
+  </data>
+  <data name="lblEmployeeForAccessGroup" xml:space="preserve">
+    <value>List of all employees who belong to selected access group:</value>
+  </data>
+  <data name="lblAccessGroup" xml:space="preserve">
+    <value>Access group:</value>
+  </data>
+  <data name="lblEmployeesForAccessGroup" xml:space="preserve">
+    <value>List of all employees who do not belong to selected access group:</value>
+  </data>
+  <data name="EmployeeXAccessGroupSaveChanges" xml:space="preserve">
+    <value>Employees who belong to this access group are changed. Do you want to save changes?</value>
+  </data>
+  <data name="EmployeeXAccessGroupCancelChanges" xml:space="preserve">
+    <value>Changes are canceled.</value>
+  </data>
+  <data name="SelectAccessGroup" xml:space="preserve">
+    <value>Select access group first.</value>
+  </data>
+  <data name="EmployeeXAccessGroupSaved" xml:space="preserve">
+    <value>Changes successufully saved.</value>
+  </data>
+  <data name="cannotStartTransaction" xml:space="preserve">
+    <value>Transaction can not be started.</value>
+  </data>
+  <data name="EmployeeXAccessGroupNotSaved" xml:space="preserve">
+    <value>Changes can not be saved.</value>
+  </data>
+  <data name="timeAccessProfilesForm" xml:space="preserve">
+    <value>Weekly access schedules</value>
+  </data>
+  <data name="noSelTimeAccessProfileDel" xml:space="preserve">
+    <value>No selected weekly access schedule to delete.</value>
+  </data>
+  <data name="deleteTimeAccessProfile" xml:space="preserve">
+    <value>Are you sure you want to delete selected weekly access schedules?</value>
+  </data>
+  <data name="defaultTimeAccessProfile" xml:space="preserve">
+    <value>Default weekly access schedule could not be deleted.</value>
+  </data>
+  <data name="timeAccessProfileHasGateTAP" xml:space="preserve">
+    <value>Some gate access profiles use this weekly access schedule and it could not be deleted.</value>
+  </data>
+  <data name="timeAccessProfileDel" xml:space="preserve">
+    <value>Selected weekly access schedules successufully deleted.</value>
+  </data>
+  <data name="noTimeAccessProfileDel" xml:space="preserve">
+    <value>Some of selected weekly access schedules could not be deleted.</value>
+  </data>
+  <data name="selOneTimeAccessProfile" xml:space="preserve">
+    <value>Select one weekly access schedule you want to update.</value>
+  </data>
+  <data name="updateTimeAccessProfile" xml:space="preserve">
+    <value>Update weekly access schedule</value>
+  </data>
+  <data name="addTimeAccessProfile" xml:space="preserve">
+    <value>Add weekly access schedule</value>
+  </data>
+  <data name="addTimeAccessProfileNameEmpty" xml:space="preserve">
+    <value>You must enter weekly access schedule name.</value>
+  </data>
+  <data name="timeAccessProfileSaved" xml:space="preserve">
+    <value>Weekly access schedule successufully saved.</value>
+  </data>
+  <data name="timeAccessProfileExists" xml:space="preserve">
+    <value>Weekly access schedule already exists for selected name.</value>
+  </data>
+  <data name="timeAccessProfileUpdated" xml:space="preserve">
+    <value>Weekly access schedule successufully updated.</value>
+  </data>
+  <data name="btnUnCheckAll" xml:space="preserve">
+    <value>Uncheck All</value>
+  </data>
+  <data name="btnCheckAll" xml:space="preserve">
+    <value>Check All</value>
+  </data>
+  <data name="lblMon" xml:space="preserve">
+    <value>Mon:</value>
+  </data>
+  <data name="lblTue" xml:space="preserve">
+    <value>Tue:</value>
+  </data>
+  <data name="lblWed" xml:space="preserve">
+    <value>Wed:</value>
+  </data>
+  <data name="lblThr" xml:space="preserve">
+    <value>Thr:</value>
+  </data>
+  <data name="lblFri" xml:space="preserve">
+    <value>Fri:</value>
+  </data>
+  <data name="lblSat" xml:space="preserve">
+    <value>Sat:</value>
+  </data>
+  <data name="lblSun" xml:space="preserve">
+    <value>Sun:</value>
+  </data>
+  <data name="TimeAccessProfileNotSaved" xml:space="preserve">
+    <value>Weekly access schedule can not be saved.</value>
+  </data>
+  <data name="TimeAccessProfileNotUpdated" xml:space="preserve">
+    <value>Weekly access schedule can not be updated.</value>
+  </data>
+  <data name="accessGroupNotSaved" xml:space="preserve">
+    <value>Access group can not be saved.</value>
+  </data>
+  <data name="accessGroupNotUpdated" xml:space="preserve">
+    <value>Access group can not be updated.</value>
+  </data>
+  <data name="gateTimeAccessProfilesForm" xml:space="preserve">
+    <value>Gate access profiles</value>
+  </data>
+  <data name="lblProfile0" xml:space="preserve">
+    <value>Weekly schedule 0:</value>
+  </data>
+  <data name="lblProfile1" xml:space="preserve">
+    <value>Weekly schedule 1:</value>
+  </data>
+  <data name="lblProfile2" xml:space="preserve">
+    <value>Weekly schedule 2:</value>
+  </data>
+  <data name="lblProfile3" xml:space="preserve">
+    <value>Weekly schedule 3:</value>
+  </data>
+  <data name="lblProfile4" xml:space="preserve">
+    <value>Weekly schedule 4:</value>
+  </data>
+  <data name="lblProfile5" xml:space="preserve">
+    <value>Weekly schedule 5:</value>
+  </data>
+  <data name="lblProfile6" xml:space="preserve">
+    <value>Weekly schedule 6:</value>
+  </data>
+  <data name="lblProfile7" xml:space="preserve">
+    <value>Weekly schedule 7:</value>
+  </data>
+  <data name="lblProfile8" xml:space="preserve">
+    <value>Weekly schedule 8:</value>
+  </data>
+  <data name="lblProfile9" xml:space="preserve">
+    <value>Weekly schedule 9:</value>
+  </data>
+  <data name="lblProfile10" xml:space="preserve">
+    <value>Weekly schedule 10:</value>
+  </data>
+  <data name="lblProfile11" xml:space="preserve">
+    <value>Weekly schedule 11:</value>
+  </data>
+  <data name="lblProfile12" xml:space="preserve">
+    <value>Weekly schedule 12:</value>
+  </data>
+  <data name="lblProfile13" xml:space="preserve">
+    <value>Weekly schedule 13:</value>
+  </data>
+  <data name="lblProfile14" xml:space="preserve">
+    <value>Weekly schedule 14:</value>
+  </data>
+  <data name="lblProfile15" xml:space="preserve">
+    <value>Weekly schedule 15:</value>
+  </data>
+  <data name="noSelGateTAProfileDel" xml:space="preserve">
+    <value>No selected gate access profiles to delete.</value>
+  </data>
+  <data name="deleteGateTAProfiles" xml:space="preserve">
+    <value>Are you sure you want to delete selected gate access profiles?</value>
+  </data>
+  <data name="defaultGateTAProfile" xml:space="preserve">
+    <value>Default gate access profile could not be deleted.</value>
+  </data>
+  <data name="gateTAProfileDel" xml:space="preserve">
+    <value>Selected gate access profiles successufully deleted.</value>
+  </data>
+  <data name="noGateTAProfileDel" xml:space="preserve">
+    <value>Some of selected gate access profiles could not be deleted.</value>
+  </data>
+  <data name="selOneGateTAProfile" xml:space="preserve">
+    <value>Select one gate access profile you want to update.</value>
+  </data>
+  <data name="addGateTAProfileNameEmpty" xml:space="preserve">
+    <value>You must enter gate access profile name.</value>
+  </data>
+  <data name="gateTAProfileExists" xml:space="preserve">
+    <value>Gate access profile already exists for selected name.</value>
+  </data>
+  <data name="gateTAProfileSaved" xml:space="preserve">
+    <value>Gate access profile successufully saved.</value>
+  </data>
+  <data name="gateTAProfileNotSaved" xml:space="preserve">
+    <value>Gate access profile cannot be saved.</value>
+  </data>
+  <data name="gateTAProfileUpdated" xml:space="preserve">
+    <value>Gate access profile successufully updated.</value>
+  </data>
+  <data name="gateTAProfileNotUpdated" xml:space="preserve">
+    <value>Gate access profile cannot be updated.</value>
+  </data>
+  <data name="updateGateTAProfile" xml:space="preserve">
+    <value>Update gate access profile</value>
+  </data>
+  <data name="addGateTAProfile" xml:space="preserve">
+    <value>Add gate access profile</value>
+  </data>
+  <data name="lblGateProfiles" xml:space="preserve">
+    <value>Weekly schedules on gate:</value>
+  </data>
+  <data name="gatesXGateTimeProfileForm" xml:space="preserve">
+    <value>Gates &lt;-&gt; Gate access profiles</value>
+  </data>
+  <data name="lblGateName" xml:space="preserve">
+    <value>Gate name:</value>
+  </data>
+  <data name="lblProfileName" xml:space="preserve">
+    <value>Profile name:</value>
+  </data>
+  <data name="lblProfileDescr" xml:space="preserve">
+    <value>Profile description:</value>
+  </data>
+  <data name="updateGateProfileForm" xml:space="preserve">
+    <value>Gates &lt;-&gt; Gate access profiles - Update</value>
+  </data>
+  <data name="lblSelectProfileToAsign" xml:space="preserve">
+    <value>Select profile to be assigned to gate:</value>
+  </data>
+  <data name="gateProfileUpdated" xml:space="preserve">
+    <value>Access profile on gate successufully updated.</value>
+  </data>
+  <data name="gateProfileNotUpdated" xml:space="preserve">
+    <value>Access profile on gate cannot be updated.</value>
+  </data>
+  <data name="accessGroupsXGatesForm" xml:space="preserve">
+    <value>Access groups &lt;-&gt; Gates</value>
+  </data>
+  <data name="lblProfilesOnGate" xml:space="preserve">
+    <value>Weekly schedules on selected gate</value>
+  </data>
+  <data name="noSelPairGateAcessGroupDel" xml:space="preserve">
+    <value>No selected (gate, access group) pair to delete.</value>
+  </data>
+  <data name="deletePairGateAcessGroup" xml:space="preserve">
+    <value>Are you sure you want to delete selected (gate, access group) pair?</value>
+  </data>
+  <data name="pairGateAcessGroupDel" xml:space="preserve">
+    <value>Pair (gate, access group) successufully deleted.</value>
+  </data>
+  <data name="pairGateAcessGroupNotDel" xml:space="preserve">
+    <value>Pair (gate, access group) can not be deleted.</value>
+  </data>
+  <data name="noSelPairGateAcessGroupProfileSave" xml:space="preserve">
+    <value>No selected (gate, access group, weekly schedule) pair to save.</value>
+  </data>
+  <data name="pairGateAcessGroupProfileSave" xml:space="preserve">
+    <value>Triplet (gate, access group, weekly schedule) successufully saved.</value>
+  </data>
+  <data name="pairGateAcessGroupProfileNotSave" xml:space="preserve">
+    <value>Triplet (gate, access group, weekly schedule) can not be saved.</value>
+  </data>
+  <data name="updateAccessGroupsNow" xml:space="preserve">
+    <value>Do you want to send changes in access control parameters to all terminals now?</value>
+  </data>
+  <data name="deleteAccessGroupXGate" xml:space="preserve">
+    <value>New gate access profile is assigned to this gate. All existing relationsheeps between this gate and access groups will be deleted. Do you want to proceed? </value>
+  </data>
+  <data name="deleteAccessGroupXGates" xml:space="preserve">
+    <value>Some gates are using this gate access profile that is changed. All existing relationsheeps between those gates and access groups will be deleted. Do you want to proceed? </value>
+  </data>
+  <data name="notUpdateTagsNow" xml:space="preserve">
+    <value>Tags can not be updated!</value>
+  </data>
+  <data name="notUpdateAccessGroupsNow" xml:space="preserve">
+    <value>Changes in access control parameters can not be send to all terminals!</value>
+  </data>
+  <data name="menuApplyAccessControlParameters" xml:space="preserve">
+    <value>Apply access control parameters</value>
+  </data>
+  <data name="accessGroupHasGateXref" xml:space="preserve">
+    <value>Access group has assigned weekly access schedule for some gate and it could not be deleted.</value>
+  </data>
+  <data name="gateTAProfileHasGates" xml:space="preserve">
+    <value>Some gates use this gate access profile and it could not be deleted.</value>
+  </data>
+  <data name="gateHasAccessGroupXref" xml:space="preserve">
+    <value>Gate has assigned weekly access schedule for some access group and it could not be deleted.</value>
+  </data>
+  <data name="roleInsertingProblem" xml:space="preserve">
+    <value>Rights on this WU can not be granted for purpose:</value>
+  </data>
+  <data name="messageTagSave3" xml:space="preserve">
+    <value>Tag with the same ID is already in use.</value>
+  </data>
+  <data name="emplBlockedNoTags" xml:space="preserve">
+    <value>Employee is blocked and his tags can not be changed!</value>
+  </data>
+  <data name="messageEmployeeAGNotSet" xml:space="preserve">
+    <value>Please select access group.</value>
+  </data>
+  <data name="menuMittalEmployeeLocations" xml:space="preserve">
+    <value>Employee locations</value>
+  </data>
+  <data name="menuWUReport" xml:space="preserve">
+    <value>Reports for Working Unit</value>
+  </data>
+  <data name="extraHoursForm" xml:space="preserve">
+    <value>Extra hours</value>
+  </data>
+  <data name="tabPageEarnedHours" xml:space="preserve">
+    <value>Earned hours</value>
+  </data>
+  <data name="tabPageUsedHours" xml:space="preserve">
+    <value>Used hours</value>
+  </data>
+  <data name="tabPageUsingExtraHours" xml:space="preserve">
+    <value>Using extra hours</value>
+  </data>
+  <data name="lblEmplEarnedHours" xml:space="preserve">
+    <value>List of all earned hours for employee:</value>
+  </data>
+  <data name="lblEmplUsedHours" xml:space="preserve">
+    <value>List of all used hours for employee:</value>
+  </data>
+  <data name="lblAvailableHours" xml:space="preserve">
+    <value>Time employee can use:</value>
+  </data>
+  <data name="lblUsingHours" xml:space="preserve">
+    <value>Time employee wants to use:</value>
+  </data>
+  <data name="lblHrs" xml:space="preserve">
+    <value>hrs</value>
+  </data>
+  <data name="lblTime" xml:space="preserve">
+    <value>Time:</value>
+  </data>
+  <data name="enterWantedTime" xml:space="preserve">
+    <value>Enter time employee wants to use!</value>
+  </data>
+  <data name="wantedTimeNotNum" xml:space="preserve">
+    <value>Total time employee wants to use must be a number greater than zero.</value>
+  </data>
+  <data name="enoughWantedTime" xml:space="preserve">
+    <value>You have selected enough time to use.</value>
+  </data>
+  <data name="selectDatesEarned" xml:space="preserve">
+    <value>You must select days when employee earned extra hours which he will use.</value>
+  </data>
+  <data name="notEnoughWantedTime" xml:space="preserve">
+    <value>You have not selected enough time to use.</value>
+  </data>
+  <data name="menuExtraHours" xml:space="preserve">
+    <value>Extra hours</value>
+  </data>
+  <data name="lblUsingDate" xml:space="preserve">
+    <value>Date of use:</value>
+  </data>
+  <data name="exitPermissionsVerificationForm" xml:space="preserve">
+    <value>Exit permissions verification</value>
+  </data>
+  <data name="btnVerificate" xml:space="preserve">
+    <value>Verificate selected exit permissions</value>
+  </data>
+  <data name="lblExitPermVerification" xml:space="preserve">
+    <value>Exit permissions verification:</value>
+  </data>
+  <data name="unverified" xml:space="preserve">
+    <value>unverified</value>
+  </data>
+  <data name="not_used" xml:space="preserve">
+    <value>not used</value>
+  </data>
+  <data name="used" xml:space="preserve">
+    <value>used</value>
+  </data>
+  <data name="hdrVerifiedBy" xml:space="preserve">
+    <value>Verified by</value>
+  </data>
+  <data name="noPermVerPrivilege" xml:space="preserve">
+    <value>You do not have privilege to verificate exit permission for any employee.</value>
+  </data>
+  <data name="noSelExitPermVer" xml:space="preserve">
+    <value>No selected exit permissions to verificate.</value>
+  </data>
+  <data name="verificateExitPerm" xml:space="preserve">
+    <value>Are you sure you want to verificate selected exit permissions?</value>
+  </data>
+  <data name="exitPermVer" xml:space="preserve">
+    <value>Selected exit permissions successufully verificated.</value>
+  </data>
+  <data name="noExitPermVer" xml:space="preserve">
+    <value>Some of selected exit permissions could not be verificated.</value>
+  </data>
+  <data name="noRetroExitPermAdd" xml:space="preserve">
+    <value>You do not have the right to add retroactive exit permissions!</value>
+  </data>
+  <data name="noRetroExitPermUpd" xml:space="preserve">
+    <value>You do not have the right to update retroactive exit permissions!</value>
+  </data>
+  <data name="noVerifiedUpd" xml:space="preserve">
+    <value>You do not have the right to update verified exit permissions!</value>
+  </data>
+  <data name="btnExitPermVer" xml:space="preserve">
+    <value>Exit permissions verification &gt;&gt;</value>
+  </data>
+  <data name="lblEarnedDate" xml:space="preserve">
+    <value>Earned date:</value>
+  </data>
+  <data name="lblEarnedTime" xml:space="preserve">
+    <value>Earned time:</value>
+  </data>
+  <data name="lblUsedDate" xml:space="preserve">
+    <value>Used date:</value>
+  </data>
+  <data name="lblUsedTime" xml:space="preserve">
+    <value>Amount off used time:</value>
+  </data>
+  <data name="lblAvailableTime" xml:space="preserve">
+    <value>Available time:</value>
+  </data>
+  <data name="extraHourOverlap" xml:space="preserve">
+    <value>Some extra hours are already used in the same date, in the period that overlaps selected period of time!</value>
+  </data>
+  <data name="rbEnabled" xml:space="preserve">
+    <value>Enabled</value>
+  </data>
+  <data name="rbDisabled" xml:space="preserve">
+    <value>Disabled</value>
+  </data>
+  <data name="lblConnection" xml:space="preserve">
+    <value>Connection</value>
+  </data>
+  <data name="extraHoursCalculationForm" xml:space="preserve">
+    <value>Calculate extra hours</value>
+  </data>
+  <data name="btnCalculate" xml:space="preserve">
+    <value>Calculate</value>
+  </data>
+  <data name="lblReaders" xml:space="preserve">
+    <value>List of all terminals and their last reading time:</value>
+  </data>
+  <data name="lblLastReaderTime" xml:space="preserve">
+    <value>Last reading time for all terminals:</value>
+  </data>
+  <data name="hdrLastReaderTime" xml:space="preserve">
+    <value>Last reading time</value>
+  </data>
+  <data name="extraHoursSuccessfullyCalculated" xml:space="preserve">
+    <value>Extra hours are successfully calculated!</value>
+  </data>
+  <data name="extraHoursNotCalculated" xml:space="preserve">
+    <value>Extra hours can not be calculated!</value>
+  </data>
+  <data name="fromDateGreaterToDate" xml:space="preserve">
+    <value>To date must be greater than or equal to from date!</value>
+  </data>
+  <data name="noIOPairsEmployeeInterval" xml:space="preserve">
+    <value>No employee's IO Pairs for selected interval!</value>
+  </data>
+  <data name="intervalHasOpenPairs" xml:space="preserve">
+    <value>Some days in selected interval have uncompleted IO Pairs. Do you want to proceed?</value>
+  </data>
+  <data name="noEmployeeTimeScheduleDateUsed" xml:space="preserve">
+    <value>No employee's time schedule for date of use!</value>
+  </data>
+  <data name="notWorkingDay" xml:space="preserve">
+    <value>Selected date of use is not working day for selected employee!</value>
+  </data>
+  <data name="notWorkingInterval" xml:space="preserve">
+    <value>Selected time of use is not part of working time for selected date, for selected employee!</value>
+  </data>
+  <data name="workingIntervalOverflow" xml:space="preserve">
+    <value>Wanted time of use is longer than the time left to the end of appropriate working interval!</value>
+  </data>
+  <data name="lblLLT" xml:space="preserve">
+    <value>Latest left time:</value>
+  </data>
+  <data name="lblName1" xml:space="preserve">
+    <value>Name:</value>
+  </data>
+  <data name="lblDays" xml:space="preserve">
+    <value>Days</value>
+  </data>
+  <data name="msgPTNotSet" xml:space="preserve">
+    <value>Please select pass type.</value>
+  </data>
+  <data name="noSelUsedHoursDel" xml:space="preserve">
+    <value>No selected used hours to delete.</value>
+  </data>
+  <data name="deleteUsedHours" xml:space="preserve">
+    <value>Are you sure you want to delete selected used hours?</value>
+  </data>
+  <data name="usedHoursAlreadyUsed" xml:space="preserve">
+    <value>It is is not allowed to delete used regular hours for the past!</value>
+  </data>
+  <data name="usedHoursDel" xml:space="preserve">
+    <value>Selected used hours successufully deleted.</value>
+  </data>
+  <data name="noUsedHoursDel" xml:space="preserve">
+    <value>Some of selected used hours could not be deleted.</value>
+  </data>
+  <data name="extraHourExistEmlpoyeeDatePair" xml:space="preserve">
+    <value>For selected employee and date of use already exists IO Pair in the period that overlaps selected period of time!</value>
+  </data>
+  <data name="usingDateForPast" xml:space="preserve">
+    <value>Used regular hours entered for the past can not be changed! Do you want to proceed?</value>
+  </data>
+  <data name="timeSchemaPausesForm" xml:space="preserve">
+    <value>Pauses</value>
+  </data>
+  <data name="hdrDuration" xml:space="preserve">
+    <value>Duration</value>
+  </data>
+  <data name="hdrEarliestTime" xml:space="preserve">
+    <value>Earliest use time</value>
+  </data>
+  <data name="hdrLatestTime" xml:space="preserve">
+    <value>Latest use time</value>
+  </data>
+  <data name="hdrShortBreak" xml:space="preserve">
+    <value>Short break</value>
+  </data>
+  <data name="selOneTimeSchedulePause" xml:space="preserve">
+    <value>Select one pause you want to update.</value>
+  </data>
+  <data name="noSelTimeSchedulePauseDel" xml:space="preserve">
+    <value>No selected pauses to delete.</value>
+  </data>
+  <data name="deleteTimeSchedulePauses" xml:space="preserve">
+    <value>Are you sure you want to delete selected pauses?</value>
+  </data>
+  <data name="defaultTimeSchedulePause" xml:space="preserve">
+    <value>Default pause could not be deleted.</value>
+  </data>
+  <data name="timeSchedulePauseDel" xml:space="preserve">
+    <value>Selected pauses successufully deleted.</value>
+  </data>
+  <data name="noTimeSchedulePauseDel" xml:space="preserve">
+    <value>Some of selected pauses could not be deleted.</value>
+  </data>
+  <data name="updateTimeSchemaPause" xml:space="preserve">
+    <value>Update pause</value>
+  </data>
+  <data name="lblPauseID" xml:space="preserve">
+    <value>Pause ID:</value>
+  </data>
+  <data name="lblPauseDuration" xml:space="preserve">
+    <value>Duration:</value>
+  </data>
+  <data name="lblEarliestTime" xml:space="preserve">
+    <value>Earliest use time:</value>
+  </data>
+  <data name="lblLatestTime" xml:space="preserve">
+    <value>Latest use time:</value>
+  </data>
+  <data name="lblShortBreakDuration" xml:space="preserve">
+    <value>Short break duration:</value>
+  </data>
+  <data name="addTimeSchemaPause" xml:space="preserve">
+    <value>Add pause</value>
+  </data>
+  <data name="timeSchemaPauseExists" xml:space="preserve">
+    <value>Pause already exists for selected description.</value>
+  </data>
+  <data name="timeSchemaPauseSaved" xml:space="preserve">
+    <value>Pause successufully saved.</value>
+  </data>
+  <data name="timeSchemaPauseNotSaved" xml:space="preserve">
+    <value>Pause cannot be saved.</value>
+  </data>
+  <data name="timeSchemaPauseUpdated" xml:space="preserve">
+    <value>Pause successufully updated.</value>
+  </data>
+  <data name="timeSchemaPauseNotUpdated" xml:space="preserve">
+    <value>Pause cannot be updated.</value>
+  </data>
+  <data name="addTSPauseDescEmpty" xml:space="preserve">
+    <value>You must enter description!</value>
+  </data>
+  <data name="addTSPausePDurationNotNull" xml:space="preserve">
+    <value>You must enter pause duration!</value>
+  </data>
+  <data name="addTSPausePDurationNotNumber" xml:space="preserve">
+    <value>Pause duration must be positive number or zero!</value>
+  </data>
+  <data name="addTSPauseETimeNotNull" xml:space="preserve">
+    <value>You must enter earliest use time!</value>
+  </data>
+  <data name="addTSPauseETimeNotNumber" xml:space="preserve">
+    <value>Earliest use time must be positive number or zero!</value>
+  </data>
+  <data name="addTSPauseLTimeNotNull" xml:space="preserve">
+    <value>You must enter latest use time!</value>
+  </data>
+  <data name="addTSPauseLTimeNotNumber" xml:space="preserve">
+    <value>Latest use time must be positive number or zero!</value>
+  </data>
+  <data name="addTSPauseOffsetNotNull" xml:space="preserve">
+    <value>You must enter pause offset!</value>
+  </data>
+  <data name="addTSPauseOffsetNotNumber" xml:space="preserve">
+    <value>Pause offset must be positive number or zero!</value>
+  </data>
+  <data name="addTSPauseSBDurationNotNull" xml:space="preserve">
+    <value>You must enter short break duration!</value>
+  </data>
+  <data name="addTSPauseSBDurationNotNumber" xml:space="preserve">
+    <value>Short break duration must be positive number or zero!</value>
+  </data>
+  <data name="addTSPausePIDNotNull" xml:space="preserve">
+    <value>You must enter pause ID! </value>
+  </data>
+  <data name="addTSPausePIDNotNumber" xml:space="preserve">
+    <value>Pause ID must be positive number or zero!</value>
+  </data>
+  <data name="menuPauses" xml:space="preserve">
+    <value>Pauses</value>
+  </data>
+  <data name="gbPause" xml:space="preserve">
+    <value>Pause</value>
+  </data>
+  <data name="gbShortBreak" xml:space="preserve">
+    <value>Short break</value>
+  </data>
+  <data name="dateUsedIsHoliday" xml:space="preserve">
+    <value>Selected date of use is a holiday and therefore is not working day for selected employee!</value>
+  </data>
+  <data name="lblPause" xml:space="preserve">
+    <value>Pause:</value>
+  </data>
+  <data name="menuPIORep" xml:space="preserve">
+    <value>PIO reports</value>
+  </data>
+  <data name="menuPIOPaymentRep" xml:space="preserve">
+    <value>PIO Payrolls</value>
+  </data>
+  <data name="menuTypeReport" xml:space="preserve">
+    <value>Presence Reports by Types</value>
+  </data>
+  <data name="addTSPausePauseSBDurationBothZero" xml:space="preserve">
+    <value>Pause duration and short break duration can't both be zero! </value>
+  </data>
+  <data name="addTSPauseSBDurationGreaterPause" xml:space="preserve">
+    <value>Short break duration can't be greater than or equal to pause duration!</value>
+  </data>
+  <data name="infoForm" xml:space="preserve">
+    <value>ACTA information</value>
+  </data>
+  <data name="gbInfo" xml:space="preserve">
+    <value>Information</value>
+  </data>
+  <data name="lblDatabaseInfo" xml:space="preserve">
+    <value>Database info:</value>
+  </data>
+  <data name="lblLPath" xml:space="preserve">
+    <value>L path:</value>
+  </data>
+  <data name="lblPhotosPath" xml:space="preserve">
+    <value>Photos path:</value>
+  </data>
+  <data name="lblRootPath" xml:space="preserve">
+    <value>Root path:</value>
+  </data>
+  <data name="menuInformations" xml:space="preserve">
+    <value>Information</value>
+  </data>
+  <data name="menuPIOWorkListsRep" xml:space="preserve">
+    <value>PIO Work lists</value>
+  </data>
+  <data name="rbDiscard" xml:space="preserve">
+    <value>Rejected hours</value>
+  </data>
+  <data name="rbExtraHours" xml:space="preserve">
+    <value>Regular work</value>
+  </data>
+  <data name="rbOvertime" xml:space="preserve">
+    <value>Overtime work</value>
+  </data>
+  <data name="rejected" xml:space="preserve">
+    <value>Rejected hours</value>
+  </data>
+  <data name="regular" xml:space="preserve">
+    <value>Regular work</value>
+  </data>
+  <data name="overtime" xml:space="preserve">
+    <value>Overtime work</value>
+  </data>
+  <data name="hdrTypeOfUse" xml:space="preserve">
+    <value>Type of use</value>
+  </data>
+  <data name="lblCreatedBy" xml:space="preserve">
+    <value>Created by:</value>
+  </data>
+  <data name="lblTypeOfUse" xml:space="preserve">
+    <value>Type of use:</value>
+  </data>
+  <data name="toContinue" xml:space="preserve">
+    <value>Do you want to continue?</value>
+  </data>
+  <data name="cbTakeWholeInterval" xml:space="preserve">
+    <value>Take whole time interval</value>
+  </data>
+  <data name="menuPIOWorkingSaturdays" xml:space="preserve">
+    <value>PIO Working Saturdays</value>
+  </data>
+  <data name="noRetroExitPermAddMulty" xml:space="preserve">
+    <value>Retroactive exit permissions can not be add for multiply employees!</value>
+  </data>
+  <data name="passOnStartAlreadyExists" xml:space="preserve">
+    <value>Can not create exit permission for start of working day, because some pass already exists (automaticaly created), or selected period is already covered with permission!</value>
+  </data>
+  <data name="menuVisits" xml:space="preserve">
+    <value>Visits</value>
+  </data>
+  <data name="roleInsertingProblem1" xml:space="preserve">
+    <value>and for user:</value>
+  </data>
+  <data name="valueNotNum" xml:space="preserve">
+    <value>Entered value can contain only digits!</value>
+  </data>
+  <data name="wuRightsDeletingProblem" xml:space="preserve">
+    <value>Rights on this WU can not be deleted for purpose:</value>
+  </data>
+  <data name="wuRightsDeletingProblem1" xml:space="preserve">
+    <value>and for user:</value>
+  </data>
+  <data name="messageWUUpd4" xml:space="preserve">
+    <value>Parent working unit ID is changed. Updateing access rights for this working unit...</value>
+  </data>
+  <data name="noDesktopReader" xml:space="preserve">
+    <value>Desktop terminal not found.</value>
+  </data>
+  <data name="imgLarge" xml:space="preserve">
+    <value>Maximum file size is 1MB. Selected image can not be saved!</value>
+  </data>
+  <data name="accessControlStatusForm" xml:space="preserve">
+    <value>Access control status</value>
+  </data>
+  <data name="hdrLastTimeIssued" xml:space="preserve">
+    <value>Last time issued</value>
+  </data>
+  <data name="hdrLastUploadTime" xml:space="preserve">
+    <value>Last upload time</value>
+  </data>
+  <data name="hdrPendingUpload" xml:space="preserve">
+    <value>Pending upload</value>
+  </data>
+  <data name="menuAccessControlStatus" xml:space="preserve">
+    <value>Access control status</value>
+  </data>
+  <data name="hdrReader" xml:space="preserve">
+    <value>Terminal</value>
+  </data>
+  <data name="lblGreen" xml:space="preserve">
+    <value>Terminal set with last issued access control parameters</value>
+  </data>
+  <data name="lblOrange" xml:space="preserve">
+    <value>Uploading last issued access control parameters</value>
+  </data>
+  <data name="lblRed" xml:space="preserve">
+    <value>Last issued access control parameters cannot be uploaded to the terminal</value>
+  </data>
+  <data name="lblYellow" xml:space="preserve">
+    <value>Last issued access control parameters for the terminal have status "pending"</value>
+  </data>
+  <data name="gbCurrentPass" xml:space="preserve">
+    <value>Current pass</value>
+  </data>
+  <data name="gbEmployee" xml:space="preserve">
+    <value>Employee info</value>
+  </data>
+  <data name="gbPass" xml:space="preserve">
+    <value>Pass info</value>
+  </data>
+  <data name="gbPassNavigation" xml:space="preserve">
+    <value>Pass navigation</value>
+  </data>
+  <data name="gbPhotoNavigation" xml:space="preserve">
+    <value>Photo navigation</value>
+  </data>
+  <data name="gbPhotos" xml:space="preserve">
+    <value>Camera photos that match pass time</value>
+  </data>
+  <data name="lblFileCrTime" xml:space="preserve">
+    <value>File created time:</value>
+  </data>
+  <data name="lblLFName" xml:space="preserve">
+    <value>Name:</value>
+  </data>
+  <data name="lblIsWrkHrs" xml:space="preserve">
+    <value>Is working hours:</value>
+  </data>
+  <data name="lblSec" xml:space="preserve">
+    <value>sec</value>
+  </data>
+  <data name="lblWorkTime1" xml:space="preserve">
+    <value>Work time:</value>
+  </data>
+  <data name="passesSnapshotsForm" xml:space="preserve">
+    <value>Passes snapshots</value>
+  </data>
+  <data name="btnPhotos" xml:space="preserve">
+    <value>Show camera photos</value>
+  </data>
+  <data name="noSelPassPhotos" xml:space="preserve">
+    <value>No selected pass for viewing photos.</value>
+  </data>
+  <data name="lblOfficialEmplPhoto" xml:space="preserve">
+    <value>Official employee photo</value>
+  </data>
+  <data name="noPhotosForPass" xml:space="preserve">
+    <value>There are no photos for selected pass!</value>
+  </data>
+  <data name="btnPhotosMenuItemID" xml:space="preserve">
+    <value>Configuration_Passes photos</value>
+  </data>
+  <data name="selOneUser" xml:space="preserve">
+    <value>Select one user you want to update.</value>
+  </data>
+  <data name="camerasForm" xml:space="preserve">
+    <value>Cameras</value>
+  </data>
+  <data name="hdrAddress" xml:space="preserve">
+    <value>Address</value>
+  </data>
+  <data name="hdrCameraID" xml:space="preserve">
+    <value>Camera ID</value>
+  </data>
+  <data name="cameraDel" xml:space="preserve">
+    <value>Selected cameras successufully deleted.</value>
+  </data>
+  <data name="deleteCameras" xml:space="preserve">
+    <value>Are you sure you want to delete selected cameras?</value>
+  </data>
+  <data name="noCameraDel" xml:space="preserve">
+    <value>Some of selected cameras could not be deleted.</value>
+  </data>
+  <data name="noSelCameraDel" xml:space="preserve">
+    <value>No selected cameras to delete.</value>
+  </data>
+  <data name="selOneCamera" xml:space="preserve">
+    <value>Select one camera you want to update.</value>
+  </data>
+  <data name="btnRemoveSel" xml:space="preserve">
+    <value>Remove selected</value>
+  </data>
+  <data name="cameraAddForm" xml:space="preserve">
+    <value>Add camera</value>
+  </data>
+  <data name="cameraUpdForm" xml:space="preserve">
+    <value>Update camera</value>
+  </data>
+  <data name="gbCameraReaders" xml:space="preserve">
+    <value>Camera &lt;-&gt; Terminal &lt;-&gt; Direction</value>
+  </data>
+  <data name="lblAddress" xml:space="preserve">
+    <value>Address:</value>
+  </data>
+  <data name="lblCameraID" xml:space="preserve">
+    <value>Camera ID:</value>
+  </data>
+  <data name="lblNotSelReaders" xml:space="preserve">
+    <value>List of all terminals not assigned to camera:</value>
+  </data>
+  <data name="lblSelReaders" xml:space="preserve">
+    <value>List of all terminals assigned to camera:</value>
+  </data>
+  <data name="camAddressNumber" xml:space="preserve">
+    <value>Camera address must be number!</value>
+  </data>
+  <data name="cameraAddressNotValid" xml:space="preserve">
+    <value>Please enter valid camera address.</value>
+  </data>
+  <data name="cameraIDNumber" xml:space="preserve">
+    <value>Camera ID must be number!</value>
+  </data>
+  <data name="cameraNotSaved" xml:space="preserve">
+    <value>Camera can not be saved.</value>
+  </data>
+  <data name="cameraNotUpdated" xml:space="preserve">
+    <value>Camera can not be updated.</value>
+  </data>
+  <data name="cameraSaved" xml:space="preserve">
+    <value>Camera successufully saved.</value>
+  </data>
+  <data name="cameraUpdated" xml:space="preserve">
+    <value>Camera successufully updated.</value>
+  </data>
+  <data name="noCamAddress" xml:space="preserve">
+    <value>You must enter camera address!</value>
+  </data>
+  <data name="noCamDescr" xml:space="preserve">
+    <value>You must enter camera description!</value>
+  </data>
+  <data name="noCamDirection" xml:space="preserve">
+    <value>All assigned terminals must have dirrection!</value>
+  </data>
+  <data name="noCameraID" xml:space="preserve">
+    <value>You must enter camera ID!</value>
+  </data>
+  <data name="noCamReaders" xml:space="preserve">
+    <value>You must assign terminal to camera!</value>
+  </data>
+  <data name="noCamType" xml:space="preserve">
+    <value>You must enter camera type!</value>
+  </data>
+  <data name="noSelDirection" xml:space="preserve">
+    <value>Select direction first.</value>
+  </data>
+  <data name="menuCameras" xml:space="preserve">
+    <value>Cameras</value>
+  </data>
+  <data name="gbCamera" xml:space="preserve">
+    <value>Camera</value>
+  </data>
+  <data name="lblID" xml:space="preserve">
+    <value>ID:</value>
+  </data>
+  <data name="noSelReader" xml:space="preserve">
+    <value>Select terminals first.</value>
+  </data>
+  <data name="menuLiveView" xml:space="preserve">
+    <value>Video surveillance</value>
+  </data>
+  <data name="DataProcessing" xml:space="preserve">
+    <value>Data Processing</value>
+  </data>
+  <data name="btnAdvanced1" xml:space="preserve">
+    <value>Advanced &gt;&gt;</value>
+  </data>
+  <data name="btnAdvanced2" xml:space="preserve">
+    <value>&lt;&lt; Basic</value>
+  </data>
+  <data name="btnReport" xml:space="preserve">
+    <value>Report</value>
+  </data>
+  <data name="cbFirstIN" xml:space="preserve">
+    <value>First IN</value>
+  </data>
+  <data name="cbLastOUT" xml:space="preserve">
+    <value>Last OUT</value>
+  </data>
+  <data name="gbAdvancedSearch" xml:space="preserve">
+    <value>Advanced search</value>
+  </data>
+  <data name="gbBorderSel" xml:space="preserve">
+    <value>First/Last search</value>
+  </data>
+  <data name="gbPassesAdv" xml:space="preserve">
+    <value>Passes</value>
+  </data>
+  <data name="gbTime" xml:space="preserve">
+    <value>Time</value>
+  </data>
+  <data name="rbAll" xml:space="preserve">
+    <value>All</value>
+  </data>
+  <data name="rbBorder" xml:space="preserve">
+    <value>First/Last</value>
+  </data>
+  <data name="rbWithout1" xml:space="preserve">
+    <value>Without</value>
+  </data>
+  <data name="msgFirstLastNotCheck" xml:space="preserve">
+    <value>For first/last search, at least one of first in or last out criterion must be checked.</value>
+  </data>
+  <data name="msgToTimeLessThenFromTime" xml:space="preserve">
+    <value>Search start time must be less than search end time.</value>
+  </data>
+  <data name="noRecordsForDisplay" xml:space="preserve">
+    <value>No records for report.</value>
+  </data>
+  <data name="lblEmployeesInGroup" xml:space="preserve">
+    <value>List of all employees who belong to selected group:</value>
+  </data>
+  <data name="lblEmployeesNotInGroup" xml:space="preserve">
+    <value>List of all employees who do not belong to selected group:</value>
+  </data>
+  <data name="wtGroupsAddForm" xml:space="preserve">
+    <value>Add working group</value>
+  </data>
+  <data name="wtGroupsUpdForm" xml:space="preserve">
+    <value>Update working group</value>
+  </data>
+  <data name="gbLegend" xml:space="preserve">
+    <value>Legend</value>
+  </data>
+  <data name="gbStartDate" xml:space="preserve">
+    <value>Using date</value>
+  </data>
+  <data name="gbTimeSchema" xml:space="preserve">
+    <value>Current group time schema</value>
+  </data>
+  <data name="hdrUsingDate" xml:space="preserve">
+    <value>Using date</value>
+  </data>
+  <data name="lblGreen1" xml:space="preserve">
+    <value>Schema interval(s) used for today</value>
+  </data>
+  <data name="lblOrange1" xml:space="preserve">
+    <value>Schema interval(s) used for first day next month</value>
+  </data>
+  <data name="lblRed1" xml:space="preserve">
+    <value>Schema interval(s) used for some combination of these days</value>
+  </data>
+  <data name="lblStartDateDef" xml:space="preserve">
+    <value>* Look into schema definition list to see time schedule for selected using date</value>
+  </data>
+  <data name="lblYellow1" xml:space="preserve">
+    <value>Schema interval(s) used for selected date</value>
+  </data>
+  <data name="rbNextMonth" xml:space="preserve">
+    <value>First day next month</value>
+  </data>
+  <data name="rbSelectDate" xml:space="preserve">
+    <value>Select date</value>
+  </data>
+  <data name="rbToday" xml:space="preserve">
+    <value>Today</value>
+  </data>
+  <data name="cannotRemoveNAEmployees" xml:space="preserve">
+    <value>Cannot remove N/A employees because they belong to this group!</value>
+  </data>
+  <data name="minSelectDate" xml:space="preserve">
+    <value>The earliest allowed selected date is first day in last month.</value>
+  </data>
+  <data name="emplGrpNotHaveTimeSchedule" xml:space="preserve">
+    <value>Employee group doesn't have time schedule that could be applied to the choosen date.</value>
+  </data>
+  <data name="grpNotUpd" xml:space="preserve">
+    <value>For some employees changes cannot be applied.</value>
+  </data>
+  <data name="grpScheduleAdd1" xml:space="preserve">
+    <value>New group time schedule will be applied from:</value>
+  </data>
+  <data name="grpScheduleAdd2" xml:space="preserve">
+    <value>until:</value>
+  </data>
+  <data name="grpScheduleAdd3" xml:space="preserve">
+    <value>until next change.</value>
+  </data>
+  <data name="grpScheduleAdd4" xml:space="preserve">
+    <value>Be aware that for the months after this month, last time schema from this month will be applied, and not the entire month time schedule, in case that assigned time schedule for this month has more different schemas!</value>
+  </data>
+  <data name="grpScheduleAdd5" xml:space="preserve">
+    <value>Changes will affect all employees from this group, for the same time interval, and all employees' correction will be lost, if they exists!</value>
+  </data>
+  <data name="grpScheduleAdd6" xml:space="preserve">
+    <value>Do you want to continue?</value>
+  </data>
+  <data name="grpScheduleSaved" xml:space="preserve">
+    <value>Time schedule successufully saved.</value>
+  </data>
+  <data name="minEmplSchMonth" xml:space="preserve">
+    <value>The earliest allowed month for changing employee's schedule is last month.</value>
+  </data>
+  <data name="lblRemarks" xml:space="preserve">
+    <value>Remarks:</value>
+  </data>
+  <data name="emplScheduleNotSaved" xml:space="preserve">
+    <value>Time schedule saving failed!</value>
+  </data>
+  <data name="grpScheduleNotSaved" xml:space="preserve">
+    <value>Time schedule saving failed.</value>
+  </data>
+  <data name="btnHistoryOfChange" xml:space="preserve">
+    <value>History of change</value>
+  </data>
+  <data name="emplGroupChangedForm" xml:space="preserve">
+    <value>Time schedule apply date</value>
+  </data>
+  <data name="lblFormInfo" xml:space="preserve">
+    <value>You have changed employee's working group. You have to assign group schedule to employee.</value>
+  </data>
+  <data name="emplNotUpd" xml:space="preserve">
+    <value>Employee's data update failed.</value>
+  </data>
+  <data name="gbSearch" xml:space="preserve">
+    <value>Search</value>
+  </data>
+  <data name="hdrModifiedBy" xml:space="preserve">
+    <value>Operator</value>
+  </data>
+  <data name="hdrModifiedTime" xml:space="preserve">
+    <value>Modified time</value>
+  </data>
+  <data name="hdrRemarks" xml:space="preserve">
+    <value>Remarks</value>
+  </data>
+  <data name="lblOperator" xml:space="preserve">
+    <value>Operator:</value>
+  </data>
+  <data name="PHform" xml:space="preserve">
+    <value>History of change</value>
+  </data>
+  <data name="messageEmployeeNotInserted" xml:space="preserve">
+    <value>Employee's data could not be saved.</value>
+  </data>
+  <data name="gbPassesHist" xml:space="preserve">
+    <value>History of change</value>
+  </data>
+  <data name="DBSetupForm" xml:space="preserve">
+    <value>Database connection setup</value>
+  </data>
+  <data name="gbDatabase" xml:space="preserve">
+    <value>Database</value>
+  </data>
+  <data name="lblDatabase" xml:space="preserve">
+    <value>Database:</value>
+  </data>
+  <data name="lblPort" xml:space="preserve">
+    <value>Port:</value>
+  </data>
+  <data name="lblServer" xml:space="preserve">
+    <value>Server:</value>
+  </data>
+  <data name="msgConnStringNotFound" xml:space="preserve">
+    <value>Connection parameters not found. Do you want to enter data base connection parameters?</value>
+  </data>
+  <data name="rbMySQL" xml:space="preserve">
+    <value>MySQL</value>
+  </data>
+  <data name="rbSQLServer" xml:space="preserve">
+    <value>SQLServer</value>
+  </data>
+  <data name="DBSetupInfo" xml:space="preserve">
+    <value>If you changed connection parameters, apliccation will be closed and you will have to start it again. Are you sure you want to change connection parameters?</value>
+  </data>
+  <data name="lblFilesPath" xml:space="preserve">
+    <value>Files path:</value>
+  </data>
+  <data name="menuMonitor" xml:space="preserve">
+    <value>Monitoring</value>
+  </data>
+  <data name="menuVisitorsEnter" xml:space="preserve">
+    <value>Visitors Enter</value>
+  </data>
+  <data name="menuVisitorsExit" xml:space="preserve">
+    <value>Visitors Exit</value>
+  </data>
+  <data name="menuVisitorsReport" xml:space="preserve">
+    <value>Visitors Report</value>
+  </data>
+  <data name="btnTest" xml:space="preserve">
+    <value>Test connection</value>
+  </data>
+  <data name="connFailed" xml:space="preserve">
+    <value>Connection failed.</value>
+  </data>
+  <data name="connSuccess" xml:space="preserve">
+    <value>Connection successufull.</value>
+  </data>
+  <data name="emptyServerORDatabase" xml:space="preserve">
+    <value>Server and database values must be entered.</value>
+  </data>
+  <data name="lblCaseSensitive" xml:space="preserve">
+    <value>* Case sensitive</value>
+  </data>
+  <data name="invalidLicence" xml:space="preserve">
+    <value>Invalid system licence.</value>
+  </data>
+  <data name="invalidLicenceADMIN1" xml:space="preserve">
+    <value>Invalid system licence.</value>
+  </data>
+  <data name="maxConnNumExceeeded" xml:space="preserve">
+    <value>System maximum number of concurrent sessions exceeded.</value>
+  </data>
+  <data name="maxConnNumExceeededADMIN1" xml:space="preserve">
+    <value>System maximum number of concurrent sessions exceeded.</value>
+  </data>
+  <data name="noLicence" xml:space="preserve">
+    <value>System has not been licenced.</value>
+  </data>
+  <data name="noLicenceADMIN1" xml:space="preserve">
+    <value>System has not been licenced.</value>
+  </data>
+  <data name="licenceADMIN" xml:space="preserve">
+    <value> attached, to the system support department (office@sdditg.com).
+ 
+</value>
+  </data>
+  <data name="gbEventTime" xml:space="preserve">
+    <value>Event time</value>
+  </data>
+  <data name="gbModifiedTime" xml:space="preserve">
+    <value>Modified time</value>
+  </data>
+  <data name="lblIsWH" xml:space="preserve">
+    <value>* Is working hours</value>
+  </data>
+  <data name="noDateTimePickerSelected" xml:space="preserve">
+    <value>One of time criteria must be selected!</value>
+  </data>
+  <data name="btnGenerateLicence" xml:space="preserve">
+    <value>Generate licence</value>
+  </data>
+  <data name="invalidLicenceReq" xml:space="preserve">
+    <value>Licence request is not valid.</value>
+  </data>
+  <data name="lblNoSessions" xml:space="preserve">
+    <value>Number of sessions:</value>
+  </data>
+  <data name="LicenceGenerateForm" xml:space="preserve">
+    <value>Licence generate</value>
+  </data>
+  <data name="licenceMade" xml:space="preserve">
+    <value>Licence successufully created.</value>
+  </data>
+  <data name="licenceNotCreated" xml:space="preserve">
+    <value>Licence could not be created.</value>
+  </data>
+  <data name="licreqNotCreated" xml:space="preserve">
+    <value>Licence request could not be created.</value>
+  </data>
+  <data name="noLicenceReq" xml:space="preserve">
+    <value>No licence request.</value>
+  </data>
+  <data name="noSessionsEmpty" xml:space="preserve">
+    <value>Please, enter number of sessions allowed.</value>
+  </data>
+  <data name="noSessionsNum" xml:space="preserve">
+    <value>Number of sessions allowed must be integer.</value>
+  </data>
+  <data name="btnDBSetup" xml:space="preserve">
+    <value>Database connection setup</value>
+  </data>
+  <data name="btnEmplXWU" xml:space="preserve">
+    <value>Employees &lt;-&gt; Working units</value>
+  </data>
+  <data name="employeesXWUForm" xml:space="preserve">
+    <value>Employees &lt;-&gt; Working units</value>
+  </data>
+  <data name="gbWU" xml:space="preserve">
+    <value>Working unit that selected employee belongs to</value>
+  </data>
+  <data name="lblEmployeeForWU" xml:space="preserve">
+    <value>List of all employees who belong to selected working unit</value>
+  </data>
+  <data name="lblEmployeesForWU" xml:space="preserve">
+    <value>List of all employees who do not belong to selected working unit</value>
+  </data>
+  <data name="tabPageEmployeesXWorkingUnits" xml:space="preserve">
+    <value>Employees &lt;-&gt; Working units</value>
+  </data>
+  <data name="tabPageWorkingUnits" xml:space="preserve">
+    <value>Working units</value>
+  </data>
+  <data name="invalidLicenceADMIN2" xml:space="preserve">
+    <value>To licence the system, send your email request, with the file </value>
+  </data>
+  <data name="maxConnNumExceeededADMIN2" xml:space="preserve">
+    <value>To licence the system, send your email request, with the file </value>
+  </data>
+  <data name="noLicenceADMIN2" xml:space="preserve">
+    <value>To licence the system, send your email request, with the file </value>
+  </data>
+  <data name="EmployeeXWorkingUnitNotSaved" xml:space="preserve">
+    <value>Changes can not be saved.</value>
+  </data>
+  <data name="EmployeeXWorkingUnitSaved" xml:space="preserve">
+    <value>Changes successufully saved.</value>
+  </data>
+  <data name="EmployeeXWUCancelChanges" xml:space="preserve">
+    <value>Changes are canceled.</value>
+  </data>
+  <data name="EmployeeXWUSaveChanges" xml:space="preserve">
+    <value>Employees who belong to selected working unit are changed. Do you want to save changes?</value>
+  </data>
+  <data name="ConfigAdd" xml:space="preserve">
+    <value>Adding config parameters</value>
+  </data>
+  <data name="Gates" xml:space="preserve">
+    <value>Gates</value>
+  </data>
+  <data name="Visitors" xml:space="preserve">
+    <value>Visitors</value>
+  </data>
+  <data name="lblAuxPort" xml:space="preserve">
+    <value>Aux Port</value>
+  </data>
+  <data name="lblReadersAuxPorts" xml:space="preserve">
+    <value>Terminal / Aux Port</value>
+  </data>
+  <data name="configGatesAdded" xml:space="preserve">
+    <value>Gates and Aux Ports successufully added.</value>
+  </data>
+  <data name="sameAuxPort" xml:space="preserve">
+    <value>Selected Aux Ports must be different.</value>
+  </data>
+  <data name="lblUpdateEmplLoc" xml:space="preserve">
+    <value>Update employee location:</value>
+  </data>
+  <data name="UpdateEmplLoc" xml:space="preserve">
+    <value>Update employee location</value>
+  </data>
+  <data name="VisitorsCode" xml:space="preserve">
+    <value>Visitors code</value>
+  </data>
+  <data name="btnGateSetup" xml:space="preserve">
+    <value>Gate parameters setup</value>
+  </data>
+  <data name="noGates" xml:space="preserve">
+    <value>No gates found. Please, enter gates and Aux Ports.</value>
+  </data>
+  <data name="noVisitorsParameters" xml:space="preserve">
+    <value>No visitors parameters found. Please, enter visitors code and do you want to update employee location.</value>
+  </data>
+  <data name="setupExit" xml:space="preserve">
+    <value>Changes will not be saved.</value>
+  </data>
+  <data name="visitorsParametersSaved" xml:space="preserve">
+    <value>Visitors parameters are successufully saved.</value>
+  </data>
+  <data name="btnGenerateLicReq" xml:space="preserve">
+    <value>Generate licence request</value>
+  </data>
+  <data name="cbAbsences" xml:space="preserve">
+    <value>Absences</value>
+  </data>
+  <data name="cbAccessControl" xml:space="preserve">
+    <value>Access Control</value>
+  </data>
+  <data name="cbExitPermits" xml:space="preserve">
+    <value>Exit Permissions</value>
+  </data>
+  <data name="cbExtraHours" xml:space="preserve">
+    <value>Extra Hours</value>
+  </data>
+  <data name="cbMonitoring" xml:space="preserve">
+    <value>Monitoring</value>
+  </data>
+  <data name="cbSnapshots" xml:space="preserve">
+    <value>Snapshots</value>
+  </data>
+  <data name="cbTimeTable1" xml:space="preserve">
+    <value>Time Table - normal, flexi</value>
+  </data>
+  <data name="cbTimeTable2" xml:space="preserve">
+    <value>Time Table - industrial</value>
+  </data>
+  <data name="cbVisitors" xml:space="preserve">
+    <value>Visitors</value>
+  </data>
+  <data name="gbFunctionality" xml:space="preserve">
+    <value>Functionality</value>
+  </data>
+  <data name="gbSessions" xml:space="preserve">
+    <value>Number of sessions</value>
+  </data>
+  <data name="lblNoSessionsCurr" xml:space="preserve">
+    <value>Current number of sessions:</value>
+  </data>
+  <data name="licreqCreated" xml:space="preserve">
+    <value>Licence request successufully created.</value>
+  </data>
+  <data name="menuCustomizedReports" xml:space="preserve">
+    <value>Customized reports</value>
+  </data>
+  <data name="menuItemTimeTable" xml:space="preserve">
+    <value>Time Table</value>
+  </data>
+  <data name="gbCustomizedReports" xml:space="preserve">
+    <value>Customized reports</value>
+  </data>
+  <data name="lblCustomer" xml:space="preserve">
+    <value>Customer:</value>
+  </data>
+  <data name="notValidFunctionality" xml:space="preserve">
+    <value>If you selected TimeTable2, Absences, ExitPermits or ExtraHours, you must also select TimeTable1.</value>
+  </data>
+  <data name="btnLegend" xml:space="preserve">
+    <value>Legend</value>
+  </data>
+  <data name="btnPrint" xml:space="preserve">
+    <value>Print</value>
+  </data>
+  <data name="btnShow" xml:space="preserve">
+    <value>Show</value>
+  </data>
+  <data name="btnStatisticsReports" xml:space="preserve">
+    <value>Statistics reports &gt;&gt;&gt;</value>
+  </data>
+  <data name="chbHierarhicly" xml:space="preserve">
+    <value>Hierarhicly</value>
+  </data>
+  <data name="chbSelectAll" xml:space="preserve">
+    <value>Select all</value>
+  </data>
+  <data name="chbShowNextDay" xml:space="preserve">
+    <value>Show next day</value>
+  </data>
+  <data name="EmployeePresenceGraphRepots" xml:space="preserve">
+    <value>Graphic reports of employee presence</value>
+  </data>
+  <data name="gbDay" xml:space="preserve">
+    <value>Day</value>
+  </data>
+  <data name="functionalityNotValid" xml:space="preserve">
+    <value>Functionality did not correspond to licenced functionality.</value>
+  </data>
+  <data name="menuItemsNotUpdated" xml:space="preserve">
+    <value>Functionality did not correspond to licenced functioanlity. It is not possible to set functionality to licenced.</value>
+  </data>
+  <data name="btnCloseSessions" xml:space="preserve">
+    <value>Close opened sessions</value>
+  </data>
+  <data name="sessionsClosed" xml:space="preserve">
+    <value>Opened sessions successufully closed.</value>
+  </data>
+  <data name="sessionsNotClosed" xml:space="preserve">
+    <value>Opened sessions could not be closed.</value>
+  </data>
+  <data name="SessionClosed" xml:space="preserve">
+    <value>Administrator has closed this session.</value>
+  </data>
+  <data name="adminRoleSeeInfo" xml:space="preserve">
+    <value>Only users from ADMIN role can open this window.</value>
+  </data>
+  <data name="numSessionsNotPositive" xml:space="preserve">
+    <value>Session number must be positive.</value>
+  </data>
+  <data name="closeSessions" xml:space="preserve">
+    <value>Do you want to close all opened sessions?</value>
+  </data>
+  <data name="gbDaysNavigation" xml:space="preserve">
+    <value>Days navigation</value>
+  </data>
+  <data name="gbGraphicReport" xml:space="preserve">
+    <value>Graphic report</value>
+  </data>
+  <data name="gbPageNavigation" xml:space="preserve">
+    <value>Page navigation</value>
+  </data>
+  <data name="tpEmployee" xml:space="preserve">
+    <value>Employee</value>
+  </data>
+  <data name="lblLate" xml:space="preserve">
+    <value>Late/ early arrival</value>
+  </data>
+  <data name="lblOfficialyOutgoing" xml:space="preserve">
+    <value>Officialy outgoing</value>
+  </data>
+  <data name="lblOutgoingInPrivate" xml:space="preserve">
+    <value>Outgoing in private</value>
+  </data>
+  <data name="lblPauseLegend" xml:space="preserve">
+    <value>Pause and pause(a)</value>
+  </data>
+  <data name="lblRegularWork" xml:space="preserve">
+    <value>Regular work</value>
+  </data>
+  <data name="lblSickLeave" xml:space="preserve">
+    <value>Sick-leave</value>
+  </data>
+  <data name="lblTheRestOfAllDayAbsence" xml:space="preserve">
+    <value>The rest of all day absence</value>
+  </data>
+  <data name="lblTheRestOfReaderPasses" xml:space="preserve">
+    <value>The rest of reader passes</value>
+  </data>
+  <data name="lblVacation" xml:space="preserve">
+    <value>Vacation</value>
+  </data>
+  <data name="NoUpdatePermision" xml:space="preserve">
+    <value>You have no permision for updating pair.</value>
+  </data>
+  <data name="lblEmployeeID" xml:space="preserve">
+    <value>Employee ID:</value>
+  </data>
+  <data name="workDayStartFutureDate" xml:space="preserve">
+    <value>You can not select time in future for  working day beggining exit permission (retroactive)!</value>
+  </data>
+  <data name="Thu" xml:space="preserve">
+    <value>Thr</value>
+  </data>
+  <data name="gbMonth" xml:space="preserve">
+    <value>Month</value>
+  </data>
+  <data name="lvPause" xml:space="preserve">
+    <value>Pause</value>
+  </data>
+  <data name="cbRetired" xml:space="preserve">
+    <value>Include RETIRED users</value>
+  </data>
+  <data name="IOPairDateUpdated" xml:space="preserve">
+    <value>Date is updated.To update report initialize search again</value>
+  </data>
+  <data name="btnGraphicReports" xml:space="preserve">
+    <value>Graphic reports</value>
+  </data>
+  <data name="gbMonthNavigation" xml:space="preserve">
+    <value>Month navigation</value>
+  </data>
+  <data name="chbAbsenceDuringWorkingTime" xml:space="preserve">
+    <value>Absence during working time</value>
+  </data>
+  <data name="chbWholeDayAbsence" xml:space="preserve">
+    <value>Whole day absence</value>
+  </data>
+  <data name="chbExtraHours" xml:space="preserve">
+    <value>Extra hours</value>
+  </data>
+  <data name="chbPhysicalAttendance" xml:space="preserve">
+    <value>Physical attendance</value>
+  </data>
+  <data name="gbGraphic" xml:space="preserve">
+    <value>Graphic</value>
+  </data>
+  <data name="gbStatisticReportType" xml:space="preserve">
+    <value>Statistic report type</value>
+  </data>
+  <data name="gbTimeInterval" xml:space="preserve">
+    <value>Time interval</value>
+  </data>
+  <data name="rbMultiWorkingUnit" xml:space="preserve">
+    <value>Multi working unit</value>
+  </data>
+  <data name="rbSingleWorkingUnit" xml:space="preserve">
+    <value>Single working unit</value>
+  </data>
+  <data name="statisticRports" xml:space="preserve">
+    <value>Statistic report</value>
+  </data>
+  <data name="lvApprovedAbsence" xml:space="preserve">
+    <value>Approved</value>
+  </data>
+  <data name="extraHours" xml:space="preserve">
+    <value>Extra hours</value>
+  </data>
+  <data name="lvNumOfHours" xml:space="preserve">
+    <value>Number of hours</value>
+  </data>
+  <data name="lvPercentOfPlaned" xml:space="preserve">
+    <value>% from planed</value>
+  </data>
+  <data name="lvPercentOfRelized" xml:space="preserve">
+    <value>% from realized</value>
+  </data>
+  <data name="lvPhysicalAttendance" xml:space="preserve">
+    <value>Physical attendance</value>
+  </data>
+  <data name="lvUnapprovedAbsence" xml:space="preserve">
+    <value>Unapproved</value>
+  </data>
+  <data name="MustSelectLessWU" xml:space="preserve">
+    <value>You can't generate statistic report's for more than four working units at the same time.</value>
+  </data>
+  <data name="lblOfficiallyOutgoing" xml:space="preserve">
+    <value>Officially outgoing</value>
+  </data>
+  <data name="lblPlaned" xml:space="preserve">
+    <value>Planed:</value>
+  </data>
+  <data name="lblRealized" xml:space="preserve">
+    <value>Realized:</value>
+  </data>
+  <data name="lbPause" xml:space="preserve">
+    <value>Pause</value>
+  </data>
+  <data name="ttApprovedAbsence" xml:space="preserve">
+    <value>Approved absence during working time</value>
+  </data>
+  <data name="ttUnapprovedAbsence" xml:space="preserve">
+    <value>Unapproved absence during working time</value>
+  </data>
+  <!--assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" /-->
+  <data name="Resource_sr" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>resource.sr.resx;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <!--<data name="Resource_sr_Designer" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>resource.sr.designer.cs;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>-->
+  <data name="selGraphType" xml:space="preserve">
+    <value>Please select graph type.</value>
+  </data>
+  <data name="theRestWU" xml:space="preserve">
+    <value>The rest working units</value>
+  </data>
+  <data name="lblRotation" xml:space="preserve">
+    <value>Rotation:</value>
+  </data>
+  <data name="NumOfEmplNotFound" xml:space="preserve">
+    <value>Number of pictures with wrong name: </value>
+  </data>
+  <data name="gbDestination" xml:space="preserve">
+    <value>Destination</value>
+  </data>
+  <data name="gbProgress" xml:space="preserve">
+    <value>Progress</value>
+  </data>
+  <data name="gbSource" xml:space="preserve">
+    <value>Source</value>
+  </data>
+  <data name="lblEmplPhotosNote" xml:space="preserve">
+    <value>Employee photos should be named as ID.jpg and placed on source folder</value>
+  </data>
+  <data name="menuEmplPhotosMaintenance" xml:space="preserve">
+    <value>Employee photos maintenance</value>
+  </data>
+  <data name="noPhotos" xml:space="preserve">
+    <value>No photos found for selected criteria.</value>
+  </data>
+  <data name="tpDump" xml:space="preserve">
+    <value>Dump</value>
+  </data>
+  <data name="tpLoad" xml:space="preserve">
+    <value>Load</value>
+  </data>
+  <data name="cbSaveFiles" xml:space="preserve">
+    <value>Save files</value>
+  </data>
+  <data name="gbSelectEndDate" xml:space="preserve">
+    <value>Select the end date for deleting files</value>
+  </data>
+  <data name="lblNumber" xml:space="preserve">
+    <value>Number:</value>
+  </data>
+  <data name="lblSize" xml:space="preserve">
+    <value>Size:</value>
+  </data>
+  <data name="menuCameraSnapshotMaintenance" xml:space="preserve">
+    <value>Camera snapshot maintenance</value>
+  </data>
+  <data name="selFolder" xml:space="preserve">
+    <value>You must select folder first.</value>
+  </data>
+  <data name="gbFound" xml:space="preserve">
+    <value>Found</value>
+  </data>
+  <data name="gbSearchCriteria" xml:space="preserve">
+    <value>Search criteria</value>
+  </data>
+  <data name="lblUntil" xml:space="preserve">
+    <value>Until:</value>
+  </data>
+  <data name="hdrMealType" xml:space="preserve">
+    <value>Meal type</value>
+  </data>
+  <data name="hdrMoneyAmount" xml:space="preserve">
+    <value>Money amount</value>
+  </data>
+  <data name="hdrQuantity" xml:space="preserve">
+    <value>Quantity</value>
+  </data>
+  <data name="hdrQuantityDaily" xml:space="preserve">
+    <value>Daily quantity</value>
+  </data>
+  <data name="hdrValidFrom" xml:space="preserve">
+    <value>Valid from</value>
+  </data>
+  <data name="hdrValidTo" xml:space="preserve">
+    <value>Valid to</value>
+  </data>
+  <data name="lblMealType" xml:space="preserve">
+    <value>Meal type:</value>
+  </data>
+  <data name="MealsAssignedTitle" xml:space="preserve">
+    <value>Assigned meals</value>
+  </data>
+  <data name="menuEmplPresenceRep" xml:space="preserve">
+    <value>Employees presence report</value>
+  </data>
+  <data name="menuGraficalRep" xml:space="preserve">
+    <value>Grafical reports</value>
+  </data>
+  <data name="menuRestaurant" xml:space="preserve">
+    <value>Restaurant</value>
+  </data>
+  <data name="menuWUStatisticalRep" xml:space="preserve">
+    <value>Working unit statistical report</value>
+  </data>
+  <data name="chbUnlimited" xml:space="preserve">
+    <value>Unlimited</value>
+  </data>
+  <data name="chooseMealType" xml:space="preserve">
+    <value>Choose meal type to assign it.</value>
+  </data>
+  <data name="gbAssignmentType" xml:space="preserve">
+    <value>Assignment type</value>
+  </data>
+  <data name="gbMealType" xml:space="preserve">
+    <value>Meal type</value>
+  </data>
+  <data name="gbValidity" xml:space="preserve">
+    <value>Validity</value>
+  </data>
+  <data name="hdrAssignmentType" xml:space="preserve">
+    <value>Assignment type</value>
+  </data>
+  <data name="hdrDailyLimit" xml:space="preserve">
+    <value>Daily limit</value>
+  </data>
+  <data name="hdrFrom" xml:space="preserve">
+    <value>From</value>
+  </data>
+  <data name="hdrTo" xml:space="preserve">
+    <value>To</value>
+  </data>
+  <data name="lblAmount" xml:space="preserve">
+    <value>Amount:</value>
+  </data>
+  <data name="lblDailyLimit" xml:space="preserve">
+    <value>Daily limit:</value>
+  </data>
+  <data name="MealAssignedAddTitle" xml:space="preserve">
+    <value>Assigning meals</value>
+  </data>
+  <data name="messageAmountMustBeNum" xml:space="preserve">
+    <value>Amount must be number.</value>
+  </data>
+  <data name="rbMeals" xml:space="preserve">
+    <value>Meals</value>
+  </data>
+  <data name="rbMoney" xml:space="preserve">
+    <value>Money</value>
+  </data>
+  <data name="selEmpl" xml:space="preserve">
+    <value>You must select employee.</value>
+  </data>
+  <data name="ttSelectAssignType" xml:space="preserve">
+    <value>Select assignment type and quantity/amount</value>
+  </data>
+  <data name="ttSelectEmpl" xml:space="preserve">
+    <value>Select one or more employees</value>
+  </data>
+  <data name="ttSelectPeriod" xml:space="preserve">
+    <value>Select validity period</value>
+  </data>
+  <data name="hdrMealPointID" xml:space="preserve">
+    <value>Meal point ID</value>
+  </data>
+  <data name="hdrMealTypeEmplID" xml:space="preserve">
+    <value>Meal type employeeID</value>
+  </data>
+  <data name="hdrMealTypeID" xml:space="preserve">
+    <value>Meal type ID</value>
+  </data>
+  <data name="hdrTerminalSerial" xml:space="preserve">
+    <value>Terminal serial</value>
+  </data>
+  <data name="lblMealPointID" xml:space="preserve">
+    <value>Meal point ID:</value>
+  </data>
+  <data name="lblMealTypeEmplID" xml:space="preserve">
+    <value>ID:</value>
+  </data>
+  <data name="lblMealTypeID" xml:space="preserve">
+    <value>Meal type ID:</value>
+  </data>
+  <data name="lblTerminalSerial" xml:space="preserve">
+    <value>Terminal serial:</value>
+  </data>
+  <data name="mealPointAdd" xml:space="preserve">
+    <value>Add meal point</value>
+  </data>
+  <data name="mealsAssigned" xml:space="preserve">
+    <value>Meals assigned successfully.</value>
+  </data>
+  <data name="mealTypeEmplAdd" xml:space="preserve">
+    <value>Add Meal type-employee</value>
+  </data>
+  <data name="mealTypesAdd" xml:space="preserve">
+    <value>Add meal type</value>
+  </data>
+  <data name="qtyValueChanged" xml:space="preserve">
+    <value>Quantity value must be more than daily limit value.</value>
+  </data>
+  <data name="restaurant" xml:space="preserve">
+    <value>Restaurant</value>
+  </data>
+  <data name="someMealsAlreadyDefined" xml:space="preserve">
+    <value> Meals already assigned for some employees. They are marked red in table.</value>
+  </data>
+  <data name="tpMealPoints" xml:space="preserve">
+    <value>Meal points</value>
+  </data>
+  <data name="tpMealTypeEmpl" xml:space="preserve">
+    <value>Meal types - employees</value>
+  </data>
+  <data name="tpMealTypes" xml:space="preserve">
+    <value>Meal types</value>
+  </data>
+  <data name="gbMealsUsed" xml:space="preserve">
+    <value>Meals used search</value>
+  </data>
+  <data name="gbReport" xml:space="preserve">
+    <value>Report</value>
+  </data>
+  <data name="hdrPoint" xml:space="preserve">
+    <value>Point</value>
+  </data>
+  <data name="lblMealsType" xml:space="preserve">
+    <value>Meal type:</value>
+  </data>
+  <data name="lblMoneyAmt" xml:space="preserve">
+    <value>Money amount:</value>
+  </data>
+  <data name="lblPoint" xml:space="preserve">
+    <value>Point:</value>
+  </data>
+  <data name="lblQty" xml:space="preserve">
+    <value>Quantity:</value>
+  </data>
+  <data name="lblSummary" xml:space="preserve">
+    <value>Summary:</value>
+  </data>
+  <data name="MealsUsedForm" xml:space="preserve">
+    <value>Meals used</value>
+  </data>
+  <data name="moneyAmtFromGreater" xml:space="preserve">
+    <value>Money amount interval beginning can not be greater then interval end.</value>
+  </data>
+  <data name="noMealsUsedFound" xml:space="preserve">
+    <value>No meals used found for search criteria.</value>
+  </data>
+  <data name="QtyFromGreater" xml:space="preserve">
+    <value>Quantity interval beginning can not be greater then interval end.</value>
+  </data>
+  <data name="MealPointIDNotInt" xml:space="preserve">
+    <value>If you want meal point id search, you must enter integer.</value>
+  </data>
+  <data name="mealPointsDeleted" xml:space="preserve">
+    <value>Selected meal points are successufully deleted.</value>
+  </data>
+  <data name="mealPointsNotDeleted" xml:space="preserve">
+    <value>Some of selected meal points could not be deleted.</value>
+  </data>
+  <data name="MealTypeEmployeeIDNotInt" xml:space="preserve">
+    <value>If you want meal type employee id search, you must enter integer.</value>
+  </data>
+  <data name="MealTypeIDNotInt" xml:space="preserve">
+    <value>If you want meal type id search, you must enter integer.</value>
+  </data>
+  <data name="mealTypeIDNotNum" xml:space="preserve">
+    <value>Meal type ID must be integer.</value>
+  </data>
+  <data name="mealTypeIDNotSet" xml:space="preserve">
+    <value>You must enter meal type ID.</value>
+  </data>
+  <data name="mealTypeInserted" xml:space="preserve">
+    <value>Meal type successufully saved. Do you want to save new meal type?</value>
+  </data>
+  <data name="mealTypeNameNotSet" xml:space="preserve">
+    <value>You must enter meal type name.</value>
+  </data>
+  <data name="mealTypeNotInserted" xml:space="preserve">
+    <value>Meal type is not saved.</value>
+  </data>
+  <data name="mealTypeNotUpdated" xml:space="preserve">
+    <value>Meal type is not changed.</value>
+  </data>
+  <data name="mealTypesDeleted" xml:space="preserve">
+    <value>Selected meal types are successufully deleted.</value>
+  </data>
+  <data name="mealTypesNotDeleted" xml:space="preserve">
+    <value>Some of selected meal types could not be deleted.</value>
+  </data>
+  <data name="mealTypesUpd" xml:space="preserve">
+    <value>Meal type update</value>
+  </data>
+  <data name="mealTypeUpdated" xml:space="preserve">
+    <value>Meal type successufully changed.</value>
+  </data>
+  <data name="messageDeleteMealPoint" xml:space="preserve">
+    <value>Are you sure you want to delete selected meal points?</value>
+  </data>
+  <data name="messageDeleteMealType" xml:space="preserve">
+    <value>Are you sure you want to delete selected meal types?</value>
+  </data>
+  <data name="noMealPointsFound" xml:space="preserve">
+    <value>No meal points found for selected search criteria.</value>
+  </data>
+  <data name="noMealPointUpd" xml:space="preserve">
+    <value>No selected meal point to update.</value>
+  </data>
+  <data name="noMealTypesFound" xml:space="preserve">
+    <value>No meal types found for selected search criteria.</value>
+  </data>
+  <data name="noMealTypeUpd" xml:space="preserve">
+    <value>No selected meal type to update.</value>
+  </data>
+  <data name="SelectMealPoint" xml:space="preserve">
+    <value>No selected meal points to delete.</value>
+  </data>
+  <data name="SelectMealType" xml:space="preserve">
+    <value>No selected meal types to delete.</value>
+  </data>
+  <data name="fromTimeGreater" xml:space="preserve">
+    <value>Time interval beginning must be less then time interval end.</value>
+  </data>
+  <data name="lblQtyDaily" xml:space="preserve">
+    <value>Daily quantity:</value>
+  </data>
+  <data name="mealAssignedDeleted" xml:space="preserve">
+    <value>Selected meals assigned are successufully deleted.</value>
+  </data>
+  <data name="mealAssignedNotDeleted" xml:space="preserve">
+    <value>Meals assigned are not deleted.</value>
+  </data>
+  <data name="mealPointInserted" xml:space="preserve">
+    <value>Meal point saved successufully. Do you want to add new meal point?</value>
+  </data>
+  <data name="mealPointNameNotSet" xml:space="preserve">
+    <value>You must enter meal point name.</value>
+  </data>
+  <data name="mealPointNotInserted" xml:space="preserve">
+    <value>Meal point not inserted.</value>
+  </data>
+  <data name="mealPointTerminalNotSet" xml:space="preserve">
+    <value>You must enter terminal serial.</value>
+  </data>
+  <data name="mealPointUpd" xml:space="preserve">
+    <value>Meal point update</value>
+  </data>
+  <data name="mealPointUpdated" xml:space="preserve">
+    <value>Meal point successufully updated.</value>
+  </data>
+  <data name="mealTypeEmplNameNotSet" xml:space="preserve">
+    <value>You must enter meal type employee name.</value>
+  </data>
+  <data name="mealTypeEmplUpd" xml:space="preserve">
+    <value>Meal type employee update</value>
+  </data>
+  <data name="messageDeleteMealAssigned" xml:space="preserve">
+    <value>Are you sure you want to delete selected meals assigned?</value>
+  </data>
+  <data name="SelectMealAssigned" xml:space="preserve">
+    <value>No meal assigned to delete.</value>
+  </data>
+  <data name="lblGenerateReport" xml:space="preserve">
+    <value>Generate report</value>
+  </data>
+  <data name="lvUnlimited" xml:space="preserve">
+    <value>Unlimited</value>
+  </data>
+  <data name="noMealsAssignedFound" xml:space="preserve">
+    <value>No meals assigned found.</value>
+  </data>
+  <data name="unlimited" xml:space="preserve">
+    <value>Include unlimited</value>
+  </data>
+  <data name="btnNext" xml:space="preserve">
+    <value>Next</value>
+  </data>
+  <data name="btnUse" xml:space="preserve">
+    <value>Use meal</value>
+  </data>
+  <data name="gbEmpl" xml:space="preserve">
+    <value>Employee data</value>
+  </data>
+  <data name="gbMeals" xml:space="preserve">
+    <value>Meals data</value>
+  </data>
+  <data name="gbStatus" xml:space="preserve">
+    <value>Status data</value>
+  </data>
+  <data name="lblAvailable" xml:space="preserve">
+    <value>Available:</value>
+  </data>
+  <data name="lblEmpl" xml:space="preserve">
+    <value>Employee:</value>
+  </data>
+  <data name="lblEmplType" xml:space="preserve">
+    <value>Employee type:</value>
+  </data>
+  <data name="lblInterval" xml:space="preserve">
+    <value>Interval:</value>
+  </data>
+  <data name="lblMeal" xml:space="preserve">
+    <value>meals</value>
+  </data>
+  <data name="lblMoney" xml:space="preserve">
+    <value>din</value>
+  </data>
+  <data name="lblStatusFailed" xml:space="preserve">
+    <value>Using service failed!</value>
+  </data>
+  <data name="lblStatusPassed" xml:space="preserve">
+    <value>Service successufully used:</value>
+  </data>
+  <data name="lblSum" xml:space="preserve">
+    <value>Sum:</value>
+  </data>
+  <data name="lblTypeMeal" xml:space="preserve">
+    <value>Meal type:</value>
+  </data>
+  <data name="lblUse" xml:space="preserve">
+    <value>Used:</value>
+  </data>
+  <data name="noTerminalFound" xml:space="preserve">
+    <value>Terminal not found.</value>
+  </data>
+  <data name="UsingMealsForm" xml:space="preserve">
+    <value>Using meals</value>
+  </data>
+  <data name="incorrectMealAssigned" xml:space="preserve">
+    <value>Incorrect meals assigned.</value>
+  </data>
+  <data name="moreThenOneMealAssigned" xml:space="preserve">
+    <value>More then one meals assigned to one date interval.</value>
+  </data>
+  <data name="noMealsAvailable" xml:space="preserve">
+    <value>Employee does not have available meals.</value>
+  </data>
+  <data name="notValidTag" xml:space="preserve">
+    <value>No ACTIVE employee found or there is no employee meal type assigned.</value>
+  </data>
+  <data name="btnCloseEsc" xml:space="preserve">
+    <value>Close [Esc]</value>
+  </data>
+  <data name="qtyDailyLimitReached" xml:space="preserve">
+    <value>Daily quantity limit reached.</value>
+  </data>
+  <data name="useFailed" xml:space="preserve">
+    <value>Saving meals as used failed.</value>
+  </data>
+  <data name="lblUsedMeal" xml:space="preserve">
+    <value>Used:</value>
+  </data>
+  <data name="noMealAssigned" xml:space="preserve">
+    <value>No meals assigned for today.</value>
+  </data>
+  <data name="btnGenerateReport" xml:space="preserve">
+    <value>Generate report</value>
+  </data>
+  <data name="incorrectMealPrice" xml:space="preserve">
+    <value>Meal price must be integer.</value>
+  </data>
+  <data name="hdrPurpose" xml:space="preserve">
+    <value>Purpose</value>
+  </data>
+  <data name="lblPurposes" xml:space="preserve">
+    <value>Purposes:</value>
+  </data>
+  <data name="lblWorkingUnits" xml:space="preserve">
+    <value>Working units:</value>
+  </data>
+  <data name="menuCameraSnapshostManagament" xml:space="preserve">
+    <value>Cameras</value>
+  </data>
+  <data name="menuEmplPhotoManagament" xml:space="preserve">
+    <value>Employees</value>
+  </data>
+  <data name="menuPicManagament" xml:space="preserve">
+    <value>Picture managament</value>
+  </data>
+  <data name="purposeAbsences" xml:space="preserve">
+    <value />
+  </data>
+  <data name="purposeEmployees" xml:space="preserve">
+    <value />
+  </data>
+  <data name="purposeExtraHours" xml:space="preserve">
+    <value />
+  </data>
+  <data name="purposeIOPair" xml:space="preserve">
+    <value />
+  </data>
+  <data name="purposeLoaction" xml:space="preserve">
+    <value />
+  </data>
+  <data name="purposePass" xml:space="preserve">
+    <value />
+  </data>
+  <data name="purposePermission" xml:space="preserve">
+    <value />
+  </data>
+  <data name="purposePermVerification" xml:space="preserve">
+    <value />
+  </data>
+  <data name="purposeReport" xml:space="preserve">
+    <value />
+  </data>
+  <data name="purposeRestaurant" xml:space="preserve">
+    <value />
+  </data>
+  <data name="applUserXWUNotSaved" xml:space="preserve">
+    <value>Changes are not saved.</value>
+  </data>
+  <data name="SelectUser" xml:space="preserve">
+    <value>Select users first.</value>
+  </data>
+  <data name="menuItemTrespass" xml:space="preserve">
+    <value>Trespass</value>
+  </data>
+  <data name="hdrGate" xml:space="preserve">
+    <value>Gate</value>
+  </data>
+  <data name="lblManualCreated" xml:space="preserve">
+    <value>**Manualy manipulated</value>
+  </data>
+  <data name="tpListView" xml:space="preserve">
+    <value>List view</value>
+  </data>
+  <data name="tpTreeView" xml:space="preserve">
+    <value>Tree view</value>
+  </data>
+  <data name="btnToXML" xml:space="preserve">
+    <value>Create XML</value>
+  </data>
+  <data name="lblReader" xml:space="preserve">
+    <value>Terminal:</value>
+  </data>
+  <data name="lblSrcFile" xml:space="preserve">
+    <value>Source file:</value>
+  </data>
+  <data name="workingUnitsSelecting" xml:space="preserve">
+    <value>Selecting working unit</value>
+  </data>
+  <data name="readerNotSelected" xml:space="preserve">
+    <value>Select terminal first.</value>
+  </data>
+  <data name="srcFileNotSelected" xml:space="preserve">
+    <value>Select source file.</value>
+  </data>
+  <data name="locationSelecting" xml:space="preserve">
+    <value>Selecting location</value>
+  </data>
+  <data name="menuItemMillennium" xml:space="preserve">
+    <value>Millennium reports</value>
+  </data>
+  <data name="gbOfflineVisits" xml:space="preserve">
+    <value>Offline visits</value>
+  </data>
+  <data name="lblOfflineVisits" xml:space="preserve">
+    <value>Offline visits:</value>
+  </data>
+  <data name="gbRouteSearch" xml:space="preserve">
+    <value>Route search</value>
+  </data>
+  <data name="lblRoute" xml:space="preserve">
+    <value>Route:</value>
+  </data>
+  <data name="enterRouteName" xml:space="preserve">
+    <value>You must enter route name.</value>
+  </data>
+  <data name="gbAddRoute" xml:space="preserve">
+    <value>Add security routes</value>
+  </data>
+  <data name="gbGates" xml:space="preserve">
+    <value>Gates</value>
+  </data>
+  <data name="gbRoutes" xml:space="preserve">
+    <value>Routes</value>
+  </data>
+  <data name="gbRouteTimeInterval" xml:space="preserve">
+    <value>Time of visits</value>
+  </data>
+  <data name="lblNextVisit" xml:space="preserve">
+    <value>Move next visit:</value>
+  </data>
+  <data name="routeDeleted" xml:space="preserve">
+    <value>Route successufully deleted.</value>
+  </data>
+  <data name="routeNotDeleted" xml:space="preserve">
+    <value>Route could not be deleted.</value>
+  </data>
+  <data name="routesInserted" xml:space="preserve">
+    <value>Routes successufully saved. Do you want to add new route?</value>
+  </data>
+  <data name="routesNotInserted" xml:space="preserve">
+    <value>Routes could not be saved.</value>
+  </data>
+  <data name="SecurityRoutesAddForm" xml:space="preserve">
+    <value>Add security routes</value>
+  </data>
+  <data name="SecurityRoutesForm" xml:space="preserve">
+    <value>Security routes</value>
+  </data>
+  <data name="selectGates" xml:space="preserve">
+    <value>You must select gate first.</value>
+  </data>
+  <data name="selectRouteToDelete" xml:space="preserve">
+    <value>Select route to delete.</value>
+  </data>
+  <data name="tabMaintenance" xml:space="preserve">
+    <value>Maintenance</value>
+  </data>
+  <data name="tabScheduledRoute" xml:space="preserve">
+    <value>Scheduled routes</value>
+  </data>
+  <data name="btnAssignRouteSch" xml:space="preserve">
+    <value>Assogn new schedule</value>
+  </data>
+  <data name="btnListView" xml:space="preserve">
+    <value>List view</value>
+  </data>
+  <data name="deleteRouteSchedules" xml:space="preserve">
+    <value>Only SCHEDULED route schedules will be deleted. Are you sure you want to delete selected route schedules?</value>
+  </data>
+  <data name="gbDetails" xml:space="preserve">
+    <value>Details</value>
+  </data>
+  <data name="gbRouteSch" xml:space="preserve">
+    <value>Route schedules</value>
+  </data>
+  <data name="gbRouteSchSearch" xml:space="preserve">
+    <value>Search route schedule</value>
+  </data>
+  <data name="hdrRoute" xml:space="preserve">
+    <value>Route</value>
+  </data>
+  <data name="routeSchDeleted" xml:space="preserve">
+    <value>Selected route schedules successufully deleted.</value>
+  </data>
+  <data name="routeSchedulesNotFound" xml:space="preserve">
+    <value>No route schedules found.</value>
+  </data>
+  <data name="routeSchNotDeleted" xml:space="preserve">
+    <value>Some of selected route schedules could not be deleted.</value>
+  </data>
+  <data name="selectRouteSchToDelete" xml:space="preserve">
+    <value>Select route schedule to delete.</value>
+  </data>
+  <data name="btnClearSelectedDays" xml:space="preserve">
+    <value>Clear selected days</value>
+  </data>
+  <data name="Route" xml:space="preserve">
+    <value>Route</value>
+  </data>
+  <data name="routeScheduleNotSaved" xml:space="preserve">
+    <value>Route schedule could not be saved.</value>
+  </data>
+  <data name="routeScheduleSaved" xml:space="preserve">
+    <value>Route schedule successufully saved.</value>
+  </data>
+  <data name="SecurityRoutesScheduleAddForm" xml:space="preserve">
+    <value>Assigning route schedule to employee</value>
+  </data>
+  <data name="selectEmplRouteSch" xml:space="preserve">
+    <value>You must select employee first.</value>
+  </data>
+  <data name="selectOneDayCalendarRouteSch" xml:space="preserve">
+    <value>You must select days.</value>
+  </data>
+  <data name="selectRoute" xml:space="preserve">
+    <value>You must select route first.</value>
+  </data>
+  <data name="selectRouteSchUpd" xml:space="preserve">
+    <value>Select route schedule to update.</value>
+  </data>
+  <data name="menuRoutesTag" xml:space="preserve">
+    <value>Routes by tag</value>
+  </data>
+  <data name="hdrRealizationTime" xml:space="preserve">
+    <value>Vreme registracije</value>
+  </data>
+  <data name="hdrRouteSch" xml:space="preserve">
+    <value>Route schedule</value>
+  </data>
+  <data name="lblRepType" xml:space="preserve">
+    <value>Report type:</value>
+  </data>
+  <data name="rbAnalytic" xml:space="preserve">
+    <value>Analytic</value>
+  </data>
+  <data name="rbSyntetic" xml:space="preserve">
+    <value>Syntetic</value>
+  </data>
+  <data name="btnSelectAll" xml:space="preserve">
+    <value>Select all</value>
+  </data>
+  <data name="snapshotsForm" xml:space="preserve">
+    <value>Camera photo</value>
+  </data>
+  <data name="rbRouteTag" xml:space="preserve">
+    <value>by tag</value>
+  </data>
+  <data name="rbTerminal" xml:space="preserve">
+    <value>by terminal</value>
+  </data>
+  <data name="menuRoutes" xml:space="preserve">
+    <value>Routes</value>
+  </data>
+  <data name="menuRoutesTerminal" xml:space="preserve">
+    <value>Routes by terminal</value>
+  </data>
+  <data name="noScheduledRouteSch" xml:space="preserve">
+    <value>No SCHEDULED routes schedules to delete.</value>
+  </data>
+  <data name="btnImport" xml:space="preserve">
+    <value>Import</value>
+  </data>
+  <data name="gbEmplNotRoute" xml:space="preserve">
+    <value>Employees who are not assigned security routes</value>
+  </data>
+  <data name="gbEmplRoutes" xml:space="preserve">
+    <value>Employees who are assigned security routes</value>
+  </data>
+  <data name="gbPoints" xml:space="preserve">
+    <value>Control points</value>
+  </data>
+  <data name="gbPointSearch" xml:space="preserve">
+    <value>Control points search</value>
+  </data>
+  <data name="gbReaderSearch" xml:space="preserve">
+    <value>Terminal search</value>
+  </data>
+  <data name="hdrEmplID" xml:space="preserve">
+    <value>Employee ID</value>
+  </data>
+  <data name="hdrPointID" xml:space="preserve">
+    <value>Control point ID</value>
+  </data>
+  <data name="lblPointID" xml:space="preserve">
+    <value>Control point ID:</value>
+  </data>
+  <data name="pointsNotFound" xml:space="preserve">
+    <value>No control points found</value>
+  </data>
+  <data name="tabEmployees" xml:space="preserve">
+    <value>Employees</value>
+  </data>
+  <data name="tabImportLog" xml:space="preserve">
+    <value>Import log</value>
+  </data>
+  <data name="tabPoints" xml:space="preserve">
+    <value>Control points</value>
+  </data>
+  <data name="tabTerminals" xml:space="preserve">
+    <value>Routes terminals</value>
+  </data>
+  <data name="addMap" xml:space="preserve">
+    <value>Add map</value>
+  </data>
+  <data name="deleteMap" xml:space="preserve">
+    <value>Are you sure you want to delete selected maps?</value>
+  </data>
+  <data name="hdrMapID" xml:space="preserve">
+    <value>Map ID</value>
+  </data>
+  <data name="hdrParentMap" xml:space="preserve">
+    <value>Parent map</value>
+  </data>
+  <data name="lblMapID" xml:space="preserve">
+    <value>Map ID:</value>
+  </data>
+  <data name="lblParentMap" xml:space="preserve">
+    <value>Parent map:</value>
+  </data>
+  <data name="mapNotUpdated" xml:space="preserve">
+    <value>Map is not changed.</value>
+  </data>
+  <data name="mapsDeleted" xml:space="preserve">
+    <value>Maps successfully deleted.</value>
+  </data>
+  <data name="mapsMaintenance" xml:space="preserve">
+    <value>Maps maintenance</value>
+  </data>
+  <data name="mapsNotDeleted" xml:space="preserve">
+    <value>Some of selected maps could not be deleted.</value>
+  </data>
+  <data name="mapUpdated" xml:space="preserve">
+    <value>Map successfully updated.</value>
+  </data>
+  <data name="messageMapIDMustBeNum" xml:space="preserve">
+    <value>Map ID must be number.</value>
+  </data>
+  <data name="messageMapIDNotSet" xml:space="preserve">
+    <value>You must enter map ID.</value>
+  </data>
+  <data name="messageMapInserted" xml:space="preserve">
+    <value>Map successfully inserted. Do you want to enter new map?</value>
+  </data>
+  <data name="messageMapNameNotSet" xml:space="preserve">
+    <value>You must enter map name.</value>
+  </data>
+  <data name="messageNoPictureSelected" xml:space="preserve">
+    <value>You must select pisture.</value>
+  </data>
+  <data name="noSelMapsDel" xml:space="preserve">
+    <value>No selected map to delete.</value>
+  </data>
+  <data name="updateMap" xml:space="preserve">
+    <value>Update map</value>
+  </data>
+  <data name="addCameraMode" xml:space="preserve">
+    <value>Add camera</value>
+  </data>
+  <data name="addGateMode" xml:space="preserve">
+    <value>Add gate</value>
+  </data>
+  <data name="addLocationMode" xml:space="preserve">
+    <value>Add location</value>
+  </data>
+  <data name="addReaderMode" xml:space="preserve">
+    <value>Add reader</value>
+  </data>
+  <data name="lblMode" xml:space="preserve">
+    <value>Mode:</value>
+  </data>
+  <data name="lblObjectType" xml:space="preserve">
+    <value>Object type:</value>
+  </data>
+  <data name="lblPosition" xml:space="preserve">
+    <value>Position:</value>
+  </data>
+  <data name="mapObjectsMaintenance" xml:space="preserve">
+    <value>Object maintenance</value>
+  </data>
+  <data name="pointDeleted" xml:space="preserve">
+    <value>Selected control points successufully deleted.</value>
+  </data>
+  <data name="pointNotDeleted" xml:space="preserve">
+    <value>Some of selected control points could not be deleted.</value>
+  </data>
+  <data name="selectPointToDelete" xml:space="preserve">
+    <value>You must select control points to delete.</value>
+  </data>
+  <data name="noPointsSelectedUpd" xml:space="preserve">
+    <value>No selected control points to update.</value>
+  </data>
+  <data name="noReaderSelectedUpd" xml:space="preserve">
+    <value>No selected terminals to update.</value>
+  </data>
+  <data name="pointIDEmpty" xml:space="preserve">
+    <value>You must enter ID.</value>
+  </data>
+  <data name="pointIDNotNum" xml:space="preserve">
+    <value>ID must be positive number.</value>
+  </data>
+  <data name="pointNotSaved" xml:space="preserve">
+    <value>Control point could not be saved.</value>
+  </data>
+  <data name="pointNotUpdated" xml:space="preserve">
+    <value>Control point could not be updated.</value>
+  </data>
+  <data name="pointSaved" xml:space="preserve">
+    <value>Control point successufully saved. Do you want to save new control point?</value>
+  </data>
+  <data name="pointUpdated" xml:space="preserve">
+    <value>Control point successufully updated.</value>
+  </data>
+  <data name="readerNotSaved" xml:space="preserve">
+    <value>Terminal could not be saved.</value>
+  </data>
+  <data name="readerNotUpdated" xml:space="preserve">
+    <value>Terminal could not be updated.</value>
+  </data>
+  <data name="secRouteReaderSaved" xml:space="preserve">
+    <value>Terminal successufully saved. Do you want to add new terminal?</value>
+  </data>
+  <data name="SecurityRoutesPointAdd" xml:space="preserve">
+    <value>Control points add</value>
+  </data>
+  <data name="SecurityRoutesPointUpd" xml:space="preserve">
+    <value>Control points update</value>
+  </data>
+  <data name="selectReaderToDelete" xml:space="preserve">
+    <value>No selected terminals to delete.</value>
+  </data>
+  <data name="tagIDEmpty" xml:space="preserve">
+    <value>You must enter tag ID.</value>
+  </data>
+  <data name="emplContainsLog" xml:space="preserve">
+    <value>security_routes_log table containes record for this employee so employee could not be removed.</value>
+  </data>
+  <data name="emplNotSaved" xml:space="preserve">
+    <value>Some employees could not be saved.</value>
+  </data>
+  <data name="emplSaved" xml:space="preserve">
+    <value>Employees successufully saved.</value>
+  </data>
+  <data name="lblMap" xml:space="preserve">
+    <value>Map:</value>
+  </data>
+  <data name="noImage" xml:space="preserve">
+    <value>Image selection</value>
+  </data>
+  <data name="noModeSelected" xml:space="preserve">
+    <value>Add object</value>
+  </data>
+  <data name="objectNotSaved" xml:space="preserve">
+    <value>Object cannot be saved.</value>
+  </data>
+  <data name="objectSaved" xml:space="preserve">
+    <value>Object successufully saved.</value>
+  </data>
+  <data name="savePreviusObject" xml:space="preserve">
+    <value>First save previous enter.</value>
+  </data>
+  <data name="selectObjectinList" xml:space="preserve">
+    <value>Select object in list.</value>
+  </data>
+  <data name="selectPicture" xml:space="preserve">
+    <value>You must select picture first.</value>
+  </data>
+  <data name="selectPoint" xml:space="preserve">
+    <value>You must select object position first.</value>
+  </data>
+  <data name="menuRemove" xml:space="preserve">
+    <value>Remove</value>
+  </data>
+  <data name="mapReview" xml:space="preserve">
+    <value>Map review</value>
+  </data>
+  <data name="menuATBFODPaymentRep" xml:space="preserve">
+    <value>FOD payment</value>
+  </data>
+  <data name="menuATBFODPresenceRep" xml:space="preserve">
+    <value>FOD employee presence for working unit</value>
+  </data>
+  <data name="menuATBFODRep" xml:space="preserve">
+    <value>FOD reports</value>
+  </data>
+  <data name="btnClearLast" xml:space="preserve">
+    <value>Clear last enter</value>
+  </data>
+  <data name="currentPresence" xml:space="preserve">
+    <value>Current presence</value>
+  </data>
+  <data name="liveStream" xml:space="preserve">
+    <value>Live stream</value>
+  </data>
+  <data name="startMonitor" xml:space="preserve">
+    <value>Start monitor</value>
+  </data>
+</root>

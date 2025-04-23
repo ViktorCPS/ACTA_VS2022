@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="SummaryEmployeeLocations" targetNamespace="http://tempuri.org/SummaryEmployeeLocations.xsd" xmlns:mstns="http://tempuri.org/SummaryEmployeeLocations.xsd" xmlns="http://tempuri.org/SummaryEmployeeLocations.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="SummaryEmployeeLocations" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_DataSetName="SummaryEmployeeLocations" msprop:Generator_UserDSName="SummaryEmployeeLocations" msprop:EnableTableAdapterManager="true">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="wu_presence" msprop:Generator_UserTableName="wu_presence" msprop:Generator_RowDeletedName="wu_presenceRowDeleted" msprop:Generator_TableClassName="wu_presenceDataTable" msprop:Generator_RowChangedName="wu_presenceRowChanged" msprop:Generator_RowClassName="wu_presenceRow" msprop:Generator_RowChangingName="wu_presenceRowChanging" msprop:Generator_RowEvArgName="wu_presenceRowChangeEvent" msprop:Generator_RowEvHandlerName="wu_presenceRowChangeEventHandler" msprop:Generator_TablePropName="wu_presence" msprop:Generator_TableVarName="tablewu_presence" msprop:Generator_RowDeletingName="wu_presenceRowDeleting">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="wu" msprop:Generator_UserColumnName="wu" msprop:Generator_ColumnPropNameInRow="wu" msprop:Generator_ColumnVarNameInTable="columnwu" msprop:Generator_ColumnPropNameInTable="wuColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="present" msprop:Generator_UserColumnName="present" msprop:Generator_ColumnPropNameInRow="present" msprop:Generator_ColumnVarNameInTable="columnpresent" msprop:Generator_ColumnPropNameInTable="presentColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="absent" msprop:Generator_UserColumnName="absent" msprop:Generator_ColumnPropNameInRow="absent" msprop:Generator_ColumnVarNameInTable="columnabsent" msprop:Generator_ColumnPropNameInTable="absentColumn" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="wu_loc_presence" msprop:Generator_UserTableName="wu_loc_presence" msprop:Generator_RowDeletedName="wu_loc_presenceRowDeleted" msprop:Generator_TableClassName="wu_loc_presenceDataTable" msprop:Generator_RowChangedName="wu_loc_presenceRowChanged" msprop:Generator_RowClassName="wu_loc_presenceRow" msprop:Generator_RowChangingName="wu_loc_presenceRowChanging" msprop:Generator_RowEvArgName="wu_loc_presenceRowChangeEvent" msprop:Generator_RowEvHandlerName="wu_loc_presenceRowChangeEventHandler" msprop:Generator_TablePropName="wu_loc_presence" msprop:Generator_TableVarName="tablewu_loc_presence" msprop:Generator_RowDeletingName="wu_loc_presenceRowDeleting">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="wu" msprop:Generator_UserColumnName="wu" msprop:Generator_ColumnPropNameInRow="wu" msprop:Generator_ColumnVarNameInTable="columnwu" msprop:Generator_ColumnPropNameInTable="wuColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="location" msprop:Generator_UserColumnName="location" msprop:Generator_ColumnPropNameInRow="location" msprop:Generator_ColumnVarNameInTable="columnlocation" msprop:Generator_ColumnPropNameInTable="locationColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="present" msprop:Generator_UserColumnName="present" msprop:Generator_ColumnPropNameInRow="present" msprop:Generator_ColumnVarNameInTable="columnpresent" msprop:Generator_ColumnPropNameInTable="presentColumn" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="loc_wu_presence" msprop:Generator_UserTableName="loc_wu_presence" msprop:Generator_RowDeletedName="loc_wu_presenceRowDeleted" msprop:Generator_TableClassName="loc_wu_presenceDataTable" msprop:Generator_RowChangedName="loc_wu_presenceRowChanged" msprop:Generator_RowClassName="loc_wu_presenceRow" msprop:Generator_RowChangingName="loc_wu_presenceRowChanging" msprop:Generator_RowEvArgName="loc_wu_presenceRowChangeEvent" msprop:Generator_RowEvHandlerName="loc_wu_presenceRowChangeEventHandler" msprop:Generator_TablePropName="loc_wu_presence" msprop:Generator_TableVarName="tableloc_wu_presence" msprop:Generator_RowDeletingName="loc_wu_presenceRowDeleting">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="wu" msprop:Generator_UserColumnName="wu" msprop:Generator_ColumnPropNameInRow="wu" msprop:Generator_ColumnVarNameInTable="columnwu" msprop:Generator_ColumnPropNameInTable="wuColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="present" msprop:Generator_UserColumnName="present" msprop:Generator_ColumnPropNameInRow="present" msprop:Generator_ColumnVarNameInTable="columnpresent" msprop:Generator_ColumnPropNameInTable="presentColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="absent" msprop:Generator_UserColumnName="absent" msprop:Generator_ColumnPropNameInRow="absent" msprop:Generator_ColumnVarNameInTable="columnabsent" msprop:Generator_ColumnPropNameInTable="absentColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="location" msprop:Generator_UserColumnName="location" msprop:Generator_ColumnPropNameInRow="location" msprop:Generator_ColumnVarNameInTable="columnlocation" msprop:Generator_ColumnPropNameInTable="locationColumn" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="loc_presence" msprop:Generator_UserTableName="loc_presence" msprop:Generator_RowDeletedName="loc_presenceRowDeleted" msprop:Generator_TableClassName="loc_presenceDataTable" msprop:Generator_RowChangedName="loc_presenceRowChanged" msprop:Generator_RowClassName="loc_presenceRow" msprop:Generator_RowChangingName="loc_presenceRowChanging" msprop:Generator_RowEvArgName="loc_presenceRowChangeEvent" msprop:Generator_RowEvHandlerName="loc_presenceRowChangeEventHandler" msprop:Generator_TablePropName="loc_presence" msprop:Generator_TableVarName="tableloc_presence" msprop:Generator_RowDeletingName="loc_presenceRowDeleting">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="location" msprop:Generator_UserColumnName="location" msprop:Generator_ColumnPropNameInRow="location" msprop:Generator_ColumnVarNameInTable="columnlocation" msprop:Generator_ColumnPropNameInTable="locationColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="present" msprop:Generator_UserColumnName="present" msprop:Generator_ColumnPropNameInRow="present" msprop:Generator_ColumnVarNameInTable="columnpresent" msprop:Generator_ColumnPropNameInTable="presentColumn" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

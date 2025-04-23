@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="SecurityRoutesSchedules" targetNamespace="http://tempuri.org/SecurityRoutesSchedules.xsd" xmlns:mstns="http://tempuri.org/SecurityRoutesSchedules.xsd" xmlns="http://tempuri.org/SecurityRoutesSchedules.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+        </Connections>
+        <Tables>
+        </Tables>
+        <Sources>
+        </Sources>
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="SecurityRoutesSchedules" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="SecurityRoutesSchedules" msprop:Generator_DataSetName="SecurityRoutesSchedules">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="security_routes_schedule" msprop:Generator_UserTableName="security_routes_schedule" msprop:Generator_RowDeletedName="security_routes_scheduleRowDeleted" msprop:Generator_RowChangedName="security_routes_scheduleRowChanged" msprop:Generator_RowClassName="security_routes_scheduleRow" msprop:Generator_RowChangingName="security_routes_scheduleRowChanging" msprop:Generator_RowEvArgName="security_routes_scheduleRowChangeEvent" msprop:Generator_RowEvHandlerName="security_routes_scheduleRowChangeEventHandler" msprop:Generator_TableClassName="security_routes_scheduleDataTable" msprop:Generator_TableVarName="tablesecurity_routes_schedule" msprop:Generator_RowDeletingName="security_routes_scheduleRowDeleting" msprop:Generator_TablePropName="security_routes_schedule">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="route_sch_id" msprop:Generator_UserColumnName="route_sch_id" msprop:Generator_ColumnVarNameInTable="columnroute_sch_id" msprop:Generator_ColumnPropNameInRow="route_sch_id" msprop:Generator_ColumnPropNameInTable="route_sch_idColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="employee" msprop:Generator_UserColumnName="employee" msprop:Generator_ColumnVarNameInTable="columnemployee" msprop:Generator_ColumnPropNameInRow="employee" msprop:Generator_ColumnPropNameInTable="employeeColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="date" msprop:Generator_UserColumnName="date" msprop:Generator_ColumnPropNameInRow="date" msprop:Generator_ColumnVarNameInTable="columndate" msprop:Generator_ColumnPropNameInTable="dateColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="route" msprop:Generator_UserColumnName="route" msprop:Generator_ColumnPropNameInRow="route" msprop:Generator_ColumnVarNameInTable="columnroute" msprop:Generator_ColumnPropNameInTable="routeColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="status" msprop:Generator_UserColumnName="status" msprop:Generator_ColumnPropNameInRow="status" msprop:Generator_ColumnVarNameInTable="columnstatus" msprop:Generator_ColumnPropNameInTable="statusColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="imageID" msprop:Generator_UserColumnName="imageID" msprop:Generator_ColumnPropNameInRow="imageID" msprop:Generator_ColumnVarNameInTable="columnimageID" msprop:Generator_ColumnPropNameInTable="imageIDColumn" type="xs:byte" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="images" msprop:Generator_UserTableName="images" msprop:Generator_RowDeletedName="imagesRowDeleted" msprop:Generator_RowChangedName="imagesRowChanged" msprop:Generator_RowClassName="imagesRow" msprop:Generator_RowChangingName="imagesRowChanging" msprop:Generator_RowEvArgName="imagesRowChangeEvent" msprop:Generator_RowEvHandlerName="imagesRowChangeEventHandler" msprop:Generator_TableClassName="imagesDataTable" msprop:Generator_TableVarName="tableimages" msprop:Generator_RowDeletingName="imagesRowDeleting" msprop:Generator_TablePropName="images">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="image" msprop:Generator_UserColumnName="image" msprop:Generator_ColumnPropNameInRow="image" msprop:Generator_ColumnVarNameInTable="columnimage" msprop:Generator_ColumnPropNameInTable="imageColumn" type="xs:base64Binary" minOccurs="0" />
+              <xs:element name="imageID" msprop:Generator_UserColumnName="imageID" msprop:Generator_ColumnPropNameInRow="imageID" msprop:Generator_ColumnVarNameInTable="columnimageID" msprop:Generator_ColumnPropNameInTable="imageIDColumn" type="xs:byte" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="security_routes_sch_dtl" msprop:Generator_UserTableName="security_routes_sch_dtl" msprop:Generator_RowDeletedName="security_routes_sch_dtlRowDeleted" msprop:Generator_RowChangedName="security_routes_sch_dtlRowChanged" msprop:Generator_RowClassName="security_routes_sch_dtlRow" msprop:Generator_RowChangingName="security_routes_sch_dtlRowChanging" msprop:Generator_RowEvArgName="security_routes_sch_dtlRowChangeEvent" msprop:Generator_RowEvHandlerName="security_routes_sch_dtlRowChangeEventHandler" msprop:Generator_TableClassName="security_routes_sch_dtlDataTable" msprop:Generator_TableVarName="tablesecurity_routes_sch_dtl" msprop:Generator_RowDeletingName="security_routes_sch_dtlRowDeleting" msprop:Generator_TablePropName="security_routes_sch_dtl">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="route_sch_id" msprop:Generator_UserColumnName="route_sch_id" msprop:Generator_ColumnVarNameInTable="columnroute_sch_id" msprop:Generator_ColumnPropNameInRow="route_sch_id" msprop:Generator_ColumnPropNameInTable="route_sch_idColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="gate" msprop:Generator_UserColumnName="gate" msprop:Generator_ColumnVarNameInTable="columngate" msprop:Generator_ColumnPropNameInRow="gate" msprop:Generator_ColumnPropNameInTable="gateColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="time_scheduled" msprop:Generator_UserColumnName="time_scheduled" msprop:Generator_ColumnVarNameInTable="columntime_scheduled" msprop:Generator_ColumnPropNameInRow="time_scheduled" msprop:Generator_ColumnPropNameInTable="time_scheduledColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="time_realized" msprop:Generator_UserColumnName="time_realized" msprop:Generator_ColumnVarNameInTable="columntime_realized" msprop:Generator_ColumnPropNameInRow="time_realized" msprop:Generator_ColumnPropNameInTable="time_realizedColumn" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

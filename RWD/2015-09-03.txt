@@ -1,0 +1,6 @@
+13:11:35	Collect log starts, readerID=01
+13:11:35	comPort=COM169085131:10001 880 bytes taken;
+13:11:35	buttonGetLog_ClickAccess to the path 'C:\Back up ACTA 3.0\ACTA-3.0\RWD\Log.dat' is denied.
+13:38:37	Collect log starts, readerID=01
+13:38:37	comPort=COM169085131:10001 896 bytes taken;
+13:38:37	buttonGetLog_ClickAccess to the path 'C:\Back up ACTA 3.0\ACTA-3.0\RWD\Log.dat' is denied.

@@ -1,0 +1,195 @@
+<?xml version="1.0"?>
+<ArrayOfPassTypeTO xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <PassTypeTO PassTypeID="13">
+    <Description>Bolovanje - porodiljsko</Description>
+    <Button>-1</Button>
+    <IsPass>2</IsPass>
+    <PaymentCode>1610</PaymentCode>
+  </PassTypeTO>
+  <PassTypeTO PassTypeID="14">
+    <Description>Bolovanje - povreda na radu</Description>
+    <Button>-1</Button>
+    <IsPass>2</IsPass>
+    <PaymentCode>1011</PaymentCode>
+  </PassTypeTO>
+  <PassTypeTO PassTypeID="6">
+    <Description>Bolovanje do 42 dana</Description>
+    <Button>-1</Button>
+    <IsPass>2</IsPass>
+    <PaymentCode>1010</PaymentCode>
+  </PassTypeTO>
+  <PassTypeTO PassTypeID="12">
+    <Description>Bolovanje preko 42 dana</Description>
+    <Button>-1</Button>
+    <IsPass>2</IsPass>
+    <PaymentCode>1500</PaymentCode>
+  </PassTypeTO>
+  <PassTypeTO PassTypeID="-9">
+    <Description>Bonovi</Description>
+    <Button>-1</Button>
+    <IsPass>0</IsPass>
+    <PaymentCode>3000</PaymentCode>
+  </PassTypeTO>
+  <PassTypeTO PassTypeID="-5">
+    <Description>Čekanje</Description>
+    <Button>-1</Button>
+    <IsPass>0</IsPass>
+    <PaymentCode>0088</PaymentCode>
+  </PassTypeTO>
+  <PassTypeTO PassTypeID="-101">
+    <Description>Ekstra sati (a)</Description>
+    <Button>-1</Button>
+    <IsPass>0</IsPass>
+    <PaymentCode>0000</PaymentCode>
+  </PassTypeTO>
+  <PassTypeTO PassTypeID="5">
+    <Description>Godišnji odmor</Description>
+    <Button>-1</Button>
+    <IsPass>2</IsPass>
+    <PaymentCode>0520</PaymentCode>
+  </PassTypeTO>
+  <PassTypeTO PassTypeID="15">
+    <Description>Invalidi - povreda na radu</Description>
+    <Button>-1</Button>
+    <IsPass>2</IsPass>
+    <PaymentCode>1000</PaymentCode>
+  </PassTypeTO>
+  <PassTypeTO PassTypeID="17">
+    <Description>Invalidi - zbog bolesti</Description>
+    <Button>-1</Button>
+    <IsPass>2</IsPass>
+    <PaymentCode>1001</PaymentCode>
+  </PassTypeTO>
+  <PassTypeTO PassTypeID="-6">
+    <Description>Invalidi - zbog bolesti</Description>
+    <Button>-1</Button>
+    <IsPass>0</IsPass>
+    <PaymentCode>1001</PaymentCode>
+  </PassTypeTO>
+  <PassTypeTO PassTypeID="-2">
+    <Description>Kašnjenje</Description>
+    <Button>-1</Button>
+    <IsPass>0</IsPass>
+    <PaymentCode>4010</PaymentCode>
+  </PassTypeTO>
+  <PassTypeTO PassTypeID="-103">
+    <Description>Kratko odsustvo (a)</Description>
+    <Button>-1</Button>
+    <IsPass>0</IsPass>
+    <PaymentCode>0000</PaymentCode>
+  </PassTypeTO>
+  <PassTypeTO PassTypeID="8">
+    <Description>Neplaćeno odsustvo</Description>
+    <Button>-1</Button>
+    <IsPass>2</IsPass>
+    <PaymentCode>4001</PaymentCode>
+  </PassTypeTO>
+  <PassTypeTO PassTypeID="-1">
+    <Description>Noćni rad</Description>
+    <Button>-1</Button>
+    <IsPass>0</IsPass>
+    <PaymentCode>0400</PaymentCode>
+  </PassTypeTO>
+  <PassTypeTO PassTypeID="1">
+    <Description>Pauza</Description>
+    <Button>-1</Button>
+    <IsPass>1</IsPass>
+    <PaymentCode>0000</PaymentCode>
+  </PassTypeTO>
+  <PassTypeTO PassTypeID="-102">
+    <Description>Pauza (a)</Description>
+    <Button>-1</Button>
+    <IsPass>0</IsPass>
+    <PaymentCode>0000</PaymentCode>
+  </PassTypeTO>
+  <PassTypeTO PassTypeID="9">
+    <Description>Plaćeno odsustvo</Description>
+    <Button>-1</Button>
+    <IsPass>2</IsPass>
+    <PaymentCode>0540</PaymentCode>
+  </PassTypeTO>
+  <PassTypeTO PassTypeID="-3">
+    <Description>Praznik</Description>
+    <Button>-1</Button>
+    <IsPass>0</IsPass>
+    <PaymentCode>0550</PaymentCode>
+  </PassTypeTO>
+  <PassTypeTO PassTypeID="-8">
+    <Description>Prekovremeno</Description>
+    <Button>-1</Button>
+    <IsPass>0</IsPass>
+    <PaymentCode>0301</PaymentCode>
+  </PassTypeTO>
+  <PassTypeTO PassTypeID="3">
+    <Description>Privatni izlazak - bez preraspodele</Description>
+    <Button>-1</Button>
+    <IsPass>1</IsPass>
+    <PaymentCode>4000</PaymentCode>
+  </PassTypeTO>
+  <PassTypeTO PassTypeID="10">
+    <Description>Privatni izlazak - preraspodela</Description>
+    <Button>-1</Button>
+    <IsPass>1</IsPass>
+    <PaymentCode>0031</PaymentCode>
+  </PassTypeTO>
+  <PassTypeTO PassTypeID="-7">
+    <Description>Rad na dane odmora</Description>
+    <Button>-1</Button>
+    <IsPass>0</IsPass>
+    <PaymentCode>0077</PaymentCode>
+  </PassTypeTO>
+  <PassTypeTO PassTypeID="-4">
+    <Description>Rad na praznik</Description>
+    <Button>-1</Button>
+    <IsPass>0</IsPass>
+    <PaymentCode>0560</PaymentCode>
+  </PassTypeTO>
+  <PassTypeTO PassTypeID="0">
+    <Description>Redovan rad</Description>
+    <Button>0</Button>
+    <IsPass>1</IsPass>
+    <PaymentCode>0031</PaymentCode>
+  </PassTypeTO>
+  <PassTypeTO PassTypeID="4">
+    <Description>Slobodan dan - preraspodjela</Description>
+    <Button>-1</Button>
+    <IsPass>2</IsPass>
+    <PaymentCode>0031</PaymentCode>
+  </PassTypeTO>
+  <PassTypeTO PassTypeID="2">
+    <Description>Službeni izlazak</Description>
+    <Button>-1</Button>
+    <IsPass>1</IsPass>
+    <PaymentCode>0031</PaymentCode>
+  </PassTypeTO>
+  <PassTypeTO PassTypeID="16">
+    <Description>Službeni izlazak</Description>
+    <Button>-1</Button>
+    <IsPass>2</IsPass>
+    <PaymentCode>0031</PaymentCode>
+  </PassTypeTO>
+  <PassTypeTO PassTypeID="7">
+    <Description>Službeni put</Description>
+    <Button>-1</Button>
+    <IsPass>2</IsPass>
+    <PaymentCode>0033</PaymentCode>
+  </PassTypeTO>
+  <PassTypeTO PassTypeID="18">
+    <Description>STRAJK CO</Description>
+    <Button>-1</Button>
+    <IsPass>2</IsPass>
+    <PaymentCode>9955</PaymentCode>
+  </PassTypeTO>
+  <PassTypeTO PassTypeID="19">
+    <Description>STRAJK PC</Description>
+    <Button>-1</Button>
+    <IsPass>1</IsPass>
+    <PaymentCode>5599</PaymentCode>
+  </PassTypeTO>
+  <PassTypeTO PassTypeID="11">
+    <Description>Suspenzija</Description>
+    <Button>-1</Button>
+    <IsPass>2</IsPass>
+    <PaymentCode>0630</PaymentCode>
+  </PassTypeTO>
+</ArrayOfPassTypeTO>

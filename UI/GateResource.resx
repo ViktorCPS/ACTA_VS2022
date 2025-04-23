@@ -1,0 +1,532 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="EID_E_UNABLE_TO_OPEN_SESSION" xml:space="preserve">
+    <value>Credential reading error.(UNABLE_TO_OPEN_SESSION)</value>
+  </data>
+  <data name="noVisitorInConfig" xml:space="preserve">
+    <value>There is no "VisitorsCode" parameter in config file!</value>
+  </data>
+  <data name="EID_E_NOT_INITIALIZED" xml:space="preserve">
+    <value>Credential reading error.(NOT_INITIALIZED)</value>
+  </data>
+  <data name="officialPurpose" xml:space="preserve">
+    <value>OFFICIAL</value>
+  </data>
+  <data name="lblTo" xml:space="preserve">
+    <value>To:</value>
+  </data>
+  <data name="EID_E_SECFORMAT_CHECK_CERT_ERROR" xml:space="preserve">
+    <value>Credential reading error.(SECFORMAT_CHECK_CERT_ERROR)</value>
+  </data>
+  <data name="visitNoIdentification" xml:space="preserve">
+    <value>You must enter identification card</value>
+  </data>
+  <data name="btnReadCredentail" xml:space="preserve">
+    <value>Read credential</value>
+  </data>
+  <data name="gbScanDoc" xml:space="preserve">
+    <value>Scan document</value>
+  </data>
+  <data name="EID_E_VERSION_NOT_SUPPORTED" xml:space="preserve">
+    <value>Credential reading error.(VERSION_NOT_SUPPORTED)</value>
+  </data>
+  <data name="lblCard" xml:space="preserve">
+    <value>Card</value>
+  </data>
+  <data name="employees" type="">
+    <value>Employees</value>
+  </data>
+  <data name="gbPasses" xml:space="preserve">
+    <value>Passes</value>
+  </data>
+  <data name="menuDisplay" xml:space="preserve">
+    <value>Monitor</value>
+  </data>
+  <data name="lblManual" xml:space="preserve">
+    <value>Manual</value>
+  </data>
+  <data name="workingunits" xml:space="preserve">
+    <value>working units</value>
+  </data>
+  <data name="btnSave" xml:space="preserve">
+    <value>Save</value>
+  </data>
+  <data name="gbVisitor" xml:space="preserve">
+    <value>Visitor data</value>
+  </data>
+  <data name="EID_E_CARD_MISMATCH" xml:space="preserve">
+    <value>Credential reading error, card mismatch.</value>
+  </data>
+  <data name="EID_E_CARD_UNKNOWN" xml:space="preserve">
+    <value>Credential reading error, unknown card.</value>
+  </data>
+  <data name="otherPurpose" xml:space="preserve">
+    <value>OTHER</value>
+  </data>
+  <data name="visitNoJMBG" xml:space="preserve">
+    <value>You must enter jmbg</value>
+  </data>
+  <data name="visitNoWorkingUnit" xml:space="preserve">
+    <value>You must enter visited working unit.</value>
+  </data>
+  <data name="lblEmployee" xml:space="preserve">
+    <value>Employee:</value>
+  </data>
+  <data name="Gates" xml:space="preserve">
+    <value>Gates</value>
+  </data>
+  <data name="applRunning" xml:space="preserve">
+    <value>Application running already.</value>
+  </data>
+  <data name="dataMissing1" xml:space="preserve">
+    <value>Some data about:</value>
+  </data>
+  <data name="titleCheckCard" xml:space="preserve">
+    <value>Check card</value>
+  </data>
+  <data name="lblJMBG" xml:space="preserve">
+    <value>PIN</value>
+  </data>
+  <data name="visitNotUpdated" xml:space="preserve">
+    <value>Visit can not be ended.</value>
+  </data>
+  <data name="lblLocation" xml:space="preserve">
+    <value>Location:</value>
+  </data>
+  <data name="visitUpdated" xml:space="preserve">
+    <value>Visit ended. Do you want to end some other visit?</value>
+  </data>
+  <data name="noGatesInConfig" xml:space="preserve">
+    <value>There is no "Gates" parameter in config file!</value>
+  </data>
+  <data name="hdrFirstName" xml:space="preserve">
+    <value>First name</value>
+  </data>
+  <data name="noPictureDir" xml:space="preserve">
+    <value>Directory with employee's photos is not defined.</value>
+  </data>
+  <data name="visitNoCard" xml:space="preserve">
+    <value>You must enter card number</value>
+  </data>
+  <data name="EID_E_CARD_MISSING" xml:space="preserve">
+    <value>Credential reading error, no card on reader.</value>
+  </data>
+  <data name="menuReader" xml:space="preserve">
+    <value>Terminal</value>
+  </data>
+  <data name="menuExit" xml:space="preserve">
+    <value>Exit</value>
+  </data>
+  <data name="visitNotExist" xml:space="preserve">
+    <value>Open visit with selected tag number not exists!</value>
+  </data>
+  <data name="EID_E_GENERAL_ERROR" xml:space="preserve">
+    <value>Credential reading error.(GENERAL_ERROR)</value>
+  </data>
+  <data name="EID_E_READER_ERROR" xml:space="preserve">
+    <value>Error with smart card reader.</value>
+  </data>
+  <data name="all" xml:space="preserve">
+    <value>ALL</value>
+  </data>
+  <data name="btnReadCard" xml:space="preserve">
+    <value>Read card</value>
+  </data>
+  <data name="lblEmplID" xml:space="preserve">
+    <value>Employee ID:</value>
+  </data>
+  <data name="tags" xml:space="preserve">
+    <value>Tags</value>
+  </data>
+  <data name="messageVisitorExist" xml:space="preserve">
+    <value>Visitor with that card number is already in.</value>
+  </data>
+  <data name="hdrEmployeeID" xml:space="preserve">
+    <value>Card</value>
+  </data>
+  <data name="dataMissing3" xml:space="preserve">
+    <value>Please check database connection.</value>
+  </data>
+  <data name="visitNotInserted" xml:space="preserve">
+    <value>Visit can not be saved.</value>
+  </data>
+  <data name="titleCurrentVisitors" xml:space="preserve">
+    <value>Current visitors</value>
+  </data>
+  <data name="lblLastName" xml:space="preserve">
+    <value>Last name:</value>
+  </data>
+  <data name="dataMissing2" xml:space="preserve">
+    <value>are missing.</value>
+  </data>
+  <data name="noPictureFile" xml:space="preserve">
+    <value>Photo for that employee does not exist.</value>
+  </data>
+  <data name="btnClose" xml:space="preserve">
+    <value>Close</value>
+  </data>
+  <data name="EID_E_UNABLE_TO_EXECUTE" xml:space="preserve">
+    <value>Credential reading error.(UNABLE_TO_EXECUTE)</value>
+  </data>
+  <data name="hdrValid" xml:space="preserve">
+    <value>Valid to</value>
+  </data>
+  <data name="menuReaderGetLog" xml:space="preserve">
+    <value>Get Log</value>
+  </data>
+  <data name="menuLibraries" xml:space="preserve">
+    <value>Libraries</value>
+  </data>
+  <data name="imgLarge" xml:space="preserve">
+    <value>Maximum file size is 1MB. Scaned image can not be saved!</value>
+  </data>
+  <data name="emplOrdinary" xml:space="preserve">
+    <value>ORDINARY</value>
+  </data>
+  <data name="lblCardNum" xml:space="preserve">
+    <value>Card number:</value>
+  </data>
+  <data name="gbEnter" xml:space="preserve">
+    <value>ENTER</value>
+  </data>
+  <data name="ACTAGateForm" xml:space="preserve">
+    <value>ACTAGate</value>
+  </data>
+  <data name="lblFirstName" xml:space="preserve">
+    <value>First name:</value>
+  </data>
+  <data name="visitNoDescr" xml:space="preserve">
+    <value>You must enter visit decription</value>
+  </data>
+  <data name="menuVisitors" xml:space="preserve">
+    <value>Visitors</value>
+  </data>
+  <data name="menuRegister" xml:space="preserve">
+    <value>Register pass</value>
+  </data>
+  <data name="noVisitorsParameters" xml:space="preserve">
+    <value>No visitors parameters found. Please, enter visitors code and do you want to update employee location.</value>
+  </data>
+  <data name="noDesktopReader" xml:space="preserve">
+    <value>No desktop terminal found.</value>
+  </data>
+  <data name="hdrpassType" xml:space="preserve">
+    <value>Pass type</value>
+  </data>
+  <data name="hdrCreatedTime" xml:space="preserve">
+    <value>Created time</value>
+  </data>
+  <data name="lblWU" xml:space="preserve">
+    <value>Working unit:</value>
+  </data>
+  <data name="menuManual" xml:space="preserve">
+    <value>Manual</value>
+  </data>
+  <data name="titleVisitorsEnter" xml:space="preserve">
+    <value>Visitors enter</value>
+  </data>
+  <data name="btnClear" xml:space="preserve">
+    <value>Clear</value>
+  </data>
+  <data name="UnknownTag" xml:space="preserve">
+    <value>Unknown tag!</value>
+  </data>
+  <data name="EID_E_INVALID_PARAMETER" xml:space="preserve">
+    <value>Credential reading error.(INVALID_PARAMETER)</value>
+  </data>
+  <data name="jmbgLength" xml:space="preserve">
+    <value>JMBG must contains 13 digits!</value>
+  </data>
+  <data name="privatePurpose" xml:space="preserve">
+    <value>PRIVATE</value>
+  </data>
+  <data name="hdrDateEnd" xml:space="preserve">
+    <value>Visit ended</value>
+  </data>
+  <data name="applCantStart" xml:space="preserve">
+    <value>Program can not be startet. Check if there is connection with the database.</value>
+  </data>
+  <data name="lblSchema" xml:space="preserve">
+    <value>Time schema:</value>
+  </data>
+  <data name="EID_E_DATA_MISSING" xml:space="preserve">
+    <value>Credential reading error, data missing.</value>
+  </data>
+  <data name="titleVisitorsExit" xml:space="preserve">
+    <value>Visitors exit</value>
+  </data>
+  <data name="locations" xml:space="preserve">
+    <value>Locations</value>
+  </data>
+  <data name="Visitors" xml:space="preserve">
+    <value>Visitors</value>
+  </data>
+  <data name="manualNotOpened" xml:space="preserve">
+    <value>Manual could not be opened.</value>
+  </data>
+  <data name="visitNoFirstName" xml:space="preserve">
+    <value>You must enter first name</value>
+  </data>
+  <data name="visitInserted" xml:space="preserve">
+    <value>Visit started. Do you want to enter new visit?</value>
+  </data>
+  <data name="noEmployees" xml:space="preserve">
+    <value>There is no working unit that not belong to "Visitors"!</value>
+  </data>
+  <data name="menuVisitorsExit" xml:space="preserve">
+    <value>Exit</value>
+  </data>
+  <data name="menuMonitor" xml:space="preserve">
+    <value>Monitor</value>
+  </data>
+  <data name="btnScan" xml:space="preserve">
+    <value>Scan</value>
+  </data>
+  <data name="lblPassIssBy" xml:space="preserve">
+    <value>Pass issued by</value>
+  </data>
+  <data name="menuAbout" xml:space="preserve">
+    <value>About</value>
+  </data>
+  <data name="lblFrom" xml:space="preserve">
+    <value>From:</value>
+  </data>
+  <data name="jmbgNotNum" xml:space="preserve">
+    <value>JMBG must be a 13 digits number!</value>
+  </data>
+  <data name="visitNoLocation" xml:space="preserve">
+    <value>You must enter visited location.</value>
+  </data>
+  <data name="lblWorkingHours" xml:space="preserve">
+    <value>Working hours:</value>
+  </data>
+  <data name="menuHelp" xml:space="preserve">
+    <value>Help</value>
+  </data>
+  <data name="lblIdentificationCard" xml:space="preserve">
+    <value>Identification card</value>
+  </data>
+  <data name="btnFromReader" xml:space="preserve">
+    <value>Read tag from terminal</value>
+  </data>
+  <data name="noVisitors" xml:space="preserve">
+    <value>There is no working unit that belong to "Visitors"!</value>
+  </data>
+  <data name="gbEmployee" xml:space="preserve">
+    <value>Employee</value>
+  </data>
+  <data name="emplExtraOrdinary" xml:space="preserve">
+    <value>EXTRAORDINARY</value>
+  </data>
+  <data name="readers" xml:space="preserve">
+    <value>Terminals</value>
+  </data>
+  <data name="lblRemarks" xml:space="preserve">
+    <value>Remarks:</value>
+  </data>
+  <data name="gbExit" xml:space="preserve">
+    <value>EXIT</value>
+  </data>
+  <data name="noSmartCardReader" xml:space="preserve">
+    <value>No smart card reader found.</value>
+  </data>
+  <data name="gbAntenna" xml:space="preserve">
+    <value>Antenna</value>
+  </data>
+  <data name="EID_E_CARD_SECFORMAT_CHECK_ERROR" xml:space="preserve">
+    <value>Credential reading error.(CARD_SECFORMAT_CHECK_ERROR)</value>
+  </data>
+  <data name="menuVisitorsEnter" xml:space="preserve">
+    <value>Enter</value>
+  </data>
+  <data name="hdrLastName" xml:space="preserve">
+    <value>Last name</value>
+  </data>
+  <data name="gbCriteria" xml:space="preserve">
+    <value>Search criteria</value>
+  </data>
+  <data name="dataMissing5" xml:space="preserve">
+    <value>Do you want to continue?</value>
+  </data>
+  <data name="lblType" xml:space="preserve">
+    <value>Type:</value>
+  </data>
+  <data name="passtypes" xml:space="preserve">
+    <value>Pass types</value>
+  </data>
+  <data name="emplSpecial" xml:space="preserve">
+    <value>Special</value>
+  </data>
+  <data name="lblIdentification" xml:space="preserve">
+    <value>Identification:</value>
+  </data>
+  <data name="hdrCreatedBy" xml:space="preserve">
+    <value>Created by</value>
+  </data>
+  <data name="noGates" xml:space="preserve">
+    <value>No gates found. Please, enter gates and Aux Ports.</value>
+  </data>
+  <data name="lblName" xml:space="preserve">
+    <value>Name:</value>
+  </data>
+  <data name="visitNoLastName" xml:space="preserve">
+    <value>You must enter last name</value>
+  </data>
+  <data name="lblPass" xml:space="preserve">
+    <value>Pass</value>
+  </data>
+  <data name="btnCancel" xml:space="preserve">
+    <value>Cancel</value>
+  </data>
+  <data name="menuVisitorsReport" xml:space="preserve">
+    <value>Current visitors</value>
+  </data>
+  <data name="noTagOnReader" xml:space="preserve">
+    <value>There is no card on the terminal</value>
+  </data>
+  <data name="hdrDateStart" xml:space="preserve">
+    <value>Visit started</value>
+  </data>
+  <data name="lblVisitDescr" xml:space="preserve">
+    <value>Visit purpose:</value>
+  </data>
+  <data name="menuCheck" xml:space="preserve">
+    <value>Check</value>
+  </data>
+  <data name="gbReader" xml:space="preserve">
+    <value>Terminal</value>
+  </data>
+  <data name="visitExist" xml:space="preserve">
+    <value>Already exists open visit with the same tag number!</value>
+  </data>
+  <data name="visitOfflineInserted" xml:space="preserve">
+    <value>Visit saved. Do you want to enter new visit?</value>
+  </data>
+  <data name="dataMissing4" xml:space="preserve">
+    <value>If You continue to work some features may not work properly. </value>
+  </data>
+  <data name="lblEmployeeID" xml:space="preserve">
+    <value>Employee ID:</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="600px-No-Symbol_svg" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\600px-No-Symbol_svg.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+</root>

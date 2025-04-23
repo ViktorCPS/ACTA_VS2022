@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="BufferReportDS" targetNamespace="http://tempuri.org/BufferReportDS.xsd" xmlns:mstns="http://tempuri.org/BufferReportDS.xsd" xmlns="http://tempuri.org/BufferReportDS.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="BufferReportDS" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="BufferReportDS" msprop:Generator_DataSetName="BufferReportDS" msprop:EnableTableAdapterManager="true">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="buffer_report" msprop:Generator_UserTableName="buffer_report" msprop:Generator_RowDeletedName="buffer_reportRowDeleted" msprop:Generator_RowChangedName="buffer_reportRowChanged" msprop:Generator_RowClassName="buffer_reportRow" msprop:Generator_RowChangingName="buffer_reportRowChanging" msprop:Generator_RowEvArgName="buffer_reportRowChangeEvent" msprop:Generator_RowEvHandlerName="buffer_reportRowChangeEventHandler" msprop:Generator_TableClassName="buffer_reportDataTable" msprop:Generator_TableVarName="tablebuffer_report" msprop:Generator_RowDeletingName="buffer_reportRowDeleting" msprop:Generator_TablePropName="buffer_report">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="emplID" msprop:Generator_UserColumnName="emplID" msprop:Generator_ColumnVarNameInTable="columnemplID" msprop:Generator_ColumnPropNameInRow="emplID" msprop:Generator_ColumnPropNameInTable="emplIDColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="stringone" msprop:Generator_UserColumnName="stringone" msprop:Generator_ColumnVarNameInTable="columnstringone" msprop:Generator_ColumnPropNameInRow="stringone" msprop:Generator_ColumnPropNameInTable="stringoneColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="empl" msprop:Generator_UserColumnName="empl" msprop:Generator_ColumnVarNameInTable="columnempl" msprop:Generator_ColumnPropNameInRow="empl" msprop:Generator_ColumnPropNameInTable="emplColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="cc" msprop:Generator_UserColumnName="cc" msprop:Generator_ColumnVarNameInTable="columncc" msprop:Generator_ColumnPropNameInRow="cc" msprop:Generator_ColumnPropNameInTable="ccColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="ccDesc" msprop:Generator_UserColumnName="ccDesc" msprop:Generator_ColumnVarNameInTable="columnccDesc" msprop:Generator_ColumnPropNameInRow="ccDesc" msprop:Generator_ColumnPropNameInTable="ccDescColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="type" msprop:Generator_UserColumnName="type" msprop:Generator_ColumnVarNameInTable="columntype" msprop:Generator_ColumnPropNameInRow="type" msprop:Generator_ColumnPropNameInTable="typeColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="branch" msprop:Generator_UserColumnName="branch" msprop:Generator_ColumnVarNameInTable="columnbranch" msprop:Generator_ColumnPropNameInRow="branch" msprop:Generator_ColumnPropNameInTable="branchColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="bhBefore" msprop:Generator_UserColumnName="bhBefore" msprop:Generator_ColumnVarNameInTable="columnbhBefore" msprop:Generator_ColumnPropNameInRow="bhBefore" msprop:Generator_ColumnPropNameInTable="bhBeforeColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="bhPeriod" msprop:Generator_UserColumnName="bhPeriod" msprop:Generator_ColumnVarNameInTable="columnbhPeriod" msprop:Generator_ColumnPropNameInRow="bhPeriod" msprop:Generator_ColumnPropNameInTable="bhPeriodColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="bhAfter" msprop:Generator_UserColumnName="bhAfter" msprop:Generator_ColumnVarNameInTable="columnbhAfter" msprop:Generator_ColumnPropNameInRow="bhAfter" msprop:Generator_ColumnPropNameInTable="bhAfterColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="alPrevLeftBefore" msprop:Generator_UserColumnName="alPrevLeftBefore" msprop:Generator_ColumnVarNameInTable="columnalPrevLeftBefore" msprop:Generator_ColumnPropNameInRow="alPrevLeftBefore" msprop:Generator_ColumnPropNameInTable="alPrevLeftBeforeColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="alCurrLeftBefore" msprop:Generator_UserColumnName="alCurrLeftBefore" msprop:Generator_ColumnVarNameInTable="columnalCurrLeftBefore" msprop:Generator_ColumnPropNameInRow="alCurrLeftBefore" msprop:Generator_ColumnPropNameInTable="alCurrLeftBeforeColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="alLeftBefore" msprop:Generator_UserColumnName="alLeftBefore" msprop:Generator_ColumnVarNameInTable="columnalLeftBefore" msprop:Generator_ColumnPropNameInRow="alLeftBefore" msprop:Generator_ColumnPropNameInTable="alLeftBeforeColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="alPrevUsedPeriod" msprop:Generator_UserColumnName="alPrevUsedPeriod" msprop:Generator_ColumnVarNameInTable="columnalPrevUsedPeriod" msprop:Generator_ColumnPropNameInRow="alPrevUsedPeriod" msprop:Generator_ColumnPropNameInTable="alPrevUsedPeriodColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="alCurrUsedPeriod" msprop:Generator_UserColumnName="alCurrUsedPeriod" msprop:Generator_ColumnVarNameInTable="columnalCurrUsedPeriod" msprop:Generator_ColumnPropNameInRow="alCurrUsedPeriod" msprop:Generator_ColumnPropNameInTable="alCurrUsedPeriodColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="alUsedPeriod" msprop:Generator_UserColumnName="alUsedPeriod" msprop:Generator_ColumnVarNameInTable="columnalUsedPeriod" msprop:Generator_ColumnPropNameInRow="alUsedPeriod" msprop:Generator_ColumnPropNameInTable="alUsedPeriodColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="alPrevLeftAfter" msprop:Generator_UserColumnName="alPrevLeftAfter" msprop:Generator_ColumnVarNameInTable="columnalPrevLeftAfter" msprop:Generator_ColumnPropNameInRow="alPrevLeftAfter" msprop:Generator_ColumnPropNameInTable="alPrevLeftAfterColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="alCurrLeftAfter" msprop:Generator_UserColumnName="alCurrLeftAfter" msprop:Generator_ColumnVarNameInTable="columnalCurrLeftAfter" msprop:Generator_ColumnPropNameInRow="alCurrLeftAfter" msprop:Generator_ColumnPropNameInTable="alCurrLeftAfterColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="alLeftAfter" msprop:Generator_UserColumnName="alLeftAfter" msprop:Generator_ColumnVarNameInTable="columnalLeftAfter" msprop:Generator_ColumnPropNameInRow="alLeftAfter" msprop:Generator_ColumnPropNameInTable="alLeftAfterColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="swBefore" msprop:Generator_UserColumnName="swBefore" msprop:Generator_ColumnVarNameInTable="columnswBefore" msprop:Generator_ColumnPropNameInRow="swBefore" msprop:Generator_ColumnPropNameInTable="swBeforeColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="swPeriod" msprop:Generator_UserColumnName="swPeriod" msprop:Generator_ColumnVarNameInTable="columnswPeriod" msprop:Generator_ColumnPropNameInRow="swPeriod" msprop:Generator_ColumnPropNameInTable="swPeriodColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="swAfter" msprop:Generator_UserColumnName="swAfter" msprop:Generator_ColumnVarNameInTable="columnswAfter" msprop:Generator_ColumnPropNameInRow="swAfter" msprop:Generator_ColumnPropNameInTable="swAfterColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="plBefore" msprop:Generator_UserColumnName="plBefore" msprop:Generator_ColumnVarNameInTable="columnplBefore" msprop:Generator_ColumnPropNameInRow="plBefore" msprop:Generator_ColumnPropNameInTable="plBeforeColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="plUsed" msprop:Generator_UserColumnName="plUsed" msprop:Generator_ColumnVarNameInTable="columnplUsed" msprop:Generator_ColumnPropNameInRow="plUsed" msprop:Generator_ColumnPropNameInTable="plUsedColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="plAfter" msprop:Generator_UserColumnName="plAfter" msprop:Generator_ColumnVarNameInTable="columnplAfter" msprop:Generator_ColumnPropNameInRow="plAfter" msprop:Generator_ColumnPropNameInTable="plAfterColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="oKeepBefore" msprop:Generator_UserColumnName="oKeepBefore" msprop:Generator_ColumnPropNameInRow="oKeepBefore" msprop:Generator_ColumnVarNameInTable="columnoKeepBefore" msprop:Generator_ColumnPropNameInTable="oKeepBeforeColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="oKeepPeriod" msprop:Generator_UserColumnName="oKeepPeriod" msprop:Generator_ColumnPropNameInRow="oKeepPeriod" msprop:Generator_ColumnVarNameInTable="columnoKeepPeriod" msprop:Generator_ColumnPropNameInTable="oKeepPeriodColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="oKeepAfter" msprop:Generator_UserColumnName="oKeepAfter" msprop:Generator_ColumnPropNameInRow="oKeepAfter" msprop:Generator_ColumnVarNameInTable="columnoKeepAfter" msprop:Generator_ColumnPropNameInTable="oKeepAfterColumn" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

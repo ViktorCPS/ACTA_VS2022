@@ -1,0 +1,1404 @@
++ INSERTING NEW DATA - STARTED! 28.05.2019 09:35:21
+	+ Inserting of working units - STARTED! 28.05.2019 09:35:21
+28.05.2019 09:35:21 SYNCHRONIZATION - FAILED Exception: Could not find stored procedure 'UnesiNoveRJ'.
++ INSERTING NEW DATA - STARTED! 28.05.2019 09:35:21
+	+ Inserting of working units - STARTED! 28.05.2019 09:35:21
+28.05.2019 09:35:21 SYNCHRONIZATION - FAILED Exception: Could not find stored procedure 'UnesiNoveRJ'.
++ INSERTING NEW DATA - STARTED! 28.05.2019 09:35:21
+	+ Inserting of working units - STARTED! 28.05.2019 09:35:21
+28.05.2019 09:35:21 SYNCHRONIZATION - FAILED Exception: Could not find stored procedure 'UnesiNoveRJ'.
++ INSERTING NEW DATA - STARTED! 28.05.2019 09:35:21
+	+ Inserting of working units - STARTED! 28.05.2019 09:35:21
+28.05.2019 09:35:21 SYNCHRONIZATION - FAILED Exception: Could not find stored procedure 'UnesiNoveRJ'.
++ INSERTING NEW DATA - STARTED! 28.05.2019 09:48:56
+	+ Inserting of working units - STARTED! 28.05.2019 09:48:56
+28.05.2019 09:48:56 SYNCHRONIZATION - FAILED Exception: Could not find stored procedure 'UnesiNoveRJ'.
++ INSERTING NEW DATA - STARTED! 28.05.2019 09:48:56
+	+ Inserting of working units - STARTED! 28.05.2019 09:48:56
+28.05.2019 09:48:56 SYNCHRONIZATION - FAILED Exception: Could not find stored procedure 'UnesiNoveRJ'.
++ INSERTING NEW DATA - STARTED! 28.05.2019 09:48:56
+	+ Inserting of working units - STARTED! 28.05.2019 09:48:56
+28.05.2019 09:48:56 SYNCHRONIZATION - FAILED Exception: Could not find stored procedure 'UnesiNoveRJ'.
++ INSERTING NEW DATA - STARTED! 28.05.2019 09:48:56
+	+ Inserting of working units - STARTED! 28.05.2019 09:48:56
+28.05.2019 09:48:56 SYNCHRONIZATION - FAILED Exception: Could not find stored procedure 'UnesiNoveRJ'.
++ INSERTING NEW DATA - STARTED! 28.05.2019 09:51:59
+	+ Inserting of working units - STARTED! 28.05.2019 09:51:59
+28.05.2019 09:51:59 SYNCHRONIZATION - FAILED Exception: Could not find stored procedure 'UnesiNoveRJ'.
++ INSERTING NEW DATA - STARTED! 28.05.2019 09:51:59
+	+ Inserting of working units - STARTED! 28.05.2019 09:51:59
+28.05.2019 09:52:00 SYNCHRONIZATION - FAILED Exception: Could not find stored procedure 'UnesiNoveRJ'.
++ INSERTING NEW DATA - STARTED! 28.05.2019 09:52:00
+	+ Inserting of working units - STARTED! 28.05.2019 09:52:00
+28.05.2019 09:52:00 SYNCHRONIZATION - FAILED Exception: Could not find stored procedure 'UnesiNoveRJ'.
++ INSERTING NEW DATA - STARTED! 28.05.2019 09:52:00
+	+ Inserting of working units - STARTED! 28.05.2019 09:52:00
+28.05.2019 09:52:00 SYNCHRONIZATION - FAILED Exception: Could not find stored procedure 'UnesiNoveRJ'.
++ INSERTING NEW DATA - STARTED! 28.05.2019 14:55:49
+	+ Inserting of working units - STARTED! 28.05.2019 14:55:49
+28.05.2019 14:55:51 SYNCHRONIZATION - FAILED Exception: Could not find stored procedure 'UnesiNoveRJ'.
++ INSERTING NEW DATA - STARTED! 28.05.2019 14:55:51
+	+ Inserting of working units - STARTED! 28.05.2019 14:55:51
+28.05.2019 14:55:51 SYNCHRONIZATION - FAILED Exception: Could not find stored procedure 'UnesiNoveRJ'.
++ INSERTING NEW DATA - STARTED! 28.05.2019 14:55:51
+	+ Inserting of working units - STARTED! 28.05.2019 14:55:51
+28.05.2019 14:55:51 SYNCHRONIZATION - FAILED Exception: Could not find stored procedure 'UnesiNoveRJ'.
++ INSERTING NEW DATA - STARTED! 28.05.2019 14:55:51
+	+ Inserting of working units - STARTED! 28.05.2019 14:55:51
+28.05.2019 14:55:51 SYNCHRONIZATION - FAILED Exception: Could not find stored procedure 'UnesiNoveRJ'.
++ INSERTING NEW DATA - STARTED! 28.05.2019 14:58:16
+	+ Inserting of working units - STARTED! 28.05.2019 14:58:16
+28.05.2019 14:58:16 SYNCHRONIZATION - FAILED Exception: Could not find stored procedure 'UnesiNoveRJ'.
++ INSERTING NEW DATA - STARTED! 28.05.2019 14:58:16
+	+ Inserting of working units - STARTED! 28.05.2019 14:58:16
+28.05.2019 14:58:16 SYNCHRONIZATION - FAILED Exception: Could not find stored procedure 'UnesiNoveRJ'.
++ INSERTING NEW DATA - STARTED! 28.05.2019 14:58:16
+	+ Inserting of working units - STARTED! 28.05.2019 14:58:16
+28.05.2019 14:58:16 SYNCHRONIZATION - FAILED Exception: Could not find stored procedure 'UnesiNoveRJ'.
++ INSERTING NEW DATA - STARTED! 28.05.2019 14:58:16
+	+ Inserting of working units - STARTED! 28.05.2019 14:58:16
+28.05.2019 14:58:16 SYNCHRONIZATION - FAILED Exception: Could not find stored procedure 'UnesiNoveRJ'.
++ INSERTING NEW DATA - STARTED! 29.05.2019 10:07:47
+	+ Inserting of working units - STARTED! 29.05.2019 10:07:47
+29.05.2019 10:07:48 SYNCHRONIZATION - FAILED Exception: Could not find stored procedure 'UnesiNoveRJ'.
++ INSERTING NEW DATA - STARTED! 29.05.2019 10:07:48
+	+ Inserting of working units - STARTED! 29.05.2019 10:07:48
+29.05.2019 10:07:48 SYNCHRONIZATION - FAILED Exception: Could not find stored procedure 'UnesiNoveRJ'.
++ INSERTING NEW DATA - STARTED! 29.05.2019 10:07:48
+	+ Inserting of working units - STARTED! 29.05.2019 10:07:48
+29.05.2019 10:07:48 SYNCHRONIZATION - FAILED Exception: Could not find stored procedure 'UnesiNoveRJ'.
++ INSERTING NEW DATA - STARTED! 29.05.2019 10:07:48
+	+ Inserting of working units - STARTED! 29.05.2019 10:07:48
+29.05.2019 10:07:48 SYNCHRONIZATION - FAILED Exception: Could not find stored procedure 'UnesiNoveRJ'.
++ INSERTING NEW DATA - STARTED! 29.05.2019 10:18:44
+	+ Inserting of working units - STARTED! 29.05.2019 10:18:44
+29.05.2019 10:18:57 SYNCHRONIZATION - FAILED Exception: Could not find stored procedure 'UnesiNoveRJ'.
++ INSERTING NEW DATA - STARTED! 29.05.2019 10:18:57
+	+ Inserting of working units - STARTED! 29.05.2019 10:18:57
+29.05.2019 10:19:01 SYNCHRONIZATION - FAILED Exception: Could not find stored procedure 'UnesiNoveRJ'.
++ INSERTING NEW DATA - STARTED! 29.05.2019 10:19:01
+	+ Inserting of working units - STARTED! 29.05.2019 10:19:01
+29.05.2019 10:19:03 SYNCHRONIZATION - FAILED Exception: Could not find stored procedure 'UnesiNoveRJ'.
++ INSERTING NEW DATA - STARTED! 29.05.2019 10:19:03
+	+ Inserting of working units - STARTED! 29.05.2019 10:19:03
+29.05.2019 10:19:03 SYNCHRONIZATION - FAILED Exception: Could not find stored procedure 'UnesiNoveRJ'.
++ INSERTING NEW DATA - STARTED! 29.05.2019 10:24:29
+	+ Inserting of working units - STARTED! 29.05.2019 10:24:29
+29.05.2019 10:24:29 SYNCHRONIZATION - FAILED Exception: Could not find stored procedure 'UnesiNoveRJ'.
++ INSERTING NEW DATA - STARTED! 29.05.2019 10:24:29
+	+ Inserting of working units - STARTED! 29.05.2019 10:24:29
+29.05.2019 10:24:29 SYNCHRONIZATION - FAILED Exception: Could not find stored procedure 'UnesiNoveRJ'.
++ INSERTING NEW DATA - STARTED! 29.05.2019 10:24:29
+	+ Inserting of working units - STARTED! 29.05.2019 10:24:29
+29.05.2019 10:24:29 SYNCHRONIZATION - FAILED Exception: Could not find stored procedure 'UnesiNoveRJ'.
++ INSERTING NEW DATA - STARTED! 29.05.2019 10:24:29
+	+ Inserting of working units - STARTED! 29.05.2019 10:24:29
+29.05.2019 10:24:29 SYNCHRONIZATION - FAILED Exception: Could not find stored procedure 'UnesiNoveRJ'.
++ INSERTING NEW DATA - STARTED! 14.06.2019 10:55:29
+	+ Inserting of working units - STARTED! 14.06.2019 10:55:29
+14.06.2019 10:55:29 SYNCHRONIZATION - FAILED Exception: Could not find stored procedure 'UnesiNoveRJ'.
++ INSERTING NEW DATA - STARTED! 14.06.2019 10:55:29
+	+ Inserting of working units - STARTED! 14.06.2019 10:55:29
+14.06.2019 10:55:29 SYNCHRONIZATION - FAILED Exception: Could not find stored procedure 'UnesiNoveRJ'.
++ INSERTING NEW DATA - STARTED! 14.06.2019 10:55:29
+	+ Inserting of working units - STARTED! 14.06.2019 10:55:29
+14.06.2019 10:55:29 SYNCHRONIZATION - FAILED Exception: Could not find stored procedure 'UnesiNoveRJ'.
++ INSERTING NEW DATA - STARTED! 14.06.2019 10:55:29
+	+ Inserting of working units - STARTED! 14.06.2019 10:55:29
+14.06.2019 10:55:29 SYNCHRONIZATION - FAILED Exception: Could not find stored procedure 'UnesiNoveRJ'.
++ INSERTING NEW DATA - STARTED! 14.06.2019 11:12:42
+	+ Inserting of working units - STARTED! 14.06.2019 11:12:42
+14.06.2019 11:12:42 SYNCHRONIZATION - FAILED Exception: Could not find stored procedure 'UnesiNoveRJ'.
++ INSERTING NEW DATA - STARTED! 14.06.2019 11:12:42
+	+ Inserting of working units - STARTED! 14.06.2019 11:12:42
+14.06.2019 11:12:42 SYNCHRONIZATION - FAILED Exception: Could not find stored procedure 'UnesiNoveRJ'.
++ INSERTING NEW DATA - STARTED! 14.06.2019 11:12:42
+	+ Inserting of working units - STARTED! 14.06.2019 11:12:42
+14.06.2019 11:12:42 SYNCHRONIZATION - FAILED Exception: Could not find stored procedure 'UnesiNoveRJ'.
++ INSERTING NEW DATA - STARTED! 14.06.2019 11:12:42
+	+ Inserting of working units - STARTED! 14.06.2019 11:12:42
+14.06.2019 11:12:42 SYNCHRONIZATION - FAILED Exception: Could not find stored procedure 'UnesiNoveRJ'.
++ INSERTING NEW DATA - STARTED! 14.06.2019 11:15:53
+	+ Inserting of working units - STARTED! 14.06.2019 11:15:53
+14.06.2019 11:15:53 SYNCHRONIZATION - FAILED Exception: Could not find stored procedure 'UnesiNoveRJ'.
++ INSERTING NEW DATA - STARTED! 14.06.2019 11:15:53
+	+ Inserting of working units - STARTED! 14.06.2019 11:15:53
+14.06.2019 11:15:53 SYNCHRONIZATION - FAILED Exception: Could not find stored procedure 'UnesiNoveRJ'.
++ INSERTING NEW DATA - STARTED! 14.06.2019 11:15:53
+	+ Inserting of working units - STARTED! 14.06.2019 11:15:53
+14.06.2019 11:15:53 SYNCHRONIZATION - FAILED Exception: Could not find stored procedure 'UnesiNoveRJ'.
++ INSERTING NEW DATA - STARTED! 14.06.2019 11:15:53
+	+ Inserting of working units - STARTED! 14.06.2019 11:15:53
+14.06.2019 11:15:53 SYNCHRONIZATION - FAILED Exception: Could not find stored procedure 'UnesiNoveRJ'.
++ INSERTING NEW DATA - STARTED! 14.06.2019 11:17:21
+	+ Inserting of working units - STARTED! 14.06.2019 11:17:21
+14.06.2019 11:17:21 SYNCHRONIZATION - FAILED Exception: Could not find stored procedure 'UnesiNoveRJ'.
++ INSERTING NEW DATA - STARTED! 14.06.2019 11:17:21
+	+ Inserting of working units - STARTED! 14.06.2019 11:17:21
+14.06.2019 11:17:21 SYNCHRONIZATION - FAILED Exception: Could not find stored procedure 'UnesiNoveRJ'.
++ INSERTING NEW DATA - STARTED! 14.06.2019 11:17:21
+	+ Inserting of working units - STARTED! 14.06.2019 11:17:21
+14.06.2019 11:17:21 SYNCHRONIZATION - FAILED Exception: Could not find stored procedure 'UnesiNoveRJ'.
++ INSERTING NEW DATA - STARTED! 14.06.2019 11:17:21
+	+ Inserting of working units - STARTED! 14.06.2019 11:17:21
+14.06.2019 11:17:21 SYNCHRONIZATION - FAILED Exception: Could not find stored procedure 'UnesiNoveRJ'.
++ INSERTING NEW DATA - STARTED! 14.06.2019 11:32:43
+	+ Inserting of working units - STARTED! 14.06.2019 11:32:44
+14.06.2019 11:32:48 SYNCHRONIZATION - FAILED Exception: Could not find stored procedure 'UnesiNoveRJ'.
++ INSERTING NEW DATA - STARTED! 14.06.2019 11:32:48
+	+ Inserting of working units - STARTED! 14.06.2019 11:32:48
+14.06.2019 11:32:50 SYNCHRONIZATION - FAILED Exception: Could not find stored procedure 'UnesiNoveRJ'.
++ INSERTING NEW DATA - STARTED! 14.06.2019 11:32:50
+	+ Inserting of working units - STARTED! 14.06.2019 11:32:50
+14.06.2019 11:32:52 SYNCHRONIZATION - FAILED Exception: Could not find stored procedure 'UnesiNoveRJ'.
++ INSERTING NEW DATA - STARTED! 14.06.2019 11:32:52
+	+ Inserting of working units - STARTED! 14.06.2019 11:32:52
+14.06.2019 11:32:52 SYNCHRONIZATION - FAILED Exception: Could not find stored procedure 'UnesiNoveRJ'.
++ INSERTING NEW DATA - STARTED! 14.06.2019 11:34:03
+	+ Inserting of working units - STARTED! 14.06.2019 11:34:03
+14.06.2019 11:34:03 SYNCHRONIZATION - FAILED Exception: Could not find stored procedure 'UnesiNoveRJ'.
++ INSERTING NEW DATA - STARTED! 14.06.2019 11:34:03
+	+ Inserting of working units - STARTED! 14.06.2019 11:34:03
+14.06.2019 11:34:03 SYNCHRONIZATION - FAILED Exception: Could not find stored procedure 'UnesiNoveRJ'.
++ INSERTING NEW DATA - STARTED! 14.06.2019 11:34:03
+	+ Inserting of working units - STARTED! 14.06.2019 11:34:03
+14.06.2019 11:34:03 SYNCHRONIZATION - FAILED Exception: Could not find stored procedure 'UnesiNoveRJ'.
++ INSERTING NEW DATA - STARTED! 14.06.2019 11:34:03
+	+ Inserting of working units - STARTED! 14.06.2019 11:34:03
+14.06.2019 11:34:03 SYNCHRONIZATION - FAILED Exception: Could not find stored procedure 'UnesiNoveRJ'.
++ INSERTING NEW DATA - STARTED! 14.06.2019 11:41:14
+	+ Inserting of working units - STARTED! 14.06.2019 11:41:14
+14.06.2019 11:41:14 SYNCHRONIZATION - FAILED Exception: Could not find stored procedure 'UnesiNoveRJ'.
++ INSERTING NEW DATA - STARTED! 14.06.2019 11:41:14
+	+ Inserting of working units - STARTED! 14.06.2019 11:41:14
+14.06.2019 11:41:14 SYNCHRONIZATION - FAILED Exception: Could not find stored procedure 'UnesiNoveRJ'.
++ INSERTING NEW DATA - STARTED! 14.06.2019 11:41:14
+	+ Inserting of working units - STARTED! 14.06.2019 11:41:14
+14.06.2019 11:41:14 SYNCHRONIZATION - FAILED Exception: Could not find stored procedure 'UnesiNoveRJ'.
++ INSERTING NEW DATA - STARTED! 14.06.2019 11:41:14
+	+ Inserting of working units - STARTED! 14.06.2019 11:41:14
+14.06.2019 11:41:14 SYNCHRONIZATION - FAILED Exception: Could not find stored procedure 'UnesiNoveRJ'.
++ INSERTING NEW DATA - STARTED! 14.06.2019 11:42:55
+	+ Inserting of working units - STARTED! 14.06.2019 11:42:55
+14.06.2019 11:42:56 SYNCHRONIZATION - FAILED Exception: Could not find stored procedure 'UnesiNoveRJ'.
++ INSERTING NEW DATA - STARTED! 14.06.2019 11:42:56
+	+ Inserting of working units - STARTED! 14.06.2019 11:42:56
+14.06.2019 11:42:57 SYNCHRONIZATION - FAILED Exception: Could not find stored procedure 'UnesiNoveRJ'.
++ INSERTING NEW DATA - STARTED! 14.06.2019 11:42:57
+	+ Inserting of working units - STARTED! 14.06.2019 11:42:57
+14.06.2019 11:42:57 SYNCHRONIZATION - FAILED Exception: Could not find stored procedure 'UnesiNoveRJ'.
++ INSERTING NEW DATA - STARTED! 14.06.2019 11:42:57
+	+ Inserting of working units - STARTED! 14.06.2019 11:42:57
+14.06.2019 11:42:57 SYNCHRONIZATION - FAILED Exception: Could not find stored procedure 'UnesiNoveRJ'.
++ INSERTING NEW DATA - STARTED! 14.06.2019 11:47:06
+	+ Inserting of working units - STARTED! 14.06.2019 11:47:06
+14.06.2019 11:47:14 SYNCHRONIZATION - FAILED Exception: Could not find stored procedure 'UnesiNoveRJ'.
++ INSERTING NEW DATA - STARTED! 14.06.2019 11:47:15
+	+ Inserting of working units - STARTED! 14.06.2019 11:47:15
+14.06.2019 11:47:17 SYNCHRONIZATION - FAILED Exception: Could not find stored procedure 'UnesiNoveRJ'.
++ INSERTING NEW DATA - STARTED! 14.06.2019 11:47:17
+	+ Inserting of working units - STARTED! 14.06.2019 11:47:17
+14.06.2019 11:47:17 SYNCHRONIZATION - FAILED Exception: Could not find stored procedure 'UnesiNoveRJ'.
++ INSERTING NEW DATA - STARTED! 14.06.2019 11:47:17
+	+ Inserting of working units - STARTED! 14.06.2019 11:47:17
+14.06.2019 11:47:17 SYNCHRONIZATION - FAILED Exception: Could not find stored procedure 'UnesiNoveRJ'.
++ INSERTING NEW DATA - STARTED! 14.06.2019 11:58:44
+	+ Inserting of working units - STARTED! 14.06.2019 11:58:44
+14.06.2019 11:58:44 SYNCHRONIZATION - FAILED Exception: Could not find stored procedure 'UnesiNoveRJ'.
++ INSERTING NEW DATA - STARTED! 14.06.2019 11:58:44
+	+ Inserting of working units - STARTED! 14.06.2019 11:58:44
+14.06.2019 11:58:44 SYNCHRONIZATION - FAILED Exception: Could not find stored procedure 'UnesiNoveRJ'.
++ INSERTING NEW DATA - STARTED! 14.06.2019 11:58:44
+	+ Inserting of working units - STARTED! 14.06.2019 11:58:44
+14.06.2019 11:58:44 SYNCHRONIZATION - FAILED Exception: Could not find stored procedure 'UnesiNoveRJ'.
++ INSERTING NEW DATA - STARTED! 14.06.2019 11:58:44
+	+ Inserting of working units - STARTED! 14.06.2019 11:58:44
+14.06.2019 11:58:44 SYNCHRONIZATION - FAILED Exception: Could not find stored procedure 'UnesiNoveRJ'.
++ INSERTING NEW DATA - STARTED! 18.06.2019 08:51:26
+	+ Inserting of working units - STARTED! 18.06.2019 08:51:26
+18.06.2019 08:51:27 SYNCHRONIZATION - FAILED Exception: Could not find stored procedure 'UnesiNoveRJ'.
++ INSERTING NEW DATA - STARTED! 18.06.2019 08:51:27
+	+ Inserting of working units - STARTED! 18.06.2019 08:51:27
+18.06.2019 08:51:27 SYNCHRONIZATION - FAILED Exception: Could not find stored procedure 'UnesiNoveRJ'.
++ INSERTING NEW DATA - STARTED! 18.06.2019 08:51:27
+	+ Inserting of working units - STARTED! 18.06.2019 08:51:27
+18.06.2019 08:51:27 SYNCHRONIZATION - FAILED Exception: Could not find stored procedure 'UnesiNoveRJ'.
++ INSERTING NEW DATA - STARTED! 18.06.2019 08:51:27
+	+ Inserting of working units - STARTED! 18.06.2019 08:51:27
+18.06.2019 08:51:27 SYNCHRONIZATION - FAILED Exception: Could not find stored procedure 'UnesiNoveRJ'.
++ INSERTING NEW DATA - STARTED! 18.06.2019 08:53:30
+	+ Inserting of working units - STARTED! 18.06.2019 08:53:30
+18.06.2019 08:53:30 SYNCHRONIZATION - FAILED Exception: Could not find stored procedure 'UnesiNoveRJ'.
++ INSERTING NEW DATA - STARTED! 18.06.2019 08:53:30
+	+ Inserting of working units - STARTED! 18.06.2019 08:53:30
+18.06.2019 08:53:30 SYNCHRONIZATION - FAILED Exception: Could not find stored procedure 'UnesiNoveRJ'.
++ INSERTING NEW DATA - STARTED! 18.06.2019 08:53:30
+	+ Inserting of working units - STARTED! 18.06.2019 08:53:30
+18.06.2019 08:53:30 SYNCHRONIZATION - FAILED Exception: Could not find stored procedure 'UnesiNoveRJ'.
++ INSERTING NEW DATA - STARTED! 18.06.2019 08:53:30
+	+ Inserting of working units - STARTED! 18.06.2019 08:53:30
+18.06.2019 08:53:30 SYNCHRONIZATION - FAILED Exception: Could not find stored procedure 'UnesiNoveRJ'.
++ INSERTING NEW DATA - STARTED! 18.06.2019 08:55:10
+	+ Inserting of working units - STARTED! 18.06.2019 08:55:10
+18.06.2019 08:55:10 SYNCHRONIZATION - FAILED Exception: Could not find stored procedure 'UnesiNoveRJ'.
++ INSERTING NEW DATA - STARTED! 18.06.2019 08:55:10
+	+ Inserting of working units - STARTED! 18.06.2019 08:55:10
+18.06.2019 08:55:11 SYNCHRONIZATION - FAILED Exception: Could not find stored procedure 'UnesiNoveRJ'.
++ INSERTING NEW DATA - STARTED! 18.06.2019 08:55:11
+	+ Inserting of working units - STARTED! 18.06.2019 08:55:11
+18.06.2019 08:55:11 SYNCHRONIZATION - FAILED Exception: Could not find stored procedure 'UnesiNoveRJ'.
++ INSERTING NEW DATA - STARTED! 18.06.2019 08:55:11
+	+ Inserting of working units - STARTED! 18.06.2019 08:55:11
+18.06.2019 08:55:11 SYNCHRONIZATION - FAILED Exception: Could not find stored procedure 'UnesiNoveRJ'.
++ INSERTING NEW DATA - STARTED! 18.06.2019 09:37:28
+	+ Inserting of working units - STARTED! 18.06.2019 09:37:28
+18.06.2019 09:37:29 SYNCHRONIZATION - FAILED Exception: Could not find stored procedure 'UnesiNoveRJ'.
++ INSERTING NEW DATA - STARTED! 18.06.2019 09:37:29
+	+ Inserting of working units - STARTED! 18.06.2019 09:37:29
+18.06.2019 09:37:29 SYNCHRONIZATION - FAILED Exception: Could not find stored procedure 'UnesiNoveRJ'.
++ INSERTING NEW DATA - STARTED! 18.06.2019 09:37:29
+	+ Inserting of working units - STARTED! 18.06.2019 09:37:29
+18.06.2019 09:37:29 SYNCHRONIZATION - FAILED Exception: Could not find stored procedure 'UnesiNoveRJ'.
++ INSERTING NEW DATA - STARTED! 18.06.2019 09:37:29
+	+ Inserting of working units - STARTED! 18.06.2019 09:37:29
+18.06.2019 09:37:29 SYNCHRONIZATION - FAILED Exception: Could not find stored procedure 'UnesiNoveRJ'.
++ INSERTING NEW DATA - STARTED! 18.06.2019 09:42:21
+	+ Inserting of working units - STARTED! 18.06.2019 09:42:21
+18.06.2019 09:42:21 SYNCHRONIZATION - FAILED Exception: Could not find stored procedure 'UnesiNoveRJ'.
++ INSERTING NEW DATA - STARTED! 18.06.2019 09:42:21
+	+ Inserting of working units - STARTED! 18.06.2019 09:42:21
+18.06.2019 09:42:21 SYNCHRONIZATION - FAILED Exception: Could not find stored procedure 'UnesiNoveRJ'.
++ INSERTING NEW DATA - STARTED! 18.06.2019 09:42:21
+	+ Inserting of working units - STARTED! 18.06.2019 09:42:21
+18.06.2019 09:42:21 SYNCHRONIZATION - FAILED Exception: Could not find stored procedure 'UnesiNoveRJ'.
++ INSERTING NEW DATA - STARTED! 18.06.2019 09:42:21
+	+ Inserting of working units - STARTED! 18.06.2019 09:42:21
+18.06.2019 09:42:21 SYNCHRONIZATION - FAILED Exception: Could not find stored procedure 'UnesiNoveRJ'.
++ INSERTING NEW DATA - STARTED! 18.06.2019 09:45:41
+	+ Inserting of working units - STARTED! 18.06.2019 09:45:41
+18.06.2019 09:45:41 SYNCHRONIZATION - FAILED Exception: Could not find stored procedure 'UnesiNoveRJ'.
++ INSERTING NEW DATA - STARTED! 18.06.2019 09:45:41
+	+ Inserting of working units - STARTED! 18.06.2019 09:45:41
+18.06.2019 09:45:41 SYNCHRONIZATION - FAILED Exception: Could not find stored procedure 'UnesiNoveRJ'.
++ INSERTING NEW DATA - STARTED! 18.06.2019 09:45:41
+	+ Inserting of working units - STARTED! 18.06.2019 09:45:41
+18.06.2019 09:45:41 SYNCHRONIZATION - FAILED Exception: Could not find stored procedure 'UnesiNoveRJ'.
++ INSERTING NEW DATA - STARTED! 18.06.2019 09:45:41
+	+ Inserting of working units - STARTED! 18.06.2019 09:45:41
+18.06.2019 09:45:41 SYNCHRONIZATION - FAILED Exception: Could not find stored procedure 'UnesiNoveRJ'.
++ INSERTING NEW DATA - STARTED! 18.06.2019 09:51:52
+	+ Inserting of working units - STARTED! 18.06.2019 09:51:52
+18.06.2019 09:51:52 SYNCHRONIZATION - FAILED Exception: Could not find stored procedure 'UnesiNoveRJ'.
++ INSERTING NEW DATA - STARTED! 18.06.2019 09:51:52
+	+ Inserting of working units - STARTED! 18.06.2019 09:51:52
+18.06.2019 09:51:52 SYNCHRONIZATION - FAILED Exception: Could not find stored procedure 'UnesiNoveRJ'.
++ INSERTING NEW DATA - STARTED! 18.06.2019 09:51:52
+	+ Inserting of working units - STARTED! 18.06.2019 09:51:52
+18.06.2019 09:51:52 SYNCHRONIZATION - FAILED Exception: Could not find stored procedure 'UnesiNoveRJ'.
++ INSERTING NEW DATA - STARTED! 18.06.2019 09:51:52
+	+ Inserting of working units - STARTED! 18.06.2019 09:51:52
+18.06.2019 09:51:52 SYNCHRONIZATION - FAILED Exception: Could not find stored procedure 'UnesiNoveRJ'.
++ INSERTING NEW DATA - STARTED! 18.06.2019 10:40:23
+	+ Inserting of working units - STARTED! 18.06.2019 10:40:23
+18.06.2019 10:40:23 SYNCHRONIZATION - FAILED Exception: Could not find stored procedure 'UnesiNoveRJ'.
++ INSERTING NEW DATA - STARTED! 18.06.2019 10:40:23
+	+ Inserting of working units - STARTED! 18.06.2019 10:40:23
+18.06.2019 10:40:23 SYNCHRONIZATION - FAILED Exception: Could not find stored procedure 'UnesiNoveRJ'.
++ INSERTING NEW DATA - STARTED! 18.06.2019 10:40:23
+	+ Inserting of working units - STARTED! 18.06.2019 10:40:23
+18.06.2019 10:40:23 SYNCHRONIZATION - FAILED Exception: Could not find stored procedure 'UnesiNoveRJ'.
++ INSERTING NEW DATA - STARTED! 18.06.2019 10:40:23
+	+ Inserting of working units - STARTED! 18.06.2019 10:40:23
+18.06.2019 10:40:23 SYNCHRONIZATION - FAILED Exception: Could not find stored procedure 'UnesiNoveRJ'.
++ INSERTING NEW DATA - STARTED! 18.06.2019 10:44:44
+	+ Inserting of working units - STARTED! 18.06.2019 10:44:44
+18.06.2019 10:44:44 SYNCHRONIZATION - FAILED Exception: Could not find stored procedure 'UnesiNoveRJ'.
++ INSERTING NEW DATA - STARTED! 18.06.2019 10:44:44
+	+ Inserting of working units - STARTED! 18.06.2019 10:44:44
+18.06.2019 10:44:44 SYNCHRONIZATION - FAILED Exception: Could not find stored procedure 'UnesiNoveRJ'.
++ INSERTING NEW DATA - STARTED! 18.06.2019 10:44:44
+	+ Inserting of working units - STARTED! 18.06.2019 10:44:44
+18.06.2019 10:44:44 SYNCHRONIZATION - FAILED Exception: Could not find stored procedure 'UnesiNoveRJ'.
++ INSERTING NEW DATA - STARTED! 18.06.2019 10:44:44
+	+ Inserting of working units - STARTED! 18.06.2019 10:44:44
+18.06.2019 10:44:45 SYNCHRONIZATION - FAILED Exception: Could not find stored procedure 'UnesiNoveRJ'.
++ INSERTING NEW DATA - STARTED! 18.06.2019 15:07:40
+	+ Inserting of working units - STARTED! 18.06.2019 15:07:40
+18.06.2019 15:07:41 SYNCHRONIZATION - FAILED Exception: Could not find stored procedure 'UnesiNoveRJ'.
++ INSERTING NEW DATA - STARTED! 18.06.2019 15:07:41
+	+ Inserting of working units - STARTED! 18.06.2019 15:07:41
+18.06.2019 15:07:41 SYNCHRONIZATION - FAILED Exception: Could not find stored procedure 'UnesiNoveRJ'.
++ INSERTING NEW DATA - STARTED! 18.06.2019 15:07:41
+	+ Inserting of working units - STARTED! 18.06.2019 15:07:41
+18.06.2019 15:07:41 SYNCHRONIZATION - FAILED Exception: Could not find stored procedure 'UnesiNoveRJ'.
++ INSERTING NEW DATA - STARTED! 18.06.2019 15:07:41
+	+ Inserting of working units - STARTED! 18.06.2019 15:07:41
+18.06.2019 15:07:41 SYNCHRONIZATION - FAILED Exception: Could not find stored procedure 'UnesiNoveRJ'.
++ INSERTING NEW DATA - STARTED! 18.06.2019 15:20:24
+	+ Inserting of working units - STARTED! 18.06.2019 15:20:24
+18.06.2019 15:20:24 SYNCHRONIZATION - FAILED Exception: Could not find stored procedure 'UnesiNoveRJ'.
++ INSERTING NEW DATA - STARTED! 18.06.2019 15:20:24
+	+ Inserting of working units - STARTED! 18.06.2019 15:20:24
+18.06.2019 15:20:24 SYNCHRONIZATION - FAILED Exception: Could not find stored procedure 'UnesiNoveRJ'.
++ INSERTING NEW DATA - STARTED! 18.06.2019 15:20:24
+	+ Inserting of working units - STARTED! 18.06.2019 15:20:24
+18.06.2019 15:20:24 SYNCHRONIZATION - FAILED Exception: Could not find stored procedure 'UnesiNoveRJ'.
++ INSERTING NEW DATA - STARTED! 18.06.2019 15:20:24
+	+ Inserting of working units - STARTED! 18.06.2019 15:20:24
+18.06.2019 15:20:24 SYNCHRONIZATION - FAILED Exception: Could not find stored procedure 'UnesiNoveRJ'.
++ INSERTING NEW DATA - STARTED! 18.06.2019 15:26:49
+	+ Inserting of working units - STARTED! 18.06.2019 15:26:49
+18.06.2019 15:26:49 SYNCHRONIZATION - FAILED Exception: Could not find stored procedure 'UnesiNoveRJ'.
++ INSERTING NEW DATA - STARTED! 18.06.2019 15:26:49
+	+ Inserting of working units - STARTED! 18.06.2019 15:26:49
+18.06.2019 15:26:49 SYNCHRONIZATION - FAILED Exception: Could not find stored procedure 'UnesiNoveRJ'.
++ INSERTING NEW DATA - STARTED! 18.06.2019 15:26:49
+	+ Inserting of working units - STARTED! 18.06.2019 15:26:49
+18.06.2019 15:26:49 SYNCHRONIZATION - FAILED Exception: Could not find stored procedure 'UnesiNoveRJ'.
++ INSERTING NEW DATA - STARTED! 18.06.2019 15:26:49
+	+ Inserting of working units - STARTED! 18.06.2019 15:26:49
+18.06.2019 15:26:49 SYNCHRONIZATION - FAILED Exception: Could not find stored procedure 'UnesiNoveRJ'.
++ INSERTING NEW DATA - STARTED! 18.06.2019 15:28:05
+	+ Inserting of working units - STARTED! 18.06.2019 15:28:05
+18.06.2019 15:28:05 SYNCHRONIZATION - FAILED Exception: Could not find stored procedure 'UnesiNoveRJ'.
++ INSERTING NEW DATA - STARTED! 18.06.2019 15:28:05
+	+ Inserting of working units - STARTED! 18.06.2019 15:28:05
+18.06.2019 15:28:05 SYNCHRONIZATION - FAILED Exception: Could not find stored procedure 'UnesiNoveRJ'.
++ INSERTING NEW DATA - STARTED! 18.06.2019 15:28:05
+	+ Inserting of working units - STARTED! 18.06.2019 15:28:05
+18.06.2019 15:28:05 SYNCHRONIZATION - FAILED Exception: Could not find stored procedure 'UnesiNoveRJ'.
++ INSERTING NEW DATA - STARTED! 18.06.2019 15:28:05
+	+ Inserting of working units - STARTED! 18.06.2019 15:28:05
+18.06.2019 15:28:05 SYNCHRONIZATION - FAILED Exception: Could not find stored procedure 'UnesiNoveRJ'.
++ INSERTING NEW DATA - STARTED! 19.06.2019 09:27:11
+	+ Inserting of working units - STARTED! 19.06.2019 09:27:11
+19.06.2019 09:27:11 SYNCHRONIZATION - FAILED Exception: Could not find stored procedure 'UnesiNoveRJ'.
++ INSERTING NEW DATA - STARTED! 19.06.2019 09:27:11
+	+ Inserting of working units - STARTED! 19.06.2019 09:27:11
+19.06.2019 09:27:11 SYNCHRONIZATION - FAILED Exception: Could not find stored procedure 'UnesiNoveRJ'.
++ INSERTING NEW DATA - STARTED! 19.06.2019 09:27:11
+	+ Inserting of working units - STARTED! 19.06.2019 09:27:11
+19.06.2019 09:27:11 SYNCHRONIZATION - FAILED Exception: Could not find stored procedure 'UnesiNoveRJ'.
++ INSERTING NEW DATA - STARTED! 19.06.2019 09:27:11
+	+ Inserting of working units - STARTED! 19.06.2019 09:27:11
+19.06.2019 09:27:11 SYNCHRONIZATION - FAILED Exception: Could not find stored procedure 'UnesiNoveRJ'.
++ INSERTING NEW DATA - STARTED! 19.06.2019 10:16:39
+	+ Inserting of working units - STARTED! 19.06.2019 10:16:39
+19.06.2019 10:16:39 SYNCHRONIZATION - FAILED Exception: Could not find stored procedure 'UnesiNoveRJ'.
++ INSERTING NEW DATA - STARTED! 19.06.2019 10:16:39
+	+ Inserting of working units - STARTED! 19.06.2019 10:16:39
+19.06.2019 10:16:39 SYNCHRONIZATION - FAILED Exception: Could not find stored procedure 'UnesiNoveRJ'.
++ INSERTING NEW DATA - STARTED! 19.06.2019 10:16:39
+	+ Inserting of working units - STARTED! 19.06.2019 10:16:39
+19.06.2019 10:16:39 SYNCHRONIZATION - FAILED Exception: Could not find stored procedure 'UnesiNoveRJ'.
++ INSERTING NEW DATA - STARTED! 19.06.2019 10:16:39
+	+ Inserting of working units - STARTED! 19.06.2019 10:16:39
+19.06.2019 10:16:39 SYNCHRONIZATION - FAILED Exception: Could not find stored procedure 'UnesiNoveRJ'.
++ INSERTING NEW DATA - STARTED! 19.06.2019 10:23:26
+	+ Inserting of working units - STARTED! 19.06.2019 10:23:26
+19.06.2019 10:23:26 SYNCHRONIZATION - FAILED Exception: Could not find stored procedure 'UnesiNoveRJ'.
++ INSERTING NEW DATA - STARTED! 19.06.2019 10:23:26
+	+ Inserting of working units - STARTED! 19.06.2019 10:23:26
+19.06.2019 10:23:26 SYNCHRONIZATION - FAILED Exception: Could not find stored procedure 'UnesiNoveRJ'.
++ INSERTING NEW DATA - STARTED! 19.06.2019 10:23:26
+	+ Inserting of working units - STARTED! 19.06.2019 10:23:26
+19.06.2019 10:23:26 SYNCHRONIZATION - FAILED Exception: Could not find stored procedure 'UnesiNoveRJ'.
++ INSERTING NEW DATA - STARTED! 19.06.2019 10:23:26
+	+ Inserting of working units - STARTED! 19.06.2019 10:23:26
+19.06.2019 10:23:26 SYNCHRONIZATION - FAILED Exception: Could not find stored procedure 'UnesiNoveRJ'.
++ INSERTING NEW DATA - STARTED! 19.06.2019 10:26:50
+	+ Inserting of working units - STARTED! 19.06.2019 10:26:50
+19.06.2019 10:26:50 SYNCHRONIZATION - FAILED Exception: Could not find stored procedure 'UnesiNoveRJ'.
++ INSERTING NEW DATA - STARTED! 19.06.2019 10:26:50
+	+ Inserting of working units - STARTED! 19.06.2019 10:26:50
+19.06.2019 10:26:50 SYNCHRONIZATION - FAILED Exception: Could not find stored procedure 'UnesiNoveRJ'.
++ INSERTING NEW DATA - STARTED! 19.06.2019 10:26:50
+	+ Inserting of working units - STARTED! 19.06.2019 10:26:50
+19.06.2019 10:26:50 SYNCHRONIZATION - FAILED Exception: Could not find stored procedure 'UnesiNoveRJ'.
++ INSERTING NEW DATA - STARTED! 19.06.2019 10:26:50
+	+ Inserting of working units - STARTED! 19.06.2019 10:26:50
+19.06.2019 10:26:50 SYNCHRONIZATION - FAILED Exception: Could not find stored procedure 'UnesiNoveRJ'.
++ INSERTING NEW DATA - STARTED! 19.06.2019 10:30:26
+	+ Inserting of working units - STARTED! 19.06.2019 10:30:26
+19.06.2019 10:30:26 SYNCHRONIZATION - FAILED Exception: Could not find stored procedure 'UnesiNoveRJ'.
++ INSERTING NEW DATA - STARTED! 19.06.2019 10:30:26
+	+ Inserting of working units - STARTED! 19.06.2019 10:30:26
+19.06.2019 10:30:27 SYNCHRONIZATION - FAILED Exception: Could not find stored procedure 'UnesiNoveRJ'.
++ INSERTING NEW DATA - STARTED! 19.06.2019 10:30:27
+	+ Inserting of working units - STARTED! 19.06.2019 10:30:27
+19.06.2019 10:30:27 SYNCHRONIZATION - FAILED Exception: Could not find stored procedure 'UnesiNoveRJ'.
++ INSERTING NEW DATA - STARTED! 19.06.2019 10:30:27
+	+ Inserting of working units - STARTED! 19.06.2019 10:30:27
+19.06.2019 10:30:27 SYNCHRONIZATION - FAILED Exception: Could not find stored procedure 'UnesiNoveRJ'.
++ INSERTING NEW DATA - STARTED! 19.06.2019 10:35:32
+	+ Inserting of working units - STARTED! 19.06.2019 10:35:32
+19.06.2019 10:35:33 SYNCHRONIZATION - FAILED Exception: Could not find stored procedure 'UnesiNoveRJ'.
++ INSERTING NEW DATA - STARTED! 19.06.2019 10:35:33
+	+ Inserting of working units - STARTED! 19.06.2019 10:35:33
+19.06.2019 10:35:33 SYNCHRONIZATION - FAILED Exception: Could not find stored procedure 'UnesiNoveRJ'.
++ INSERTING NEW DATA - STARTED! 19.06.2019 10:35:33
+	+ Inserting of working units - STARTED! 19.06.2019 10:35:33
+19.06.2019 10:35:33 SYNCHRONIZATION - FAILED Exception: Could not find stored procedure 'UnesiNoveRJ'.
++ INSERTING NEW DATA - STARTED! 19.06.2019 10:35:33
+	+ Inserting of working units - STARTED! 19.06.2019 10:35:33
+19.06.2019 10:35:33 SYNCHRONIZATION - FAILED Exception: Could not find stored procedure 'UnesiNoveRJ'.
++ INSERTING NEW DATA - STARTED! 19.06.2019 10:45:15
+	+ Inserting of working units - STARTED! 19.06.2019 10:45:15
+19.06.2019 10:45:15 SYNCHRONIZATION - FAILED Exception: Could not find stored procedure 'UnesiNoveRJ'.
++ INSERTING NEW DATA - STARTED! 19.06.2019 10:45:15
+	+ Inserting of working units - STARTED! 19.06.2019 10:45:15
+19.06.2019 10:45:15 SYNCHRONIZATION - FAILED Exception: Could not find stored procedure 'UnesiNoveRJ'.
++ INSERTING NEW DATA - STARTED! 19.06.2019 10:45:15
+	+ Inserting of working units - STARTED! 19.06.2019 10:45:15
+19.06.2019 10:45:15 SYNCHRONIZATION - FAILED Exception: Could not find stored procedure 'UnesiNoveRJ'.
++ INSERTING NEW DATA - STARTED! 19.06.2019 10:45:15
+	+ Inserting of working units - STARTED! 19.06.2019 10:45:15
+19.06.2019 10:45:16 SYNCHRONIZATION - FAILED Exception: Could not find stored procedure 'UnesiNoveRJ'.
++ INSERTING NEW DATA - STARTED! 19.06.2019 10:50:12
+	+ Inserting of working units - STARTED! 19.06.2019 10:50:12
+19.06.2019 10:50:12 SYNCHRONIZATION - FAILED Exception: Could not find stored procedure 'UnesiNoveRJ'.
++ INSERTING NEW DATA - STARTED! 19.06.2019 10:50:12
+	+ Inserting of working units - STARTED! 19.06.2019 10:50:12
+19.06.2019 10:50:12 SYNCHRONIZATION - FAILED Exception: Could not find stored procedure 'UnesiNoveRJ'.
++ INSERTING NEW DATA - STARTED! 19.06.2019 10:50:12
+	+ Inserting of working units - STARTED! 19.06.2019 10:50:12
+19.06.2019 10:50:12 SYNCHRONIZATION - FAILED Exception: Could not find stored procedure 'UnesiNoveRJ'.
++ INSERTING NEW DATA - STARTED! 19.06.2019 10:50:12
+	+ Inserting of working units - STARTED! 19.06.2019 10:50:12
+19.06.2019 10:50:12 SYNCHRONIZATION - FAILED Exception: Could not find stored procedure 'UnesiNoveRJ'.
++ INSERTING NEW DATA - STARTED! 19.06.2019 10:59:01
+	+ Inserting of working units - STARTED! 19.06.2019 10:59:01
+19.06.2019 10:59:01 SYNCHRONIZATION - FAILED Exception: Could not find stored procedure 'UnesiNoveRJ'.
++ INSERTING NEW DATA - STARTED! 19.06.2019 10:59:01
+	+ Inserting of working units - STARTED! 19.06.2019 10:59:01
+19.06.2019 10:59:01 SYNCHRONIZATION - FAILED Exception: Could not find stored procedure 'UnesiNoveRJ'.
++ INSERTING NEW DATA - STARTED! 19.06.2019 10:59:01
+	+ Inserting of working units - STARTED! 19.06.2019 10:59:01
+19.06.2019 10:59:01 SYNCHRONIZATION - FAILED Exception: Could not find stored procedure 'UnesiNoveRJ'.
++ INSERTING NEW DATA - STARTED! 19.06.2019 10:59:01
+	+ Inserting of working units - STARTED! 19.06.2019 10:59:01
+19.06.2019 10:59:01 SYNCHRONIZATION - FAILED Exception: Could not find stored procedure 'UnesiNoveRJ'.
++ INSERTING NEW DATA - STARTED! 19.06.2019 11:00:26
+	+ Inserting of working units - STARTED! 19.06.2019 11:00:26
+19.06.2019 11:00:26 SYNCHRONIZATION - FAILED Exception: Could not find stored procedure 'UnesiNoveRJ'.
++ INSERTING NEW DATA - STARTED! 19.06.2019 11:00:26
+	+ Inserting of working units - STARTED! 19.06.2019 11:00:26
+19.06.2019 11:00:26 SYNCHRONIZATION - FAILED Exception: Could not find stored procedure 'UnesiNoveRJ'.
++ INSERTING NEW DATA - STARTED! 19.06.2019 11:00:26
+	+ Inserting of working units - STARTED! 19.06.2019 11:00:26
+19.06.2019 11:00:26 SYNCHRONIZATION - FAILED Exception: Could not find stored procedure 'UnesiNoveRJ'.
++ INSERTING NEW DATA - STARTED! 19.06.2019 11:00:26
+	+ Inserting of working units - STARTED! 19.06.2019 11:00:26
+19.06.2019 11:00:27 SYNCHRONIZATION - FAILED Exception: Could not find stored procedure 'UnesiNoveRJ'.
++ INSERTING NEW DATA - STARTED! 19.06.2019 11:01:08
+	+ Inserting of working units - STARTED! 19.06.2019 11:01:08
+19.06.2019 11:01:08 SYNCHRONIZATION - FAILED Exception: Could not find stored procedure 'UnesiNoveRJ'.
++ INSERTING NEW DATA - STARTED! 19.06.2019 11:01:08
+	+ Inserting of working units - STARTED! 19.06.2019 11:01:08
+19.06.2019 11:01:08 SYNCHRONIZATION - FAILED Exception: Could not find stored procedure 'UnesiNoveRJ'.
++ INSERTING NEW DATA - STARTED! 19.06.2019 11:01:08
+	+ Inserting of working units - STARTED! 19.06.2019 11:01:08
+19.06.2019 11:01:08 SYNCHRONIZATION - FAILED Exception: Could not find stored procedure 'UnesiNoveRJ'.
++ INSERTING NEW DATA - STARTED! 19.06.2019 11:01:08
+	+ Inserting of working units - STARTED! 19.06.2019 11:01:08
+19.06.2019 11:01:08 SYNCHRONIZATION - FAILED Exception: Could not find stored procedure 'UnesiNoveRJ'.
++ INSERTING NEW DATA - STARTED! 19.06.2019 11:40:59
+	+ Inserting of working units - STARTED! 19.06.2019 11:40:59
+19.06.2019 11:41:00 SYNCHRONIZATION - FAILED Exception: Could not find stored procedure 'UnesiNoveRJ'.
++ INSERTING NEW DATA - STARTED! 19.06.2019 11:41:00
+	+ Inserting of working units - STARTED! 19.06.2019 11:41:00
+19.06.2019 11:41:00 SYNCHRONIZATION - FAILED Exception: Could not find stored procedure 'UnesiNoveRJ'.
++ INSERTING NEW DATA - STARTED! 19.06.2019 11:41:00
+	+ Inserting of working units - STARTED! 19.06.2019 11:41:00
+19.06.2019 11:41:00 SYNCHRONIZATION - FAILED Exception: Could not find stored procedure 'UnesiNoveRJ'.
++ INSERTING NEW DATA - STARTED! 19.06.2019 11:41:00
+	+ Inserting of working units - STARTED! 19.06.2019 11:41:00
+19.06.2019 11:41:00 SYNCHRONIZATION - FAILED Exception: Could not find stored procedure 'UnesiNoveRJ'.
++ INSERTING NEW DATA - STARTED! 19.06.2019 11:42:03
+	+ Inserting of working units - STARTED! 19.06.2019 11:42:03
+19.06.2019 11:42:03 SYNCHRONIZATION - FAILED Exception: Could not find stored procedure 'UnesiNoveRJ'.
++ INSERTING NEW DATA - STARTED! 19.06.2019 11:42:03
+	+ Inserting of working units - STARTED! 19.06.2019 11:42:03
+19.06.2019 11:42:03 SYNCHRONIZATION - FAILED Exception: Could not find stored procedure 'UnesiNoveRJ'.
++ INSERTING NEW DATA - STARTED! 19.06.2019 11:42:03
+	+ Inserting of working units - STARTED! 19.06.2019 11:42:03
+19.06.2019 11:42:03 SYNCHRONIZATION - FAILED Exception: Could not find stored procedure 'UnesiNoveRJ'.
++ INSERTING NEW DATA - STARTED! 19.06.2019 11:42:03
+	+ Inserting of working units - STARTED! 19.06.2019 11:42:03
+19.06.2019 11:42:03 SYNCHRONIZATION - FAILED Exception: Could not find stored procedure 'UnesiNoveRJ'.
++ INSERTING NEW DATA - STARTED! 19.06.2019 11:43:06
+	+ Inserting of working units - STARTED! 19.06.2019 11:43:06
+19.06.2019 11:43:06 SYNCHRONIZATION - FAILED Exception: Could not find stored procedure 'UnesiNoveRJ'.
++ INSERTING NEW DATA - STARTED! 19.06.2019 11:43:06
+	+ Inserting of working units - STARTED! 19.06.2019 11:43:06
+19.06.2019 11:43:06 SYNCHRONIZATION - FAILED Exception: Could not find stored procedure 'UnesiNoveRJ'.
++ INSERTING NEW DATA - STARTED! 19.06.2019 11:43:06
+	+ Inserting of working units - STARTED! 19.06.2019 11:43:06
+19.06.2019 11:43:07 SYNCHRONIZATION - FAILED Exception: Could not find stored procedure 'UnesiNoveRJ'.
++ INSERTING NEW DATA - STARTED! 19.06.2019 11:43:07
+	+ Inserting of working units - STARTED! 19.06.2019 11:43:07
+19.06.2019 11:43:07 SYNCHRONIZATION - FAILED Exception: Could not find stored procedure 'UnesiNoveRJ'.
++ INSERTING NEW DATA - STARTED! 19.06.2019 11:49:46
+	+ Inserting of working units - STARTED! 19.06.2019 11:49:46
+19.06.2019 11:49:47 SYNCHRONIZATION - FAILED Exception: Could not find stored procedure 'UnesiNoveRJ'.
++ INSERTING NEW DATA - STARTED! 19.06.2019 11:49:47
+	+ Inserting of working units - STARTED! 19.06.2019 11:49:47
+19.06.2019 11:49:47 SYNCHRONIZATION - FAILED Exception: Could not find stored procedure 'UnesiNoveRJ'.
++ INSERTING NEW DATA - STARTED! 19.06.2019 11:49:47
+	+ Inserting of working units - STARTED! 19.06.2019 11:49:47
+19.06.2019 11:49:47 SYNCHRONIZATION - FAILED Exception: Could not find stored procedure 'UnesiNoveRJ'.
++ INSERTING NEW DATA - STARTED! 19.06.2019 11:49:47
+	+ Inserting of working units - STARTED! 19.06.2019 11:49:47
+19.06.2019 11:49:47 SYNCHRONIZATION - FAILED Exception: Could not find stored procedure 'UnesiNoveRJ'.
++ INSERTING NEW DATA - STARTED! 19.06.2019 13:06:45
+	+ Inserting of working units - STARTED! 19.06.2019 13:06:45
+19.06.2019 13:06:45 SYNCHRONIZATION - FAILED Exception: Could not find stored procedure 'UnesiNoveRJ'.
++ INSERTING NEW DATA - STARTED! 19.06.2019 13:06:45
+	+ Inserting of working units - STARTED! 19.06.2019 13:06:45
+19.06.2019 13:06:45 SYNCHRONIZATION - FAILED Exception: Could not find stored procedure 'UnesiNoveRJ'.
++ INSERTING NEW DATA - STARTED! 19.06.2019 13:06:45
+	+ Inserting of working units - STARTED! 19.06.2019 13:06:45
+19.06.2019 13:06:45 SYNCHRONIZATION - FAILED Exception: Could not find stored procedure 'UnesiNoveRJ'.
++ INSERTING NEW DATA - STARTED! 19.06.2019 13:06:45
+	+ Inserting of working units - STARTED! 19.06.2019 13:06:45
+19.06.2019 13:06:45 SYNCHRONIZATION - FAILED Exception: Could not find stored procedure 'UnesiNoveRJ'.
++ INSERTING NEW DATA - STARTED! 19.06.2019 13:15:50
+	+ Inserting of working units - STARTED! 19.06.2019 13:15:51
+19.06.2019 13:15:54 SYNCHRONIZATION - FAILED Exception: Could not find stored procedure 'UnesiNoveRJ'.
++ INSERTING NEW DATA - STARTED! 19.06.2019 13:15:54
+	+ Inserting of working units - STARTED! 19.06.2019 13:15:54
+19.06.2019 13:15:54 SYNCHRONIZATION - FAILED Exception: Could not find stored procedure 'UnesiNoveRJ'.
++ INSERTING NEW DATA - STARTED! 19.06.2019 13:15:54
+	+ Inserting of working units - STARTED! 19.06.2019 13:15:54
+19.06.2019 13:15:54 SYNCHRONIZATION - FAILED Exception: Could not find stored procedure 'UnesiNoveRJ'.
++ INSERTING NEW DATA - STARTED! 19.06.2019 13:15:54
+	+ Inserting of working units - STARTED! 19.06.2019 13:15:54
+19.06.2019 13:15:54 SYNCHRONIZATION - FAILED Exception: Could not find stored procedure 'UnesiNoveRJ'.
++ INSERTING NEW DATA - STARTED! 19.06.2019 13:19:59
+	+ Inserting of working units - STARTED! 19.06.2019 13:19:59
+19.06.2019 13:19:59 SYNCHRONIZATION - FAILED Exception: Could not find stored procedure 'UnesiNoveRJ'.
++ INSERTING NEW DATA - STARTED! 19.06.2019 13:19:59
+	+ Inserting of working units - STARTED! 19.06.2019 13:19:59
+19.06.2019 13:19:59 SYNCHRONIZATION - FAILED Exception: Could not find stored procedure 'UnesiNoveRJ'.
++ INSERTING NEW DATA - STARTED! 19.06.2019 13:19:59
+	+ Inserting of working units - STARTED! 19.06.2019 13:19:59
+19.06.2019 13:19:59 SYNCHRONIZATION - FAILED Exception: Could not find stored procedure 'UnesiNoveRJ'.
++ INSERTING NEW DATA - STARTED! 19.06.2019 13:19:59
+	+ Inserting of working units - STARTED! 19.06.2019 13:19:59
+19.06.2019 13:19:59 SYNCHRONIZATION - FAILED Exception: Could not find stored procedure 'UnesiNoveRJ'.
++ INSERTING NEW DATA - STARTED! 19.06.2019 15:59:48
+	+ Inserting of working units - STARTED! 19.06.2019 15:59:48
+19.06.2019 15:59:48 SYNCHRONIZATION - FAILED Exception: Could not find stored procedure 'UnesiNoveRJ'.
++ INSERTING NEW DATA - STARTED! 19.06.2019 15:59:48
+	+ Inserting of working units - STARTED! 19.06.2019 15:59:48
+19.06.2019 15:59:48 SYNCHRONIZATION - FAILED Exception: Could not find stored procedure 'UnesiNoveRJ'.
++ INSERTING NEW DATA - STARTED! 19.06.2019 15:59:48
+	+ Inserting of working units - STARTED! 19.06.2019 15:59:48
+19.06.2019 15:59:48 SYNCHRONIZATION - FAILED Exception: Could not find stored procedure 'UnesiNoveRJ'.
++ INSERTING NEW DATA - STARTED! 19.06.2019 15:59:48
+	+ Inserting of working units - STARTED! 19.06.2019 15:59:48
+19.06.2019 15:59:48 SYNCHRONIZATION - FAILED Exception: Could not find stored procedure 'UnesiNoveRJ'.
++ INSERTING NEW DATA - STARTED! 19.06.2019 16:03:34
+	+ Inserting of working units - STARTED! 19.06.2019 16:03:34
+19.06.2019 16:03:34 SYNCHRONIZATION - FAILED Exception: Could not find stored procedure 'UnesiNoveRJ'.
++ INSERTING NEW DATA - STARTED! 19.06.2019 16:03:34
+	+ Inserting of working units - STARTED! 19.06.2019 16:03:34
+19.06.2019 16:03:34 SYNCHRONIZATION - FAILED Exception: Could not find stored procedure 'UnesiNoveRJ'.
++ INSERTING NEW DATA - STARTED! 19.06.2019 16:03:34
+	+ Inserting of working units - STARTED! 19.06.2019 16:03:34
+19.06.2019 16:03:34 SYNCHRONIZATION - FAILED Exception: Could not find stored procedure 'UnesiNoveRJ'.
++ INSERTING NEW DATA - STARTED! 19.06.2019 16:03:34
+	+ Inserting of working units - STARTED! 19.06.2019 16:03:34
+19.06.2019 16:03:34 SYNCHRONIZATION - FAILED Exception: Could not find stored procedure 'UnesiNoveRJ'.
++ INSERTING NEW DATA - STARTED! 19.06.2019 16:43:39
+	+ Inserting of working units - STARTED! 19.06.2019 16:43:39
+19.06.2019 16:43:39 SYNCHRONIZATION - FAILED Exception: Could not find stored procedure 'UnesiNoveRJ'.
++ INSERTING NEW DATA - STARTED! 19.06.2019 16:43:39
+	+ Inserting of working units - STARTED! 19.06.2019 16:43:39
+19.06.2019 16:43:39 SYNCHRONIZATION - FAILED Exception: Could not find stored procedure 'UnesiNoveRJ'.
++ INSERTING NEW DATA - STARTED! 19.06.2019 16:43:39
+	+ Inserting of working units - STARTED! 19.06.2019 16:43:39
+19.06.2019 16:43:39 SYNCHRONIZATION - FAILED Exception: Could not find stored procedure 'UnesiNoveRJ'.
++ INSERTING NEW DATA - STARTED! 19.06.2019 16:43:39
+	+ Inserting of working units - STARTED! 19.06.2019 16:43:39
+19.06.2019 16:43:40 SYNCHRONIZATION - FAILED Exception: Could not find stored procedure 'UnesiNoveRJ'.
++ INSERTING NEW DATA - STARTED! 19.06.2019 16:48:09
+	+ Inserting of working units - STARTED! 19.06.2019 16:48:09
+19.06.2019 16:48:09 SYNCHRONIZATION - FAILED Exception: Could not find stored procedure 'UnesiNoveRJ'.
++ INSERTING NEW DATA - STARTED! 19.06.2019 16:48:09
+	+ Inserting of working units - STARTED! 19.06.2019 16:48:09
+19.06.2019 16:48:09 SYNCHRONIZATION - FAILED Exception: Could not find stored procedure 'UnesiNoveRJ'.
++ INSERTING NEW DATA - STARTED! 19.06.2019 16:48:09
+	+ Inserting of working units - STARTED! 19.06.2019 16:48:09
+19.06.2019 16:48:09 SYNCHRONIZATION - FAILED Exception: Could not find stored procedure 'UnesiNoveRJ'.
++ INSERTING NEW DATA - STARTED! 19.06.2019 16:48:09
+	+ Inserting of working units - STARTED! 19.06.2019 16:48:09
+19.06.2019 16:48:09 SYNCHRONIZATION - FAILED Exception: Could not find stored procedure 'UnesiNoveRJ'.
++ INSERTING NEW DATA - STARTED! 20.06.2019 09:18:17
+	+ Inserting of working units - STARTED! 20.06.2019 09:18:17
+20.06.2019 09:18:18 SYNCHRONIZATION - FAILED Exception: Could not find stored procedure 'UnesiNoveRJ'.
++ INSERTING NEW DATA - STARTED! 20.06.2019 09:18:18
+	+ Inserting of working units - STARTED! 20.06.2019 09:18:18
+20.06.2019 09:18:18 SYNCHRONIZATION - FAILED Exception: Could not find stored procedure 'UnesiNoveRJ'.
++ INSERTING NEW DATA - STARTED! 20.06.2019 09:18:18
+	+ Inserting of working units - STARTED! 20.06.2019 09:18:18
+20.06.2019 09:18:18 SYNCHRONIZATION - FAILED Exception: Could not find stored procedure 'UnesiNoveRJ'.
++ INSERTING NEW DATA - STARTED! 20.06.2019 09:18:18
+	+ Inserting of working units - STARTED! 20.06.2019 09:18:18
+20.06.2019 09:18:18 SYNCHRONIZATION - FAILED Exception: Could not find stored procedure 'UnesiNoveRJ'.
++ INSERTING NEW DATA - STARTED! 20.06.2019 09:25:41
+	+ Inserting of working units - STARTED! 20.06.2019 09:25:41
+20.06.2019 09:25:41 SYNCHRONIZATION - FAILED Exception: Could not find stored procedure 'UnesiNoveRJ'.
++ INSERTING NEW DATA - STARTED! 20.06.2019 09:25:41
+	+ Inserting of working units - STARTED! 20.06.2019 09:25:41
+20.06.2019 09:25:42 SYNCHRONIZATION - FAILED Exception: Could not find stored procedure 'UnesiNoveRJ'.
++ INSERTING NEW DATA - STARTED! 20.06.2019 09:25:42
+	+ Inserting of working units - STARTED! 20.06.2019 09:25:42
+20.06.2019 09:25:42 SYNCHRONIZATION - FAILED Exception: Could not find stored procedure 'UnesiNoveRJ'.
++ INSERTING NEW DATA - STARTED! 20.06.2019 09:25:42
+	+ Inserting of working units - STARTED! 20.06.2019 09:25:42
+20.06.2019 09:25:42 SYNCHRONIZATION - FAILED Exception: Could not find stored procedure 'UnesiNoveRJ'.
++ INSERTING NEW DATA - STARTED! 20.06.2019 09:28:47
+	+ Inserting of working units - STARTED! 20.06.2019 09:28:47
+20.06.2019 09:28:47 SYNCHRONIZATION - FAILED Exception: Could not find stored procedure 'UnesiNoveRJ'.
++ INSERTING NEW DATA - STARTED! 20.06.2019 09:28:47
+	+ Inserting of working units - STARTED! 20.06.2019 09:28:47
+20.06.2019 09:28:47 SYNCHRONIZATION - FAILED Exception: Could not find stored procedure 'UnesiNoveRJ'.
++ INSERTING NEW DATA - STARTED! 20.06.2019 09:28:47
+	+ Inserting of working units - STARTED! 20.06.2019 09:28:47
+20.06.2019 09:28:47 SYNCHRONIZATION - FAILED Exception: Could not find stored procedure 'UnesiNoveRJ'.
++ INSERTING NEW DATA - STARTED! 20.06.2019 09:28:47
+	+ Inserting of working units - STARTED! 20.06.2019 09:28:47
+20.06.2019 09:28:47 SYNCHRONIZATION - FAILED Exception: Could not find stored procedure 'UnesiNoveRJ'.
++ INSERTING NEW DATA - STARTED! 20.06.2019 09:35:18
+	+ Inserting of working units - STARTED! 20.06.2019 09:35:18
+20.06.2019 09:35:18 SYNCHRONIZATION - FAILED Exception: Could not find stored procedure 'UnesiNoveRJ'.
++ INSERTING NEW DATA - STARTED! 20.06.2019 09:35:18
+	+ Inserting of working units - STARTED! 20.06.2019 09:35:18
+20.06.2019 09:35:18 SYNCHRONIZATION - FAILED Exception: Could not find stored procedure 'UnesiNoveRJ'.
++ INSERTING NEW DATA - STARTED! 20.06.2019 09:35:18
+	+ Inserting of working units - STARTED! 20.06.2019 09:35:18
+20.06.2019 09:35:18 SYNCHRONIZATION - FAILED Exception: Could not find stored procedure 'UnesiNoveRJ'.
++ INSERTING NEW DATA - STARTED! 20.06.2019 09:35:18
+	+ Inserting of working units - STARTED! 20.06.2019 09:35:18
+20.06.2019 09:35:18 SYNCHRONIZATION - FAILED Exception: Could not find stored procedure 'UnesiNoveRJ'.
++ INSERTING NEW DATA - STARTED! 20.06.2019 09:40:29
+	+ Inserting of working units - STARTED! 20.06.2019 09:40:29
+20.06.2019 09:40:29 SYNCHRONIZATION - FAILED Exception: Could not find stored procedure 'UnesiNoveRJ'.
++ INSERTING NEW DATA - STARTED! 20.06.2019 09:40:29
+	+ Inserting of working units - STARTED! 20.06.2019 09:40:29
+20.06.2019 09:40:29 SYNCHRONIZATION - FAILED Exception: Could not find stored procedure 'UnesiNoveRJ'.
++ INSERTING NEW DATA - STARTED! 20.06.2019 09:40:29
+	+ Inserting of working units - STARTED! 20.06.2019 09:40:29
+20.06.2019 09:40:29 SYNCHRONIZATION - FAILED Exception: Could not find stored procedure 'UnesiNoveRJ'.
++ INSERTING NEW DATA - STARTED! 20.06.2019 09:40:29
+	+ Inserting of working units - STARTED! 20.06.2019 09:40:29
+20.06.2019 09:40:29 SYNCHRONIZATION - FAILED Exception: Could not find stored procedure 'UnesiNoveRJ'.
++ INSERTING NEW DATA - STARTED! 20.06.2019 09:50:46
+	+ Inserting of working units - STARTED! 20.06.2019 09:50:46
+20.06.2019 09:50:46 SYNCHRONIZATION - FAILED Exception: Could not find stored procedure 'UnesiNoveRJ'.
++ INSERTING NEW DATA - STARTED! 20.06.2019 09:50:46
+	+ Inserting of working units - STARTED! 20.06.2019 09:50:46
+20.06.2019 09:50:46 SYNCHRONIZATION - FAILED Exception: Could not find stored procedure 'UnesiNoveRJ'.
++ INSERTING NEW DATA - STARTED! 20.06.2019 09:50:46
+	+ Inserting of working units - STARTED! 20.06.2019 09:50:46
+20.06.2019 09:50:46 SYNCHRONIZATION - FAILED Exception: Could not find stored procedure 'UnesiNoveRJ'.
++ INSERTING NEW DATA - STARTED! 20.06.2019 09:50:46
+	+ Inserting of working units - STARTED! 20.06.2019 09:50:46
+20.06.2019 09:50:46 SYNCHRONIZATION - FAILED Exception: Could not find stored procedure 'UnesiNoveRJ'.
++ INSERTING NEW DATA - STARTED! 20.06.2019 09:53:06
+	+ Inserting of working units - STARTED! 20.06.2019 09:53:06
+20.06.2019 09:53:06 SYNCHRONIZATION - FAILED Exception: Could not find stored procedure 'UnesiNoveRJ'.
++ INSERTING NEW DATA - STARTED! 20.06.2019 09:53:06
+	+ Inserting of working units - STARTED! 20.06.2019 09:53:06
+20.06.2019 09:53:06 SYNCHRONIZATION - FAILED Exception: Could not find stored procedure 'UnesiNoveRJ'.
++ INSERTING NEW DATA - STARTED! 20.06.2019 09:53:06
+	+ Inserting of working units - STARTED! 20.06.2019 09:53:06
+20.06.2019 09:53:06 SYNCHRONIZATION - FAILED Exception: Could not find stored procedure 'UnesiNoveRJ'.
++ INSERTING NEW DATA - STARTED! 20.06.2019 09:53:06
+	+ Inserting of working units - STARTED! 20.06.2019 09:53:06
+20.06.2019 09:53:06 SYNCHRONIZATION - FAILED Exception: Could not find stored procedure 'UnesiNoveRJ'.
++ INSERTING NEW DATA - STARTED! 20.06.2019 09:56:53
+	+ Inserting of working units - STARTED! 20.06.2019 09:56:53
+20.06.2019 09:56:53 SYNCHRONIZATION - FAILED Exception: Could not find stored procedure 'UnesiNoveRJ'.
++ INSERTING NEW DATA - STARTED! 20.06.2019 09:56:53
+	+ Inserting of working units - STARTED! 20.06.2019 09:56:53
+20.06.2019 09:56:53 SYNCHRONIZATION - FAILED Exception: Could not find stored procedure 'UnesiNoveRJ'.
++ INSERTING NEW DATA - STARTED! 20.06.2019 09:56:53
+	+ Inserting of working units - STARTED! 20.06.2019 09:56:53
+20.06.2019 09:56:53 SYNCHRONIZATION - FAILED Exception: Could not find stored procedure 'UnesiNoveRJ'.
++ INSERTING NEW DATA - STARTED! 20.06.2019 09:56:53
+	+ Inserting of working units - STARTED! 20.06.2019 09:56:53
+20.06.2019 09:56:53 SYNCHRONIZATION - FAILED Exception: Could not find stored procedure 'UnesiNoveRJ'.
++ INSERTING NEW DATA - STARTED! 20.06.2019 10:14:28
+	+ Inserting of working units - STARTED! 20.06.2019 10:14:28
+20.06.2019 10:14:28 SYNCHRONIZATION - FAILED Exception: Could not find stored procedure 'UnesiNoveRJ'.
++ INSERTING NEW DATA - STARTED! 20.06.2019 10:14:28
+	+ Inserting of working units - STARTED! 20.06.2019 10:14:28
+20.06.2019 10:14:28 SYNCHRONIZATION - FAILED Exception: Could not find stored procedure 'UnesiNoveRJ'.
++ INSERTING NEW DATA - STARTED! 20.06.2019 10:14:28
+	+ Inserting of working units - STARTED! 20.06.2019 10:14:28
+20.06.2019 10:14:28 SYNCHRONIZATION - FAILED Exception: Could not find stored procedure 'UnesiNoveRJ'.
++ INSERTING NEW DATA - STARTED! 20.06.2019 10:14:28
+	+ Inserting of working units - STARTED! 20.06.2019 10:14:28
+20.06.2019 10:14:28 SYNCHRONIZATION - FAILED Exception: Could not find stored procedure 'UnesiNoveRJ'.
++ INSERTING NEW DATA - STARTED! 20.06.2019 10:20:02
+	+ Inserting of working units - STARTED! 20.06.2019 10:20:02
+20.06.2019 10:20:02 SYNCHRONIZATION - FAILED Exception: Could not find stored procedure 'UnesiNoveRJ'.
++ INSERTING NEW DATA - STARTED! 20.06.2019 10:20:02
+	+ Inserting of working units - STARTED! 20.06.2019 10:20:02
+20.06.2019 10:20:02 SYNCHRONIZATION - FAILED Exception: Could not find stored procedure 'UnesiNoveRJ'.
++ INSERTING NEW DATA - STARTED! 20.06.2019 10:20:02
+	+ Inserting of working units - STARTED! 20.06.2019 10:20:02
+20.06.2019 10:20:02 SYNCHRONIZATION - FAILED Exception: Could not find stored procedure 'UnesiNoveRJ'.
++ INSERTING NEW DATA - STARTED! 20.06.2019 10:20:02
+	+ Inserting of working units - STARTED! 20.06.2019 10:20:02
+20.06.2019 10:20:02 SYNCHRONIZATION - FAILED Exception: Could not find stored procedure 'UnesiNoveRJ'.
++ INSERTING NEW DATA - STARTED! 20.06.2019 10:27:07
+	+ Inserting of working units - STARTED! 20.06.2019 10:27:07
+20.06.2019 10:27:07 SYNCHRONIZATION - FAILED Exception: Could not find stored procedure 'UnesiNoveRJ'.
++ INSERTING NEW DATA - STARTED! 20.06.2019 10:27:07
+	+ Inserting of working units - STARTED! 20.06.2019 10:27:07
+20.06.2019 10:27:07 SYNCHRONIZATION - FAILED Exception: Could not find stored procedure 'UnesiNoveRJ'.
++ INSERTING NEW DATA - STARTED! 20.06.2019 10:27:07
+	+ Inserting of working units - STARTED! 20.06.2019 10:27:07
+20.06.2019 10:27:07 SYNCHRONIZATION - FAILED Exception: Could not find stored procedure 'UnesiNoveRJ'.
++ INSERTING NEW DATA - STARTED! 20.06.2019 10:27:07
+	+ Inserting of working units - STARTED! 20.06.2019 10:27:07
+20.06.2019 10:27:07 SYNCHRONIZATION - FAILED Exception: Could not find stored procedure 'UnesiNoveRJ'.
++ INSERTING NEW DATA - STARTED! 20.06.2019 10:36:15
+	+ Inserting of working units - STARTED! 20.06.2019 10:36:15
+20.06.2019 10:36:15 SYNCHRONIZATION - FAILED Exception: Could not find stored procedure 'UnesiNoveRJ'.
++ INSERTING NEW DATA - STARTED! 20.06.2019 10:36:15
+	+ Inserting of working units - STARTED! 20.06.2019 10:36:15
+20.06.2019 10:36:16 SYNCHRONIZATION - FAILED Exception: Could not find stored procedure 'UnesiNoveRJ'.
++ INSERTING NEW DATA - STARTED! 20.06.2019 10:36:16
+	+ Inserting of working units - STARTED! 20.06.2019 10:36:16
+20.06.2019 10:36:16 SYNCHRONIZATION - FAILED Exception: Could not find stored procedure 'UnesiNoveRJ'.
++ INSERTING NEW DATA - STARTED! 20.06.2019 10:36:16
+	+ Inserting of working units - STARTED! 20.06.2019 10:36:16
+20.06.2019 10:36:16 SYNCHRONIZATION - FAILED Exception: Could not find stored procedure 'UnesiNoveRJ'.
++ INSERTING NEW DATA - STARTED! 06.08.2019 08:48:32
+	+ Inserting of working units - STARTED! 06.08.2019 08:48:32
+06.08.2019 08:48:32 SYNCHRONIZATION - FAILED Exception: Could not find stored procedure 'UnesiNoveRJ'.
++ INSERTING NEW DATA - STARTED! 06.08.2019 08:48:32
+	+ Inserting of working units - STARTED! 06.08.2019 08:48:32
+06.08.2019 08:48:32 SYNCHRONIZATION - FAILED Exception: Could not find stored procedure 'UnesiNoveRJ'.
++ INSERTING NEW DATA - STARTED! 06.08.2019 08:48:32
+	+ Inserting of working units - STARTED! 06.08.2019 08:48:32
+06.08.2019 08:48:32 SYNCHRONIZATION - FAILED Exception: Could not find stored procedure 'UnesiNoveRJ'.
++ INSERTING NEW DATA - STARTED! 06.08.2019 08:48:32
+	+ Inserting of working units - STARTED! 06.08.2019 08:48:32
+06.08.2019 08:48:32 SYNCHRONIZATION - FAILED Exception: Could not find stored procedure 'UnesiNoveRJ'.
++ INSERTING NEW DATA - STARTED! 06.08.2019 09:32:09
+	+ Inserting of working units - STARTED! 06.08.2019 09:32:09
+06.08.2019 09:32:09 SYNCHRONIZATION - FAILED Exception: Could not find stored procedure 'UnesiNoveRJ'.
++ INSERTING NEW DATA - STARTED! 06.08.2019 09:32:09
+	+ Inserting of working units - STARTED! 06.08.2019 09:32:09
+06.08.2019 09:32:09 SYNCHRONIZATION - FAILED Exception: Could not find stored procedure 'UnesiNoveRJ'.
++ INSERTING NEW DATA - STARTED! 06.08.2019 09:32:09
+	+ Inserting of working units - STARTED! 06.08.2019 09:32:09
+06.08.2019 09:32:09 SYNCHRONIZATION - FAILED Exception: Could not find stored procedure 'UnesiNoveRJ'.
++ INSERTING NEW DATA - STARTED! 06.08.2019 09:32:09
+	+ Inserting of working units - STARTED! 06.08.2019 09:32:09
+06.08.2019 09:32:09 SYNCHRONIZATION - FAILED Exception: Could not find stored procedure 'UnesiNoveRJ'.
++ INSERTING NEW DATA - STARTED! 06.08.2019 09:44:28
+	+ Inserting of working units - STARTED! 06.08.2019 09:44:28
+06.08.2019 09:44:28 SYNCHRONIZATION - FAILED Exception: Could not find stored procedure 'UnesiNoveRJ'.
++ INSERTING NEW DATA - STARTED! 06.08.2019 09:44:28
+	+ Inserting of working units - STARTED! 06.08.2019 09:44:28
+06.08.2019 09:44:29 SYNCHRONIZATION - FAILED Exception: Could not find stored procedure 'UnesiNoveRJ'.
++ INSERTING NEW DATA - STARTED! 06.08.2019 09:44:29
+	+ Inserting of working units - STARTED! 06.08.2019 09:44:29
+06.08.2019 09:44:29 SYNCHRONIZATION - FAILED Exception: Could not find stored procedure 'UnesiNoveRJ'.
++ INSERTING NEW DATA - STARTED! 06.08.2019 09:44:29
+	+ Inserting of working units - STARTED! 06.08.2019 09:44:29
+06.08.2019 09:44:29 SYNCHRONIZATION - FAILED Exception: Could not find stored procedure 'UnesiNoveRJ'.
++ INSERTING NEW DATA - STARTED! 06.08.2019 09:47:06
+	+ Inserting of working units - STARTED! 06.08.2019 09:47:06
+06.08.2019 09:47:06 SYNCHRONIZATION - FAILED Exception: Could not find stored procedure 'UnesiNoveRJ'.
++ INSERTING NEW DATA - STARTED! 06.08.2019 09:47:06
+	+ Inserting of working units - STARTED! 06.08.2019 09:47:06
+06.08.2019 09:47:06 SYNCHRONIZATION - FAILED Exception: Could not find stored procedure 'UnesiNoveRJ'.
++ INSERTING NEW DATA - STARTED! 06.08.2019 09:47:06
+	+ Inserting of working units - STARTED! 06.08.2019 09:47:06
+06.08.2019 09:47:06 SYNCHRONIZATION - FAILED Exception: Could not find stored procedure 'UnesiNoveRJ'.
++ INSERTING NEW DATA - STARTED! 06.08.2019 09:47:06
+	+ Inserting of working units - STARTED! 06.08.2019 09:47:06
+06.08.2019 09:47:06 SYNCHRONIZATION - FAILED Exception: Could not find stored procedure 'UnesiNoveRJ'.
++ INSERTING NEW DATA - STARTED! 06.08.2019 09:51:19
+	+ Inserting of working units - STARTED! 06.08.2019 09:51:19
+06.08.2019 09:51:19 SYNCHRONIZATION - FAILED Exception: Could not find stored procedure 'UnesiNoveRJ'.
++ INSERTING NEW DATA - STARTED! 06.08.2019 09:51:19
+	+ Inserting of working units - STARTED! 06.08.2019 09:51:19
+06.08.2019 09:51:19 SYNCHRONIZATION - FAILED Exception: Could not find stored procedure 'UnesiNoveRJ'.
++ INSERTING NEW DATA - STARTED! 06.08.2019 09:51:19
+	+ Inserting of working units - STARTED! 06.08.2019 09:51:19
+06.08.2019 09:51:19 SYNCHRONIZATION - FAILED Exception: Could not find stored procedure 'UnesiNoveRJ'.
++ INSERTING NEW DATA - STARTED! 06.08.2019 09:51:19
+	+ Inserting of working units - STARTED! 06.08.2019 09:51:19
+06.08.2019 09:51:19 SYNCHRONIZATION - FAILED Exception: Could not find stored procedure 'UnesiNoveRJ'.
++ INSERTING NEW DATA - STARTED! 09.08.2019 09:24:10
+	+ Inserting of working units - STARTED! 09.08.2019 09:24:10
+09.08.2019 09:24:11 SYNCHRONIZATION - FAILED Exception: Could not find stored procedure 'UnesiNoveRJ'.
++ INSERTING NEW DATA - STARTED! 09.08.2019 09:24:11
+	+ Inserting of working units - STARTED! 09.08.2019 09:24:11
+09.08.2019 09:24:11 SYNCHRONIZATION - FAILED Exception: Could not find stored procedure 'UnesiNoveRJ'.
++ INSERTING NEW DATA - STARTED! 09.08.2019 09:24:11
+	+ Inserting of working units - STARTED! 09.08.2019 09:24:11
+09.08.2019 09:24:11 SYNCHRONIZATION - FAILED Exception: Could not find stored procedure 'UnesiNoveRJ'.
++ INSERTING NEW DATA - STARTED! 09.08.2019 09:24:11
+	+ Inserting of working units - STARTED! 09.08.2019 09:24:11
+09.08.2019 09:24:11 SYNCHRONIZATION - FAILED Exception: Could not find stored procedure 'UnesiNoveRJ'.
++ INSERTING NEW DATA - STARTED! 09.08.2019 09:30:26
+	+ Inserting of working units - STARTED! 09.08.2019 09:30:26
+09.08.2019 09:30:26 SYNCHRONIZATION - FAILED Exception: Could not find stored procedure 'UnesiNoveRJ'.
++ INSERTING NEW DATA - STARTED! 09.08.2019 09:30:26
+	+ Inserting of working units - STARTED! 09.08.2019 09:30:26
+09.08.2019 09:30:26 SYNCHRONIZATION - FAILED Exception: Could not find stored procedure 'UnesiNoveRJ'.
++ INSERTING NEW DATA - STARTED! 09.08.2019 09:30:26
+	+ Inserting of working units - STARTED! 09.08.2019 09:30:26
+09.08.2019 09:30:26 SYNCHRONIZATION - FAILED Exception: Could not find stored procedure 'UnesiNoveRJ'.
++ INSERTING NEW DATA - STARTED! 09.08.2019 09:30:26
+	+ Inserting of working units - STARTED! 09.08.2019 09:30:26
+09.08.2019 09:30:26 SYNCHRONIZATION - FAILED Exception: Could not find stored procedure 'UnesiNoveRJ'.
++ INSERTING NEW DATA - STARTED! 09.08.2019 09:43:58
+	+ Inserting of working units - STARTED! 09.08.2019 09:43:58
+09.08.2019 09:43:58 SYNCHRONIZATION - FAILED Exception: Could not find stored procedure 'UnesiNoveRJ'.
++ INSERTING NEW DATA - STARTED! 09.08.2019 09:43:58
+	+ Inserting of working units - STARTED! 09.08.2019 09:43:58
+09.08.2019 09:43:58 SYNCHRONIZATION - FAILED Exception: Could not find stored procedure 'UnesiNoveRJ'.
++ INSERTING NEW DATA - STARTED! 09.08.2019 09:43:58
+	+ Inserting of working units - STARTED! 09.08.2019 09:43:58
+09.08.2019 09:43:58 SYNCHRONIZATION - FAILED Exception: Could not find stored procedure 'UnesiNoveRJ'.
++ INSERTING NEW DATA - STARTED! 09.08.2019 09:43:58
+	+ Inserting of working units - STARTED! 09.08.2019 09:43:58
+09.08.2019 09:43:58 SYNCHRONIZATION - FAILED Exception: Could not find stored procedure 'UnesiNoveRJ'.
++ INSERTING NEW DATA - STARTED! 21.08.2019 10:55:45
+	+ Inserting of working units - STARTED! 21.08.2019 10:55:45
+21.08.2019 10:55:47 SYNCHRONIZATION - FAILED Exception: Could not find stored procedure 'UnesiNoveRJ'.
++ INSERTING NEW DATA - STARTED! 21.08.2019 10:55:47
+	+ Inserting of working units - STARTED! 21.08.2019 10:55:47
+21.08.2019 10:55:47 SYNCHRONIZATION - FAILED Exception: Could not find stored procedure 'UnesiNoveRJ'.
++ INSERTING NEW DATA - STARTED! 21.08.2019 10:55:47
+	+ Inserting of working units - STARTED! 21.08.2019 10:55:47
+21.08.2019 10:55:47 SYNCHRONIZATION - FAILED Exception: Could not find stored procedure 'UnesiNoveRJ'.
++ INSERTING NEW DATA - STARTED! 21.08.2019 10:55:47
+	+ Inserting of working units - STARTED! 21.08.2019 10:55:47
+21.08.2019 10:55:47 SYNCHRONIZATION - FAILED Exception: Could not find stored procedure 'UnesiNoveRJ'.
++ INSERTING NEW DATA - STARTED! 21.08.2019 10:59:34
+	+ Inserting of working units - STARTED! 21.08.2019 10:59:34
+21.08.2019 10:59:34 SYNCHRONIZATION - FAILED Exception: Could not find stored procedure 'UnesiNoveRJ'.
++ INSERTING NEW DATA - STARTED! 21.08.2019 10:59:34
+	+ Inserting of working units - STARTED! 21.08.2019 10:59:34
+21.08.2019 10:59:34 SYNCHRONIZATION - FAILED Exception: Could not find stored procedure 'UnesiNoveRJ'.
++ INSERTING NEW DATA - STARTED! 21.08.2019 10:59:34
+	+ Inserting of working units - STARTED! 21.08.2019 10:59:34
+21.08.2019 10:59:34 SYNCHRONIZATION - FAILED Exception: Could not find stored procedure 'UnesiNoveRJ'.
++ INSERTING NEW DATA - STARTED! 21.08.2019 10:59:34
+	+ Inserting of working units - STARTED! 21.08.2019 10:59:34
+21.08.2019 10:59:34 SYNCHRONIZATION - FAILED Exception: Could not find stored procedure 'UnesiNoveRJ'.
++ INSERTING NEW DATA - STARTED! 21.08.2019 13:29:45
+	+ Inserting of working units - STARTED! 21.08.2019 13:29:45
+21.08.2019 13:29:46 SYNCHRONIZATION - FAILED Exception: Could not find stored procedure 'UnesiNoveRJ'.
++ INSERTING NEW DATA - STARTED! 21.08.2019 13:29:46
+	+ Inserting of working units - STARTED! 21.08.2019 13:29:46
+21.08.2019 13:29:46 SYNCHRONIZATION - FAILED Exception: Could not find stored procedure 'UnesiNoveRJ'.
++ INSERTING NEW DATA - STARTED! 21.08.2019 13:29:46
+	+ Inserting of working units - STARTED! 21.08.2019 13:29:46
+21.08.2019 13:29:47 SYNCHRONIZATION - FAILED Exception: Could not find stored procedure 'UnesiNoveRJ'.
++ INSERTING NEW DATA - STARTED! 21.08.2019 13:29:47
+	+ Inserting of working units - STARTED! 21.08.2019 13:29:47
+21.08.2019 13:29:47 SYNCHRONIZATION - FAILED Exception: Could not find stored procedure 'UnesiNoveRJ'.
++ INSERTING NEW DATA - STARTED! 21.08.2019 13:31:04
+	+ Inserting of working units - STARTED! 21.08.2019 13:31:04
+21.08.2019 13:31:04 SYNCHRONIZATION - FAILED Exception: Could not find stored procedure 'UnesiNoveRJ'.
++ INSERTING NEW DATA - STARTED! 21.08.2019 13:31:04
+	+ Inserting of working units - STARTED! 21.08.2019 13:31:04
+21.08.2019 13:31:04 SYNCHRONIZATION - FAILED Exception: Could not find stored procedure 'UnesiNoveRJ'.
++ INSERTING NEW DATA - STARTED! 21.08.2019 13:31:04
+	+ Inserting of working units - STARTED! 21.08.2019 13:31:04
+21.08.2019 13:31:04 SYNCHRONIZATION - FAILED Exception: Could not find stored procedure 'UnesiNoveRJ'.
++ INSERTING NEW DATA - STARTED! 21.08.2019 13:31:04
+	+ Inserting of working units - STARTED! 21.08.2019 13:31:04
+21.08.2019 13:31:04 SYNCHRONIZATION - FAILED Exception: Could not find stored procedure 'UnesiNoveRJ'.
++ INSERTING NEW DATA - STARTED! 21.08.2019 13:33:31
+	+ Inserting of working units - STARTED! 21.08.2019 13:33:31
+21.08.2019 13:33:31 SYNCHRONIZATION - FAILED Exception: Could not find stored procedure 'UnesiNoveRJ'.
++ INSERTING NEW DATA - STARTED! 21.08.2019 13:33:31
+	+ Inserting of working units - STARTED! 21.08.2019 13:33:31
+21.08.2019 13:33:31 SYNCHRONIZATION - FAILED Exception: Could not find stored procedure 'UnesiNoveRJ'.
++ INSERTING NEW DATA - STARTED! 21.08.2019 13:33:31
+	+ Inserting of working units - STARTED! 21.08.2019 13:33:31
+21.08.2019 13:33:31 SYNCHRONIZATION - FAILED Exception: Could not find stored procedure 'UnesiNoveRJ'.
++ INSERTING NEW DATA - STARTED! 21.08.2019 13:33:31
+	+ Inserting of working units - STARTED! 21.08.2019 13:33:31
+21.08.2019 13:33:31 SYNCHRONIZATION - FAILED Exception: Could not find stored procedure 'UnesiNoveRJ'.
++ INSERTING NEW DATA - STARTED! 21.08.2019 13:35:03
+	+ Inserting of working units - STARTED! 21.08.2019 13:35:03
+21.08.2019 13:35:03 SYNCHRONIZATION - FAILED Exception: Could not find stored procedure 'UnesiNoveRJ'.
++ INSERTING NEW DATA - STARTED! 21.08.2019 13:35:03
+	+ Inserting of working units - STARTED! 21.08.2019 13:35:03
+21.08.2019 13:35:03 SYNCHRONIZATION - FAILED Exception: Could not find stored procedure 'UnesiNoveRJ'.
++ INSERTING NEW DATA - STARTED! 21.08.2019 13:35:03
+	+ Inserting of working units - STARTED! 21.08.2019 13:35:03
+21.08.2019 13:35:03 SYNCHRONIZATION - FAILED Exception: Could not find stored procedure 'UnesiNoveRJ'.
++ INSERTING NEW DATA - STARTED! 21.08.2019 13:35:03
+	+ Inserting of working units - STARTED! 21.08.2019 13:35:03
+21.08.2019 13:35:03 SYNCHRONIZATION - FAILED Exception: Could not find stored procedure 'UnesiNoveRJ'.
++ INSERTING NEW DATA - STARTED! 21.08.2019 13:37:36
+	+ Inserting of working units - STARTED! 21.08.2019 13:37:36
+21.08.2019 13:37:36 SYNCHRONIZATION - FAILED Exception: Could not find stored procedure 'UnesiNoveRJ'.
++ INSERTING NEW DATA - STARTED! 21.08.2019 13:37:36
+	+ Inserting of working units - STARTED! 21.08.2019 13:37:36
+21.08.2019 13:37:37 SYNCHRONIZATION - FAILED Exception: Could not find stored procedure 'UnesiNoveRJ'.
++ INSERTING NEW DATA - STARTED! 21.08.2019 13:37:37
+	+ Inserting of working units - STARTED! 21.08.2019 13:37:37
+21.08.2019 13:37:37 SYNCHRONIZATION - FAILED Exception: Could not find stored procedure 'UnesiNoveRJ'.
++ INSERTING NEW DATA - STARTED! 21.08.2019 13:37:37
+	+ Inserting of working units - STARTED! 21.08.2019 13:37:37
+21.08.2019 13:37:37 SYNCHRONIZATION - FAILED Exception: Could not find stored procedure 'UnesiNoveRJ'.
++ INSERTING NEW DATA - STARTED! 21.08.2019 13:48:50
+	+ Inserting of working units - STARTED! 21.08.2019 13:48:50
+21.08.2019 13:48:51 SYNCHRONIZATION - FAILED Exception: Could not find stored procedure 'UnesiNoveRJ'.
++ INSERTING NEW DATA - STARTED! 21.08.2019 13:48:51
+	+ Inserting of working units - STARTED! 21.08.2019 13:48:51
+21.08.2019 13:48:52 SYNCHRONIZATION - FAILED Exception: Could not find stored procedure 'UnesiNoveRJ'.
++ INSERTING NEW DATA - STARTED! 21.08.2019 13:48:52
+	+ Inserting of working units - STARTED! 21.08.2019 13:48:52
+21.08.2019 13:48:53 SYNCHRONIZATION - FAILED Exception: Could not find stored procedure 'UnesiNoveRJ'.
++ INSERTING NEW DATA - STARTED! 21.08.2019 13:48:53
+	+ Inserting of working units - STARTED! 21.08.2019 13:48:53
+21.08.2019 13:48:55 SYNCHRONIZATION - FAILED Exception: Could not find stored procedure 'UnesiNoveRJ'.
++ INSERTING NEW DATA - STARTED! 21.08.2019 13:48:57
+	+ Inserting of working units - STARTED! 21.08.2019 13:48:57
+21.08.2019 13:48:58 SYNCHRONIZATION - FAILED Exception: Could not find stored procedure 'UnesiNoveRJ'.
++ INSERTING NEW DATA - STARTED! 21.08.2019 13:48:58
+	+ Inserting of working units - STARTED! 21.08.2019 13:48:58
+21.08.2019 13:48:59 SYNCHRONIZATION - FAILED Exception: Could not find stored procedure 'UnesiNoveRJ'.
++ INSERTING NEW DATA - STARTED! 21.08.2019 13:48:59
+	+ Inserting of working units - STARTED! 21.08.2019 13:48:59
+21.08.2019 13:48:59 SYNCHRONIZATION - FAILED Exception: Could not find stored procedure 'UnesiNoveRJ'.
++ INSERTING NEW DATA - STARTED! 21.08.2019 13:48:59
+	+ Inserting of working units - STARTED! 21.08.2019 13:48:59
+21.08.2019 13:49:00 SYNCHRONIZATION - FAILED Exception: Could not find stored procedure 'UnesiNoveRJ'.
++ INSERTING NEW DATA - STARTED! 21.08.2019 15:29:42
+	+ Inserting of working units - STARTED! 21.08.2019 15:29:42
+21.08.2019 15:29:43 SYNCHRONIZATION - FAILED Exception: Could not find stored procedure 'UnesiNoveRJ'.
++ INSERTING NEW DATA - STARTED! 21.08.2019 15:29:43
+	+ Inserting of working units - STARTED! 21.08.2019 15:29:43
+21.08.2019 15:29:43 SYNCHRONIZATION - FAILED Exception: Could not find stored procedure 'UnesiNoveRJ'.
++ INSERTING NEW DATA - STARTED! 21.08.2019 15:29:43
+	+ Inserting of working units - STARTED! 21.08.2019 15:29:43
+21.08.2019 15:29:44 SYNCHRONIZATION - FAILED Exception: Could not find stored procedure 'UnesiNoveRJ'.
++ INSERTING NEW DATA - STARTED! 21.08.2019 15:29:44
+	+ Inserting of working units - STARTED! 21.08.2019 15:29:44
+21.08.2019 15:29:45 SYNCHRONIZATION - FAILED Exception: Could not find stored procedure 'UnesiNoveRJ'.
++ INSERTING NEW DATA - STARTED! 21.08.2019 15:32:18
+	+ Inserting of working units - STARTED! 21.08.2019 15:32:18
+21.08.2019 15:32:21 SYNCHRONIZATION - FAILED Exception: Could not find stored procedure 'UnesiNoveRJ'.
++ INSERTING NEW DATA - STARTED! 21.08.2019 15:32:21
+	+ Inserting of working units - STARTED! 21.08.2019 15:32:21
+21.08.2019 15:32:23 SYNCHRONIZATION - FAILED Exception: Could not find stored procedure 'UnesiNoveRJ'.
++ INSERTING NEW DATA - STARTED! 21.08.2019 15:32:23
+	+ Inserting of working units - STARTED! 21.08.2019 15:32:23
+21.08.2019 15:32:24 SYNCHRONIZATION - FAILED Exception: Could not find stored procedure 'UnesiNoveRJ'.
++ INSERTING NEW DATA - STARTED! 21.08.2019 15:32:24
+	+ Inserting of working units - STARTED! 21.08.2019 15:32:24
+21.08.2019 15:32:25 SYNCHRONIZATION - FAILED Exception: Could not find stored procedure 'UnesiNoveRJ'.
++ INSERTING NEW DATA - STARTED! 21.08.2019 15:32:29
+	+ Inserting of working units - STARTED! 21.08.2019 15:32:29
+21.08.2019 15:32:29 SYNCHRONIZATION - FAILED Exception: Could not find stored procedure 'UnesiNoveRJ'.
++ INSERTING NEW DATA - STARTED! 21.08.2019 15:32:29
+	+ Inserting of working units - STARTED! 21.08.2019 15:32:29
+21.08.2019 15:32:30 SYNCHRONIZATION - FAILED Exception: Could not find stored procedure 'UnesiNoveRJ'.
++ INSERTING NEW DATA - STARTED! 21.08.2019 15:32:30
+	+ Inserting of working units - STARTED! 21.08.2019 15:32:30
+21.08.2019 15:32:30 SYNCHRONIZATION - FAILED Exception: Could not find stored procedure 'UnesiNoveRJ'.
++ INSERTING NEW DATA - STARTED! 21.08.2019 15:32:30
+	+ Inserting of working units - STARTED! 21.08.2019 15:32:30
+21.08.2019 15:32:30 SYNCHRONIZATION - FAILED Exception: Could not find stored procedure 'UnesiNoveRJ'.
++ INSERTING NEW DATA - STARTED! 21.08.2019 15:36:00
+	+ Inserting of working units - STARTED! 21.08.2019 15:36:00
+21.08.2019 15:36:01 SYNCHRONIZATION - FAILED Exception: Could not find stored procedure 'UnesiNoveRJ'.
++ INSERTING NEW DATA - STARTED! 21.08.2019 15:36:01
+	+ Inserting of working units - STARTED! 21.08.2019 15:36:01
+21.08.2019 15:36:02 SYNCHRONIZATION - FAILED Exception: Could not find stored procedure 'UnesiNoveRJ'.
++ INSERTING NEW DATA - STARTED! 21.08.2019 15:36:02
+	+ Inserting of working units - STARTED! 21.08.2019 15:36:02
+21.08.2019 15:36:03 SYNCHRONIZATION - FAILED Exception: Could not find stored procedure 'UnesiNoveRJ'.
++ INSERTING NEW DATA - STARTED! 21.08.2019 15:36:03
+	+ Inserting of working units - STARTED! 21.08.2019 15:36:03
+21.08.2019 15:36:04 SYNCHRONIZATION - FAILED Exception: Could not find stored procedure 'UnesiNoveRJ'.
++ INSERTING NEW DATA - STARTED! 21.08.2019 15:47:20
+	+ Inserting of working units - STARTED! 21.08.2019 15:47:20
+21.08.2019 15:47:21 SYNCHRONIZATION - FAILED Exception: Could not find stored procedure 'UnesiNoveRJ'.
++ INSERTING NEW DATA - STARTED! 21.08.2019 15:47:21
+	+ Inserting of working units - STARTED! 21.08.2019 15:47:21
+21.08.2019 15:47:22 SYNCHRONIZATION - FAILED Exception: Could not find stored procedure 'UnesiNoveRJ'.
++ INSERTING NEW DATA - STARTED! 21.08.2019 15:47:22
+	+ Inserting of working units - STARTED! 21.08.2019 15:47:22
+21.08.2019 15:47:23 SYNCHRONIZATION - FAILED Exception: Could not find stored procedure 'UnesiNoveRJ'.
++ INSERTING NEW DATA - STARTED! 21.08.2019 15:47:23
+	+ Inserting of working units - STARTED! 21.08.2019 15:47:23
+21.08.2019 15:47:24 SYNCHRONIZATION - FAILED Exception: Could not find stored procedure 'UnesiNoveRJ'.
++ INSERTING NEW DATA - STARTED! 21.08.2019 15:47:28
+	+ Inserting of working units - STARTED! 21.08.2019 15:47:28
+21.08.2019 15:47:28 SYNCHRONIZATION - FAILED Exception: Could not find stored procedure 'UnesiNoveRJ'.
++ INSERTING NEW DATA - STARTED! 21.08.2019 15:47:28
+	+ Inserting of working units - STARTED! 21.08.2019 15:47:28
+21.08.2019 15:47:29 SYNCHRONIZATION - FAILED Exception: Could not find stored procedure 'UnesiNoveRJ'.
++ INSERTING NEW DATA - STARTED! 21.08.2019 15:47:29
+	+ Inserting of working units - STARTED! 21.08.2019 15:47:29
+21.08.2019 15:47:29 SYNCHRONIZATION - FAILED Exception: Could not find stored procedure 'UnesiNoveRJ'.
++ INSERTING NEW DATA - STARTED! 21.08.2019 15:47:29
+	+ Inserting of working units - STARTED! 21.08.2019 15:47:29
+21.08.2019 15:47:29 SYNCHRONIZATION - FAILED Exception: Could not find stored procedure 'UnesiNoveRJ'.
++ INSERTING NEW DATA - STARTED! 21.08.2019 15:57:49
+	+ Inserting of working units - STARTED! 21.08.2019 15:57:49
+21.08.2019 15:57:50 SYNCHRONIZATION - FAILED Exception: Could not find stored procedure 'UnesiNoveRJ'.
++ INSERTING NEW DATA - STARTED! 21.08.2019 15:57:50
+	+ Inserting of working units - STARTED! 21.08.2019 15:57:50
+21.08.2019 15:57:50 SYNCHRONIZATION - FAILED Exception: Could not find stored procedure 'UnesiNoveRJ'.
++ INSERTING NEW DATA - STARTED! 21.08.2019 15:57:50
+	+ Inserting of working units - STARTED! 21.08.2019 15:57:50
+21.08.2019 15:57:50 SYNCHRONIZATION - FAILED Exception: Could not find stored procedure 'UnesiNoveRJ'.
++ INSERTING NEW DATA - STARTED! 21.08.2019 15:57:50
+	+ Inserting of working units - STARTED! 21.08.2019 15:57:50
+21.08.2019 15:57:50 SYNCHRONIZATION - FAILED Exception: Could not find stored procedure 'UnesiNoveRJ'.
++ INSERTING NEW DATA - STARTED! 21.08.2019 15:59:29
+	+ Inserting of working units - STARTED! 21.08.2019 15:59:29
+21.08.2019 15:59:29 SYNCHRONIZATION - FAILED Exception: Could not find stored procedure 'UnesiNoveRJ'.
++ INSERTING NEW DATA - STARTED! 21.08.2019 15:59:29
+	+ Inserting of working units - STARTED! 21.08.2019 15:59:29
+21.08.2019 15:59:29 SYNCHRONIZATION - FAILED Exception: Could not find stored procedure 'UnesiNoveRJ'.
++ INSERTING NEW DATA - STARTED! 21.08.2019 15:59:29
+	+ Inserting of working units - STARTED! 21.08.2019 15:59:29
+21.08.2019 15:59:29 SYNCHRONIZATION - FAILED Exception: Could not find stored procedure 'UnesiNoveRJ'.
++ INSERTING NEW DATA - STARTED! 21.08.2019 15:59:29
+	+ Inserting of working units - STARTED! 21.08.2019 15:59:29
+21.08.2019 15:59:30 SYNCHRONIZATION - FAILED Exception: Could not find stored procedure 'UnesiNoveRJ'.
++ INSERTING NEW DATA - STARTED! 21.08.2019 16:01:33
+	+ Inserting of working units - STARTED! 21.08.2019 16:01:33
+21.08.2019 16:01:33 SYNCHRONIZATION - FAILED Exception: Could not find stored procedure 'UnesiNoveRJ'.
++ INSERTING NEW DATA - STARTED! 21.08.2019 16:01:33
+	+ Inserting of working units - STARTED! 21.08.2019 16:01:33
+21.08.2019 16:01:34 SYNCHRONIZATION - FAILED Exception: Could not find stored procedure 'UnesiNoveRJ'.
++ INSERTING NEW DATA - STARTED! 21.08.2019 16:01:34
+	+ Inserting of working units - STARTED! 21.08.2019 16:01:34
+21.08.2019 16:01:34 SYNCHRONIZATION - FAILED Exception: Could not find stored procedure 'UnesiNoveRJ'.
++ INSERTING NEW DATA - STARTED! 21.08.2019 16:01:34
+	+ Inserting of working units - STARTED! 21.08.2019 16:01:34
+21.08.2019 16:01:34 SYNCHRONIZATION - FAILED Exception: Could not find stored procedure 'UnesiNoveRJ'.
++ INSERTING NEW DATA - STARTED! 21.08.2019 16:04:44
+	+ Inserting of working units - STARTED! 21.08.2019 16:04:44
+21.08.2019 16:04:45 SYNCHRONIZATION - FAILED Exception: Could not find stored procedure 'UnesiNoveRJ'.
++ INSERTING NEW DATA - STARTED! 21.08.2019 16:04:45
+	+ Inserting of working units - STARTED! 21.08.2019 16:04:45
+21.08.2019 16:04:45 SYNCHRONIZATION - FAILED Exception: Could not find stored procedure 'UnesiNoveRJ'.
++ INSERTING NEW DATA - STARTED! 21.08.2019 16:04:45
+	+ Inserting of working units - STARTED! 21.08.2019 16:04:45
+21.08.2019 16:04:45 SYNCHRONIZATION - FAILED Exception: Could not find stored procedure 'UnesiNoveRJ'.
++ INSERTING NEW DATA - STARTED! 21.08.2019 16:04:45
+	+ Inserting of working units - STARTED! 21.08.2019 16:04:45
+21.08.2019 16:04:45 SYNCHRONIZATION - FAILED Exception: Could not find stored procedure 'UnesiNoveRJ'.
++ INSERTING NEW DATA - STARTED! 22.08.2019 11:03:14
+	+ Inserting of working units - STARTED! 22.08.2019 11:03:19
+22.08.2019 11:03:19 SYNCHRONIZATION - FAILED Exception: Could not find stored procedure 'UnesiNoveRJ'.
++ INSERTING NEW DATA - STARTED! 22.08.2019 11:03:19
+	+ Inserting of working units - STARTED! 22.08.2019 11:03:19
+22.08.2019 11:03:19 SYNCHRONIZATION - FAILED Exception: Could not find stored procedure 'UnesiNoveRJ'.
++ INSERTING NEW DATA - STARTED! 22.08.2019 11:03:19
+	+ Inserting of working units - STARTED! 22.08.2019 11:03:19
+22.08.2019 11:03:19 SYNCHRONIZATION - FAILED Exception: Could not find stored procedure 'UnesiNoveRJ'.
++ INSERTING NEW DATA - STARTED! 22.08.2019 11:03:19
+	+ Inserting of working units - STARTED! 22.08.2019 11:03:19
+22.08.2019 11:03:19 SYNCHRONIZATION - FAILED Exception: Could not find stored procedure 'UnesiNoveRJ'.
++ INSERTING NEW DATA - STARTED! 05.09.2019 14:18:19
+	+ Inserting of working units - STARTED! 05.09.2019 14:18:19
+05.09.2019 14:18:20 SYNCHRONIZATION - FAILED Exception: Could not find stored procedure 'UnesiNoveRJ'.
++ INSERTING NEW DATA - STARTED! 05.09.2019 14:18:20
+	+ Inserting of working units - STARTED! 05.09.2019 14:18:20
+05.09.2019 14:18:20 SYNCHRONIZATION - FAILED Exception: Could not find stored procedure 'UnesiNoveRJ'.
++ INSERTING NEW DATA - STARTED! 05.09.2019 14:18:20
+	+ Inserting of working units - STARTED! 05.09.2019 14:18:20
+05.09.2019 14:18:20 SYNCHRONIZATION - FAILED Exception: Could not find stored procedure 'UnesiNoveRJ'.
++ INSERTING NEW DATA - STARTED! 05.09.2019 14:18:20
+	+ Inserting of working units - STARTED! 05.09.2019 14:18:20
+05.09.2019 14:18:20 SYNCHRONIZATION - FAILED Exception: Could not find stored procedure 'UnesiNoveRJ'.
++ INSERTING NEW DATA - STARTED! 05.09.2019 14:23:37
+	+ Inserting of working units - STARTED! 05.09.2019 14:23:37
+05.09.2019 14:23:37 SYNCHRONIZATION - FAILED Exception: Could not find stored procedure 'UnesiNoveRJ'.
++ INSERTING NEW DATA - STARTED! 05.09.2019 14:23:37
+	+ Inserting of working units - STARTED! 05.09.2019 14:23:37
+05.09.2019 14:23:37 SYNCHRONIZATION - FAILED Exception: Could not find stored procedure 'UnesiNoveRJ'.
++ INSERTING NEW DATA - STARTED! 05.09.2019 14:23:37
+	+ Inserting of working units - STARTED! 05.09.2019 14:23:37
+05.09.2019 14:23:37 SYNCHRONIZATION - FAILED Exception: Could not find stored procedure 'UnesiNoveRJ'.
++ INSERTING NEW DATA - STARTED! 05.09.2019 14:23:37
+	+ Inserting of working units - STARTED! 05.09.2019 14:23:37
+05.09.2019 14:23:37 SYNCHRONIZATION - FAILED Exception: Could not find stored procedure 'UnesiNoveRJ'.
++ INSERTING NEW DATA - STARTED! 05.09.2019 14:27:27
+	+ Inserting of working units - STARTED! 05.09.2019 14:27:27
+05.09.2019 14:27:27 SYNCHRONIZATION - FAILED Exception: Could not find stored procedure 'UnesiNoveRJ'.
++ INSERTING NEW DATA - STARTED! 05.09.2019 14:27:27
+	+ Inserting of working units - STARTED! 05.09.2019 14:27:27
+05.09.2019 14:27:27 SYNCHRONIZATION - FAILED Exception: Could not find stored procedure 'UnesiNoveRJ'.
++ INSERTING NEW DATA - STARTED! 05.09.2019 14:27:27
+	+ Inserting of working units - STARTED! 05.09.2019 14:27:27
+05.09.2019 14:27:27 SYNCHRONIZATION - FAILED Exception: Could not find stored procedure 'UnesiNoveRJ'.
++ INSERTING NEW DATA - STARTED! 05.09.2019 14:27:27
+	+ Inserting of working units - STARTED! 05.09.2019 14:27:27
+05.09.2019 14:27:27 SYNCHRONIZATION - FAILED Exception: Could not find stored procedure 'UnesiNoveRJ'.
++ INSERTING NEW DATA - STARTED! 05.09.2019 14:29:07
+	+ Inserting of working units - STARTED! 05.09.2019 14:29:07
+05.09.2019 14:29:07 SYNCHRONIZATION - FAILED Exception: Could not find stored procedure 'UnesiNoveRJ'.
++ INSERTING NEW DATA - STARTED! 05.09.2019 14:29:07
+	+ Inserting of working units - STARTED! 05.09.2019 14:29:07
+05.09.2019 14:29:07 SYNCHRONIZATION - FAILED Exception: Could not find stored procedure 'UnesiNoveRJ'.
++ INSERTING NEW DATA - STARTED! 05.09.2019 14:29:07
+	+ Inserting of working units - STARTED! 05.09.2019 14:29:07
+05.09.2019 14:29:08 SYNCHRONIZATION - FAILED Exception: Could not find stored procedure 'UnesiNoveRJ'.
++ INSERTING NEW DATA - STARTED! 05.09.2019 14:29:08
+	+ Inserting of working units - STARTED! 05.09.2019 14:29:08
+05.09.2019 14:29:08 SYNCHRONIZATION - FAILED Exception: Could not find stored procedure 'UnesiNoveRJ'.
++ INSERTING NEW DATA - STARTED! 05.09.2019 14:35:07
+	+ Inserting of working units - STARTED! 05.09.2019 14:35:07
+05.09.2019 14:35:07 SYNCHRONIZATION - FAILED Exception: Could not find stored procedure 'UnesiNoveRJ'.
++ INSERTING NEW DATA - STARTED! 05.09.2019 14:35:07
+	+ Inserting of working units - STARTED! 05.09.2019 14:35:07
+05.09.2019 14:35:07 SYNCHRONIZATION - FAILED Exception: Could not find stored procedure 'UnesiNoveRJ'.
++ INSERTING NEW DATA - STARTED! 05.09.2019 14:35:07
+	+ Inserting of working units - STARTED! 05.09.2019 14:35:07
+05.09.2019 14:35:07 SYNCHRONIZATION - FAILED Exception: Could not find stored procedure 'UnesiNoveRJ'.
++ INSERTING NEW DATA - STARTED! 05.09.2019 14:35:07
+	+ Inserting of working units - STARTED! 05.09.2019 14:35:07
+05.09.2019 14:35:07 SYNCHRONIZATION - FAILED Exception: Could not find stored procedure 'UnesiNoveRJ'.
++ INSERTING NEW DATA - STARTED! 05.09.2019 15:34:14
+	+ Inserting of working units - STARTED! 05.09.2019 15:34:14
+05.09.2019 15:34:14 SYNCHRONIZATION - FAILED Exception: Could not find stored procedure 'UnesiNoveRJ'.
++ INSERTING NEW DATA - STARTED! 05.09.2019 15:34:14
+	+ Inserting of working units - STARTED! 05.09.2019 15:34:14
+05.09.2019 15:34:14 SYNCHRONIZATION - FAILED Exception: Could not find stored procedure 'UnesiNoveRJ'.
++ INSERTING NEW DATA - STARTED! 05.09.2019 15:34:14
+	+ Inserting of working units - STARTED! 05.09.2019 15:34:14
+05.09.2019 15:34:14 SYNCHRONIZATION - FAILED Exception: Could not find stored procedure 'UnesiNoveRJ'.
++ INSERTING NEW DATA - STARTED! 05.09.2019 15:34:14
+	+ Inserting of working units - STARTED! 05.09.2019 15:34:14
+05.09.2019 15:34:14 SYNCHRONIZATION - FAILED Exception: Could not find stored procedure 'UnesiNoveRJ'.
++ INSERTING NEW DATA - STARTED! 05.09.2019 15:37:42
+	+ Inserting of working units - STARTED! 05.09.2019 15:37:42
+05.09.2019 15:37:42 SYNCHRONIZATION - FAILED Exception: Could not find stored procedure 'UnesiNoveRJ'.
++ INSERTING NEW DATA - STARTED! 05.09.2019 15:37:42
+	+ Inserting of working units - STARTED! 05.09.2019 15:37:42
+05.09.2019 15:37:42 SYNCHRONIZATION - FAILED Exception: Could not find stored procedure 'UnesiNoveRJ'.
++ INSERTING NEW DATA - STARTED! 05.09.2019 15:37:42
+	+ Inserting of working units - STARTED! 05.09.2019 15:37:42
+05.09.2019 15:37:42 SYNCHRONIZATION - FAILED Exception: Could not find stored procedure 'UnesiNoveRJ'.
++ INSERTING NEW DATA - STARTED! 05.09.2019 15:37:42
+	+ Inserting of working units - STARTED! 05.09.2019 15:37:42
+05.09.2019 15:37:42 SYNCHRONIZATION - FAILED Exception: Could not find stored procedure 'UnesiNoveRJ'.
++ INSERTING NEW DATA - STARTED! 06.09.2019 10:58:54
+	+ Inserting of working units - STARTED! 06.09.2019 10:58:54
+06.09.2019 10:58:54 SYNCHRONIZATION - FAILED Exception: Could not find stored procedure 'UnesiNoveRJ'.
++ INSERTING NEW DATA - STARTED! 06.09.2019 10:58:54
+	+ Inserting of working units - STARTED! 06.09.2019 10:58:54
+06.09.2019 10:58:54 SYNCHRONIZATION - FAILED Exception: Could not find stored procedure 'UnesiNoveRJ'.
++ INSERTING NEW DATA - STARTED! 06.09.2019 10:58:54
+	+ Inserting of working units - STARTED! 06.09.2019 10:58:54
+06.09.2019 10:58:54 SYNCHRONIZATION - FAILED Exception: Could not find stored procedure 'UnesiNoveRJ'.
++ INSERTING NEW DATA - STARTED! 06.09.2019 10:58:54
+	+ Inserting of working units - STARTED! 06.09.2019 10:58:54
+06.09.2019 10:58:54 SYNCHRONIZATION - FAILED Exception: Could not find stored procedure 'UnesiNoveRJ'.
++ INSERTING NEW DATA - STARTED! 06.09.2019 10:59:26
+	+ Inserting of working units - STARTED! 06.09.2019 10:59:26
+06.09.2019 10:59:26 SYNCHRONIZATION - FAILED Exception: Could not find stored procedure 'UnesiNoveRJ'.
++ INSERTING NEW DATA - STARTED! 06.09.2019 10:59:26
+	+ Inserting of working units - STARTED! 06.09.2019 10:59:26
+06.09.2019 10:59:26 SYNCHRONIZATION - FAILED Exception: Could not find stored procedure 'UnesiNoveRJ'.
++ INSERTING NEW DATA - STARTED! 06.09.2019 10:59:26
+	+ Inserting of working units - STARTED! 06.09.2019 10:59:26
+06.09.2019 10:59:26 SYNCHRONIZATION - FAILED Exception: Could not find stored procedure 'UnesiNoveRJ'.
++ INSERTING NEW DATA - STARTED! 06.09.2019 10:59:26
+	+ Inserting of working units - STARTED! 06.09.2019 10:59:26
+06.09.2019 10:59:26 SYNCHRONIZATION - FAILED Exception: Could not find stored procedure 'UnesiNoveRJ'.
++ INSERTING NEW DATA - STARTED! 06.09.2019 10:59:59
+	+ Inserting of working units - STARTED! 06.09.2019 10:59:59
+06.09.2019 10:59:59 SYNCHRONIZATION - FAILED Exception: Could not find stored procedure 'UnesiNoveRJ'.
++ INSERTING NEW DATA - STARTED! 06.09.2019 10:59:59
+	+ Inserting of working units - STARTED! 06.09.2019 10:59:59
+06.09.2019 10:59:59 SYNCHRONIZATION - FAILED Exception: Could not find stored procedure 'UnesiNoveRJ'.
++ INSERTING NEW DATA - STARTED! 06.09.2019 10:59:59
+	+ Inserting of working units - STARTED! 06.09.2019 10:59:59
+06.09.2019 10:59:59 SYNCHRONIZATION - FAILED Exception: Could not find stored procedure 'UnesiNoveRJ'.
++ INSERTING NEW DATA - STARTED! 06.09.2019 10:59:59
+	+ Inserting of working units - STARTED! 06.09.2019 10:59:59
+06.09.2019 10:59:59 SYNCHRONIZATION - FAILED Exception: Could not find stored procedure 'UnesiNoveRJ'.
++ INSERTING NEW DATA - STARTED! 06.09.2019 11:01:00
+	+ Inserting of working units - STARTED! 06.09.2019 11:01:00
+06.09.2019 11:01:00 SYNCHRONIZATION - FAILED Exception: Could not find stored procedure 'UnesiNoveRJ'.
++ INSERTING NEW DATA - STARTED! 06.09.2019 11:01:00
+	+ Inserting of working units - STARTED! 06.09.2019 11:01:00
+06.09.2019 11:01:00 SYNCHRONIZATION - FAILED Exception: Could not find stored procedure 'UnesiNoveRJ'.
++ INSERTING NEW DATA - STARTED! 06.09.2019 11:01:00
+	+ Inserting of working units - STARTED! 06.09.2019 11:01:00
+06.09.2019 11:01:00 SYNCHRONIZATION - FAILED Exception: Could not find stored procedure 'UnesiNoveRJ'.
++ INSERTING NEW DATA - STARTED! 06.09.2019 11:01:00
+	+ Inserting of working units - STARTED! 06.09.2019 11:01:00
+06.09.2019 11:01:00 SYNCHRONIZATION - FAILED Exception: Could not find stored procedure 'UnesiNoveRJ'.
++ INSERTING NEW DATA - STARTED! 06.09.2019 11:02:00
+	+ Inserting of working units - STARTED! 06.09.2019 11:02:00
+06.09.2019 11:02:00 SYNCHRONIZATION - FAILED Exception: Could not find stored procedure 'UnesiNoveRJ'.
++ INSERTING NEW DATA - STARTED! 06.09.2019 11:02:00
+	+ Inserting of working units - STARTED! 06.09.2019 11:02:00
+06.09.2019 11:02:00 SYNCHRONIZATION - FAILED Exception: Could not find stored procedure 'UnesiNoveRJ'.
++ INSERTING NEW DATA - STARTED! 06.09.2019 11:02:00
+	+ Inserting of working units - STARTED! 06.09.2019 11:02:00
+06.09.2019 11:02:00 SYNCHRONIZATION - FAILED Exception: Could not find stored procedure 'UnesiNoveRJ'.
++ INSERTING NEW DATA - STARTED! 06.09.2019 11:02:00
+	+ Inserting of working units - STARTED! 06.09.2019 11:02:00
+06.09.2019 11:02:00 SYNCHRONIZATION - FAILED Exception: Could not find stored procedure 'UnesiNoveRJ'.
++ INSERTING NEW DATA - STARTED! 06.09.2019 11:03:00
+	+ Inserting of working units - STARTED! 06.09.2019 11:03:00
+06.09.2019 11:03:00 SYNCHRONIZATION - FAILED Exception: Could not find stored procedure 'UnesiNoveRJ'.
++ INSERTING NEW DATA - STARTED! 06.09.2019 11:03:00
+	+ Inserting of working units - STARTED! 06.09.2019 11:03:00
+06.09.2019 11:03:00 SYNCHRONIZATION - FAILED Exception: Could not find stored procedure 'UnesiNoveRJ'.
++ INSERTING NEW DATA - STARTED! 06.09.2019 11:03:00
+	+ Inserting of working units - STARTED! 06.09.2019 11:03:00
+06.09.2019 11:03:00 SYNCHRONIZATION - FAILED Exception: Could not find stored procedure 'UnesiNoveRJ'.
++ INSERTING NEW DATA - STARTED! 06.09.2019 11:03:00
+	+ Inserting of working units - STARTED! 06.09.2019 11:03:00
+06.09.2019 11:03:00 SYNCHRONIZATION - FAILED Exception: Could not find stored procedure 'UnesiNoveRJ'.
++ INSERTING NEW DATA - STARTED! 06.09.2019 11:04:00
+	+ Inserting of working units - STARTED! 06.09.2019 11:04:00
+06.09.2019 11:04:00 SYNCHRONIZATION - FAILED Exception: Could not find stored procedure 'UnesiNoveRJ'.
++ INSERTING NEW DATA - STARTED! 06.09.2019 11:04:00
+	+ Inserting of working units - STARTED! 06.09.2019 11:04:00
+06.09.2019 11:04:00 SYNCHRONIZATION - FAILED Exception: Could not find stored procedure 'UnesiNoveRJ'.
++ INSERTING NEW DATA - STARTED! 06.09.2019 11:04:00
+	+ Inserting of working units - STARTED! 06.09.2019 11:04:00
+06.09.2019 11:04:00 SYNCHRONIZATION - FAILED Exception: Could not find stored procedure 'UnesiNoveRJ'.
++ INSERTING NEW DATA - STARTED! 06.09.2019 11:04:00
+	+ Inserting of working units - STARTED! 06.09.2019 11:04:00
+06.09.2019 11:04:00 SYNCHRONIZATION - FAILED Exception: Could not find stored procedure 'UnesiNoveRJ'.
++ INSERTING NEW DATA - STARTED! 06.09.2019 11:05:00
+	+ Inserting of working units - STARTED! 06.09.2019 11:05:00
+06.09.2019 11:05:00 SYNCHRONIZATION - FAILED Exception: Could not find stored procedure 'UnesiNoveRJ'.
++ INSERTING NEW DATA - STARTED! 06.09.2019 11:05:00
+	+ Inserting of working units - STARTED! 06.09.2019 11:05:00
+06.09.2019 11:05:00 SYNCHRONIZATION - FAILED Exception: Could not find stored procedure 'UnesiNoveRJ'.
++ INSERTING NEW DATA - STARTED! 06.09.2019 11:05:00
+	+ Inserting of working units - STARTED! 06.09.2019 11:05:00
+06.09.2019 11:05:00 SYNCHRONIZATION - FAILED Exception: Could not find stored procedure 'UnesiNoveRJ'.
++ INSERTING NEW DATA - STARTED! 06.09.2019 11:05:00
+	+ Inserting of working units - STARTED! 06.09.2019 11:05:00
+06.09.2019 11:05:00 SYNCHRONIZATION - FAILED Exception: Could not find stored procedure 'UnesiNoveRJ'.
++ INSERTING NEW DATA - STARTED! 06.09.2019 11:06:00
+	+ Inserting of working units - STARTED! 06.09.2019 11:06:00
+06.09.2019 11:06:00 SYNCHRONIZATION - FAILED Exception: Could not find stored procedure 'UnesiNoveRJ'.
++ INSERTING NEW DATA - STARTED! 06.09.2019 11:06:00
+	+ Inserting of working units - STARTED! 06.09.2019 11:06:00
+06.09.2019 11:06:00 SYNCHRONIZATION - FAILED Exception: Could not find stored procedure 'UnesiNoveRJ'.
++ INSERTING NEW DATA - STARTED! 06.09.2019 11:06:00
+	+ Inserting of working units - STARTED! 06.09.2019 11:06:00
+06.09.2019 11:06:00 SYNCHRONIZATION - FAILED Exception: Could not find stored procedure 'UnesiNoveRJ'.
++ INSERTING NEW DATA - STARTED! 06.09.2019 11:06:00
+	+ Inserting of working units - STARTED! 06.09.2019 11:06:00
+06.09.2019 11:06:00 SYNCHRONIZATION - FAILED Exception: Could not find stored procedure 'UnesiNoveRJ'.
++ INSERTING NEW DATA - STARTED! 06.09.2019 11:07:00
+	+ Inserting of working units - STARTED! 06.09.2019 11:07:00
+06.09.2019 11:07:00 SYNCHRONIZATION - FAILED Exception: Could not find stored procedure 'UnesiNoveRJ'.
++ INSERTING NEW DATA - STARTED! 06.09.2019 11:07:00
+	+ Inserting of working units - STARTED! 06.09.2019 11:07:00
+06.09.2019 11:07:00 SYNCHRONIZATION - FAILED Exception: Could not find stored procedure 'UnesiNoveRJ'.
++ INSERTING NEW DATA - STARTED! 06.09.2019 11:07:00
+	+ Inserting of working units - STARTED! 06.09.2019 11:07:00
+06.09.2019 11:07:00 SYNCHRONIZATION - FAILED Exception: Could not find stored procedure 'UnesiNoveRJ'.
++ INSERTING NEW DATA - STARTED! 06.09.2019 11:07:00
+	+ Inserting of working units - STARTED! 06.09.2019 11:07:00
+06.09.2019 11:07:00 SYNCHRONIZATION - FAILED Exception: Could not find stored procedure 'UnesiNoveRJ'.
++ INSERTING NEW DATA - STARTED! 06.09.2019 11:08:00
+	+ Inserting of working units - STARTED! 06.09.2019 11:08:00
+06.09.2019 11:08:00 SYNCHRONIZATION - FAILED Exception: Could not find stored procedure 'UnesiNoveRJ'.
++ INSERTING NEW DATA - STARTED! 06.09.2019 11:08:00
+	+ Inserting of working units - STARTED! 06.09.2019 11:08:00
+06.09.2019 11:08:00 SYNCHRONIZATION - FAILED Exception: Could not find stored procedure 'UnesiNoveRJ'.
++ INSERTING NEW DATA - STARTED! 06.09.2019 11:08:00
+	+ Inserting of working units - STARTED! 06.09.2019 11:08:00
+06.09.2019 11:08:00 SYNCHRONIZATION - FAILED Exception: Could not find stored procedure 'UnesiNoveRJ'.
++ INSERTING NEW DATA - STARTED! 06.09.2019 11:08:00
+	+ Inserting of working units - STARTED! 06.09.2019 11:08:00
+06.09.2019 11:08:00 SYNCHRONIZATION - FAILED Exception: Could not find stored procedure 'UnesiNoveRJ'.
++ INSERTING NEW DATA - STARTED! 06.09.2019 11:09:00
+	+ Inserting of working units - STARTED! 06.09.2019 11:09:00
+06.09.2019 11:09:00 SYNCHRONIZATION - FAILED Exception: Could not find stored procedure 'UnesiNoveRJ'.
++ INSERTING NEW DATA - STARTED! 06.09.2019 11:09:00
+	+ Inserting of working units - STARTED! 06.09.2019 11:09:00
+06.09.2019 11:09:00 SYNCHRONIZATION - FAILED Exception: Could not find stored procedure 'UnesiNoveRJ'.
++ INSERTING NEW DATA - STARTED! 06.09.2019 11:09:00
+	+ Inserting of working units - STARTED! 06.09.2019 11:09:00
+06.09.2019 11:09:00 SYNCHRONIZATION - FAILED Exception: Could not find stored procedure 'UnesiNoveRJ'.
++ INSERTING NEW DATA - STARTED! 06.09.2019 11:09:00
+	+ Inserting of working units - STARTED! 06.09.2019 11:09:00
+06.09.2019 11:09:00 SYNCHRONIZATION - FAILED Exception: Could not find stored procedure 'UnesiNoveRJ'.
++ INSERTING NEW DATA - STARTED! 06.09.2019 11:10:01
+	+ Inserting of working units - STARTED! 06.09.2019 11:10:01
+06.09.2019 11:10:01 SYNCHRONIZATION - FAILED Exception: Could not find stored procedure 'UnesiNoveRJ'.
++ INSERTING NEW DATA - STARTED! 06.09.2019 11:10:01
+	+ Inserting of working units - STARTED! 06.09.2019 11:10:01
+06.09.2019 11:10:01 SYNCHRONIZATION - FAILED Exception: Could not find stored procedure 'UnesiNoveRJ'.
++ INSERTING NEW DATA - STARTED! 06.09.2019 11:10:01
+	+ Inserting of working units - STARTED! 06.09.2019 11:10:01
+06.09.2019 11:10:01 SYNCHRONIZATION - FAILED Exception: Could not find stored procedure 'UnesiNoveRJ'.
++ INSERTING NEW DATA - STARTED! 06.09.2019 11:10:01
+	+ Inserting of working units - STARTED! 06.09.2019 11:10:01
+06.09.2019 11:10:01 SYNCHRONIZATION - FAILED Exception: Could not find stored procedure 'UnesiNoveRJ'.
++ INSERTING NEW DATA - STARTED! 06.09.2019 11:11:01
+	+ Inserting of working units - STARTED! 06.09.2019 11:11:01
+06.09.2019 11:11:01 SYNCHRONIZATION - FAILED Exception: Could not find stored procedure 'UnesiNoveRJ'.
++ INSERTING NEW DATA - STARTED! 06.09.2019 11:11:01
+	+ Inserting of working units - STARTED! 06.09.2019 11:11:01
+06.09.2019 11:11:01 SYNCHRONIZATION - FAILED Exception: Could not find stored procedure 'UnesiNoveRJ'.
++ INSERTING NEW DATA - STARTED! 06.09.2019 11:11:01
+	+ Inserting of working units - STARTED! 06.09.2019 11:11:01
+06.09.2019 11:11:01 SYNCHRONIZATION - FAILED Exception: Could not find stored procedure 'UnesiNoveRJ'.
++ INSERTING NEW DATA - STARTED! 06.09.2019 11:11:01
+	+ Inserting of working units - STARTED! 06.09.2019 11:11:01
+06.09.2019 11:11:01 SYNCHRONIZATION - FAILED Exception: Could not find stored procedure 'UnesiNoveRJ'.
++ INSERTING NEW DATA - STARTED! 06.09.2019 11:12:02
+	+ Inserting of working units - STARTED! 06.09.2019 11:12:02
+06.09.2019 11:12:02 SYNCHRONIZATION - FAILED Exception: Could not find stored procedure 'UnesiNoveRJ'.
++ INSERTING NEW DATA - STARTED! 06.09.2019 11:12:02
+	+ Inserting of working units - STARTED! 06.09.2019 11:12:02
+06.09.2019 11:12:02 SYNCHRONIZATION - FAILED Exception: Could not find stored procedure 'UnesiNoveRJ'.
++ INSERTING NEW DATA - STARTED! 06.09.2019 11:12:02
+	+ Inserting of working units - STARTED! 06.09.2019 11:12:02
+06.09.2019 11:12:02 SYNCHRONIZATION - FAILED Exception: Could not find stored procedure 'UnesiNoveRJ'.
++ INSERTING NEW DATA - STARTED! 06.09.2019 11:12:02
+	+ Inserting of working units - STARTED! 06.09.2019 11:12:02
+06.09.2019 11:12:02 SYNCHRONIZATION - FAILED Exception: Could not find stored procedure 'UnesiNoveRJ'.
++ INSERTING NEW DATA - STARTED! 06.09.2019 11:13:02
+	+ Inserting of working units - STARTED! 06.09.2019 11:13:02
+06.09.2019 11:13:02 SYNCHRONIZATION - FAILED Exception: Could not find stored procedure 'UnesiNoveRJ'.
++ INSERTING NEW DATA - STARTED! 06.09.2019 11:13:02
+	+ Inserting of working units - STARTED! 06.09.2019 11:13:02
+06.09.2019 11:13:02 SYNCHRONIZATION - FAILED Exception: Could not find stored procedure 'UnesiNoveRJ'.
++ INSERTING NEW DATA - STARTED! 06.09.2019 11:13:02
+	+ Inserting of working units - STARTED! 06.09.2019 11:13:02
+06.09.2019 11:13:02 SYNCHRONIZATION - FAILED Exception: Could not find stored procedure 'UnesiNoveRJ'.
++ INSERTING NEW DATA - STARTED! 06.09.2019 11:13:02
+	+ Inserting of working units - STARTED! 06.09.2019 11:13:02
+06.09.2019 11:13:02 SYNCHRONIZATION - FAILED Exception: Could not find stored procedure 'UnesiNoveRJ'.
++ INSERTING NEW DATA - STARTED! 06.09.2019 12:11:15
+	+ Inserting of working units - STARTED! 06.09.2019 12:11:15
+06.09.2019 12:11:15 SYNCHRONIZATION - FAILED Exception: Could not find stored procedure 'UnesiNoveRJ'.
++ INSERTING NEW DATA - STARTED! 06.09.2019 12:11:15
+	+ Inserting of working units - STARTED! 06.09.2019 12:11:15
+06.09.2019 12:11:15 SYNCHRONIZATION - FAILED Exception: Could not find stored procedure 'UnesiNoveRJ'.
++ INSERTING NEW DATA - STARTED! 06.09.2019 12:11:15
+	+ Inserting of working units - STARTED! 06.09.2019 12:11:15
+06.09.2019 12:11:15 SYNCHRONIZATION - FAILED Exception: Could not find stored procedure 'UnesiNoveRJ'.
++ INSERTING NEW DATA - STARTED! 06.09.2019 12:11:15
+	+ Inserting of working units - STARTED! 06.09.2019 12:11:15
+06.09.2019 12:11:15 SYNCHRONIZATION - FAILED Exception: Could not find stored procedure 'UnesiNoveRJ'.

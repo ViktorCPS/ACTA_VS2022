@@ -1,0 +1,528 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="menuLibraries" xml:space="preserve">
+    <value>Prolasci</value>
+  </data>
+  <data name="menuRegister" xml:space="preserve">
+    <value>Unos prolaska</value>
+  </data>
+  <data name="menuDisplay" xml:space="preserve">
+    <value>Praćenje prolazaka</value>
+  </data>
+  <data name="menuVisitors" xml:space="preserve">
+    <value>Posetioci</value>
+  </data>
+  <data name="menuExit" xml:space="preserve">
+    <value>Izlaz</value>
+  </data>
+  <data name="menuHelp" xml:space="preserve">
+    <value>Pomoć</value>
+  </data>
+  <data name="menuAbout" xml:space="preserve">
+    <value>O projektu</value>
+  </data>
+  <data name="visitInserted" xml:space="preserve">
+    <value>Poseta je započela. Da li želite da unesete novu posetu?</value>
+  </data>
+  <data name="menuVisitorsEnter" xml:space="preserve">
+    <value>Ulaz</value>
+  </data>
+  <data name="menuVisitorsExit" xml:space="preserve">
+    <value>Izlaz</value>
+  </data>
+  <data name="menuVisitorsReport" xml:space="preserve">
+    <value>Trenutni posetioci</value>
+  </data>
+  <data name="visitNoCard" xml:space="preserve">
+    <value>Morate uneti broj kartice.</value>
+  </data>
+  <data name="visitNoJMBG" xml:space="preserve">
+    <value>Morate uneti jmbg.</value>
+  </data>
+  <data name="visitNoIdentification" xml:space="preserve">
+    <value>Morate uneti ličnu ispravu.</value>
+  </data>
+  <data name="visitNoDescr" xml:space="preserve">
+    <value>Morate uneti svrhu posete.</value>
+  </data>
+  <data name="visitNoFirstName" xml:space="preserve">
+    <value>Morate uneti ime.</value>
+  </data>
+  <data name="visitNoLastName" xml:space="preserve">
+    <value>Morate uneti prezime.</value>
+  </data>
+  <data name="all" xml:space="preserve">
+    <value>*</value>
+  </data>
+  <data name="visitNoWorkingUnit" xml:space="preserve">
+    <value>Morate uneti organizacionu jedinicu koja se posećuje.</value>
+  </data>
+  <data name="hdrEmployeeID" xml:space="preserve">
+    <value>Kartica</value>
+  </data>
+  <data name="hdrFirstName" xml:space="preserve">
+    <value>Ime</value>
+  </data>
+  <data name="hdrLastName" xml:space="preserve">
+    <value>Prezime</value>
+  </data>
+  <data name="hdrDateStart" xml:space="preserve">
+    <value>Početak posete</value>
+  </data>
+  <data name="hdrDateEnd" xml:space="preserve">
+    <value>Kraj posete</value>
+  </data>
+  <data name="titleCurrentVisitors" xml:space="preserve">
+    <value>Trenutni posetioci</value>
+  </data>
+  <data name="visitUpdated" xml:space="preserve">
+    <value>Poseta je završena. Da li  zelite da završite neku drugu posetu?</value>
+  </data>
+  <data name="messageVisitorExist" xml:space="preserve">
+    <value>Posetilac sa tom karticom je već unutra.</value>
+  </data>
+  <data name="btnSave" xml:space="preserve">
+    <value>Sačuvaj</value>
+  </data>
+  <data name="btnCancel" xml:space="preserve">
+    <value>Otkaži</value>
+  </data>
+  <data name="lblCardNum" xml:space="preserve">
+    <value>Kartica:</value>
+  </data>
+  <data name="lblIdentification" xml:space="preserve">
+    <value>Identifikacija:</value>
+  </data>
+  <data name="lblJMBG" xml:space="preserve">
+    <value>JMBG</value>
+  </data>
+  <data name="lblIdentificationCard" xml:space="preserve">
+    <value>Lična isprava</value>
+  </data>
+  <data name="lblFirstName" xml:space="preserve">
+    <value>Ime:</value>
+  </data>
+  <data name="lblLastName" xml:space="preserve">
+    <value>Prezime:</value>
+  </data>
+  <data name="lblWU" xml:space="preserve">
+    <value>Radna jedinica:</value>
+  </data>
+  <data name="lblEmployee" xml:space="preserve">
+    <value>Zaposleni:</value>
+  </data>
+  <data name="lblLocation" xml:space="preserve">
+    <value>Lokacija:</value>
+  </data>
+  <data name="lblVisitDescr" xml:space="preserve">
+    <value>Svrha posete:</value>
+  </data>
+  <data name="lblRemarks" xml:space="preserve">
+    <value>Napomena:</value>
+  </data>
+  <data name="menuMonitor" xml:space="preserve">
+    <value>Monitor</value>
+  </data>
+  <data name="gbReader" xml:space="preserve">
+    <value>Terminal</value>
+  </data>
+  <data name="gbAntenna" xml:space="preserve">
+    <value>Antena</value>
+  </data>
+  <data name="lblName" xml:space="preserve">
+    <value>Ime i prezime:</value>
+  </data>
+  <data name="lblEmplID" xml:space="preserve">
+    <value>ID zaposlenog:</value>
+  </data>
+  <data name="titleVisitorsEnter" xml:space="preserve">
+    <value>Ulazak posetilaca</value>
+  </data>
+  <data name="titleVisitorsExit" xml:space="preserve">
+    <value>Izlazak posetilaca</value>
+  </data>
+  <data name="gbEnter" xml:space="preserve">
+    <value>ULAZ</value>
+  </data>
+  <data name="gbExit" xml:space="preserve">
+    <value>IZLAZ</value>
+  </data>
+  <data name="menuReader" xml:space="preserve">
+    <value>Terminal</value>
+  </data>
+  <data name="menuReaderGetLog" xml:space="preserve">
+    <value>Pokupi log</value>
+  </data>
+  <data name="dataMissing1" xml:space="preserve">
+    <value>Podaci o:</value>
+  </data>
+  <data name="dataMissing2" xml:space="preserve">
+    <value>ne postoje.</value>
+  </data>
+  <data name="employees" xml:space="preserve">
+    <value>zaposlenima</value>
+  </data>
+  <data name="tags" xml:space="preserve">
+    <value>karticama</value>
+  </data>
+  <data name="readers" xml:space="preserve">
+    <value>terminalima</value>
+  </data>
+  <data name="locations" xml:space="preserve">
+    <value>lokacijama</value>
+  </data>
+  <data name="passtypes" xml:space="preserve">
+    <value>tipovima prolazaka</value>
+  </data>
+  <data name="workingunits" xml:space="preserve">
+    <value>radnim jedinicama</value>
+  </data>
+  <data name="dataMissing3" xml:space="preserve">
+    <value>Proverite konekciju sa bazom podataka.</value>
+  </data>
+  <data name="dataMissing4" xml:space="preserve">
+    <value>Ako nastavite sa radom moguće je da apikacija neće dobro raditi.</value>
+  </data>
+  <data name="dataMissing5" xml:space="preserve">
+    <value>Da li želite da nastavite? </value>
+  </data>
+  <data name="ACTAGateForm" xml:space="preserve">
+    <value>ACTAGate</value>
+  </data>
+  <data name="menuCheck" xml:space="preserve">
+    <value>Provera</value>
+  </data>
+  <data name="btnClear" xml:space="preserve">
+    <value>Izbriši</value>
+  </data>
+  <data name="titleCheckCard" xml:space="preserve">
+    <value>Provera kartica</value>
+  </data>
+  <data name="lblManual" xml:space="preserve">
+    <value>Ručno</value>
+  </data>
+  <data name="lblPass" xml:space="preserve">
+    <value>Propusnica</value>
+  </data>
+  <data name="lblPassIssBy" xml:space="preserve">
+    <value>Propusnicu izdao</value>
+  </data>
+  <data name="gbCriteria" xml:space="preserve">
+    <value>Kriterijumi pretrage</value>
+  </data>
+  <data name="gbEmployee" xml:space="preserve">
+    <value>Zaposleni</value>
+  </data>
+  <data name="btnReadCard" xml:space="preserve">
+    <value>Pročitaj karticu</value>
+  </data>
+  <data name="hdrpassType" xml:space="preserve">
+    <value>Vrsta izlaska</value>
+  </data>
+  <data name="hdrCreatedBy" xml:space="preserve">
+    <value>Kreirao</value>
+  </data>
+  <data name="hdrCreatedTime" xml:space="preserve">
+    <value>Vreme kreiranja</value>
+  </data>
+  <data name="hdrValid" xml:space="preserve">
+    <value>Važi do</value>
+  </data>
+  <data name="gbPasses" xml:space="preserve">
+    <value>Važeće propusnice</value>
+  </data>
+  <data name="noPictureFile" xml:space="preserve">
+    <value>Fotografija zaposlenog nije pronađena.</value>
+  </data>
+  <data name="lblCard" xml:space="preserve">
+    <value>Kartica</value>
+  </data>
+  <data name="noTagOnReader" xml:space="preserve">
+    <value>Nema kartice na terminalu.</value>
+  </data>
+  <data name="lblEmployeeID" xml:space="preserve">
+    <value>Šifra zaposlenog:</value>
+  </data>
+  <data name="UnknownTag" xml:space="preserve">
+    <value>Nepoznata kartica.</value>
+  </data>
+  <data name="menuManual" xml:space="preserve">
+    <value>Uputstvo</value>
+  </data>
+  <data name="manualNotOpened" xml:space="preserve">
+    <value>Uputstvo se ne može prikazati.</value>
+  </data>
+  <data name="noPictureDir" xml:space="preserve">
+    <value>Direktorijum sa fotografijama zaposlenih nije definisan.</value>
+  </data>
+  <data name="applRunning" xml:space="preserve">
+    <value>Program je već pokrenut.</value>
+  </data>
+  <data name="applCantStart" xml:space="preserve">
+    <value>Program ne može biti pokrenut. Proverite da li veza sa bazom podataka postoji.</value>
+  </data>
+  <data name="emplOrdinary" xml:space="preserve">
+    <value>Standardni</value>
+  </data>
+  <data name="emplExtraOrdinary" xml:space="preserve">
+    <value>Posebni</value>
+  </data>
+  <data name="emplSpecial" xml:space="preserve">
+    <value>Specijalni</value>
+  </data>
+  <data name="lblType" xml:space="preserve">
+    <value>Tip:</value>
+  </data>
+  <data name="lblSchema" xml:space="preserve">
+    <value>Satnica:</value>
+  </data>
+  <data name="lblWorkingHours" xml:space="preserve">
+    <value>Radno vreme:</value>
+  </data>
+  <data name="btnClose" xml:space="preserve">
+    <value>Zatvori</value>
+  </data>
+  <data name="visitNotInserted" xml:space="preserve">
+    <value>Podaci o poseti ne mogu biti sačuvani.</value>
+  </data>
+  <data name="visitNotUpdated" xml:space="preserve">
+    <value>Poseta ne može da se završi.</value>
+  </data>
+  <data name="visitNoLocation" xml:space="preserve">
+    <value>Morate uneti lokaciju koja se posećuje.</value>
+  </data>
+  <data name="noEmployees" xml:space="preserve">
+    <value>Ne postoje radne jedinice koje ne pripadaju "Posetiocima"!</value>
+  </data>
+  <data name="noGatesInConfig" xml:space="preserve">
+    <value>Ne postoji "Gates" parametar u konfig fajlu!</value>
+  </data>
+  <data name="noVisitorInConfig" xml:space="preserve">
+    <value>Ne postoji "VisitorsCode" parametar u konfig fajlu!</value>
+  </data>
+  <data name="noVisitors" xml:space="preserve">
+    <value>Ne postoje radne jedinice koje pripadaju "Posetiocima"!</value>
+  </data>
+  <data name="officialPurpose" xml:space="preserve">
+    <value>SLUŽBENO</value>
+  </data>
+  <data name="otherPurpose" xml:space="preserve">
+    <value>OSTALO</value>
+  </data>
+  <data name="privatePurpose" xml:space="preserve">
+    <value>PRIVATNO</value>
+  </data>
+  <data name="btnFromReader" xml:space="preserve">
+    <value>Očitajte karticu sa terminala</value>
+  </data>
+  <data name="visitExist" xml:space="preserve">
+    <value>Već postoji otvorena poseta sa istim brojem kartice!</value>
+  </data>
+  <data name="visitNotExist" xml:space="preserve">
+    <value>Ne postoji otvorena poseta sa selektovanim brojem kartice!</value>
+  </data>
+  <data name="jmbgLength" xml:space="preserve">
+    <value>JMBG mora imati 13 cifara!</value>
+  </data>
+  <data name="jmbgNotNum" xml:space="preserve">
+    <value>JMBG mora biti broj sa 13 cifara!</value>
+  </data>
+  <data name="Gates" xml:space="preserve">
+    <value>Kapije</value>
+  </data>
+  <data name="noGates" xml:space="preserve">
+    <value>Nisu pronađene kapije. Unesite kapije i Aux Portove.</value>
+  </data>
+  <data name="noVisitorsParameters" xml:space="preserve">
+    <value>Nisu pronadjeni parametri posetioca. Unesite kartice posetilaca i da li želite ažuriranje lokacija zaposlenih.</value>
+  </data>
+  <data name="Visitors" xml:space="preserve">
+    <value>Posetioci</value>
+  </data>
+  <data name="noDesktopReader" xml:space="preserve">
+    <value>Nije pronađen stoni terminal.</value>
+  </data>
+  <data name="btnScan" xml:space="preserve">
+    <value>Skeniraj</value>
+  </data>
+  <data name="gbScanDoc" xml:space="preserve">
+    <value>Skeniranje dokumenta</value>
+  </data>
+  <data name="gbVisitor" xml:space="preserve">
+    <value>Podaci o posetiocu</value>
+  </data>
+  <data name="imgLarge" xml:space="preserve">
+    <value>Maksimalna veličina fajla je 1MB. Skenirana slika ne može biti sačuvana!</value>
+  </data>
+  <data name="lblFrom" xml:space="preserve">
+    <value>Od:</value>
+  </data>
+  <data name="lblTo" xml:space="preserve">
+    <value>Do:</value>
+  </data>
+  <data name="visitOfflineInserted" xml:space="preserve">
+    <value>Podaci o poseti su sačuvani. Da li želite da unesete novu posetu?</value>
+  </data>
+  <data name="EID_E_CARD_MISMATCH" xml:space="preserve">
+    <value>Greška pri čitanju podataka sa lične karte, lična karta nije ispravna.(CARD_MISMATCH)</value>
+  </data>
+  <data name="EID_E_CARD_MISSING" xml:space="preserve">
+    <value>Greška pri čitanju podataka sa lične karte, proverite da li je lična karta ispravno pozicionirana.</value>
+  </data>
+  <data name="EID_E_CARD_SECFORMAT_CHECK_ERROR" xml:space="preserve">
+    <value>Greška pri čitanju podataka sa lične karte, lična karta nije ispravna.(CARD_SECFORMAT_CHECK_ERROR)</value>
+  </data>
+  <data name="EID_E_CARD_UNKNOWN" xml:space="preserve">
+    <value>Greška pri čitanju podataka sa lične karte, lična karta nije ispravna.(CARD_UNKNOWN)</value>
+  </data>
+  <data name="EID_E_DATA_MISSING" xml:space="preserve">
+    <value>Nije uspelo čitanje svih podataka sa lične karte, neki podaci nedostaju.</value>
+  </data>
+  <data name="EID_E_GENERAL_ERROR" xml:space="preserve">
+    <value>Greška u očitavanju podataka sa lične karte.(GENERAL_ERROR)</value>
+  </data>
+  <data name="EID_E_INVALID_PARAMETER" xml:space="preserve">
+    <value>Greška u očitavanju podataka sa lične karte.(INVALID_PARAMETER)</value>
+  </data>
+  <data name="EID_E_NOT_INITIALIZED" xml:space="preserve">
+    <value>Greška u očitavanju podataka sa lične karte.(NOT_INITIALIZED)</value>
+  </data>
+  <data name="EID_E_READER_ERROR" xml:space="preserve">
+    <value>Greška sa čitačem ličnih karti.</value>
+  </data>
+  <data name="EID_E_SECFORMAT_CHECK_CERT_ERROR" xml:space="preserve">
+    <value>Greška pri čitanju podataka sa lične karte, lična karta nije ispravna.(SECFORMAT_CHECK_CERT_ERROR)</value>
+  </data>
+  <data name="EID_E_UNABLE_TO_EXECUTE" xml:space="preserve">
+    <value>Greška u očitavanju podataka sa lične karte.(UNABLE_TO_EXECUTE)</value>
+  </data>
+  <data name="EID_E_UNABLE_TO_OPEN_SESSION" xml:space="preserve">
+    <value>Greška u očitavanju podataka sa lične karte.(UNABLE_TO_OPEN_SESSION)</value>
+  </data>
+  <data name="EID_E_VERSION_NOT_SUPPORTED" xml:space="preserve">
+    <value>Greška u očitavanju podataka sa lične karte.(VERSION_NOT_SUPPORTED)</value>
+  </data>
+  <data name="btnReadCredentail" xml:space="preserve">
+    <value>Očitaj LK</value>
+  </data>
+  <data name="noSmartCardReader" xml:space="preserve">
+    <value>Nije pronađen čitač ličnih karti.</value>
+  </data>
+</root>

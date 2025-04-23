@@ -1,0 +1,150 @@
+<?xml version="1.0"?>
+<ArrayOfLocationTO xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <LocationTO LocationID="0">
+    <Name>DEFAULT</Name>
+    <Description>DEFAULT LOCATION - METADATA</Description>
+    <ParentLocationID>0</ParentLocationID>
+    <AddressID>0</AddressID>
+    <Status>ACTIVE</Status>
+  </LocationTO>
+  <LocationTO LocationID="3">
+    <Name>Direkcija čeličane i valjaonice</Name>
+    <Description>Direkcija čeličane i valjaonice</Description>
+    <ParentLocationID>3</ParentLocationID>
+    <AddressID>0</AddressID>
+    <Status>ACTIVE</Status>
+  </LocationTO>
+  <LocationTO LocationID="10">
+    <Name>Direkcija energetike</Name>
+    <Description>Direkcija energetike</Description>
+    <ParentLocationID>10</ParentLocationID>
+    <AddressID>0</AddressID>
+    <Status>ACTIVE</Status>
+  </LocationTO>
+  <LocationTO LocationID="1">
+    <Name>Direkcija koksare</Name>
+    <Description>Direkcija koksare</Description>
+    <ParentLocationID>1</ParentLocationID>
+    <AddressID>0</AddressID>
+    <Status>ACTIVE</Status>
+  </LocationTO>
+  <LocationTO LocationID="17">
+    <Name>Direkcija kompanije</Name>
+    <Description>Direkcija kompanije</Description>
+    <ParentLocationID>18</ParentLocationID>
+    <AddressID>0</AddressID>
+    <Status>ACTIVE</Status>
+  </LocationTO>
+  <LocationTO LocationID="14">
+    <Name>Direkcija kontrole kvaliteta i kovačnice</Name>
+    <Description>Direkcija kontrole kvaliteta i kovačnice</Description>
+    <ParentLocationID>14</ParentLocationID>
+    <AddressID>0</AddressID>
+    <Status>ACTIVE</Status>
+  </LocationTO>
+  <LocationTO LocationID="16">
+    <Name>Direkcija održavanja</Name>
+    <Description>Direkcija održavanja</Description>
+    <ParentLocationID>16</ParentLocationID>
+    <AddressID>0</AddressID>
+    <Status>ACTIVE</Status>
+  </LocationTO>
+  <LocationTO LocationID="13">
+    <Name>Direkcija saobraćaja</Name>
+    <Description>Direkcija saobraćaja</Description>
+    <ParentLocationID>13</ParentLocationID>
+    <AddressID>0</AddressID>
+    <Status>ACTIVE</Status>
+  </LocationTO>
+  <LocationTO LocationID="2">
+    <Name>Direkcija visoke peći</Name>
+    <Description>Direkcija visoke peći</Description>
+    <ParentLocationID>2</ParentLocationID>
+    <AddressID>0</AddressID>
+    <Status>ACTIVE</Status>
+  </LocationTO>
+  <LocationTO LocationID="8">
+    <Name>Hala jednoprovlačne pruge</Name>
+    <Description>Hala jednoprovlačne pruge</Description>
+    <ParentLocationID>8</ParentLocationID>
+    <AddressID>0</AddressID>
+    <Status>ACTIVE</Status>
+  </LocationTO>
+  <LocationTO LocationID="-1">
+    <Name>OUT</Name>
+    <Description>Outside of any object</Description>
+    <ParentLocationID>-1</ParentLocationID>
+    <AddressID>0</AddressID>
+    <Status>RETIRED</Status>
+  </LocationTO>
+  <LocationTO LocationID="4">
+    <Name>Proizvodna hala 100t EAF - kota 8</Name>
+    <Description>Proizvodna hala 100t EAF - kota 8</Description>
+    <ParentLocationID>4</ParentLocationID>
+    <AddressID>0</AddressID>
+    <Status>ACTIVE</Status>
+  </LocationTO>
+  <LocationTO LocationID="15">
+    <Name>Proizvodna hala kovačnica</Name>
+    <Description>Proizvodna hala kovačnica</Description>
+    <ParentLocationID>15</ParentLocationID>
+    <AddressID>0</AddressID>
+    <Status>ACTIVE</Status>
+  </LocationTO>
+  <LocationTO LocationID="12">
+    <Name>Pumpna stanica 1</Name>
+    <Description>Pumpna stanica 1</Description>
+    <ParentLocationID>12</ParentLocationID>
+    <AddressID>0</AddressID>
+    <Status>ACTIVE</Status>
+  </LocationTO>
+  <LocationTO LocationID="11">
+    <Name>Pumpna stanica 3</Name>
+    <Description>Pumpna stanica 3</Description>
+    <ParentLocationID>11</ParentLocationID>
+    <AddressID>0</AddressID>
+    <Status>ACTIVE</Status>
+  </LocationTO>
+  <LocationTO LocationID="18">
+    <Name>Test trigger</Name>
+    <Description>Nema nijedan citac</Description>
+    <ParentLocationID>18</ParentLocationID>
+    <AddressID>0</AddressID>
+    <Status>ACTIVE</Status>
+  </LocationTO>
+  <LocationTO LocationID="19">
+    <Name>Test trigger level II</Name>
+    <Description>Test trigger level II</Description>
+    <ParentLocationID>17</ParentLocationID>
+    <AddressID>0</AddressID>
+    <Status>ACTIVE</Status>
+  </LocationTO>
+  <LocationTO LocationID="7">
+    <Name>TGA</Name>
+    <Description>TGA</Description>
+    <ParentLocationID>7</ParentLocationID>
+    <AddressID>0</AddressID>
+    <Status>ACTIVE</Status>
+  </LocationTO>
+  <LocationTO LocationID="9">
+    <Name>Uprava sitne pruge</Name>
+    <Description>Uprava sitne pruge</Description>
+    <ParentLocationID>9</ParentLocationID>
+    <AddressID>0</AddressID>
+    <Status>ACTIVE</Status>
+  </LocationTO>
+  <LocationTO LocationID="5">
+    <Name>Upravna zgrada elektro peći 10t</Name>
+    <Description>Upravna zgrada elektro peći 10t</Description>
+    <ParentLocationID>5</ParentLocationID>
+    <AddressID>0</AddressID>
+    <Status>ACTIVE</Status>
+  </LocationTO>
+  <LocationTO LocationID="6">
+    <Name>Upravna zgrada žične pruge</Name>
+    <Description>Upravna zgrada žične pruge</Description>
+    <ParentLocationID>6</ParentLocationID>
+    <AddressID>0</AddressID>
+    <Status>ACTIVE</Status>
+  </LocationTO>
+</ArrayOfLocationTO>

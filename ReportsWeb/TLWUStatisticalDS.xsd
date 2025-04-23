@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="TLWUStatisticalDS" targetNamespace="http://tempuri.org/TLWUStatisticalDS.xsd" xmlns:mstns="http://tempuri.org/TLWUStatisticalDS.xsd" xmlns="http://tempuri.org/TLWUStatisticalDS.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="TLWUStatisticalDS" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="TLWUStatisticalDS" msprop:Generator_DataSetName="TLWUStatisticalDS" msprop:EnableTableAdapterManager="true">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="tlwu_statistical" msprop:Generator_UserTableName="tlwu_statistical" msprop:Generator_RowDeletedName="tlwu_statisticalRowDeleted" msprop:Generator_RowChangedName="tlwu_statisticalRowChanged" msprop:Generator_RowClassName="tlwu_statisticalRow" msprop:Generator_RowChangingName="tlwu_statisticalRowChanging" msprop:Generator_RowEvArgName="tlwu_statisticalRowChangeEvent" msprop:Generator_RowEvHandlerName="tlwu_statisticalRowChangeEventHandler" msprop:Generator_TableClassName="tlwu_statisticalDataTable" msprop:Generator_TableVarName="tabletlwu_statistical" msprop:Generator_RowDeletingName="tlwu_statisticalRowDeleting" msprop:Generator_TablePropName="tlwu_statistical">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="pass_type" msprop:Generator_UserColumnName="pass_type" msprop:Generator_ColumnVarNameInTable="columnpass_type" msprop:Generator_ColumnPropNameInRow="pass_type" msprop:Generator_ColumnPropNameInTable="pass_typeColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="color" msprop:Generator_UserColumnName="color" msprop:Generator_ColumnVarNameInTable="columncolor" msprop:Generator_ColumnPropNameInRow="color" msprop:Generator_ColumnPropNameInTable="colorColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="hours" msprop:Generator_UserColumnName="hours" msprop:Generator_ColumnVarNameInTable="columnhours" msprop:Generator_ColumnPropNameInRow="hours" msprop:Generator_ColumnPropNameInTable="hoursColumn" type="xs:double" minOccurs="0" />
+              <xs:element name="perRealised" msprop:Generator_UserColumnName="perRealised" msprop:Generator_ColumnVarNameInTable="columnperRealised" msprop:Generator_ColumnPropNameInRow="perRealised" msprop:Generator_ColumnPropNameInTable="perRealisedColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="perPlanned" msprop:Generator_UserColumnName="perPlanned" msprop:Generator_ColumnVarNameInTable="columnperPlanned" msprop:Generator_ColumnPropNameInRow="perPlanned" msprop:Generator_ColumnPropNameInTable="perPlannedColumn" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

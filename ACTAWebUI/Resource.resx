@@ -1,0 +1,2010 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="all" xml:space="preserve">
+    <value>*</value>
+  </data>
+  <data name="btnAdd" xml:space="preserve">
+    <value>Add</value>
+  </data>
+  <data name="btnClear" xml:space="preserve">
+    <value>Clear</value>
+  </data>
+  <data name="btnSave" xml:space="preserve">
+    <value>Save</value>
+  </data>
+  <data name="btnSearch" xml:space="preserve">
+    <value>Search</value>
+  </data>
+  <data name="btnUpdate" xml:space="preserve">
+    <value>Update</value>
+  </data>
+  <data name="error" xml:space="preserve">
+    <value>error</value>
+  </data>
+  <data name="hdrDateTime" xml:space="preserve">
+    <value>Date and time</value>
+  </data>
+  <data name="hdrDesc" xml:space="preserve">
+    <value>Description</value>
+  </data>
+  <data name="hdrDirection" xml:space="preserve">
+    <value>Direction</value>
+  </data>
+  <data name="hdrEventTime" xml:space="preserve">
+    <value>Pass time</value>
+  </data>
+  <data name="hdrGate" xml:space="preserve">
+    <value>Gate</value>
+  </data>
+  <data name="hdrIssued" xml:space="preserve">
+    <value>Issued</value>
+  </data>
+  <data name="hdrLocation" xml:space="preserve">
+    <value>Location</value>
+  </data>
+  <data name="hdrMM" xml:space="preserve">
+    <value>Manually manipulation</value>
+  </data>
+  <data name="hdrOffset" xml:space="preserve">
+    <value>Offset</value>
+  </data>
+  <data name="hdrPassType" xml:space="preserve">
+    <value>Wage type</value>
+  </data>
+  <data name="hdrProcessed" xml:space="preserve">
+    <value>Processed</value>
+  </data>
+  <data name="hdrStatus" xml:space="preserve">
+    <value>Status</value>
+  </data>
+  <data name="hdrType" xml:space="preserve">
+    <value>Type</value>
+  </data>
+  <data name="hdrVerified" xml:space="preserve">
+    <value>Verified</value>
+  </data>
+  <data name="hdrWH" xml:space="preserve">
+    <value>Working hours</value>
+  </data>
+  <data name="invalidFromDate" xml:space="preserve">
+    <value>Invalid date format (interval begining).</value>
+  </data>
+  <data name="invalidFromToDate" xml:space="preserve">
+    <value>Invalid date interval.</value>
+  </data>
+  <data name="invalidGate" xml:space="preserve">
+    <value>Invalid gate.</value>
+  </data>
+  <data name="invalidLocation" xml:space="preserve">
+    <value>Invalid location.</value>
+  </data>
+  <data name="invalidPassType" xml:space="preserve">
+    <value>Invalid wage type.</value>
+  </data>
+  <data name="invalidToDate" xml:space="preserve">
+    <value>Invalid date format (interval end).</value>
+  </data>
+  <data name="lblDate" xml:space="preserve">
+    <value>Date:</value>
+  </data>
+  <data name="lblDateExample" xml:space="preserve">
+    <value>example 20.07.2011.</value>
+  </data>
+  <data name="lblDateFormat" xml:space="preserve">
+    <value>*Date format "dd.MM.yyyy."</value>
+  </data>
+  <data name="lblDesc" xml:space="preserve">
+    <value>Description:</value>
+  </data>
+  <data name="lblDirection" xml:space="preserve">
+    <value>Direction:</value>
+  </data>
+  <data name="lblExitPermissionAdd" xml:space="preserve">
+    <value>Exit permission add</value>
+  </data>
+  <data name="lblExitPermissionsSearch" xml:space="preserve">
+    <value>Exit permissions search</value>
+  </data>
+  <data name="lblExitPermissionUpd" xml:space="preserve">
+    <value>Exit permission update</value>
+  </data>
+  <data name="lblFrom" xml:space="preserve">
+    <value>From:</value>
+  </data>
+  <data name="lblGate" xml:space="preserve">
+    <value>Gate:</value>
+  </data>
+  <data name="lblGoToPage" xml:space="preserve">
+    <value>Go to page:</value>
+  </data>
+  <data name="lblIssued" xml:space="preserve">
+    <value>Issued:</value>
+  </data>
+  <data name="lblLocation" xml:space="preserve">
+    <value>Location:</value>
+  </data>
+  <data name="lblOffset" xml:space="preserve">
+    <value>Offset:</value>
+  </data>
+  <data name="lblPassesSearch" xml:space="preserve">
+    <value>Passes search</value>
+  </data>
+  <data name="lblStatus" xml:space="preserve">
+    <value>Status:</value>
+  </data>
+  <data name="lblTime" xml:space="preserve">
+    <value>Time:</value>
+  </data>
+  <data name="lblTimeExample" xml:space="preserve">
+    <value>16:15</value>
+  </data>
+  <data name="lblTo" xml:space="preserve">
+    <value>To:</value>
+  </data>
+  <data name="lblTotal" xml:space="preserve">
+    <value>Total:</value>
+  </data>
+  <data name="lblType" xml:space="preserve">
+    <value>Type:</value>
+  </data>
+  <data name="lbtnBack" xml:space="preserve">
+    <value>Back</value>
+  </data>
+  <data name="lbtnExit" xml:space="preserve">
+    <value>Exit</value>
+  </data>
+  <data name="lbtnFilter" xml:space="preserve">
+    <value>Filter</value>
+  </data>
+  <data name="lbtnMenu" xml:space="preserve">
+    <value>Main menu</value>
+  </data>
+  <data name="noSelected" xml:space="preserve">
+    <value>You must select records.</value>
+  </data>
+  <data name="not_used" xml:space="preserve">
+    <value>not used</value>
+  </data>
+  <data name="passes" xml:space="preserve">
+    <value>Passes</value>
+  </data>
+  <data name="unverified" xml:space="preserve">
+    <value>unverified</value>
+  </data>
+  <data name="used" xml:space="preserve">
+    <value>used</value>
+  </data>
+  <data name="btnDelete" xml:space="preserve">
+    <value>Delete</value>
+  </data>
+  <data name="invalidDate" xml:space="preserve">
+    <value>Invalid date format.</value>
+  </data>
+  <data name="invalidOffset" xml:space="preserve">
+    <value>Offset must be positive integer.</value>
+  </data>
+  <data name="invalidTime" xml:space="preserve">
+    <value>Invalid time format.</value>
+  </data>
+  <data name="noDate" xml:space="preserve">
+    <value>You must enter date.</value>
+  </data>
+  <data name="noOffset" xml:space="preserve">
+    <value>You must enter offset.</value>
+  </data>
+  <data name="noTime" xml:space="preserve">
+    <value>You must enter time.</value>
+  </data>
+  <data name="noType" xml:space="preserve">
+    <value>You must select wage type.</value>
+  </data>
+  <data name="passDateTime" xml:space="preserve">
+    <value>You can not add permission for past time.</value>
+  </data>
+  <data name="permissionNotSaved" xml:space="preserve">
+    <value>Permission could not be saved.</value>
+  </data>
+  <data name="permissionNotUpdated" xml:space="preserve">
+    <value>Permission could not be updated.</value>
+  </data>
+  <data name="usedPermDelete" xml:space="preserve">
+    <value>You can not delete used permissions.</value>
+  </data>
+  <data name="btnReport" xml:space="preserve">
+    <value>Report</value>
+  </data>
+  <data name="no" xml:space="preserve">
+    <value>no</value>
+  </data>
+  <data name="noReportData" xml:space="preserve">
+    <value>No report data.</value>
+  </data>
+  <data name="yes" xml:space="preserve">
+    <value>yes</value>
+  </data>
+  <data name="lblPassesReport" xml:space="preserve">
+    <value>Passes report</value>
+  </data>
+  <data name="lblExitPermReport" xml:space="preserve">
+    <value>Exit permissions report</value>
+  </data>
+  <data name="lblAbsencesSearch" xml:space="preserve">
+    <value>Whole day absences search</value>
+  </data>
+  <data name="chbIncludeUnjustified" xml:space="preserve">
+    <value>Include unjustified</value>
+  </data>
+  <data name="hdrFrom" xml:space="preserve">
+    <value>From</value>
+  </data>
+  <data name="hdrTo" xml:space="preserve">
+    <value>To</value>
+  </data>
+  <data name="hdrYear" xml:space="preserve">
+    <value>Year</value>
+  </data>
+  <data name="lblOnlyVacation" xml:space="preserve">
+    <value>*Only for vacations</value>
+  </data>
+  <data name="fri" xml:space="preserve">
+    <value>Friday</value>
+  </data>
+  <data name="mon" xml:space="preserve">
+    <value>Monday</value>
+  </data>
+  <data name="sat" xml:space="preserve">
+    <value>Saturday</value>
+  </data>
+  <data name="sun" xml:space="preserve">
+    <value>Sunday</value>
+  </data>
+  <data name="thu" xml:space="preserve">
+    <value>Thursday</value>
+  </data>
+  <data name="tue" xml:space="preserve">
+    <value>Tuesday</value>
+  </data>
+  <data name="wed" xml:space="preserve">
+    <value>Wednesday</value>
+  </data>
+  <data name="Apr" xml:space="preserve">
+    <value>April</value>
+  </data>
+  <data name="Aug" xml:space="preserve">
+    <value>August</value>
+  </data>
+  <data name="Dec" xml:space="preserve">
+    <value>December</value>
+  </data>
+  <data name="Feb" xml:space="preserve">
+    <value>February</value>
+  </data>
+  <data name="Jan" xml:space="preserve">
+    <value>January</value>
+  </data>
+  <data name="Jul" xml:space="preserve">
+    <value>July</value>
+  </data>
+  <data name="Jun" xml:space="preserve">
+    <value>June</value>
+  </data>
+  <data name="Mar" xml:space="preserve">
+    <value>March</value>
+  </data>
+  <data name="May" xml:space="preserve">
+    <value>May</value>
+  </data>
+  <data name="Nov" xml:space="preserve">
+    <value>November</value>
+  </data>
+  <data name="Oct" xml:space="preserve">
+    <value>October</value>
+  </data>
+  <data name="Sep" xml:space="preserve">
+    <value>September</value>
+  </data>
+  <data name="lblBranch" xml:space="preserve">
+    <value>Branch:</value>
+  </data>
+  <data name="lblCostCentar" xml:space="preserve">
+    <value>Cost center unit:</value>
+  </data>
+  <data name="lblEmplData" xml:space="preserve">
+    <value>Employee data</value>
+  </data>
+  <data name="lblFirstName" xml:space="preserve">
+    <value>First name:</value>
+  </data>
+  <data name="lblHoursCalc" xml:space="preserve">
+    <value>Hours calculation</value>
+  </data>
+  <data name="lblLastName" xml:space="preserve">
+    <value>Last name:</value>
+  </data>
+  <data name="lblOUnit" xml:space="preserve">
+    <value>O. unit:</value>
+  </data>
+  <data name="lblPlant" xml:space="preserve">
+    <value>Plant:</value>
+  </data>
+  <data name="lblStringone" xml:space="preserve">
+    <value>Stringone:</value>
+  </data>
+  <data name="lblUTE" xml:space="preserve">
+    <value>UTE:</value>
+  </data>
+  <data name="lblWorkgroup" xml:space="preserve">
+    <value>Workgroup:</value>
+  </data>
+  <data name="btnCancel" xml:space="preserve">
+    <value>Cancel</value>
+  </data>
+  <data name="btnNextDay" xml:space="preserve">
+    <value>Next day</value>
+  </data>
+  <data name="btnPrevDay" xml:space="preserve">
+    <value>Previous day</value>
+  </data>
+  <data name="btnShow" xml:space="preserve">
+    <value>Show</value>
+  </data>
+  <data name="hdrReader" xml:space="preserve">
+    <value>Clock machine</value>
+  </data>
+  <data name="lblEndTime" xml:space="preserve">
+    <value>End time:</value>
+  </data>
+  <data name="lblPeriod" xml:space="preserve">
+    <value>Period</value>
+  </data>
+  <data name="lblStartTime" xml:space="preserve">
+    <value>Start time:</value>
+  </data>
+  <data name="noDateInterval" xml:space="preserve">
+    <value>You must enter date interval.</value>
+  </data>
+  <data name="invalidPairEnd" xml:space="preserve">
+    <value>Invalid pair end entered.</value>
+  </data>
+  <data name="invalidPairStart" xml:space="preserve">
+    <value>Invalid pair start entered.</value>
+  </data>
+  <data name="noSelectedPassType" xml:space="preserve">
+    <value>You did not selected wage type.</value>
+  </data>
+  <data name="lblEmployeeSelection" xml:space="preserve">
+    <value>Employee selection:</value>
+  </data>
+  <data name="hdrEmployeeName" xml:space="preserve">
+    <value>First name</value>
+  </data>
+  <data name="hdrEmpolyeeLastName" xml:space="preserve">
+    <value>Last name</value>
+  </data>
+  <data name="lblSelectAll" xml:space="preserve">
+    <value>Select all</value>
+  </data>
+  <data name="lblPassType" xml:space="preserve">
+    <value>Wage type</value>
+  </data>
+  <data name="hdrEndTime" xml:space="preserve">
+    <value>End time</value>
+  </data>
+  <data name="hdrStartTime" xml:space="preserve">
+    <value>Start time</value>
+  </data>
+  <data name="hdrTotal" xml:space="preserve">
+    <value>Total</value>
+  </data>
+  <data name="overtimeCanNotChange" xml:space="preserve">
+    <value>You can not change overtime pair duration.</value>
+  </data>
+  <data name="pairDurationChangeInvalid" xml:space="preserve">
+    <value>You can not change duration to this pair.</value>
+  </data>
+  <data name="delayMaxDurationExceeded" xml:space="preserve">
+    <value>Delay duration can not be longer then allowed.</value>
+  </data>
+  <data name="overtimeBeforeShiftEndRule" xml:space="preserve">
+    <value>Overtime hours can not be inserted contrary to overtime shift end rule.</value>
+  </data>
+  <data name="overtimeBeforeShiftStartRule" xml:space="preserve">
+    <value>Overtime hours can not be inserted contrary to overtime shift start rule.</value>
+  </data>
+  <data name="overtimeJustifiedChange" xml:space="preserve">
+    <value>You can not change pairs that are not overtime to justifiy type.</value>
+  </data>
+  <data name="overtimeLessThenMinimum" xml:space="preserve">
+    <value>You can not change duration of overtime pair to be less than minimum presence.</value>
+  </data>
+  <data name="overtimePairOverlap" xml:space="preserve">
+    <value>You can not insert overtime over existing pair.</value>
+  </data>
+  <data name="pairLessThenMinimum" xml:space="preserve">
+    <value>You can not change duration of pair to be less than minimum presence.</value>
+  </data>
+  <data name="pairNotSameInterval" xml:space="preserve">
+    <value>You can not change pair from different time schema interval.</value>
+  </data>
+  <data name="bankHourDayLimitReached" xml:space="preserve">
+    <value>Bank hour day limit is reached.</value>
+  </data>
+  <data name="bankHourWeekLimitReached" xml:space="preserve">
+    <value>Bank hour week limit is reached.</value>
+  </data>
+  <data name="noMoreAnnualLeave" xml:space="preserve">
+    <value>No more free days of annual leave for using.</value>
+  </data>
+  <data name="overtimeDayLimitReached" xml:space="preserve">
+    <value>Overtime day limit is reached.</value>
+  </data>
+  <data name="overtimeWeekLimitReached" xml:space="preserve">
+    <value>Overtime week limit is reached.</value>
+  </data>
+  <data name="notEnoughBankHour" xml:space="preserve">
+    <value>Not enough earned hours.</value>
+  </data>
+  <data name="notEnoughStopWorkingHours" xml:space="preserve">
+    <value>Not enough prepaid hours.</value>
+  </data>
+  <data name="ptCompositeLimitReached" xml:space="preserve">
+    <value>Composite limit for this wage type is already reached.</value>
+  </data>
+  <data name="ptElementaryLimitReached" xml:space="preserve">
+    <value>Elementary limit for this wage type is already reached.</value>
+  </data>
+  <data name="pairsCountersSavingFailed" xml:space="preserve">
+    <value>Saving pairs and counters failed.</value>
+  </data>
+  <data name="chbDefaultCategory" xml:space="preserve">
+    <value>Default category</value>
+  </data>
+  <data name="tabClockData" xml:space="preserve">
+    <value>Clock data</value>
+  </data>
+  <data name="tabConfirmationAbsences" xml:space="preserve">
+    <value>HRSSC verification</value>
+  </data>
+  <data name="tabCounters" xml:space="preserve">
+    <value>Counters</value>
+  </data>
+  <data name="tabDetails" xml:space="preserve">
+    <value>Advanced search</value>
+  </data>
+  <data name="tabForms" xml:space="preserve">
+    <value>Request forms</value>
+  </data>
+  <data name="tabLoans" xml:space="preserve">
+    <value>Loans</value>
+  </data>
+  <data name="tabMassiveInput" xml:space="preserve">
+    <value>Massive input</value>
+  </data>
+  <data name="tabOutstandingData" xml:space="preserve">
+    <value>Outstanding data</value>
+  </data>
+  <data name="tabReports" xml:space="preserve">
+    <value>Reports</value>
+  </data>
+  <data name="tabTMData" xml:space="preserve">
+    <value>TM Data</value>
+  </data>
+  <data name="tabVerification" xml:space="preserve">
+    <value>WCDR verification</value>
+  </data>
+  <data name="tabWUStatisticReports" xml:space="preserve">
+    <value>Statistical reports</value>
+  </data>
+  <data name="noWUPrivilage" xml:space="preserve">
+    <value>You do not have permission to see any FS unit.</value>
+  </data>
+  <data name="hdrEmplId" xml:space="preserve">
+    <value>Personal Country Code</value>
+  </data>
+  <data name="hdrWorkingUnit" xml:space="preserve">
+    <value>FS</value>
+  </data>
+  <data name="hdrEmployee" xml:space="preserve">
+    <value>Employee</value>
+  </data>
+  <data name="lblSingleEmployeePerPage" xml:space="preserve">
+    <value>Single employee per page</value>
+  </data>
+  <data name="btnAssignTS" xml:space="preserve">
+    <value>Assign TS</value>
+  </data>
+  <data name="btnBack" xml:space="preserve">
+    <value>Back</value>
+  </data>
+  <data name="chbTwoDayView" xml:space="preserve">
+    <value>Show next day</value>
+  </data>
+  <data name="invalidDateFormat" xml:space="preserve">
+    <value>Invalid date format.</value>
+  </data>
+  <data name="lblAbsent" xml:space="preserve">
+    <value>Absent:</value>
+  </data>
+  <data name="lblEmployee" xml:space="preserve">
+    <value>Employee:</value>
+  </data>
+  <data name="lblPresent" xml:space="preserve">
+    <value>Present:</value>
+  </data>
+  <data name="noEmployeesForTMData" xml:space="preserve">
+    <value>No employee data to show.</value>
+  </data>
+  <data name="noSelectedEmployee" xml:space="preserve">
+    <value>No selected employee.</value>
+  </data>
+  <data name="hdrCycleDay" xml:space="preserve">
+    <value>Cycle day</value>
+  </data>
+  <data name="hdrInterval" xml:space="preserve">
+    <value>Interval</value>
+  </data>
+  <data name="hdrTolerance" xml:space="preserve">
+    <value>Tolerance:</value>
+  </data>
+  <data name="lblTimeSchema" xml:space="preserve">
+    <value>Time schema:</value>
+  </data>
+  <data name="hdrDate" xml:space="preserve">
+    <value>Date</value>
+  </data>
+  <data name="hdrHours" xml:space="preserve">
+    <value>Hours</value>
+  </data>
+  <data name="lblEnd" xml:space="preserve">
+    <value>End:</value>
+  </data>
+  <data name="lblStart" xml:space="preserve">
+    <value>Start:</value>
+  </data>
+  <data name="noEmployeesSelected" xml:space="preserve">
+    <value>No selected employees.</value>
+  </data>
+  <data name="noPairsForSaving" xml:space="preserve">
+    <value>No pairs for saving.</value>
+  </data>
+  <data name="pairsSaved" xml:space="preserve">
+    <value>Pairs successufuly saved.</value>
+  </data>
+  <data name="pairsSavingFaild" xml:space="preserve">
+    <value>Saving pairs failed.</value>
+  </data>
+  <data name="hdrFromTime" xml:space="preserve">
+    <value>From</value>
+  </data>
+  <data name="hdrOperater" xml:space="preserve">
+    <value>Operater</value>
+  </data>
+  <data name="hdrPermanentUTE" xml:space="preserve">
+    <value>Permanent UTE</value>
+  </data>
+  <data name="hdrTempUte" xml:space="preserve">
+    <value>Temporary UTE</value>
+  </data>
+  <data name="hdrToTime" xml:space="preserve">
+    <value>To</value>
+  </data>
+  <data name="rbMove" xml:space="preserve">
+    <value>Loans</value>
+  </data>
+  <data name="rbShow" xml:space="preserve">
+    <value>Preview</value>
+  </data>
+  <data name="hdrFri" xml:space="preserve">
+    <value>Fri</value>
+  </data>
+  <data name="hdrMon" xml:space="preserve">
+    <value>Mon</value>
+  </data>
+  <data name="hdrSat" xml:space="preserve">
+    <value>Sat</value>
+  </data>
+  <data name="hdrSun" xml:space="preserve">
+    <value>Sun</value>
+  </data>
+  <data name="hdrThu" xml:space="preserve">
+    <value>Thu</value>
+  </data>
+  <data name="hdrTue" xml:space="preserve">
+    <value>Tue</value>
+  </data>
+  <data name="hdrWed" xml:space="preserve">
+    <value>Wed</value>
+  </data>
+  <data name="loansSaved" xml:space="preserve">
+    <value>Loans saved successufuly.</value>
+  </data>
+  <data name="loansSavingFaild" xml:space="preserve">
+    <value>Loans saving failed.</value>
+  </data>
+  <data name="noEmployeesForReport" xml:space="preserve">
+    <value>No employees data for showing.</value>
+  </data>
+  <data name="noLoansForSaving" xml:space="preserve">
+    <value>No loans to save.</value>
+  </data>
+  <data name="dayPairsNotValid" xml:space="preserve">
+    <value>Pairs are not valid and will not be saved.</value>
+  </data>
+  <data name="maxLoanPeriod" xml:space="preserve">
+    <value>Maximal loan period reached for some employees so thay can not be loaned.</value>
+  </data>
+  <data name="pair0Message" xml:space="preserve">
+    <value>*Pairs of 0 lenght and pairs marked for deletion will not be saved.</value>
+  </data>
+  <data name="tempWUSelectedSame" xml:space="preserve">
+    <value>You can not loan employees to same UTE.</value>
+  </data>
+  <data name="lblMonth" xml:space="preserve">
+    <value>Month:</value>
+  </data>
+  <data name="rbAnalitical" xml:space="preserve">
+    <value>Analytical</value>
+  </data>
+  <data name="rbCounter" xml:space="preserve">
+    <value>Counters</value>
+  </data>
+  <data name="rbMonthly" xml:space="preserve">
+    <value>Monthly</value>
+  </data>
+  <data name="rbSummary" xml:space="preserve">
+    <value>Summary</value>
+  </data>
+  <data name="hdrComment" xml:space="preserve">
+    <value>Presence comment</value>
+  </data>
+  <data name="hdrDay" xml:space="preserve">
+    <value>Day</value>
+  </data>
+  <data name="hdrPaymentCode" xml:space="preserve">
+    <value>PC</value>
+  </data>
+  <data name="hdrReason" xml:space="preserve">
+    <value>Absence reason</value>
+  </data>
+  <data name="lblCycleDay" xml:space="preserve">
+    <value>Day:</value>
+  </data>
+  <data name="btnVerifyAll" xml:space="preserve">
+    <value>Verify all</value>
+  </data>
+  <data name="rbAllData" xml:space="preserve">
+    <value>All</value>
+  </data>
+  <data name="rbVerificationData" xml:space="preserve">
+    <value>For verification</value>
+  </data>
+  <data name="lblSelection" xml:space="preserve">
+    <value>Selection</value>
+  </data>
+  <data name="btnAssign" xml:space="preserve">
+    <value>Assign</value>
+  </data>
+  <data name="lblWorkingUnitSelection" xml:space="preserve">
+    <value>FS unit selection</value>
+  </data>
+  <data name="rbMultiple" xml:space="preserve">
+    <value>Multiple</value>
+  </data>
+  <data name="rbSingle" xml:space="preserve">
+    <value>Single</value>
+  </data>
+  <data name="lblNationalHoliday" xml:space="preserve">
+    <value>National holiday: </value>
+  </data>
+  <data name="lblPersonalHoliday" xml:space="preserve">
+    <value>Personal holiday: </value>
+  </data>
+  <data name="lblWeekend" xml:space="preserve">
+    <value>Weekend: </value>
+  </data>
+  <data name="lblWorkingDay" xml:space="preserve">
+    <value>Regular day: </value>
+  </data>
+  <data name="mothUnregular" xml:space="preserve">
+    <value>Month selection error</value>
+  </data>
+  <data name="selectionMustBeNumber" xml:space="preserve">
+    <value>Date selection must be number.</value>
+  </data>
+  <data name="selectionOverMothDuration" xml:space="preserve">
+    <value>Selection dates must be less than months duration.</value>
+  </data>
+  <data name="selectionToLessThanFrom" xml:space="preserve">
+    <value>Selection date from must be less than selection date to.</value>
+  </data>
+  <data name="noPairsToVerify" xml:space="preserve">
+    <value>No pairs to verify.</value>
+  </data>
+  <data name="pairsNotVerified" xml:space="preserve">
+    <value>Pairs could not be verified.</value>
+  </data>
+  <data name="pairsVerified" xml:space="preserve">
+    <value>Pairs successufuly verified.</value>
+  </data>
+  <data name="assignEachDay" xml:space="preserve">
+    <value>You must assign employee time schedule for each day.</value>
+  </data>
+  <data name="emplScheduleNotSaved" xml:space="preserve">
+    <value>Employee schedule saving faild.</value>
+  </data>
+  <data name="emplScheduleSaved" xml:space="preserve">
+    <value>Employee schedules saved successfully.</value>
+  </data>
+  <data name="hdrAnomalyCategory" xml:space="preserve">
+    <value>Anomaly category</value>
+  </data>
+  <data name="hdrEmployeeID" xml:space="preserve">
+    <value>Employee ID</value>
+  </data>
+  <data name="hdrEmplType" xml:space="preserve">
+    <value>Type</value>
+  </data>
+  <data name="hdrStringone" xml:space="preserve">
+    <value>Stringone</value>
+  </data>
+  <data name="lblAnomalyCategory" xml:space="preserve">
+    <value>Anomaly categories</value>
+  </data>
+  <data name="notconfirmed" xml:space="preserve">
+    <value>Notconfirmed data</value>
+  </data>
+  <data name="notverified" xml:space="preserve">
+    <value>Notverified data</value>
+  </data>
+  <data name="overtimetojustify" xml:space="preserve">
+    <value>Overtime to justify hours</value>
+  </data>
+  <data name="unjustified" xml:space="preserve">
+    <value>Unjustified absences</value>
+  </data>
+  <data name="lblEmployeesData" xml:space="preserve">
+    <value>Employees data:</value>
+  </data>
+  <data name="lblDataForMonth" xml:space="preserve">
+    <value>Data for month: </value>
+  </data>
+  <data name="assignDay" xml:space="preserve">
+    <value>You must assign day to save time schema to employees.</value>
+  </data>
+  <data name="changingLessPreviousMonth" xml:space="preserve">
+    <value>You can not insert pairs before previous month.</value>
+  </data>
+  <data name="changingPreviousMonthCuttOffDatePassed" xml:space="preserve">
+    <value>Cut off date has passed, so you can not insert pairs for previous month.</value>
+  </data>
+  <data name="lblOverwritePairs" xml:space="preserve">
+    <value>Overwrite pairs</value>
+  </data>
+  <data name="noMassiveInputAllowedEmployees" xml:space="preserve">
+    <value>No employees for allowed massive input.</value>
+  </data>
+  <data name="overtimePairsMassiveInputOneDay" xml:space="preserve">
+    <value>Overtime types can not be inserted for more than one day.</value>
+  </data>
+  <data name="ptLimitOccassionalyReached" xml:space="preserve">
+    <value>Occassionaly limit for selected type reached.</value>
+  </data>
+  <data name="chrtOthers" xml:space="preserve">
+    <value>Other FS units</value>
+  </data>
+  <data name="hdrPercentPlanned" xml:space="preserve">
+    <value>% of  planned</value>
+  </data>
+  <data name="hdrPercentRealised" xml:space="preserve">
+    <value>% of realised</value>
+  </data>
+  <data name="lblPlanned" xml:space="preserve">
+    <value>Planned:</value>
+  </data>
+  <data name="lblRealised" xml:space="preserve">
+    <value>Realised:</value>
+  </data>
+  <data name="btnConfirmAll" xml:space="preserve">
+    <value>Confirm all</value>
+  </data>
+  <data name="noPairsToConfirm" xml:space="preserve">
+    <value>No pairs for confirmation.</value>
+  </data>
+  <data name="pairInvalidDuration" xml:space="preserve">
+    <value>Pair can not be negative or 0 duration.</value>
+  </data>
+  <data name="pairsConfirmed" xml:space="preserve">
+    <value>Pair successufully confirmed.</value>
+  </data>
+  <data name="pairsNotConfirmed" xml:space="preserve">
+    <value>Pairs could not be confirmed.</value>
+  </data>
+  <data name="noConfirmTypePrivilage" xml:space="preserve">
+    <value>No privilages for confirmation type.</value>
+  </data>
+  <data name="nonExistingConfirmationType" xml:space="preserve">
+    <value>Non existing confirmation type.</value>
+  </data>
+  <data name="lblPassTypeSelection" xml:space="preserve">
+    <value>You may select up to four wage types at the same time.</value>
+  </data>
+  <data name="lblUteSelection" xml:space="preserve">
+    <value>You may select up to four UTE at the same time.</value>
+  </data>
+  <data name="day" xml:space="preserve">
+    <value>day</value>
+  </data>
+  <data name="days" xml:space="preserve">
+    <value>days</value>
+  </data>
+  <data name="countersSaved" xml:space="preserve">
+    <value>Counters successufully saved.</value>
+  </data>
+  <data name="countersSavingFailed" xml:space="preserve">
+    <value>Counters saving failed.</value>
+  </data>
+  <data name="maximalMinute" xml:space="preserve">
+    <value>Minute value is not valid.</value>
+  </data>
+  <data name="nonValidCounter" xml:space="preserve">
+    <value>Not valid counter value.</value>
+  </data>
+  <data name="lblMontlyTotals" xml:space="preserve">
+    <value>Print monthly totals</value>
+  </data>
+  <data name="btnNext" xml:space="preserve">
+    <value>Next</value>
+  </data>
+  <data name="btnPrev" xml:space="preserve">
+    <value>Previous</value>
+  </data>
+  <data name="confirmationDesc" xml:space="preserve">
+    <value>HRSSC verification</value>
+  </data>
+  <data name="inWSDesc" xml:space="preserve">
+    <value> in WS</value>
+  </data>
+  <data name="manualCreatedDesc" xml:space="preserve">
+    <value> manually created</value>
+  </data>
+  <data name="nightWorkDesc" xml:space="preserve">
+    <value> night work</value>
+  </data>
+  <data name="outWSDesc" xml:space="preserve">
+    <value> out of WS</value>
+  </data>
+  <data name="verificationDesc" xml:space="preserve">
+    <value>WCDR verification</value>
+  </data>
+  <data name="lblForms" xml:space="preserve">
+    <value>Forms:</value>
+  </data>
+  <data name="rbTraining" xml:space="preserve">
+    <value>Training report   </value>
+  </data>
+  <data name="rbTravelReq" xml:space="preserve">
+    <value>Travel requisition   </value>
+  </data>
+  <data name="noMassiveInputForHolidays" xml:space="preserve">
+    <value>Massive input is not allowed for holidays.</value>
+  </data>
+  <data name="setPairTime" xml:space="preserve">
+    <value>You must set pair duration first.</value>
+  </data>
+  <data name="lblPayrollID" xml:space="preserve">
+    <value>Payroll ID:</value>
+  </data>
+  <data name="lblTempUTE" xml:space="preserve">
+    <value>Destination unit</value>
+  </data>
+  <data name="noAnnualLeaveAllowedEmployees" xml:space="preserve">
+    <value>No employees allowed for annual leave input.</value>
+  </data>
+  <data name="noCompanyAnnualLeave" xml:space="preserve">
+    <value>No annual leave defined for company.</value>
+  </data>
+  <data name="tabAnnualLeave" xml:space="preserve">
+    <value>Annual leave</value>
+  </data>
+  <data name="noTempWUSelected" xml:space="preserve">
+    <value>Destination unit is not selected.</value>
+  </data>
+  <data name="incorrectConfirmationType" xml:space="preserve">
+    <value>Incorrect verification type.</value>
+  </data>
+  <data name="lblConfirmationPassTypes" xml:space="preserve">
+    <value>Verification types:</value>
+  </data>
+  <data name="noConfirmationType" xml:space="preserve">
+    <value>Verification type is not selected.</value>
+  </data>
+  <data name="cutOffDayPessed" xml:space="preserve">
+    <value>Cut off date has passed, so you can not change shift for previous month.</value>
+  </data>
+  <data name="lblHRSSCNoLimit" xml:space="preserve">
+    <value>*HRSSC user has no limits checking</value>
+  </data>
+  <data name="emptyInterval" xml:space="preserve">
+    <value>for deletion</value>
+  </data>
+  <data name="btnUndoChanges" xml:space="preserve">
+    <value>Undo changes</value>
+  </data>
+  <data name="noAbsenceAllowedEmployees" xml:space="preserve">
+    <value>Not allowed entering employee absence.</value>
+  </data>
+  <data name="tabAbsences" xml:space="preserve">
+    <value>Absences</value>
+  </data>
+  <data name="hdrDescription" xml:space="preserve">
+    <value>Description</value>
+  </data>
+  <data name="rbUndoVerification" xml:space="preserve">
+    <value>verified</value>
+  </data>
+  <data name="rbVerification" xml:space="preserve">
+    <value>for verification</value>
+  </data>
+  <data name="lblUndoVerificationHelp" xml:space="preserve">
+    <value>*Verification is canceled by clicking on verified day.</value>
+  </data>
+  <data name="undoVerifiedFailed" xml:space="preserve">
+    <value>Undo verification failed.</value>
+  </data>
+  <data name="FSResPerson" xml:space="preserve">
+    <value>FS responsible person:</value>
+  </data>
+  <data name="OUResPerson" xml:space="preserve">
+    <value>OU responsible person:</value>
+  </data>
+  <data name="noChangesDetected" xml:space="preserve">
+    <value>No changes dtected</value>
+  </data>
+  <data name="flexyOvertimeChange" xml:space="preserve">
+    <value>If you want to change time schema interval lasting, you must change all justified or rejected overtime to overtime to justify.</value>
+  </data>
+  <data name="counterValueLessThanNeeded" xml:space="preserve">
+    <value>Counter value is less than needed</value>
+  </data>
+  <data name="hdrBranch" xml:space="preserve">
+    <value>Branch</value>
+  </data>
+  <data name="overtimeNotValidRoundingRule" xml:space="preserve">
+    <value>You can not change overtime pair opposite rounding rule for overtime hours.</value>
+  </data>
+  <data name="changingNotAllowedPair" xml:space="preserve">
+    <value>You can not change pair whose lasting is not allowed to change.</value>
+  </data>
+  <data name="hdrCostCentre" xml:space="preserve">
+    <value>Cost center</value>
+  </data>
+  <data name="hdrUte" xml:space="preserve">
+    <value>UTE</value>
+  </data>
+  <data name="hdrWorkgroup" xml:space="preserve">
+    <value>Workgroup</value>
+  </data>
+  <data name="lblEmployeeType" xml:space="preserve">
+    <value>Employee type:</value>
+  </data>
+  <data name="invalidOfficialTripDuration" xml:space="preserve">
+    <value>You can not change duration to official trip to be less than interval duration.</value>
+  </data>
+  <data name="rbHierarchically" xml:space="preserve">
+    <value>hierarchically</value>
+  </data>
+  <data name="rbResponsiblePerson" xml:space="preserve">
+    <value>responsible person</value>
+  </data>
+  <data name="rbSelected" xml:space="preserve">
+    <value>selected unit</value>
+  </data>
+  <data name="chbDateCompany" xml:space="preserve">
+    <value>Company for date</value>
+  </data>
+  <data name="lblReportType" xml:space="preserve">
+    <value>Report type</value>
+  </data>
+  <data name="rbLast2Weeks" xml:space="preserve">
+    <value>Last two weeks</value>
+  </data>
+  <data name="rbPrevMonth" xml:space="preserve">
+    <value>Previous month</value>
+  </data>
+  <data name="rbPrevWeek" xml:space="preserve">
+    <value>Previous week</value>
+  </data>
+  <data name="tabWorkAnalyzeReports" xml:space="preserve">
+    <value>Work Analysis</value>
+  </data>
+  <data name="lblFinished" xml:space="preserve">
+    <value>Finished generating reports.</value>
+  </data>
+  <data name="lblGenerating" xml:space="preserve">
+    <value>Generating  reports in progress.</value>
+  </data>
+  <data name="rbFromBeginOfMonth" xml:space="preserve">
+    <value>From the beginning of month</value>
+  </data>
+  <data name="notValidScheduleAssigned" xml:space="preserve">
+    <value>Assigned time schema schedule is not valid. Check assigning of third and 10 hours shifts and time between shifts for days</value>
+  </data>
+  <data name="bankHourNegative" xml:space="preserve">
+    <value>Check if those hours are already used. If so, first change used bank hours.</value>
+  </data>
+  <data name="stopWorkingNegative" xml:space="preserve">
+    <value>Check if exist stop working done hours. If those hours exist, you must change those hours first. </value>
+  </data>
+  <data name="chbHoursDiff" xml:space="preserve">
+    <value>Show only differences</value>
+  </data>
+  <data name="negativeBuffers" xml:space="preserve">
+    <value>Negative counters</value>
+  </data>
+  <data name="rbHoursDiff" xml:space="preserve">
+    <value>difference</value>
+  </data>
+  <data name="rbStandard" xml:space="preserve">
+    <value>standard</value>
+  </data>
+  <data name="grouphours" xml:space="preserve">
+    <value>Group schedule hours</value>
+  </data>
+  <data name="hdrGrpHrs" xml:space="preserve">
+    <value>Group hours</value>
+  </data>
+  <data name="hdrPairHrs" xml:space="preserve">
+    <value>Hours</value>
+  </data>
+  <data name="hdrSchHrs" xml:space="preserve">
+    <value>Individual hours</value>
+  </data>
+  <data name="pairshours" xml:space="preserve">
+    <value>Effective hours</value>
+  </data>
+  <data name="schedulehours" xml:space="preserve">
+    <value>Individual schedule hours</value>
+  </data>
+  <data name="lblCompany" xml:space="preserve">
+    <value>Company:</value>
+  </data>
+  <data name="rbPresenceAndAbsence" xml:space="preserve">
+    <value>Presence and absence</value>
+  </data>
+  <data name="rbWageTypes" xml:space="preserve">
+    <value>Wage types</value>
+  </data>
+  <data name="rbWorkAnalysis" xml:space="preserve">
+    <value>Work analysis reports</value>
+  </data>
+  <data name="lblNoMail" xml:space="preserve">
+    <value>There is no email defined for logged user. Please contact HR Service.</value>
+  </data>
+  <data name="lblDear" xml:space="preserve">
+    <value>Dear</value>
+  </data>
+  <data name="lblReport" xml:space="preserve">
+    <value>Reports  </value>
+  </data>
+  <data name="lblSentToMail" xml:space="preserve">
+    <value>They are sent to email: </value>
+  </data>
+  <data name="messageWorkAnalysis" xml:space="preserve">
+    <value>Find attached report(s) you have generated in TM system.</value>
+  </data>
+  <data name="btnSelect" xml:space="preserve">
+    <value>Select</value>
+  </data>
+  <data name="selectionInsideStartEnd" xml:space="preserve">
+    <value>Selection must be inside calendar days shown.</value>
+  </data>
+  <data name="selectOneDay" xml:space="preserve">
+    <value>Select start cycle day.</value>
+  </data>
+  <data name="selectOneDayCalendar" xml:space="preserve">
+    <value>Invalid selection of calendar days.</value>
+  </data>
+  <data name="noConfirmationDate" xml:space="preserve">
+    <value>You must enter valid temporary inability first day in description field in format dd.MM.yyyy. for example:</value>
+  </data>
+  <data name="notValidBeginingEnd" xml:space="preserve">
+    <value>Pair has invalid defined beginning or end.</value>
+  </data>
+  <data name="overlapPairs" xml:space="preserve">
+    <value>Some of pairs overlaps.</value>
+  </data>
+  <data name="pairEndLessThenStart" xml:space="preserve">
+    <value>End of pair is less then pair beginning.</value>
+  </data>
+  <data name="tabBufferReport" xml:space="preserve">
+    <value>Buffers</value>
+  </data>
+  <data name="AL" xml:space="preserve">
+    <value>AL- annual leave (d)</value>
+  </data>
+  <data name="ALC" xml:space="preserve">
+    <value>ALC - annual leave new (d)</value>
+  </data>
+  <data name="ALP" xml:space="preserve">
+    <value>ALP - annual leave old (d)</value>
+  </data>
+  <data name="BH" xml:space="preserve">
+    <value>BH - bank hours (h)</value>
+  </data>
+  <data name="hdrAfterBH" xml:space="preserve">
+    <value>BH after</value>
+  </data>
+  <data name="hdrAfterPL" xml:space="preserve">
+    <value>PL before</value>
+  </data>
+  <data name="hdrAfterSW" xml:space="preserve">
+    <value>SW after</value>
+  </data>
+  <data name="hdrALAfterLeft" xml:space="preserve">
+    <value>AL after</value>
+  </data>
+  <data name="hdrALBeforeLeft" xml:space="preserve">
+    <value>AL before</value>
+  </data>
+  <data name="hdrALPeriodUsed" xml:space="preserve">
+    <value>AL</value>
+  </data>
+  <data name="hdrBeforeBH" xml:space="preserve">
+    <value>BH before</value>
+  </data>
+  <data name="hdrBeforePL" xml:space="preserve">
+    <value>PL before</value>
+  </data>
+  <data name="hdrBeforeSW" xml:space="preserve">
+    <value>SW before</value>
+  </data>
+  <data name="hdrCurrALAfterLeft" xml:space="preserve">
+    <value>ALC after</value>
+  </data>
+  <data name="hdrCurrALBeforeLeft" xml:space="preserve">
+    <value>ALC before</value>
+  </data>
+  <data name="hdrCurrALPeriodUsed" xml:space="preserve">
+    <value>ALC</value>
+  </data>
+  <data name="hdrPeriodBH" xml:space="preserve">
+    <value>BH</value>
+  </data>
+  <data name="hdrPeriodPL" xml:space="preserve">
+    <value>PL</value>
+  </data>
+  <data name="hdrPeriodSW" xml:space="preserve">
+    <value>SW</value>
+  </data>
+  <data name="hdrPrevALAfterLeft" xml:space="preserve">
+    <value>ALP after</value>
+  </data>
+  <data name="hdrPrevALBeforeLeft" xml:space="preserve">
+    <value>ALP before</value>
+  </data>
+  <data name="hdrPrevALPeriodUsed" xml:space="preserve">
+    <value>ALP</value>
+  </data>
+  <data name="PL" xml:space="preserve">
+    <value>PL - paid leaves (d)</value>
+  </data>
+  <data name="SW" xml:space="preserve">
+    <value>SW - stop working (h)</value>
+  </data>
+  <data name="hdrCostCenterCode" xml:space="preserve">
+    <value>CC</value>
+  </data>
+  <data name="hdrCostCenterName" xml:space="preserve">
+    <value>Description</value>
+  </data>
+  <data name="hdrMonth" xml:space="preserve">
+    <value>Month</value>
+  </data>
+  <data name="hdrWeek" xml:space="preserve">
+    <value>Week</value>
+  </data>
+  <data name="selectionNonActiveEmployeesDays" xml:space="preserve">
+    <value>You can not change days in which employee was not hired or already left company.</value>
+  </data>
+  <data name="hdrTime" xml:space="preserve">
+    <value>Time</value>
+  </data>
+  <data name="rbPayslip" xml:space="preserve">
+    <value>Payslip</value>
+  </data>
+  <data name="payslipNotFound" xml:space="preserve">
+    <value>Payslip for selected month not found.</value>
+  </data>
+  <data name="tabPayslip" xml:space="preserve">
+    <value>Payslips</value>
+  </data>
+  <data name="lblFutureMonth" xml:space="preserve">
+    <value>Payslips for future months are not available.</value>
+  </data>
+  <data name="lblPayslipAvailableEarliest" xml:space="preserve">
+    <value>Payslip for previous month is available earliest from: </value>
+  </data>
+  <data name="noRightToUseAnnualLeave" xml:space="preserve">
+    <value>Employee has not right to use annual leave in selected period.</value>
+  </data>
+  <data name="bankHourLimitReached" xml:space="preserve">
+    <value>Bank hours limit is reached. New bank hours can be earned after using existng bank hours.</value>
+  </data>
+  <data name="overtimeLeftForUse" xml:space="preserve">
+    <value>Bank hours can not be earned while using overtime hours right exists.</value>
+  </data>
+  <data name="notValidFundHrs" xml:space="preserve">
+    <value>Fund hours does not match group fund hours for week</value>
+  </data>
+  <data name="notRegularSickLeaveRefundation" xml:space="preserve">
+    <value>Sick leaves - refundation</value>
+  </data>
+  <data name="rbFuel" xml:space="preserve">
+    <value>Fuel reimbursement request</value>
+  </data>
+  <data name="selectionLockedDays" xml:space="preserve">
+    <value>Change selection, you can not change</value>
+  </data>
+  <data name="confirmationDateLessThanMinAllowed" xml:space="preserve">
+    <value>Temporary inability first day is less than minimal allowed.</value>
+  </data>
+  <data name="mustSelectCompany" xml:space="preserve">
+    <value>You must select company.</value>
+  </data>
+  <data name="btnExport" xml:space="preserve">
+    <value>Export</value>
+  </data>
+  <data name="cbONRecalculated" xml:space="preserve">
+    <value>ON previous month calculated</value>
+  </data>
+  <data name="hdrAfterOvertimeKeep" xml:space="preserve">
+    <value>ON after</value>
+  </data>
+  <data name="hdrBeforeOvertimeKeep" xml:space="preserve">
+    <value>ON before</value>
+  </data>
+  <data name="hdrPeriodOvertimeKeep" xml:space="preserve">
+    <value>ON</value>
+  </data>
+  <data name="ON" xml:space="preserve">
+    <value>ON - not justified overtime (h)</value>
+  </data>
+  <data name="cbShowRetired" xml:space="preserve">
+    <value>Show retired</value>
+  </data>
+  <data name="invalidBorderDate" xml:space="preserve">
+    <value>Invalid border date.</value>
+  </data>
+  <data name="lblBorderDate" xml:space="preserve">
+    <value>Border date:</value>
+  </data>
+  <data name="notRegularMeals" xml:space="preserve">
+    <value>Non regular meals</value>
+  </data>
+  <data name="hdrShift" xml:space="preserve">
+    <value>Shift</value>
+  </data>
+  <data name="largeReport" xml:space="preserve">
+    <value>Report is too big so generating will take a lot of time. You should use option Export.</value>
+  </data>
+  <data name="reportMessage" xml:space="preserve">
+    <value>Generating report may take a while. Please wait while the Download Manager finishes export</value>
+  </data>
+  <data name="largeReportDisabled" xml:space="preserve">
+    <value>Report is too big so generating will take a lot of time. You must use option Export.</value>
+  </data>
+  <data name="btnAddToSchedule" xml:space="preserve">
+    <value>Add to list &gt;</value>
+  </data>
+  <data name="btnApply" xml:space="preserve">
+    <value>Apply</value>
+  </data>
+  <data name="btnCoupons" xml:space="preserve">
+    <value>Coupons</value>
+  </data>
+  <data name="btnPersonalData" xml:space="preserve">
+    <value>Personal data</value>
+  </data>
+  <data name="btnSplitMerge" xml:space="preserve">
+    <value>Split / Merge</value>
+  </data>
+  <data name="lblGroup" xml:space="preserve">
+    <value>Group:</value>
+  </data>
+  <data name="lblStep" xml:space="preserve">
+    <value>Step:</value>
+  </data>
+  <data name="rbDeselectAll" xml:space="preserve">
+    <value>Deselect all</value>
+  </data>
+  <data name="rbSelectAll" xml:space="preserve">
+    <value>Select all</value>
+  </data>
+  <data name="tabScheduling" xml:space="preserve">
+    <value>Scheduling</value>
+  </data>
+  <data name="hdrHist" xml:space="preserve">
+    <value>History</value>
+  </data>
+  <data name="DEMANDED" xml:space="preserve">
+    <value>Demanded</value>
+  </data>
+  <data name="DONE" xml:space="preserve">
+    <value>Done</value>
+  </data>
+  <data name="hdrAmbulance" xml:space="preserve">
+    <value>Ambulance</value>
+  </data>
+  <data name="hdrCompany" xml:space="preserve">
+    <value>Company</value>
+  </data>
+  <data name="hdrDisability" xml:space="preserve">
+    <value>Disability</value>
+  </data>
+  <data name="hdrDisabilityType" xml:space="preserve">
+    <value>Disability type</value>
+  </data>
+  <data name="hdrEmplRisk" xml:space="preserve">
+    <value>Risk</value>
+  </data>
+  <data name="hdrID" xml:space="preserve">
+    <value>ID</value>
+  </data>
+  <data name="hdrTermin" xml:space="preserve">
+    <value>Termin</value>
+  </data>
+  <data name="hdrVaccine" xml:space="preserve">
+    <value>Vaccine</value>
+  </data>
+  <data name="hdrVisitID" xml:space="preserve">
+    <value>Visit ID</value>
+  </data>
+  <data name="lblAmbulance" xml:space="preserve">
+    <value>Ambulance:</value>
+  </data>
+  <data name="rbDisabilities" xml:space="preserve">
+    <value>Disabilities</value>
+  </data>
+  <data name="rbEmployeeData" xml:space="preserve">
+    <value>Employee data</value>
+  </data>
+  <data name="rbRisks" xml:space="preserve">
+    <value>Risks</value>
+  </data>
+  <data name="rbVaccines" xml:space="preserve">
+    <value>Vaccines</value>
+  </data>
+  <data name="rbVisits" xml:space="preserve">
+    <value>Visits</value>
+  </data>
+  <data name="RND" xml:space="preserve">
+    <value>Reserved</value>
+  </data>
+  <data name="tabVisitsSearch" xml:space="preserve">
+    <value>Search</value>
+  </data>
+  <data name="WR" xml:space="preserve">
+    <value>Without reservation</value>
+  </data>
+  <data name="hdrDatePerformed" xml:space="preserve">
+    <value>Date performed</value>
+  </data>
+  <data name="hdrHeight" xml:space="preserve">
+    <value>Height</value>
+  </data>
+  <data name="hdrRotation" xml:space="preserve">
+    <value>Rotation</value>
+  </data>
+  <data name="hdrWeight" xml:space="preserve">
+    <value>Weight</value>
+  </data>
+  <data name="lblAddress" xml:space="preserve">
+    <value>Address:</value>
+  </data>
+  <data name="lblBirthDate" xml:space="preserve">
+    <value>Birth date:</value>
+  </data>
+  <data name="lblCity" xml:space="preserve">
+    <value>City:</value>
+  </data>
+  <data name="lblHeight" xml:space="preserve">
+    <value>Height:</value>
+  </data>
+  <data name="lblHiringDate" xml:space="preserve">
+    <value>Hiring date:</value>
+  </data>
+  <data name="lblPhone1" xml:space="preserve">
+    <value>Phone 1:</value>
+  </data>
+  <data name="lblPhone2" xml:space="preserve">
+    <value>Phone 2:</value>
+  </data>
+  <data name="lblPosition" xml:space="preserve">
+    <value>Position:</value>
+  </data>
+  <data name="lblPositionRisks" xml:space="preserve">
+    <value>Risks related to position:</value>
+  </data>
+  <data name="lblRisk" xml:space="preserve">
+    <value>Risk:</value>
+  </data>
+  <data name="lblRotation" xml:space="preserve">
+    <value>Rotation:</value>
+  </data>
+  <data name="lblShiftGroup" xml:space="preserve">
+    <value>Shift group:</value>
+  </data>
+  <data name="lblTerminationDate" xml:space="preserve">
+    <value>Termination date:</value>
+  </data>
+  <data name="lblWeight" xml:space="preserve">
+    <value>Weight:</value>
+  </data>
+  <data name="newEntry" xml:space="preserve">
+    <value>New entry</value>
+  </data>
+  <data name="noDateStart" xml:space="preserve">
+    <value>You must enter date start.</value>
+  </data>
+  <data name="noEmplSelected" xml:space="preserve">
+    <value>You must select employee.</value>
+  </data>
+  <data name="noRecordToDelete" xml:space="preserve">
+    <value>No records selected for deletion.</value>
+  </data>
+  <data name="noRiskSelected" xml:space="preserve">
+    <value>You must select risk.</value>
+  </data>
+  <data name="noRotationSelected" xml:space="preserve">
+    <value>You must select rotation.</value>
+  </data>
+  <data name="recordNotSaved" xml:space="preserve">
+    <value>Record could not be saved.</value>
+  </data>
+  <data name="recordNotUpdated" xml:space="preserve">
+    <value>Record could not be updated.</value>
+  </data>
+  <data name="recordSaved" xml:space="preserve">
+    <value>Record is successufully saved.</value>
+  </data>
+  <data name="recordsDeleted" xml:space="preserve">
+    <value>Records are deleted successufully.</value>
+  </data>
+  <data name="recordsNotDeleted" xml:space="preserve">
+    <value>Records could not be deleted.</value>
+  </data>
+  <data name="recordUpdated" xml:space="preserve">
+    <value>Record is successufully updated.</value>
+  </data>
+  <data name="riskDefinedExist" xml:space="preserve">
+    <value>Defined risk is already assigned to employee.</value>
+  </data>
+  <data name="tabAnagraphicalData" xml:space="preserve">
+    <value>Anagraphical data</value>
+  </data>
+  <data name="tabDisabilities" xml:space="preserve">
+    <value>Disabilities</value>
+  </data>
+  <data name="tabEmplData" xml:space="preserve">
+    <value>Employee data</value>
+  </data>
+  <data name="tabOnDemandAppointments" xml:space="preserve">
+    <value>On demand appointments</value>
+  </data>
+  <data name="tabRiskManagement" xml:space="preserve">
+    <value>Risks</value>
+  </data>
+  <data name="tabVaccines" xml:space="preserve">
+    <value>Vaccines</value>
+  </data>
+  <data name="tabVisitsManagement" xml:space="preserve">
+    <value>Visits</value>
+  </data>
+  <data name="tabWeightHeight" xml:space="preserve">
+    <value>Weight / Height</value>
+  </data>
+  <data name="updateEntry" xml:space="preserve">
+    <value>Update</value>
+  </data>
+  <data name="hdrDateScheduled" xml:space="preserve">
+    <value>Scheduled date:</value>
+  </data>
+  <data name="hdrNote" xml:space="preserve">
+    <value>Note</value>
+  </data>
+  <data name="hdrResult" xml:space="preserve">
+    <value>Result</value>
+  </data>
+  <data name="hdrRisk" xml:space="preserve">
+    <value>Risk</value>
+  </data>
+  <data name="hdrRiskVaccine" xml:space="preserve">
+    <value>Risk / Vaccine</value>
+  </data>
+  <data name="hdrTimePerformed" xml:space="preserve">
+    <value>Visit time</value>
+  </data>
+  <data name="invalidHeight" xml:space="preserve">
+    <value>Invalid height.</value>
+  </data>
+  <data name="invalidWeight" xml:space="preserve">
+    <value>Invalid weight.</value>
+  </data>
+  <data name="lblDisability" xml:space="preserve">
+    <value>Disability:</value>
+  </data>
+  <data name="lblEmployeeID" xml:space="preserve">
+    <value>Employee ID:</value>
+  </data>
+  <data name="lblNextVaccine" xml:space="preserve">
+    <value>Next vaccine:</value>
+  </data>
+  <data name="lblNote" xml:space="preserve">
+    <value>Note:</value>
+  </data>
+  <data name="lblResult" xml:space="preserve">
+    <value>Result:</value>
+  </data>
+  <data name="lblRisks" xml:space="preserve">
+    <value>Risks:</value>
+  </data>
+  <data name="lblScheduledDate" xml:space="preserve">
+    <value>Scheduled:</value>
+  </data>
+  <data name="lblSelectedRisks" xml:space="preserve">
+    <value>Selected risks:</value>
+  </data>
+  <data name="lblTermin" xml:space="preserve">
+    <value>Termin:</value>
+  </data>
+  <data name="noDatePerformed" xml:space="preserve">
+    <value>Invalid date.</value>
+  </data>
+  <data name="noDisabilitySelected" xml:space="preserve">
+    <value>You must select disability.</value>
+  </data>
+  <data name="noRecordToUpdate" xml:space="preserve">
+    <value>No selected record to update.</value>
+  </data>
+  <data name="noVaccineSelected" xml:space="preserve">
+    <value>You must select vaccine.</value>
+  </data>
+  <data name="PERMANENT" xml:space="preserve">
+    <value>Permanent</value>
+  </data>
+  <data name="R" xml:space="preserve">
+    <value>Risk</value>
+  </data>
+  <data name="rbPermanent" xml:space="preserve">
+    <value>Permanent</value>
+  </data>
+  <data name="rbTemporary" xml:space="preserve">
+    <value>Temporary</value>
+  </data>
+  <data name="startAfterEnd" xml:space="preserve">
+    <value>Start date must be before end date.</value>
+  </data>
+  <data name="TEMPORARY" xml:space="preserve">
+    <value>Temporary</value>
+  </data>
+  <data name="V" xml:space="preserve">
+    <value>Vaccine</value>
+  </data>
+  <data name="whInfo" xml:space="preserve">
+    <value>* Weight and height format is '0.00'</value>
+  </data>
+  <data name="completedVisitsDtlFound" xml:space="preserve">
+    <value>You can not delete performed visits.</value>
+  </data>
+  <data name="noDateEnd" xml:space="preserve">
+    <value>Invalid date end.</value>
+  </data>
+  <data name="btnClose" xml:space="preserve">
+    <value>Close</value>
+  </data>
+  <data name="changesNotSaved" xml:space="preserve">
+    <value>Changes could not be saved.</value>
+  </data>
+  <data name="changesSaved" xml:space="preserve">
+    <value>Changes are successufully saved.</value>
+  </data>
+  <data name="differentEmployeeMerge" xml:space="preserve">
+    <value>Only visits of same employee could be merged.</value>
+  </data>
+  <data name="doneVisitChange" xml:space="preserve">
+    <value>You can not change done visit id =</value>
+  </data>
+  <data name="hdrModifiedTime" xml:space="preserve">
+    <value>Modified time</value>
+  </data>
+  <data name="hdrModifyBy" xml:space="preserve">
+    <value>Modified by</value>
+  </data>
+  <data name="invalidScheduledDate" xml:space="preserve">
+    <value>Invalid scheduled date for visit with id</value>
+  </data>
+  <data name="invalidSchedulingGroup" xml:space="preserve">
+    <value>Invalid scheduling group.</value>
+  </data>
+  <data name="invalidSchedulingStartTime" xml:space="preserve">
+    <value>Invalid scheduling start time.</value>
+  </data>
+  <data name="invalidSchedulingStep" xml:space="preserve">
+    <value>Invalid scheduling step.</value>
+  </data>
+  <data name="invalidSchedulingTermin" xml:space="preserve">
+    <value>Invalid scheduling termin.</value>
+  </data>
+  <data name="lblVisitDtls" xml:space="preserve">
+    <value>Visit details:</value>
+  </data>
+  <data name="lblVisitHdrs" xml:space="preserve">
+    <value>Visits:</value>
+  </data>
+  <data name="lblVisitHist" xml:space="preserve">
+    <value>Visit change history</value>
+  </data>
+  <data name="noChangesToSave" xml:space="preserve">
+    <value>No changes to be saved.</value>
+  </data>
+  <data name="noSelectedPoint" xml:space="preserve">
+    <value>You must select medical check point.</value>
+  </data>
+  <data name="noSelectedRecord" xml:space="preserve">
+    <value>No selected record.</value>
+  </data>
+  <data name="noSplitDetails" xml:space="preserve">
+    <value>Only visits with more than one risk could be splitted.</value>
+  </data>
+  <data name="noVisitsFound" xml:space="preserve">
+    <value>Selected visits are not found.</value>
+  </data>
+  <data name="riskScheduled" xml:space="preserve">
+    <value>There is scheduled visit fo risk</value>
+  </data>
+  <data name="btnSchedule" xml:space="preserve">
+    <value>Employee schedule</value>
+  </data>
+  <data name="disExist" xml:space="preserve">
+    <value>Selected disability is already defined for employee.</value>
+  </data>
+  <data name="errorCouponAmbulanceChanged" xml:space="preserve">
+    <value>Ambulance changed, visit </value>
+  </data>
+  <data name="errorCouponDayChanged" xml:space="preserve">
+    <value>Day changed, visit </value>
+  </data>
+  <data name="errorCouponMonthChanged" xml:space="preserve">
+    <value>Month changed , visit </value>
+  </data>
+  <data name="errorCouponTimeChanged" xml:space="preserve">
+    <value>Time changed, visit </value>
+  </data>
+  <data name="errorCouponYearChanged" xml:space="preserve">
+    <value>Year changed, visit </value>
+  </data>
+  <data name="errorSaveBeforeGenerating" xml:space="preserve">
+    <value>Save changes before generating coupons. </value>
+  </data>
+  <data name="couponAppointment" xml:space="preserve">
+    <value>Medical appointment</value>
+  </data>
+  <data name="couponEmployeeBeen" xml:space="preserve">
+    <value>The Employee has been examined at medical room _________________ at ________________________.</value>
+  </data>
+  <data name="couponPrevention" xml:space="preserve">
+    <value>Prevention of occupational diseases</value>
+  </data>
+  <data name="couponResponsible" xml:space="preserve">
+    <value>The Responsible (Surname and name / Company / Telephone)</value>
+  </data>
+  <data name="visitAppointmentAmbulance" xml:space="preserve">
+    <value>, ambulance </value>
+  </data>
+  <data name="visitAppointmentDate" xml:space="preserve">
+    <value>Medical appointment date </value>
+  </data>
+  <data name="visitAppointmentTime" xml:space="preserve">
+    <value>, time </value>
+  </data>
+  <data name="visitMonth" xml:space="preserve">
+    <value>Visit month</value>
+  </data>
+  <data name="chbDeleted" xml:space="preserve">
+    <value>Show deleted</value>
+  </data>
+  <data name="DELETED" xml:space="preserve">
+    <value>Deleted</value>
+  </data>
+  <data name="couponDoctor" xml:space="preserve">
+    <value>The attending physician</value>
+  </data>
+  <data name="couponSuccVisit" xml:space="preserve">
+    <value>Successful visit:</value>
+  </data>
+  <data name="deletedVisitChange" xml:space="preserve">
+    <value>You can not change deleted visit id =</value>
+  </data>
+  <data name="statusChahgedNoSplitMergeAllowed" xml:space="preserve">
+    <value>Only not reserved visits could be split or merged.</value>
+  </data>
+  <data name="lblComp" xml:space="preserve">
+    <value>Company:</value>
+  </data>
+  <data name="lblEmployeeSchedule" xml:space="preserve">
+    <value>Schedule of employee</value>
+  </data>
+  <data name="tabSchedules" xml:space="preserve">
+    <value>Schedule</value>
+  </data>
+  <data name="hdrTS" xml:space="preserve">
+    <value>TS</value>
+  </data>
+  <data name="nightovertimetojustify" xml:space="preserve">
+    <value>Night overtime to justify hours</value>
+  </data>
+  <data name="noMoreReservedCollectiveAnnualLeave" xml:space="preserve">
+    <value>Not enough reserved days for collective annual leave.</value>
+  </data>
+  <data name="notEnoughFreeHoursBetweenWorkingHours" xml:space="preserve">
+    <value>Not enough free hours between working hours.</value>
+  </data>
+  <data name="notEnoughOvertimeNotJustifiedHours" xml:space="preserve">
+    <value>Not enough overtime to justify hours.</value>
+  </data>
+  <data name="useBankHoursBeforeVacation" xml:space="preserve">
+    <value>Employee must use bank hours earned before using vacation.</value>
+  </data>
+  <data name="chbNoRegistration" xml:space="preserve">
+    <value>Without clock IN</value>
+  </data>
+  <data name="chbRegistration" xml:space="preserve">
+    <value>With clock IN</value>
+  </data>
+  <data name="lblRegistration" xml:space="preserve">
+    <value>Clock IN:</value>
+  </data>
+  <data name="noRegularOffset" xml:space="preserve">
+    <value>Not regular offset.</value>
+  </data>
+  <data name="String1" xml:space="preserve">
+    <value>Offset:</value>
+  </data>
+  <data name="chbCheckLaborLaw" xml:space="preserve">
+    <value>Check labor law</value>
+  </data>
+  <data name="pc" xml:space="preserve">
+    <value>PC</value>
+  </data>
+  <data name="total" xml:space="preserve">
+    <value>Total</value>
+  </data>
+  <data name="btnPrintAnnualReport" xml:space="preserve">
+    <value>Decisions</value>
+  </data>
+  <data name="btnPrintPaidReport" xml:space="preserve">
+    <value>Decisions</value>
+  </data>
+  <data name="chbPrintAnnualReport" xml:space="preserve">
+    <value>Decision on annual vacation generation</value>
+  </data>
+  <data name="useNotjustifedOvertimeBankHoursBeforeVacation" xml:space="preserve">
+    <value>Employee must use not justified overtime hours and bank hours earned before using vacation.</value>
+  </data>
+  <data name="useNotjustifedOvertimeHoursBeforeVacation" xml:space="preserve">
+    <value>Employee must use not justified overtime hours before using vacation.</value>
+  </data>
+  <data name="tabSearch" xml:space="preserve">
+    <value>Search</value>
+  </data>
+  <data name="hdrPersonalHoliday" xml:space="preserve">
+    <value>Personal holiday</value>
+  </data>
+  <data name="lblWUnit" xml:space="preserve">
+    <value>W. unit:</value>
+  </data>
+  <data name="cbONCurrentMonth" xml:space="preserve">
+    <value>Calculate ON current month</value>
+  </data>
+  <data name="nightFlexyChangesNotAllowed" xml:space="preserve">
+    <value>Changing data during night flexy shift is not allowed.</value>
+  </data>
+  <data name="cbEmplTotals" xml:space="preserve">
+    <value>Print employees totals</value>
+  </data>
+  <data name="rbLocation" xml:space="preserve">
+    <value>Locations</value>
+  </data>
+  <data name="rbPassType" xml:space="preserve">
+    <value>Pass types</value>
+  </data>
+  <data name="lblLocations" xml:space="preserve">
+    <value>Locations</value>
+  </data>
+  <data name="btnMap" xml:space="preserve">
+    <value>Show on map</value>
+  </data>
+  <data name="lblPassesOfAnEmployee" xml:space="preserve">
+    <value>Passes of an employee</value>
+  </data>
+  <data name="hdrPassID" xml:space="preserve">
+    <value>Pass ID</value>
+  </data>
+  <data name="lblPassesOnMap" xml:space="preserve">
+    <value>Passes on Google map</value>
+  </data>
+  <data name="noPassID" xml:space="preserve">
+    <value>No selected passes.</value>
+  </data>
+  <data name="lblNoPassesOnMap" xml:space="preserve">
+    <value>Passes are not found in database</value>
+  </data>
+  <data name="noMorePassID" xml:space="preserve">
+    <value>Can not select more than 50 passes.</value>
+  </data>
+  <data name="laborLaw" xml:space="preserve">
+    <value>Labor law days</value>
+  </data>
+  <data name="laborLawShift" xml:space="preserve">
+    <value>Labor law shifts</value>
+  </data>
+  <data name="hdrPairDate" xml:space="preserve">
+    <value>Belonging date</value>
+  </data>
+  <data name="chbUnjustifiedAbs" xml:space="preserve">
+    <value>Unjustified during w.t.</value>
+  </data>
+  <data name="tabAdditionalReports" xml:space="preserve">
+    <value>Additional reports</value>
+  </data>
+  <data name="mustSelectWU" xml:space="preserve">
+    <value>You must select working unit.</value>
+  </data>
+  <data name="hdrPeriod" xml:space="preserve">
+    <value>Period</value>
+  </data>
+  <data name="noSickLeave" xml:space="preserve">
+    <value>There are no sick leave for chosen filters.</value>
+  </data>
+  <data name="lblReportSickName" xml:space="preserve">
+    <value>Report about sick leaves</value>
+  </data>
+  <data name="chbPaidLeave60" xml:space="preserve">
+    <value>Paid leave 60%</value>
+  </data>
+  <data name="useAnnualLeaveBeforeBankHours" xml:space="preserve">
+    <value>Employee must use vacation before using bank hours.</value>
+  </data>
+  <data name="CheckBox1" xml:space="preserve">
+    <value>Change shedule  </value>
+  </data>
+  <data name="allCleared" xml:space="preserve">
+    <value>All changes of shift changes have been cleared.</value>
+  </data>
+  <data name="setShiftFromDate" xml:space="preserve">
+    <value>It's set to change shift  from the date :</value>
+  </data>
+  <data name="setShiftFromDateToContinue" xml:space="preserve">
+    <value>It's set to change shift permanently from the date :</value>
+  </data>
+  <data name="setShiftToDate" xml:space="preserve">
+    <value>, to date :</value>
+  </data>
+</root>

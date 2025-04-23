@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<ArrayOfLogTO xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+<LogTO>
+    <LogID>0</LogID>
+    <ReaderID>1</ReaderID>
+    <TagID>294052244</TagID>
+    <Antenna>0</Antenna>
+    <EventHappened>4</EventHappened>
+    <ActionCommited>22</ActionCommited>
+    <PassGenUsed>0</PassGenUsed>
+    <EventTime>2020-02-06T13:10:00</EventTime>
+  </LogTO>
+<LogTO>
+    <LogID>0</LogID>
+    <ReaderID>1</ReaderID>
+    <TagID>294052244</TagID>
+    <Antenna>1</Antenna>
+    <EventHappened>4</EventHappened>
+    <ActionCommited>22</ActionCommited>
+    <PassGenUsed>0</PassGenUsed>
+    <EventTime>2020-02-06T13:20:00</EventTime>
+  </LogTO>
+</ArrayOfLogTO>

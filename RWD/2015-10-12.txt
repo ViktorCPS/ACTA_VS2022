@@ -1,0 +1,2 @@
+12:14:5	Exception in buttonSetTime_Click: Error getting time
+12:14:20	Collect log starts, readerID=01

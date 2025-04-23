@@ -1,0 +1,743 @@
+﻿<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{D053B71B-C9CE-46E9-820E-29F589F09A3D}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ReportsWeb</RootNamespace>
+    <AssemblyName>ReportsWeb</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Shared, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Web, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.ReportViewer.WebForms, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Web.Extensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.Mobile" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AnnualLeave.cs">
+      <DependentUpon>AnnualLeave.xsd</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="AnnualLeave.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AnnualLeave.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="BankaSatiSMP.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BankaSatiSMP.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="BarSegment.aspx.cs">
+      <DependentUpon>BarSegment.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BarSegment.aspx.designer.cs">
+      <DependentUpon>BarSegment.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BufferReportDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BufferReportDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="en\TLReportsReportHyatt_en.aspx.cs">
+      <DependentUpon>TLReportsReportHyatt_en.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="en\TLReportsReportHyatt_en.aspx.designer.cs">
+      <DependentUpon>TLReportsReportHyatt_en.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="sr\GodOdmorSMP.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>GodOdmorSMP.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="sr\SMPAnnualLeaveReport.aspx.cs">
+      <DependentUpon>SMPAnnualLeaveReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="sr\SMPAnnualLeaveReport.aspx.designer.cs">
+      <DependentUpon>SMPAnnualLeaveReport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="sr\SMPBankHoursReport.aspx.cs">
+      <DependentUpon>SMPBankHoursReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="sr\SMPBankHoursReport.aspx.designer.cs">
+      <DependentUpon>SMPBankHoursReport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="sr\TLReportsReportHyatt_sr.aspx.cs">
+      <DependentUpon>TLReportsReportHyatt_sr.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="sr\TLReportsReportHyatt_sr.aspx.designer.cs">
+      <DependentUpon>TLReportsReportHyatt_sr.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TLAnnualLeaveReportHutchinsonPrivremeni.aspx.cs">
+      <DependentUpon>TLAnnualLeaveReportHutchinsonPrivremeni.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TLAnnualLeaveReportHutchinsonPrivremeni.aspx.designer.cs">
+      <DependentUpon>TLAnnualLeaveReportHutchinsonPrivremeni.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TLAnnualLeaveReportHutchinsonStalni.aspx.cs">
+      <DependentUpon>TLAnnualLeaveReportHutchinsonStalni.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TLAnnualLeaveReportHutchinsonStalni.aspx.designer.cs">
+      <DependentUpon>TLAnnualLeaveReportHutchinsonStalni.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TLAnnualLeaveReportHyatt.aspx.cs">
+      <DependentUpon>TLAnnualLeaveReportHyatt.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TLAnnualLeaveReportHyatt.aspx.designer.cs">
+      <DependentUpon>TLAnnualLeaveReportHyatt.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="en\BufferReport_en.aspx.cs">
+      <DependentUpon>BufferReport_en.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="en\BufferReport_en.aspx.designer.cs">
+      <DependentUpon>BufferReport_en.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="en\HRSSCOutstandingDataReport_en.aspx.cs">
+      <DependentUpon>HRSSCOutstandingDataReport_en.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="en\HRSSCOutstandingDataReport_en.aspx.designer.cs">
+      <DependentUpon>HRSSCOutstandingDataReport_en.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="en\MCVisitsReport_en.aspx.cs">
+      <DependentUpon>MCVisitsReport_en.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="en\MCVisitsReport_en.aspx.designer.cs">
+      <DependentUpon>MCVisitsReport_en.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="en\TLClockDataReport_en.aspx.cs">
+      <DependentUpon>TLClockDataReport_en.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="en\TLClockDataReport_en.aspx.designer.cs">
+      <DependentUpon>TLClockDataReport_en.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="en\TLDetailedDataReport_en.aspx.cs">
+      <DependentUpon>TLDetailedDataReport_en.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="en\TLDetailedDataReport_en.aspx.designer.cs">
+      <DependentUpon>TLDetailedDataReport_en.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="en\TLLoansReport_en.aspx.cs">
+      <DependentUpon>TLLoansReport_en.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="en\TLLoansReport_en.aspx.designer.cs">
+      <DependentUpon>TLLoansReport_en.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="en\TLMassiveInputReport_en.aspx.cs">
+      <DependentUpon>TLMassiveInputReport_en.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="en\TLMassiveInputReport_en.aspx.designer.cs">
+      <DependentUpon>TLMassiveInputReport_en.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="en\TLReportsReport_en.aspx.cs">
+      <DependentUpon>TLReportsReport_en.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="en\TLReportsReport_en.aspx.designer.cs">
+      <DependentUpon>TLReportsReport_en.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="en\TLWUStatisticalReport_en.aspx.cs">
+      <DependentUpon>TLWUStatisticalReport_en.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="en\TLWUStatisticalReport_en.aspx.designer.cs">
+      <DependentUpon>TLWUStatisticalReport_en.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="en\WCClockDataReport_en.aspx.cs">
+      <DependentUpon>WCClockDataReport_en.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="en\WCClockDataReport_en.aspx.designer.cs">
+      <DependentUpon>WCClockDataReport_en.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="en\WCReportsReport_en.aspx.cs">
+      <DependentUpon>WCReportsReport_en.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="en\WCReportsReport_en.aspx.designer.cs">
+      <DependentUpon>WCReportsReport_en.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FormsDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>FormsDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="IOPairsDS.cs">
+      <DependentUpon>IOPairsDS.xsd</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="IOPairsDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>IOPairsDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="IOPairsSummary.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>IOPairsSummary.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="LoansDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LoansDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="MassiveInputDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MassiveInputDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="MCVisitsSearchDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MCVisitsSearchDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="OutstandingDataDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>OutstandingDataDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="sr\BufferReport_sr.aspx.cs">
+      <DependentUpon>BufferReport_sr.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="sr\BufferReport_sr.aspx.designer.cs">
+      <DependentUpon>BufferReport_sr.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="sr\HRSSCOutstandingDataReport_sr.aspx.cs">
+      <DependentUpon>HRSSCOutstandingDataReport_sr.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="sr\HRSSCOutstandingDataReport_sr.aspx.designer.cs">
+      <DependentUpon>HRSSCOutstandingDataReport_sr.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="sr\MCVisitsReport_sr.aspx.cs">
+      <DependentUpon>MCVisitsReport_sr.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="sr\MCVisitsReport_sr.aspx.designer.cs">
+      <DependentUpon>MCVisitsReport_sr.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="sr\TLClockDataReport_sr.aspx.cs">
+      <DependentUpon>TLClockDataReport_sr.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="sr\TLClockDataReport_sr.aspx.designer.cs">
+      <DependentUpon>TLClockDataReport_sr.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="sr\TLDetailedDataReport_sr.aspx.cs">
+      <DependentUpon>TLDetailedDataReport_sr.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="sr\TLDetailedDataReport_sr.aspx.designer.cs">
+      <DependentUpon>TLDetailedDataReport_sr.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="sr\TLLoansReport_sr.aspx.cs">
+      <DependentUpon>TLLoansReport_sr.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="sr\TLLoansReport_sr.aspx.designer.cs">
+      <DependentUpon>TLLoansReport_sr.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="sr\TLMassiveInputReport_sr.aspx.cs">
+      <DependentUpon>TLMassiveInputReport_sr.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="sr\TLMassiveInputReport_sr.aspx.designer.cs">
+      <DependentUpon>TLMassiveInputReport_sr.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="sr\TLReportsReport_sr.aspx.cs">
+      <DependentUpon>TLReportsReport_sr.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="sr\TLReportsReport_sr.aspx.designer.cs">
+      <DependentUpon>TLReportsReport_sr.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="sr\TLWUStatisticalReport_sr.aspx.cs">
+      <DependentUpon>TLWUStatisticalReport_sr.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="sr\TLWUStatisticalReport_sr.aspx.designer.cs">
+      <DependentUpon>TLWUStatisticalReport_sr.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="sr\WCClockDataReport_sr.aspx.cs">
+      <DependentUpon>WCClockDataReport_sr.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="sr\WCClockDataReport_sr.aspx.designer.cs">
+      <DependentUpon>WCClockDataReport_sr.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="sr\WCReportsReport_sr.aspx.cs">
+      <DependentUpon>WCReportsReport_sr.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="sr\WCReportsReport_sr.aspx.designer.cs">
+      <DependentUpon>WCReportsReport_sr.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TLAnnualLeaveReport.aspx.cs">
+      <DependentUpon>TLAnnualLeaveReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TLAnnualLeaveReport.aspx.designer.cs">
+      <DependentUpon>TLAnnualLeaveReport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TLAnnualLeaveReportGrundfos.aspx.cs">
+      <DependentUpon>TLAnnualLeaveReportGrundfos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TLAnnualLeaveReportGrundfos.aspx.designer.cs">
+      <DependentUpon>TLAnnualLeaveReportGrundfos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TLClockData.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TLClockData.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="TLPaidLeaves60AdditionalData.aspx.cs">
+      <DependentUpon>TLPaidLeaves60AdditionalData.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TLPaidLeaves60AdditionalData.aspx.designer.cs">
+      <DependentUpon>TLPaidLeaves60AdditionalData.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TLPaidLeaves60ReportPage.aspx.cs">
+      <DependentUpon>TLPaidLeaves60ReportPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TLPaidLeaves60ReportPage.aspx.designer.cs">
+      <DependentUpon>TLPaidLeaves60ReportPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TLPaidLeavesReportPage.aspx.cs">
+      <DependentUpon>TLPaidLeavesReportPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TLPaidLeavesReportPage.aspx.designer.cs">
+      <DependentUpon>TLPaidLeavesReportPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TLWUStatisticalDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TLWUStatisticalDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="WCClockDataDS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>WCClockDataDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="EmployeeWorkingDayViewUC.ascx.cs">
+      <DependentUpon>EmployeeWorkingDayViewUC.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EmployeeWorkingDayViewUC.ascx.designer.cs">
+      <DependentUpon>EmployeeWorkingDayViewUC.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ReportPage.aspx.cs">
+      <DependentUpon>ReportPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ReportPage.aspx.designer.cs">
+      <DependentUpon>ReportPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Resource.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resource.resx</DependentUpon>
+    </Compile>
+    <Compile Include="WC_IO_Pairs.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>WC_IO_Pairs.xsd</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{967B4E0D-AD0C-4609-AB67-0FA40C0206D8}" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="en\TLClockDataReport_en.rdlc" />
+    <Content Include="en\TLDetailedDataReportSub_en.rdlc" />
+    <Content Include="en\TLDetailedDataReport_en.rdlc" />
+    <Content Include="en\TLReportsReport_en.rdlc" />
+    <Content Include="en\TLReportsSubReport_en.rdlc" />
+    <Content Include="en\WCClockDataReport_en.rdlc" />
+    <Content Include="en\TLLoansReport_en.rdlc" />
+    <Content Include="en\TLMassiveInputReport_en.rdlc" />
+    <Content Include="en\WCReportsReport_en.rdlc" />
+    <Content Include="en\WCReportsSubReport_en.rdlc" />
+    <Content Include="en\HRSSCOutstandingDataReport_en.rdlc" />
+    <Content Include="en\TLWUStatisticalReport_en.rdlc" />
+    <Content Include="en\BufferReport_en.rdlc" />
+    <Content Include="FuelReimbursementReport.rdlc" />
+    <Content Include="en\MCVisitsSearchReport_en.rdlc" />
+    <Content Include="en\TLDetailedDataReportEmplSub_en.rdlc" />
+    <Content Include="TLAnnualLeaveReportHyatt.rdlc" />
+    <Content Include="en\TLReportsReportHyatt_en.rdlc" />
+    <EmbeddedResource Include="Resource.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resource.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resource.sr.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="sr\SMPAnnualLeaveReport.rdlc" />
+    <EmbeddedResource Include="sr\SMPBankHoursReport.rdlc" />
+    <Content Include="TLAnnualLeaveReportHutchinsonStalni.rdlc" />
+    <Content Include="sr\TLReportsReportHyatt_sr.rdlc" />
+    <Content Include="TLAnnualLeaveReportGrundfosPage1.rdlc" />
+    <Content Include="TLAnnualLeaveReportGrundfosPage.rdlc" />
+    <Content Include="TLPaidLeavesReport60.rdlc" />
+    <Content Include="sr\TLDetailedDataReportEmplSub_sr.rdlc" />
+    <Content Include="TLAnnualLeaveReportPage.rdlc" />
+    <Content Include="TLPaidLeavesReport.rdlc" />
+    <Content Include="sr\MCVisitsSearchReport_sr.rdlc" />
+    <Content Include="sr\BufferReport_sr.rdlc" />
+    <Content Include="sr\TLWUStatisticalReport_sr.rdlc" />
+    <Content Include="WCTravelRequisitionReport.rdlc" />
+    <Content Include="en\WCFormsReport_en.rdlc" />
+    <Content Include="sr\HRSSCOutstandingDataReport_sr.rdlc" />
+    <Content Include="sr\TLMassiveInputReport_sr.rdlc" />
+    <Content Include="sr\TLLoansReport_sr.rdlc" />
+    <Content Include="sr\TLClockDataReport_sr.rdlc">
+    </Content>
+    <Content Include="sr\TLDetailedDataReportSub_sr.rdlc">
+    </Content>
+    <Content Include="sr\TLDetailedDataReport_sr.rdlc">
+    </Content>
+    <Content Include="sr\TLReportsReport_sr.rdlc">
+    </Content>
+    <Content Include="sr\TLReportsSubReport_sr.rdlc">
+    </Content>
+    <Content Include="sr\WCClockDataReport_sr.rdlc">
+    </Content>
+    <Content Include="sr\WCReportsReport_sr.rdlc">
+    </Content>
+    <Content Include="sr\WCReportsSubReport_sr.rdlc">
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="AnnualLeave.xsc">
+      <DependentUpon>AnnualLeave.xsd</DependentUpon>
+    </None>
+    <None Include="AnnualLeave.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>AnnualLeave.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="AnnualLeave.xss">
+      <DependentUpon>AnnualLeave.xsd</DependentUpon>
+    </None>
+    <None Include="BankaSatiSMP.xsc">
+      <DependentUpon>BankaSatiSMP.xsd</DependentUpon>
+    </None>
+    <None Include="BankaSatiSMP.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>BankaSatiSMP.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="BankaSatiSMP.xss">
+      <DependentUpon>BankaSatiSMP.xsd</DependentUpon>
+    </None>
+    <None Include="BufferReportDS.xsc">
+      <DependentUpon>BufferReportDS.xsd</DependentUpon>
+    </None>
+    <None Include="BufferReportDS.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>BufferReportDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="BufferReportDS.xss">
+      <DependentUpon>BufferReportDS.xsd</DependentUpon>
+    </None>
+    <None Include="FormsDS.xsc">
+      <DependentUpon>FormsDS.xsd</DependentUpon>
+    </None>
+    <None Include="FormsDS.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>FormsDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="FormsDS.xss">
+      <DependentUpon>FormsDS.xsd</DependentUpon>
+    </None>
+    <None Include="IOPairsDS.xsc">
+      <DependentUpon>IOPairsDS.xsd</DependentUpon>
+    </None>
+    <None Include="IOPairsDS.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>IOPairsDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="IOPairsDS.xss">
+      <DependentUpon>IOPairsDS.xsd</DependentUpon>
+    </None>
+    <None Include="IOPairsSummary.xsc">
+      <DependentUpon>IOPairsSummary.xsd</DependentUpon>
+    </None>
+    <None Include="IOPairsSummary.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>IOPairsSummary.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="IOPairsSummary.xss">
+      <DependentUpon>IOPairsSummary.xsd</DependentUpon>
+    </None>
+    <None Include="LoansDS.xsc">
+      <DependentUpon>LoansDS.xsd</DependentUpon>
+    </None>
+    <None Include="LoansDS.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>LoansDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="LoansDS.xss">
+      <DependentUpon>LoansDS.xsd</DependentUpon>
+    </None>
+    <None Include="MassiveInputDS.xsc">
+      <DependentUpon>MassiveInputDS.xsd</DependentUpon>
+    </None>
+    <None Include="MassiveInputDS.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>MassiveInputDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="MassiveInputDS.xss">
+      <DependentUpon>MassiveInputDS.xsd</DependentUpon>
+    </None>
+    <None Include="MCVisitsSearchDS.xsc">
+      <DependentUpon>MCVisitsSearchDS.xsd</DependentUpon>
+    </None>
+    <None Include="MCVisitsSearchDS.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>MCVisitsSearchDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="MCVisitsSearchDS.xss">
+      <DependentUpon>MCVisitsSearchDS.xsd</DependentUpon>
+    </None>
+    <None Include="OutstandingDataDS.xsc">
+      <DependentUpon>OutstandingDataDS.xsd</DependentUpon>
+    </None>
+    <None Include="OutstandingDataDS.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>OutstandingDataDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="OutstandingDataDS.xss">
+      <DependentUpon>OutstandingDataDS.xsd</DependentUpon>
+    </None>
+    <None Include="sr\GodOdmorSMP.xsc">
+      <DependentUpon>GodOdmorSMP.xsd</DependentUpon>
+    </None>
+    <None Include="sr\GodOdmorSMP.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>GodOdmorSMP.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="sr\GodOdmorSMP.xss">
+      <DependentUpon>GodOdmorSMP.xsd</DependentUpon>
+    </None>
+    <None Include="TLClockData.xsc">
+      <DependentUpon>TLClockData.xsd</DependentUpon>
+    </None>
+    <None Include="TLClockData.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>TLClockData.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="TLClockData.xss">
+      <DependentUpon>TLClockData.xsd</DependentUpon>
+    </None>
+    <None Include="TLWUStatisticalDS.xsc">
+      <DependentUpon>TLWUStatisticalDS.xsd</DependentUpon>
+    </None>
+    <None Include="TLWUStatisticalDS.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>TLWUStatisticalDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="TLWUStatisticalDS.xss">
+      <DependentUpon>TLWUStatisticalDS.xsd</DependentUpon>
+    </None>
+    <None Include="WCClockDataDS.xsc">
+      <DependentUpon>WCClockDataDS.xsd</DependentUpon>
+    </None>
+    <None Include="WCClockDataDS.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>WCClockDataDS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="WCClockDataDS.xss">
+      <DependentUpon>WCClockDataDS.xsd</DependentUpon>
+    </None>
+    <None Include="WC_IO_Pairs.xsc">
+      <DependentUpon>WC_IO_Pairs.xsd</DependentUpon>
+    </None>
+    <None Include="WC_IO_Pairs.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>WC_IO_Pairs.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="WC_IO_Pairs.xss">
+      <DependentUpon>WC_IO_Pairs.xsd</DependentUpon>
+    </None>
+    <Content Include="web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="BarSegment.aspx" />
+    <Content Include="en\TLReportsReportHyatt_en.aspx" />
+    <Content Include="sr\SMPAnnualLeaveReport.aspx" />
+    <Content Include="sr\SMPBankHoursReport.aspx" />
+    <Content Include="sr\TLReportsReportHyatt_sr.aspx" />
+    <Content Include="TLAnnualLeaveReportHutchinsonPrivremeni.aspx">
+    </Content>
+    <Content Include="TLAnnualLeaveReportHutchinsonPrivremeni.rdlc" />
+    <Content Include="TLAnnualLeaveReportHutchinsonStalni.aspx">
+    </Content>
+    <Content Include="TLAnnualLeaveReportHyatt.aspx" />
+    <Content Include="en\BufferReport_en.aspx" />
+    <Content Include="en\HRSSCOutstandingDataReport_en.aspx" />
+    <Content Include="en\MCVisitsReport_en.aspx" />
+    <Content Include="en\TLClockDataReport_en.aspx" />
+    <Content Include="en\TLDetailedDataReport_en.aspx" />
+    <Content Include="en\TLLoansReport_en.aspx" />
+    <Content Include="en\TLMassiveInputReport_en.aspx" />
+    <Content Include="en\TLReportsReport_en.aspx" />
+    <Content Include="en\TLWUStatisticalReport_en.aspx" />
+    <Content Include="en\WCClockDataReport_en.aspx" />
+    <Content Include="en\WCReportsReport_en.aspx" />
+    <Content Include="sr\BufferReport_sr.aspx" />
+    <Content Include="sr\HRSSCOutstandingDataReport_sr.aspx" />
+    <Content Include="sr\MCVisitsReport_sr.aspx" />
+    <Content Include="sr\TLClockDataReport_sr.aspx" />
+    <Content Include="sr\TLDetailedDataReport_sr.aspx" />
+    <Content Include="sr\TLLoansReport_sr.aspx" />
+    <Content Include="sr\TLMassiveInputReport_sr.aspx" />
+    <Content Include="sr\TLReportsReport_sr.aspx" />
+    <Content Include="sr\TLWUStatisticalReport_sr.aspx" />
+    <Content Include="sr\WCClockDataReport_sr.aspx" />
+    <Content Include="EmployeeWorkingDayViewUC.ascx" />
+    <Content Include="ReportPage.aspx" />
+    <Content Include="sr\WCReportsReport_sr.aspx" />
+    <Content Include="TLAnnualLeaveReport.aspx" />
+    <Content Include="TLAnnualLeaveReportGrundfos.aspx" />
+    <Content Include="TLPaidLeaves60AdditionalData.aspx" />
+    <Content Include="TLPaidLeaves60ReportPage.aspx" />
+    <Content Include="TLPaidLeavesReportPage.aspx" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CommonWeb\CommonWeb.csproj">
+      <Project>{33482678-3901-4585-B05A-6F0DF5D268CC}</Project>
+      <Name>CommonWeb</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Common\Common.csproj">
+      <Project>{BD526A30-C79F-4124-9C13-6B514F82A1CC}</Project>
+      <Name>Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\PieChart\PieChart3DWebcontrol.csproj">
+      <Project>{696E929A-6A4A-4C6D-A8B2-C4F25F781940}</Project>
+      <Name>PieChart3DWebcontrol</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\TransferObjects\TransferObjects.csproj">
+      <Project>{5C8540C2-8781-4EAE-BA2E-1A303779CCE3}</Project>
+      <Name>TransferObjects</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Util\Util.csproj">
+      <Project>{B9716E70-6794-4C27-ABF1-35D52CE595A6}</Project>
+      <Name>Util</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v9.0\WebApplications\Microsoft.WebApplication.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>59740</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

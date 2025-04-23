@@ -1,0 +1,9 @@
+14:9:56	Exception in buttonSetRegime_Click: Reader programming failed
+14:11:38	Exception in buttonSetRegime_Click: Reader programming failed
+14:12:1	Exception in buttonSetRegime_Click: Reader programming failed
+14:12:3	Collect log starts, readerID=01
+14:12:5	comPort=COM169085145:10001 Exception in MifareCardsManipulator; GetLog(comPort,nodeString,deleteLog); mifare.SetMode(RFIDDevice.REMOTE)Exception in MifareCardsManipulator: Cannot set REMOTE mode
+14:12:5	buttonGetLog_ClickException in MifareCardsManipulator: Cannot set REMOTE mode
+15:16:47	Collect log starts, readerID=01
+15:16:48	comPort=COM169085143:10001 224 bytes taken;
+15:16:48	buttonGetLog_ClickAccess to the path 'C:\Tamara\HUTCHINSON pmo\RWD\Log.dat' is denied.

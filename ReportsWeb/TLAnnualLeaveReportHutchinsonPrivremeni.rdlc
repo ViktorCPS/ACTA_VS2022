@@ -1,0 +1,388 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Report xmlns="http://schemas.microsoft.com/sqlserver/reporting/2005/01/reportdefinition" xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner">
+  <DataSources>
+    <DataSource Name="DummyDataSource">
+      <rd:DataSourceID>304da327-7c68-4db0-a0dc-ae6e8ae628e1</rd:DataSourceID>
+      <ConnectionProperties>
+        <DataProvider>SQL</DataProvider>
+        <ConnectString />
+      </ConnectionProperties>
+    </DataSource>
+  </DataSources>
+  <InteractiveHeight>11in</InteractiveHeight>
+  <rd:DrawGrid>true</rd:DrawGrid>
+  <InteractiveWidth>8.5in</InteractiveWidth>
+  <rd:SnapToGrid>true</rd:SnapToGrid>
+  <RightMargin>0.1in</RightMargin>
+  <LeftMargin>0.1in</LeftMargin>
+  <BottomMargin>0.1in</BottomMargin>
+  <rd:ReportID>f41450a7-1f56-404f-9fc5-e6200b7ec31b</rd:ReportID>
+  <PageWidth>7.5in</PageWidth>
+  <DataSets>
+    <DataSet Name="AnnualLeave_annualLeave">
+      <Fields>
+        <Field Name="employee">
+          <DataField>employee</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="working_unit">
+          <DataField>working_unit</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="inital_an">
+          <DataField>inital_an</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="length">
+          <DataField>length</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="start">
+          <DataField>start</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="end">
+          <DataField>end</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="from_previous">
+          <DataField>from_previous</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="from_current">
+          <DataField>from_current</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="total_left">
+          <DataField>total_left</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="previous_left">
+          <DataField>previous_left</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="current_left">
+          <DataField>current_left</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="hiring_date">
+          <DataField>hiring_date</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="contract">
+          <DataField>contract</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="printDate">
+          <DataField>printDate</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="position">
+          <DataField>position</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="JMBG">
+          <DataField>JMBG</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+      </Fields>
+      <Query>
+        <DataSourceName>DummyDataSource</DataSourceName>
+        <CommandText />
+        <rd:UseGenericDesigner>true</rd:UseGenericDesigner>
+      </Query>
+      <rd:DataSetInfo>
+        <rd:DataSetName>AnnualLeave</rd:DataSetName>
+        <rd:TableName>annualLeave</rd:TableName>
+      </rd:DataSetInfo>
+    </DataSet>
+  </DataSets>
+  <Code />
+  <Width>7.5in</Width>
+  <Body>
+    <ColumnSpacing>0.3in</ColumnSpacing>
+    <ReportItems>
+      <List Name="list1">
+        <DataSetName>AnnualLeave_annualLeave</DataSetName>
+        <KeepTogether>true</KeepTogether>
+        <ReportItems>
+          <Textbox Name="textbox15">
+            <rd:DefaultName>textbox15</rd:DefaultName>
+            <Top>8.75in</Top>
+            <Width>2.375in</Width>
+            <Style>
+              <FontFamily>Times New Roman</FontFamily>
+              <FontSize>11pt</FontSize>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+            <ZIndex>14</ZIndex>
+            <CanGrow>true</CanGrow>
+            <Left>4.25in</Left>
+            <Height>0.75in</Height>
+            <Value>Direktor
+
+_________________________</Value>
+          </Textbox>
+          <Textbox Name="textbox14">
+            <rd:DefaultName>textbox14</rd:DefaultName>
+            <Top>8.75in</Top>
+            <Width>2.375in</Width>
+            <Style>
+              <FontFamily>Times New Roman</FontFamily>
+              <FontSize>11pt</FontSize>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+            <ZIndex>13</ZIndex>
+            <CanGrow>true</CanGrow>
+            <Left>0.125in</Left>
+            <Height>0.75in</Height>
+            <Value>Zaposleni
+
+_________________________</Value>
+          </Textbox>
+          <Textbox Name="textbox13">
+            <rd:DefaultName>textbox13</rd:DefaultName>
+            <Top>8in</Top>
+            <Width>5.75in</Width>
+            <Style>
+              <FontFamily>Times New Roman</FontFamily>
+              <FontSize>11pt</FontSize>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+            <ZIndex>12</ZIndex>
+            <Left>0.125in</Left>
+            <Height>0.625in</Height>
+            <Value>Ovo rešenje je konačno i protiv istog zaposleni ima pravo da pokrene spor pred Osnovnim sudom u Šapcu, u roku
+od 60 dana od dana prijema ovog rešenja.</Value>
+          </Textbox>
+          <Textbox Name="textbox12">
+            <rd:DefaultName>textbox12</rd:DefaultName>
+            <Top>7.625in</Top>
+            <Width>2.25in</Width>
+            <Style>
+              <FontFamily>Times New Roman</FontFamily>
+              <FontSize>11pt</FontSize>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+            <ZIndex>11</ZIndex>
+            <CanGrow>true</CanGrow>
+            <Left>0.125in</Left>
+            <Height>0.25in</Height>
+            <Value>POUKA O PRAVNOM LEKU:</Value>
+          </Textbox>
+          <Textbox Name="textbox11">
+            <rd:DefaultName>textbox11</rd:DefaultName>
+            <Top>6.625in</Top>
+            <Width>7in</Width>
+            <Style>
+              <FontFamily>Times New Roman</FontFamily>
+              <FontSize>11pt</FontSize>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+            <ZIndex>10</ZIndex>
+            <Left>0.125in</Left>
+            <Height>0.875in</Height>
+            <Value>="Na osnovu odredbi Zakon o radu, Pravilnika o radu poslodavca i Ugovora o radu zaključenog sa zaposlenim,
+zaposlenom je utvrđen srazmerni deo godišnjeg odmor u trajanju od "+Fields!inital_an.Value+" radnih dana za "+Today().ToString("yyyy")+". godinu.
+Na osnovu Zahteva zaposlenog određeno je vreme korišćenja godišnjeg odmora kao u dispozitivu ovog Rešenja."</Value>
+          </Textbox>
+          <Textbox Name="textbox10">
+            <rd:DefaultName>textbox10</rd:DefaultName>
+            <Top>6.25in</Top>
+            <Width>1.5in</Width>
+            <Style>
+              <FontFamily>Times New Roman</FontFamily>
+              <FontSize>11pt</FontSize>
+              <TextAlign>Center</TextAlign>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+            <ZIndex>9</ZIndex>
+            <CanGrow>true</CanGrow>
+            <Left>3.375in</Left>
+            <Height>0.25in</Height>
+            <Value>Obrazloženje</Value>
+          </Textbox>
+          <Textbox Name="textbox9">
+            <rd:DefaultName>textbox9</rd:DefaultName>
+            <Top>5.625in</Top>
+            <Width>7in</Width>
+            <Style>
+              <FontFamily>Times New Roman</FontFamily>
+              <FontSize>11pt</FontSize>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+            <ZIndex>8</ZIndex>
+            <Left>0.125in</Left>
+            <Height>0.5in</Height>
+            <Value>="7. Zaposleni ne može da se odrekne prava na godišnji odmor, niti mu se to pravo može uskratiti, osim u slučaju
+prestanka radnog odnosa u skladu sa Zakonom."</Value>
+          </Textbox>
+          <Textbox Name="textbox8">
+            <rd:DefaultName>textbox8</rd:DefaultName>
+            <Top>5.125in</Top>
+            <Width>7in</Width>
+            <Style>
+              <FontFamily>Times New Roman</FontFamily>
+              <FontSize>11pt</FontSize>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+            <ZIndex>7</ZIndex>
+            <Left>0.125in</Left>
+            <Height>0.375in</Height>
+            <Value>="6. Za vreme korišćenja godišnjeg odmora zaposlenom pripada naknada zarade u skladu sa članom 114. Zakona o
+radu."</Value>
+          </Textbox>
+          <Textbox Name="textbox7">
+            <rd:DefaultName>textbox7</rd:DefaultName>
+            <Top>4.5in</Top>
+            <Width>7in</Width>
+            <Style>
+              <FontFamily>Times New Roman</FontFamily>
+              <FontSize>11pt</FontSize>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+            <ZIndex>6</ZIndex>
+            <Left>0.125in</Left>
+            <Height>0.5in</Height>
+            <Value>="5. Zaposleni mora iskoristiti godišnji odmor za "+Today().ToString("yyyy")+". godinu najkasnije do 30.06."+DateAdd(DateInterval.Year,1,Today()).ToString("yyyy")+". godine."</Value>
+          </Textbox>
+          <Textbox Name="textbox6">
+            <rd:DefaultName>textbox6</rd:DefaultName>
+            <Top>3.875in</Top>
+            <Width>7in</Width>
+            <Style>
+              <FontFamily>Times New Roman</FontFamily>
+              <FontSize>11pt</FontSize>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+            <ZIndex>5</ZIndex>
+            <Left>0.125in</Left>
+            <Height>0.5in</Height>
+            <Value>="4. Imenovanom je po ovom Rešenju preostalo još"+Fields!total_left.Value+"dana srazmernog dela godišnjeg odmora za "+Today().ToString("yyyy")+". godinu."</Value>
+          </Textbox>
+          <Textbox Name="textbox5">
+            <rd:DefaultName>textbox5</rd:DefaultName>
+            <Top>3in</Top>
+            <Width>7in</Width>
+            <Style>
+              <FontFamily>Times New Roman</FontFamily>
+              <FontSize>11pt</FontSize>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+            <ZIndex>4</ZIndex>
+            <Left>0.125in</Left>
+            <Height>0.75in</Height>
+            <Value>="3. Zaposlenom "+Fields!employee.Value+" odobrava se korišćenje srazmernog dela godišnjeg odmora za "+Today.ToString("yyyy")+". godinu, u trajanju od "+Fields!length.Value+" radnih dana, u periodu od "+Fields!start.Value+". godine do "+Fields!end.Value+". godine."</Value>
+          </Textbox>
+          <Textbox Name="textbox4">
+            <rd:DefaultName>textbox4</rd:DefaultName>
+            <Top>2.25in</Top>
+            <Width>7in</Width>
+            <Style>
+              <FontFamily>Times New Roman</FontFamily>
+              <FontSize>11pt</FontSize>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+            <ZIndex>3</ZIndex>
+            <Left>0.125in</Left>
+            <Height>0.625in</Height>
+            <Value>="2. Dužina godišnjeg odmora iz tačke 1. ovog rešenja utvrđena je članom 72. Zakona o radu, članom 7. Pravilnika o
+radu _________________ i članom 5. Ugovora o radu."</Value>
+          </Textbox>
+          <Textbox Name="textbox3">
+            <rd:DefaultName>textbox3</rd:DefaultName>
+            <Top>1.5in</Top>
+            <Width>7in</Width>
+            <Style>
+              <FontFamily>Times New Roman</FontFamily>
+              <FontSize>11pt</FontSize>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+            <ZIndex>2</ZIndex>
+            <Left>0.125in</Left>
+            <Height>0.625in</Height>
+            <Value>="1. Zaposlenom "+Fields!employee.Value+ ", JMBG: "+Fields!JMBG.Value+", rasporedjenom na radnom mestu " +Fields!working_unit.Value+ " utvrdjuje se pravo na srazmerni deo godišnjeg odmora za 6 meseci neprekidnog rada u " +Today().ToString("yyyy")+ ". godini u trajanju od " +Fields!inital_an.Value+ "."</Value>
+          </Textbox>
+          <Textbox Name="textbox2">
+            <rd:DefaultName>textbox2</rd:DefaultName>
+            <Top>1.125in</Top>
+            <Width>1in</Width>
+            <Style>
+              <FontFamily>Times New Roman</FontFamily>
+              <FontSize>11pt</FontSize>
+              <TextAlign>Center</TextAlign>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+            <ZIndex>1</ZIndex>
+            <CanGrow>true</CanGrow>
+            <Left>3.375in</Left>
+            <Height>0.25in</Height>
+            <Value>REŠENJE</Value>
+          </Textbox>
+          <Textbox Name="textbox1">
+            <rd:DefaultName>textbox1</rd:DefaultName>
+            <Top>0.125in</Top>
+            <Width>6.875in</Width>
+            <Style>
+              <FontFamily>Times New Roman</FontFamily>
+              <FontSize>11pt</FontSize>
+              <TextAlign>Center</TextAlign>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+            <Left>0.125in</Left>
+            <Height>0.875in</Height>
+            <Value>="Na osnovu čl. 68., 69, 70.,72., 75. i 192. Zakona o radu (Službeni glasnik RS, br. 24/2005, br. 61/2005, br. 54/2009, br. 32/2013, 75/2014, 13/2017 - odluka US, 113/2017 i 95/2018 - autentično tumačenje) i Pravilnika o radu PR/02/07/ANN od 22.05.2016. godine, direktor Cyrille Mario Raymond Perea, dana "+Fields!printDate.Value+" godine donosi:"</Value>
+          </Textbox>
+        </ReportItems>
+      </List>
+    </ReportItems>
+    <Height>10.125in</Height>
+  </Body>
+  <Language>en-US</Language>
+  <TopMargin>0.1in</TopMargin>
+</Report>

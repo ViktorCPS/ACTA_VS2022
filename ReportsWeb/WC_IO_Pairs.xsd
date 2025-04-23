@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="WC_IO_Pairs" targetNamespace="http://tempuri.org/WC_IO_Pairs.xsd" xmlns:mstns="http://tempuri.org/WC_IO_Pairs.xsd" xmlns="http://tempuri.org/WC_IO_Pairs.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="WC_IO_Pairs" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="WC_IO_Pairs" msprop:Generator_DataSetName="WC_IO_Pairs" msprop:EnableTableAdapterManager="true">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="wc_io_pairs" msprop:Generator_UserTableName="wc_io_pairs" msprop:Generator_RowDeletedName="wc_io_pairsRowDeleted" msprop:Generator_RowChangedName="wc_io_pairsRowChanged" msprop:Generator_RowClassName="wc_io_pairsRow" msprop:Generator_RowChangingName="wc_io_pairsRowChanging" msprop:Generator_RowEvArgName="wc_io_pairsRowChangeEvent" msprop:Generator_RowEvHandlerName="wc_io_pairsRowChangeEventHandler" msprop:Generator_TableClassName="wc_io_pairsDataTable" msprop:Generator_TableVarName="tablewc_io_pairs" msprop:Generator_RowDeletingName="wc_io_pairsRowDeleting" msprop:Generator_TablePropName="wc_io_pairs">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="numDay" msprop:Generator_UserColumnName="numDay" msprop:Generator_ColumnVarNameInTable="columnnumDay" msprop:Generator_ColumnPropNameInRow="numDay" msprop:Generator_ColumnPropNameInTable="numDayColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="day" msprop:Generator_UserColumnName="day" msprop:Generator_ColumnVarNameInTable="columnday" msprop:Generator_ColumnPropNameInRow="day" msprop:Generator_ColumnPropNameInTable="dayColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="presenceComment" msprop:Generator_UserColumnName="presenceComment" msprop:Generator_ColumnVarNameInTable="columnpresenceComment" msprop:Generator_ColumnPropNameInRow="presenceComment" msprop:Generator_ColumnPropNameInTable="presenceCommentColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="presenceStartTime" msprop:Generator_UserColumnName="presenceStartTime" msprop:Generator_ColumnVarNameInTable="columnpresenceStartTime" msprop:Generator_ColumnPropNameInRow="presenceStartTime" msprop:Generator_ColumnPropNameInTable="presenceStartTimeColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="presenceEndTime" msprop:Generator_UserColumnName="presenceEndTime" msprop:Generator_ColumnVarNameInTable="columnpresenceEndTime" msprop:Generator_ColumnPropNameInRow="presenceEndTime" msprop:Generator_ColumnPropNameInTable="presenceEndTimeColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="presencePC" msprop:Generator_UserColumnName="presencePC" msprop:Generator_ColumnVarNameInTable="columnpresencePC" msprop:Generator_ColumnPropNameInRow="presencePC" msprop:Generator_ColumnPropNameInTable="presencePCColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="absenceReason" msprop:Generator_UserColumnName="absenceReason" msprop:Generator_ColumnVarNameInTable="columnabsenceReason" msprop:Generator_ColumnPropNameInRow="absenceReason" msprop:Generator_ColumnPropNameInTable="absenceReasonColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="absenceStartTime" msprop:Generator_UserColumnName="absenceStartTime" msprop:Generator_ColumnVarNameInTable="columnabsenceStartTime" msprop:Generator_ColumnPropNameInRow="absenceStartTime" msprop:Generator_ColumnPropNameInTable="absenceStartTimeColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="absenceEndTime" msprop:Generator_UserColumnName="absenceEndTime" msprop:Generator_ColumnVarNameInTable="columnabsenceEndTime" msprop:Generator_ColumnPropNameInRow="absenceEndTime" msprop:Generator_ColumnPropNameInTable="absenceEndTimeColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="absencePC" msprop:Generator_UserColumnName="absencePC" msprop:Generator_ColumnVarNameInTable="columnabsencePC" msprop:Generator_ColumnPropNameInRow="absencePC" msprop:Generator_ColumnPropNameInTable="absencePCColumn" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="wc_days" msprop:Generator_UserTableName="wc_days" msprop:Generator_RowDeletedName="wc_daysRowDeleted" msprop:Generator_RowChangedName="wc_daysRowChanged" msprop:Generator_RowClassName="wc_daysRow" msprop:Generator_RowChangingName="wc_daysRowChanging" msprop:Generator_RowEvArgName="wc_daysRowChangeEvent" msprop:Generator_RowEvHandlerName="wc_daysRowChangeEventHandler" msprop:Generator_TableClassName="wc_daysDataTable" msprop:Generator_TableVarName="tablewc_days" msprop:Generator_RowDeletingName="wc_daysRowDeleting" msprop:Generator_TablePropName="wc_days">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="numDay" msprop:Generator_UserColumnName="numDay" msprop:Generator_ColumnPropNameInRow="numDay" msprop:Generator_ColumnVarNameInTable="columnnumDay" msprop:Generator_ColumnPropNameInTable="numDayColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="day" msprop:Generator_UserColumnName="day" msprop:Generator_ColumnPropNameInRow="day" msprop:Generator_ColumnVarNameInTable="columnday" msprop:Generator_ColumnPropNameInTable="dayColumn" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="wc_payment" msprop:Generator_UserTableName="wc_payment" msprop:Generator_RowDeletedName="wc_paymentRowDeleted" msprop:Generator_RowChangedName="wc_paymentRowChanged" msprop:Generator_RowClassName="wc_paymentRow" msprop:Generator_RowChangingName="wc_paymentRowChanging" msprop:Generator_RowEvArgName="wc_paymentRowChangeEvent" msprop:Generator_RowEvHandlerName="wc_paymentRowChangeEventHandler" msprop:Generator_TableClassName="wc_paymentDataTable" msprop:Generator_TableVarName="tablewc_payment" msprop:Generator_RowDeletingName="wc_paymentRowDeleting" msprop:Generator_TablePropName="wc_payment">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="payment" msprop:Generator_UserColumnName="payment" msprop:Generator_ColumnVarNameInTable="columnpayment" msprop:Generator_ColumnPropNameInRow="payment" msprop:Generator_ColumnPropNameInTable="paymentColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="hours" msprop:Generator_UserColumnName="hours" msprop:Generator_ColumnVarNameInTable="columnhours" msprop:Generator_ColumnPropNameInRow="hours" msprop:Generator_ColumnPropNameInTable="hoursColumn" type="xs:double" minOccurs="0" />
+              <xs:element name="numberRow" msprop:Generator_UserColumnName="numberRow" msprop:Generator_ColumnPropNameInRow="numberRow" msprop:Generator_ColumnVarNameInTable="columnnumberRow" msprop:Generator_ColumnPropNameInTable="numberRowColumn" type="xs:int" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="wc_pair_counters" msprop:Generator_UserTableName="wc_pair_counters" msprop:Generator_RowDeletedName="wc_pair_countersRowDeleted" msprop:Generator_RowChangedName="wc_pair_countersRowChanged" msprop:Generator_RowClassName="wc_pair_countersRow" msprop:Generator_RowChangingName="wc_pair_countersRowChanging" msprop:Generator_RowEvArgName="wc_pair_countersRowChangeEvent" msprop:Generator_RowEvHandlerName="wc_pair_countersRowChangeEventHandler" msprop:Generator_TableClassName="wc_pair_countersDataTable" msprop:Generator_TableVarName="tablewc_pair_counters" msprop:Generator_RowDeletingName="wc_pair_countersRowDeleting" msprop:Generator_TablePropName="wc_pair_counters">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="thisYearLeave" msprop:Generator_UserColumnName="thisYearLeave" msprop:Generator_ColumnVarNameInTable="columnthisYearLeave" msprop:Generator_ColumnPropNameInRow="thisYearLeave" msprop:Generator_ColumnPropNameInTable="thisYearLeaveColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="prevYearLeave" msprop:Generator_UserColumnName="prevYearLeave" msprop:Generator_ColumnVarNameInTable="columnprevYearLeave" msprop:Generator_ColumnPropNameInRow="prevYearLeave" msprop:Generator_ColumnPropNameInTable="prevYearLeaveColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="annualLeave" msdata:Caption="annualLeaveUsed" msprop:Generator_UserColumnName="annualLeave" msprop:Generator_ColumnVarNameInTable="columnannualLeave" msprop:Generator_ColumnPropNameInRow="annualLeave" msprop:Generator_ColumnPropNameInTable="annualLeaveColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="paidLeaveCounter" msprop:Generator_UserColumnName="paidLeaveCounter" msprop:Generator_ColumnVarNameInTable="columnpaidLeaveCounter" msprop:Generator_ColumnPropNameInRow="paidLeaveCounter" msprop:Generator_ColumnPropNameInTable="paidLeaveCounterColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="bankHoursCounter" msprop:Generator_UserColumnName="bankHoursCounter" msprop:Generator_ColumnVarNameInTable="columnbankHoursCounter" msprop:Generator_ColumnPropNameInRow="bankHoursCounter" msprop:Generator_ColumnPropNameInTable="bankHoursCounterColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="overtimeCounter" msprop:Generator_UserColumnName="overtimeCounter" msprop:Generator_ColumnVarNameInTable="columnovertimeCounter" msprop:Generator_ColumnPropNameInRow="overtimeCounter" msprop:Generator_ColumnPropNameInTable="overtimeCounterColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="stopWorkingCounter" msprop:Generator_UserColumnName="stopWorkingCounter" msprop:Generator_ColumnVarNameInTable="columnstopWorkingCounter" msprop:Generator_ColumnPropNameInRow="stopWorkingCounter" msprop:Generator_ColumnPropNameInTable="stopWorkingCounterColumn" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

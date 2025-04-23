@@ -1,0 +1,382 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="3.5">
+  <PropertyGroup>
+    <ProjectType>Local</ProjectType>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{5C8540C2-8781-4EAE-BA2E-1A303779CCE3}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ApplicationIcon>
+    </ApplicationIcon>
+    <AssemblyKeyContainerName>
+    </AssemblyKeyContainerName>
+    <AssemblyName>TransferObjects</AssemblyName>
+    <AssemblyOriginatorKeyFile>
+    </AssemblyOriginatorKeyFile>
+    <DefaultClientScript>JScript</DefaultClientScript>
+    <DefaultHTMLPageLayout>Grid</DefaultHTMLPageLayout>
+    <DefaultTargetSchema>IE50</DefaultTargetSchema>
+    <DelaySign>false</DelaySign>
+    <OutputType>Library</OutputType>
+    <RootNamespace>TransferObjects</RootNamespace>
+    <RunPostBuildEvent>OnBuildSuccess</RunPostBuildEvent>
+    <StartupObject>
+    </StartupObject>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <OldToolsVersion>2.0</OldToolsVersion>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DocumentationFile>
+    </DocumentationFile>
+    <DebugSymbols>true</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn>
+    </NoWarn>
+    <Optimize>false</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>full</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>TRACE</DefineConstants>
+    <DocumentationFile>
+    </DocumentationFile>
+    <DebugSymbols>false</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn>
+    </NoWarn>
+    <Optimize>true</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>none</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System">
+      <Name>System</Name>
+      <HintPath>C:\WINDOWS\Microsoft.NET\Framework\v2.0.50727\System.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Data">
+      <Name>System.Data</Name>
+      <HintPath>C:\WINDOWS\Microsoft.NET\Framework\v2.0.50727\System.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization, Version=3.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL" />
+    <Reference Include="System.Xml">
+      <Name>System.XML</Name>
+      <HintPath>C:\WINDOWS\Microsoft.NET\Framework\v2.0.50727\System.XML.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AccessControlFileTO.cs" />
+    <Compile Include="AccessGroupXGateTO.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ACSEventTO.cs" />
+    <Compile Include="AddressTO.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ApplMenuItemTO.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ApplRoleTO.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ApplUserCategoryTO.cs" />
+    <Compile Include="ApplUserCategoryXPassTypeTO.cs" />
+    <Compile Include="ApplUserLoginRFIDTO.cs" />
+    <Compile Include="ApplUsersLoginChangesTblTO.cs" />
+    <Compile Include="ApplUsersLogTO.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ApplUsersXRoleTO.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ApplUsersXWUTO.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ApplUserTO.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ApplUserXApplUserCategoryTO.cs" />
+    <Compile Include="ApplUserXOrgUnitTO.cs" />
+    <Compile Include="AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="BufferMonthlyBalancePaidTO.cs" />
+    <Compile Include="CameraSnapshotFileTO.cs" />
+    <Compile Include="CamerasXReadersTO.cs" />
+    <Compile Include="CameraTO.cs" />
+    <Compile Include="CardOwnerTO.cs" />
+    <Compile Include="CitizenTO.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ControlFilterTO.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DocumentsTO.cs" />
+    <Compile Include="EmployeeAsco4MetadataTO.cs" />
+    <Compile Include="EmployeeAsco4TO.cs" />
+    <Compile Include="EmployeeCounterMonthlyBalanceTO.cs" />
+    <Compile Include="EmployeeCounterTypeTO.cs" />
+    <Compile Include="EmployeeCounterValueHistTO.cs" />
+    <Compile Include="EmployeeCounterValueTO.cs" />
+    <Compile Include="EmployeeHistTO.cs" />
+    <Compile Include="EmployeeLoanTO.cs" />
+    <Compile Include="EmployeeLockedDayTO.cs" />
+    <Compile Include="EmployeePhysicalDataTO.cs" />
+    <Compile Include="EmployeePositionTO.cs" />
+    <Compile Include="EmployeePositionXRiskTO.cs" />
+    <Compile Include="EmployeePYDataAnaliticalTO.cs" />
+    <Compile Include="EmployeePYDataBufferTO.cs" />
+    <Compile Include="EmployeePYDataSumTO.cs" />
+    <Compile Include="EmployeePYTransportDataTO.cs" />
+    <Compile Include="EmployeePYTransportTypeTO.cs" />
+    <Compile Include="EmployeeResponsibilityTO.cs" />
+    <Compile Include="EmployeeTypeTO.cs" />
+    <Compile Include="EmployeeTypeVisibilityTO.cs" />
+    <Compile Include="EmployeeVacEvidScheduleTO.cs" />
+    <Compile Include="EmployeeVacEvidTO.cs" />
+    <Compile Include="EmployeeXMachineTO.cs" />
+    <Compile Include="EmployeeXMealTypeEmplTO.cs" />
+    <Compile Include="EmployeeXMedicalCheckDisabilityTO.cs" />
+    <Compile Include="EmployeeXRiskTO.cs" />
+    <Compile Include="EmployeeXVaccineTO.cs" />
+    <Compile Include="FilterTO.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="GateSyncTO.cs" />
+    <Compile Include="EmployeeAbsenceTO.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="EmployeeGroupAccessControlTO.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="EmployeeGroupsTimeScheduleTO.cs" />
+    <Compile Include="EmployeeImageFileTO.cs" />
+    <Compile Include="EmployeeLocationTO.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="EmployeeTimeScheduleTO.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="EmployeeTO.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ExitPermissionTO.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ExtraHourTO.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ExtraHourUsedTO.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="GateTimeAccessProfileTO.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="GateTO.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="HolidaysExtendedTO.cs" />
+    <Compile Include="HolidayTO.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="IOPairProcessedTO.cs" />
+    <Compile Include="IOPairsProcessedHistTO.cs" />
+    <Compile Include="IOPairTO.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="LicenceTO.cs" />
+    <Compile Include="LocationTO.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="LockTO.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="LogAdditionalInfoTO.cs" />
+    <Compile Include="LogTmpAdditionalInfoTO.cs" />
+    <Compile Include="LogTO.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MachineTO.cs" />
+    <Compile Include="MapsObjectDtlTO.cs" />
+    <Compile Include="MapsObjectHdrTO.cs" />
+    <Compile Include="MapTO.cs" />
+    <Compile Include="MealAssignedTO.cs" />
+    <Compile Include="MealsEmployeeSchaduleTO.cs" />
+    <Compile Include="MealsPointTO.cs" />
+    <Compile Include="MealsTypeScheduleTO.cs" />
+    <Compile Include="MealsWorkingUnitScheduleTO.cs" />
+    <Compile Include="MealTypeAdditionalDataTO.cs" />
+    <Compile Include="MealTypeEmplTO.cs" />
+    <Compile Include="MealTypeTO.cs" />
+    <Compile Include="MealUsedTO.cs" />
+    <Compile Include="MedicalCheckPointTO.cs" />
+    <Compile Include="MedicalCheckVisitDtlHistTO.cs" />
+    <Compile Include="MedicalCheckVisitDtlTO.cs" />
+    <Compile Include="MedicalCheckVisitHdrHistTO.cs" />
+    <Compile Include="MedicalCheckVisitHdrTO.cs" />
+    <Compile Include="MedicalCheckDisabilityTO.cs" />
+    <Compile Include="OnlineMealsIntervalsTO.cs" />
+    <Compile Include="OnlineMealsPointsTO.cs" />
+    <Compile Include="OnlineMealsRestaurantTO.cs" />
+    <Compile Include="OnlineMealsTypesTO.cs" />
+    <Compile Include="OnlineMealsUsedHistTO.cs" />
+    <Compile Include="OnlineMealsUsedTO.cs" />
+    <Compile Include="OrganizationalUnitTO.cs" />
+    <Compile Include="PassesAdditionalInfoTO.cs" />
+    <Compile Include="PassHistTO.cs" />
+    <Compile Include="PassTO.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="PassTypeLimitTO.cs" />
+    <Compile Include="PassTypesConfirmationTO.cs" />
+    <Compile Include="PassTypeTO.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="PointTO.cs" />
+    <Compile Include="ReaderTO.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="RiskTO.cs" />
+    <Compile Include="RuleTO.cs" />
+    <Compile Include="SecurityRouteDtlTO.cs" />
+    <Compile Include="SecurityRouteHdrTO.cs" />
+    <Compile Include="SecurityRouteScheduleTO.cs" />
+    <Compile Include="SecurityRoutesEmployeeTO.cs" />
+    <Compile Include="SecurityRoutesLogTO.cs" />
+    <Compile Include="SecurityRoutesPointTO.cs" />
+    <Compile Include="SecurityRoutesReaderTO.cs" />
+    <Compile Include="SiemensDepartmentTO.cs" />
+    <Compile Include="SiemensEmployeeImageTO.cs" />
+    <Compile Include="SiemensEmployeeTO.cs" />
+    <Compile Include="SiemensEmpTO.cs" />
+    <Compile Include="SiemensLogTO.cs" />
+    <Compile Include="SiemensTruckLogTO.cs" />
+    <Compile Include="SiemensVechicleLogTO.cs" />
+    <Compile Include="SyncAnnualLeaveRecalcTO.cs" />
+    <Compile Include="SyncBufferDataTO.cs" />
+    <Compile Include="SyncCostCenterTO.cs" />
+    <Compile Include="SyncEmployeePositionTO.cs" />
+    <Compile Include="SyncEmployeeTO.cs" />
+    <Compile Include="SyncFinancialStructureTO.cs" />
+    <Compile Include="SyncOrganizationalStructureTO.cs" />
+    <Compile Include="SyncResponsibilityTO.cs" />
+    <Compile Include="SystemClosingEventTO.cs" />
+    <Compile Include="SystemMessageTO.cs" />
+    <Compile Include="TagTO.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="TimeAccessProfileDtlTO.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="TimeAccessProfileTO.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="TimeSchemaIntervalLibraryDtlTO.cs" />
+    <Compile Include="TimeSchemaIntervalLibraryTO.cs" />
+    <Compile Include="TimeSchemaPauseTO.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="UnipromButtonLogTO.cs" />
+    <Compile Include="UnipromButtonTO.cs" />
+    <Compile Include="VacationReportTO.cs" />
+    <Compile Include="VaccineTO.cs" />
+    <Compile Include="ValidationTerminalTO.cs" />
+    <Compile Include="VisitAsco4TO.cs" />
+    <Compile Include="VisitorDocFileTO.cs" />
+    <Compile Include="VisitTO.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="WorkingGroupTO.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="WorkingUnitTO.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="WorkingUnitXOrganizationalUnitTO.cs" />
+    <Compile Include="WorkTimeIntervalTO.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="WorkTimeSchemaTO.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ZINApbTO.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Util\Util.csproj">
+      <Project>{B9716E70-6794-4C27-ABF1-35D52CE595A6}</Project>
+      <Name>Util</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0 %28x86%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PreBuildEvent>
+    </PreBuildEvent>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+</Project>

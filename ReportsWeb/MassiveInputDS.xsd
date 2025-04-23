@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="MassiveInputDS" targetNamespace="http://tempuri.org/MassiveInputDS.xsd" xmlns:mstns="http://tempuri.org/MassiveInputDS.xsd" xmlns="http://tempuri.org/MassiveInputDS.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="MassiveInputDS" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="MassiveInputDS" msprop:Generator_DataSetName="MassiveInputDS" msprop:EnableTableAdapterManager="true">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="MassiveInput" msprop:Generator_UserTableName="MassiveInput" msprop:Generator_RowDeletedName="MassiveInputRowDeleted" msprop:Generator_RowChangedName="MassiveInputRowChanged" msprop:Generator_RowClassName="MassiveInputRow" msprop:Generator_RowChangingName="MassiveInputRowChanging" msprop:Generator_RowEvArgName="MassiveInputRowChangeEvent" msprop:Generator_RowEvHandlerName="MassiveInputRowChangeEventHandler" msprop:Generator_TableClassName="MassiveInputDataTable" msprop:Generator_TableVarName="tableMassiveInput" msprop:Generator_RowDeletingName="MassiveInputRowDeleting" msprop:Generator_TablePropName="MassiveInput">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="empl" msprop:Generator_UserColumnName="empl" msprop:Generator_ColumnVarNameInTable="columnempl" msprop:Generator_ColumnPropNameInRow="empl" msprop:Generator_ColumnPropNameInTable="emplColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="pt" msprop:Generator_UserColumnName="pt" msprop:Generator_ColumnVarNameInTable="columnpt" msprop:Generator_ColumnPropNameInRow="pt" msprop:Generator_ColumnPropNameInTable="ptColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="pairdate" msprop:Generator_UserColumnName="pairdate" msprop:Generator_ColumnVarNameInTable="columnpairdate" msprop:Generator_ColumnPropNameInRow="pairdate" msprop:Generator_ColumnPropNameInTable="pairdateColumn" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="pairstart" msprop:Generator_UserColumnName="pairstart" msprop:Generator_ColumnVarNameInTable="columnpairstart" msprop:Generator_ColumnPropNameInRow="pairstart" msprop:Generator_ColumnPropNameInTable="pairstartColumn" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="pairend" msprop:Generator_UserColumnName="pairend" msprop:Generator_ColumnVarNameInTable="columnpairend" msprop:Generator_ColumnPropNameInRow="pairend" msprop:Generator_ColumnPropNameInTable="pairendColumn" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="hours" msprop:Generator_UserColumnName="hours" msprop:Generator_ColumnVarNameInTable="columnhours" msprop:Generator_ColumnPropNameInRow="hours" msprop:Generator_ColumnPropNameInTable="hoursColumn" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

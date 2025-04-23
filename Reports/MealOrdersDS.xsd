@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="MealOrdersDS" targetNamespace="http://tempuri.org/MealOrdersDS.xsd" elementFormDefault="qualified" attributeFormDefault="qualified" xmlns="http://tempuri.org/MealOrdersDS.xsd" xmlns:mstns="http://tempuri.org/MealOrdersDS.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop">
+  <xs:element name="MealOrdersDS" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="EmployeePresenceDS" msprop:Generator_DataSetName="EmployeePresenceDS">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="meal_order" msprop:Generator_UserTableName="employee_presence" msprop:Generator_RowDeletedName="employee_presenceRowDeleted" msprop:Generator_RowChangedName="employee_presenceRowChanged" msprop:Generator_RowClassName="employee_presenceRow" msprop:Generator_RowChangingName="employee_presenceRowChanging" msprop:Generator_RowEvArgName="employee_presenceRowChangeEvent" msprop:Generator_RowEvHandlerName="employee_presenceRowChangeEventHandler" msprop:Generator_TableClassName="employee_presenceDataTable" msprop:Generator_TableVarName="tableemployee_presence" msprop:Generator_RowDeletingName="employee_presenceRowDeleting" msprop:Generator_TablePropName="employee_presence">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="meal_type_id" msprop:Generator_UserColumnName="employee_id" msprop:Generator_ColumnPropNameInRow="employee_id" msprop:Generator_ColumnVarNameInTable="columnemployee_id" msprop:Generator_ColumnPropNameInTable="employee_idColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="meal_type" msprop:Generator_UserColumnName="first_name" msprop:Generator_ColumnPropNameInRow="first_name" msprop:Generator_ColumnVarNameInTable="columnfirst_name" msprop:Generator_ColumnPropNameInTable="first_nameColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="day_1" msprop:Generator_UserColumnName="day_1" msprop:Generator_ColumnPropNameInRow="day_1" msprop:Generator_ColumnVarNameInTable="columnday_1" msprop:Generator_ColumnPropNameInTable="day_1Column" type="xs:int" minOccurs="0" />
+              <xs:element name="day_2" msprop:Generator_UserColumnName="day_2" msprop:Generator_ColumnPropNameInRow="day_2" msprop:Generator_ColumnVarNameInTable="columnday_2" msprop:Generator_ColumnPropNameInTable="day_2Column" type="xs:int" minOccurs="0" />
+              <xs:element name="day_3" msprop:Generator_UserColumnName="day_3" msprop:Generator_ColumnPropNameInRow="day_3" msprop:Generator_ColumnVarNameInTable="columnday_3" msprop:Generator_ColumnPropNameInTable="day_3Column" type="xs:int" minOccurs="0" />
+              <xs:element name="day_4" msprop:Generator_UserColumnName="day_4" msprop:Generator_ColumnPropNameInRow="day_4" msprop:Generator_ColumnVarNameInTable="columnday_4" msprop:Generator_ColumnPropNameInTable="day_4Column" type="xs:int" minOccurs="0" />
+              <xs:element name="day_5" msprop:Generator_UserColumnName="day_5" msprop:Generator_ColumnPropNameInRow="day_5" msprop:Generator_ColumnVarNameInTable="columnday_5" msprop:Generator_ColumnPropNameInTable="day_5Column" type="xs:int" minOccurs="0" />
+              <xs:element name="day_6" msprop:Generator_UserColumnName="day_6" msprop:Generator_ColumnPropNameInRow="day_6" msprop:Generator_ColumnVarNameInTable="columnday_6" msprop:Generator_ColumnPropNameInTable="day_6Column" type="xs:int" minOccurs="0" />
+              <xs:element name="day_7" msprop:Generator_UserColumnName="day_7" msprop:Generator_ColumnPropNameInRow="day_7" msprop:Generator_ColumnVarNameInTable="columnday_7" msprop:Generator_ColumnPropNameInTable="day_7Column" type="xs:int" minOccurs="0" />
+              <xs:element name="day_8" msprop:Generator_UserColumnName="day_8" msprop:Generator_ColumnPropNameInRow="day_8" msprop:Generator_ColumnVarNameInTable="columnday_8" msprop:Generator_ColumnPropNameInTable="day_8Column" type="xs:int" />
+              <xs:element name="day_9" msprop:Generator_UserColumnName="day_9" msprop:Generator_ColumnPropNameInRow="day_9" msprop:Generator_ColumnVarNameInTable="columnday_9" msprop:Generator_ColumnPropNameInTable="day_9Column" type="xs:int" minOccurs="0" />
+              <xs:element name="day_10" msprop:Generator_UserColumnName="day_10" msprop:Generator_ColumnPropNameInRow="day_10" msprop:Generator_ColumnVarNameInTable="columnday_10" msprop:Generator_ColumnPropNameInTable="day_10Column" type="xs:int" minOccurs="0" />
+              <xs:element name="day_11" msprop:Generator_UserColumnName="day_11" msprop:Generator_ColumnPropNameInRow="day_11" msprop:Generator_ColumnVarNameInTable="columnday_11" msprop:Generator_ColumnPropNameInTable="day_11Column" type="xs:int" minOccurs="0" />
+              <xs:element name="day_12" msprop:Generator_UserColumnName="day_12" msprop:Generator_ColumnPropNameInRow="day_12" msprop:Generator_ColumnVarNameInTable="columnday_12" msprop:Generator_ColumnPropNameInTable="day_12Column" type="xs:int" minOccurs="0" />
+              <xs:element name="day_13" msprop:Generator_UserColumnName="day_13" msprop:Generator_ColumnPropNameInRow="day_13" msprop:Generator_ColumnVarNameInTable="columnday_13" msprop:Generator_ColumnPropNameInTable="day_13Column" type="xs:int" minOccurs="0" />
+              <xs:element name="day_14" msprop:Generator_UserColumnName="day_14" msprop:Generator_ColumnPropNameInRow="day_14" msprop:Generator_ColumnVarNameInTable="columnday_14" msprop:Generator_ColumnPropNameInTable="day_14Column" type="xs:int" minOccurs="0" />
+              <xs:element name="day_15" msprop:Generator_UserColumnName="day_15" msprop:Generator_ColumnPropNameInRow="day_15" msprop:Generator_ColumnVarNameInTable="columnday_15" msprop:Generator_ColumnPropNameInTable="day_15Column" type="xs:int" minOccurs="0" />
+              <xs:element name="day_16" msprop:Generator_UserColumnName="day_16" msprop:Generator_ColumnPropNameInRow="day_16" msprop:Generator_ColumnVarNameInTable="columnday_16" msprop:Generator_ColumnPropNameInTable="day_16Column" type="xs:int" minOccurs="0" />
+              <xs:element name="day_17" msprop:Generator_UserColumnName="day_17" msprop:Generator_ColumnPropNameInRow="day_17" msprop:Generator_ColumnVarNameInTable="columnday_17" msprop:Generator_ColumnPropNameInTable="day_17Column" type="xs:int" minOccurs="0" />
+              <xs:element name="day_18" msprop:Generator_UserColumnName="day_18" msprop:Generator_ColumnPropNameInRow="day_18" msprop:Generator_ColumnVarNameInTable="columnday_18" msprop:Generator_ColumnPropNameInTable="day_18Column" type="xs:int" minOccurs="0" />
+              <xs:element name="day_19" msprop:Generator_UserColumnName="day_19" msprop:Generator_ColumnPropNameInRow="day_19" msprop:Generator_ColumnVarNameInTable="columnday_19" msprop:Generator_ColumnPropNameInTable="day_19Column" type="xs:int" minOccurs="0" />
+              <xs:element name="day_20" msprop:Generator_UserColumnName="day_20" msprop:Generator_ColumnPropNameInRow="day_20" msprop:Generator_ColumnVarNameInTable="columnday_20" msprop:Generator_ColumnPropNameInTable="day_20Column" type="xs:int" minOccurs="0" />
+              <xs:element name="day_21" msprop:Generator_UserColumnName="day_21" msprop:Generator_ColumnPropNameInRow="day_21" msprop:Generator_ColumnVarNameInTable="columnday_21" msprop:Generator_ColumnPropNameInTable="day_21Column" type="xs:int" minOccurs="0" />
+              <xs:element name="day_22" msprop:Generator_UserColumnName="day_22" msprop:Generator_ColumnPropNameInRow="day_22" msprop:Generator_ColumnVarNameInTable="columnday_22" msprop:Generator_ColumnPropNameInTable="day_22Column" type="xs:int" minOccurs="0" />
+              <xs:element name="day_23" msprop:Generator_UserColumnName="day_23" msprop:Generator_ColumnPropNameInRow="day_23" msprop:Generator_ColumnVarNameInTable="columnday_23" msprop:Generator_ColumnPropNameInTable="day_23Column" type="xs:int" minOccurs="0" />
+              <xs:element name="day_24" msprop:Generator_UserColumnName="day_24" msprop:Generator_ColumnPropNameInRow="day_24" msprop:Generator_ColumnVarNameInTable="columnday_24" msprop:Generator_ColumnPropNameInTable="day_24Column" type="xs:int" minOccurs="0" />
+              <xs:element name="day_25" msprop:Generator_UserColumnName="day_25" msprop:Generator_ColumnPropNameInRow="day_25" msprop:Generator_ColumnVarNameInTable="columnday_25" msprop:Generator_ColumnPropNameInTable="day_25Column" type="xs:int" minOccurs="0" />
+              <xs:element name="day_26" msprop:Generator_UserColumnName="day_26" msprop:Generator_ColumnPropNameInRow="day_26" msprop:Generator_ColumnVarNameInTable="columnday_26" msprop:Generator_ColumnPropNameInTable="day_26Column" type="xs:int" minOccurs="0" />
+              <xs:element name="day_27" msprop:Generator_UserColumnName="day_27" msprop:Generator_ColumnPropNameInRow="day_27" msprop:Generator_ColumnVarNameInTable="columnday_27" msprop:Generator_ColumnPropNameInTable="day_27Column" type="xs:int" minOccurs="0" />
+              <xs:element name="day_28" msprop:Generator_UserColumnName="day_28" msprop:Generator_ColumnPropNameInRow="day_28" msprop:Generator_ColumnVarNameInTable="columnday_28" msprop:Generator_ColumnPropNameInTable="day_28Column" type="xs:int" minOccurs="0" />
+              <xs:element name="day_29" msprop:Generator_UserColumnName="day_29" msprop:Generator_ColumnPropNameInRow="day_29" msprop:Generator_ColumnVarNameInTable="columnday_29" msprop:Generator_ColumnPropNameInTable="day_29Column" type="xs:int" minOccurs="0" />
+              <xs:element name="day_30" msprop:Generator_UserColumnName="day_30" msprop:Generator_ColumnPropNameInRow="day_30" msprop:Generator_ColumnVarNameInTable="columnday_30" msprop:Generator_ColumnPropNameInTable="day_30Column" type="xs:int" minOccurs="0" />
+              <xs:element name="day_31" msprop:Generator_UserColumnName="day_31" msprop:Generator_ColumnPropNameInRow="day_31" msprop:Generator_ColumnVarNameInTable="columnday_31" msprop:Generator_ColumnPropNameInTable="day_31Column" type="xs:int" minOccurs="0" />
+              <xs:element name="shift" msprop:Generator_UserColumnName="shift" msprop:Generator_ColumnPropNameInRow="shift" msprop:Generator_ColumnVarNameInTable="columnshift" msprop:Generator_ColumnPropNameInTable="shiftColumn" type="xs:string" minOccurs="0" />
+              
+              <xs:element name="total" type="xs:int" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="images" msprop:Generator_UserTableName="images" msprop:Generator_RowDeletedName="imagesRowDeleted" msprop:Generator_RowChangedName="imagesRowChanged" msprop:Generator_RowClassName="imagesRow" msprop:Generator_RowChangingName="imagesRowChanging" msprop:Generator_RowEvArgName="imagesRowChangeEvent" msprop:Generator_RowEvHandlerName="imagesRowChangeEventHandler" msprop:Generator_TableClassName="imagesDataTable" msprop:Generator_TableVarName="tableimages" msprop:Generator_RowDeletingName="imagesRowDeleting" msprop:Generator_TablePropName="images">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="image" msprop:Generator_UserColumnName="image" msprop:Generator_ColumnVarNameInTable="columnimage" msprop:Generator_ColumnPropNameInRow="image" msprop:Generator_ColumnPropNameInTable="imageColumn" type="xs:base64Binary" minOccurs="0" />
+              <xs:element name="imageID" msprop:Generator_UserColumnName="imageID" msprop:Generator_ColumnVarNameInTable="columnimageID" msprop:Generator_ColumnPropNameInRow="imageID" msprop:Generator_ColumnPropNameInTable="imageIDColumn" type="xs:byte" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

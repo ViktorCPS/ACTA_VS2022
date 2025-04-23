@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<xs:schema id="RptDataSet" targetNamespace="http://tempuri.org/RptDataSet.xsd" elementFormDefault="qualified"
+	attributeFormDefault="qualified" xmlns="http://tempuri.org/RptDataSet.xsd" xmlns:mstns="http://tempuri.org/RptDataSet.xsd"
+	xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+	<xs:element name="RptDataSet" msdata:IsDataSet="true">
+		<xs:complexType>
+			<xs:choice maxOccurs="unbounded">
+				<xs:element name="working_units">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="working_unit_id" type="xs:int" />
+							<xs:element name="parent_working_unit_id" type="xs:int" />
+							<xs:element name="description" type="xs:string" minOccurs="0" />
+							<xs:element name="name" type="xs:string" minOccurs="0" />
+							<xs:element name="address_id" type="xs:int" minOccurs="0" />
+							<xs:element name="status" type="xs:string" minOccurs="0" />
+							<xs:element name="created_by" type="xs:string" minOccurs="0" />
+							<xs:element name="created_time" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="modified_by" type="xs:string" minOccurs="0" />
+							<xs:element name="modified_time" type="xs:dateTime" minOccurs="0" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="pass_types">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="pass_type_id" type="xs:int" />
+							<xs:element name="description" type="xs:string" minOccurs="0" />
+							<xs:element name="button" type="xs:int" minOccurs="0" />
+							<xs:element name="pass_type" type="xs:int" />
+							<xs:element name="payment_code" type="xs:string" minOccurs="0" />
+							<xs:element name="created_by" type="xs:string" minOccurs="0" />
+							<xs:element name="created_time" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="modified_by" type="xs:string" minOccurs="0" />
+							<xs:element name="modified_time" type="xs:dateTime" minOccurs="0" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="io_pairs">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="io_pair_id" msdata:ReadOnly="true" msdata:AutoIncrement="true" type="xs:long" />
+							<xs:element name="io_pair_date" type="xs:dateTime" />
+							<xs:element name="employee_id" type="xs:int" />
+							<xs:element name="location_id" type="xs:int" />
+							<xs:element name="is_wrk_hrs_counter" type="xs:int" />
+							<xs:element name="pass_type_id" type="xs:int" />
+							<xs:element name="start_time" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="end_time" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="manual_created" type="xs:int" />
+							<xs:element name="created_by" type="xs:string" minOccurs="0" />
+							<xs:element name="created_time" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="modified_by" type="xs:string" minOccurs="0" />
+							<xs:element name="modified_time" type="xs:dateTime" minOccurs="0" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="locations">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="location_id" type="xs:int" />
+							<xs:element name="name" type="xs:string" minOccurs="0" />
+							<xs:element name="description" type="xs:string" minOccurs="0" />
+							<xs:element name="parent_location_id" type="xs:int" />
+							<xs:element name="address_id" type="xs:int" minOccurs="0" />
+							<xs:element name="status" type="xs:string" minOccurs="0" />
+							<xs:element name="created_by" type="xs:string" minOccurs="0" />
+							<xs:element name="created_time" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="modified_by" type="xs:string" minOccurs="0" />
+							<xs:element name="modified_time" type="xs:dateTime" minOccurs="0" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="employees">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="employee_id" type="xs:int" />
+							<xs:element name="first_name" type="xs:string" />
+							<xs:element name="last_name" type="xs:string" />
+							<xs:element name="working_unit_id" type="xs:int" />
+							<xs:element name="status" type="xs:string" />
+							<xs:element name="password" type="xs:string" minOccurs="0" />
+							<xs:element name="address_id" type="xs:int" minOccurs="0" />
+							<xs:element name="employee_group_id" type="xs:int" minOccurs="0" />
+							<xs:element name="picture" type="xs:string" minOccurs="0" />
+							<xs:element name="created_by" type="xs:string" minOccurs="0" />
+							<xs:element name="created_time" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="modified_by" type="xs:string" minOccurs="0" />
+							<xs:element name="modified_time" type="xs:dateTime" minOccurs="0" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:choice>
+		</xs:complexType>
+		<xs:unique name="RptDataSetKey1" msdata:PrimaryKey="true">
+			<xs:selector xpath=".//mstns:working_units" />
+			<xs:field xpath="mstns:working_unit_id" />
+		</xs:unique>
+		<xs:unique name="RptDataSetKey2" msdata:PrimaryKey="true">
+			<xs:selector xpath=".//mstns:pass_types" />
+			<xs:field xpath="mstns:pass_type_id" />
+		</xs:unique>
+		<xs:unique name="RptDataSetKey3" msdata:PrimaryKey="true">
+			<xs:selector xpath=".//mstns:io_pairs" />
+			<xs:field xpath="mstns:io_pair_id" />
+		</xs:unique>
+		<xs:unique name="RptDataSetKey4" msdata:PrimaryKey="true">
+			<xs:selector xpath=".//mstns:locations" />
+			<xs:field xpath="mstns:location_id" />
+		</xs:unique>
+		<xs:unique name="RptDataSetKey5" msdata:PrimaryKey="true">
+			<xs:selector xpath=".//mstns:employees" />
+			<xs:field xpath="mstns:employee_id" />
+		</xs:unique>
+	</xs:element>
+</xs:schema>

@@ -1,0 +1,889 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="3.5">
+  <PropertyGroup>
+    <ProjectType>Local</ProjectType>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{6CAC101D-949E-4F27-AAEF-53BD52672368}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ApplicationIcon>
+    </ApplicationIcon>
+    <AssemblyKeyContainerName>
+    </AssemblyKeyContainerName>
+    <AssemblyName>DataAccess</AssemblyName>
+    <AssemblyOriginatorKeyFile>
+    </AssemblyOriginatorKeyFile>
+    <DefaultClientScript>JScript</DefaultClientScript>
+    <DefaultHTMLPageLayout>Grid</DefaultHTMLPageLayout>
+    <DefaultTargetSchema>IE50</DefaultTargetSchema>
+    <DelaySign>false</DelaySign>
+    <OutputType>Library</OutputType>
+    <RootNamespace>DataAccess</RootNamespace>
+    <RunPostBuildEvent>OnBuildSuccess</RunPostBuildEvent>
+    <StartupObject>
+    </StartupObject>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <OldToolsVersion>2.0</OldToolsVersion>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DocumentationFile>
+    </DocumentationFile>
+    <DebugSymbols>true</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn>
+    </NoWarn>
+    <Optimize>false</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>full</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>TRACE</DefineConstants>
+    <DocumentationFile>
+    </DocumentationFile>
+    <DebugSymbols>false</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn>
+    </NoWarn>
+    <Optimize>true</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>none</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.VisualStudio.QualityTools.UnitTestFramework, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+    <Reference Include="Microsoft.VisualStudio.TeamSystem.Data.UnitTesting, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+    <Reference Include="MySql.Data, Version=1.0.2.18525, Culture=neutral, PublicKeyToken=c5687fc88969c44d">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\lib\MySql.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="System">
+      <Name>System</Name>
+      <HintPath>C:\WINDOWS\Microsoft.NET\Framework\v2.0.50727\System.dll</HintPath>
+    </Reference>
+    <Reference Include="System.configuration">
+      <HintPath>C:\WINDOWS\Microsoft.NET\Framework\v2.0.50727\System.configuration.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Data">
+      <Name>System.Data</Name>
+      <HintPath>C:\WINDOWS\Microsoft.NET\Framework\v2.0.50727\System.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml">
+      <Name>System.XML</Name>
+      <HintPath>C:\WINDOWS\Microsoft.NET\Framework\v2.0.50727\System.XML.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AccessControlFileDAO.cs" />
+    <Compile Include="AccessGroupXGateDAO.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ACSEventsDAO.cs" />
+    <Compile Include="AddressDAO.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ApplMenuItemDAO.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ApplRoleDAO.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ApplUserCategoryDAO.cs" />
+    <Compile Include="ApplUserCategoryXPassTypeDAO.cs" />
+    <Compile Include="ApplUserDAO.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ApplUserLoginRFIDDAO.cs" />
+    <Compile Include="ApplUsersLogDAO.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ApplUsersLoginChangesTblDAO.cs" />
+    <Compile Include="ApplUsersXRoleDAO.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ApplUsersXWUDAO.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ApplUserXApplUserCategoryDAO.cs" />
+    <Compile Include="ApplUserXOrgUnitDAO.cs" />
+    <Compile Include="AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="BufferMonthlyBalancePaidDAO.cs" />
+    <Compile Include="CameraDAO.cs" />
+    <Compile Include="CameraSnapshotFileDAO.cs" />
+    <Compile Include="CamerasXReadersDAO.cs" />
+    <Compile Include="CitizenDAO.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DocumentsDAO.cs" />
+    <Compile Include="DatabaseSetup.cs" />
+    <Compile Include="EmployeeAsco4DAO.cs" />
+    <Compile Include="EmployeeAsco4HistDAO.cs" />
+    <Compile Include="EmployeeAsco4MetadataDAO.cs" />
+    <Compile Include="EmployeeCounterMonthlyBalanceDAO.cs" />
+    <Compile Include="EmployeeCounterMonthlyBalanceHistDAO.cs" />
+    <Compile Include="EmployeeCounterTypeDAO.cs" />
+    <Compile Include="EmployeeCounterValueDAO.cs" />
+    <Compile Include="EmployeeCounterValueHistDAO.cs" />
+    <Compile Include="EmployeeHistDAO.cs" />
+    <Compile Include="EmployeeLoanDAO.cs" />
+    <Compile Include="EmployeeLockedDayDAO.cs" />
+    <Compile Include="EmployeePhysicalDataDAO.cs" />
+    <Compile Include="EmployeePositionDAO.cs" />
+    <Compile Include="EmployeePositionXRiskDAO.cs" />
+    <Compile Include="EmployeePYDataAnaliticalDAO.cs" />
+    <Compile Include="EmployeePYDataBufferDAO.cs" />
+    <Compile Include="EmployeePYDataSumDAO.cs" />
+    <Compile Include="EmployeePYTransportTypeDAO.cs" />
+    <Compile Include="EmployeePYTransportDataDAO.cs" />
+    <Compile Include="EmployeeResponsibilityDAO.cs" />
+    <Compile Include="EmployeesXMedicalCheckDisabilityDAO.cs" />
+    <Compile Include="EmployeeTypeDAO.cs" />
+    <Compile Include="EmployeeVacEvidDAO.cs" />
+    <Compile Include="EmployeeXMealTypeEmplDAO.cs" />
+    <Compile Include="EmployeeXRiskDAO.cs" />
+    <Compile Include="EmployeeXVaccineDAO.cs" />
+    <Compile Include="FilterDAO.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="GateSyncDAO.cs" />
+    <Compile Include="DAOController.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DAOFactory.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="EmployeeAbsenceDAO.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="EmployeeDAO.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="EmployeeGroupAccessControlDAO.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="EmployeeGroupsTimeScheduleDAO.cs" />
+    <Compile Include="EmployeeImageFileDAO.cs" />
+    <Compile Include="EmployeeLocationDAO.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="EmployeeTimeScheduleDAO.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ExitPermissionDAO.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ExtraHourDAO.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ExtraHourUsedDAO.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="GateDAO.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="GateTimeAccessProfileDAO.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="HolidayDAO.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="HolidaysExtendedDAO.cs" />
+    <Compile Include="EmployeeTypeVisibilityDAO.cs" />
+    <Compile Include="IOPairDAO.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="IOPairProcessedDAO.cs" />
+    <Compile Include="IOPairsProcessedHistDAO.cs" />
+    <Compile Include="LicenceDAO.cs" />
+    <Compile Include="LocationsDAO.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="LockDAO.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="LogAdditionalInfoDAO.cs" />
+    <Compile Include="LogDAO.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="LogTmpAdditionalInfoDAO.cs" />
+    <Compile Include="MachineDAO.cs" />
+    <Compile Include="MapDAO.cs" />
+    <Compile Include="MapsObjectDAO.cs" />
+    <Compile Include="MealAssignedDAO.cs" />
+    <Compile Include="MealsEmployeeScheduleDAO.cs" />
+    <Compile Include="MealsPointDAO.cs" />
+    <Compile Include="MealsTypeScheduleDAO.cs" />
+    <Compile Include="MealsWorkingUnitScheduleDAO.cs" />
+    <Compile Include="MealTypeAdditionalDataDAO.cs" />
+    <Compile Include="MealTypeEmplDAO.cs" />
+    <Compile Include="MealTypeDAO.cs" />
+    <Compile Include="MealUsedDAO.cs" />
+    <Compile Include="MedicalCheckDisabilityDAO.cs" />
+    <Compile Include="MedicalCheckPointDAO.cs" />
+    <Compile Include="MedicalCheckVisitDtlHistDAO.cs" />
+    <Compile Include="MedicalCheckVisitDtlDAO.cs" />
+    <Compile Include="MedicalCheckVisitHdrDAO.cs" />
+    <Compile Include="MedicalCheckVisitHdrHistDAO.cs" />
+    <Compile Include="MSSQL\MSSQLDocumentsDAO.cs" />
+    <Compile Include="MSSQL\MSSQLACSEventsDAO.cs" />
+    <Compile Include="MSSQL\MSSQLApplUserCategoryDAO.cs" />
+    <Compile Include="MSSQL\MSSQLApplUserCategoryXPassTypeDAO.cs" />
+    <Compile Include="MSSQL\MSSQLApplUserLoginRFIDDAO.cs" />
+    <Compile Include="MSSQL\MSSQLApplUsersLoginChangesTblDAO.cs" />
+    <Compile Include="MSSQL\MSSQLApplUserXApplUserCategoryDAO.cs" />
+    <Compile Include="MSSQL\MSSQLApplUserXOrgUnitDAO.cs" />
+    <Compile Include="MSSQL\MSSQLBufferMonthlyBalancePaidDAO.cs" />
+    <Compile Include="MSSQL\MSSQLEmployeeAsco4HistDAO.cs" />
+    <Compile Include="MSSQL\MSSQLEmployeeAsco4MetadataDAO.cs" />
+    <Compile Include="MSSQL\MSSQLEmployeeCounterMonthlyBalanceDAO.cs" />
+    <Compile Include="MSSQL\MSSQLEmployeeCounterMonthlyBalanceHistDAO.cs" />
+    <Compile Include="MSSQL\MSSQLEmployeeCounterTypeDAO.cs" />
+    <Compile Include="MSSQL\MSSQLEmployeeCounterValueDAO.cs" />
+    <Compile Include="MSSQL\MSSQLEmployeeCounterValueHistDAO.cs" />
+    <Compile Include="MSSQL\MSSQLEmployeeHistDAO.cs" />
+    <Compile Include="MSSQL\MSSQLEmployeeLoanDAO.cs" />
+    <Compile Include="MSSQL\MSSQLEmployeeLockedDayDAO.cs" />
+    <Compile Include="MSSQL\MSSQLEmployeePhysicalDataDAO.cs" />
+    <Compile Include="MSSQL\MSSQLEmployeePositionDAO.cs" />
+    <Compile Include="MSSQL\MSSQLEmployeePYTransportDataDAO.cs" />
+    <Compile Include="MSSQL\MSSQLEmployeePYTransportTypeDAO.cs" />
+    <Compile Include="MSSQL\MSSQLLogAdditionalInfoDAO.cs" />
+    <Compile Include="MSSQL\MSSQLLogTmpAdditionalInfoDAO.cs" />
+    <Compile Include="MSSQL\MSSQLMachineDAO.cs" />
+    <Compile Include="MSSQL\MSSQLMealTypeAdditionalDataDAO.cs" />
+    <Compile Include="MSSQL\MSSQLPassesAdditionalInfoDAO.cs" />
+    <Compile Include="MSSQL\MSSQLSyncAnnualLeaveRecalcFlagDAO.cs" />
+    <Compile Include="MSSQL\MSSQLSyncEmployeePositionHistDAO.cs" />
+    <Compile Include="MSSQL\MSSQLEmployeePositionXRiskDAO.cs" />
+    <Compile Include="MSSQL\MSSQLEmployeePYDataAnaliticalDAO.cs" />
+    <Compile Include="MSSQL\MSSQLEmployeePYDataBufferDAO.cs" />
+    <Compile Include="MSSQL\MSSQLEmployeePYDataSumDAO.cs" />
+    <Compile Include="MSSQL\MSSQLEmployeeResponsibilityDAO.cs" />
+    <Compile Include="MSSQL\MSSQLEmployeeTypeDAO.cs" />
+    <Compile Include="MSSQL\MSSQLEmployeeTypeVisibilityDAO.cs" />
+    <Compile Include="MSSQL\MSSQLEmployeeVacEvidDAO.cs" />
+    <Compile Include="MSSQL\MSSQLEmployeeXMealTypeEmplDAO.cs" />
+    <Compile Include="MSSQL\MSSQLEmployeeXMedicalCheckDisabilityDAO.cs" />
+    <Compile Include="MSSQL\MSSQLEmployeeXRiskDAO.cs" />
+    <Compile Include="MSSQL\MSSQLEmployeeXVaccineDAO.cs" />
+    <Compile Include="MSSQL\MSSQLFilterDAO.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MSSQL\MSSQLGateSyncDAO.cs" />
+    <Compile Include="MSSQL\MSSQLAccessControlFileDAO.cs" />
+    <Compile Include="MSSQL\MSSQLAccessGroupXGateDAO.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MSSQL\MSSQLAddressDAO.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MSSQL\MSSQLApplMenuItemDAO.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MSSQL\MSSQLApplRoleDAO.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MSSQL\MSSQLApplUserDAO.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MSSQL\MSSQLApplUsersLogDAO.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MSSQL\MSSQLApplUsersXRoleDAO.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MSSQL\MSSQLApplUsersXWUDAO.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MSSQL\MSSQLCameraDAO.cs" />
+    <Compile Include="MSSQL\MSSQLCameraSnapshotFileDAO.cs" />
+    <Compile Include="MSSQL\MSSQLCamerasXReadersDAO.cs" />
+    <Compile Include="MSSQL\MSSQLCitizenDAO.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MSSQL\MSSQLDAOFactory.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MSSQL\MSSQLEmployeDAO.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MSSQL\MSSQLEmployeeAbsenceDAO.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MSSQL\MSSQLEmployeeGroupAccessControlDAO.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MSSQL\MSSQLEmployeeGroupsTimeScheduleDAO.cs" />
+    <Compile Include="MSSQL\MSSQLEmployeeImageFileDAO.cs" />
+    <Compile Include="MSSQL\MSSQLEmployeeLocationDAO.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MSSQL\MSSQLEmployeeTimeSchedule.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MSSQL\MSSQLExitPermissionDAO.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MSSQL\MSSQLExtraHourDAO.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MSSQL\MSSQLExtraHourUsedDAO.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MSSQL\MSSQLGateDAO.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MSSQL\MSSQLGateTimeAccessProfileDAO.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MSSQL\MSSQLHolidayDAO.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MSSQL\MSSQLHolidaysExtendedDAO.cs" />
+    <Compile Include="MSSQL\MSSQLIOPairDAO.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MSSQL\MSSQLIOPairProcessedDAO.cs" />
+    <Compile Include="MSSQL\MSSQLIOPairsProcessedHistDAO.cs" />
+    <Compile Include="MSSQL\MSSQLLicenceDAO.cs" />
+    <Compile Include="MSSQL\MSSQLLocationDAO.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MSSQL\MSSQLLockDAO.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MSSQL\MSSQLLogDAO.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MSSQL\MSSQLMapDAO.cs" />
+    <Compile Include="MSSQL\MSSQLMapsObjectDAO.cs" />
+    <Compile Include="MSSQL\MSSQLMealAssignedDAO.cs" />
+    <Compile Include="MSSQL\MSSQLMealsEmployeeScheduleDAO.cs" />
+    <Compile Include="MSSQL\MSSQLMealsPointDAO.cs" />
+    <Compile Include="MSSQL\MSSQLMealsTypeScheduleDAO.cs" />
+    <Compile Include="MSSQL\MSSQLMealsWorkingUnitScheduleDAO.cs" />
+    <Compile Include="MSSQL\MSSQLMealTypeDAO.cs" />
+    <Compile Include="MSSQL\MSSQLMealTypeEmplDAO.cs" />
+    <Compile Include="MSSQL\MSSQLMealUsedDAO.cs" />
+    <Compile Include="MSSQL\MSSQLMedicalCheckDisabilityDAO.cs" />
+    <Compile Include="MSSQL\MSSQLMedicalCheckPointDAO.cs" />
+    <Compile Include="MSSQL\MSSQLMedicalCheckVisitDtlDAO.cs" />
+    <Compile Include="MSSQL\MSSQLMedicalCheckVisitDtlHistDAO.cs" />
+    <Compile Include="MSSQL\MSSQLMedicalCheckVisitHdrDAO.cs" />
+    <Compile Include="MSSQL\MSSQLMedicalCheckVisitHdrHistDAO.cs" />
+    <Compile Include="MSSQL\MSSQLOnlineMealsIntervalsDAO.cs" />
+    <Compile Include="MSSQL\MSSQLOnlineMealsPointsDAO.cs" />
+    <Compile Include="MSSQL\MSSQLOnlineMealsRestaurantDAO.cs" />
+    <Compile Include="MSSQL\MSSQLOnlineMealsTypesDAO.cs" />
+    <Compile Include="MSSQL\MSSQLOnlineMealsUsedDailyDAO.cs" />
+    <Compile Include="MSSQL\MSSQLOnlineMealsUsedDAO.cs" />
+    <Compile Include="MSSQL\MSSQLOnlineMealsUsedHistDAO.cs" />
+    <Compile Include="MSSQL\MSSQLOrganizationalUnitDAO.cs" />
+    <Compile Include="MSSQL\MSSQLPassDAO.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MSSQL\MSSQLPassHistDAO.cs" />
+    <Compile Include="MSSQL\MSSQLPassTypeDAO.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MSSQL\MSSQLPassTypeLimitDAO.cs" />
+    <Compile Include="MSSQL\MSSQLPassTypesConfirmationDAO.cs" />
+    <Compile Include="MSSQL\MSSQLReaderDAO.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MSSQL\MSSQLResultDAO.cs" />
+    <Compile Include="MSSQL\MSSQLRiskDAO.cs" />
+    <Compile Include="MSSQL\MSSQLRuleDAO.cs" />
+    <Compile Include="MSSQL\MSSQLSecurityRouteDAO.cs" />
+    <Compile Include="MSSQL\MSSQLSecurityRouteScheduleDAO.cs" />
+    <Compile Include="MSSQL\MSSQLSecurityRoutesEmployeeDAO.cs" />
+    <Compile Include="MSSQL\MSSQLSecurityRoutesLogDAO.cs" />
+    <Compile Include="MSSQL\MSSQLSecurityRoutesPointDAO.cs" />
+    <Compile Include="MSSQL\MSSQLSecurityRoutesReaderDAO.cs" />
+    <Compile Include="MSSQL\MSSQLSyncAnnualLeaveRecalcHistDAO.cs" />
+    <Compile Include="MSSQL\MSSQLSyncBufferDataHistDAO.cs" />
+    <Compile Include="MSSQL\MSSQLSyncCostCenterHistDAO.cs" />
+    <Compile Include="MSSQL\MSSQLSyncEmployeesHistDAO.cs" />
+    <Compile Include="MSSQL\MSSQLSyncFinancialStructureHistDAO.cs" />
+    <Compile Include="MSSQL\MSSQLSyncOrganizationalStructureHistDAO.cs" />
+    <Compile Include="MSSQL\MSSQLSyncResponsibilityHistDAO.cs" />
+    <Compile Include="MSSQL\MSSQLSyncWithNavDAO.cs" />
+    <Compile Include="MSSQL\MSSQLSystemClosingEventDAO.cs" />
+    <Compile Include="MSSQL\MSSQLSystemMessageDAO.cs" />
+    <Compile Include="MSSQL\MSSQLTagDAO.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MSSQL\MSSQLTimeAccessProfileDAO.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MSSQL\MSSQLTimeAccessProfileDtlDAO.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MSSQL\MSSQLTimeSchemaIntervalLibraryDAO.cs" />
+    <Compile Include="MSSQL\MSSQLTimeSchemaIntervalLibraryDtlDAO.cs" />
+    <Compile Include="MSSQL\MSSQLTimeSchemaPauseDAO.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MSSQL\MSSQLUnipromButtonDAO.cs" />
+    <Compile Include="MSSQL\MSSQLUnipromButtonLogDAO.cs" />
+    <Compile Include="MSSQL\MSSQLVaccineDAO.cs" />
+    <Compile Include="MSSQL\MSSQLVisitAsco4DAO.cs" />
+    <Compile Include="MSSQL\MSSQLVisitDAO.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MSSQL\MSSQLVisitorDocFileDAO.cs" />
+    <Compile Include="MSSQL\MSSQLWorkingGroupDAO.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MSSQL\MSSQLWorkingUnitsDAO.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MSSQL\MSSQLWorkingUnitXOrganizationalUnitDAO.cs" />
+    <Compile Include="MSSQL\MSSQLWorkTimeSchemaDAO.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MSSQL\MSSQLEmployeeAsco4DAO.cs" />
+    <Compile Include="MSSQL\MSSQLZINApbDAO.cs" />
+    <Compile Include="MySQL\MySQLDocumentsDAO.cs" />
+    <Compile Include="MySQL\MySQLACSEventsDAO.cs" />
+    <Compile Include="MySQL\MySQLApplUserCategoryDAO.cs" />
+    <Compile Include="MySQL\MySQLApplUserCategoryXPassTypeDAO.cs" />
+    <Compile Include="MySQL\MySQLApplUserLoginRFIDDAO.cs" />
+    <Compile Include="MySQL\MySQLApplUsersLoginChangesTblDAO.cs" />
+    <Compile Include="MySQL\MySQLApplUserXApplUserCategoryDAO.cs" />
+    <Compile Include="MySQL\MySQLApplUserXOrgUnitDAO.cs" />
+    <Compile Include="MySQL\MySQLBufferMonthlyBalancePaidDAO.cs" />
+    <Compile Include="MySQL\MySQLEmployeeCounterMonthlyBalanceDAO.cs" />
+    <Compile Include="MySQL\MySQLEmployeeCounterMonthlyBalanceHistDAO.cs" />
+    <Compile Include="MySQL\MySQLEmployeeLockedDayDAO.cs" />
+    <Compile Include="MySQL\MySQLEmployeePhysicalDataDAO.cs" />
+    <Compile Include="MySQL\MySQLEmployeePositionDAO.cs" />
+    <Compile Include="MySQL\MySQLEmployeePositionXRiskDAO.cs" />
+    <Compile Include="MySQL\MySQLEmployeePYTransportDataDAO.cs" />
+    <Compile Include="MySQL\MySQLEmployeePYTransportTypeDAO.cs" />
+    <Compile Include="MySQL\MySQLEmployeeTypeVisibilityDAO.cs" />
+    <Compile Include="MySQL\MySQLEmployeeXMedicalCheckDisabilityDAO.cs" />
+    <Compile Include="MySQL\MySQLEmployeeXRiskDAO.cs" />
+    <Compile Include="MySQL\MySQLEmployeeXVaccineDAO.cs" />
+    <Compile Include="MySQL\MySQLLogAdditionalInfoDAO.cs" />
+    <Compile Include="MySQL\MySQLLogTmpAdditionalInfoDAO.cs" />
+    <Compile Include="MySQL\MySQLMachineDAO.cs" />
+    <Compile Include="MySQL\MySQLMealTypeAdditionalDataDAO.cs" />
+    <Compile Include="MySQL\MySQLMedicalCheckDisabilityDAO.cs" />
+    <Compile Include="MySQL\MySQLMedicalCheckPointDAO.cs" />
+    <Compile Include="MySQL\MySQLMedicalCheckVisitDtlDAO.cs" />
+    <Compile Include="MySQL\MySQLMedicalCheckVisitDtlHistDAO.cs" />
+    <Compile Include="MySQL\MySQLMedicalCheckVisitHdrDAO.cs" />
+    <Compile Include="MySQL\MySQLMedicalCheckVisitHdrHistDAO.cs" />
+    <Compile Include="MySQL\MySQLOnlineMealsUsedDailyDAO.cs" />
+    <Compile Include="MySQL\MySQLPassesAdditionalInfoDAO.cs" />
+    <Compile Include="MySQL\MySQLRiskDAO.cs" />
+    <Compile Include="MySQL\MySQLSyncAnnualLeaveRecalcFlagDAO.cs" />
+    <Compile Include="MySQL\MySQLSyncAnnualLeaveRecalcHistDAO.cs" />
+    <Compile Include="MySQL\MySQLSyncCostCenterHistDAO.cs" />
+    <Compile Include="MySQL\MySQLEmployeeAsco4DAO.cs" />
+    <Compile Include="MySQL\MySQLEmployeeAsco4HistDAO.cs" />
+    <Compile Include="MySQL\MySQLEmployeeAsco4MetadataDAO.cs" />
+    <Compile Include="MySQL\MySQLEmployeeCounterTypeDAO.cs" />
+    <Compile Include="MySQL\MySQLEmployeeCounterValueDAO.cs" />
+    <Compile Include="MySQL\MySQLEmployeeCounterValueHistDAO.cs" />
+    <Compile Include="MySQL\MySQLEmployeeHistDAO.cs" />
+    <Compile Include="MySQL\MySQLEmployeeLoanDAO.cs" />
+    <Compile Include="MySQL\MySQLEmployeePYDataAnaliticalDAO.cs" />
+    <Compile Include="MySQL\MySQLEmployeePYDataBufferDAO.cs" />
+    <Compile Include="MySQL\MySQLEmployeePYDataSumDAO.cs" />
+    <Compile Include="MySQL\MySQLEmployeeResponsibilityDAO.cs" />
+    <Compile Include="MySQL\MySQLEmployeeTypeDAO.cs" />
+    <Compile Include="MySQL\MySQLEmployeeVacEvidDAO.cs" />
+    <Compile Include="MySQL\MySQLFilterDAO.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MySQL\MySQLHolidaysExtendedDAO.cs" />
+    <Compile Include="MySQL\MySQLIOPairProcessedDAO.cs" />
+    <Compile Include="MySQL\MySQLIOPairsProcessedHistDAO.cs" />
+    <Compile Include="MySQL\MySQLLockDAO.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MySQL\MySQLMapDAO.cs" />
+    <Compile Include="MySQL\MySQLMapsObjectDAO.cs" />
+    <Compile Include="MySQL\MySQLMealsEmployeeScheduleDAO.cs" />
+    <Compile Include="MySQL\MySQLMealsTypeScheduleDAO.cs" />
+    <Compile Include="MySQL\MySQLMealsWorkingUnitScheduleDAO.cs" />
+    <Compile Include="MySQL\MySQLOnlineMealsIntervalsDAO.cs" />
+    <Compile Include="MySQL\MySQLOnlineMealsPointsDAO.cs" />
+    <Compile Include="MySQL\MySQLOnlineMealsRestaurantDAO.cs" />
+    <Compile Include="MySQL\MySQLOnlineMealsTypesDAO.cs" />
+    <Compile Include="MySQL\MySQLOnlineMealsUsedDAO.cs" />
+    <Compile Include="MySQL\MySQLOnlineMealsUsedHistDAO.cs" />
+    <Compile Include="MySQL\MySQLOrganizationalUnitDAO.cs" />
+    <Compile Include="MySQL\MySQLPassTypeLimitDAO.cs" />
+    <Compile Include="MySQL\MySQLPassTypesConfirmationDAO.cs" />
+    <Compile Include="MySQL\MySQLResultDAO..cs" />
+    <Compile Include="MySQL\MySQLRuleDAO.cs" />
+    <Compile Include="MySQL\MySQLSecurityRouteScheduleDAO.cs" />
+    <Compile Include="MySQL\MySQLEmployeeXMealTypeEmplDAO.cs" />
+    <Compile Include="MySQL\MySQLGateSyncDAO.cs" />
+    <Compile Include="MySQL\MySQLAccessControlFileDAO.cs" />
+    <Compile Include="MySQL\MySQLAccessGroupXGateDAO.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MySQL\MySQLAddressDAO.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MySQL\MySQLApplMenuItemDAO.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MySQL\MySQLApplRoleDAO.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MySQL\MySQLApplUserDAO.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MySQL\MySQLApplUsersLogDAO.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MySQL\MySQLApplXRoleDAO.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MySQL\MySQLApplXWUDAO.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MySQL\MySQLCameraDAO.cs" />
+    <Compile Include="MySQL\MySQLCameraSnapshotFileDAO.cs" />
+    <Compile Include="MySQL\MySQLCamerasXReadersDAO.cs" />
+    <Compile Include="MySQL\MySQLCitizenDAO.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MySQL\MySQLDAOFactory.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MySQL\MySQLEmployeDAO.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MySQL\MySQLEmployeeAbsenceDAO.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MySQL\MySQLEmployeeGroupAccessControlDAO.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MySQL\MySQLEmployeeGroupsTimeScheduleDAO.cs" />
+    <Compile Include="MySQL\MySQLEmployeeImageFileDAO.cs" />
+    <Compile Include="MySQL\MySQLEmployeeLocationDAO.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MySQL\MySQLEmployeeTimeSheduleDAO.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MySQL\MySQLExitPermissionDAO.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MySQL\MySQLExtraHourDAO.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MySQL\MySQLExtraHourUsedDAO.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MySQL\MySQLGateDAO.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MySQL\MySQLGateTimeAccessProfileDAO.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MySQL\MySQLHolidayDAO.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MySQL\MySQLIOPairDAO.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MySQL\MySQLLicenceDAO.cs" />
+    <Compile Include="MySQL\MySQLLocationDAO.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MySQL\MySQLLogDAO.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MySQL\MySQLMealAssignedDAO.cs" />
+    <Compile Include="MySQL\MySQLMealsPointDAO.cs" />
+    <Compile Include="MySQL\MySQLMealTypeDAO.cs" />
+    <Compile Include="MySQL\MySQLMealTypeEmplDAO.cs" />
+    <Compile Include="MySQL\MySQLMealUsedDAO.cs" />
+    <Compile Include="MySQL\MySQLPassDAO.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MySQL\MySQLPassHistDAO.cs" />
+    <Compile Include="MySQL\MySQLPassTypeDAO.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MySQL\MySQLReaderDAO.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MySQL\MySQLSecurityRouteDAO.cs" />
+    <Compile Include="MySQL\MySQLSecurityRoutesEmployeeDAO.cs" />
+    <Compile Include="MySQL\MySQLSecurityRoutesLogDAO.cs" />
+    <Compile Include="MySQL\MySQLSecurityRoutesPointDAO.cs" />
+    <Compile Include="MySQL\MySQLSecurityRoutesReaderDAO.cs" />
+    <Compile Include="MySQL\MySQLSyncBufferDataHistDAO.cs" />
+    <Compile Include="MySQL\MySQLSyncEmployeePositionHistDAO.cs" />
+    <Compile Include="MySQL\MySQLSyncEmployeesHistDAO.cs" />
+    <Compile Include="MySQL\MySQLSyncFinancialStrictureHistDAO.cs" />
+    <Compile Include="MySQL\MySQLSyncOrganizationalStructureHistDAO.cs" />
+    <Compile Include="MySQL\MySQLSyncResponsibilityHistDAO.cs" />
+    <Compile Include="MySQL\MySQLSyncWithNavDAO.cs" />
+    <Compile Include="MySQL\MySQLSystemClosingEventDAO.cs" />
+    <Compile Include="MySQL\MySQLSystemMessageDAO.cs" />
+    <Compile Include="MySQL\MySQLTagDAO.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MySQL\MySQLTimeAccessProfileDAO.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MySQL\MySQLTimeAccessProfileDtlDAO.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MySQL\MySQLTimeSchemaIntervalLibraryDAO.cs" />
+    <Compile Include="MySQL\MySQLTimeSchemaIntervalLibraryDtlDAO.cs" />
+    <Compile Include="MySQL\MySQLTimeSchemaPauseDAO.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MySQL\MySQLUnipromButtonDAO.cs" />
+    <Compile Include="MySQL\MySQLUnipromButtonLogDAO.cs" />
+    <Compile Include="MySQL\MySQLVaccineDAO.cs" />
+    <Compile Include="MySQL\MySQLVisitAsco4DAO.cs" />
+    <Compile Include="MySQL\MySQLVisitDAO.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MySQL\MySQLVisitorDocFileDAO.cs" />
+    <Compile Include="MySQL\MySQLWorkingGroupDAO.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MySQL\MySQLWorkingUnitsDAO.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MySQL\MySQLWorkingUnitXOrganizationalUnitDAO.cs" />
+    <Compile Include="MySQL\MySQLWorkTimeShemaDAO.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MySQL\MySQLZINApbDAO.cs" />
+    <Compile Include="OnlineMealsIntervalsDAO.cs" />
+    <Compile Include="OnlineMealsPointsDAO.cs" />
+    <Compile Include="OnlineMealsRestaurantDAO.cs" />
+    <Compile Include="OnlineMealsTypesDAO.cs" />
+    <Compile Include="OnlineMealsUsedDailyDAO.cs" />
+    <Compile Include="OnlineMealsUsedDAO.cs" />
+    <Compile Include="OnlineMealsUsedHistDAO.cs" />
+    <Compile Include="OrganizationalUnitDAO.cs" />
+    <Compile Include="PassDAO.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="PassesAdditionalInfoDAO.cs" />
+    <Compile Include="PassHistDAO.cs" />
+    <Compile Include="PassTypeLimitDAO.cs" />
+    <Compile Include="PassTypesConfirmationDAO.cs" />
+    <Compile Include="PassTypesDAO.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ReaderDAO.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ResultDAO.cs" />
+    <Compile Include="RiskDAO.cs" />
+    <Compile Include="RptDataSet.cs">
+      <DependentUpon>RptDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="RptDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RptDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="RuleDAO.cs" />
+    <Compile Include="SecurityRouteDAO.cs" />
+    <Compile Include="SecurityRouteScheduleDAO.cs" />
+    <Compile Include="SecurityRoutesEmployeeDAO.cs" />
+    <Compile Include="SecurityRoutesLogDAO.cs" />
+    <Compile Include="SecurityRoutesPointDAO.cs" />
+    <Compile Include="SecurityRoutesReaderDAO.cs" />
+    <Compile Include="SyncAnnualLeaveRecalcFlagDAO.cs" />
+    <Compile Include="SyncAnnualLeaveRecalcHistDAO.cs" />
+    <Compile Include="SyncBufferDataHistDAO.cs" />
+    <Compile Include="SyncCostCenterHistDAO.cs" />
+    <Compile Include="SyncEmployeePositionHistDAO.cs" />
+    <Compile Include="SyncEmployeesHistDAO.cs" />
+    <Compile Include="SyncFinancialStructureHistDAO.cs" />
+    <Compile Include="SyncOrganizationalStructureHistDAO.cs" />
+    <Compile Include="SyncResponsibilityHistDAO.cs" />
+    <Compile Include="SyncWithNavDAO.cs" />
+    <Compile Include="SystemClosingEventDAO.cs" />
+    <Compile Include="SystemMessageDAO.cs" />
+    <Compile Include="TagDAO.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="TimeAccessProfileDAO.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="TimeAccessProfileDtlDAO.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="TimeSchemaIntervalLibraryDAO.cs" />
+    <Compile Include="TimeSchemaIntervalLibraryDtlDAO.cs" />
+    <Compile Include="TimeSchemaPauseDAO.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="UnipromButtonDAO.cs" />
+    <Compile Include="UnipromButtonLogDAO.cs" />
+    <Compile Include="VaccineDAO.cs" />
+    <Compile Include="VisitAsco4DAO.cs" />
+    <Compile Include="VisitDAO.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="VisitorDocFileDAO.cs" />
+    <Compile Include="WorkingGroupDAO.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="WorkingUnitsDAO.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="WorkingUnitXOrganizationalUnitDAO.cs" />
+    <Compile Include="WorkTimeSchemaDAO.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="XML\XMLCitizenDAO.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="XML\XMLDAOFactory.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="XML\XMLEmployeeDAO.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="XML\XMLEmployeeLocationDAO.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="XML\XMLLocationDAO.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="XML\XMLLogDAO.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="XML\XMLPassDAO.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="XML\XMLPassTypeDAO.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="XML\XMLReaderDAO.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="XML\XMLSyncWithNavDAO.cs" />
+    <Compile Include="XML\XMLTagDAO.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="XML\XMLVisitDAO.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="XML\XMLWorkingUnitsDAO.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ZINApbDAO.cs" />
+    <Content Include="RptDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>RptDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </Content>
+    <None Include="app.config" />
+    <None Include="RptDataSet.xsc">
+      <DependentUpon>RptDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="RptDataSet.xss">
+      <DependentUpon>RptDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="RptDataSet.xsx">
+      <DependentUpon>RptDataSet.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{967B4E0D-AD0C-4609-AB67-0FA40C0206D8}" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\TransferObjects\TransferObjects.csproj">
+      <Project>{5C8540C2-8781-4EAE-BA2E-1A303779CCE3}</Project>
+      <Name>TransferObjects</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Util\Util.csproj">
+      <Project>{B9716E70-6794-4C27-ABF1-35D52CE595A6}</Project>
+      <Name>Util</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0 %28x86%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PreBuildEvent>
+    </PreBuildEvent>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+</Project>

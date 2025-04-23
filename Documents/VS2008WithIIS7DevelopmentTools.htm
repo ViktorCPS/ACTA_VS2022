@@ -1,0 +1,753 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+
+
+<title>
+	Using Visual Studio 2008 with IIS 7 : Development Tools : Developing on IIS 7 : The Official Microsoft IIS Site
+</title><meta name="keywords" content="IIS,Internet Information Services,IIS7"><meta name="author" content="Microsoft IIS.NET Team"><meta http-equiv="X-UA-Compatible" content="IE=8"><meta content="text/html; charset=UTF-8" http-equiv="content-Type"><link href="http://learn.iis.net/favicon.ico" rel="shortcut icon">
+	<link href="VS2008WithIIS7DevelopmentTools_files/screen.css" rel="stylesheet" type="text/css" media="all">
+	<!--[if IE 6]>
+		<link href='http://i2.iis.net/resources/style/screen.ie6.css?cdn_id=52867178000v1' rel="stylesheet" type="text/css" media="all" />
+	<![endif]-->
+	<link href="VS2008WithIIS7DevelopmentTools_files/print.css" rel="stylesheet" type="text/css" media="print">
+
+
+<script type="text/javascript" src="VS2008WithIIS7DevelopmentTools_files/jquery-1.js"></script>
+	
+<script language="javascript">function noErrorMessages () { return true; } window.onerror = noErrorMessages;</script>
+	
+
+	<script type="text/javascript">
+
+		$.fn.serializeNoViewState = function() {
+			return this.find("input,textarea,select,hidden")
+               .not("[type=hidden][name^=__]")
+               .serialize();
+		}
+
+		$(document).ready(function() {
+		
+			$("#article-link-print").click(function() {
+
+				$.post('/js/HelpfulHandler.ashx?command=print', $().serializeNoViewState());
+
+				window.print();
+			});
+			
+			$("#article-link-email").click(function() {
+
+				$.post('/js/HelpfulHandler.ashx?command=emailed', $().serializeNoViewState());
+
+			});
+			
+			$("#comment-button").click(function() {
+
+				$.post('/js/HelpfulHandler.ashx?command=feedback&commentStatus=true', $().serializeNoViewState());
+
+				$("#article-comments-form").hide();
+				$("#article-comments-thanks").show();
+
+			});
+		});
+
+</script>
+
+
+<meta name="description" content="Introduction - Visual Studio ® provides several options for working with IIS when developing Web sites and applications. These include the Web application and Web site projects..."></head><body>
+    <form name="aspnetForm" method="post" action="/page.aspx/387/using-visual-studio-2008-with-iis-7/" id="aspnetForm">
+<div>
+<input name="__EVENTTARGET" id="__EVENTTARGET" value="" type="hidden">
+<input name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="" type="hidden">
+<input name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUJNjM3MjIyMTE3ZBgEBR5fX0NvbnRyb2xzUmVxdWlyZVBvc3RCYWNrS2V5X18WAgUnY3RsMDAkY3RsMDAkQ29udGVudCRCb2R5JGxzdExvZ2luJGN0bDAxBSdjdGwwMCRjdGwwMCRDb250ZW50JEJvZHkkbHN0TG9naW4kY3RsMDMFGGN0bDAwJGN0bDAwJGhlYWRlciRjdGwwMg8PZAIBZAUmY3RsMDAkY3RsMDAkQ29udGVudCRCb2R5JG12Q29udGVudFR5cGUPD2QCAWQFI2N0bDAwJGN0bDAwJENvbnRlbnQkQm9keSRtdkNvbW1lbnRzDw9kAgFkmYomtL/dgxUDEt8hKfFk6+26kRo=" type="hidden">
+</div>
+
+<script type="text/javascript">
+//<![CDATA[
+var theForm = document.forms['aspnetForm'];
+if (!theForm) {
+    theForm = document.aspnetForm;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+//]]>
+</script>
+
+
+		<div id="container">
+			
+	
+
+			
+<div id="head" class="full-center">	
+	
+	<div id="search">
+		<script type="text/javascript">$(document).ready(function() { $("input#SearchBox").focus(function() { $("input#SearchBox").val(""); $("input#SearchBox").bind("keypress", function(e) { if (e.which && e.which == 13) { ExecuteSearch(); return false } }); $("#bgContainer").addClass("clearbg") }); $("input#SearchBox").blur(function() { if ($("input#SearchBox").val() == "") { $("input#SearchBox").val("Search IIS.NET") } $("input#SearchBox").unbind("keypress"); $("#bgContainer").removeClass("clearbg") }); $("input#SearchButton").click(function() { if ($("input#SearchBox").val() != "Search IIS.NET") { ExecuteSearch(); return false; } else { alert("Please enter a search term") } }) }); function ExecuteSearch() { window.location = "http://www.iis.net/search.aspx?q=" + URLEncode($("input#SearchBox").val()) }; function URLEncode(f) { var h = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz-_.!~*'()"; var b = "0123456789ABCDEF"; var e = f; var g = ""; for (var c = 0; c < e.length; c++) { var d = e.charAt(c); if (d == " ") { g += "+" } else { if (h.indexOf(d) != -1) { g += d } else { var a = d.charCodeAt(0); if (a > 255) { alert("Unicode Character '" + d + "' cannot be encoded using standard URL encoding.\n(URL encoding only supports 8-bit characters.)\nA space (+) will be substituted."); g += "+" } else { g += "%"; g += b.charAt((a >> 4) & 15); g += b.charAt(a & 15) } } } } return g }</script>
+		<div class="frm_bing_search">
+			 <p id="bgContainer"><input class="search_input" value="Search IIS.NET" id="SearchBox" type="text"> 
+			<input class="search_button" id="SearchButton" type="button"></p>
+		</div>
+		
+				<ul id="nav-buttons">
+					<li><a href="http://login.iis.net/login/signin.aspx?ReturnUrl=http%3a%2f%2flearn.iis.net%2fthemes%2fiis%2fresources%2fpages%2fpage.aspx%2f387%2fusing-visual-studio-2008-with-iis-7%2f">Sign In</a></li>
+					<li><a href="http://forums.iis.net/user/createuser.aspx?ReturnUrl=http%3a%2f%2flearn.iis.net%2fthemes%2fiis%2fresources%2fpages%2fpage.aspx%2f387%2fusing-visual-studio-2008-with-iis-7%2f">Join</a></li>
+				</ul>
+						
+	</div>
+	<div class="clearfix"></div>	
+	<div id="nav-section">
+		<ul id="main-nav">
+			<li><a id="home-link" class="nav-link" href="http://www.iis.net/"></a></li>
+			<li><a id="overview-link" class="nav-link" href="http://www.iis.net/overview"></a></li>
+			<li><a id="expand-link" class="nav-link" href="http://www.iis.net/download"></a></li>
+			<li><a id="learn-link-selected" class="nav-link" href="http://learn.iis.net/"></a></li>
+			<li><a id="downloads-link" class="nav-link" href="http://www.iis.net/community"></a></li>
+			<li><a id="forums-link" class="nav-link" href="http://forums.iis.net/"></a></li>
+			<li><a id="blogs-link" class="nav-link" href="http://blogs.iis.net/"></a></li>
+		</ul>
+	</div>	
+	<div class="head-add-space advertise-leaderboard clearfix"><div class="advertise-link"><a href="http://www.neudesicmediagroup.com/Advertising.aspx?site=IIS"></a></div><div class="iframe-container"><iframe hspace="0" vspace="0" marginwidth="0" marginheight="0" allowtransparency="true" src="VS2008WithIIS7DevelopmentTools_files/a.htm" frameborder="0" height="90px" width="728px" scrolling="no"></iframe></div></div>
+</div>
+			<div id="content" class="full-center">
+				
+	
+	<div id="breadcrumbs"><a href="http://www.iis.net/">Home</a> &gt; <a href="http://learn.iis.net/">Learn</a> &gt; <a href="http://learn.iis.net/page.aspx/347/developing-on-iis-7/">Developing on IIS 7</a> &gt; <a href="http://learn.iis.net/page.aspx/443/development-tools/">Development Tools</a> &gt; Using Visual Studio 2008 with IIS 7</div>
+	
+	<div id="main-content" class="two-col-layout">
+		
+		
+	
+	
+			<div class="reference">
+				<div id="main-col-1">					
+					<h1 class="learn-header margin-left"><span class="">Using Visual Studio 2008 with IIS 7</span> </h1>						
+						
+					<div id="admin-links" style="margin-left: 30px;"></div>
+					<ul id="video-about-list" class="left">
+						
+						
+							<li id="learn-author-print">Author: Mike Volodarsky</li>
+						
+						<li class="gray">Published on March 12, 2008 by <a href="http://forums.iis.net/members/mvolo.aspx">mvolo</a></li>
+						<li class="gray">Updated on April 24, 2010 by <a href="http://forums.iis.net/members/mvolo.aspx">mvolo</a></li>
+						<li class="tags">Tags: <a href="http://learn.iis.net/tags/create+new/default.aspx">create new</a>&nbsp;<a href="http://learn.iis.net/tags/debugging/default.aspx">debugging</a>&nbsp;<a href="http://learn.iis.net/tags/FPSE/default.aspx">FPSE</a>&nbsp;<a href="http://learn.iis.net/tags/new+Web+Site/default.aspx">new Web Site</a>&nbsp;<a href="http://learn.iis.net/tags/publishing/default.aspx">publishing</a>&nbsp;<a href="http://learn.iis.net/tags/Visual+Studio+2008/default.aspx">Visual Studio 2008</a>&nbsp;<a href="http://learn.iis.net/tags/Web+application/default.aspx">Web application</a>&nbsp;<a href="http://learn.iis.net/tags/Web+site/default.aspx">Web site</a></li>
+						
+					</ul>
+					<ul id="video-print-list" class="right">
+						<li class="print"><a id="article-link-print" href="javascript:;">Print</a></li>
+						<li class="email"><a id="article-link-email" href="mailto:?subject=Using%20Visual%20Studio%202008%20with%20IIS%207%20on%20learn.iis.net&amp;body=http://learn.iis.net/page.aspx/387/using-visual-studio-2008-with-iis-7/">Email</a></li>
+						<li class="favorites"><a href="javascript:window.external.AddFavorite(window.location,%20document.title);">Save to Favorites</a></li>
+					</ul>
+					
+						<div id="about-author" class="learn-sub-content clear">
+							<div class="sub-content-head">
+								<div>
+									<h5 class="icn-man">
+										About the Author
+									</h5>
+								</div>
+							</div>
+							<div>
+								<div id="author-image" class="left">
+									<a href="http://forums.iis.net/members/mvolo.aspx" title="mvolo"><img src="VS2008WithIIS7DevelopmentTools_files/mvolo.jpg" alt="mvolo" style="height: 59px;" height="59"></a>
+								</div>
+								<div id="author-info" class="left">
+									<span class="author-username">Mike Volodarsky</span>
+									<ul>
+										<li><a href="http://forums.iis.net/members/mvolo.aspx" title="mvolo">View Profile</a></li>
+										
+											<li><a href="http://www.mvolo.com/">View Blog</a></li>
+										
+									</ul>
+									
+										<p>
+											Forum Posts: <a href="http://forums.iis.net/search/SearchResults.aspx?u=303543&amp;o=DateDescending">586</a>
+										</p>
+									
+									
+								</div>
+								<div class="clear"></div>
+							</div>
+						</div>						
+					
+					
+				</div>
+				<div id="main-col-2">
+					<div class="right-add-space advertise-square clearfix"><div class="iframe-container"><iframe hspace="0" vspace="0" marginwidth="0" marginheight="0" allowtransparency="true" src="VS2008WithIIS7DevelopmentTools_files/a_002.htm" frameborder="0" height="250px" width="300px" scrolling="no"></iframe></div><div class="advertise-link"><a href="http://www.neudesicmediagroup.com/Advertising.aspx?site=IIS"></a></div></div>
+				</div>
+				<div class="clear"></div>
+				
+				<div id="article-description">				
+					<h2>Introduction</h2>
+<p>Visual Studio<span style="line-height: 115%; font-family: 'Arial','sans-serif'; font-size: 10pt;">®</span>
+ provides several options for working with IIS when developing Web sites
+ and applications. These include the Web application and Web site 
+projects.&nbsp; In Visual Studio 2008, these features receive a much 
+awaited upgrade to properly support IIS 7 in Windows Vista<span style="line-height: 115%; font-family: 'Arial','sans-serif'; font-size: 10pt;">®</span> and Windows Server<span style="line-height: 115%; font-family: 'Arial','sans-serif'; font-size: 10pt;">®</span> 2008. In addition, the recently released Web Deployment Project 2008 also provides support for IIS 7.</p>
+<p>This article provides an overview of using Visual Studio 2008 Web 
+development features with IIS 7, including information on the steps 
+necessary to enable these features to work correctly.</p>
+<h3>Prerequisites</h3>
+<p>To use Visual Studio 2008 to work with Web sites and applications on your local machine, do the following:</p>
+<p>1. Install IIS 7.<br><br>2. Install ASP.NET.<br><br>3. Install IIS 6.0 Metabase Compatibility.<br><br>On
+ Windows Vista, open the Control Panel, click Programs and Features, 
+click the Turn Windows features on and off link, check the <strong>Internet Information Services</strong> check box, as well as the <strong>Web Management Tools</strong> \ <strong>IIS 6 Management Compatibility</strong> \ <strong>IIS Metabase</strong> and <strong>IIS 6 configuration compatibility</strong> and the <strong>World Wide Web Services </strong>\ <strong>Application Development Features </strong>\ <strong>ASP.NET</strong> check boxes under it.&nbsp;&nbsp;&nbsp;<br><br><a href="http://learn.iis.net/file.axd?i=812" mce_href="/file.axd?i=812"><img alt="" src="VS2008WithIIS7DevelopmentTools_files/file_006.png" mce_src="/file.axd?i=812" border="0"></a><br><br>On Windows Server 2008, use <strong>Server Manager</strong> to install the Web Server (IIS) role, and add the <strong>Management Tools </strong>\<strong> IIS 6 Management Compatibility </strong>\<strong> IIS 6 Metabase Compatibility</strong> and “<strong>Application Development </strong>\ <strong>ASP.NET</strong> role services. For more information, see <a href="http://learn.iis.net/page.aspx/29/installing-iis7-on-windows-server-2008/" mce_href="/page.aspx/29/installing-iis7-on-windows-server-2008/">Installing IIS 7 on Windows Server 2008.<br></a><br>To
+ use Visual Studio 2008 to work with Web sites and applications on a 
+remote machine, see the section "Using Visual Studio 2008 with a Remote 
+IIS 7 Server" later in this article.</p>
+<h3>Starting Visual Studio 2008 as Administrator</h3>
+<p>Certain tasks, including debugging and creating local IIS 
+applications, require that you start Visual Studio as a user with 
+Administrative privileges. On Windows Vista, and Windows Server 2008 
+when not running as the built-in Administrator account, this requires 
+right-clicking the Visual Studio 2008 icon in the Start Menu and 
+choosing <strong>Run as administrator</strong>.</p>
+<p>To make this process easier, you can create a shortcut and check the <strong>Run this program as an administrator</strong> check box on the <strong>Compatibility</strong> tab of the shortcut properties.</p>
+<h2>Create a New IIS 7 Web Site or Application Project</h2>
+<p>Visual Studio provides two conceptual models for working with Web applications: the Web <em>site</em> project model, and the Web <em>application</em> project model.</p>
+<p>While both options allow you to create Web applications and publish 
+them to an IIS 7 server, they do have significant differences in how the
+ corresponding ASP.NET application is built and deployed. Some of the 
+differences between the two models are:</p>
+<ul>
+<li>The Web application project option requires the source application 
+files to be located on the local file system, or, on a network share. 
+However, you can subsequently publish the Web application to a remote 
+IIS 7 Web site by using a network share, FTP, or Front Page Server 
+Extensions.</li>
+<li>The Web site project option allows you to connect directly to a 
+local IIS 7 Web site, or to a remote IIS 7 Web site by using a network 
+share, FTP, or Front Page Server Extensions. With the Web site project, 
+you work directly with the content of your IIS 7 Web site and there is 
+no project file.</li></ul>
+<p>You can find the detailed explanation of the two models and their differences in <a href="http://msdn2.microsoft.com/en-us/library/aa730880%28VS.80%29.aspx">http://msdn2.microsoft.com/en-us/library/aa730880(VS.80).aspx</a>.</p>
+<p><strong>Note</strong>: Visual Studio 2008 provides the options to 
+create a New project and Open an existing project.&nbsp; This does not 
+necessarily mean that you must create a new IIS Web application project 
+or open an existing application project – you can use either of the 
+options with an existing IIS Web application.</p>
+<p><strong>To create a new project using the Web application project option:</strong></p>
+<p>1. &nbsp;In Visual Studio, on the <strong>File</strong> menu,&nbsp;select&nbsp;<strong>New&nbsp;Project</strong>,&nbsp;and then select the <strong>ASP.NET Web Application</strong> template.&nbsp;</p>
+<p>2. Click <strong>OK</strong>. Visual Studio opens to the <strong>Source</strong>&nbsp;view of the Default.aspx page so that you can edit it.&nbsp; </p>
+<p><strong>Note</strong>: Unlike the Web site project option, you must 
+place the application files on the local file system or a network share,
+ and later use the <strong>Publish</strong> option to publish the contents of your application to an IIS 7 Web site.</p>
+<p><strong>To publish the project to an IIS 7 Web site:</strong></p>
+<p>1. Create the IIS 7 Web site using IIS Manager, AppCmd, or another configuration tool. </p>
+<p>For more information, see <a href="http://technet2.microsoft.com/windowsserver2008/en/library/f6c26eb7-ad7e-4fe2-9239-9f5aa4ff44ce1033.mspx?mfr=true">http://technet2.microsoft.com/windowsserver2008/en/library/f6c26eb7-ad7e-4fe2-9239-9f5aa4ff44ce1033.mspx?mfr=true</a>. Alternatively, use an existing IIS 7 Web site.</p>
+<p>2. In Visual Studio, use the <strong>Build</strong> \ <strong>Publish</strong> option to publish the contents of your Web application to an IIS 7 Web site. </p>
+<p><a href="http://learn.iis.net/file.axd?i=814"><img alt="" src="VS2008WithIIS7DevelopmentTools_files/file_007.png" border="0"></a> </p>
+<p><strong>Note</strong>: The <strong>Publish Web</strong> dialog by 
+default publishes only the parts of your project that comprise your Web 
+application - it does not publish the project file, obj directory, and 
+other files. This is important because exposing these components to your
+ Web users may be a security risk.</p>
+<p>By clicking the "…" button, you can chose one of the&nbsp;four options for publishing your Web site:</p>
+<ul>
+<li><strong>File System</strong>. When using this option, Visual Studio 
+opens / creates the Web application as a folder, and uses the built-in 
+ASP.NET Development Server to host the Web site. This option may be 
+sufficient for basic testing of ASP.NET applications – however, this 
+mode does not support running ASP.NET applications in Integrated mode, 
+and it does not support application technologies other than ASP.NET 
+(such as PHP, ASP, CGI, etc). </li>
+<li><strong>Local IIS</strong>. When using this option, Visual Studio 
+allows you to publish your application files to a local IIS 7 Web site 
+or application. You can also use the dialog to create new IIS 7 
+applications or virtual directories to publish your files to.</li>
+<li><strong>FTP Site</strong>. When using this option, Visual Studio 
+supports editing your application files if they are shared through 
+FTP.&nbsp; You can still use Visual Studio to debug your applications by
+ configuring the URL of your application in project start settings. For 
+more information, see the section "Using Visual Studio 2008 with a 
+Remote IIS 7 Server" later in this article.</li>
+<li><strong>Remote Site</strong>. Using this option, Visual Studio can 
+connect to a remote IIS server. To use this option, you need to have 
+Front Page Server Extensions installed on the remote server and 
+configure your Web site to use FPSE.&nbsp; For more information on this,
+ see the&nbsp;"Using Visual Studio 2008 with a Remote IIS 7 Server" 
+section later in this article.</li></ul>
+<p>3. Select <strong>Local IIS</strong>.&nbsp;</p>
+<p>You can also map the Web application project directory as a virtual 
+directory on the local IIS 7 installation by opening the project <strong>Properties</strong>, clicking the <strong>Web</strong> tab, and clicking the <strong>Create Virtual Directory</strong> button.&nbsp; You can use the <strong>Create Virtual Directory</strong> option as a quick way to host your Web application locally on IIS without going through the <strong>Publish Web</strong>
+ option. However, this option is not generally recommended because it 
+places all of the project files, source files, object files, and other 
+temporary files in the servable namespace of the IIS 7 virtual 
+directory, which may result in a security risk.&nbsp;&nbsp;A better 
+practice is to use the <strong>Publish</strong> options, which by default publish only the Web servable portions of the project. </p>
+<p>4. Configure debugging.</p>
+<p>By default, projects created using the Web application project model 
+use the built-in ASP.NET Development Server ("Cassini") when testing or 
+debugging your project. </p>
+<p>This provides a convenient way to test your ASP.NET application 
+without IIS 7 – however, we recommend that you configure Visual Studio 
+to test your application by using the IIS 7 environment.&nbsp; The 
+reasons for this are:</p>
+<ul>
+<li>The ASP.NET Development Server does not support hosting ASP.NET 
+applications in Integrated mode, which is the default mode of operation 
+used by IIS 7. This may introduce differences in application 
+behavior.&nbsp;</li>
+<li>The ASP.NET Development Server does not support many of the IIS 
+configuration features, so if your application relies on or uses them, 
+its behavior may be different or incorrect when hosted under the ASP.NET
+ Development Server.</li>
+<li>The ASP.NET Development Server does not support hosting portions of 
+your application that utilize application technologies other than 
+ASP.NET, such as PHP, CGI, and other third party frameworks.</li></ul>
+<p>If you are developing on Windows Vista, you can easily take advantage
+ of IIS 7 to test your application locally by using the same environment
+ it will be on when it is deployed - use the <strong>Create Virtual Directory</strong> option or the <strong>Publish Web</strong> dialog as discussed earlier in this article.&nbsp; </p>
+<p>Alternatively, you can configure Visual Studio to connect to the a remote IIS 7 server to which you publish your application.</p>
+<p>In those cases, you can configure Visual Studio to debug your 
+application in the IIS 7 environment. To do this, right-click the 
+project node, chose <strong>Properties</strong>, and click the <strong>Web</strong> tab.&nbsp; In the <strong>Web</strong> tab, select the <strong>Use Local IIS Web server</strong> option. The base URL of your Web application should populate automatically.</p>
+<p><a href="http://learn.iis.net/file.axd?i=815"><img alt="" src="VS2008WithIIS7DevelopmentTools_files/file_004.png" border="0"></a></p>
+<p>For more information on configuring remote debugging, see "Debugging IIS 7 Web Applications" later in this article.</p>
+<p><strong>To create a new project using the Web site project option:</strong></p>
+<p>1. Create the IIS 7 Web site using IIS Manager, AppCmd, or another configuration tool. For more information, see <a href="http://technet2.microsoft.com/windowsserver2008/en/library/f6c26eb7-ad7e-4fe2-9239-9f5aa4ff44ce1033.mspx?mfr=true">http://technet2.microsoft.com/windowsserver2008/en/library/f6c26eb7-ad7e-4fe2-9239-9f5aa4ff44ce1033.mspx?mfr=true</a>. Alternatively, use an existing IIS 7 Web site.</p>
+<p>2. In Visual Studio, on the <strong>File</strong> menu,&nbsp;select&nbsp;<strong>New&nbsp;Web Site</strong> to create a new Web site project using the IIS 7 Web site you created. </p>
+<p>3. In the <strong>New Web Site</strong> dialog, select one of the Visual Studio Web site templates, such as <strong>ASP.NET Web Site</strong>.</p>
+<p>4. Next, indicate where this Web site should be located. To do this, click the <strong>Browse</strong> button, which displays a <strong>Choose Location</strong> dialog similar to what you get when you publish a Web application project.&nbsp; Here, click the <strong>Local IIS</strong>
+ button again to select an existing Web site or application on the local
+ machine, or create a new Web application or virtual directory to host 
+your project files.</p>
+<p>5. Click <strong>OK</strong>. Visual Studio opens to the <strong>Source</strong>&nbsp;view of the Default.aspx page so that you can edit it.&nbsp; </p>
+<p>Alternatively, you will have the option to place your new Web site 
+project on the local File System for use with the ASP.NET Development 
+Server, upload it to a remote server using FTP, or upload it to a remote
+ IIS server using Front Page Extensions.&nbsp; For more information on 
+connecting to a remote server, see the "Using Visual Studio 2008 with a 
+Remote IIS 7.0 Server" section later in this article.</p>
+<h2>To Open an Existing IIS 7 Web Site or Application</h2>
+<p><strong>To create a project based on an existing IIS 7 Web site</strong>:</p>
+<p>1. To open an existing IIS 7 Web site,&nbsp;&nbsp;on the Visual Studio <strong>File</strong> menu, select&nbsp;<strong>Open Web Site</strong>.&nbsp; </p>
+<p>2. Click <strong>Local IIS</strong> to select the local IIS 7 server.&nbsp; </p>
+<p>In the resulting dialog, you can select the Web site or a child 
+application to open.&nbsp; Alternatively, in the top right hand corner 
+of the dialog box, you can use the <strong>Create New Web Application</strong>, <strong>Create New Virtual Directory</strong>, and <strong>Delete</strong> buttons&nbsp; to manage the Web site hierarchy. </p>
+<p><strong>Note</strong>: Be sure to back up your configuration first before making changes.</p>
+<p><a href="http://learn.iis.net/file.axd?i=816"><img alt="" src="VS2008WithIIS7DevelopmentTools_files/file_010.png" border="0"></a></p>
+<p>3. Click <strong>Open</strong>.&nbsp;</p>
+<p>If you do not have IIS 7 or any of the prerequisites installed, 
+Visual Studio 2008 displays a message when you attempt to connect to the
+ Local IIS server telling you to install the required components. To do 
+this, see the "Prerequisites" section earlier in this article.</p>
+<p><a href="http://learn.iis.net/file.axd?i=817"><img alt="" src="VS2008WithIIS7DevelopmentTools_files/file_002.png" border="0"></a></p>
+<p><strong>Note: </strong>Visual Studio provides several different 
+options for working with existing Web sites, in addition to connecting 
+to an existing IIS 7 Web site. These options include:</p>
+<ul>
+<li><strong>File System</strong>. When using this option, Visual Studio 
+opens or creates the Web application as a folder, and uses the built-in 
+ASP.NET Development Server to host the Web site. You can use this option
+ to connect to an existing IIS 7 Web site by opening its virtual 
+directory’s root folder on the local file system or through a network 
+share.</li>
+<li><strong>FTP Site</strong>. When using this option, Visual Studio 
+supports editing your application files if they are shared through FTP. 
+For more information, see the section "Using Visual Studio 2008 with a 
+Remote IIS 7 Server" later in this article.</li>
+<li><strong>Remote Site</strong>. Using this option, Visual Studio can 
+connect to a remote IIS server. To use this option, you need to have 
+Front Page Server Extensions installed on the remote server and 
+configure your Web site to use FPSE.&nbsp; For more information on this,
+ see the section "Using Visual Studio 2008 with a Remote IIS 7 Server" 
+later in this article.</li></ul>
+<p>2. Configure debugging.&nbsp;</p>
+<p>If you&nbsp;have opened an existing IIS 7 Web site using the <strong>Local IIS</strong> or <strong>Remote Site</strong>
+ options,&nbsp;your project is automatically configured to use the IIS 7
+ Web site when debugging so no further action is necessary (the Remote 
+Site option requires additional configuration to enable remote 
+debugging, as explained later in the article).&nbsp;</p>
+<p>If you have opened your Web site project using the <strong>File System</strong> or <strong>FTP</strong>
+ site options, it&nbsp;is by default configured to use the ASP.NET 
+Development Server for testing and debugging. It is recommended that you
+ configure Visual Studio to use the IIS 7 server on which the Web site 
+is located for debugging.</p>
+<p>To do this, right-click on the Web site project node in Visual Studio and chose <strong>Start Options</strong>.&nbsp; In the dialog, select the <strong>Use custom server</strong> option and type in the base URL of your Web application on the remote server.</p>
+<p mce_keep="true"><a href="http://learn.iis.net/file.axd?i=818"><img alt="" src="VS2008WithIIS7DevelopmentTools_files/file_009.png" border="0"></a></p>
+<h2 mce_keep="true">Using Visual Studio 2008 with a Remote IIS 7 Server</h2>
+<p mce_keep="true">In order to open an existing Web site or create a new
+ Web site on a remote IIS server, you can use many of the options 
+mentioned earlier:</p>
+<ul>
+<li>
+<div mce_keep="true"><strong>File System</strong>. You can create a file
+ share pointing to the root virtual directory of your Web application, 
+and use the "File System" option to connect to it.&nbsp; To use this 
+option, select the "File System" button in the “Open Web Site” dialog. 
+You then have to configure the URL of your application in project start 
+settings to be able to debug the application using Visual Studio. You 
+cannot create new IIS Web sites, applications, or virtual directories on
+ the remote machine using this option.</div></li>
+<li>
+<div mce_keep="true"><strong>FTP Site</strong>. If your Web site or 
+application files are shared using FTP, you can access these files using
+ this option. You then have to configure the URL of your application in 
+project start settings to be able to debug the application using Visual 
+Studio. To use this option, select the "FTP Site" button in the "Open 
+Web Site" dialog.&nbsp; You cannot create new IIS Web sites, 
+applications, or virtual directories on the remote machine using this 
+option.</div></li>
+<li>
+<div mce_keep="true"><strong>Remote Site</strong>.&nbsp; This option 
+uses Front Page Server Extensions to connect to a remote IIS 
+server.&nbsp; To use this option to connect to a remote IIS 7 server on 
+Windows Server 2008 or Windows Vista computers, you first need to 
+install Front Page Server Extensions on the remote computer. </div></li></ul>
+<h3 mce_keep="true">Connect to an IIS 7 Web site using FTP</h3>
+<p mce_keep="true">You can use the FTP Site option if you have used FTP to share the IIS 7 virtual directory you want&nbsp;to publish to. </p>
+<p mce_keep="true"><strong>Note</strong>: When using FTP, 
+you&nbsp;cannot create or edit IIS 7 Web sites, applications, or virtual
+ directories, but you&nbsp;can publish and edit files.</p>
+<p mce_keep="true">To use this option, provide the address of the FTP 
+server, the port, the directory to which you are connecting, and logon 
+credentials if not using anonymous access.</p>
+<p mce_keep="true"><a href="http://learn.iis.net/file.axd?i=819"><img alt="" src="VS2008WithIIS7DevelopmentTools_files/file_003.png" border="0"></a></p>
+<p mce_keep="true">For more information on using the FTP server included in Windows Vista and Windows Server 2008, see <a href="http://www.microsoft.com/technet/prodtechnol/WindowsServer2003/Library/IIS/31c2427c-c0a5-49fa-9e03-823f34fba3e8.mspx?mfr=true" mce_href="http://www.microsoft.com/technet/prodtechnol/WindowsServer2003/Library/IIS/31c2427c-c0a5-49fa-9e03-823f34fba3e8.mspx?mfr=true">FTP Site Setup (IIS 6.0)</a>. To use the new <a href="http://go.microsoft.com/fwlink/?LinkId=87847">FTP 7</a>, which is available as a download from IIS.NET, see <a href="http://go.microsoft.com/fwlink/?LinkId=89116" mce_href="http://go.microsoft.com/fwlink/?LinkId=89116">Adding FTP to a Web Site</a>. If you are using Windows Server 2008 R2, the new version of FTP (FTP 7.5) is already included.</p>
+<h3 mce_keep="true">Connect to an IIS 7 Web Site Using Front Page Server Extensions</h3>
+<p mce_keep="true">You can use the Remote Site option if you have shared
+ the IIS 7 Web site you want&nbsp;to publish to using Front Page Server 
+Extensions. Unlike the FTP Site option, you&nbsp;can create and edit IIS
+ 7 applications and virtual directories when using this option.</p>
+<p mce_keep="true"><a href="http://go.microsoft.com/fwlink/?LinkId=86544" mce_href="http://go.microsoft.com/fwlink/?LinkId=86544">Front Page Server Extensions for IIS 7</a>
+ are available as a free download for Windows Vista and Windows Server 
+2008.&nbsp;&nbsp; For more information on installing and enabling Front 
+Page Server Extensions for IIS 7 Web sites, see <a href="http://go.microsoft.com/fwlink/?LinkId=88546" mce_href="http://go.microsoft.com/fwlink/?LinkId=88546">Installing Front Page Server Extensions for IIS 7</a>.</p>
+<p mce_keep="true">To quickly enable a remote Web site to be used with the “Remote Site” option in Visual Studio, do the following:</p>
+<p mce_keep="true">1. Download and install FPSE on the remote IIS 7 
+server. The provided installer automatically installs all required IIS 7
+ components.</p>
+<p mce_keep="true">2. Create an IIS 7 Web site to connect to (optional, if the site does not&nbsp;already exist).</p>
+<p mce_keep="true">3. Enable either Basic authentication or Windows 
+authentication methods for the Web site. This is required for FPSE to be
+ able to manage the site.</p>
+<p mce_keep="true"><strong>Note</strong>: If you use Basic 
+authentication, the username and password are transmitted in clear text,
+ so do not use Basic authentication for connecting to Web sites over 
+public networks unless you also use SSL to protect the communication<em>.</em>&nbsp; </p>
+<p mce_keep="true">4. Enable the Web site to be managed with FPSE. You can do this by executing the following from the command line:</p><samp mce_keep="true">&gt; <strong>"%CommonProgramFiles%\Microsoft
+ Shared\Web Server Extensions\50\bin\owsadm.exe" -o install -p 
+LM/W3SVC/&lt;SITEID&gt; -u &lt;USERNAME&gt;</strong></samp> 
+<p mce_keep="true">Where &lt;SITEID&gt; is the site id of the Web site 
+you want&nbsp;to enable for FPSE, and the &lt;USERNAME&gt; is the 
+Windows account that can act as FPSE administrator. </p>
+<p mce_keep="true">5. Connect to the site Using the “Remote Site” option
+ in the Open Web Site dialog or the New Site dialog. This allows you to 
+connect to an existing Front Page Server Extensions – enabled Web site, 
+or create new Web applications and virtual directories. </p>
+<p mce_keep="true"><a href="http://learn.iis.net/file.axd?i=820"><img alt="" src="VS2008WithIIS7DevelopmentTools_files/file.png" border="0"></a></p>
+<p mce_keep="true">If you receive the following error dialog during 
+connection, double-check that you have installed FPSE on the remote 
+server, and have enabled FPSE management for the Web site to which you 
+are attempting to connect.</p>
+<p mce_keep="true"><a href="http://learn.iis.net/file.axd?i=821"><img alt="" src="VS2008WithIIS7DevelopmentTools_files/file_005.png" border="0"></a></p>
+<p>If you are using Windows authentication for your FPSE-enabled Web 
+site, Visual Studio attempts to authenticate using the account under 
+which it was started.&nbsp; If this authentication fails, it prompts you
+ to provide credentials for authentication with the remote server.&nbsp;
+ </p>
+<p>If you are using Basic authentication, Visual Studio immediately prompts you for credentials. </p>
+<p><strong>Note</strong>:&nbsp;Basic authentication sends credentials in
+ clear text, so it can lead to unintended disclosure of your username 
+and password if the site is not protected with SSL. For this reason, we 
+recommend&nbsp;using Windows authentication for intranet environments, 
+and using Basic authentication over SSL for internet environments<em>.</em> </p>
+<p>If you have not enabled a suitable authentication method (Windows 
+authentication, Basic authentication, or Digest authentication), you 
+will receive the following error dialog when you connect. To resolve 
+this, enable one of the authentication methods mentioned above.</p>
+<p><a href="http://learn.iis.net/file.axd?i=822"><img alt="" src="VS2008WithIIS7DevelopmentTools_files/file_008.png" border="0"></a></p>
+<p><br><strong>Note</strong>: The "New Web Site …" button in the "Remote
+ Site" dialog cannot be used to create a new IIS 7 Web site.&nbsp; 
+Instead, it&nbsp;is used to create a new Web application with the 
+specified path for an existing Front Page Server Extensions – enabled 
+IIS 7 Web site.</p>
+<h2>Debugging IIS 7 Web Applications</h2>
+<p>After you have opened a Web site or application in Visual Studio, you
+ can take advantage of Visual Studio debugging features to test it. In 
+doing so, you have the following options:</p>
+<ul>
+<li><strong>Use F5 debugging to debug from Visual Studio</strong>. If 
+you have opened an IIS 7 Web site project using one of the options 
+discussed earlier, this gives you the most convenient way to debug your 
+Web application. You can debug it simply by pressing F5, and then 
+interacting with your application using a browser window. In the rest of
+ this article, we will focus on this option.<strong>&nbsp;</strong></li>
+<li><strong>Attach to the IIS worker process directly</strong>. If you know which IIS worker process is hosting your application, you can use this option to attach directly to that process. </li></ul>
+<h3>Use F5 to Debug a Local IIS 7 Web Application from Visual Studio</h3>
+<p>F5 debugging provides the most convenient way to debug your Web application with Visual Studio. To use it, do the following:</p>
+<p>1. Open an IIS 7 Web site using one of the options discussed earlier.</p>
+<p>2. Select the project file to which you want&nbsp;to make the initial request (optional).</p>
+<p>3. Set the desired breakpoints in your application source code (optional, you can also set them during debugging).</p>
+<p>4. Press F5 to begin debugging.&nbsp; Visual Studio will make an 
+initial request to the IIS 7 Web application, attach to the hosting IIS 
+worker process, and open a new browser window where you can interact 
+with your application.</p>
+<p>In order to successfully debug a local IIS 7 Web application, you must meet the following requirements:</p>
+<p>1. Be logged on as a user that has Administrative privileges on the 
+local computer (Either the built-in Administrator account, or an account
+ that is a member of the built-in Administrators group).</p>
+<p>2. Start Visual Studio in Administrator mode by right-clicking the Visual Studio 2008 icon in the Start menu and selecting <strong>Run as administrator</strong>.&nbsp; </p>
+<p>If you do not do this, Visual Studio receives a filtered UAC token and&nbsp;cannot debug.</p>
+<p>If you have opened an ASP.NET application using the <strong>File System</strong>
+ option, Visual Studio by default starts the ASP.NET Development Server 
+to host your application.&nbsp; In this option, IIS 7 is not involved, 
+and you&nbsp;are not required to be an Administrator to debug your 
+application. However, when using the ASP.NET Development Server, you do 
+not have the full range of features and services that IIS 7 environment 
+provides, which may make your application behave differently from when 
+it is deployed on IIS 7. This includes the following:</p>
+<ul>
+<li>No support for ASP.NET Integrated Mode.</li>
+<li>No support for IIS 7 features such as compression, native URL authentication, request filtering, and others.</li>
+<li>No support for application technologies other than ASP.NET, such as PHP, ASP, CGI, and others.</li></ul>
+<h3>Use F5 to Debug a Remote IIS 7 Web Application from Visual Studio</h3>
+<p>You can use F5 to debug an IIS 7 Web application running on a remote 
+server. The process is similar to what was described earlier for 
+debugging local IIS 7 applications, but requires additional 
+configuration to enable remote debugging to take place. </p>
+<p>First, you&nbsp;must open the remote IIS 7 Web site or application project using the <strong>File System</strong>, <strong>FTP Site</strong> or <strong>Remote Site</strong> options as discussed in the "Using Visual Studio 2008 with a Remote IIS 7 Server" section earlier in this article.</p>
+<p>In order to successfully debug a remote application, you must also meet the following requirements:</p>
+<p>1. Install the Remote Debugging components on the server machine. For more information, see <a href="http://msdn2.microsoft.com/en-us/library/bt727f1t.aspx" mce_href="http://msdn2.microsoft.com/en-us/library/bt727f1t.aspx">How to: Set Up Remote Debugging</a>.</p>
+<p>2. Run the Remote Debugging monitor (msvsmon.exe) on the server machine.&nbsp; See further notes about how to do this properly.</p>
+<p>3. Open the required firewall ports for remote debugging.&nbsp; </p>
+<p>When you run msvsmon.exe for the first time on the remote machine, it
+ warns you if the ports are not open, and offers to open them 
+automatically. If you want to configure the firewall manually or to see 
+which ports are opened, see <a href="http://msdn2.microsoft.com/en-us/library/bb385831.aspx" mce_href="http://msdn2.microsoft.com/en-us/library/bb385831.aspx">How to: Manually Configure the Windows Vista Firewall for Remote Debugging</a>. </p>
+<p>4. If you are using a Web application project and publishing to a 
+remote IIS 7 server, or if you have opened the remote Web site project 
+using the <strong>File System</strong> or <strong>FTP Site</strong> 
+options, you&nbsp;must configure the Visual Studio project start options
+ to enable debugging. To do this for a Web site project, right-click on 
+the Web site project node, and then chose <strong>Start Options</strong>.&nbsp; In the dialog, select the <strong>Use custom server</strong> option and type in the base URL of your Web application on the remote server. </p>
+<p>For a Web application project, right-click on the project node, chose <strong>Properties</strong>, and the click the <strong>Web </strong>tab.&nbsp; In the <strong>Web</strong> tab, select the <strong>Use IIS Web server</strong> option and type in the base URL of your Web application on the remote server.</p>
+<p>This process is described in detail earlier in the article.</p>
+<p>5. Configure permissions to allow debugging to take place.&nbsp; See further notes about how to do this properly.</p>
+<p>How you run the Remote Debugging monitor (msvsmon.exe) and configure 
+your permissions depends on whether your are operating in a domain or 
+workgroup environment.</p>
+<p mce_keep="true"><strong>To set up remote debugging in a workgroup environment</strong></p>
+<p mce_keep="true">1. Create an account with the same username and 
+password on both the Visual Studio 2008 client computer and the remote 
+server computer. This account must have Administrative rights on the 
+remote server computer.</p>
+<p mce_keep="true"><strong>Note</strong>: If you are using Windows 
+authentication in your application, this account must be the built-in 
+Administrator account.&nbsp; This means that the built-in Administrator 
+account must have the same password on both computers.</p>
+<p mce_keep="true">2. Log on to the remote server computer using the 
+account created in Step 1, and run the Visual Studio 2008 Remote 
+Debugger from the Start menu by right-clicking it, and choosing <strong>Run as administrator</strong>.
+ This is important because otherwise the Remote Debugging monitor 
+receives a UAC-filtered token and&nbsp;cannot debug IIS worker 
+processes.</p>
+<p mce_keep="true"><strong>Note</strong>: Do not use the RunAs.exe 
+command to run the msvsmon.exe process, as this always results in a 
+UAC-filtered token and prevents debugging from working<em>.</em></p>
+<p mce_keep="true">You also have an option to run the Remote Debugging monitor as a service by opening the <strong>Visual Studio 2008 Remote Debugger Configuration Wizard</strong> from the Start menu.&nbsp; (Select <strong>Start</strong>, <strong>All Programs</strong>, <strong>Microsoft Visual Studio 2008</strong>, and then locate it in the <strong>Visual Studio Tools </strong>folder).
+ If you use this option, you must configure the Remote Debugging monitor
+ to log on using the account created in Step 1.&nbsp; You then 
+also&nbsp;must grant the corresponding account the "Log On As A Service"
+ right in the computer’s Local Security Policy console.</p>
+<p mce_keep="true">3. Log on to the Visual Studio 2008 client computer 
+with the account created in step #1.&nbsp; Run Visual Studio 2008 by 
+right-clicking its icon in the Start menu, and choosing <strong>Run as administrator</strong>.</p>
+<p mce_keep="true"><strong>Note</strong>: It is&nbsp;very important&nbsp;to both log in&nbsp;using the account created in Step 1, and use the <strong>Run as administrator </strong>option
+ when running Visual Studio.&nbsp; As mentioned in Step 1, the account 
+you are using MUST be an Administrative user on the remote server 
+machine.</p>
+<p mce_keep="true">4. Open the remote IIS 7 Web site by using the <strong>File System</strong>, <strong>FTP Site </strong>or <strong>Remote Site</strong> option).</p>
+<p mce_keep="true">If you are using Windows authentication in your IIS 7
+ Web site, you must be running Visual Studio 2008 using the built-in 
+Administrator account and therefore also run the Remote Debugging 
+monitor on the remote computer using the built-in Administrator account.
+ The password for the Administrator account must be the same on the 
+client and remote server computers.</p>
+<p mce_keep="true">In addition, you can do the following:</p>
+<ul>
+<li>
+<div mce_keep="true">Use the FTP Site option to connect to the remote 
+IIS 7 Web site, and use Anonymous authentication. Then, you do not need 
+to use the built-in Administrator account, as long as the account you 
+are using is an Administrative user on the remote server computer.</div></li>
+<li>
+<div mce_keep="true">Use the Remote Site option to connect to the remote
+ IIS 7 Web site, and use Basic or Digest authentication. Then, you do 
+not need to use the built-in Administrator account, as long as the 
+account you are using is an Administrative user on the remote server 
+computer.</div></li></ul>
+<p mce_keep="true">If you need to use Windows authentication in your IIS
+ 7 Web site, and you cannot use synchronized Administrator accounts, you
+ must turn off UAC on the remote server computer and reboot prior to 
+attempting to debug.&nbsp; This is not recommended for production 
+servers because&nbsp;it may negatively affect the security of your 
+server.</p>
+<p mce_keep="true"><strong>To set up remote debugging in a domain environment</strong></p>
+<p mce_keep="true">Debugging in a domain environment is simpler to configure. To debug in a domain environment, you must:</p>
+<p mce_keep="true">1. Make the domain account you will be using to run 
+Visual Studio 2008 a member of the Administrators group on the remote 
+server computer.</p>
+<p mce_keep="true">2. Log on to the remote server computer using the domain account, and run the Remote Debugging monitor (msvsmon.exe) using the <strong>Run as administrator </strong>option. </p>
+<p mce_keep="true">You also have an option to run the Remote Debugging monitor as a service by right clicking the <strong>Visual Studio 2008 Remote Debugger Configuration Wizard</strong> from the Start menu, and choosing <strong>Run as administrator</strong>.&nbsp; You can let the Remote Debugging monitor service run as LocalSystem.</p>
+<p mce_keep="true">3. Log on to the Visual Studio 2008 client computer 
+with the domain account.&nbsp; Run Visual Studio 2008 by right-clicking 
+its icon in the Start menu, and choosing <strong>Run as administrator</strong>.</p>
+<p mce_keep="true">4. Open the remote IIS 7 Web site by using the <strong>FTP Site</strong> or <strong>Remote Site</strong> option.<br></p>
+<h2 mce_keep="true">Summary</h2>
+<p mce_keep="true">This article provided information about using Visual 
+Studio 2008 to work with IIS 7 Web sites located on the local and remote
+ computers, and how to debug Web applications hosted in IIS 7.</p>
+<p mce_keep="true">&nbsp;</p>
+					
+						<h2>Related Content</h2>
+								
+								<ul class="related-list">
+									<li class="bold first">Articles</li>
+							<li><a href="http://learn.iis.net/page.aspx/431/using-visual-studio-2005-with-iis-70/">Using Visual Studio 2005 with IIS 7.0</a></li></ul>
+				</div>			
+					
+								
+				<h1 class="main-header clear">
+					Submit article feedback
+				</h1>
+				<div id="article-submit-comment">
+					<div class="clear"></div>
+					
+							<p>You must <a id="ctl00_ctl00_Content_Body_lstLogin" href="javascript:__doPostBack('ctl00$ctl00$Content$Body$lstLogin$ctl02','')">Log In</a> to submit feedback.</p>
+						
+				</div>								
+				<div class="clear"></div>
+			</div>
+			
+
+		<div class="clear"></div>
+	</div>
+
+				
+
+<div id="footer" class="full-center">
+	<div class="add-space advertise-leaderboard clearfix"><div class="advertise-link"><a href="http://www.neudesicmediagroup.com/Advertising.aspx?site=IIS"></a></div><div class="iframe-container"><iframe hspace="0" vspace="0" marginwidth="0" marginheight="0" allowtransparency="true" src="VS2008WithIIS7DevelopmentTools_files/a_003.htm" frameborder="0" height="90px" width="728px" scrolling="no"></iframe></div></div>
+	<div id="Seperate" class="border"></div>
+	
+	<div id="container-explore">
+        <div id="explore-content" class="clearfix">
+	        		<div class="explore-header"></div>
+	        <div class="explore-section">
+		        <div class="explore-links">
+			        <ul class="long">
+				        <li class="explore-links-header">Servers</li>
+				        <li><a title="Windows Server" href="http://www.microsoft.com/windowsserver2008/en/us/default.aspx" onclick="window.open(this.href, '_blank', ''); return false;" onkeypress="window.open(this.href, '_blank', ''); return false;">Windows Server</a></li>
+				        <li><a title="SQL Server" href="http://www.microsoft.com/SQL/default.mspx" onclick="window.open(this.href, '_blank', ''); return false;" onkeypress="window.open(this.href, '_blank', ''); return false;">SQL Server</a></li>
+				        <li><a title="Windows Server AppFabric" href="http://msdn.microsoft.com/appfabric" onclick="window.open(this.href, '_blank', ''); return false;" onkeypress="window.open(this.href, '_blank', ''); return false;">Windows Server AppFabric</a></li>
+</ul>
+			        <ul>
+				        <li class="explore-links-header">Technologies</li>
+				        <li><a title=".NET Framework" href="http://msdn.microsoft.com/en-us/netframework/default.aspx" onclick="window.open(this.href, '_blank', ''); return false;" onkeypress="window.open(this.href, '_blank', ''); return false;">.NET Framework</a></li>
+				        <li><a title="ASP.NET" href="http://www.asp.net/" onclick="window.open(this.href, '_blank', ''); return false;" onkeypress="window.open(this.href, '_blank', ''); return false;">ASP.NET</a></li>
+				        <li><a title="Silverlight" href="http://silverlight.net/" onclick="window.open(this.href, '_blank', ''); return false;" onkeypress="window.open(this.href, '_blank', ''); return false;">Silverlight</a></li>
+				        <li><a title="PHP on Windows" href="http://php.iis.net/">PHP on Windows</a></li>
+				        <li><a title="IIS Media Services" href="http://www.iis.net/media">IIS Media Services</a></li>
+			        </ul>
+		        </div>
+		        <div class="explore-links">
+			        <ul class="long">
+				        <li class="explore-links-header">Tools</li>
+				        <li><a title="Visual Studio" href="http://www.microsoft.com/visualstudio" onclick="window.open(this.href, '_blank', ''); return false;" onkeypress="window.open(this.href, '_blank', ''); return false;">Visual Studio</a></li>
+				        <li><a title="Expression Studio" href="http://www.microsoft.com/expression/" onclick="window.open(this.href, '_blank', ''); return false;" onkeypress="window.open(this.href, '_blank', ''); return false;">Expression Studio</a></li>
+				        <li><a title="Windows Internet Explorer" href="http://www.microsoft.com/ie/" onclick="window.open(this.href, '_blank', ''); return false;" onkeypress="window.open(this.href, '_blank', ''); return false;">Windows Internet Explorer</a></li>
+			        </ul>
+			        <ul>
+				        <li class="explore-links-header">Web Apps</li>
+				        <li><a title="SharePoint Server" href="http://www.microsoft.com/sharepoint/default.mspx" onclick="window.open(this.href, '_blank', ''); return false;" onkeypress="window.open(this.href, '_blank', ''); return false;">SharePoint Server</a></li>
+				        <li><a title="Commerce Server" href="http://www.microsoft.com/commerceserver/en/us/default.aspx" onclick="window.open(this.href, '_blank', ''); return false;" onkeypress="window.open(this.href, '_blank', ''); return false;">Commerce Server</a></li>
+				        <li><a title="BizTalk Server" href="http://www.microsoft.com/biztalk/en/us/default.aspx" onclick="window.open(this.href, '_blank', ''); return false;" onkeypress="window.open(this.href, '_blank', ''); return false;">BizTalk Server</a></li>
+				        <li><a title="Web App Gallery" href="http://www.microsoft.com/web/gallery/">Web App Gallery</a></li>
+			        </ul>
+		        </div>
+		        <div class="explore-links">
+			        <ul>
+				        <li class="explore-links-header">Communities</li>
+				        <li><a title="ASP.NET Community" href="http://www.asp.net/community/" onclick="window.open(this.href, '_blank', ''); return false;" onkeypress="window.open(this.href, '_blank', ''); return false;">ASP.NET Community</a></li>
+				        <li><a title="Visual Studio Community" href="http://msdn.microsoft.com/vstudio" onclick="window.open(this.href, '_blank', ''); return false;" onkeypress="window.open(this.href, '_blank', ''); return false;">Visual Studio Community</a></li>
+				        <li><a title="IIS Community" href="http://www.iis.net/" onclick="window.open(this.href, '_blank', ''); return false;" onkeypress="window.open(this.href, '_blank', ''); return false;">IIS Community</a></li>
+				        <li><a title="Silverlight Community" href="http://silverlight.net/Community/" onclick="window.open(this.href, '_blank', ''); return false;" onkeypress="window.open(this.href, '_blank', ''); return false;">Silverlight Community</a></li>
+				        <li><a title="MSDN Community Center" href="http://msdn.microsoft.com/en-us/community/default.aspx" onclick="window.open(this.href, '_blank', ''); return false;" onkeypress="window.open(this.href, '_blank', ''); return false;">MSDN Community Center</a></li>
+				        <li><a title="Channel 8" href="http://channel8.msdn.com/" onclick="window.open(this.href, '_blank', ''); return false;" onkeypress="window.open(this.href, '_blank', ''); return false;">Channel 8</a></li>
+				        <li><a title="Channel 9" href="http://channel9.msdn.com/" onclick="window.open(this.href, '_blank', ''); return false;" onkeypress="window.open(this.href, '_blank', ''); return false;">Channel 9</a></li>
+				        <li><a title="Channel 10" href="http://on10.net/" onclick="window.open(this.href, '_blank', ''); return false;" onkeypress="window.open(this.href, '_blank', ''); return false;">Channel 10</a></li>
+				        <li><a title="CodePlex" href="http://www.codeplex.com/" onclick="window.open(this.href, '_blank', ''); return false;" onkeypress="window.open(this.href, '_blank', ''); return false;">CodePlex</a></li>
+			        </ul>
+		        </div>
+		        <div class="explore-links">
+			        <ul>
+				        <li class="explore-links-header">Blogs</li>
+				        <li><a title="MSDN Blogs" href="http://blogs.msdn.com/" onclick="window.open(this.href, '_blank', ''); return false;" onkeypress="window.open(this.href, '_blank', ''); return false;">MSDN Blogs</a></li>
+				        <li><a title="Web Tools Team Blog" href="http://blogs.msdn.com/webdevtools/" onclick="window.open(this.href, '_blank', ''); return false;" onkeypress="window.open(this.href, '_blank', ''); return false;">Web Tools Team Blog</a></li>
+				        <li><a title="Web Platform Team Blog" href="http://blogs.msdn.com/webplatform/" onclick="window.open(this.href, '_blank', ''); return false;" onkeypress="window.open(this.href, '_blank', ''); return false;">Web Platform Team Blog</a></li>
+				        <li><a title="Silverlight Team Blog" href="http://silverlight.net/Community/" onclick="window.open(this.href, '_blank', ''); return false;" onkeypress="window.open(this.href, '_blank', ''); return false;">Silverlight Team Blog</a></li>
+				        <li><a title="Internet Explorer Team Blog" href="http://blogs.msdn.com/ie" onclick="window.open(this.href, '_blank', ''); return false;" onkeypress="window.open(this.href, '_blank', ''); return false;">IE Team Blog</a></li>
+				        <li><a title="Mix Online" href="http://www.visitmix.com/" onclick="window.open(this.href, '_blank', ''); return false;" onkeypress="window.open(this.href, '_blank', ''); return false;">Mix Online</a></li>
+				        <li><a title="Scott Guthrie's Blog" href="http://weblogs.asp.net/Scottgu/" onclick="window.open(this.href, '_blank', ''); return false;" onkeypress="window.open(this.href, '_blank', ''); return false;">Scott Guthrie's Blog</a></li>
+				        <li><a title="Scott Hanselman's Blog" href="http://www.hanselman.com/" onclick="window.open(this.href, '_blank', ''); return false;" onkeypress="window.open(this.href, '_blank', ''); return false;">Scott Hanselman's Blog</a></li>
+			        </ul>
+		        </div>
+		        <div class="explore-links">
+			        <ul>
+				        <li class="explore-links-header">Information For...</li>
+				        <li><a title="IT professionals (TechNet)" href="http://technet.microsoft.com/" onclick="dcsMultiTrack('DCS.dcssip','technet.microsoft.com','DCS.dcsuri','/','WT.ti','Link:TechNet', 'WT.z_convert','TechNet','WT.dl','1'); window.open(this.href, '_blank', ''); return false;" onkeypress="dcsMultiTrack('DCS.dcssip','technet.microsoft.com','DCS.dcsuri','/','WT.ti','Link:TechNet', 'WT.z_convert','TechNet','WT.dl','1'); window.open(this.href, '_blank', ''); return false;">IT professionals (TechNet)</a></li>
+				        <li><a title="Web Developers (MSDN)" href="http://msdn.microsoft.com/" onclick="dcsMultiTrack('DCS.dcssip','msdn.microsoft.com','DCS.dcsuri','/','WT.ti','Link:MSDN', 'WT.z_convert','MSDN','WT.dl','1'); window.open(this.href, '_blank', ''); return false;" onkeypress="dcsMultiTrack('DCS.dcssip','msdn.microsoft.com','DCS.dcsuri','/','WT.ti','Link:MSDN', 'WT.z_convert','MSDN','WT.dl','1'); window.open(this.href, '_blank', ''); return false;">Web Developers (MSDN)</a></li>
+				        <li><a title="Web Designers (Expression)" href="http://expression.microsoft.com/" onclick="dcsMultiTrack('DCS.dcssip','expression.microsoft.com','DCS.dcsuri','/','WT.ti','Link:Expression', 'WT.z_convert','Expression','WT.dl','1'); window.open(this.href, '_blank', ''); return false;" onkeypress="dcsMultiTrack('DCS.dcssip','expression.microsoft.com','DCS.dcsuri','/','WT.ti','Link:Expression', 'WT.z_convert','Expression','WT.dl','1'); window.open(this.href, '_blank', ''); return false;">Web Designers (Expression)</a></li>
+				        <li><a title="Enterprise Organizations" href="http://www.microsoft.com/web/jumpStart/enterprise.aspx" onclick="window.open(this.href, '_blank', ''); return false;" onkeypress="window.open(this.href, '_blank', ''); return false;">Enterprise Organizations</a></li>
+                        <li><a href="http://www.microsoft.com/hosting/" id="ctl00_ctl00_footer_A1" title="Hosters" onclick="window.open(this.href, '_blank', ''); return false;" onkeypress="window.open(this.href, '_blank', ''); return false;">Hosters</a></li>							        
+			        </ul>
+		        </div>
+	        </div>
+        </div>
+    </div>
+<div class="sub-footer">
+<div id="copy-section" class="terms">
+	<div class="ad-info"><a href="http://www.neudesicmediagroup.com/Advertising.aspx?site=IIS" title="Advertise with us">Interested in Advertising with us?</a> | <a href="http://www.axosoft.com/">Issue Management by Axosoft's OnTime</a></div>
+	<ul id="terms-list">
+		<li><a href="http://msdn.microsoft.com/en-us/cc300389.aspx">Terms of Use</a></li>
+		<li><a href="http://www.iis.net/privacy">Privacy Statement</a></li>
+		<li><a href="http://www.iis.net/team">About our Team</a></li>
+		<li><a href="http://www.iis.net/contact">Questions/Problems</a></li>
+	</ul>
+	<div class="copyright">© 2011 Microsoft Corporation. All Rights Reserved.</div>
+</div>
+<div id="logo-section">
+	<ul id="logo-list">
+		<li><a id="asp-net-link" href="http://asp.net/"></a></li>
+		<li><a id="silverlight-link" href="http://silverlight.net/"></a></li>
+		<li><a id="channel-9-link" href="http://channel9.msdn.com/"></a></li>
+		<li><a id="technet-link" href="http://edge.technet.com/"></a></li>
+		<li><a id="iis-link" href="http://www.iis.net/"></a></li>
+		<li><a id="mix-link" href="http://visitmix.com/"></a></li>
+		<li><a id="msdn-link" href="http://msdn.microsoft.com/"></a></li>
+		<li><a id="windows-client-link" href="http://windowsclient.net/"></a></li>
+	</ul>
+</div>
+</div>
+<div class="clear"></div>
+
+
+
+</div>
+			</div>
+		</div>
+		
+
+<script type="text/javascript" src="VS2008WithIIS7DevelopmentTools_files/omniture.js"></script>
+<script type="text/javascript">try { var s_code = s.t(); if (s_code) document.write(s_code) } catch (err) { }</script>
+<noscript><a href="http://www.omniture.com/" title="Web Analytics"><img src='http://msstonojstemp.112.2O7.net/b/ss/msstonojstemp/1/H.20.2--NS/0' height="1" width="1" border="0" alt="" /></a></noscript>		
+
+
+    </form>
+</body></html>

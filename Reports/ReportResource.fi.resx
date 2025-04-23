@@ -1,0 +1,822 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="employeeWithoutPassesReports" xml:space="preserve">
+    <value>Učenici bez prolazaka</value>
+  </data>
+  <data name="noRecordsForDisplay" xml:space="preserve">
+    <value>Nema podataka za generisanje izveštaja.</value>
+  </data>
+  <data name="lblFirstName" xml:space="preserve">
+    <value>Ime:</value>
+  </data>
+  <data name="gbVisitor" xml:space="preserve">
+    <value>Podaci o posetiocu</value>
+  </data>
+  <data name="gbCriteria" xml:space="preserve">
+    <value>Kriterijumi izveštaja</value>
+  </data>
+  <data name="employeePassesReports" xml:space="preserve">
+    <value>Prolasci učenika</value>
+  </data>
+  <data name="rbAnalytic" xml:space="preserve">
+    <value>Analitički</value>
+  </data>
+  <data name="btnScanDocument" xml:space="preserve">
+    <value>Skenirani dokument</value>
+  </data>
+  <data name="employeeAbsenceReports" xml:space="preserve">
+    <value>Izveštaj o odsustvima zaposlenih</value>
+  </data>
+  <data name="btnBrowse" xml:space="preserve">
+    <value>Pronađi</value>
+  </data>
+  <data name="lblStatus" xml:space="preserve">
+    <value>Status:</value>
+  </data>
+  <data name="IOPairsReports" xml:space="preserve">
+    <value>Parovi ulaz/izlaz</value>
+  </data>
+  <data name="lblVisitEnd" xml:space="preserve">
+    <value>Kraj posete:</value>
+  </data>
+  <data name="lblRepType" xml:space="preserve">
+    <value>Tip izveštaja:</value>
+  </data>
+  <data name="gbReportType" xml:space="preserve">
+    <value>Tip izveštaja</value>
+  </data>
+  <data name="titleVisitorsScanDoc" xml:space="preserve">
+    <value>Skenirani dokument</value>
+  </data>
+  <data name="routesSchReports" xml:space="preserve">
+    <value>Izveštaji o rasporedu obilazaka</value>
+  </data>
+  <data name="EmployeeLocationReport" xml:space="preserve">
+    <value>Trenutne lokacije zaposlenih</value>
+  </data>
+  <data name="lblVisitStart" xml:space="preserve">
+    <value>Početak posete:</value>
+  </data>
+  <data name="passTypeAbsence" xml:space="preserve">
+    <value>Izostanci</value>
+  </data>
+  <data name="lblIdentification" xml:space="preserve">
+    <value>JMBG/Lična isprava:</value>
+  </data>
+  <data name="lblMonth" xml:space="preserve">
+    <value>Mesec:</value>
+  </data>
+  <data name="lblWU" xml:space="preserve">
+    <value>Radna jedinica:</value>
+  </data>
+  <data name="mealsUsedReports" xml:space="preserve">
+    <value>Izveštaj o iskorišćenim obrocima</value>
+  </data>
+  <data name="lblDest" xml:space="preserve">
+    <value>Putanja:</value>
+  </data>
+  <data name="regularWorkOut" xml:space="preserve">
+    <value>Redovan rad van r. vremena</value>
+  </data>
+  <data name="cbOpenFile" xml:space="preserve">
+    <value>Otvori dokument</value>
+  </data>
+  <data name="incorectFilePath" xml:space="preserve">
+    <value>Navedena putanja ne postoji. Navedite ponovo putanju.</value>
+  </data>
+  <data name="employeeVacationRep" xml:space="preserve">
+    <value>Izveštaj o godišnjim odmorima</value>
+  </data>
+  <data name="numberPassTypesRegWork" xml:space="preserve">
+    <value>Broj selektovanih tipova prolazaka ne može biti veći od šest!</value>
+  </data>
+  <data name="lblRoute" xml:space="preserve">
+    <value>Putanja:</value>
+  </data>
+  <data name="gbScanDoc" xml:space="preserve">
+    <value>Skenirani dokument</value>
+  </data>
+  <data name="employeePassesHistoryReports" xml:space="preserve">
+    <value>Istorija izmena</value>
+  </data>
+  <data name="rbSyntetic" xml:space="preserve">
+    <value>Sintetički</value>
+  </data>
+  <data name="gbFilter" xml:space="preserve">
+    <value>Rad sa filterima</value>
+  </data>
+  <data name="SaveFilter" xml:space="preserve">
+    <value>Sačuvaj filter</value>
+  </data>
+  <data name="UpdateFilter" xml:space="preserve">
+    <value>Izmeni filter</value>
+  </data>
+  <data name="newFilter" xml:space="preserve">
+    <value>Novi filter</value>
+  </data>
+  <data name="unableToPreview" xml:space="preserve">
+    <value>Nije moguća živa slika sa selektovane kamere. </value>
+  </data>
+  <data name="canNotSeeReport" xml:space="preserve">
+    <value>Nemate prava da pregledate iveštaj o ulascima i izlascima vozila.</value>
+  </data>
+  <data name="gbTime" xml:space="preserve">
+    <value>Vreme u toku dana</value>
+  </data>
+  <data name="lblEnd" xml:space="preserve">
+    <value>Do:</value>
+  </data>
+  <data name="lblStart" xml:space="preserve">
+    <value>Od:</value>
+  </data>
+  <data name="noDrivers" xml:space="preserve">
+    <value>Nemate pravo da vidite izveštaj za bilo kog vozača.</value>
+  </data>
+  <data name="UNIPROMIOPairsReport" xml:space="preserve">
+    <value>Izveštaj o ulascima i izlascima kamiona</value>
+  </data>
+  <data name="gbOverview" xml:space="preserve">
+    <value>Prikaz</value>
+  </data>
+  <data name="rbNumOfHours" xml:space="preserve">
+    <value>Broj sati</value>
+  </data>
+  <data name="rbPresence" xml:space="preserve">
+    <value>+ (Prisutnost)</value>
+  </data>
+  <data name="hdrEmployeeName" xml:space="preserve">
+    <value>Prezime i ime</value>
+  </data>
+  <data name="hdrEvidAccount" xml:space="preserve">
+    <value>Ev. broj</value>
+  </data>
+  <data name="hdrTimeEnter" xml:space="preserve">
+    <value>Ulaz</value>
+  </data>
+  <data name="hdrTimeExit" xml:space="preserve">
+    <value>Izlaz</value>
+  </data>
+  <data name="ZINPassesReport" xml:space="preserve">
+    <value>Pregled ulaska - izlaska zaposlenih</value>
+  </data>
+  <data name="noEmplPassPrivilege" xml:space="preserve">
+    <value>Nemate privilegije za pregled prolazaka zaposlenih.</value>
+  </data>
+  <data name="noPassesFound" xml:space="preserve">
+    <value>Nisu pronadjeni podaci za selektovane kriterijume</value>
+  </data>
+  <data name="passesGreaterThenAllowed" xml:space="preserve">
+    <value>Pronađeno je previše prolazaka za zadati kriterijum pretrage. Prikazivanje može potrajati nekoliko minuta. Da li želite da nastavite?</value>
+  </data>
+  <data name="extraHoursUsed" xml:space="preserve">
+    <value>Iskorišćeni sati</value>
+  </data>
+  <data name="earnedTime" xml:space="preserve">
+    <value>Zarađeni sati</value>
+  </data>
+  <data name="extraHrsReports" xml:space="preserve">
+    <value>Izveštaj o preraspodeli</value>
+  </data>
+  <data name="lblType" xml:space="preserve">
+    <value>Tip:</value>
+  </data>
+  <data name="overtime" xml:space="preserve">
+    <value>Prekovremeno</value>
+  </data>
+  <data name="rbAvaiableHrs" xml:space="preserve">
+    <value>Raspoloživi sati</value>
+  </data>
+  <data name="rbEarnedHrs" xml:space="preserve">
+    <value>Zarađeni sati</value>
+  </data>
+  <data name="rbUsedHrs" xml:space="preserve">
+    <value>Iskorišćeni sati</value>
+  </data>
+  <data name="regular" xml:space="preserve">
+    <value>Redovan rad</value>
+  </data>
+  <data name="regularAdvanced" xml:space="preserve">
+    <value>Iskorišćeni unapred</value>
+  </data>
+  <data name="rejected" xml:space="preserve">
+    <value>Odbačeni sati</value>
+  </data>
+  <data name="usingReportName" xml:space="preserve">
+    <value>Pregled sati za korišćenje</value>
+  </data>
+  <data name="usingTime" xml:space="preserve">
+    <value>Raspoloživi sati</value>
+  </data>
+  <data name="gbEmplGroup" xml:space="preserve">
+    <value>Grupa zaposlenih</value>
+  </data>
+  <data name="rbCategory" xml:space="preserve">
+    <value>Kategorija:</value>
+  </data>
+  <data name="ExitPermisionsReports" xml:space="preserve">
+    <value>Propusnice</value>
+  </data>
+  <data name="Employees" xml:space="preserve">
+    <value>Zaposleni</value>
+  </data>
+  <data name="VisitorsReports" xml:space="preserve">
+    <value>Posetioci</value>
+  </data>
+  <data name="chbEmplStatusReport" xml:space="preserve">
+    <value>Podaci o zaposlenima</value>
+  </data>
+  <data name="gbPaymentReport" xml:space="preserve">
+    <value>Plate</value>
+  </data>
+  <data name="WorkListsReport" xml:space="preserve">
+    <value>Radne liste</value>
+  </data>
+  <data name="btnSave" xml:space="preserve">
+    <value>Sačuvaj</value>
+  </data>
+  <data name="PassTypesReport" xml:space="preserve">
+    <value>Izveštaj po tipovima prolazaka</value>
+  </data>
+  <data name="ptExtraHours" xml:space="preserve">
+    <value>Zarađeni sati</value>
+  </data>
+  <data name="ptExtraHoursTotal" xml:space="preserve">
+    <value>Zarađeni sati - ukupno</value>
+  </data>
+  <data name="ptHolidays" xml:space="preserve">
+    <value>Državni praznici</value>
+  </data>
+  <data name="ptOvertime" xml:space="preserve">
+    <value>Prekovremeni rad</value>
+  </data>
+  <data name="ptPause" xml:space="preserve">
+    <value>Pauza-a</value>
+  </data>
+  <data name="ptUnexcusedAbsence" xml:space="preserve">
+    <value>Neopravdani izostanci</value>
+  </data>
+  <data name="ptWorkOnHoliday" xml:space="preserve">
+    <value>Rad na praznik</value>
+  </data>
+  <data name="lblYear" xml:space="preserve">
+    <value>Godina:</value>
+  </data>
+  <data name="WholeDayAbsenceAnnualReport" xml:space="preserve">
+    <value>Godišnji izveštaj o celodnevnim odsustvima</value>
+  </data>
+  <data name="lblReportFormat" xml:space="preserve">
+    <value>Format izveštaja:</value>
+  </data>
+  <data name="noReportFormat" xml:space="preserve">
+    <value>Morate izabrati format izveštaja.</value>
+  </data>
+  <data name="paymentReportRetiredEmplError" xml:space="preserve">
+    <value>Došlo je do greške prilikom obrade zaposlenog</value>
+  </data>
+  <data name="retiredEmplError" xml:space="preserve">
+    <value>Proverite da li je zaposleni penzionisan u toku obračunskog perioda.</value>
+  </data>
+  <data name="wu" xml:space="preserve">
+    <value>radna jedinica</value>
+  </data>
+  <data name="chbSelectAll" xml:space="preserve">
+    <value>Selektuj sve</value>
+  </data>
+  <data name="gbPeriod" xml:space="preserve">
+    <value>Period</value>
+  </data>
+  <data name="PresenceReports" xml:space="preserve">
+    <value>Izveštaj o prisutnosti</value>
+  </data>
+  <data name="btnGenerate" xml:space="preserve">
+    <value>Generiši</value>
+  </data>
+  <data name="gbDateInterval" xml:space="preserve">
+    <value>Vremenski interval</value>
+  </data>
+  <data name="gbUnitFilter" xml:space="preserve">
+    <value>Filter po jedinicama</value>
+  </data>
+  <data name="hdrID" xml:space="preserve">
+    <value>ID</value>
+  </data>
+  <data name="invalidDateInterval" xml:space="preserve">
+    <value>Neispravan vremenski interval.</value>
+  </data>
+  <data name="LamesCumulativeReport" xml:space="preserve">
+    <value>Kumulativni izveštaj</value>
+  </data>
+  <data name="hdrOU" xml:space="preserve">
+    <value>Organizaciona jedinica</value>
+  </data>
+  <data name="hdrTotal" xml:space="preserve">
+    <value>UKUPNO</value>
+  </data>
+  <data name="hdrTotalAll" xml:space="preserve">
+    <value>UKUPNO ZA SVE</value>
+  </data>
+  <data name="hdrWU" xml:space="preserve">
+    <value>Radna jedinica</value>
+  </data>
+  <data name="noReportData" xml:space="preserve">
+    <value>Nema podataka za izveštaj.</value>
+  </data>
+  <data name="period" xml:space="preserve">
+    <value>Period</value>
+  </data>
+  <data name="hdrWorkingDays" xml:space="preserve">
+    <value>Dani prisustva</value>
+  </data>
+  <data name="WNMonthlyReport" xml:space="preserve">
+    <value>Mesečni izveštaj</value>
+  </data>
+  <data name="hdrEmplID" xml:space="preserve">
+    <value>ID zaposlenog</value>
+  </data>
+  <data name="CAMonthlyReport" xml:space="preserve">
+    <value>Mesečni izveštaj</value>
+  </data>
+  <data name="meals" xml:space="preserve">
+    <value>Topli obrok</value>
+  </data>
+  <data name="workOnSunday" xml:space="preserve">
+    <value>Rad nedeljom</value>
+  </data>
+  <data name="rbAnalytical" xml:space="preserve">
+    <value>Analitički</value>
+  </data>
+  <data name="rbSummary" xml:space="preserve">
+    <value>Zbirni</value>
+  </data>
+  <data name="allTypes" xml:space="preserve">
+    <value>SVI</value>
+  </data>
+  <data name="chbEmplTypeSum" xml:space="preserve">
+    <value>Sume po tipovima zaposlenih</value>
+  </data>
+  <data name="hdrPaid" xml:space="preserve">
+    <value>Plaćeno</value>
+  </data>
+  <data name="hdrSaturdayWork" xml:space="preserve">
+    <value>Rad subotom</value>
+  </data>
+  <data name="hdrSickLeave" xml:space="preserve">
+    <value>Bolovanje</value>
+  </data>
+  <data name="hdrSundayWork" xml:space="preserve">
+    <value>Rad nedeljom</value>
+  </data>
+  <data name="hdrTotalPlusUnpad" xml:space="preserve">
+    <value>Ukupno + neplaćeno</value>
+  </data>
+  <data name="hdrType" xml:space="preserve">
+    <value>Tip</value>
+  </data>
+  <data name="hdrUnpaid" xml:space="preserve">
+    <value>Neplaćeno</value>
+  </data>
+  <data name="hdrWorkingNorm" xml:space="preserve">
+    <value>Norma</value>
+  </data>
+  <data name="notConfirmedDataFound" xml:space="preserve">
+    <value>Nije moguće kreiranje izveštaja. Pronađeni su nepotvrđeni podaci za zaposlene</value>
+  </data>
+  <data name="rate" xml:space="preserve">
+    <value>PROCENTI</value>
+  </data>
+  <data name="hdrAmount" xml:space="preserve">
+    <value>Varijabla</value>
+  </data>
+  <data name="PMCMonthlyReport" xml:space="preserve">
+    <value>Mesečni izveštaj</value>
+  </data>
+  <data name="chbHierarhicly" xml:space="preserve">
+    <value>Hijerarhijski</value>
+  </data>
+  <data name="PMCAbsenceReports" xml:space="preserve">
+    <value>Izveštaji o odsustvima</value>
+  </data>
+  <data name="PMCOvertimeHours" xml:space="preserve">
+    <value>Sati van radnog vremena</value>
+  </data>
+  <data name="PMCStatisticalReports" xml:space="preserve">
+    <value>Statistički izveštaji</value>
+  </data>
+  <data name="rbAgeAverage" xml:space="preserve">
+    <value>Age average</value>
+  </data>
+  <data name="rbGender" xml:space="preserve">
+    <value>Polna struktura</value>
+  </data>
+  <data name="rbHiredEmployees" xml:space="preserve">
+    <value>Novi zaposleni</value>
+  </data>
+  <data name="rbLeavingEmployees" xml:space="preserve">
+    <value>Odlazeći zaposleni</value>
+  </data>
+  <data name="rbPositionChange" xml:space="preserve">
+    <value>Promene pozicija</value>
+  </data>
+  <data name="hdrAgeAverage" xml:space="preserve">
+    <value>Prosek godina</value>
+  </data>
+  <data name="hdrCategory" xml:space="preserve">
+    <value>Kategorija</value>
+  </data>
+  <data name="hdrFemale" xml:space="preserve">
+    <value>F</value>
+  </data>
+  <data name="hdrMale" xml:space="preserve">
+    <value>M</value>
+  </data>
+  <data name="hdrPosition" xml:space="preserve">
+    <value>Pozicija</value>
+  </data>
+  <data name="gbCategory" xml:space="preserve">
+    <value>Kategorija zaposlenog</value>
+  </data>
+  <data name="hdrSumCategories" xml:space="preserve">
+    <value>Suma po kategorijama</value>
+  </data>
+  <data name="hdrSumPositions" xml:space="preserve">
+    <value>Suma po pozicijama</value>
+  </data>
+  <data name="PMCCumulativeReports" xml:space="preserve">
+    <value>Kumulativni izveštaji</value>
+  </data>
+  <data name="rbOvertime" xml:space="preserve">
+    <value>Prekovremeni sati</value>
+  </data>
+  <data name="sheetCategory" xml:space="preserve">
+    <value>Kategorije</value>
+  </data>
+  <data name="sheetLine" xml:space="preserve">
+    <value>Linije</value>
+  </data>
+  <data name="sheetPosition" xml:space="preserve">
+    <value>Pozicije</value>
+  </data>
+  <data name="PMCPYReport" xml:space="preserve">
+    <value>PY izveštaj</value>
+  </data>
+  <data name="hdrOldPosition" xml:space="preserve">
+    <value>Stara pozicija</value>
+  </data>
+  <data name="generateReportFailed" xml:space="preserve">
+    <value>Nije uspelo generisanje izveštaja.</value>
+  </data>
+  <data name="hdrAnnualLeave" xml:space="preserve">
+    <value>Godišnji odmor</value>
+  </data>
+  <data name="hdrDay" xml:space="preserve">
+    <value>Dan</value>
+  </data>
+  <data name="hdrDelay" xml:space="preserve">
+    <value>Kašnjenje</value>
+  </data>
+  <data name="hdrEmplCategory" xml:space="preserve">
+    <value>Kategorija zaposlenog</value>
+  </data>
+  <data name="hdrFundHrs" xml:space="preserve">
+    <value>Ukupan fond sati</value>
+  </data>
+  <data name="hdrHoliday" xml:space="preserve">
+    <value>Državni praznik</value>
+  </data>
+  <data name="hdrJMBG" xml:space="preserve">
+    <value>JMBG</value>
+  </data>
+  <data name="hdrMeals" xml:space="preserve">
+    <value>Topli obrok</value>
+  </data>
+  <data name="hdrNightWork" xml:space="preserve">
+    <value>Noćni rad</value>
+  </data>
+  <data name="hdrOvertime" xml:space="preserve">
+    <value>Prekovremeni rad</value>
+  </data>
+  <data name="hdrPaidLeave" xml:space="preserve">
+    <value>Plaćeno odsustvo</value>
+  </data>
+  <data name="hdrRegres" xml:space="preserve">
+    <value>Regres</value>
+  </data>
+  <data name="hdrRegularWork" xml:space="preserve">
+    <value>Redovan rad - časovi</value>
+  </data>
+  <data name="hdrSickLeave100" xml:space="preserve">
+    <value>Bolovanje 100%</value>
+  </data>
+  <data name="hdrSickLeave65" xml:space="preserve">
+    <value>Bolovanje 65%</value>
+  </data>
+  <data name="hdrSickLeaveOver30Days" xml:space="preserve">
+    <value>Bolovanje preko 30 dana</value>
+  </data>
+  <data name="hdrUnpaidLeave" xml:space="preserve">
+    <value>Neplaćeno odsustvo</value>
+  </data>
+  <data name="hdrWorkOnHoliday" xml:space="preserve">
+    <value>Rad na državni praznik</value>
+  </data>
+  <data name="rbDelay" xml:space="preserve">
+    <value>Kašnjenja</value>
+  </data>
+  <data name="unconfirmedDataFound" xml:space="preserve">
+    <value>Izveštaj ne može biti generisan dok se svi podaci na potvrde. Izveštaj sa neregularnim podacima nalazi se na desktop-u vašeg računara.</value>
+  </data>
+  <data name="hdrEarlierLeave" xml:space="preserve">
+    <value>Raniji izlazak</value>
+  </data>
+  <data name="GeoxPYReport" xml:space="preserve">
+    <value>Izveštaj za plate</value>
+  </data>
+  <data name="btnRecalculate" xml:space="preserve">
+    <value>Rekalkuliši</value>
+  </data>
+  <data name="CountersUpdateFaild" xml:space="preserve">
+    <value>Nije uspela rekalkulacija brojača.</value>
+  </data>
+  <data name="CountersUpdateSucc" xml:space="preserve">
+    <value>Rekalkulacija brojača je uspešno završena.</value>
+  </data>
+  <data name="enterCalcID" xml:space="preserve">
+    <value>Za rekalkulaciju brojača morate prvo uneti obračun na osnovu kog se vrši rekalkulacija.</value>
+  </data>
+  <data name="tabCounters" xml:space="preserve">
+    <value>Brojači</value>
+  </data>
+  <data name="tabReport" xml:space="preserve">
+    <value>Izveštaj</value>
+  </data>
+  <data name="hdrStimulation" xml:space="preserve">
+    <value>Stimulacija</value>
+  </data>
+  <data name="gbSearchCriteria" xml:space="preserve">
+    <value>Kriterijum pretrage</value>
+  </data>
+  <data name="lblCompany" xml:space="preserve">
+    <value>Kompanija: </value>
+  </data>
+  <data name="lblFrom" xml:space="preserve">
+    <value>Od: </value>
+  </data>
+  <data name="lblReportType" xml:space="preserve">
+    <value>Tip izveštaja:</value>
+  </data>
+  <data name="lblTo" xml:space="preserve">
+    <value>Do: </value>
+  </data>
+  <data name="RedistributionOfWorkingHours" xml:space="preserve">
+    <value>Preraspodela radnog vremena</value>
+  </data>
+  <data name="lblCalcID" xml:space="preserve">
+    <value>Po obračunu broj:</value>
+  </data>
+  <data name="btnGenerateAgency" xml:space="preserve">
+    <value>Generiši izveštaj za agencije</value>
+  </data>
+  <data name="btnGeneratePY" xml:space="preserve">
+    <value>Generiši izveštaj za plate</value>
+  </data>
+  <data name="emplName" xml:space="preserve">
+    <value>Prezime i ime</value>
+  </data>
+  <data name="JMBG" xml:space="preserve">
+    <value>Matični broj</value>
+  </data>
+  <data name="nightHours" xml:space="preserve">
+    <value>noćni rad</value>
+  </data>
+  <data name="PMCAgencyMonthlyReport" xml:space="preserve">
+    <value>Evidencija radnog vremena zaposlenih za mesec</value>
+  </data>
+  <data name="responsiblePerson" xml:space="preserve">
+    <value>odgovorno lice</value>
+  </data>
+  <data name="responsiblePersonSigniture" xml:space="preserve">
+    <value>potpis odgovornog lica</value>
+  </data>
+  <data name="workingHours" xml:space="preserve">
+    <value>časovi rada</value>
+  </data>
+  <data name="wuName" xml:space="preserve">
+    <value>Naziv radne jedinice</value>
+  </data>
+  <data name="year" xml:space="preserve">
+    <value>godine</value>
+  </data>
+  <data name="chbCoverUnpaid" xml:space="preserve">
+    <value>Pokrivanje prekovremenim satima</value>
+  </data>
+  <data name="chbUnpaidMeals" xml:space="preserve">
+    <value>Isplata toplog obroka</value>
+  </data>
+  <data name="gbUnapid" xml:space="preserve">
+    <value>Neplaćeni sati</value>
+  </data>
+  <data name="overtimeHours" xml:space="preserve">
+    <value>prekovremeni sati</value>
+  </data>
+  <data name="regWorkHours" xml:space="preserve">
+    <value>redovan rad</value>
+  </data>
+  <data name="unjustifiedHours" xml:space="preserve">
+    <value>neopravdani sati</value>
+  </data>
+  <data name="generatingDailyReport" xml:space="preserve">
+    <value>Želite li da generišete i dnevni izveštaj?</value>
+  </data>
+  <data name="hdrNotPaid" xml:space="preserve">
+    <value>Neplaćeno</value>
+  </data>
+  <data name="hdrUnjustified" xml:space="preserve">
+    <value>Neopravdano</value>
+  </data>
+  <data name="gbMinimalMealPresence" xml:space="preserve">
+    <value>Minimalno prisustvo za TO</value>
+  </data>
+  <data name="lblWorkingDay" xml:space="preserve">
+    <value>Radni dan:</value>
+  </data>
+  <data name="lbNonWorkingDay" xml:space="preserve">
+    <value>Neradni dan:</value>
+  </data>
+  <data name="moreThen31DaysPeriod" xml:space="preserve">
+    <value>Izabrani period ne sme imati više od 31 dan.</value>
+  </data>
+  <data name="hdrSickLeavePregnancy" xml:space="preserve">
+    <value>Bolovanje trudničko</value>
+  </data>
+  <data name="hdrProductionLine" xml:space="preserve">
+    <value>Proizvodna linija</value>
+  </data>
+  <data name="hdrNoOfHours" xml:space="preserve">
+    <value>Broj sati</value>
+  </data>
+  <data name="hdrGUID" xml:space="preserve">
+    <value>GUID</value>
+  </data>
+  <data name="HyattTimeAndAttendance" xml:space="preserve">
+    <value>Izveštaj za radno vreme</value>
+  </data>
+  <data name="CostCenter" xml:space="preserve">
+    <value>Cost centar</value>
+  </data>
+  <data name="Sector" xml:space="preserve">
+    <value>Sektor</value>
+  </data>
+  <data name="msgForecast" xml:space="preserve">
+    <value>Forecast izvestaj! Izvestaj na osnovu  predvidjanja!</value>
+  </data>
+  <data name="msgHistoryPasses" xml:space="preserve">
+    <value>Izvestaj na osnovu prolazaka!</value>
+  </data>
+  <data name="msgHistoryPassesForecast" xml:space="preserve">
+    <value>Izvestaj na osnovu prolazaka do danasnjeg datuma, a od danasnjeg datuma je predvidjanje!</value>
+  </data>
+  <data name="GotovaObrada" xml:space="preserve">
+    <value>Unos podataka u fajl, gotov.</value>
+  </data>
+  <data name="MozetePogledatiIzvestaj" xml:space="preserve">
+    <value>Izveštaj, generisan, možete pogledati.</value>
+  </data>
+  <data name="NeDiraj" xml:space="preserve">
+    <value>Unos podataka u fajl.</value>
+  </data>
+  <data name="PocetakObradeProlazaka" xml:space="preserve">
+    <value>Obrada prolazaka.</value>
+  </data>
+  <data name="PrikupljanjeProlaska" xml:space="preserve">
+    <value>Prikupljanje prolazaka iz baze.</value>
+  </data>
+  <data name="ProbajteOpet" xml:space="preserve">
+    <value>Nažalost, došlo je do greške.</value>
+  </data>
+  <data name="ProlasciZaForecast" xml:space="preserve">
+    <value>Predvidjanje prolazaka do kraja meseca</value>
+  </data>
+  <data name="ZavrsenoPrikupljanjePodataka" xml:space="preserve">
+    <value>Prkupljanje prolazaka, završeno.</value>
+  </data>
+  <data name="NisiSacuvao" xml:space="preserve">
+    <value>Niste ispravno sačuvali izveštaj, pokušajte ponovo i unesite naziv fajla.</value>
+  </data>
+</root>

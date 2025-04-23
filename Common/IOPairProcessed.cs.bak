@@ -1,0 +1,715 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Text;
+using Util;
+using TransferObjects;
+using DataAccess;
+using System.Data;
+
+namespace Common
+{
+     public  class IOPairProcessed
+    {
+        DAOFactory daoFactory = null;
+		IOPairProcessedDAO edao = null;
+		
+		DebugLog log;
+
+        IOPairProcessedTO pairTO = new IOPairProcessedTO();
+
+        public IOPairProcessedTO IOPairProcessedTO
+        {
+            get { return pairTO; }
+            set { pairTO = value; }
+        }
+        		
+		public IOPairProcessed()
+		{
+			string logFilePath = Constants.logFilePath + NotificationController.GetApplicationName() + "Log.txt";
+			log = new DebugLog(logFilePath);
+
+			daoFactory = DAOFactory.getDAOFactory();
+			edao = daoFactory.getIOPairProcessedDAO(null);
+		}
+        public IOPairProcessed(object dbConnection)
+        {
+            string logFilePath = Constants.logFilePath + NotificationController.GetApplicationName() + "Log.txt";
+            log = new DebugLog(logFilePath);
+
+            daoFactory = DAOFactory.getDAOFactory();
+            edao = daoFactory.getIOPairProcessedDAO(dbConnection);
+        }
+
+        public IOPairProcessed(bool createDAO)
+        {
+            string logFilePath = Constants.logFilePath + NotificationController.GetApplicationName() + "Log.txt";
+            log = new DebugLog(logFilePath);
+
+            if (createDAO)
+            {
+                daoFactory = DAOFactory.getDAOFactory();
+                edao = daoFactory.getIOPairProcessedDAO(null);
+            }
+        }
+
+        public bool DeleteDuplicates()
+        {
+            bool isDeleted = false;
+            try
+            {
+                isDeleted = edao.DeleteDuplicates(DateTime.Now.Month);
+            }
+            catch (Exception ex)
+            {
+                log.writeLog(DateTime.Now + "DeleteDuplicates error: " + ex.Message + "\n");
+            }
+            return isDeleted;
+        }
+
+        public uint Save(bool doCommit)
+        {
+            uint isUpdated = 0;
+
+            try
+            {
+                isUpdated = edao.insert(this.IOPairProcessedTO, doCommit);
+            }
+            catch (Exception ex)
+            {
+                log.writeLog(DateTime.Now + " IOPairProcessed.Save(): " + ex.Message + "\n");
+                throw new Exception(ex.Message);
+            }
+
+            return isUpdated;
+        }
+
+        public bool Update(bool doCommit)
+        {
+            bool isUpdated = false;
+
+            try
+            {
+                isUpdated = edao.update(this.IOPairProcessedTO, doCommit);
+            }
+            catch (Exception ex)
+            {
+                log.writeLog(DateTime.Now + " IOPairProcessed.Update(): " + ex.Message + "\n");
+                throw new Exception(ex.Message);
+            }
+
+            return isUpdated;
+        }
+
+         //natalija08112017
+        public bool UpdateManualCreatedProcessedPairs(IOPairProcessedTO processed, Dictionary<int, WorkTimeIntervalTO> workTimeInterval, Dictionary<int, WorkTimeIntervalTO> workTimeIntervalNextDay, bool is2DayShift, IDbTransaction trans)
+        {
+            bool isUpdated = false;
+
+            try
+            {
+                isUpdated = edao.updateManualCreatedProcessedPairs(processed, workTimeInterval, workTimeIntervalNextDay, is2DayShift, trans);
+            }
+            catch (Exception ex)
+            {
+                log.writeLog(DateTime.Now + " IOPairProcessed.UpdateManualCreatedProcessedPairs(): " + ex.Message + "\n");
+                throw new Exception(ex.Message);
+            }
+
+            return isUpdated;
+        }
+
+        public bool Verify(string recIDs, string verifiedBy, string ptIDs)
+        {
+            bool isUpdated = false;
+
+            try
+            {
+                isUpdated = edao.verify(recIDs, verifiedBy, ptIDs);
+            }
+            catch (Exception ex)
+            {
+                log.writeLog(DateTime.Now + " IOPairProcessed.Verify(): " + ex.Message + "\n");
+                throw new Exception(ex.Message);
+            }
+
+            return isUpdated;
+        }
+                  
+        public bool Verify(string emplIDs, string verifiedBy, DateTime month, string passTypes, bool validateIsVerifiedDay)
+        {
+            bool isUpdated = false;
+
+            try
+            {
+                isUpdated = edao.verify(emplIDs, verifiedBy, month, passTypes, validateIsVerifiedDay);
+            }
+            catch (Exception ex)
+            {
+                log.writeLog(DateTime.Now + " IOPairProcessed.Verify(): " + ex.Message + "\n");
+                throw new Exception(ex.Message);
+            }
+
+            return isUpdated;
+        }
+
+
+        public IOPairProcessedTO Find(uint recID)
+        {
+            try
+            {
+                return edao.find(recID);
+            }
+            catch (Exception ex)
+            {
+                log.writeLog(DateTime.Now + " IOPairProcessed.Find(): " + ex.Message + "\n");
+                throw ex;
+            }
+        }
+
+        public Dictionary<int, List<DateTime>> getDatesForEmplWithNoPairs(DateTime startIntervalTime, DateTime endIntervalTime, Dictionary<int, EmployeeTO> emplDict)
+        {
+            Dictionary<int, List<DateTime>> dict = new Dictionary<int, List<DateTime>>();
+            try
+            {
+                List<DateTime> times = new List<DateTime>();
+                for (DateTime date = startIntervalTime; date <= endIntervalTime; date = date.AddDays(1))
+                {
+                    times.Add(date);
+                }
+                foreach (int emplID in emplDict.Keys)
+                {
+                    List<DateTime> list = new List<DateTime>();
+                    list.AddRange(times);
+                    dict.Add(emplID, list);
+                }
+                edao.getDatesForEmplWithNoPairs(startIntervalTime, endIntervalTime, dict);
+            }
+            catch (Exception ex)
+            {
+                log.writeLog(DateTime.Now + " IOPairProcessed.getPairsForInterval(): " + ex.Message + "\n");
+                throw new Exception(ex.Message);
+            }
+            return dict;
+        }
+
+        public Dictionary<int, Dictionary<DateTime, List<IOPairProcessedTO>>> getPairsForInterval(DateTime startTime, DateTime endTime)
+        {
+            try
+            {
+                return edao.getPairsForInterval(this.IOPairProcessedTO, startTime, endTime);
+            }
+            catch (Exception ex)
+            {
+                log.writeLog(DateTime.Now + " IOPairProcessed.getPairsForInterval(): " + ex.Message + "\n");
+                throw new Exception(ex.Message);
+            }
+        }
+
+        public Dictionary<int, Dictionary<DateTime, List<IOPairProcessedTO>>> getPairsForInterval(DateTime startTime, DateTime endTime, string employeeIDs)
+        {
+            try
+            {
+                return edao.getPairsForInterval(this.IOPairProcessedTO, startTime, endTime,employeeIDs);
+            }
+            catch (Exception ex)
+            {
+                log.writeLog(DateTime.Now + " IOPairProcessed.getPairsForInterval(): " + ex.Message + "\n");
+                throw new Exception(ex.Message);
+            }
+        }
+        //natalija 23.01.2018
+        public Dictionary<int, Dictionary<DateTime, List<IOPairProcessedTO>>> getPairsForIntervalForWU(DateTime startTime, DateTime endTime, string passTypeString, string wuIDs, bool isRetired)
+        {
+            try
+            {
+                return edao.getPairsForIntervalForWU(startTime, endTime, passTypeString, wuIDs, isRetired);
+            }
+            catch (Exception ex)
+            {
+                log.writeLog(DateTime.Now + " IOPairProcessed.getPairsForIntervalForWU(): " + ex.Message + "\n");
+                throw new Exception(ex.Message);
+            }
+
+        }
+
+        public int SearchCollectiveAnnualLeaves(int emplID, int ptID, DateTime fromDate, List<DateTime> exceptDates)
+        {
+            try
+            {
+                return edao.getCollectiveAnnualLeaves(emplID, ptID, fromDate, exceptDates);
+            }
+            catch (Exception ex)
+            {
+                log.writeLog(DateTime.Now + " IOPairProcessed.SearchCollectiveAnnualLeaves(): " + ex.Message + "\n");
+                throw new Exception(ex.Message);
+            }
+        }
+
+        public int SearchEarnedHours(int emplID, int ptID, DateTime fromDate, DateTime exceptDate)
+        {
+            try
+            {
+                return edao.getEarnedHours(emplID, ptID, fromDate, exceptDate);
+            }
+            catch (Exception ex)
+            {
+                log.writeLog(DateTime.Now + " IOPairProcessed.SearchEarnedHours(): " + ex.Message + "\n");
+                throw new Exception(ex.Message);
+            }
+        }
+
+        public int SearchUsedHours(int emplID, int ptID, int ptRounding, DateTime fromDate, DateTime exeptDate)
+        {
+            try
+            {
+                return edao.getUsedHours(emplID, ptID, ptRounding, fromDate, exeptDate);
+            }
+            catch (Exception ex)
+            {
+                log.writeLog(DateTime.Now + " IOPairProcessed.SearchUsedHours(): " + ex.Message + "\n");
+                throw new Exception(ex.Message);
+            }
+        }
+
+        public Dictionary<int, Dictionary<DateTime, List<IOPairProcessedTO>>> SearchPairsToVerifyEmplDaySet(string recIDs)
+        {
+            try
+            {
+                return edao.getPairsToVerifyEmplDaySet(recIDs);
+            }
+            catch (Exception ex)
+            {
+                log.writeLog(DateTime.Now + " IOPairProcessed.SearchPairsToVerifyEmplDaySet(): " + ex.Message + "\n");
+                throw new Exception(ex.Message);
+            }
+        }
+
+        public List<IOPairProcessedTO> Search()
+        {           
+            try
+            {
+                return edao.search(this.IOPairProcessedTO);
+            }
+            catch (Exception ex)
+            {
+                log.writeLog(DateTime.Now + " IOPairProcessed.Search(): " + ex.Message + "\n");
+                throw new Exception(ex.Message);
+            }
+        }
+
+        public int SearchPaidLeaveDays(DateTime from, DateTime to, DateTime date, int emplID, int ptID, int limitCompositeID, int limitOccassionalyID, int limitElementaryID)
+        {
+            try
+            {
+                return edao.getPaidLeaveDays(from, to, date, emplID, ptID, limitCompositeID, limitOccassionalyID, limitElementaryID);
+            }
+            catch (Exception ex)
+            {
+                log.writeLog(DateTime.Now + " IOPairProcessed.SearchPaidLeaveDays(): " + ex.Message + "\n");
+                throw ex;
+            }
+        }
+
+        public int SearchPaidLeaveDaysOutsidePeriod(DateTime from, DateTime to, DateTime periodStart, DateTime periodEnd, int emplID, int ptID, int limitCompositeID, int limitOccassionalyID, int limitElementaryID)
+        {
+            try
+            {
+                return edao.getPaidLeaveDaysOutsidePeriod(from, to, periodStart, periodEnd, emplID, ptID, limitCompositeID, limitOccassionalyID, limitElementaryID);
+            }
+            catch (Exception ex)
+            {
+                log.writeLog(DateTime.Now + " IOPairProcessed.SearchPaidLeaveDaysOutsidePeriod(): " + ex.Message + "\n");
+                throw ex;
+            }
+        }
+
+        public DateTime getMaxDateOfPair(string employeeID, IDbTransaction trans)
+        {
+            try
+            {
+                return edao.getMaxDateOfPair(employeeID, trans);
+            }
+            catch (Exception ex)
+            {
+                log.writeLog(DateTime.Now + " IOPairProcessed.SearchWeekPairs(): " + ex.Message + "\n");
+                throw new Exception(ex.Message);
+            }
+        }
+
+        // includeDate (true - pairs for this date will be taken from db, false - pairs for this date will not be taken from db)
+        public List<IOPairProcessedTO> SearchWeekPairs(int emplID, DateTime date, bool includeDate, string ptIDs, IDbTransaction trans)
+        {
+            try
+            {
+                return edao.getWeekPairs(emplID, date, includeDate, ptIDs, trans);
+            }
+            catch (Exception ex)
+            {
+                log.writeLog(DateTime.Now + " IOPairProcessed.SearchWeekPairs(): " + ex.Message + "\n");
+                throw new Exception(ex.Message);
+            }
+        }
+       
+        public bool getManualCreatedPairsDayAfter(Dictionary<int, List<DateTime>> emplDateList, Dictionary<int, Dictionary<DateTime, List<IOPairProcessedTO>>> manualCreated)
+        {
+            try
+            {
+                return edao.getManualCreatedPairsDayAfter(emplDateList, manualCreated);
+            }
+            catch (Exception ex)
+            {
+                log.writeLog(DateTime.Now + " IOPairProcessed.getManualCreatedPairsDayAfter(): " + ex.Message + "\n");
+                throw new Exception(ex.Message);
+            }
+        }
+
+        public bool getManualCreatedPairsDayAfter(Dictionary<int, List<DateTime>> emplDateList, Dictionary<int, Dictionary<DateTime, List<IOPairProcessedTO>>> manualCreated, IDbTransaction trans)
+        {
+            try
+            {
+                return edao.getManualCreatedPairsDayAfter(emplDateList, manualCreated,trans);
+            }
+            catch (Exception ex)
+            {
+                log.writeLog(DateTime.Now + " IOPairProcessed.getManualCreatedPairsDayAfter(): " + ex.Message + "\n");
+                throw new Exception(ex.Message);
+            }
+        }
+
+
+        public bool getManualCreatedPairsDayBefore(Dictionary<int, List<DateTime>> emplDateList, Dictionary<int, Dictionary<DateTime, List<IOPairProcessedTO>>> manualCreated, IDbTransaction trans)
+        {
+            try
+            {
+                return edao.getManualCreatedPairsDayBefore(emplDateList, manualCreated,trans);
+            }
+            catch (Exception ex)
+            {
+                log.writeLog(DateTime.Now + " IOPairProcessed.getManualCreatedPairsDayBefore(): " + ex.Message + "\n");
+                throw new Exception(ex.Message);
+            }
+        }
+
+        public bool getManualCreatedPairsDayBefore(Dictionary<int, List<DateTime>> emplDateList, Dictionary<int, Dictionary<DateTime, List<IOPairProcessedTO>>> manualCreated)
+        {
+            try
+            {
+                return edao.getManualCreatedPairsDayBefore(emplDateList, manualCreated);
+            }
+            catch (Exception ex)
+            {
+                log.writeLog(DateTime.Now + " IOPairProcessed.getManualCreatedPairsDayBefore(): " + ex.Message + "\n");
+                throw new Exception(ex.Message);
+            }
+        }
+        public Dictionary<int, Dictionary<DateTime, List<IOPairProcessedTO>>> getManualCreatedPairs(Dictionary<int, List<DateTime>> emplDateList, IDbTransaction trans)
+        {
+            try
+            {
+                return edao.getManualCreatedPairs(emplDateList,trans);
+            }
+            catch (Exception ex)
+            {
+                log.writeLog(DateTime.Now + " IOPairProcessed.getManualCreatedPairs(): " + ex.Message + "\n");
+                throw new Exception(ex.Message);
+            }
+        }
+        //natalija08112017
+        public Dictionary<int, Dictionary<DateTime, List<IOPairProcessedTO>>> getManualCreatedPairsWholeDayAbsence(Dictionary<int, List<DateTime>> emplDateList, IDbTransaction trans)
+        {
+            try
+            {
+                return edao.getManualCreatedPairsWholeDayAbsence(emplDateList, trans);
+            }
+            catch (Exception ex)
+            {
+                log.writeLog(DateTime.Now + " IOPairProcessed.getManualCreatedPairsWholeDayAbsence(): " + ex.Message + "\n");
+                throw new Exception(ex.Message);
+            }
+        }
+        public Dictionary<int, Dictionary<DateTime, List<IOPairProcessedTO>>> getManualCreatedPairs(Dictionary<int, List<DateTime>> emplDateList)
+        {
+            try
+            {
+                return edao.getManualCreatedPairs(emplDateList);
+            }
+            catch (Exception ex)
+            {
+                log.writeLog(DateTime.Now + " IOPairProcessed.getManualCreatedPairs(): " + ex.Message + "\n");
+                throw new Exception(ex.Message);
+            }
+        }
+        public List<IOPairProcessedTO> getProcessedPairs(Dictionary<int, List<DateTime>> emplDateList, IDbTransaction trans)
+        {
+            try
+            {
+                return edao.getProcessedPairs(emplDateList,trans);
+            }
+            catch (Exception ex)
+            {
+                log.writeLog(DateTime.Now + " IOPairProcessed.getProcessedPairs(): " + ex.Message + "\n");
+                throw new Exception(ex.Message);
+            }
+        }
+        public List<IOPairProcessedTO> getProcessedPairs(Dictionary<int, List<DateTime>> emplDateList)
+        {
+            try
+            {
+                return edao.getProcessedPairs(emplDateList);
+            }
+            catch (Exception ex)
+            {
+                log.writeLog(DateTime.Now + " IOPairProcessed.getProcessedPairs(): " + ex.Message + "\n");
+                throw new Exception(ex.Message);
+            }
+        }
+
+        public List<IOPairProcessedTO> SearchAllPairsForEmpl(string employeeIDString, List<DateTime> datesList, string ptIDs)
+        {
+            try
+            {
+                return edao.getIOPairsAllForEmpl(employeeIDString, datesList, ptIDs);
+            }
+            catch (Exception ex)
+            {
+                log.writeLog(DateTime.Now + " IOPairProcessed.SearchAllPairsForEmpl(): " + ex.Message + "\n");
+                throw ex;
+            }
+        }
+
+        public List<IOPairProcessedTO> SearchAllPairsForEmpl(string employeeIDString, DateTime from, DateTime to, string ptIDs)
+        {
+            try
+            {
+                return edao.getIOPairsAllForEmpl(employeeIDString, from, to, ptIDs);
+            }
+            catch (Exception ex)
+            {
+                log.writeLog(DateTime.Now + " IOPairProcessed.SearchAllPairsForEmpl(): " + ex.Message + "\n");
+                throw ex;
+            }
+        }
+         // 24.05.2019. BOJAN
+        public List<IOPairProcessedTO> GetIOPairsWithManualCreatedByEmployee(string employeeIDString, DateTime from, DateTime to) {
+            try {
+                return edao.getIOPairsWithManualCreatedByEmployee(employeeIDString, from, to);
+            }
+            catch (Exception ex) {
+                log.writeLog(DateTime.Now + " IOPairProcessed.SearchAllPairsForEmpl(): " + ex.Message + "\n");
+                throw ex;
+            }
+        }
+         
+        //public List<IOPairProcessedTO> SearchPairsToVerifyForEmpl(string employeeIDString, List<DateTime> datesList, string ptIDs)
+        //{
+        //    try
+        //    {
+        //        return edao.getIOPairsToVerifyForEmpl(employeeIDString, datesList, ptIDs);
+        //    }
+        //    catch (Exception ex)
+        //    {
+        //        log.writeLog(DateTime.Now + " IOPairProcessed.SearchPairsToVerifyForEmpl(): " + ex.Message + "\n");
+        //        throw ex;
+        //    }
+        //}
+
+        public bool DeleteProcessedPairs(Dictionary<int, List<DateTime>> emplDateList, Dictionary<int, List<DateTime>> emplDateListDayAfter, Dictionary<int, List<DateTime>> emplDateListDayBefore, bool doCommit)
+        {
+            bool isDeleted = false;
+
+            try
+            {
+                isDeleted = edao.delete(emplDateList, emplDateListDayAfter, emplDateListDayBefore,doCommit);
+            }
+            catch (Exception ex)
+            {
+                log.writeLog(DateTime.Now + " IOPairProcessed.DeleteProcessedPairs(): " + ex.Message + "\n");
+                throw new Exception(ex.Message);
+            }
+
+            return isDeleted;
+        }
+        public bool DeleteProcessedPairs(Dictionary<int, List<DateTime>> emplDateList, Dictionary<int, List<DateTime>> emplDateListDayAfter, Dictionary<int, List<DateTime>> emplDateListDayBefore)
+        {
+           bool isDeleted = false;
+
+            try
+            {
+                isDeleted = edao.delete(emplDateList,emplDateListDayAfter,emplDateListDayBefore);
+            }
+            catch (Exception ex)
+            {
+                log.writeLog(DateTime.Now + " IOPairProcessed.DeleteProcessedPairs(): " + ex.Message + "\n");
+                throw new Exception(ex.Message);
+            }
+
+            return isDeleted;
+        }
+        public bool DeleteProcessedPairs(Dictionary<int, List<DateTime>> emplDateList)
+        {
+            bool isDeleted = false;
+
+            try
+            {
+                isDeleted = edao.delete(emplDateList);
+            }
+            catch (Exception ex)
+            {
+                log.writeLog(DateTime.Now + " IOPairProcessed.DeleteProcessedPairs(): " + ex.Message + "\n");
+                throw new Exception(ex.Message);
+            }
+
+            return isDeleted;
+        }
+
+        public bool Delete(uint recID)
+        {
+            bool isDeleted = false;
+
+            try
+            {
+                isDeleted = edao.delete(recID);
+            }
+            catch (Exception ex)
+            {
+                log.writeLog(DateTime.Now + " IOPairProcessed.Delete(): " + ex.Message + "\n");
+                throw new Exception(ex.Message);
+            }
+
+            return isDeleted;
+        }
+        public bool DeleteUjustified(Dictionary<int, List<DateTime>> emplDict, bool doCommit)
+        {
+            try
+            {
+                return edao.DeleteUjustified(emplDict, doCommit);
+            }
+            catch (Exception ex)
+            {
+                log.writeLog(DateTime.Now + " IOPairProcessed.Delete(): " + ex.Message + "\n");
+                throw new Exception(ex.Message);
+            }
+        }
+
+        public bool Delete(int emplID, DateTime date, bool doCommit)
+        {
+            try
+            {
+                return edao.delete(emplID, date, doCommit);
+            }
+            catch (Exception ex)
+            {
+                log.writeLog(DateTime.Now + " IOPairProcessed.Delete(): " + ex.Message + "\n");
+                throw new Exception(ex.Message);
+            }
+        }
+
+        public bool Delete(string recIDs, bool doCommit)
+        {
+            try
+            {
+                return edao.delete(recIDs, doCommit);
+            }
+            catch (Exception ex)
+            {
+                log.writeLog(DateTime.Now + " IOPairProcessed.Delete(): " + ex.Message + "\n");
+                throw new Exception(ex.Message);
+            }
+        }
+
+        public bool BeginTransaction()
+        {
+            bool isStarted = false;
+
+            try
+            {
+                isStarted = edao.beginTransaction();
+            }
+            catch (Exception ex)
+            {
+                log.writeLog(DateTime.Now + " IOPairProcessed.BeginTransaction(): " + ex.Message + "\n");
+                throw new Exception(ex.Message);
+            }
+
+            return isStarted;
+        }
+
+        public void CommitTransaction()
+        {
+            try
+            {
+                edao.commitTransaction();
+            }
+            catch (Exception ex)
+            {
+                log.writeLog(DateTime.Now + " IOPairProcessed.CommitTransaction(): " + ex.Message + "\n");
+                throw new Exception(ex.Message);
+            }
+        }
+
+        public void RollbackTransaction()
+        {
+            try
+            {
+                edao.rollbackTransaction();
+            }
+            catch (Exception ex)
+            {
+                log.writeLog(DateTime.Now + " IOPairProcessed.CommitTransaction(): " + ex.Message + "\n");
+                throw new Exception(ex.Message);
+            }
+        }
+
+        public IDbTransaction GetTransaction()
+        {
+            try
+            {
+                return edao.getTransaction();
+            }
+            catch (Exception ex)
+            {
+                log.writeLog(DateTime.Now + " IOPairProcessed.GetTransaction(): " + ex.Message + "\n");
+                throw new Exception(ex.Message);
+            }
+        }
+
+        public void SetTransaction(IDbTransaction trans)
+        {
+            try
+            {
+                edao.setTransaction(trans);
+            }
+            catch (Exception ex)
+            {
+                log.writeLog(DateTime.Now + " IOPairProcessed.SetTransaction(): " + ex.Message + "\n");
+                throw new Exception(ex.Message);
+            }
+        }
+
+        public List<IOPairProcessedTO> SearchForMonthlyTypesOfPasses(DateTime from, DateTime to)
+        {
+            try
+            {
+                return edao.getProcessedPairsTypesForMonthlyReports(from, to);
+            }
+            catch (Exception ex)
+            {
+                log.writeLog(DateTime.Now + " IOPairProcessed.getProcessedPairsForMonthlyReports(): " + ex.Message + "\n");
+                throw new Exception(ex.Message);
+            }
+        }
+
+        public List<IOPairProcessedTO> ProlasciPoTipuProlaska(DateTime from, DateTime to, string tipProlaska)
+        {
+            try
+            {
+                return edao.getProcessedPairsByPassType(from, to, tipProlaska);
+            }
+            catch (Exception ex)
+            {
+                log.writeLog(DateTime.Now + " IOPairProcessed.ProlasciPoTipuProlaska(): " + ex.Message + "\n");
+                throw new Exception(ex.Message);
+            }
+        }
+    }
+}

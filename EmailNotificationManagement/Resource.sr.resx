@@ -1,0 +1,361 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="anomaly" xml:space="preserve">
+    <value>Kategorija anomalije</value>
+  </data>
+  <data name="dataIntervention" xml:space="preserve">
+    <value>Postoje podaci koji zahtevaju intervenciju:</value>
+  </data>
+  <data name="date" xml:space="preserve">
+    <value>Datum</value>
+  </data>
+  <data name="Employee" xml:space="preserve">
+    <value>Zaposleni</value>
+  </data>
+  <data name="end" xml:space="preserve">
+    <value>Završno vreme</value>
+  </data>
+  <data name="notconfirmed" xml:space="preserve">
+    <value>Nepotvrđeni podaci</value>
+  </data>
+  <data name="notverified" xml:space="preserve">
+    <value>Neverifikovani podaci</value>
+  </data>
+  <data name="overtime" xml:space="preserve">
+    <value>Prekovremeni sati za pravdanje</value>
+  </data>
+  <data name="pleaseDoNot" xml:space="preserve">
+    <value>MOLIMO VAS DA NE ODGOVARATE NA OVU PORUKU</value>
+  </data>
+  <data name="start" xml:space="preserve">
+    <value>Početno vreme</value>
+  </data>
+  <data name="title" xml:space="preserve">
+    <value>SPISAK PRISUTNIH RADNIKA</value>
+  </data>
+  <data name="unjustified" xml:space="preserve">
+    <value>Neopravdani izostanci</value>
+  </data>
+  <data name="wType" xml:space="preserve">
+    <value>Tip plaćanja</value>
+  </data>
+  <data name="lblMessage1" xml:space="preserve">
+    <value>OVO JE PORUKA KOJOM VAS SISTEM OBAVEŠTAVA O RADNICIMA KOJI SU TRENUTNO PRISUTNI.</value>
+  </data>
+  <data name="lblMessage2" xml:space="preserve">
+    <value>PORUKA ĆE STIZATI 4 PUTA DNEVNO.</value>
+  </data>
+  <data name="emailSupport" xml:space="preserve">
+    <value>Email podrška</value>
+  </data>
+  <data name="emailHR" xml:space="preserve">
+    <value>hr-services-serbia@fiatservices.com.</value>
+  </data>
+  <data name="payslipBody" xml:space="preserve">
+    <value>Obaveštavamo vas da je obračunski list za </value>
+  </data>
+  <data name="payslipBody1" xml:space="preserve">
+    <value>dostupan na TM sistemu (kartica </value>
+  </data>
+  <data name="payslipBody2" xml:space="preserve">
+    <value>u WC SELFSERVICE roli).</value>
+  </data>
+  <data name="payslipBody3" xml:space="preserve">
+    <value>Ukoliko imate bilo kakvih problema prilikom pregleda ili preuzimanja, molimo Vas da kontaktirate HRSSC putem emaila </value>
+  </data>
+  <data name="payslipTab" xml:space="preserve">
+    <value>Obračunski listovi </value>
+  </data>
+  <data name="titlePayslips" xml:space="preserve">
+    <value>ERV -  obaveštenje</value>
+  </data>
+  <data name="couponAppointment" xml:space="preserve">
+    <value>Zakazivanje medicinskog pregleda</value>
+  </data>
+  <data name="couponPrevention" xml:space="preserve">
+    <value>Prevencija profesionalnih bolesti</value>
+  </data>
+  <data name="hdrCompany" xml:space="preserve">
+    <value>Kompanija</value>
+  </data>
+  <data name="hdrEmployee" xml:space="preserve">
+    <value>Zaposleni:          </value>
+  </data>
+  <data name="hdrEmplRisk" xml:space="preserve">
+    <value>Rizik:              </value>
+  </data>
+  <data name="hdrEmplType" xml:space="preserve">
+    <value>Tip:                 </value>
+  </data>
+  <data name="hdrID" xml:space="preserve">
+    <value>ID:                   </value>
+  </data>
+  <data name="hdrInterval" xml:space="preserve">
+    <value>Interval:           </value>
+  </data>
+  <data name="hdrShift" xml:space="preserve">
+    <value>Smena:              </value>
+  </data>
+  <data name="hdrStringone" xml:space="preserve">
+    <value>Stringone:          </value>
+  </data>
+  <data name="hdrVisitID" xml:space="preserve">
+    <value>ID posete:          </value>
+  </data>
+  <data name="visitMonth" xml:space="preserve">
+    <value>Mesec posete: </value>
+  </data>
+  <data name="ambulance" xml:space="preserve">
+    <value>, ambulanta </value>
+  </data>
+  <data name="couponDoctor" xml:space="preserve">
+    <value>Nadležni lekar </value>
+  </data>
+  <data name="couponEmployeeBeen" xml:space="preserve">
+    <value>Zaposleni je pregledan u ambulanti ____________________ u vreme _____________________.</value>
+  </data>
+  <data name="couponResponsible" xml:space="preserve">
+    <value>Nadređeni (Prezime i ime / Kompanija / Telefon)</value>
+  </data>
+  <data name="couponSuccVisit" xml:space="preserve">
+    <value>Uspešna poseta</value>
+  </data>
+  <data name="visitAppointmentDate" xml:space="preserve">
+    <value>Zakazan je medicinski pregled dana </value>
+  </data>
+  <data name="visitAppointmentTime" xml:space="preserve">
+    <value>u vreme </value>
+  </data>
+  <data name="changedCoupon1" xml:space="preserve">
+    <value>Obaveštavamo Vas da je došlo do promena u vezi sa ranije zakazanim medicinskim pregledom (ID:</value>
+  </data>
+  <data name="changedCoupon2" xml:space="preserve">
+    <value> u </value>
+  </data>
+  <data name="changedCoupon3" xml:space="preserve">
+    <value>Molimo Vas da pogledate detalje u priloženom kuponu.</value>
+  </data>
+  <data name="changedCoupon4" xml:space="preserve">
+    <value>Ako imate bilo kakav problem sa pregledom ili preuzimanjem kupona, molimo Vas da kontaktirate službu HRSSC na hr-services-serbia@fiatservices.com.</value>
+  </data>
+  <data name="changedCoupon5" xml:space="preserve">
+    <value />
+  </data>
+  <data name="changedCouponBC1" xml:space="preserve">
+    <value>Obaveštavamo Vas da je za neke od zaposlenih za koje ste odgovorni došlo do </value>
+  </data>
+  <data name="changedCouponBC2" xml:space="preserve">
+    <value />
+  </data>
+  <data name="changedCouponBC3" xml:space="preserve">
+    <value> promena</value>
+  </data>
+  <data name="changedCouponBC4" xml:space="preserve">
+    <value> u vezi sa ranije zakazanim medicinskim pregledom:</value>
+  </data>
+  <data name="changedCouponSerb1" xml:space="preserve">
+    <value>Obaveštavamo Vas da je došlo do</value>
+  </data>
+  <data name="changedCouponSerb2" xml:space="preserve">
+    <value> promena </value>
+  </data>
+  <data name="changedCouponSerb3" xml:space="preserve">
+    <value>u vezi sa ranije zakazanim medicinskim pregledom (ID: </value>
+  </data>
+  <data name="deletedCoupon1" xml:space="preserve">
+    <value>Obaveštavamo Vas da je ranije zakazan medicinski pregled (ID: </value>
+  </data>
+  <data name="deletedCoupon2" xml:space="preserve">
+    <value>) </value>
+  </data>
+  <data name="deletedCoupon3" xml:space="preserve">
+    <value> otkazan. </value>
+  </data>
+  <data name="deletedCouponBC1" xml:space="preserve">
+    <value>Obaveštavamo Vas da je za neke od zaposlenih za koje ste odgovorni doslo do </value>
+  </data>
+  <data name="deletedCouponBC2" xml:space="preserve">
+    <value> </value>
+  </data>
+  <data name="deletedCouponBC3" xml:space="preserve">
+    <value> otkazivanja </value>
+  </data>
+  <data name="deletedCouponBC4" xml:space="preserve">
+    <value>ranije zakazanog medicinskog pregleda:</value>
+  </data>
+  <data name="newCouponBC1" xml:space="preserve">
+    <value>Obaveštavamo Vas da neki od zaposlenih za koje ste odgovorni imaju zakazan medicinski pregled:</value>
+  </data>
+  <data name="newCouponBC2" xml:space="preserve">
+    <value>Molimo Vas da pogledate detalje u aplikaciji.</value>
+  </data>
+  <data name="newCouponBC3" xml:space="preserve">
+    <value>Ako imate neka pitanja, molimo Vas da kontaktirate službu HRSSC na hr-services-serbia@fiatservices.com.</value>
+  </data>
+  <data name="newCouponMedical" xml:space="preserve">
+    <value>Obaveštavamo Vas da imate zakazan medicinski pregled. 
+</value>
+  </data>
+  <data name="newCouponMedical1" xml:space="preserve">
+    <value>Molimo Vas da pogledate detalje u priloženom kuponu.</value>
+  </data>
+  <data name="newCouponMedical2" xml:space="preserve">
+    <value>Ako imate bilo kakav problem sa pregledom ili preuzimanjem kupona, molimo Vas da kontaktirate službu HRSSC na hr-services-serbia@fiatservices.com.</value>
+  </data>
+  <data name="titleMedical" xml:space="preserve">
+    <value>Medicinski pregled - obaveštenje</value>
+  </data>
+  <data name="confirmed" xml:space="preserve">
+    <value>Potvrđeni podaci</value>
+  </data>
+  <data name="EmployeeID" xml:space="preserve">
+    <value>ID radnika</value>
+  </data>
+  <data name="passtype" xml:space="preserve">
+    <value>Tip prolaska</value>
+  </data>
+  <data name="Counter" xml:space="preserve">
+    <value>Brojač</value>
+  </data>
+  <data name="Division" xml:space="preserve">
+    <value>Divizija</value>
+  </data>
+  <data name="lblMessage3" xml:space="preserve">
+    <value>OVO JE PORUKA KOJOM VAS SISTEM OBAVEŠTAVA O RADNICIMA I NJIHOVIM RUČNO PREPRAVLJENIH PAROVA.</value>
+  </data>
+  <data name="lblMessage4" xml:space="preserve">
+    <value>PORUKA ĆE STIZATI 1 DNEVNO.</value>
+  </data>
+  <data name="Location" xml:space="preserve">
+    <value>Lokacija</value>
+  </data>
+  <data name="PassTypeDesc" xml:space="preserve">
+    <value>Tip prolaska</value>
+  </data>
+  <data name="PassTypePaymentCode" xml:space="preserve">
+    <value>Šifra plaćanja</value>
+  </data>
+  <data name="Supervisor" xml:space="preserve">
+    <value>Supervisor</value>
+  </data>
+  <data name="title2" xml:space="preserve">
+    <value>SPISAK RADNIKA I BROJ RUČNO PREPRAVLJENIH PAROVA</value>
+  </data>
+</root>

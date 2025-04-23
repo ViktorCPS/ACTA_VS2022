@@ -1,0 +1,5296 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Text;
+using System.Data;
+using System.Data.SqlClient;
+using TransferObjects;
+using System.Globalization;
+using Util;
+
+namespace DataAccess
+{
+    public class MSSQLIOPairProcessedDAO : IOPairProcessedDAO
+    {
+        SqlConnection conn = null;
+        SqlTransaction _sqlTrans = null;
+        protected string dateTimeformat = "";
+
+        public SqlTransaction SqlTrans
+        {
+            get { return _sqlTrans; }
+            set { _sqlTrans = value; }
+        }
+        public MSSQLIOPairProcessedDAO()
+        {
+            conn = MSSQLDAOFactory.getConnection();
+            DAOController.GetInstance();
+            DateTimeFormatInfo dateTimeFormat = new CultureInfo("en-US", true).DateTimeFormat;
+            dateTimeformat = dateTimeFormat.SortableDateTimePattern;
+        }
+
+        public MSSQLIOPairProcessedDAO(SqlConnection sqlConnection)
+        {
+            conn = sqlConnection;
+            DAOController.GetInstance();
+            DateTimeFormatInfo dateTimeFormat = new CultureInfo("en-US", true).DateTimeFormat;
+            dateTimeformat = dateTimeFormat.SortableDateTimePattern;
+        }
+
+        public bool DeleteDuplicates(int month)
+        {
+            bool isDeleted = false;
+
+            SqlTransaction sqlTrans = null;
+
+            sqlTrans = conn.BeginTransaction(IsolationLevel.RepeatableRead, "DELETE");
+            try
+            {
+                List<int> IDarray = new List<int>();
+                StringBuilder sbSelectEmplID = new StringBuilder();
+                sbSelectEmplID.Append("SELECT employee_id from actamgr.employees");
+                SqlCommand cmdSelID = new SqlCommand(sbSelectEmplID.ToString(), conn, sqlTrans);
+                cmdSelID.CommandTimeout = Constants.commandTimeout;
+                SqlDataAdapter sqlDataAdapterSelID = new SqlDataAdapter(cmdSelID);
+                DataSet dataSetSelID = new DataSet();
+                sqlDataAdapterSelID.Fill(dataSetSelID, "EmplId");
+                DataTable tableSelEmplID = dataSetSelID.Tables["EmplId"];
+                foreach (DataRow row in tableSelEmplID.Rows)
+                {
+                    IDarray.Add(int.Parse(row["employee_id"].ToString()));
+                }
+                int year = DateTime.Now.Year;
+                for (int i = 1; i <= DateTime.Now.Day; i++)
+                {
+                    foreach (int ID in IDarray)
+                    {
+                        StringBuilder sbSelect = new StringBuilder();
+                        sbSelect.Append("SELECT rec_id,io_pair_date,employee_id,pass_type_id,start_time,end_time,manual_created FROM actamgr.io_pairs_processed WHERE io_pair_date='" + year + "-" + month + "-" + i + "' and employee_id="+ID);
+                        SqlCommand cmdSel = new SqlCommand(sbSelect.ToString(), conn, sqlTrans);
+                        cmdSel.CommandTimeout = Constants.commandTimeout;
+                        SqlDataAdapter sqlDataAdapterSel = new SqlDataAdapter(cmdSel);
+                        DataSet dataSetSel = new DataSet();
+                        sqlDataAdapterSel.Fill(dataSetSel, "IOPairsId");
+                        DataTable tableSel = dataSetSel.Tables["IOPairsId"];
+                        if (tableSel.Rows.Count > 1)
+                        {
+                            foreach (DataRow row in tableSel.Rows)
+                            {
+                                DateTime start_time =  DateTime.Parse(row["start_time"].ToString());
+                                DateTime end_time = DateTime.Parse(row["end_time"].ToString());
+                                if (row["pass_type_id"].ToString() == "-100" && ((end_time-start_time)==TimeSpan.FromMinutes(119) || (end_time-start_time==TimeSpan.FromHours(8)) || (end_time-start_time==TimeSpan.FromHours(6))) && row["manual_created"].ToString()=="0") 
+                                {
+                                    foreach (DataRow item in tableSel.Rows)
+                                    {
+                                        if (item["rec_id"].ToString() != row["rec_id"].ToString() && (start_time.ToString() == item["start_time"].ToString() || end_time.ToString() == item["end_time"].ToString()))
+                                        {
+                                            StringBuilder sbDelete = new StringBuilder();
+                                            sbDelete.Append("DELETE FROM actamgr.io_pairs_processed WHERE rec_id=" + row["rec_id"].ToString());
+                                            SqlCommand cmdDel = new SqlCommand(sbDelete.ToString(), conn, sqlTrans);
+                                            cmdDel.CommandTimeout = Constants.commandTimeout;
+                                            int numDel=cmdDel.ExecuteNonQuery();
+                                            if (numDel != 0)
+                                            {
+                                                isDeleted = true;
+                                                break;
+                                            }
+                                        }
+                                    }
+                                    if (isDeleted)
+                                    {
+                                        isDeleted = false;
+                                        break;
+                                    }
+                                } 
+                            }
+                        }
+
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+
+            }
+
+            return isDeleted;
+        }
+
+        public uint insert(IOPairProcessedTO pairTO, bool doCommit)
+        {
+            SqlTransaction sqlTrans = null;
+
+            if (doCommit)
+            {
+                sqlTrans = conn.BeginTransaction(IsolationLevel.RepeatableRead, "INSERT");
+            }
+            else
+            {
+                sqlTrans = this.SqlTrans;
+            }
+
+            uint recID = 0;
+
+            try
+            {
+                //string endTimeStr = pairTO.EndTime.ToString("yyyy-MM-dd HH:mm:ss");
+                //string startTimeStr = pairTO.StartTime.ToString("yyyy-MM-dd HH:mm:ss");
+                bool ins = false;
+                //StringBuilder sbSelect = new StringBuilder();
+                //sbSelect.Append("SELECT io_pair_date,start_time,pass_type_id,end_time FROM actamgr.io_pairs_processed WHERE io_pair_date='"+pairTO.IOPairDate.ToString("yyyy-MM-dd HH:mm:ss")+"' and employee_id="+pairTO.EmployeeID);
+                //SqlCommand cmdSel = new SqlCommand(sbSelect.ToString(), conn, sqlTrans);
+                //cmdSel.CommandTimeout = Constants.commandTimeout;
+                //SqlDataAdapter sqlDataAdapterSel = new SqlDataAdapter(cmdSel);
+                //DataSet dataSetSel = new DataSet();
+                //sqlDataAdapterSel.Fill(dataSetSel, "IOPairsId");
+                //DataTable tableSel = dataSetSel.Tables["IOPairsId"];
+                //if (/*pairTO.EmployeeID==4000360 && */pairTO.PassTypeID == -100 && ((endTimeStr.Contains("23:59:00") && startTimeStr.Contains("22:00:00")) || (endTimeStr.Contains("06:00:00") && startTimeStr.Contains("00:00:00")) || (pairTO.EndTime-pairTO.StartTime)==TimeSpan.FromHours(8)))
+                //{
+                //    foreach (DataRow row in tableSel.Rows)
+                //    {
+                //        string start_time = row["start_time"].ToString();
+                //        if (pairTO.StartTime.ToString("MM/dd/yyyy HH:mm:ss") == start_time)
+                //        {
+                //            ins = true;
+                //            sqlTrans.Commit();
+                //            break;
+                //        }
+                //    }
+                //}
+                if (!ins)
+                {
+                    StringBuilder sbInsert = new StringBuilder();
+                    sbInsert.Append("INSERT INTO io_pairs_processed ");
+                    sbInsert.Append("(io_pair_id, io_pair_date, employee_id, location_id, is_wrk_hrs_counter, pass_type_id, start_time, end_time, manual_created, confirmation_flag,confirmed_by, confirmation_time, verification_flag, verified_by, verification_time,alert,description, created_by, created_time) ");
+                    sbInsert.Append("VALUES (");
+
+                    if (pairTO.IOPairID != -1)
+                    {
+                        sbInsert.Append(pairTO.IOPairID.ToString() + ", ");
+                    }
+                    else
+                    {
+                        sbInsert.Append("NULL, ");
+                    }
+
+                    sbInsert.Append("'" + pairTO.IOPairDate.ToString(dateTimeformat) + "', ");
+
+                    if (pairTO.EmployeeID != -1)
+                    {
+                        sbInsert.Append(pairTO.EmployeeID.ToString() + ", ");
+                    }
+                    else
+                    {
+                        sbInsert.Append("NULL, ");
+                    }
+                    if (pairTO.LocationID != -1)
+                    {
+                        sbInsert.Append(pairTO.LocationID.ToString() + ", ");
+                    }
+                    else
+                    {
+                        sbInsert.Append("NULL, ");
+                    }
+
+                    if (pairTO.IsWrkHrsCounter != -1)
+                    {
+                        sbInsert.Append(pairTO.IsWrkHrsCounter.ToString() + ", ");
+                    }
+                    else
+                    {
+                        sbInsert.Append("NULL, ");
+                    }
+
+                    if (pairTO.PassTypeID != -1)
+                    {
+                        sbInsert.Append(pairTO.PassTypeID.ToString() + ", ");
+                    }
+                    else
+                    {
+                        sbInsert.Append("NULL, ");
+                    }
+                    if (pairTO.StartTime != new DateTime())
+                    {
+                        sbInsert.Append("'" + pairTO.StartTime.ToString(dateTimeformat) + "', ");
+                    }
+                    else
+                    {
+                        sbInsert.Append("NULL, ");
+                    }
+                    if (pairTO.EndTime != new DateTime())
+                    {
+                        sbInsert.Append("'" + pairTO.EndTime.ToString(dateTimeformat) + "', ");
+                    }
+                    else
+                    {
+                        sbInsert.Append("NULL, ");
+                    }
+                    if (pairTO.ManualCreated != -1)
+                    {
+                        sbInsert.Append(pairTO.ManualCreated.ToString() + ", ");
+                    }
+                    else
+                    {
+                        sbInsert.Append("NULL, ");
+                    }
+                    if (pairTO.ConfirmationFlag != -1)
+                    {
+                        sbInsert.Append(pairTO.ConfirmationFlag.ToString() + ", ");
+                    }
+                    else
+                    {
+                        sbInsert.Append("NULL, ");
+                    }
+                    if (pairTO.ConfirmedBy.Trim() != "")
+                    {
+                        sbInsert.Append("N'" + pairTO.ConfirmedBy.ToString().Trim() + "', ");
+                    }
+                    else
+                    {
+                        sbInsert.Append("NULL, ");
+                    }
+                    if (pairTO.ConfirmationTime != new DateTime())
+                    {
+                        sbInsert.Append("'" + pairTO.ConfirmationTime.ToString(dateTimeformat) + "', ");
+                    }
+                    else
+                    {
+                        sbInsert.Append("NULL, ");
+                    }
+                    if (pairTO.VerificationFlag != -1)
+                    {
+                        sbInsert.Append(pairTO.VerificationFlag.ToString() + ", ");
+                    }
+                    else
+                    {
+                        sbInsert.Append("NULL, ");
+                    }
+                    if (pairTO.VerifiedBy.Trim() != "")
+                    {
+                        sbInsert.Append("N'" + pairTO.VerifiedBy.ToString().Trim() + "', ");
+                    }
+                    else
+                    {
+                        sbInsert.Append("NULL, ");
+                    }
+                    if (pairTO.VerifiedTime != new DateTime())
+                    {
+                        sbInsert.Append("'" + pairTO.VerifiedTime.ToString(dateTimeformat) + "', ");
+                    }
+                    else
+                    {
+                        sbInsert.Append("NULL, ");
+                    }
+                    if (!pairTO.Alert.Trim().Equals(""))
+                    {
+                        sbInsert.Append("'" + pairTO.Alert.Trim() + "', ");
+                    }
+                    else
+                    {
+                        sbInsert.Append("NULL, ");
+                    }
+                    if (!pairTO.Desc.Trim().Equals(""))
+                    {
+                        sbInsert.Append("N'" + pairTO.Desc.Trim().Replace("'", "").Replace("%", "").Replace("\r\n", "").Replace("\t", "").Replace("\"", "") + "', ");
+                    }
+                    else
+                    {
+                        sbInsert.Append("NULL, ");
+                    }
+                    if (!pairTO.CreatedBy.Trim().Equals(""))
+                    {
+                        sbInsert.Append("N'" + pairTO.CreatedBy.Trim() + "', ");
+                    }
+                    else
+                    {
+                        sbInsert.Append("N'" + DAOController.GetLogInUser().Trim() + "', ");
+                    }
+                    if (!pairTO.CreatedTime.Equals(new DateTime()))
+                    {
+                        sbInsert.Append("'" + pairTO.CreatedTime.ToString(dateTimeformat) + "') ");
+                    }
+                    else
+                    {
+                        sbInsert.Append("GETDATE()) ");
+                    }
+                    sbInsert.Append("SELECT @@Identity AS rec_id, @@Error as error ");
+                    sbInsert.Append("SET NOCOUNT OFF ");
+                    SqlCommand cmd = new SqlCommand(sbInsert.ToString(), conn, sqlTrans);
+                    cmd.CommandTimeout = Constants.commandTimeout;
+                    SqlDataAdapter sqlDataAdapter = new SqlDataAdapter(cmd);
+                    DataSet dataSet = new DataSet();
+                    sqlDataAdapter.Fill(dataSet, "IOPairsId");
+                    DataTable table = dataSet.Tables["IOPairsId"];
+
+                    int error = int.Parse(((DataRow)table.Rows[0])["error"].ToString());
+                    if (error == 0) //OK
+                    {
+                        recID = uint.Parse(((DataRow)table.Rows[0])["rec_id"].ToString());
+
+                        if (doCommit)
+                        {
+                            sqlTrans.Commit();
+                        }
+                    }
+                    else
+                    {
+                        if (doCommit)
+                        {
+                            sqlTrans.Rollback("INSERT");
+                        }
+                    }
+
+                }
+            }
+            catch (Exception ex)
+            {
+                if (doCommit)
+                    sqlTrans.Rollback("INSERT");
+                throw ex;
+            }
+
+            return recID;
+        }
+
+        public bool update(IOPairProcessedTO pairTO, bool doCommit)
+        {
+            bool isUpdated = false;
+            SqlTransaction sqlTrans = null;
+
+            if (doCommit)
+            {
+                sqlTrans = conn.BeginTransaction(IsolationLevel.RepeatableRead, "UPDATE");
+            }
+            else
+            {
+                sqlTrans = this.SqlTrans;
+            }
+
+            try
+            {
+                StringBuilder sbUpdate = new StringBuilder();
+                sbUpdate.Append("UPDATE io_pairs_processed SET ");
+
+                if (!pairTO.IOPairDate.Equals(new DateTime()))
+                {
+                    sbUpdate.Append("io_pair_date = '" + pairTO.IOPairDate.ToString(dateTimeformat) + "', ");
+                }
+                else
+                {
+                    sbUpdate.Append("io_pair_date = NULL, ");
+                }
+                if (pairTO.EmployeeID != -1)
+                {
+                    sbUpdate.Append("employee_id = " + pairTO.EmployeeID.ToString().Trim() + ", ");
+                }
+                else
+                {
+                    sbUpdate.Append("employee_id = NULL, ");
+                }
+                if (pairTO.IOPairID != -1)
+                {
+                    sbUpdate.Append("io_pair_id = " + pairTO.IOPairID.ToString().Trim() + ", ");
+                }
+                else
+                {
+                    sbUpdate.Append("io_pair_id = NULL, ");
+                }
+                if (pairTO.LocationID != -1)
+                {
+                    sbUpdate.Append("location_id = " + pairTO.LocationID.ToString().Trim() + ", ");
+                }
+                else
+                {
+                    sbUpdate.Append("location_id = NULL, ");
+                }
+                if (pairTO.IsWrkHrsCounter != -1)
+                {
+                    sbUpdate.Append("is_wrk_hrs_counter = " + pairTO.IsWrkHrsCounter.ToString().Trim() + ", ");
+                }
+                else
+                {
+                    sbUpdate.Append("is_wrk_hrs_counter = NULL, ");
+                }
+                if (pairTO.PassTypeID != -1)
+                {
+                    sbUpdate.Append("pass_type_id = " + pairTO.PassTypeID.ToString().Trim() + ", ");
+                }
+                else
+                {
+                    sbUpdate.Append("pass_type_id = NULL, ");
+                }
+
+                if (!pairTO.StartTime.Equals(new DateTime()))
+                {
+                    sbUpdate.Append("start_time = '" + pairTO.StartTime.ToString(dateTimeformat) + "', ");
+                }
+                else
+                {
+                    sbUpdate.Append("start_time = NULL, ");
+                }
+                if (!pairTO.EndTime.Equals(new DateTime()))
+                {
+                    sbUpdate.Append("end_time = '" + pairTO.EndTime.ToString(dateTimeformat) + "', ");
+                }
+                else
+                {
+                    sbUpdate.Append("end_time = NULL, ");
+                }
+                if (pairTO.ManualCreated != -1)
+                {
+                    sbUpdate.Append("manual_created = " + pairTO.ManualCreated.ToString().Trim() + ", ");
+                }
+                else
+                {
+                    sbUpdate.Append("manual_created = NULL, ");
+                }
+                if (pairTO.ConfirmationFlag != -1)
+                {
+                    sbUpdate.Append("confirmation_flag = " + pairTO.ConfirmationFlag.ToString().Trim() + ", ");
+                }
+                else
+                {
+                    sbUpdate.Append("confirmation_flag = NULL, ");
+                }
+                if (pairTO.ConfirmedBy.Trim() != "")
+                {
+                    sbUpdate.Append("confirmed_by = '" + pairTO.ConfirmedBy.ToString().Trim() + "', ");
+                }
+                else
+                {
+                    sbUpdate.Append("confirmed_by = NULL, ");
+                }
+                if (!pairTO.ConfirmationTime.Equals(new DateTime()))
+                {
+                    sbUpdate.Append("confirmation_time = '" + pairTO.ConfirmationTime.ToString(dateTimeformat) + "', ");
+                }
+                else
+                {
+                    sbUpdate.Append("confirmation_time = NULL, ");
+                }
+                if (pairTO.VerificationFlag != -1)
+                {
+                    sbUpdate.Append("verification_flag = " + pairTO.VerificationFlag.ToString().Trim() + ", ");
+                }
+                else
+                {
+                    sbUpdate.Append("verification_flag = NULL, ");
+                }
+                if (pairTO.VerifiedBy.Trim() != "")
+                {
+                    sbUpdate.Append("verified_by = '" + pairTO.VerifiedBy.ToString().Trim() + "', ");
+                }
+                else
+                {
+                    sbUpdate.Append("verified_by = NULL, ");
+                }
+                if (!pairTO.VerifiedTime.Equals(new DateTime()))
+                {
+                    sbUpdate.Append("verification_time = '" + pairTO.VerifiedTime.ToString(dateTimeformat) + "', ");
+                }
+                else
+                {
+                    sbUpdate.Append("verification_time = NULL, ");
+                }
+                if (!pairTO.Alert.Trim().Equals(""))
+                {
+                    sbUpdate.Append("alert = " + pairTO.Alert.Trim() + ", ");
+                }
+                else
+                {
+                    sbUpdate.Append("alert = NULL, ");
+                }
+                if (!pairTO.Desc.Trim().Equals(""))
+                {
+                    sbUpdate.Append("description = N'" + pairTO.Desc.Trim().Replace("'", "").Replace("%", "").Replace("\r\n", "").Replace("\t", "").Replace("\"", "") + "', ");
+                }
+                else
+                {
+                    sbUpdate.Append("description = NULL, ");
+                }
+                if (!pairTO.ModifiedBy.Trim().Equals(""))
+                    sbUpdate.Append("modified_by = N'" + pairTO.ModifiedBy.Trim() + "', ");
+                else
+                    sbUpdate.Append("modified_by = N'" + DAOController.GetLogInUser().Trim() + "', ");
+                sbUpdate.Append("modified_time = GETDATE() ");
+                sbUpdate.Append("WHERE rec_id = '" + pairTO.RecID.ToString().Trim() + "'");
+
+                SqlCommand cmd = new SqlCommand(sbUpdate.ToString(), conn, sqlTrans);
+                cmd.CommandTimeout = Constants.commandTimeout;
+                int res = cmd.ExecuteNonQuery();
+                if (res > 0)
+                {
+                    isUpdated = true;
+                }
+
+                if (doCommit)
+                    sqlTrans.Commit();
+            }
+            catch (Exception ex)
+            {
+                if (doCommit)
+                    sqlTrans.Rollback("UPDATE");
+                throw new Exception(ex.Message);
+            }
+
+            return isUpdated;
+        }
+
+        //natalija08112017 update celodnevna odsustva
+        public bool updateManualCreatedProcessedPairs(IOPairProcessedTO processed, Dictionary<int, WorkTimeIntervalTO> workTimeInterval,Dictionary<int, WorkTimeIntervalTO> workTimeIntervalNextDay, bool is2DayShift, IDbTransaction trans)
+        {
+            bool isUpdated = false;
+            StringBuilder sbUpdate = new StringBuilder();
+            WorkTimeIntervalTO wtInterval = new WorkTimeIntervalTO();
+
+            try
+            {
+                foreach (int wti in workTimeInterval.Keys)
+                {
+                    wtInterval = workTimeInterval[wti];
+                    int interval = wtInterval.IntervalNum;
+                    int schemaID = wtInterval.TimeSchemaID;
+                    int dayNum = wtInterval.DayNum;
+
+                    var datum = processed.IOPairDate.ToString("yyyy-MM-dd");
+
+                    var start = wtInterval.StartTime.ToString("HH:mm:sss");
+                    var end = wtInterval.EndTime.ToString("HH:mm:sss");
+                    DateTime dateTimeStart = DateTime.ParseExact(start, "HH:mm:ss", CultureInfo.InvariantCulture);
+                    DateTime dateTimeEnd = DateTime.ParseExact(end, "HH:mm:ss", CultureInfo.InvariantCulture);
+                   
+                    //nocni deo III smene ili prelaz u dnevnu smenu 
+                    if ((dateTimeEnd.TimeOfDay == new TimeSpan(23, 59, 0)) || ((dateTimeStart.TimeOfDay != new TimeSpan(0, 0, 0)) && (dateTimeEnd.TimeOfDay != new TimeSpan(23, 59, 0)))) 
+                    {
+                        sbUpdate.Append("  UPDATE io_pairs_processed SET ");
+
+                        if (!processed.StartTime.Equals(new DateTime()))
+                        {
+                            sbUpdate.Append("start_time = '" + datum + " " + start + "', ");
+                        }
+                        else
+                        {
+                            sbUpdate.Append("start_time = NULL, ");
+                        }
+                        if (!processed.EndTime.Equals(new DateTime()))
+                        {
+                            sbUpdate.Append("end_time = '" + datum + " " + end + "', ");
+                        }
+                        else
+                        {
+                            sbUpdate.Append("end_time = NULL , ");
+                        }
+                        if (!processed.ModifiedBy.Trim().Equals(""))
+                        {
+                            sbUpdate.Append("modified_by = N'SYS', ");
+                        }
+                        else
+                        {
+                            sbUpdate.Append("modified_by = N'" + DAOController.GetLogInUser().Trim() + "', ");
+                        }
+                        if (!processed.ModifiedTime.Equals(""))
+                        {
+                            sbUpdate.Append(" modified_time = ' " + DateTime.Now + " '  ");
+                        }
+                        else
+                        {
+                            sbUpdate.Append(" modified_time = NULL ");
+                        }
+
+                        sbUpdate.Append("WHERE rec_id = " + processed.RecID.ToString().Trim());
+                    }
+                }
+
+                //jutarnji deo III smene
+                if(is2DayShift){
+                    foreach (int wti in workTimeIntervalNextDay.Keys)
+                    {
+                        wtInterval = workTimeIntervalNextDay[wti];
+                        int interval = wtInterval.IntervalNum;
+                        int schemaID = wtInterval.TimeSchemaID;
+                        int dayNum = wtInterval.DayNum;
+
+                        var datum = processed.IOPairDate.ToString("yyyy-MM-dd");
+
+                        var start = wtInterval.StartTime.ToString("HH:mm:sss");
+                        var end = wtInterval.EndTime.ToString("HH:mm:sss");
+                        DateTime dateTimeStart = DateTime.ParseExact(start, "HH:mm:ss", CultureInfo.InvariantCulture);
+                        DateTime dateTimeEnd = DateTime.ParseExact(end, "HH:mm:ss", CultureInfo.InvariantCulture);
+
+
+                        if (dateTimeStart.TimeOfDay == new TimeSpan(0, 0, 0))
+                        {
+                            DateTime sledeciDan = Convert.ToDateTime(datum).AddDays(1);
+                            var datumSled = sledeciDan.ToString("yyyy-MM-dd");
+
+                            sbUpdate.Append("  INSERT INTO io_pairs_processed (io_pair_id,io_pair_date,employee_id,location_id,is_wrk_hrs_counter,pass_type_id,manual_created,confirmation_flag,verification_flag,created_by,created_time,start_time,end_time,modified_by,modified_time ) VALUES (");
+
+                            if (processed.IOPairID != -1)
+                            {
+                                sbUpdate.Append(processed.IOPairID.ToString() + ", ");
+                            }
+                            else
+                            {
+                                sbUpdate.Append("NULL, ");
+                            }
+
+                            sbUpdate.Append("'" + sledeciDan + "', ");
+
+                            if (processed.EmployeeID != -1)
+                            {
+                                sbUpdate.Append(processed.EmployeeID.ToString() + ", ");
+                            }
+                            else
+                            {
+                                sbUpdate.Append("NULL, ");
+                            }
+                            if (processed.LocationID != -1)
+                            {
+                                sbUpdate.Append(processed.LocationID.ToString() + ", ");
+                            }
+                            else
+                            {
+                                sbUpdate.Append("NULL, ");
+                            }
+                            if (processed.IsWrkHrsCounter != -1)
+                            {
+                                sbUpdate.Append(processed.IsWrkHrsCounter.ToString() + ", ");
+                            }
+                            else
+                            {
+                                sbUpdate.Append("NULL, ");
+                            }
+                            if (processed.PassTypeID != -1)
+                            {
+                                sbUpdate.Append(processed.PassTypeID.ToString() + ", ");
+                            }
+                            else
+                            {
+                                sbUpdate.Append("NULL, ");
+                            }
+                            if (processed.ManualCreated != -1)
+                            {
+                                sbUpdate.Append(processed.ManualCreated.ToString() + ", ");
+                            }
+                            else
+                            {
+                                sbUpdate.Append("NULL, ");
+                            }
+                            if (processed.ConfirmationFlag != -1)
+                            {
+                                sbUpdate.Append(processed.ConfirmationFlag.ToString() + ", ");
+                            }
+                            else
+                            {
+                                sbUpdate.Append("NULL, ");
+                            }
+                            if (processed.VerificationFlag != -1)
+                            {
+                                sbUpdate.Append(processed.VerificationFlag.ToString() + ", ");
+                            }
+                            else
+                            {
+                                sbUpdate.Append("NULL, ");
+                            }
+                            if (!processed.CreatedBy.Trim().Equals(""))
+                            {
+                                sbUpdate.Append("N'" + DAOController.GetLogInUser().Trim() + "', ");
+                            }
+                            else
+                            {
+                                sbUpdate.Append("N'" + DAOController.GetLogInUser().Trim() + "', ");
+                            }
+                            if (!processed.CreatedTime.Equals(""))
+                            {
+                                sbUpdate.Append("'" + DateTime.Now + "', ");
+                            }
+                            else
+                            {
+                                sbUpdate.Append("GETDATE()),  ");
+                            }
+                            if (!processed.StartTime.Equals(new DateTime()))
+                            {
+                                sbUpdate.Append("'" + datumSled + " " + start + "', ");
+                            }
+                            else
+                            {
+                                sbUpdate.Append(" NULL, ");
+                            }
+                            if (!processed.EndTime.Equals(new DateTime()))
+                            {
+                                sbUpdate.Append("'" + datumSled + " " + end + "', ");
+                            }
+                            else
+                            {
+                                sbUpdate.Append(" NULL , ");
+                            }
+                            if (!processed.ModifiedBy.Trim().Equals(""))
+                            {
+                                sbUpdate.Append("N'" + " SYS', ");
+                            }
+                            else
+                            {
+                                sbUpdate.Append("N'" + DAOController.GetLogInUser().Trim() + "', ");
+                            }
+                            if (!processed.ModifiedTime.Equals(""))
+                            {
+                                sbUpdate.Append("'" + DateTime.Now + " ' ) ");
+                            }
+                            else
+                            {
+                                sbUpdate.Append("NULL )");
+                            }
+                        }
+                    }
+                }
+
+                if (processed.StartTime.TimeOfDay == new TimeSpan(0, 0, 0))
+                {
+                    sbUpdate.Append("  DELETE FROM io_pairs_processed  ");
+                    sbUpdate.Append(" WHERE rec_id = " + processed.RecID.ToString().Trim());
+                }
+                
+               
+                SqlCommand cmd = new SqlCommand(sbUpdate.ToString(), conn, (SqlTransaction)trans);
+                int res = cmd.ExecuteNonQuery();
+                if (res > 0)
+                {
+                    isUpdated = true;
+                }
+
+                //trans.Commit();
+            }
+            catch (SqlException sqlex)
+            {
+                trans.Rollback();
+                throw new Exception(sqlex.Message);
+            }
+
+            return isUpdated;
+        }
+
+        public bool verify(string recIDs, string verifiedBy, string ptIDs)
+        {
+            bool isUpdated = false;
+            SqlTransaction sqlTrans = conn.BeginTransaction(IsolationLevel.RepeatableRead);
+
+            try
+            {
+                if (recIDs.Length > 0)
+                {
+                    StringBuilder sbUpdate = new StringBuilder();
+                    sbUpdate.Append("UPDATE io_pairs_processed SET verification_flag = '" + ((int)Constants.Verification.Verified).ToString().Trim());
+                    sbUpdate.Append("', verified_by = N'" + verifiedBy.Trim() + "', verification_time = GETDATE(), ");
+                    sbUpdate.Append("modified_by = N'" + verifiedBy.Trim() + "', ");
+                    sbUpdate.Append("modified_time = GETDATE() ");
+                    sbUpdate.Append("WHERE rec_id IN (" + recIDs.Trim() + ")");
+                    if (ptIDs.Length > 0)
+                        sbUpdate.Append(" AND pass_type_id IN (" + ptIDs.Trim() + ")");
+
+                    SqlCommand cmd = new SqlCommand(sbUpdate.ToString(), conn, sqlTrans);
+                    cmd.CommandTimeout = Constants.commandTimeout;
+                    int res = cmd.ExecuteNonQuery();
+                    if (res > 0)
+                    {
+                        isUpdated = true;
+                    }
+                }
+
+                sqlTrans.Commit();
+            }
+            catch (Exception ex)
+            {
+                sqlTrans.Rollback();
+                throw new Exception(ex.Message);
+            }
+
+            return isUpdated;
+        }
+
+        public bool verify(string emplIDs, string verifiedBy, DateTime month, string passTypes, bool validateIsVerifiedDay)
+        {
+            bool isUpdated = false;
+            SqlTransaction sqlTrans = conn.BeginTransaction(IsolationLevel.RepeatableRead, "UPDATE");
+
+            DateTime firstDay = new DateTime(month.Year, month.Month, 1, 0, 0, 0);
+            DateTime firstDayNextMonth = firstDay.AddMonths(1);
+
+            try
+            {
+                if (emplIDs.Length > 0)
+                {
+                    StringBuilder sbUpdate = new StringBuilder();
+                    sbUpdate.Append("UPDATE io_pairs_processed SET verification_flag = '" + ((int)Constants.Verification.Verified).ToString().Trim());
+                    sbUpdate.Append("', verified_by = N'" + verifiedBy.Trim() + "', verification_time = GETDATE(), ");
+                    sbUpdate.Append("modified_by = N'" + verifiedBy.Trim() + "', ");
+                    sbUpdate.Append("modified_time = GETDATE() ");
+                    sbUpdate.Append("WHERE employee_id IN (" + emplIDs.Trim() + ") AND io_pair_date >= '" + firstDay.ToString(dateTimeformat));
+                    sbUpdate.Append("' AND io_pair_date < '" + firstDayNextMonth.ToString(dateTimeformat) + "' AND verification_flag = '" + ((int)Constants.Verification.NotVerified).ToString().Trim());
+                    sbUpdate.Append("' AND pass_type_id IN (" + passTypes.Trim() + ")");
+                    if (validateIsVerifiedDay)
+                    {
+                        sbUpdate.Append(" AND io_pair_date NOT IN (SELECT io_pair_date FROM io_pairs_processed WHERE (verified_by IS NOT NULL OR verification_time IS NOT NULL)");
+                        sbUpdate.Append(" AND employee_id IN (" + emplIDs.Trim() + ")");
+                        sbUpdate.Append(" AND io_pair_date >= '" + firstDay.ToString(dateTimeformat));
+                        sbUpdate.Append("' AND io_pair_date < '" + firstDayNextMonth.ToString(dateTimeformat) + "')");
+                    }
+
+                    SqlCommand cmd = new SqlCommand(sbUpdate.ToString(), conn, sqlTrans);
+                    cmd.CommandTimeout = Constants.commandTimeout;
+                    int res = cmd.ExecuteNonQuery();
+                    if (res > 0)
+                    {
+                        isUpdated = true;
+                    }
+                }
+
+                sqlTrans.Commit();
+            }
+            catch (Exception ex)
+            {
+                sqlTrans.Rollback("UPDATE");
+                throw new Exception(ex.Message);
+            }
+
+            return isUpdated;
+        }
+
+        public Dictionary<int, Dictionary<DateTime, List<IOPairProcessedTO>>> getPairsForInterval(IOPairProcessedTO pairTO, DateTime startTime, DateTime endTime)
+        {
+            DataSet dataSet = new DataSet();
+            IOPairProcessedTO pair = new IOPairProcessedTO();
+            Dictionary<int, Dictionary<DateTime, List<IOPairProcessedTO>>> pairsList = new Dictionary<int, Dictionary<DateTime, List<IOPairProcessedTO>>>();
+            string select = "";
+            try
+            {
+                StringBuilder sb = new StringBuilder();
+                sb.Append("SELECT * FROM io_pairs_processed ");
+                sb.Append(" WHERE io_pair_date > = '" + startTime.ToString(dateTimeformat) + "' AND io_pair_date <= '" + endTime.ToString(dateTimeformat) + "' ");
+                if ((pairTO.IOPairID != -1) || (!pairTO.IOPairDate.Equals(new DateTime())) || (pairTO.EmployeeID != -1) ||
+                    (pairTO.LocationID != -1) || (pairTO.IsWrkHrsCounter != -1) || (pairTO.PassTypeID != -1) ||
+                    (!pairTO.StartTime.Equals(new DateTime())) || (!pairTO.EndTime.Equals(new DateTime())) ||
+                    (pairTO.ManualCreated != -1) || (pairTO.ConfirmationFlag != -1) || (pairTO.ConfirmedBy.Trim() != "") || (pairTO.ConfirmationTime != new DateTime())
+                    || (pairTO.VerificationFlag != -1) || (pairTO.VerifiedBy.Trim() != "") || (pairTO.VerifiedTime != new DateTime())
+                    || (!pairTO.Alert.Trim().Equals("")) || (!pairTO.Desc.Trim().Equals("")))
+                {
+                    sb.Append(" AND");
+
+                    if (pairTO.IOPairID != -1)
+                    {
+                        sb.Append(" io_pair_id = '" + pairTO.IOPairID.ToString().Trim() + "' AND");
+                    }
+                    if (!pairTO.IOPairDate.Equals(new DateTime()))
+                    {
+                        sb.Append(" CONVERT(VARCHAR(24), io_pair_date, 120) = '" + pairTO.IOPairDate.ToString("yyy-MM-dd HH:mm:ss") + "' AND");
+                    }
+                    if (pairTO.EmployeeID != -1)
+                    {
+                        sb.Append(" employee_id = '" + pairTO.EmployeeID.ToString().Trim() + "' AND");
+                    }
+                    if (pairTO.LocationID != -1)
+                    {
+                        sb.Append(" location_id = '" + pairTO.LocationID.ToString().Trim() + "' AND");
+                    }
+                    if (pairTO.IsWrkHrsCounter != -1)
+                    {
+                        sb.Append(" is_wrk_hrs_counter = '" + pairTO.IsWrkHrsCounter.ToString().Trim() + "' AND");
+                    }
+                    if (pairTO.PassTypeID != -1)
+                    {
+                        sb.Append(" pass_type_id = '" + pairTO.PassTypeID.ToString().Trim() + "' AND");
+                    }
+                    if (!pairTO.StartTime.Equals(new DateTime()))
+                    {
+                        sb.Append(" DATE_FORMAT(start_time,GET_FORMAT(DATETIME,'ISO')) = '" + pairTO.StartTime.ToString("yyy-MM-dd HH:mm:ss") + "' AND");
+                    }
+                    if (!pairTO.EndTime.Equals(new DateTime()))
+                    {
+                        sb.Append(" DATE_FORMAT(end_time,GET_FORMAT(DATETIME,'ISO')) = '" + pairTO.EndTime.ToString("yyy-MM-dd HH:mm:ss") + "' AND");
+                    }
+                    if (pairTO.ManualCreated != -1)
+                    {
+                        sb.Append(" manual_created = '" + pairTO.ManualCreated.ToString().Trim().ToUpper() + "' AND");
+                    }
+                    if (pairTO.ConfirmationFlag != -1)
+                    {
+                        sb.Append(" confirmation_flag = '" + pairTO.ConfirmationFlag.ToString().Trim().ToUpper() + "' AND");
+                    }
+                    if (pairTO.ConfirmedBy.Trim() != "")
+                    {
+                        sb.Append(" UPPER(confirmed_by) = '" + pairTO.ConfirmedBy.Trim().ToUpper() + "' AND");
+                    }
+                    if (!pairTO.ConfirmationTime.Equals(new DateTime()))
+                    {
+                        sb.Append(" DATE_FORMAT(confimration_time,GET_FORMAT(DATETIME,'ISO')) = '" + pairTO.ConfirmationTime.ToString("yyy-MM-dd HH:mm:ss") + "' AND");
+                    }
+                    if (pairTO.VerificationFlag != -1)
+                    {
+                        sb.Append(" verification_flag = '" + pairTO.VerificationFlag.ToString().Trim().ToUpper() + "' AND");
+                    }
+                    if (pairTO.VerifiedBy.Trim() != "")
+                    {
+                        sb.Append(" UPPER(verified_by) = '" + pairTO.VerifiedBy.Trim().ToUpper() + "' AND");
+                    }
+                    if (!pairTO.VerifiedTime.Equals(new DateTime()))
+                    {
+                        sb.Append(" DATE_FORMAT(verification_time,GET_FORMAT(DATETIME,'ISO')) = '" + pairTO.VerifiedTime.ToString("yyy-MM-dd HH:mm:ss") + "' AND");
+                    }
+                    if (!pairTO.Alert.Trim().Equals(""))
+                    {
+                        sb.Append(" UPPER(alert) = '" + pairTO.Alert.Trim().ToUpper() + "' AND");
+                    }
+                    if (!pairTO.Desc.Trim().Equals(""))
+                    {
+                        sb.Append(" UPPER(description) = '" + pairTO.Desc.Trim().ToUpper() + "' AND");
+                    }
+                    select = sb.ToString(0, sb.ToString().Length - 3);
+                }
+                else
+                {
+                    select = sb.ToString();
+                }
+                SqlCommand cmd = new SqlCommand(select + " ORDER BY employee_id, start_time", conn);
+                cmd.CommandTimeout = Constants.commandTimeout;
+                SqlDataAdapter sqlDataAdapter = new SqlDataAdapter(cmd);
+
+                sqlDataAdapter.Fill(dataSet, "IOPairsProcessed");
+                DataTable table = dataSet.Tables["IOPairsProcessed"];
+
+                if (table.Rows.Count > 0)
+                {
+                    foreach (DataRow row in table.Rows)
+                    {
+                        pair = new IOPairProcessedTO();
+                        pair.RecID = UInt32.Parse(row["rec_id"].ToString().Trim());
+                        if (row["io_pair_id"] != DBNull.Value)
+                        {
+                            pair.IOPairID = Int32.Parse(row["io_pair_id"].ToString().Trim());
+                        }
+                        if (row["io_pair_date"] != DBNull.Value)
+                        {
+                            pair.IOPairDate = (DateTime)row["io_pair_date"];
+                        }
+                        if (row["employee_id"] != DBNull.Value)
+                        {
+                            pair.EmployeeID = Int32.Parse(row["employee_id"].ToString().Trim());
+                        }
+                        if (row["location_id"] != DBNull.Value)
+                        {
+                            pair.LocationID = Int32.Parse(row["location_id"].ToString().Trim());
+                        }
+                        if (row["is_wrk_hrs_counter"] != DBNull.Value)
+                        {
+                            pair.IsWrkHrsCounter = Int32.Parse(row["is_wrk_hrs_counter"].ToString().Trim());
+                        }
+                        if (row["pass_type_id"] != DBNull.Value)
+                        {
+                            pair.PassTypeID = Int32.Parse(row["pass_type_id"].ToString().Trim());
+                        }
+                        if (row["start_time"] != DBNull.Value)
+                        {
+                            pair.StartTime = (DateTime)row["start_time"];
+                        }
+                        if (row["end_time"] != DBNull.Value)
+                        {
+                            pair.EndTime = (DateTime)row["end_time"];
+                        }
+                        if (row["manual_created"] != DBNull.Value)
+                        {
+                            pair.ManualCreated = Int32.Parse(row["manual_created"].ToString().Trim());
+                        }
+                        if (row["confirmation_flag"] != DBNull.Value)
+                        {
+                            pair.ConfirmationFlag = Int32.Parse(row["confirmation_flag"].ToString().Trim());
+                        }
+                        if (row["confirmed_by"] != DBNull.Value)
+                        {
+                            pair.ConfirmedBy = row["confirmed_by"].ToString().Trim();
+                        }
+                        if (row["confirmation_time"] != DBNull.Value)
+                        {
+                            pair.ConfirmationTime = DateTime.Parse(row["confirmation_time"].ToString().Trim());
+                        }
+                        if (row["verification_flag"] != DBNull.Value)
+                        {
+                            pair.VerificationFlag = Int32.Parse(row["verification_flag"].ToString().Trim());
+                        }
+                        if (row["verified_by"] != DBNull.Value)
+                        {
+                            pair.VerifiedBy = row["verified_by"].ToString().Trim();
+                        }
+                        if (row["verification_time"] != DBNull.Value)
+                        {
+                            pair.VerifiedTime = DateTime.Parse(row["verification_time"].ToString().Trim());
+                        }
+                        if (row["alert"] != DBNull.Value)
+                        {
+                            pair.Alert = row["alert"].ToString().Trim();
+                        }
+                        if (row["description"] != DBNull.Value)
+                        {
+                            pair.Desc = row["description"].ToString().Trim();
+                        }
+                        if (row["created_by"] != DBNull.Value)
+                        {
+                            pair.CreatedBy = row["created_by"].ToString().Trim();
+                        }
+                        if (row["created_time"] != DBNull.Value)
+                        {
+                            pair.CreatedTime = DateTime.Parse(row["created_time"].ToString().Trim());
+                        }
+                        if (!pairsList.ContainsKey(pair.EmployeeID))
+                            pairsList.Add(pair.EmployeeID, new Dictionary<DateTime, List<IOPairProcessedTO>>());
+                        if (!pairsList[pair.EmployeeID].ContainsKey(pair.IOPairDate))
+                            pairsList[pair.EmployeeID].Add(pair.IOPairDate, new List<IOPairProcessedTO>());
+
+                        pairsList[pair.EmployeeID][pair.IOPairDate].Add(pair);
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+
+            return pairsList;
+        }
+        //natalija 23.01.2018
+        public Dictionary<int, Dictionary<DateTime, List<IOPairProcessedTO>>> getPairsForIntervalForWU(DateTime startTime, DateTime endTime, string passTypeString, string wuIDs, bool isRetired)
+        {
+            DataSet dataSet = new DataSet();
+            IOPairProcessedTO pair = new IOPairProcessedTO();
+            EmployeeTO employee = new EmployeeTO();
+            Dictionary<int, Dictionary<DateTime, List<IOPairProcessedTO>>> pairsList = new Dictionary<int, Dictionary<DateTime, List<IOPairProcessedTO>>>();
+            string select = "";
+            try
+            {
+                StringBuilder sb = new StringBuilder();
+                sb.Append(" SELECT p.employee_id, p.io_pair_id, p.io_pair_date, p.pass_type_id, p.start_time, p.end_time, e.first_name, e.last_name ,w.name ");
+                sb.Append(" FROM io_pairs_processed p, employees e, working_units w ");
+                sb.Append(" WHERE p.employee_id = e.employee_id AND e.working_unit_id = w.working_unit_id ");
+                sb.Append(" AND io_pair_date >= '" + startTime.ToString(dateTimeformat) + "'");
+                sb.Append(" AND io_pair_date <= '" + endTime.ToString(dateTimeformat) + "' ");
+
+                sb.Append(" AND w.working_unit_id IN (" + wuIDs + ") ");
+
+                sb.Append(" AND p.pass_type_id IN (" + passTypeString + ") ");
+
+
+                if (isRetired == false)
+                {
+                    sb.Append(" AND  e.status = 'ACTIVE' ");
+                }
+
+                select = sb.ToString();
+
+                SqlCommand cmd = new SqlCommand(select + " ORDER BY w.working_unit_id, e.employee_id ", conn);
+                cmd.CommandTimeout = Constants.commandTimeout;
+                SqlDataAdapter sqlDataAdapter = new SqlDataAdapter(cmd);
+
+                sqlDataAdapter.Fill(dataSet, "IOPairsProcessed");
+                DataTable table = dataSet.Tables["IOPairsProcessed"];
+
+                if (table.Rows.Count > 0)
+                {
+                    foreach (DataRow row in table.Rows)
+                    {
+
+                        pair = new IOPairProcessedTO();
+                        //            pair.RecID = UInt32.Parse(row["p.rec_id"].ToString().Trim());
+                        /*p.employee_id, p.io_pair_id, p.pass_type_id, p.start_time, p.end_time, e.first_name, e.last_name ,w.name */
+                        //KORISTIM ZA IME  ZAPOSLENOG
+                        if (row["first_name"] != DBNull.Value)
+                        {
+                            pair.Desc = row["first_name"].ToString().Trim();
+                        }
+                        //KORISTIM ZA PREZIME ZAPOSLENOG
+                        if (row["last_name"] != DBNull.Value)
+                        {
+                            pair.CreatedBy = row["last_name"].ToString().Trim();
+                        }
+                        //KORISTIM ZA ime radne jedinice
+                        if (row["name"] != DBNull.Value)
+                        {
+                            pair.ModifiedBy = row["name"].ToString().Trim();
+                        }
+
+                        if (row["io_pair_date"] != DBNull.Value)
+                        {
+                            pair.IOPairDate = (DateTime)row["io_pair_date"];
+                        }
+                        if (row["io_pair_id"] != DBNull.Value)
+                        {
+                            pair.IOPairID = Int32.Parse(row["io_pair_id"].ToString().Trim());
+                        }
+
+                        if (row["employee_id"] != DBNull.Value)
+                        {
+                            pair.EmployeeID = Int32.Parse(row["employee_id"].ToString().Trim());
+                        }
+                        if (row["pass_type_id"] != DBNull.Value)
+                        {
+                            pair.PassTypeID = Int32.Parse(row["pass_type_id"].ToString().Trim());
+                        }
+                        if (row["start_time"] != DBNull.Value)
+                        {
+                            pair.StartTime = (DateTime)row["start_time"];
+                        }
+                        if (row["end_time"] != DBNull.Value)
+                        {
+                            pair.EndTime = (DateTime)row["end_time"];
+                        }
+
+                        if (!pairsList.ContainsKey(pair.EmployeeID))
+                            pairsList.Add(pair.EmployeeID, new Dictionary<DateTime, List<IOPairProcessedTO>>());
+                        if (!pairsList[pair.EmployeeID].ContainsKey(pair.IOPairDate))
+                            pairsList[pair.EmployeeID].Add(pair.IOPairDate, new List<IOPairProcessedTO>());
+
+
+                        pairsList[pair.EmployeeID][pair.IOPairDate].Add(pair);
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+
+            return pairsList;
+
+
+        }
+
+
+        public Dictionary<int, Dictionary<DateTime, List<IOPairProcessedTO>>> getPairsForInterval(IOPairProcessedTO pairTO, DateTime startTime, DateTime endTime, string employeeIDs)
+        {
+            DataSet dataSet = new DataSet();
+            IOPairProcessedTO pair = new IOPairProcessedTO();
+            Dictionary<int, Dictionary<DateTime, List<IOPairProcessedTO>>> pairsList = new Dictionary<int, Dictionary<DateTime, List<IOPairProcessedTO>>>();
+            string select = "";
+            try
+            {
+                StringBuilder sb = new StringBuilder();
+                sb.Append("SELECT * FROM io_pairs_processed ");
+                sb.Append(" WHERE io_pair_date > = '" + startTime.ToString(dateTimeformat) + "'");
+                if(endTime != new DateTime())
+                sb.Append(" AND io_pair_date <= '" + endTime.ToString(dateTimeformat) + "' ");
+                sb.Append(" AND employee_id IN(" + employeeIDs + ") " );
+                if ((pairTO.IOPairID != -1) || (!pairTO.IOPairDate.Equals(new DateTime())) || (pairTO.EmployeeID != -1) ||
+                    (pairTO.LocationID != -1) || (pairTO.IsWrkHrsCounter != -1) || (pairTO.PassTypeID != -1) ||
+                    (!pairTO.StartTime.Equals(new DateTime())) || (!pairTO.EndTime.Equals(new DateTime())) ||
+                    (pairTO.ManualCreated != -1) || (pairTO.ConfirmationFlag != -1) || (pairTO.ConfirmedBy.Trim() != "") || (pairTO.ConfirmationTime != new DateTime())
+                    || (pairTO.VerificationFlag != -1) || (pairTO.VerifiedBy.Trim() != "") || (pairTO.VerifiedTime != new DateTime())
+                    || (!pairTO.Alert.Trim().Equals("")) || (!pairTO.Desc.Trim().Equals("")))
+                {
+                    sb.Append(" AND");
+
+                    if (pairTO.IOPairID != -1)
+                    {
+                        sb.Append(" io_pair_id = '" + pairTO.IOPairID.ToString().Trim() + "' AND");
+                    }
+                    if (!pairTO.IOPairDate.Equals(new DateTime()))
+                    {
+                        sb.Append(" CONVERT(VARCHAR(24), io_pair_date, 120) = '" + pairTO.IOPairDate.ToString("yyy-MM-dd HH:mm:ss") + "' AND");
+                    }
+                    if (pairTO.EmployeeID != -1)
+                    {
+                        sb.Append(" employee_id = '" + pairTO.EmployeeID.ToString().Trim() + "' AND");
+                    }
+                    if (pairTO.LocationID != -1)
+                    {
+                        sb.Append(" location_id = '" + pairTO.LocationID.ToString().Trim() + "' AND");
+                    }
+                    if (pairTO.IsWrkHrsCounter != -1)
+                    {
+                        sb.Append(" is_wrk_hrs_counter = '" + pairTO.IsWrkHrsCounter.ToString().Trim() + "' AND");
+                    }
+                    if (pairTO.PassTypeID != -1)
+                    {
+                        sb.Append(" pass_type_id = '" + pairTO.PassTypeID.ToString().Trim() + "' AND");
+                    }
+                    if (!pairTO.StartTime.Equals(new DateTime()))
+                    {
+                        sb.Append(" DATE_FORMAT(start_time,GET_FORMAT(DATETIME,'ISO')) = '" + pairTO.StartTime.ToString("yyy-MM-dd HH:mm:ss") + "' AND");
+                    }
+                    if (!pairTO.EndTime.Equals(new DateTime()))
+                    {
+                        sb.Append(" DATE_FORMAT(end_time,GET_FORMAT(DATETIME,'ISO')) = '" + pairTO.EndTime.ToString("yyy-MM-dd HH:mm:ss") + "' AND");
+                    }
+                    if (pairTO.ManualCreated != -1)
+                    {
+                        sb.Append(" manual_created = '" + pairTO.ManualCreated.ToString().Trim().ToUpper() + "' AND");
+                    }
+                    if (pairTO.ConfirmationFlag != -1)
+                    {
+                        sb.Append(" confirmation_flag = '" + pairTO.ConfirmationFlag.ToString().Trim().ToUpper() + "' AND");
+                    }
+                    if (pairTO.ConfirmedBy.Trim() != "")
+                    {
+                        sb.Append(" UPPER(confirmed_by) = '" + pairTO.ConfirmedBy.Trim().ToUpper() + "' AND");
+                    }
+                    if (!pairTO.ConfirmationTime.Equals(new DateTime()))
+                    {
+                        sb.Append(" DATE_FORMAT(confimration_time,GET_FORMAT(DATETIME,'ISO')) = '" + pairTO.ConfirmationTime.ToString("yyy-MM-dd HH:mm:ss") + "' AND");
+                    }
+                    if (pairTO.VerificationFlag != -1)
+                    {
+                        sb.Append(" verification_flag = '" + pairTO.VerificationFlag.ToString().Trim().ToUpper() + "' AND");
+                    }
+                    if (pairTO.VerifiedBy.Trim() != "")
+                    {
+                        sb.Append(" UPPER(verified_by) = '" + pairTO.VerifiedBy.Trim().ToUpper() + "' AND");
+                    }
+                    if (!pairTO.VerifiedTime.Equals(new DateTime()))
+                    {
+                        sb.Append(" DATE_FORMAT(verification_time,GET_FORMAT(DATETIME,'ISO')) = '" + pairTO.VerifiedTime.ToString("yyy-MM-dd HH:mm:ss") + "' AND");
+                    }
+                    if (!pairTO.Alert.Trim().Equals(""))
+                    {
+                        sb.Append(" UPPER(alert) = '" + pairTO.Alert.Trim().ToUpper() + "' AND");
+                    }
+                    if (!pairTO.Desc.Trim().Equals(""))
+                    {
+                        sb.Append(" UPPER(description) = '" + pairTO.Desc.Trim().ToUpper() + "' AND");
+                    }
+                    select = sb.ToString(0, sb.ToString().Length - 3);
+                }
+                else
+                {
+                    select = sb.ToString();
+                }
+                SqlCommand cmd = new SqlCommand(select + " ORDER BY employee_id, start_time", conn);
+                cmd.CommandTimeout = Constants.commandTimeout;
+                SqlDataAdapter sqlDataAdapter = new SqlDataAdapter(cmd);
+
+                sqlDataAdapter.Fill(dataSet, "IOPairsProcessed");
+                DataTable table = dataSet.Tables["IOPairsProcessed"];
+
+                if (table.Rows.Count > 0)
+                {
+                    foreach (DataRow row in table.Rows)
+                    {
+                        pair = new IOPairProcessedTO();
+                        pair.RecID = UInt32.Parse(row["rec_id"].ToString().Trim());
+                        if (row["io_pair_id"] != DBNull.Value)
+                        {
+                            pair.IOPairID = Int32.Parse(row["io_pair_id"].ToString().Trim());
+                        }
+                        if (row["io_pair_date"] != DBNull.Value)
+                        {
+                            pair.IOPairDate = (DateTime)row["io_pair_date"];
+                        }
+                        if (row["employee_id"] != DBNull.Value)
+                        {
+                            pair.EmployeeID = Int32.Parse(row["employee_id"].ToString().Trim());
+                        }
+                        if (row["location_id"] != DBNull.Value)
+                        {
+                            pair.LocationID = Int32.Parse(row["location_id"].ToString().Trim());
+                        }
+                        if (row["is_wrk_hrs_counter"] != DBNull.Value)
+                        {
+                            pair.IsWrkHrsCounter = Int32.Parse(row["is_wrk_hrs_counter"].ToString().Trim());
+                        }
+                        if (row["pass_type_id"] != DBNull.Value)
+                        {
+                            pair.PassTypeID = Int32.Parse(row["pass_type_id"].ToString().Trim());
+                        }
+                        if (row["start_time"] != DBNull.Value)
+                        {
+                            pair.StartTime = (DateTime)row["start_time"];
+                        }
+                        if (row["end_time"] != DBNull.Value)
+                        {
+                            pair.EndTime = (DateTime)row["end_time"];
+                        }
+                        if (row["manual_created"] != DBNull.Value)
+                        {
+                            pair.ManualCreated = Int32.Parse(row["manual_created"].ToString().Trim());
+                        }
+                        if (row["confirmation_flag"] != DBNull.Value)
+                        {
+                            pair.ConfirmationFlag = Int32.Parse(row["confirmation_flag"].ToString().Trim());
+                        }
+                        if (row["confirmed_by"] != DBNull.Value)
+                        {
+                            pair.ConfirmedBy = row["confirmed_by"].ToString().Trim();
+                        }
+                        if (row["confirmation_time"] != DBNull.Value)
+                        {
+                            pair.ConfirmationTime = DateTime.Parse(row["confirmation_time"].ToString().Trim());
+                        }
+                        if (row["verification_flag"] != DBNull.Value)
+                        {
+                            pair.VerificationFlag = Int32.Parse(row["verification_flag"].ToString().Trim());
+                        }
+                        if (row["verified_by"] != DBNull.Value)
+                        {
+                            pair.VerifiedBy = row["verified_by"].ToString().Trim();
+                        }
+                        if (row["verification_time"] != DBNull.Value)
+                        {
+                            pair.VerifiedTime = DateTime.Parse(row["verification_time"].ToString().Trim());
+                        }
+                        if (row["alert"] != DBNull.Value)
+                        {
+                            pair.Alert = row["alert"].ToString().Trim();
+                        }
+                        if (row["description"] != DBNull.Value)
+                        {
+                            pair.Desc = row["description"].ToString().Trim();
+                        }
+                        if (row["created_by"] != DBNull.Value)
+                        {
+                            pair.CreatedBy = row["created_by"].ToString().Trim();
+                        }
+                        if (row["created_time"] != DBNull.Value)
+                        {
+                            pair.CreatedTime = DateTime.Parse(row["created_time"].ToString().Trim());
+                        }
+                        if (!pairsList.ContainsKey(pair.EmployeeID))
+                            pairsList.Add(pair.EmployeeID, new Dictionary<DateTime, List<IOPairProcessedTO>>());
+                        if (!pairsList[pair.EmployeeID].ContainsKey(pair.IOPairDate))
+                            pairsList[pair.EmployeeID].Add(pair.IOPairDate, new List<IOPairProcessedTO>());
+
+                        pairsList[pair.EmployeeID][pair.IOPairDate].Add(pair);
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+
+            return pairsList;
+        }
+
+        public Dictionary<int, Dictionary<DateTime, List<IOPairProcessedTO>>> getPairsToVerifyEmplDaySet(string recIDs)
+        {
+            DataSet dataSet = new DataSet();
+            IOPairProcessedTO pair = new IOPairProcessedTO();
+            Dictionary<int, Dictionary<DateTime, List<IOPairProcessedTO>>> pairsList = new Dictionary<int, Dictionary<DateTime, List<IOPairProcessedTO>>>();
+            string select = "";
+            try
+            {
+                if (recIDs.Trim().Equals(""))
+                    return pairsList;
+
+                select = "SELECT * FROM io_pairs_processed WHERE io_pair_date IN (SELECT io_pair_date FROM io_pairs_processed WHERE rec_id IN (" + recIDs.Trim() + "))"
+                    + " AND employee_id IN (SELECT employee_id FROM io_pairs_processed WHERE rec_id IN (" + recIDs.Trim() + "))";
+
+                SqlCommand cmd = new SqlCommand(select + " ORDER BY employee_id, start_time", conn);
+                cmd.CommandTimeout = Constants.commandTimeout;
+                SqlDataAdapter sqlDataAdapter = new SqlDataAdapter(cmd);
+
+                sqlDataAdapter.Fill(dataSet, "IOPairsProcessed");
+                DataTable table = dataSet.Tables["IOPairsProcessed"];
+
+                if (table.Rows.Count > 0)
+                {
+                    foreach (DataRow row in table.Rows)
+                    {
+                        pair = new IOPairProcessedTO();
+                        pair.RecID = UInt32.Parse(row["rec_id"].ToString().Trim());
+                        if (row["io_pair_id"] != DBNull.Value)
+                        {
+                            pair.IOPairID = Int32.Parse(row["io_pair_id"].ToString().Trim());
+                        }
+                        if (row["io_pair_date"] != DBNull.Value)
+                        {
+                            pair.IOPairDate = (DateTime)row["io_pair_date"];
+                        }
+                        if (row["employee_id"] != DBNull.Value)
+                        {
+                            pair.EmployeeID = Int32.Parse(row["employee_id"].ToString().Trim());
+                        }
+                        if (row["location_id"] != DBNull.Value)
+                        {
+                            pair.LocationID = Int32.Parse(row["location_id"].ToString().Trim());
+                        }
+                        if (row["is_wrk_hrs_counter"] != DBNull.Value)
+                        {
+                            pair.IsWrkHrsCounter = Int32.Parse(row["is_wrk_hrs_counter"].ToString().Trim());
+                        }
+                        if (row["pass_type_id"] != DBNull.Value)
+                        {
+                            pair.PassTypeID = Int32.Parse(row["pass_type_id"].ToString().Trim());
+                        }
+                        if (row["start_time"] != DBNull.Value)
+                        {
+                            pair.StartTime = (DateTime)row["start_time"];
+                        }
+                        if (row["end_time"] != DBNull.Value)
+                        {
+                            pair.EndTime = (DateTime)row["end_time"];
+                        }
+                        if (row["manual_created"] != DBNull.Value)
+                        {
+                            pair.ManualCreated = Int32.Parse(row["manual_created"].ToString().Trim());
+                        }
+                        if (row["confirmation_flag"] != DBNull.Value)
+                        {
+                            pair.ConfirmationFlag = Int32.Parse(row["confirmation_flag"].ToString().Trim());
+                        }
+                        if (row["confirmed_by"] != DBNull.Value)
+                        {
+                            pair.ConfirmedBy = row["confirmed_by"].ToString().Trim();
+                        }
+                        if (row["confirmation_time"] != DBNull.Value)
+                        {
+                            pair.ConfirmationTime = DateTime.Parse(row["confirmation_time"].ToString().Trim());
+                        }
+                        if (row["verification_flag"] != DBNull.Value)
+                        {
+                            pair.VerificationFlag = Int32.Parse(row["verification_flag"].ToString().Trim());
+                        }
+                        if (row["verified_by"] != DBNull.Value)
+                        {
+                            pair.VerifiedBy = row["verified_by"].ToString().Trim();
+                        }
+                        if (row["verification_time"] != DBNull.Value)
+                        {
+                            pair.VerifiedTime = DateTime.Parse(row["verification_time"].ToString().Trim());
+                        }
+                        if (row["alert"] != DBNull.Value)
+                        {
+                            pair.Alert = row["alert"].ToString().Trim();
+                        }
+                        if (row["description"] != DBNull.Value)
+                        {
+                            pair.Desc = row["description"].ToString().Trim();
+                        }
+                        if (row["created_by"] != DBNull.Value)
+                        {
+                            pair.CreatedBy = row["created_by"].ToString().Trim();
+                        }
+                        if (row["created_time"] != DBNull.Value)
+                        {
+                            pair.CreatedTime = DateTime.Parse(row["created_time"].ToString().Trim());
+                        }
+                        if (!pairsList.ContainsKey(pair.EmployeeID))
+                            pairsList.Add(pair.EmployeeID, new Dictionary<DateTime, List<IOPairProcessedTO>>());
+                        if (!pairsList[pair.EmployeeID].ContainsKey(pair.IOPairDate))
+                            pairsList[pair.EmployeeID].Add(pair.IOPairDate, new List<IOPairProcessedTO>());
+
+                        pairsList[pair.EmployeeID][pair.IOPairDate].Add(pair);
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+
+            return pairsList;
+        }
+
+        public Dictionary<int, Dictionary<DateTime, List<IOPairProcessedTO>>> getManualCreatedPairs(Dictionary<int, List<DateTime>> emplDateList)
+        {
+            DataSet dataSet = new DataSet();
+            IOPairProcessedTO pair = new IOPairProcessedTO();
+            Dictionary<int, Dictionary<DateTime, List<IOPairProcessedTO>>> pairsList = new Dictionary<int, Dictionary<DateTime, List<IOPairProcessedTO>>>();
+
+            try
+            {
+                StringBuilder sb = new StringBuilder();
+                sb.Append("SELECT ip.*");
+                sb.Append(" FROM io_pairs_processed ip WHERE (");
+                foreach (int empl in emplDateList.Keys)
+                {
+                    sb.Append(" ( employee_id = " + empl + " AND io_pair_date IN (");
+                    foreach (DateTime dt in emplDateList[empl])
+                    {
+                        sb.Append("'" + dt.ToString("yyy-MM-dd HH:mm:ss") + "', ");
+                    }
+                    sb.Remove(sb.ToString().Length - 2, 2);
+                    sb.Append(") AND io_pair_date IN (SELECT io_pair_date FROM io_pairs_processed WHERE employee_id = " + empl + " AND manual_created = " + Constants.yesInt + ")");
+                    sb.Append(") OR");
+                }
+                string select = sb.ToString().Substring(0, sb.ToString().Length - 2);
+                // select += " AND alert IN (" + Constants.alertStatusLeavePair.ToString() + ", " + Constants.alertStatusNoAlert.ToString() + ", " + Constants.alertStatus.ToString() + ")  AND manual_created = " + Constants.yesInt.ToString();
+                //select += ") AND manual_created = " + Constants.yesInt.ToString();
+
+                SqlCommand cmd = new SqlCommand(select+")", conn);
+                cmd.CommandTimeout = Constants.commandTimeout;
+                SqlDataAdapter sqlDataAdapter = new SqlDataAdapter(cmd);
+
+                sqlDataAdapter.Fill(dataSet, "IOPairsProcessed");
+                DataTable table = dataSet.Tables["IOPairsProcessed"];
+
+                if (table.Rows.Count > 0)
+                {
+                    foreach (DataRow row in table.Rows)
+                    {
+                        pair = new IOPairProcessedTO();
+                        pair.RecID = UInt32.Parse(row["rec_id"].ToString().Trim());
+                        if (row["io_pair_id"] != DBNull.Value)
+                        {
+                            pair.IOPairID = Int32.Parse(row["io_pair_id"].ToString().Trim());
+                        }
+                        if (row["io_pair_date"] != DBNull.Value)
+                        {
+                            pair.IOPairDate = (DateTime)row["io_pair_date"];
+                        }
+                        if (row["employee_id"] != DBNull.Value)
+                        {
+                            pair.EmployeeID = Int32.Parse(row["employee_id"].ToString().Trim());
+                        }
+                        if (row["location_id"] != DBNull.Value)
+                        {
+                            pair.LocationID = Int32.Parse(row["location_id"].ToString().Trim());
+                        }
+                        if (row["is_wrk_hrs_counter"] != DBNull.Value)
+                        {
+                            pair.IsWrkHrsCounter = Int32.Parse(row["is_wrk_hrs_counter"].ToString().Trim());
+                        }
+                        if (row["pass_type_id"] != DBNull.Value)
+                        {
+                            pair.PassTypeID = Int32.Parse(row["pass_type_id"].ToString().Trim());
+                        }
+                        if (row["start_time"] != DBNull.Value)
+                        {
+                            pair.StartTime = (DateTime)row["start_time"];
+                        }
+                        if (row["end_time"] != DBNull.Value)
+                        {
+                            pair.EndTime = (DateTime)row["end_time"];
+                        }
+                        if (row["manual_created"] != DBNull.Value)
+                        {
+                            pair.ManualCreated = Int32.Parse(row["manual_created"].ToString().Trim());
+                        }
+                        if (row["confirmation_flag"] != DBNull.Value)
+                        {
+                            pair.ConfirmationFlag = Int32.Parse(row["confirmation_flag"].ToString().Trim());
+                        }
+                        if (row["confirmed_by"] != DBNull.Value)
+                        {
+                            pair.ConfirmedBy = row["confirmed_by"].ToString().Trim();
+                        }
+                        if (row["confirmation_time"] != DBNull.Value)
+                        {
+                            pair.ConfirmationTime = DateTime.Parse(row["confirmation_time"].ToString().Trim());
+                        }
+                        if (row["created_by"] != DBNull.Value)
+                        {
+                            pair.CreatedBy = row["created_by"].ToString().Trim();
+                        }
+                        if (row["created_time"] != DBNull.Value)
+                        {
+                            pair.CreatedTime = DateTime.Parse(row["created_time"].ToString().Trim());
+                        }
+                        if (row["verification_flag"] != DBNull.Value)
+                        {
+                            pair.VerificationFlag = Int32.Parse(row["verification_flag"].ToString().Trim());
+                        }
+                        if (row["verified_by"] != DBNull.Value)
+                        {
+                            pair.VerifiedBy = row["verified_by"].ToString().Trim();
+                        }
+                        if (row["verification_time"] != DBNull.Value)
+                        {
+                            pair.VerifiedTime = DateTime.Parse(row["verification_time"].ToString().Trim());
+                        }
+                        if (row["alert"] != DBNull.Value)
+                        {
+                            pair.Alert = row["alert"].ToString().Trim();
+                        }
+                        if (row["description"] != DBNull.Value)
+                        {
+                            pair.Desc = row["description"].ToString().Trim();
+                        }
+                        if (!pairsList.ContainsKey(pair.EmployeeID))
+                            pairsList.Add(pair.EmployeeID, new Dictionary<DateTime, List<IOPairProcessedTO>>());
+                        if (!pairsList[pair.EmployeeID].ContainsKey(pair.IOPairDate))
+                            pairsList[pair.EmployeeID].Add(pair.IOPairDate, new List<IOPairProcessedTO>());
+
+                        pairsList[pair.EmployeeID][pair.IOPairDate].Add(pair);
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+
+            return pairsList;
+        }
+       /* public Dictionary<int, Dictionary<DateTime, List<IOPairProcessedTO>>> getManualCreatedPairs(Dictionary<int, List<DateTime>> emplDateList, IDbTransaction trans)
+        {
+            DataSet dataSet = new DataSet();
+            IOPairProcessedTO pair = new IOPairProcessedTO();
+            Dictionary<int, Dictionary<DateTime, List<IOPairProcessedTO>>> pairsList = new Dictionary<int, Dictionary<DateTime, List<IOPairProcessedTO>>>();
+
+            try
+            {
+                StringBuilder sb = new StringBuilder();
+                sb.Append("SELECT ip.*");
+                sb.Append(" FROM io_pairs_processed ip WHERE (");
+                foreach (int empl in emplDateList.Keys)
+                {
+                    sb.Append(" ( employee_id = " + empl + " AND io_pair_date IN (");
+                    foreach (DateTime dt in emplDateList[empl])
+                    {
+                        sb.Append("'" + dt.ToString("yyy-MM-dd HH:mm:ss") + "', ");
+                    }
+                    sb.Remove(sb.ToString().Length - 2, 2);
+                    sb.Append(") AND io_pair_date IN (SELECT io_pair_date FROM io_pairs_processed WHERE employee_id = " + empl + " AND manual_created = " + Constants.yesInt + ")");
+                    sb.Append(") OR");
+                }
+                string select = sb.ToString().Substring(0, sb.ToString().Length - 2);
+                // select += " AND alert IN (" + Constants.alertStatusLeavePair.ToString() + ", " + Constants.alertStatusNoAlert.ToString() + ", " + Constants.alertStatus.ToString() + ")  AND manual_created = " + Constants.yesInt.ToString();
+                //select += ") AND manual_created = " + Constants.yesInt.ToString();
+
+                SqlCommand cmd = new SqlCommand(select + ")", conn,(SqlTransaction)trans );
+                cmd.CommandTimeout = Constants.commandTimeout;
+                SqlDataAdapter sqlDataAdapter = new SqlDataAdapter(cmd);
+
+                sqlDataAdapter.Fill(dataSet, "IOPairsProcessed");
+                DataTable table = dataSet.Tables["IOPairsProcessed"];
+
+                if (table.Rows.Count > 0)
+                {
+                    foreach (DataRow row in table.Rows)
+                    {
+                        pair = new IOPairProcessedTO();
+                        pair.RecID = UInt32.Parse(row["rec_id"].ToString().Trim());
+                        if (row["io_pair_id"] != DBNull.Value)
+                        {
+                            pair.IOPairID = Int32.Parse(row["io_pair_id"].ToString().Trim());
+                        }
+                        if (row["io_pair_date"] != DBNull.Value)
+                        {
+                            pair.IOPairDate = (DateTime)row["io_pair_date"];
+                        }
+                        if (row["employee_id"] != DBNull.Value)
+                        {
+                            pair.EmployeeID = Int32.Parse(row["employee_id"].ToString().Trim());
+                        }
+                        if (row["location_id"] != DBNull.Value)
+                        {
+                            pair.LocationID = Int32.Parse(row["location_id"].ToString().Trim());
+                        }
+                        if (row["is_wrk_hrs_counter"] != DBNull.Value)
+                        {
+                            pair.IsWrkHrsCounter = Int32.Parse(row["is_wrk_hrs_counter"].ToString().Trim());
+                        }
+                        if (row["pass_type_id"] != DBNull.Value)
+                        {
+                            pair.PassTypeID = Int32.Parse(row["pass_type_id"].ToString().Trim());
+                        }
+                        if (row["start_time"] != DBNull.Value)
+                        {
+                            pair.StartTime = (DateTime)row["start_time"];
+                        }
+                        if (row["end_time"] != DBNull.Value)
+                        {
+                            pair.EndTime = (DateTime)row["end_time"];
+                        }
+                        if (row["manual_created"] != DBNull.Value)
+                        {
+                            pair.ManualCreated = Int32.Parse(row["manual_created"].ToString().Trim());
+                        }
+                        if (row["confirmation_flag"] != DBNull.Value)
+                        {
+                            pair.ConfirmationFlag = Int32.Parse(row["confirmation_flag"].ToString().Trim());
+                        }
+                        if (row["confirmed_by"] != DBNull.Value)
+                        {
+                            pair.ConfirmedBy = row["confirmed_by"].ToString().Trim();
+                        }
+                        if (row["confirmation_time"] != DBNull.Value)
+                        {
+                            pair.ConfirmationTime = DateTime.Parse(row["confirmation_time"].ToString().Trim());
+                        }
+                        if (row["created_by"] != DBNull.Value)
+                        {
+                            pair.CreatedBy = row["created_by"].ToString().Trim();
+                        }
+                        if (row["created_time"] != DBNull.Value)
+                        {
+                            pair.CreatedTime = DateTime.Parse(row["created_time"].ToString().Trim());
+                        }
+                        if (row["verification_flag"] != DBNull.Value)
+                        {
+                            pair.VerificationFlag = Int32.Parse(row["verification_flag"].ToString().Trim());
+                        }
+                        if (row["verified_by"] != DBNull.Value)
+                        {
+                            pair.VerifiedBy = row["verified_by"].ToString().Trim();
+                        }
+                        if (row["verification_time"] != DBNull.Value)
+                        {
+                            pair.VerifiedTime = DateTime.Parse(row["verification_time"].ToString().Trim());
+                        }
+                        if (row["alert"] != DBNull.Value)
+                        {
+                            pair.Alert = row["alert"].ToString().Trim();
+                        }
+                        if (row["description"] != DBNull.Value)
+                        {
+                            pair.Desc = row["description"].ToString().Trim();
+                        }
+                        if (!pairsList.ContainsKey(pair.EmployeeID))
+                            pairsList.Add(pair.EmployeeID, new Dictionary<DateTime, List<IOPairProcessedTO>>());
+                        if (!pairsList[pair.EmployeeID].ContainsKey(pair.IOPairDate))
+                            pairsList[pair.EmployeeID].Add(pair.IOPairDate, new List<IOPairProcessedTO>());
+
+                        pairsList[pair.EmployeeID][pair.IOPairDate].Add(pair);
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+
+            return pairsList;
+        }*/
+        
+        //natalija08112017 procesirani parovi, bez celodnevnih odsustva
+        public Dictionary<int, Dictionary<DateTime, List<IOPairProcessedTO>>> getManualCreatedPairs(Dictionary<int, List<DateTime>> emplDateList, IDbTransaction trans)
+        {
+            DataSet dataSet = new DataSet();
+            IOPairProcessedTO pair = new IOPairProcessedTO();
+            Dictionary<int, Dictionary<DateTime, List<IOPairProcessedTO>>> pairsList = new Dictionary<int, Dictionary<DateTime, List<IOPairProcessedTO>>>();
+
+            try
+            {
+                StringBuilder sb = new StringBuilder();
+                sb.Append("SELECT ip.*");
+                //sb.Append(" FROM io_pairs_processed ip WHERE (");
+                sb.Append(" FROM io_pairs_processed ip JOIN pass_types pt ON ip.pass_type_id = pt.pass_type_id WHERE (");//IZMENA
+                foreach (int empl in emplDateList.Keys)
+                {
+                    //sb.Append(" ( employee_id = " + empl + " AND io_pair_date IN (");
+                    sb.Append(" ( ip.employee_id = " + empl + " AND pt.pass_type != " + 2 + " AND ip.io_pair_date IN (");//IZMENA
+                    foreach (DateTime dt in emplDateList[empl])
+                    {
+                        sb.Append("'" + dt.ToString("yyy-MM-dd HH:mm:ss") + "', ");
+                    }
+                    sb.Remove(sb.ToString().Length - 2, 2);
+                    sb.Append(") AND io_pair_date IN (SELECT io_pair_date FROM io_pairs_processed WHERE employee_id = " + empl + " AND manual_created = " + Constants.yesInt + ")");
+                    sb.Append(") OR");
+                }
+                string select = sb.ToString().Substring(0, sb.ToString().Length - 2);
+                // select += " AND alert IN (" + Constants.alertStatusLeavePair.ToString() + ", " + Constants.alertStatusNoAlert.ToString() + ", " + Constants.alertStatus.ToString() + ")  AND manual_created = " + Constants.yesInt.ToString();
+                //select += ") AND manual_created = " + Constants.yesInt.ToString();
+
+                SqlCommand cmd = new SqlCommand(select + ")", conn, (SqlTransaction)trans);
+                cmd.CommandTimeout = Constants.commandTimeout;
+                SqlDataAdapter sqlDataAdapter = new SqlDataAdapter(cmd);
+
+                sqlDataAdapter.Fill(dataSet, "IOPairsProcessed");
+                DataTable table = dataSet.Tables["IOPairsProcessed"];
+
+                if (table.Rows.Count > 0)
+                {
+                    foreach (DataRow row in table.Rows)
+                    {
+                        pair = new IOPairProcessedTO();
+                        pair.RecID = UInt32.Parse(row["rec_id"].ToString().Trim());
+                        if (row["io_pair_id"] != DBNull.Value)
+                        {
+                            pair.IOPairID = Int32.Parse(row["io_pair_id"].ToString().Trim());
+                        }
+                        if (row["io_pair_date"] != DBNull.Value)
+                        {
+                            pair.IOPairDate = (DateTime)row["io_pair_date"];
+                        }
+                        if (row["employee_id"] != DBNull.Value)
+                        {
+                            pair.EmployeeID = Int32.Parse(row["employee_id"].ToString().Trim());
+                        }
+                        if (row["location_id"] != DBNull.Value)
+                        {
+                            pair.LocationID = Int32.Parse(row["location_id"].ToString().Trim());
+                        }
+                        if (row["is_wrk_hrs_counter"] != DBNull.Value)
+                        {
+                            pair.IsWrkHrsCounter = Int32.Parse(row["is_wrk_hrs_counter"].ToString().Trim());
+                        }
+                        if (row["pass_type_id"] != DBNull.Value)
+                        {
+                            pair.PassTypeID = Int32.Parse(row["pass_type_id"].ToString().Trim());
+                        }
+                        if (row["start_time"] != DBNull.Value)
+                        {
+                            pair.StartTime = (DateTime)row["start_time"];
+                        }
+                        if (row["end_time"] != DBNull.Value)
+                        {
+                            pair.EndTime = (DateTime)row["end_time"];
+                        }
+                        if (row["manual_created"] != DBNull.Value)
+                        {
+                            pair.ManualCreated = Int32.Parse(row["manual_created"].ToString().Trim());
+                        }
+                        if (row["confirmation_flag"] != DBNull.Value)
+                        {
+                            pair.ConfirmationFlag = Int32.Parse(row["confirmation_flag"].ToString().Trim());
+                        }
+                        if (row["confirmed_by"] != DBNull.Value)
+                        {
+                            pair.ConfirmedBy = row["confirmed_by"].ToString().Trim();
+                        }
+                        if (row["confirmation_time"] != DBNull.Value)
+                        {
+                            pair.ConfirmationTime = DateTime.Parse(row["confirmation_time"].ToString().Trim());
+                        }
+                        if (row["created_by"] != DBNull.Value)
+                        {
+                            pair.CreatedBy = row["created_by"].ToString().Trim();
+                        }
+                        if (row["created_time"] != DBNull.Value)
+                        {
+                            pair.CreatedTime = DateTime.Parse(row["created_time"].ToString().Trim());
+                        }
+                        if (row["verification_flag"] != DBNull.Value)
+                        {
+                            pair.VerificationFlag = Int32.Parse(row["verification_flag"].ToString().Trim());
+                        }
+                        if (row["verified_by"] != DBNull.Value)
+                        {
+                            pair.VerifiedBy = row["verified_by"].ToString().Trim();
+                        }
+                        if (row["verification_time"] != DBNull.Value)
+                        {
+                            pair.VerifiedTime = DateTime.Parse(row["verification_time"].ToString().Trim());
+                        }
+                        if (row["alert"] != DBNull.Value)
+                        {
+                            pair.Alert = row["alert"].ToString().Trim();
+                        }
+                        if (row["description"] != DBNull.Value)
+                        {
+                            pair.Desc = row["description"].ToString().Trim();
+                        }
+                        if (!pairsList.ContainsKey(pair.EmployeeID))
+                            pairsList.Add(pair.EmployeeID, new Dictionary<DateTime, List<IOPairProcessedTO>>());
+                        if (!pairsList[pair.EmployeeID].ContainsKey(pair.IOPairDate))
+                            pairsList[pair.EmployeeID].Add(pair.IOPairDate, new List<IOPairProcessedTO>());
+
+                        pairsList[pair.EmployeeID][pair.IOPairDate].Add(pair);
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+
+            return pairsList;
+        }
+
+        //natalija08112017 procesirani parovi, samo celodnevna odsustva
+        public Dictionary<int, Dictionary<DateTime, List<IOPairProcessedTO>>> getManualCreatedPairsWholeDayAbsence(Dictionary<int, List<DateTime>> emplDateList, IDbTransaction trans)
+        {
+            DataSet dataSet = new DataSet();
+            IOPairProcessedTO pair = new IOPairProcessedTO();
+            Dictionary<int, Dictionary<DateTime, List<IOPairProcessedTO>>> pairsList = new Dictionary<int, Dictionary<DateTime, List<IOPairProcessedTO>>>();
+
+            try
+            {
+                StringBuilder sb = new StringBuilder();
+                sb.Append("SELECT ip.*");
+                //sb.Append(" FROM io_pairs_processed ip WHERE (");
+                sb.Append(" FROM io_pairs_processed ip JOIN pass_types pt ON ip.pass_type_id = pt.pass_type_id WHERE (");//IZMENA
+                foreach (int empl in emplDateList.Keys)
+                {
+                    //sb.Append(" ( employee_id = " + empl + " AND io_pair_date IN (");
+                    sb.Append(" ( ip.employee_id = " + empl + " AND pt.pass_type = " + 2 + " AND ip.io_pair_date IN (");//IZMENA
+                    foreach (DateTime dt in emplDateList[empl])
+                    {
+                        sb.Append("'" + dt.ToString("yyy-MM-dd HH:mm:ss") + "', ");
+                    }
+                    sb.Remove(sb.ToString().Length - 2, 2);
+                    sb.Append(") AND io_pair_date IN (SELECT io_pair_date FROM io_pairs_processed WHERE employee_id = " + empl + " AND manual_created = " + Constants.yesInt + ")");
+                    sb.Append(") OR");
+                }
+                string select = sb.ToString().Substring(0, sb.ToString().Length - 2);
+                // select += " AND alert IN (" + Constants.alertStatusLeavePair.ToString() + ", " + Constants.alertStatusNoAlert.ToString() + ", " + Constants.alertStatus.ToString() + ")  AND manual_created = " + Constants.yesInt.ToString();
+                //select += ") AND manual_created = " + Constants.yesInt.ToString();
+
+                SqlCommand cmd = new SqlCommand(select + ")", conn, (SqlTransaction)trans);
+                cmd.CommandTimeout = Constants.commandTimeout;
+                SqlDataAdapter sqlDataAdapter = new SqlDataAdapter(cmd);
+
+                sqlDataAdapter.Fill(dataSet, "IOPairsProcessed");
+                DataTable table = dataSet.Tables["IOPairsProcessed"];
+
+                if (table.Rows.Count > 0)
+                {
+                    foreach (DataRow row in table.Rows)
+                    {
+                        pair = new IOPairProcessedTO();
+                        pair.RecID = UInt32.Parse(row["rec_id"].ToString().Trim());
+                        if (row["io_pair_id"] != DBNull.Value)
+                        {
+                            pair.IOPairID = Int32.Parse(row["io_pair_id"].ToString().Trim());
+                        }
+                        if (row["io_pair_date"] != DBNull.Value)
+                        {
+                            pair.IOPairDate = (DateTime)row["io_pair_date"];
+                        }
+                        if (row["employee_id"] != DBNull.Value)
+                        {
+                            pair.EmployeeID = Int32.Parse(row["employee_id"].ToString().Trim());
+                        }
+                        if (row["location_id"] != DBNull.Value)
+                        {
+                            pair.LocationID = Int32.Parse(row["location_id"].ToString().Trim());
+                        }
+                        if (row["is_wrk_hrs_counter"] != DBNull.Value)
+                        {
+                            pair.IsWrkHrsCounter = Int32.Parse(row["is_wrk_hrs_counter"].ToString().Trim());
+                        }
+                        if (row["pass_type_id"] != DBNull.Value)
+                        {
+                            pair.PassTypeID = Int32.Parse(row["pass_type_id"].ToString().Trim());
+                        }
+                        if (row["start_time"] != DBNull.Value)
+                        {
+                            pair.StartTime = (DateTime)row["start_time"];
+                        }
+                        if (row["end_time"] != DBNull.Value)
+                        {
+                            pair.EndTime = (DateTime)row["end_time"];
+                        }
+                        if (row["manual_created"] != DBNull.Value)
+                        {
+                            pair.ManualCreated = Int32.Parse(row["manual_created"].ToString().Trim());
+                        }
+                        if (row["confirmation_flag"] != DBNull.Value)
+                        {
+                            pair.ConfirmationFlag = Int32.Parse(row["confirmation_flag"].ToString().Trim());
+                        }
+                        if (row["confirmed_by"] != DBNull.Value)
+                        {
+                            pair.ConfirmedBy = row["confirmed_by"].ToString().Trim();
+                        }
+                        if (row["confirmation_time"] != DBNull.Value)
+                        {
+                            pair.ConfirmationTime = DateTime.Parse(row["confirmation_time"].ToString().Trim());
+                        }
+                        if (row["created_by"] != DBNull.Value)
+                        {
+                            pair.CreatedBy = row["created_by"].ToString().Trim();
+                        }
+                        if (row["created_time"] != DBNull.Value)
+                        {
+                            pair.CreatedTime = DateTime.Parse(row["created_time"].ToString().Trim());
+                        }
+                        if (row["verification_flag"] != DBNull.Value)
+                        {
+                            pair.VerificationFlag = Int32.Parse(row["verification_flag"].ToString().Trim());
+                        }
+                        if (row["verified_by"] != DBNull.Value)
+                        {
+                            pair.VerifiedBy = row["verified_by"].ToString().Trim();
+                        }
+                        if (row["verification_time"] != DBNull.Value)
+                        {
+                            pair.VerifiedTime = DateTime.Parse(row["verification_time"].ToString().Trim());
+                        }
+                        if (row["alert"] != DBNull.Value)
+                        {
+                            pair.Alert = row["alert"].ToString().Trim();
+                        }
+                        if (row["description"] != DBNull.Value)
+                        {
+                            pair.Desc = row["description"].ToString().Trim();
+                        }
+                        if (!pairsList.ContainsKey(pair.EmployeeID))
+                            pairsList.Add(pair.EmployeeID, new Dictionary<DateTime, List<IOPairProcessedTO>>());
+                        if (!pairsList[pair.EmployeeID].ContainsKey(pair.IOPairDate))
+                            pairsList[pair.EmployeeID].Add(pair.IOPairDate, new List<IOPairProcessedTO>());
+
+                        pairsList[pair.EmployeeID][pair.IOPairDate].Add(pair);
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+
+            return pairsList;
+        }
+        
+        public DateTime getMaxDateOfPair(string employeeID, IDbTransaction trans)
+        {
+            DataSet dataSet = new DataSet();
+            DateTime pairDate = new DateTime();
+
+            try
+            {
+                StringBuilder sb = new StringBuilder();
+                sb.Append("SELECT MAX(io_pair_date) as io_pair_date from io_pairs_processed where employee_id IN ( " + employeeID + " )");
+               
+                string select = sb.ToString();
+               
+                SqlCommand cmd = new SqlCommand(select , conn, (SqlTransaction)trans);
+                cmd.CommandTimeout = Constants.commandTimeout;
+                SqlDataAdapter sqlDataAdapter = new SqlDataAdapter(cmd);
+
+                sqlDataAdapter.Fill(dataSet, "IOPairsProcessed");
+                DataTable table = dataSet.Tables["IOPairsProcessed"];
+
+                if (table.Rows.Count > 0)
+                {
+                    DataRow row = table.Rows[0];
+                    if (row["io_pair_date"] != DBNull.Value)
+                        pairDate = DateTime.Parse(row["io_pair_date"].ToString().Trim());              
+                }
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+
+            return pairDate;
+        }
+        public  List<IOPairProcessedTO> getProcessedPairs(Dictionary<int, List<DateTime>> emplDateList)
+        {
+            DataSet dataSet = new DataSet();
+            IOPairProcessedTO pair = new IOPairProcessedTO();
+            List<IOPairProcessedTO> pairsList = new  List<IOPairProcessedTO>();
+
+            try
+            {
+                StringBuilder sb = new StringBuilder();
+                sb.Append("SELECT ip.*");
+                sb.Append(" FROM io_pairs_processed ip WHERE (");
+                foreach (int empl in emplDateList.Keys)
+                {
+                    sb.Append(" ( employee_id = " + empl + " AND io_pair_date IN (");
+                    foreach (DateTime dt in emplDateList[empl])
+                    {
+                        sb.Append("'" + dt.ToString("yyy-MM-dd HH:mm:ss") + "', ");
+                    }
+                    sb.Remove(sb.ToString().Length - 2, 2);
+                    sb.Append(")) OR");
+                }
+                string select = sb.ToString().Substring(0, sb.ToString().Length - 2);
+                select += ") " ;
+
+                SqlCommand cmd = new SqlCommand(select, conn);
+                cmd.CommandTimeout = Constants.commandTimeout;
+                SqlDataAdapter sqlDataAdapter = new SqlDataAdapter(cmd);
+
+                sqlDataAdapter.Fill(dataSet, "IOPairsProcessed");
+                DataTable table = dataSet.Tables["IOPairsProcessed"];
+
+                if (table.Rows.Count > 0)
+                {
+                    foreach (DataRow row in table.Rows)
+                    {
+                        pair = new IOPairProcessedTO();
+                        pair.RecID = UInt32.Parse(row["rec_id"].ToString().Trim());
+                        if (row["io_pair_id"] != DBNull.Value)
+                        {
+                            pair.IOPairID = Int32.Parse(row["io_pair_id"].ToString().Trim());
+                        }
+                        if (row["io_pair_date"] != DBNull.Value)
+                        {
+                            pair.IOPairDate = (DateTime)row["io_pair_date"];
+                        }
+                        if (row["employee_id"] != DBNull.Value)
+                        {
+                            pair.EmployeeID = Int32.Parse(row["employee_id"].ToString().Trim());
+                        }
+                        if (row["location_id"] != DBNull.Value)
+                        {
+                            pair.LocationID = Int32.Parse(row["location_id"].ToString().Trim());
+                        }
+                        if (row["is_wrk_hrs_counter"] != DBNull.Value)
+                        {
+                            pair.IsWrkHrsCounter = Int32.Parse(row["is_wrk_hrs_counter"].ToString().Trim());
+                        }
+                        if (row["pass_type_id"] != DBNull.Value)
+                        {
+                            pair.PassTypeID = Int32.Parse(row["pass_type_id"].ToString().Trim());
+                        }
+                        if (row["start_time"] != DBNull.Value)
+                        {
+                            pair.StartTime = (DateTime)row["start_time"];
+                        }
+                        if (row["end_time"] != DBNull.Value)
+                        {
+                            pair.EndTime = (DateTime)row["end_time"];
+                        }
+                        if (row["manual_created"] != DBNull.Value)
+                        {
+                            pair.ManualCreated = Int32.Parse(row["manual_created"].ToString().Trim());
+                        }
+                        if (row["confirmation_flag"] != DBNull.Value)
+                        {
+                            pair.ConfirmationFlag = Int32.Parse(row["confirmation_flag"].ToString().Trim());
+                        }
+                        if (row["confirmed_by"] != DBNull.Value)
+                        {
+                            pair.ConfirmedBy = row["confirmed_by"].ToString().Trim();
+                        }
+                        if (row["confirmation_time"] != DBNull.Value)
+                        {
+                            pair.ConfirmationTime = DateTime.Parse(row["confirmation_time"].ToString().Trim());
+                        }
+                        if (row["created_by"] != DBNull.Value)
+                        {
+                            pair.CreatedBy = row["created_by"].ToString().Trim();
+                        }
+                        if (row["created_time"] != DBNull.Value)
+                        {
+                            pair.CreatedTime = DateTime.Parse(row["created_time"].ToString().Trim());
+                        }
+                        if (row["verification_flag"] != DBNull.Value)
+                        {
+                            pair.VerificationFlag = Int32.Parse(row["verification_flag"].ToString().Trim());
+                        }
+                        if (row["verified_by"] != DBNull.Value)
+                        {
+                            pair.VerifiedBy = row["verified_by"].ToString().Trim();
+                        }
+                        if (row["verification_time"] != DBNull.Value)
+                        {
+                            pair.VerifiedTime = DateTime.Parse(row["verification_time"].ToString().Trim());
+                        }
+                        if (row["alert"] != DBNull.Value)
+                        {
+                            pair.Alert = row["alert"].ToString().Trim();
+                        }
+                        if (row["description"] != DBNull.Value)
+                        {
+                            pair.Desc = row["description"].ToString().Trim();
+                        }                       
+                       
+
+                        pairsList.Add(pair);
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+
+            return pairsList;
+        }
+
+        public List<IOPairProcessedTO> getProcessedPairs(Dictionary<int, List<DateTime>> emplDateList, IDbTransaction trans)
+        {
+            DataSet dataSet = new DataSet();
+            IOPairProcessedTO pair = new IOPairProcessedTO();
+            List<IOPairProcessedTO> pairsList = new List<IOPairProcessedTO>();
+
+            try
+            {
+                StringBuilder sb = new StringBuilder();
+                sb.Append("SELECT ip.*");
+                sb.Append(" FROM io_pairs_processed ip WHERE (");
+                foreach (int empl in emplDateList.Keys)
+                {
+                    sb.Append(" ( employee_id = " + empl + " AND io_pair_date IN (");
+                    foreach (DateTime dt in emplDateList[empl])
+                    {
+                        sb.Append("'" + dt.ToString("yyy-MM-dd HH:mm:ss") + "', ");
+                    }
+                    sb.Remove(sb.ToString().Length - 2, 2);
+                    sb.Append(")) OR");
+                }
+                string select = sb.ToString().Substring(0, sb.ToString().Length - 2);
+                select += ") ";
+
+                SqlCommand cmd = new SqlCommand(select, conn, (SqlTransaction)trans);
+                cmd.CommandTimeout = Constants.commandTimeout;
+                SqlDataAdapter sqlDataAdapter = new SqlDataAdapter(cmd);
+
+                sqlDataAdapter.Fill(dataSet, "IOPairsProcessed");
+                DataTable table = dataSet.Tables["IOPairsProcessed"];
+
+                if (table.Rows.Count > 0)
+                {
+                    foreach (DataRow row in table.Rows)
+                    {
+                        pair = new IOPairProcessedTO();
+                        pair.RecID = UInt32.Parse(row["rec_id"].ToString().Trim());
+                        if (row["io_pair_id"] != DBNull.Value)
+                        {
+                            pair.IOPairID = Int32.Parse(row["io_pair_id"].ToString().Trim());
+                        }
+                        if (row["io_pair_date"] != DBNull.Value)
+                        {
+                            pair.IOPairDate = (DateTime)row["io_pair_date"];
+                        }
+                        if (row["employee_id"] != DBNull.Value)
+                        {
+                            pair.EmployeeID = Int32.Parse(row["employee_id"].ToString().Trim());
+                        }
+                        if (row["location_id"] != DBNull.Value)
+                        {
+                            pair.LocationID = Int32.Parse(row["location_id"].ToString().Trim());
+                        }
+                        if (row["is_wrk_hrs_counter"] != DBNull.Value)
+                        {
+                            pair.IsWrkHrsCounter = Int32.Parse(row["is_wrk_hrs_counter"].ToString().Trim());
+                        }
+                        if (row["pass_type_id"] != DBNull.Value)
+                        {
+                            pair.PassTypeID = Int32.Parse(row["pass_type_id"].ToString().Trim());
+                        }
+                        if (row["start_time"] != DBNull.Value)
+                        {
+                            pair.StartTime = (DateTime)row["start_time"];
+                        }
+                        if (row["end_time"] != DBNull.Value)
+                        {
+                            pair.EndTime = (DateTime)row["end_time"];
+                        }
+                        if (row["manual_created"] != DBNull.Value)
+                        {
+                            pair.ManualCreated = Int32.Parse(row["manual_created"].ToString().Trim());
+                        }
+                        if (row["confirmation_flag"] != DBNull.Value)
+                        {
+                            pair.ConfirmationFlag = Int32.Parse(row["confirmation_flag"].ToString().Trim());
+                        }
+                        if (row["confirmed_by"] != DBNull.Value)
+                        {
+                            pair.ConfirmedBy = row["confirmed_by"].ToString().Trim();
+                        }
+                        if (row["confirmation_time"] != DBNull.Value)
+                        {
+                            pair.ConfirmationTime = DateTime.Parse(row["confirmation_time"].ToString().Trim());
+                        }
+                        if (row["created_by"] != DBNull.Value)
+                        {
+                            pair.CreatedBy = row["created_by"].ToString().Trim();
+                        }
+                        if (row["created_time"] != DBNull.Value)
+                        {
+                            pair.CreatedTime = DateTime.Parse(row["created_time"].ToString().Trim());
+                        }
+                        if (row["verification_flag"] != DBNull.Value)
+                        {
+                            pair.VerificationFlag = Int32.Parse(row["verification_flag"].ToString().Trim());
+                        }
+                        if (row["verified_by"] != DBNull.Value)
+                        {
+                            pair.VerifiedBy = row["verified_by"].ToString().Trim();
+                        }
+                        if (row["verification_time"] != DBNull.Value)
+                        {
+                            pair.VerifiedTime = DateTime.Parse(row["verification_time"].ToString().Trim());
+                        }
+                        if (row["alert"] != DBNull.Value)
+                        {
+                            pair.Alert = row["alert"].ToString().Trim();
+                        }
+                        if (row["description"] != DBNull.Value)
+                        {
+                            pair.Desc = row["description"].ToString().Trim();
+                        }
+
+
+                        pairsList.Add(pair);
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+
+            return pairsList;
+        }
+
+        public bool getManualCreatedPairsDayBefore(Dictionary<int, List<DateTime>> emplDateList, Dictionary<int, Dictionary<DateTime, List<IOPairProcessedTO>>> pairsList)
+        {
+            DataSet dataSet = new DataSet();
+            IOPairProcessedTO pair = new IOPairProcessedTO();
+
+            try
+            {
+                StringBuilder sb = new StringBuilder();
+                sb.Append("SELECT ip.*");
+                sb.Append(" FROM io_pairs_processed ip WHERE ");
+                sb.Append(" CONVERT(VARCHAR(5), start_time, 108) > '12:00'AND (");
+                foreach (int empl in emplDateList.Keys)
+                {
+                    sb.Append(" ( employee_id = " + empl + " AND io_pair_date IN (");
+                    foreach (DateTime dt in emplDateList[empl])
+                    {
+                        sb.Append("'" + dt.ToString("yyy-MM-dd HH:mm:ss") + "', ");
+                    }
+                    sb.Remove(sb.ToString().Length - 2, 2);
+                    sb.Append(") AND ( io_pair_date IN (SELECT io_pair_date FROM io_pairs_processed WHERE employee_id = " + empl + " AND manual_created = " + Constants.yesInt + " AND CONVERT(VARCHAR(5), start_time, 108) >= '12:00') OR");
+                    sb.Append(" io_pair_date IN (SELECT DATEADD(day,-1,io_pair_date) FROM io_pairs_processed WHERE employee_id = " + empl + " AND manual_created = " + Constants.yesInt + " AND CONVERT(VARCHAR(5), start_time, 108) <= '12:00') ");
+                    sb.Append(")) OR");
+                }
+                string select = sb.ToString().Substring(0, sb.ToString().Length - 2)+" )";
+                //select += " AND alert IN (" + Constants.alertStatusLeavePair.ToString() + ", " + Constants.alertStatusNoAlert.ToString() + ", " + Constants.alertStatus.ToString() + ")  AND manual_created = " + Constants.yesInt.ToString();
+                //select += " AND manual_created = " + Constants.yesInt.ToString();
+
+                SqlCommand cmd = new SqlCommand(select, conn);
+                cmd.CommandTimeout = Constants.commandTimeout;
+                SqlDataAdapter sqlDataAdapter = new SqlDataAdapter(cmd);
+
+                sqlDataAdapter.Fill(dataSet, "IOPairsProcessed");
+                DataTable table = dataSet.Tables["IOPairsProcessed"];
+
+                if (table.Rows.Count > 0)
+                {
+                    foreach (DataRow row in table.Rows)
+                    {
+                        pair = new IOPairProcessedTO();
+                        pair.RecID = UInt32.Parse(row["rec_id"].ToString().Trim());
+                        if (row["io_pair_id"] != DBNull.Value)
+                        {
+                            pair.IOPairID = Int32.Parse(row["io_pair_id"].ToString().Trim());
+                        }
+                        if (row["io_pair_date"] != DBNull.Value)
+                        {
+                            pair.IOPairDate = (DateTime)row["io_pair_date"];
+                        }
+                        if (row["employee_id"] != DBNull.Value)
+                        {
+                            pair.EmployeeID = Int32.Parse(row["employee_id"].ToString().Trim());
+                        }
+                        if (row["location_id"] != DBNull.Value)
+                        {
+                            pair.LocationID = Int32.Parse(row["location_id"].ToString().Trim());
+                        }
+                        if (row["is_wrk_hrs_counter"] != DBNull.Value)
+                        {
+                            pair.IsWrkHrsCounter = Int32.Parse(row["is_wrk_hrs_counter"].ToString().Trim());
+                        }
+                        if (row["pass_type_id"] != DBNull.Value)
+                        {
+                            pair.PassTypeID = Int32.Parse(row["pass_type_id"].ToString().Trim());
+                        }
+                        if (row["start_time"] != DBNull.Value)
+                        {
+                            pair.StartTime = (DateTime)row["start_time"];
+                        }
+                        if (row["end_time"] != DBNull.Value)
+                        {
+                            pair.EndTime = (DateTime)row["end_time"];
+                        }
+                        if (row["manual_created"] != DBNull.Value)
+                        {
+                            pair.ManualCreated = Int32.Parse(row["manual_created"].ToString().Trim());
+                        }
+                        if (row["confirmation_flag"] != DBNull.Value)
+                        {
+                            pair.ConfirmationFlag = Int32.Parse(row["confirmation_flag"].ToString().Trim());
+                        }
+                        if (row["confirmed_by"] != DBNull.Value)
+                        {
+                            pair.ConfirmedBy = row["confirmed_by"].ToString().Trim();
+                        }
+                        if (row["confirmation_time"] != DBNull.Value)
+                        {
+                            pair.ConfirmationTime = DateTime.Parse(row["confirmation_time"].ToString().Trim());
+                        }
+                        if (row["created_by"] != DBNull.Value)
+                        {
+                            pair.CreatedBy = row["created_by"].ToString().Trim();
+                        }
+                        if (row["created_time"] != DBNull.Value)
+                        {
+                            pair.CreatedTime = DateTime.Parse(row["created_time"].ToString().Trim());
+                        }
+                        if (row["verification_flag"] != DBNull.Value)
+                        {
+                            pair.VerificationFlag = Int32.Parse(row["verification_flag"].ToString().Trim());
+                        }
+                        if (row["verified_by"] != DBNull.Value)
+                        {
+                            pair.VerifiedBy = row["verified_by"].ToString().Trim();
+                        }
+                        if (row["verification_time"] != DBNull.Value)
+                        {
+                            pair.VerifiedTime = DateTime.Parse(row["verification_time"].ToString().Trim());
+                        }
+                        if (row["alert"] != DBNull.Value)
+                        {
+                            pair.Alert = row["alert"].ToString().Trim();
+                        }
+                        if (row["description"] != DBNull.Value)
+                        {
+                            pair.Desc = row["description"].ToString().Trim();
+                        }
+                        if (!pairsList.ContainsKey(pair.EmployeeID))
+                            pairsList.Add(pair.EmployeeID, new Dictionary<DateTime, List<IOPairProcessedTO>>());
+                        if (!pairsList[pair.EmployeeID].ContainsKey(pair.IOPairDate))
+                            pairsList[pair.EmployeeID].Add(pair.IOPairDate, new List<IOPairProcessedTO>());
+
+                        pairsList[pair.EmployeeID][pair.IOPairDate].Add(pair);
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+
+            return true;
+        }
+
+        public bool getManualCreatedPairsDayBefore(Dictionary<int, List<DateTime>> emplDateList, Dictionary<int, Dictionary<DateTime, List<IOPairProcessedTO>>> pairsList, IDbTransaction trans)
+        {
+            DataSet dataSet = new DataSet();
+            IOPairProcessedTO pair = new IOPairProcessedTO();
+
+            try
+            {
+                StringBuilder sb = new StringBuilder();
+                sb.Append("SELECT ip.*");
+                sb.Append(" FROM io_pairs_processed ip WHERE ");
+                sb.Append(" CONVERT(VARCHAR(5), start_time, 108) > '12:00'AND (");
+                foreach (int empl in emplDateList.Keys)
+                {
+                    sb.Append(" ( employee_id = " + empl + " AND io_pair_date IN (");
+                    foreach (DateTime dt in emplDateList[empl])
+                    {
+                        sb.Append("'" + dt.ToString("yyy-MM-dd HH:mm:ss") + "', ");
+                    }
+                    sb.Remove(sb.ToString().Length - 2, 2);
+                    sb.Append(") AND ( io_pair_date IN (SELECT io_pair_date FROM io_pairs_processed WHERE employee_id = " + empl + " AND manual_created = " + Constants.yesInt + " AND CONVERT(VARCHAR(5), start_time, 108) >= '12:00') OR");
+                    sb.Append(" io_pair_date IN (SELECT DATEADD(day,-1,io_pair_date) FROM io_pairs_processed WHERE employee_id = " + empl + " AND manual_created = " + Constants.yesInt + " AND CONVERT(VARCHAR(5), start_time, 108) <= '12:00') ");
+                    sb.Append(")) OR");
+                }
+                string select = sb.ToString().Substring(0, sb.ToString().Length - 2) + " )";
+                //select += " AND alert IN (" + Constants.alertStatusLeavePair.ToString() + ", " + Constants.alertStatusNoAlert.ToString() + ", " + Constants.alertStatus.ToString() + ")  AND manual_created = " + Constants.yesInt.ToString();
+               // select += " AND manual_created = " + Constants.yesInt.ToString();
+
+                SqlCommand cmd = new SqlCommand(select, conn, (SqlTransaction)trans);
+                cmd.CommandTimeout = Constants.commandTimeout;
+                SqlDataAdapter sqlDataAdapter = new SqlDataAdapter(cmd);
+
+                sqlDataAdapter.Fill(dataSet, "IOPairsProcessed");
+                DataTable table = dataSet.Tables["IOPairsProcessed"];
+
+                if (table.Rows.Count > 0)
+                {
+                    foreach (DataRow row in table.Rows)
+                    {
+                        pair = new IOPairProcessedTO();
+                        pair.RecID = UInt32.Parse(row["rec_id"].ToString().Trim());
+                        if (row["io_pair_id"] != DBNull.Value)
+                        {
+                            pair.IOPairID = Int32.Parse(row["io_pair_id"].ToString().Trim());
+                        }
+                        if (row["io_pair_date"] != DBNull.Value)
+                        {
+                            pair.IOPairDate = (DateTime)row["io_pair_date"];
+                        }
+                        if (row["employee_id"] != DBNull.Value)
+                        {
+                            pair.EmployeeID = Int32.Parse(row["employee_id"].ToString().Trim());
+                        }
+                        if (row["location_id"] != DBNull.Value)
+                        {
+                            pair.LocationID = Int32.Parse(row["location_id"].ToString().Trim());
+                        }
+                        if (row["is_wrk_hrs_counter"] != DBNull.Value)
+                        {
+                            pair.IsWrkHrsCounter = Int32.Parse(row["is_wrk_hrs_counter"].ToString().Trim());
+                        }
+                        if (row["pass_type_id"] != DBNull.Value)
+                        {
+                            pair.PassTypeID = Int32.Parse(row["pass_type_id"].ToString().Trim());
+                        }
+                        if (row["start_time"] != DBNull.Value)
+                        {
+                            pair.StartTime = (DateTime)row["start_time"];
+                        }
+                        if (row["end_time"] != DBNull.Value)
+                        {
+                            pair.EndTime = (DateTime)row["end_time"];
+                        }
+                        if (row["manual_created"] != DBNull.Value)
+                        {
+                            pair.ManualCreated = Int32.Parse(row["manual_created"].ToString().Trim());
+                        }
+                        if (row["confirmation_flag"] != DBNull.Value)
+                        {
+                            pair.ConfirmationFlag = Int32.Parse(row["confirmation_flag"].ToString().Trim());
+                        }
+                        if (row["confirmed_by"] != DBNull.Value)
+                        {
+                            pair.ConfirmedBy = row["confirmed_by"].ToString().Trim();
+                        }
+                        if (row["confirmation_time"] != DBNull.Value)
+                        {
+                            pair.ConfirmationTime = DateTime.Parse(row["confirmation_time"].ToString().Trim());
+                        }
+                        if (row["created_by"] != DBNull.Value)
+                        {
+                            pair.CreatedBy = row["created_by"].ToString().Trim();
+                        }
+                        if (row["created_time"] != DBNull.Value)
+                        {
+                            pair.CreatedTime = DateTime.Parse(row["created_time"].ToString().Trim());
+                        }
+                        if (row["verification_flag"] != DBNull.Value)
+                        {
+                            pair.VerificationFlag = Int32.Parse(row["verification_flag"].ToString().Trim());
+                        }
+                        if (row["verified_by"] != DBNull.Value)
+                        {
+                            pair.VerifiedBy = row["verified_by"].ToString().Trim();
+                        }
+                        if (row["verification_time"] != DBNull.Value)
+                        {
+                            pair.VerifiedTime = DateTime.Parse(row["verification_time"].ToString().Trim());
+                        }
+                        if (row["alert"] != DBNull.Value)
+                        {
+                            pair.Alert = row["alert"].ToString().Trim();
+                        }
+                        if (row["description"] != DBNull.Value)
+                        {
+                            pair.Desc = row["description"].ToString().Trim();
+                        }
+                        if (!pairsList.ContainsKey(pair.EmployeeID))
+                            pairsList.Add(pair.EmployeeID, new Dictionary<DateTime, List<IOPairProcessedTO>>());
+                        if (!pairsList[pair.EmployeeID].ContainsKey(pair.IOPairDate))
+                            pairsList[pair.EmployeeID].Add(pair.IOPairDate, new List<IOPairProcessedTO>());
+
+                        pairsList[pair.EmployeeID][pair.IOPairDate].Add(pair);
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+
+            return true;
+        }
+
+        public bool getManualCreatedPairsDayAfter(Dictionary<int, List<DateTime>> emplDateList, Dictionary<int, Dictionary<DateTime, List<IOPairProcessedTO>>> pairsList)
+        {
+            DataSet dataSet = new DataSet();
+            IOPairProcessedTO pair = new IOPairProcessedTO();
+
+            try
+            {
+                StringBuilder sb = new StringBuilder();
+                sb.Append("SELECT ip.*");
+                sb.Append(" FROM io_pairs_processed ip WHERE ");
+                sb.Append(" CONVERT(VARCHAR(5), start_time, 108) <= '12:00' AND (");
+                foreach (int empl in emplDateList.Keys)
+                {
+                    sb.Append(" ( employee_id = " + empl + " AND io_pair_date IN (");
+                    foreach (DateTime dt in emplDateList[empl])
+                    {
+                        sb.Append("'" + dt.ToString("yyy-MM-dd HH:mm:ss") + "', ");
+                    }
+                    sb.Remove(sb.ToString().Length - 2, 2);
+                    sb.Append(") AND ( io_pair_date IN (SELECT io_pair_date FROM io_pairs_processed WHERE employee_id = " + empl + " AND manual_created = " + Constants.yesInt+" AND CONVERT(VARCHAR(5), start_time, 108) <= '12:00') OR");
+                    sb.Append(" io_pair_date IN (SELECT DATEADD(day,1,io_pair_date) FROM io_pairs_processed WHERE employee_id = " + empl + " AND manual_created = " + Constants.yesInt + " AND CONVERT(VARCHAR(5), start_time, 108) >= '12:00') ");
+                    sb.Append(")) OR");
+                }
+                string select = sb.ToString().Substring(0, sb.ToString().Length - 2) ;
+                //select += " AND alert IN (" + Constants.alertStatusLeavePair.ToString() + ", " + Constants.alertStatusNoAlert.ToString() + ", " + Constants.alertStatus.ToString() + ")  AND manual_created = " + Constants.yesInt.ToString();
+               // select += ") AND manual_created = " + Constants.yesInt.ToString();
+
+                SqlCommand cmd = new SqlCommand(select+")", conn);
+                cmd.CommandTimeout = Constants.commandTimeout;
+                SqlDataAdapter sqlDataAdapter = new SqlDataAdapter(cmd);
+
+                sqlDataAdapter.Fill(dataSet, "IOPairsProcessed");
+                DataTable table = dataSet.Tables["IOPairsProcessed"];
+
+                if (table.Rows.Count > 0)
+                {
+                    foreach (DataRow row in table.Rows)
+                    {
+                        pair = new IOPairProcessedTO();
+                        pair.RecID = UInt32.Parse(row["rec_id"].ToString().Trim());
+                        if (row["io_pair_id"] != DBNull.Value)
+                        {
+                            pair.IOPairID = Int32.Parse(row["io_pair_id"].ToString().Trim());
+                        }
+                        if (row["io_pair_date"] != DBNull.Value)
+                        {
+                            pair.IOPairDate = (DateTime)row["io_pair_date"];
+                        }
+                        if (row["employee_id"] != DBNull.Value)
+                        {
+                            pair.EmployeeID = Int32.Parse(row["employee_id"].ToString().Trim());
+                        }
+                        if (row["location_id"] != DBNull.Value)
+                        {
+                            pair.LocationID = Int32.Parse(row["location_id"].ToString().Trim());
+                        }
+                        if (row["is_wrk_hrs_counter"] != DBNull.Value)
+                        {
+                            pair.IsWrkHrsCounter = Int32.Parse(row["is_wrk_hrs_counter"].ToString().Trim());
+                        }
+                        if (row["pass_type_id"] != DBNull.Value)
+                        {
+                            pair.PassTypeID = Int32.Parse(row["pass_type_id"].ToString().Trim());
+                        }
+                        if (row["start_time"] != DBNull.Value)
+                        {
+                            pair.StartTime = (DateTime)row["start_time"];
+                        }
+                        if (row["end_time"] != DBNull.Value)
+                        {
+                            pair.EndTime = (DateTime)row["end_time"];
+                        }
+                        if (row["manual_created"] != DBNull.Value)
+                        {
+                            pair.ManualCreated = Int32.Parse(row["manual_created"].ToString().Trim());
+                        }
+                        if (row["confirmation_flag"] != DBNull.Value)
+                        {
+                            pair.ConfirmationFlag = Int32.Parse(row["confirmation_flag"].ToString().Trim());
+                        }
+                        if (row["confirmed_by"] != DBNull.Value)
+                        {
+                            pair.ConfirmedBy = row["confirmed_by"].ToString().Trim();
+                        }
+                        if (row["confirmation_time"] != DBNull.Value)
+                        {
+                            pair.ConfirmationTime = DateTime.Parse(row["confirmation_time"].ToString().Trim());
+                        }
+                        if (row["created_by"] != DBNull.Value)
+                        {
+                            pair.CreatedBy = row["created_by"].ToString().Trim();
+                        }
+                        if (row["created_time"] != DBNull.Value)
+                        {
+                            pair.CreatedTime = DateTime.Parse(row["created_time"].ToString().Trim());
+                        }
+                        if (row["verification_flag"] != DBNull.Value)
+                        {
+                            pair.VerificationFlag = Int32.Parse(row["verification_flag"].ToString().Trim());
+                        }
+                        if (row["verified_by"] != DBNull.Value)
+                        {
+                            pair.VerifiedBy = row["verified_by"].ToString().Trim();
+                        }
+                        if (row["verification_time"] != DBNull.Value)
+                        {
+                            pair.VerifiedTime = DateTime.Parse(row["verification_time"].ToString().Trim());
+                        }
+                        if (row["alert"] != DBNull.Value)
+                        {
+                            pair.Alert = row["alert"].ToString().Trim();
+                        }
+                        if (row["description"] != DBNull.Value)
+                        {
+                            pair.Desc = row["description"].ToString().Trim();
+                        }
+                        if (!pairsList.ContainsKey(pair.EmployeeID))
+                            pairsList.Add(pair.EmployeeID, new Dictionary<DateTime, List<IOPairProcessedTO>>());
+                        if (!pairsList[pair.EmployeeID].ContainsKey(pair.IOPairDate))
+                            pairsList[pair.EmployeeID].Add(pair.IOPairDate, new List<IOPairProcessedTO>());
+
+                        pairsList[pair.EmployeeID][pair.IOPairDate].Add(pair);
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+
+            return true;
+        }
+
+        public bool getManualCreatedPairsDayAfter(Dictionary<int, List<DateTime>> emplDateList, Dictionary<int, Dictionary<DateTime, List<IOPairProcessedTO>>> pairsList, IDbTransaction trans)
+        {
+            DataSet dataSet = new DataSet();
+            IOPairProcessedTO pair = new IOPairProcessedTO();
+
+            try
+            {
+                StringBuilder sb = new StringBuilder();
+                sb.Append("SELECT ip.*");
+                sb.Append(" FROM io_pairs_processed ip WHERE ");
+                sb.Append(" CONVERT(VARCHAR(5), start_time, 108) <= '12:00' AND (");
+                foreach (int empl in emplDateList.Keys)
+                {
+                    sb.Append(" ( employee_id = " + empl + " AND io_pair_date IN (");
+                    foreach (DateTime dt in emplDateList[empl])
+                    {
+                        sb.Append("'" + dt.ToString("yyy-MM-dd HH:mm:ss") + "', ");
+                    }
+                    sb.Remove(sb.ToString().Length - 2, 2);
+                    sb.Append(") AND ( io_pair_date IN (SELECT io_pair_date FROM io_pairs_processed WHERE employee_id = " + empl + " AND manual_created = " + Constants.yesInt + " AND CONVERT(VARCHAR(5), start_time, 108) <= '12:00') OR");
+                    sb.Append(" io_pair_date IN (SELECT DATEADD(day,1,io_pair_date) FROM io_pairs_processed WHERE employee_id = " + empl + " AND manual_created = " + Constants.yesInt + " AND CONVERT(VARCHAR(5), start_time, 108) >= '12:00') ");
+                    sb.Append(")) OR");
+                }
+                string select = sb.ToString().Substring(0, sb.ToString().Length - 2) ;
+                //select += " AND alert IN (" + Constants.alertStatusLeavePair.ToString() + ", " + Constants.alertStatusNoAlert.ToString() + ", " + Constants.alertStatus.ToString() + ")  AND manual_created = " + Constants.yesInt.ToString();
+               // select += ") AND manual_created = " + Constants.yesInt.ToString();
+
+                SqlCommand cmd = new SqlCommand(select + ")", conn, (SqlTransaction)trans);
+                cmd.CommandTimeout = Constants.commandTimeout;
+                SqlDataAdapter sqlDataAdapter = new SqlDataAdapter(cmd);
+
+                sqlDataAdapter.Fill(dataSet, "IOPairsProcessed");
+                DataTable table = dataSet.Tables["IOPairsProcessed"];
+
+                if (table.Rows.Count > 0)
+                {
+                    foreach (DataRow row in table.Rows)
+                    {
+                        pair = new IOPairProcessedTO();
+                        pair.RecID = UInt32.Parse(row["rec_id"].ToString().Trim());
+                        if (row["io_pair_id"] != DBNull.Value)
+                        {
+                            pair.IOPairID = Int32.Parse(row["io_pair_id"].ToString().Trim());
+                        }
+                        if (row["io_pair_date"] != DBNull.Value)
+                        {
+                            pair.IOPairDate = (DateTime)row["io_pair_date"];
+                        }
+                        if (row["employee_id"] != DBNull.Value)
+                        {
+                            pair.EmployeeID = Int32.Parse(row["employee_id"].ToString().Trim());
+                        }
+                        if (row["location_id"] != DBNull.Value)
+                        {
+                            pair.LocationID = Int32.Parse(row["location_id"].ToString().Trim());
+                        }
+                        if (row["is_wrk_hrs_counter"] != DBNull.Value)
+                        {
+                            pair.IsWrkHrsCounter = Int32.Parse(row["is_wrk_hrs_counter"].ToString().Trim());
+                        }
+                        if (row["pass_type_id"] != DBNull.Value)
+                        {
+                            pair.PassTypeID = Int32.Parse(row["pass_type_id"].ToString().Trim());
+                        }
+                        if (row["start_time"] != DBNull.Value)
+                        {
+                            pair.StartTime = (DateTime)row["start_time"];
+                        }
+                        if (row["end_time"] != DBNull.Value)
+                        {
+                            pair.EndTime = (DateTime)row["end_time"];
+                        }
+                        if (row["manual_created"] != DBNull.Value)
+                        {
+                            pair.ManualCreated = Int32.Parse(row["manual_created"].ToString().Trim());
+                        }
+                        if (row["confirmation_flag"] != DBNull.Value)
+                        {
+                            pair.ConfirmationFlag = Int32.Parse(row["confirmation_flag"].ToString().Trim());
+                        }
+                        if (row["confirmed_by"] != DBNull.Value)
+                        {
+                            pair.ConfirmedBy = row["confirmed_by"].ToString().Trim();
+                        }
+                        if (row["confirmation_time"] != DBNull.Value)
+                        {
+                            pair.ConfirmationTime = DateTime.Parse(row["confirmation_time"].ToString().Trim());
+                        }
+                        if (row["created_by"] != DBNull.Value)
+                        {
+                            pair.CreatedBy = row["created_by"].ToString().Trim();
+                        }
+                        if (row["created_time"] != DBNull.Value)
+                        {
+                            pair.CreatedTime = DateTime.Parse(row["created_time"].ToString().Trim());
+                        }
+                        if (row["verification_flag"] != DBNull.Value)
+                        {
+                            pair.VerificationFlag = Int32.Parse(row["verification_flag"].ToString().Trim());
+                        }
+                        if (row["verified_by"] != DBNull.Value)
+                        {
+                            pair.VerifiedBy = row["verified_by"].ToString().Trim();
+                        }
+                        if (row["verification_time"] != DBNull.Value)
+                        {
+                            pair.VerifiedTime = DateTime.Parse(row["verification_time"].ToString().Trim());
+                        }
+                        if (row["alert"] != DBNull.Value)
+                        {
+                            pair.Alert = row["alert"].ToString().Trim();
+                        }
+                        if (row["description"] != DBNull.Value)
+                        {
+                            pair.Desc = row["description"].ToString().Trim();
+                        }
+                        if (!pairsList.ContainsKey(pair.EmployeeID))
+                            pairsList.Add(pair.EmployeeID, new Dictionary<DateTime, List<IOPairProcessedTO>>());
+                        if (!pairsList[pair.EmployeeID].ContainsKey(pair.IOPairDate))
+                            pairsList[pair.EmployeeID].Add(pair.IOPairDate, new List<IOPairProcessedTO>());
+
+                        pairsList[pair.EmployeeID][pair.IOPairDate].Add(pair);
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+
+            return true;
+        }
+
+        public bool delete(Dictionary<int, List<DateTime>> emplDateList, Dictionary<int, List<DateTime>> emplDateListDayAfter, Dictionary<int, List<DateTime>> emplDateListDayBefore)
+        {
+            bool isDeleted = false;
+            SqlTransaction sqlTrans = conn.BeginTransaction(IsolationLevel.RepeatableRead);
+
+            try
+            {
+                StringBuilder sbDelete = new StringBuilder();
+                sbDelete.Append("DELETE FROM io_pairs_processed WHERE ");
+
+                foreach (int empl in emplDateList.Keys)
+                {
+                    sbDelete.Append(" ( employee_id = " + empl + " AND ");
+                    sbDelete.Append(" io_pair_date IN (");
+                    foreach (DateTime dt in emplDateList[empl])
+                    {
+                        sbDelete.Append("'" + dt.ToString("yyy-MM-dd HH:mm:ss") + "', ");
+                    }
+                    sbDelete.Remove(sbDelete.ToString().Length - 2, 2);
+
+                    sbDelete.Append(")) OR");
+                }
+                foreach (int empl in emplDateListDayBefore.Keys)
+                {
+                    sbDelete.Append(" ( employee_id = " + empl + " AND ");
+                    sbDelete.Append(" CONVERT(VARCHAR(5), start_time, 108)  > '12:00' AND io_pair_date IN (");
+                    foreach (DateTime dt in emplDateListDayBefore[empl])
+                    {
+                        sbDelete.Append("'" + dt.ToString("yyy-MM-dd HH:mm:ss") + "', ");
+                    }
+                    sbDelete.Remove(sbDelete.ToString().Length - 2, 2);
+
+                    sbDelete.Append(")) OR");
+                }
+                foreach (int empl in emplDateListDayAfter.Keys)
+                {
+                    sbDelete.Append(" ( employee_id = " + empl + " AND ");
+                    sbDelete.Append(" CONVERT(VARCHAR(5), start_time, 108) <= '12:00' AND io_pair_date IN (");
+                    foreach (DateTime dt in emplDateListDayAfter[empl])
+                    {
+                        sbDelete.Append("'" + dt.ToString("yyy-MM-dd HH:mm:ss") + "', ");
+                    }
+                    sbDelete.Remove(sbDelete.ToString().Length - 2, 2);
+
+                    sbDelete.Append(")) OR");
+                }
+                string select = sbDelete.ToString().Substring(0, sbDelete.ToString().Length - 2);
+                //select += "AND NOT EXISTS (SELECT * FROM io_pairs_processed pr WHERE pr.employee_id = employee_id AND io_pair_date = pr.io_pair_date";
+                //select += " AND manual_created = " + Constants.yesInt.ToString() + " AND alert != " + Constants.alertStatusAgreeToChange.ToString() + ")";
+                SqlCommand cmd = new SqlCommand(select, conn, sqlTrans);
+                cmd.CommandTimeout = Constants.commandTimeout;
+                int res = cmd.ExecuteNonQuery();
+                if (res != 0)
+                {
+                    isDeleted = true;
+                }
+                sqlTrans.Commit();
+            }
+            catch (Exception ex)
+            {
+                sqlTrans.Rollback();
+                throw new Exception(ex.Message);
+            }
+
+            return isDeleted;
+        }
+
+        //natalija 08112017
+        public bool delete(Dictionary<int, List<DateTime>> emplDateList, Dictionary<int, List<DateTime>> emplDateListDayAfter, Dictionary<int, List<DateTime>> emplDateListDayBefore, bool doCommit)
+        {
+            bool isDeleted = false;
+            SqlTransaction sqlTrans = null;
+            if (doCommit)
+                sqlTrans = conn.BeginTransaction(IsolationLevel.RepeatableRead);
+            else
+                sqlTrans = SqlTrans;
+
+            try
+            {
+                StringBuilder sbDelete = new StringBuilder();
+                //sbDelete.Append("DELETE FROM io_pairs_processed WHERE ");
+                sbDelete.Append("DELETE ipp FROM io_pairs_processed ipp INNER JOIN pass_types pt ON ipp.pass_type_id = pt.pass_type_id WHERE pt.pass_type != 2 AND ");//IZMENA 08112017
+                
+                foreach (int empl in emplDateList.Keys)
+                {
+                    sbDelete.Append(" ( employee_id = " + empl + " AND ");
+                    sbDelete.Append(" io_pair_date IN (");
+                    foreach (DateTime dt in emplDateList[empl])
+                    {
+                        sbDelete.Append("'" + dt.ToString("yyy-MM-dd HH:mm:ss") + "', ");
+                    }
+                    sbDelete.Remove(sbDelete.ToString().Length - 2, 2);
+
+                    sbDelete.Append(")) OR");
+                }
+                foreach (int empl in emplDateListDayBefore.Keys)
+                {
+                    sbDelete.Append(" ( employee_id = " + empl + " AND ");
+                    sbDelete.Append(" CONVERT(VARCHAR(5), start_time, 108)  > '12:00' AND io_pair_date IN (");
+                    foreach (DateTime dt in emplDateListDayBefore[empl])
+                    {
+                        sbDelete.Append("'" + dt.ToString("yyy-MM-dd HH:mm:ss") + "', ");
+                    }
+                    sbDelete.Remove(sbDelete.ToString().Length - 2, 2);
+
+                    sbDelete.Append(")) OR");
+                }
+                foreach (int empl in emplDateListDayAfter.Keys)
+                {
+                    sbDelete.Append(" ( employee_id = " + empl + " AND ");
+                    sbDelete.Append(" CONVERT(VARCHAR(5), start_time, 108) <= '12:00' AND io_pair_date IN (");
+                    foreach (DateTime dt in emplDateListDayAfter[empl])
+                    {
+                        sbDelete.Append("'" + dt.ToString("yyy-MM-dd HH:mm:ss") + "', ");
+                    }
+                    sbDelete.Remove(sbDelete.ToString().Length - 2, 2);
+
+                    sbDelete.Append(")) OR");
+                }
+                string select = sbDelete.ToString().Substring(0, sbDelete.ToString().Length - 2);
+                //select += "AND NOT EXISTS (SELECT * FROM io_pairs_processed pr WHERE pr.employee_id = employee_id AND io_pair_date = pr.io_pair_date";
+                //select += " AND manual_created = " + Constants.yesInt.ToString() + " AND alert != " + Constants.alertStatusAgreeToChange.ToString() + ")";
+                SqlCommand cmd = new SqlCommand(select, conn, sqlTrans);
+                cmd.CommandTimeout = Constants.commandTimeout;
+                int res = cmd.ExecuteNonQuery();
+                if (res >= 0)
+                {
+                    isDeleted = true;
+                }
+                if(doCommit)
+                sqlTrans.Commit();
+            }
+            catch (Exception ex)
+            {
+                if (doCommit)
+                sqlTrans.Rollback();
+                throw new Exception(ex.Message);
+            }
+
+            return isDeleted;
+        }
+
+        public bool delete(Dictionary<int, List<DateTime>> emplDateList)
+        {
+            bool isDeleted = false;
+            SqlTransaction sqlTrans = conn.BeginTransaction(IsolationLevel.RepeatableRead);
+
+            try
+            {
+                StringBuilder sbDelete = new StringBuilder();
+                sbDelete.Append("DELETE FROM io_pairs_processed WHERE ");
+
+                foreach (int empl in emplDateList.Keys)
+                {
+                    sbDelete.Append(" ( employee_id = " + empl + " AND io_pair_date IN (");
+                    foreach (DateTime dt in emplDateList[empl])
+                    {
+                        sbDelete.Append("'" + dt.ToString("yyy-MM-dd HH:mm:ss") + "', ");
+                    }
+                    sbDelete.Remove(sbDelete.ToString().Length - 2, 2);
+
+                    sbDelete.Append(")) OR");
+                }
+                string select = sbDelete.ToString().Substring(0, sbDelete.ToString().Length - 2);
+                //select += "AND NOT EXISTS (SELECT * FROM io_pairs_processed pr WHERE pr.employee_id = employee_id AND io_pair_date = pr.io_pair_date";
+                //select += " AND manual_created = " + Constants.yesInt.ToString() + " AND alert != " + Constants.alertStatusAgreeToChange.ToString() + ")";
+                SqlCommand cmd = new SqlCommand(select, conn, sqlTrans);
+                cmd.CommandTimeout = Constants.commandTimeout;
+                int res = cmd.ExecuteNonQuery();
+                if (res != 0)
+                {
+                    isDeleted = true;
+                }
+                sqlTrans.Commit();
+            }
+            catch (Exception ex)
+            {
+                sqlTrans.Rollback();
+                throw new Exception(ex.Message);
+            }
+
+            return isDeleted;
+        }
+
+        public bool delete(uint RecID)
+        {
+            bool isDeleted = false;
+            SqlTransaction sqlTrans = conn.BeginTransaction(IsolationLevel.RepeatableRead, "DELETE");
+
+            try
+            {
+                StringBuilder sbDelete = new StringBuilder();
+                sbDelete.Append("DELETE FROM io_pairs_processed WHERE rec_id = '" + RecID.ToString().Trim() + "'");
+
+                SqlCommand cmd = new SqlCommand(sbDelete.ToString(), conn, sqlTrans);
+                cmd.CommandTimeout = Constants.commandTimeout;
+                int res = cmd.ExecuteNonQuery();
+                if (res != 0)
+                {
+                    isDeleted = true;
+                }
+                sqlTrans.Commit();
+            }
+            catch (Exception ex)
+            {
+                sqlTrans.Rollback("DELETE");
+                throw new Exception(ex.Message);
+            }
+
+            return isDeleted;
+        }
+
+        public bool DeleteUjustified(Dictionary<int, List<DateTime>> emplDateList, bool doCommit)
+        {
+            bool isDeleted = false;
+            SqlTransaction sqlTrans = null;
+            if (doCommit)
+                sqlTrans = conn.BeginTransaction(IsolationLevel.RepeatableRead);
+            else
+                sqlTrans = SqlTrans;
+
+            try
+            {
+                StringBuilder sbDelete = new StringBuilder();
+                sbDelete.Append("DELETE FROM io_pairs_processed WHERE ");
+
+                foreach (int empl in emplDateList.Keys)
+                {
+                    sbDelete.Append(" ( employee_id = " + empl + " AND io_pair_date IN (");
+                    foreach (DateTime dt in emplDateList[empl])
+                    {
+                        sbDelete.Append("'" + dt.ToString("yyy-MM-dd HH:mm:ss") + "', ");
+                    }
+                    sbDelete.Remove(sbDelete.ToString().Length - 2, 2);
+
+                    sbDelete.Append(") ");
+                    sbDelete.Append(" AND io_pair_date IN ( ");
+                    sbDelete.Append("SELECT io_pair_date from io_pairs_processed ");
+                    sbDelete.Append("WHERE employee_id =" + empl+" ");
+                    sbDelete.Append("GROUP BY io_pair_date ");
+                    sbDelete.Append("HAVING COUNT(rec_id) = 1 ) ");
+                    sbDelete.Append("AND pass_type_id = "+Constants.absence.ToString()+" ) OR");
+                }
+                string select = sbDelete.ToString().Substring(0, sbDelete.ToString().Length - 2);
+                //select += "AND NOT EXISTS (SELECT * FROM io_pairs_processed pr WHERE pr.employee_id = employee_id AND io_pair_date = pr.io_pair_date";
+                //select += " AND manual_created = " + Constants.yesInt.ToString() + " AND alert != " + Constants.alertStatusAgreeToChange.ToString() + ")";
+                SqlCommand cmd = new SqlCommand(select, conn, sqlTrans);
+                cmd.CommandTimeout = Constants.commandTimeout;
+                int res = cmd.ExecuteNonQuery();
+                
+                    isDeleted = true;
+                if (doCommit)
+                sqlTrans.Commit();
+            }
+            catch (Exception ex)
+            {
+                if (doCommit)
+                sqlTrans.Rollback();
+                throw new Exception(ex.Message);
+            }
+
+            return isDeleted;
+        }
+
+        public bool delete(int emplID, DateTime date, bool doCommit)
+        {
+            bool isDeleted = false;
+            if (doCommit)
+                SqlTrans = conn.BeginTransaction(IsolationLevel.RepeatableRead);
+
+            try
+            {
+                StringBuilder sbDelete = new StringBuilder();
+                sbDelete.Append("DELETE FROM io_pairs_processed WHERE employee_id = '" + emplID.ToString().Trim() + "' AND io_pair_date = '" + date.ToString(dateTimeformat) + "'");
+
+                SqlCommand cmd = new SqlCommand(sbDelete.ToString(), conn, SqlTrans);
+                cmd.CommandTimeout = Constants.commandTimeout;
+                int res = cmd.ExecuteNonQuery();
+                if (res >= 0)
+                {
+                    isDeleted = true;
+                }
+
+                if (doCommit)
+                    commitTransaction();
+            }
+            catch (Exception ex)
+            {
+                if (doCommit)
+                    rollbackTransaction();
+
+                throw new Exception(ex.Message);
+            }
+
+            return isDeleted;
+        }
+
+        public bool delete(string recIDs, bool doCommit)
+        {
+            bool isDeleted = false;
+            if (doCommit)
+                SqlTrans = conn.BeginTransaction(IsolationLevel.RepeatableRead);
+
+            try
+            {
+                StringBuilder sbDelete = new StringBuilder();
+                sbDelete.Append("DELETE FROM io_pairs_processed WHERE rec_id IN (" + recIDs.ToString().Trim() + ")");
+
+                SqlCommand cmd = new SqlCommand(sbDelete.ToString(), conn, SqlTrans);
+                cmd.CommandTimeout = Constants.commandTimeout;
+                int res = cmd.ExecuteNonQuery();
+                if (res >= 0)
+                {
+                    isDeleted = true;
+                }
+
+                if (doCommit)
+                    commitTransaction();
+            }
+            catch (Exception ex)
+            {
+                if (doCommit)
+                    rollbackTransaction();
+
+                throw new Exception(ex.Message);
+            }
+
+            return isDeleted;
+        }
+
+        public IOPairProcessedTO find(uint recID)
+        {
+            DataSet dataSet = new DataSet();
+            IOPairProcessedTO pair = new IOPairProcessedTO();
+
+            try
+            {
+                SqlCommand cmd = new SqlCommand("SELECT * FROM io_pairs_processed WHERE rec_id = '" + recID.ToString().Trim() + "'", conn);
+                cmd.CommandTimeout = Constants.commandTimeout;
+                SqlDataAdapter sqlDataAdapter = new SqlDataAdapter(cmd);
+
+                sqlDataAdapter.Fill(dataSet, "Pairs");
+                DataTable table = dataSet.Tables["Pairs"];
+
+                if (table.Rows.Count == 1)
+                {
+                    pair = new IOPairProcessedTO();
+                    pair.RecID = UInt32.Parse(table.Rows[0]["rec_id"].ToString().Trim());
+                    if (table.Rows[0]["io_pair_id"] != DBNull.Value)
+                    {
+                        pair.IOPairID = Int32.Parse(table.Rows[0]["io_pair_id"].ToString().Trim());
+                    }
+                    if (table.Rows[0]["io_pair_date"] != DBNull.Value)
+                    {
+                        pair.IOPairDate = (DateTime)table.Rows[0]["io_pair_date"];
+                    }
+                    if (table.Rows[0]["employee_id"] != DBNull.Value)
+                    {
+                        pair.EmployeeID = Int32.Parse(table.Rows[0]["employee_id"].ToString().Trim());
+                    }
+                    if (table.Rows[0]["location_id"] != DBNull.Value)
+                    {
+                        pair.LocationID = Int32.Parse(table.Rows[0]["location_id"].ToString().Trim());
+                    }
+                    if (table.Rows[0]["is_wrk_hrs_counter"] != DBNull.Value)
+                    {
+                        pair.IsWrkHrsCounter = Int32.Parse(table.Rows[0]["is_wrk_hrs_counter"].ToString().Trim());
+                    }
+                    if (table.Rows[0]["pass_type_id"] != DBNull.Value)
+                    {
+                        pair.PassTypeID = Int32.Parse(table.Rows[0]["pass_type_id"].ToString().Trim());
+                    }
+                    if (table.Rows[0]["start_time"] != DBNull.Value)
+                    {
+                        pair.StartTime = (DateTime)table.Rows[0]["start_time"];
+                    }
+                    if (table.Rows[0]["end_time"] != DBNull.Value)
+                    {
+                        pair.EndTime = (DateTime)table.Rows[0]["end_time"];
+                    }
+                    if (table.Rows[0]["manual_created"] != DBNull.Value)
+                    {
+                        pair.ManualCreated = Int32.Parse(table.Rows[0]["manual_created"].ToString().Trim());
+                    }
+                    if (table.Rows[0]["confirmation_flag"] != DBNull.Value)
+                    {
+                        pair.ConfirmationFlag = Int32.Parse(table.Rows[0]["confirmation_flag"].ToString().Trim());
+                    }
+                    if (table.Rows[0]["confirmed_by"] != DBNull.Value)
+                    {
+                        pair.ConfirmedBy = table.Rows[0]["confirmed_by"].ToString().Trim();
+                    }
+                    if (table.Rows[0]["confirmation_time"] != DBNull.Value)
+                    {
+                        pair.ConfirmationTime = DateTime.Parse(table.Rows[0]["confirmation_time"].ToString().Trim());
+                    }
+                    if (table.Rows[0]["verification_flag"] != DBNull.Value)
+                    {
+                        pair.VerificationFlag = Int32.Parse(table.Rows[0]["verification_flag"].ToString().Trim());
+                    }
+                    if (table.Rows[0]["verified_by"] != DBNull.Value)
+                    {
+                        pair.VerifiedBy = table.Rows[0]["verified_by"].ToString().Trim();
+                    }
+                    if (table.Rows[0]["verification_time"] != DBNull.Value)
+                    {
+                        pair.VerifiedTime = DateTime.Parse(table.Rows[0]["verification_time"].ToString().Trim());
+                    }
+                    if (table.Rows[0]["alert"] != DBNull.Value)
+                    {
+                        pair.Alert = table.Rows[0]["alert"].ToString().Trim();
+                    }
+                    if (table.Rows[0]["description"] != DBNull.Value)
+                    {
+                        pair.Desc = table.Rows[0]["description"].ToString().Trim();
+                    }
+                    if (table.Rows[0]["created_by"] != DBNull.Value)
+                    {
+                        pair.CreatedBy = table.Rows[0]["created_by"].ToString().Trim();
+                    }
+                    if (table.Rows[0]["created_time"] != DBNull.Value)
+                    {
+                        pair.CreatedTime = DateTime.Parse(table.Rows[0]["created_time"].ToString().Trim());
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+
+            return pair;
+        }
+
+        public int getPaidLeaveDays(DateTime from, DateTime to, DateTime date, int employeeID, int ptID, int limitCompositeID, int limitOccassionalyID, int limitElemetaryID)
+        {
+            try
+            {
+                int days = 0;
+                DataSet dataSet = new DataSet();
+
+                // if at least one limit is not null
+                if (limitCompositeID != -1 || limitElemetaryID != -1 || limitOccassionalyID != -1)
+                {
+                    StringBuilder sb = new StringBuilder();
+                    sb.Append("SELECT COUNT(DISTINCT io_pair_date) days FROM io_pairs_processed iop, pass_types pt ");
+                    sb.Append("WHERE iop.io_pair_date >= '" + from.ToString(dateTimeformat).Trim() + "' AND iop.io_pair_date < '" + to.ToString(dateTimeformat).Trim() + "' ");
+                    sb.Append("AND iop.io_pair_date <> '" + date.ToString(dateTimeformat).Trim() + "' AND CONVERT(VARCHAR(10), iop.start_time, 108) <> '00:00:00' "); // second interval from night shift belongs to previous day
+                    sb.Append("AND iop.pass_type_id = pt.pass_type_id AND iop.employee_id = '" + employeeID.ToString().Trim() + "' ");
+
+                    if (limitCompositeID != -1)
+                        sb.Append("AND pt.limit_composite_id = '" + limitCompositeID.ToString().Trim() + "' ");
+                    if (limitOccassionalyID != -1)
+                        sb.Append("AND pt.limit_occassionaly_id = '" + limitOccassionalyID.ToString().Trim() + "' ");
+                    if (limitElemetaryID != -1)
+                        sb.Append("AND iop.pass_type_id = '" + ptID.ToString().Trim() + "' ");
+
+                    SqlCommand cmd = new SqlCommand(sb.ToString(), conn);
+                    cmd.CommandTimeout = Constants.commandTimeout;
+                    SqlDataAdapter sqlDataAdapter = new SqlDataAdapter(cmd);
+
+                    sqlDataAdapter.Fill(dataSet, "Pairs");
+                    DataTable table = dataSet.Tables["Pairs"];
+
+                    if (table.Rows.Count == 1)
+                    {
+                        days = Int32.Parse(table.Rows[0]["days"].ToString().Trim());
+                    }
+                }
+
+                return days;
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
+
+        public int getPaidLeaveDaysOutsidePeriod(DateTime from, DateTime to, DateTime periodStart, DateTime periodEnd, int employeeID, int ptID, int limitCompositeID, int limitOccassionalyID, int limitElemetaryID)
+        {
+            try
+            {
+                int days = 0;
+                DataSet dataSet = new DataSet();
+
+                // if at least one limit is not null
+                if (limitCompositeID != -1 || limitElemetaryID != -1 || limitOccassionalyID != -1)
+                {
+                    StringBuilder sb = new StringBuilder();
+                    sb.Append("SELECT COUNT(DISTINCT io_pair_date) days FROM io_pairs_processed iop, pass_types pt ");
+                    sb.Append("WHERE iop.io_pair_date >= '" + from.ToString(dateTimeformat).Trim() + "' AND iop.io_pair_date < '" + to.ToString(dateTimeformat).Trim() + "' ");
+                    sb.Append("AND (iop.io_pair_date < '" + periodStart.ToString(dateTimeformat).Trim() + "' OR iop.io_pair_date > '" + periodEnd.ToString(dateTimeformat).Trim() + "') ");
+                    sb.Append("AND CONVERT(VARCHAR(10), iop.start_time, 108) <> '00:00:00' "); // second interval from night shift belongs to previous day
+                    sb.Append("AND iop.pass_type_id = pt.pass_type_id AND iop.employee_id = '" + employeeID.ToString().Trim() + "' ");
+
+                    if (limitCompositeID != -1)
+                        sb.Append("AND pt.limit_composite_id = '" + limitCompositeID.ToString().Trim() + "' ");
+                    if (limitOccassionalyID != -1)
+                        sb.Append("AND pt.limit_occassionaly_id = '" + limitOccassionalyID.ToString().Trim() + "' ");
+                    if (limitElemetaryID != -1)
+                        sb.Append("AND iop.pass_type_id = '" + ptID.ToString().Trim() + "' ");
+
+                    SqlCommand cmd = new SqlCommand(sb.ToString(), conn);
+                    cmd.CommandTimeout = Constants.commandTimeout;
+                    SqlDataAdapter sqlDataAdapter = new SqlDataAdapter(cmd);
+
+                    sqlDataAdapter.Fill(dataSet, "Pairs");
+                    DataTable table = dataSet.Tables["Pairs"];
+
+                    if (table.Rows.Count == 1)
+                    {
+                        days = Int32.Parse(table.Rows[0]["days"].ToString().Trim());
+                    }
+                }
+
+                return days;
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
+
+        public List<IOPairProcessedTO> search(IOPairProcessedTO pairTO)
+        {
+            DataSet dataSet = new DataSet();
+            IOPairProcessedTO pair = new IOPairProcessedTO();
+            List<IOPairProcessedTO> pairsList = new List<IOPairProcessedTO>();
+            string select = "";
+
+            try
+            {
+                StringBuilder sb = new StringBuilder();
+                sb.Append("SELECT * FROM io_pairs_processed ");
+
+                if ((pairTO.IOPairID != -1) || (!pairTO.IOPairDate.Equals(new DateTime())) || (pairTO.EmployeeID != -1) ||
+                    (pairTO.LocationID != -1) || (pairTO.IsWrkHrsCounter != -1) || (pairTO.PassTypeID != -1) ||
+                    (!pairTO.StartTime.Equals(new DateTime())) || (!pairTO.EndTime.Equals(new DateTime())) ||
+                    (pairTO.ManualCreated != -1) || (pairTO.ConfirmationFlag != -1) || (pairTO.ConfirmedBy.Trim() != "") || (pairTO.ConfirmationTime != new DateTime())
+                    || (pairTO.VerificationFlag != -1) || (pairTO.VerifiedBy.Trim() != "") || (pairTO.VerifiedTime != new DateTime())
+                    || (!pairTO.Alert.Trim().Equals("")) || (!pairTO.Desc.Trim().Equals("")))
+                {
+                    sb.Append(" WHERE");
+
+                    if (pairTO.IOPairID != -1)
+                    {
+                        sb.Append(" io_pair_id = '" + pairTO.IOPairID.ToString().Trim() + "' AND");
+                    }
+                    if (!pairTO.IOPairDate.Equals(new DateTime()))
+                    {
+                        sb.Append(" io_pair_date = '" + pairTO.IOPairDate.ToString(dateTimeformat) + "' AND");
+                    }
+                    if (pairTO.EmployeeID != -1)
+                    {
+                        sb.Append(" employee_id = '" + pairTO.EmployeeID.ToString().Trim() + "' AND");
+                    }
+                    if (pairTO.LocationID != -1)
+                    {
+                        sb.Append(" location_id = '" + pairTO.LocationID.ToString().Trim() + "' AND");
+                    }
+                    if (pairTO.IsWrkHrsCounter != -1)
+                    {
+                        sb.Append(" is_wrk_hrs_counter = '" + pairTO.IsWrkHrsCounter.ToString().Trim() + "' AND");
+                    }
+                    if (pairTO.PassTypeID != -1)
+                    {
+                        sb.Append(" pass_type_id = '" + pairTO.PassTypeID.ToString().Trim() + "' AND");
+                    }
+                    if (!pairTO.StartTime.Equals(new DateTime()))
+                    {
+                        sb.Append(" start_time = '" + pairTO.StartTime.ToString(dateTimeformat) + "' AND");
+                    }
+                    if (!pairTO.EndTime.Equals(new DateTime()))
+                    {
+                        sb.Append(" end_time = '" + pairTO.EndTime.ToString(dateTimeformat) + "' AND");
+                    }
+                    if (pairTO.ManualCreated != -1)
+                    {
+                        sb.Append(" manual_created = '" + pairTO.ManualCreated.ToString().Trim().ToUpper() + "' AND");
+                    }
+                    if (pairTO.ConfirmationFlag != -1)
+                    {
+                        sb.Append(" confirmation_flag = '" + pairTO.ConfirmationFlag.ToString().Trim().ToUpper() + "' AND");
+                    }
+                    if (pairTO.ConfirmedBy.Trim() != "")
+                    {
+                        sb.Append(" UPPER(confirmed_by) = '" + pairTO.ConfirmedBy.Trim().ToUpper() + "' AND");
+                    }
+                    if (!pairTO.ConfirmationTime.Equals(new DateTime()))
+                    {
+                        sb.Append(" confimration_time = '" + pairTO.ConfirmationTime.ToString(dateTimeformat) + "' AND");
+                    }
+                    if (pairTO.VerificationFlag != -1)
+                    {
+                        sb.Append(" verification_flag = '" + pairTO.VerificationFlag.ToString().Trim().ToUpper() + "' AND");
+                    }
+                    if (pairTO.VerifiedBy.Trim() != "")
+                    {
+                        sb.Append(" UPPER(verified_by) = '" + pairTO.VerifiedBy.Trim().ToUpper() + "' AND");
+                    }
+                    if (!pairTO.VerifiedTime.Equals(new DateTime()))
+                    {
+                        sb.Append(" verification_time = '" + pairTO.VerifiedTime.ToString(dateTimeformat) + "' AND");
+                    }
+                    if (!pairTO.Alert.Trim().Equals(""))
+                    {
+                        sb.Append(" UPPER(alert) = '" + pairTO.Alert.Trim().ToUpper() + "' AND");
+                    }
+                    if (!pairTO.Desc.Trim().Equals(""))
+                    {
+                        sb.Append(" UPPER(description) = '" + pairTO.Desc.Trim().ToUpper() + "' AND");
+                    }
+                    select = sb.ToString(0, sb.ToString().Length - 3);
+                }
+                else
+                {
+                    select = sb.ToString();
+                }
+
+                SqlCommand cmd = new SqlCommand(select, conn);
+                cmd.CommandTimeout = Constants.commandTimeout;
+                SqlDataAdapter sqlDataAdapter = new SqlDataAdapter(cmd);
+
+                sqlDataAdapter.Fill(dataSet, "IOPairs");
+                DataTable table = dataSet.Tables["IOPairs"];
+
+                if (table.Rows.Count > 0)
+                {
+                    foreach (DataRow row in table.Rows)
+                    {
+                        pair = new IOPairProcessedTO();
+                        pair.RecID = UInt32.Parse(row["rec_id"].ToString().Trim());
+                        if (row["io_pair_id"] != DBNull.Value)
+                        {
+                            pair.IOPairID = Int32.Parse(row["io_pair_id"].ToString().Trim());
+                        }
+                        if (row["io_pair_date"] != DBNull.Value)
+                        {
+                            pair.IOPairDate = (DateTime)row["io_pair_date"];
+                        }
+                        if (row["employee_id"] != DBNull.Value)
+                        {
+                            pair.EmployeeID = Int32.Parse(row["employee_id"].ToString().Trim());
+                        }
+                        if (row["location_id"] != DBNull.Value)
+                        {
+                            pair.LocationID = Int32.Parse(row["location_id"].ToString().Trim());
+                        }
+                        if (row["is_wrk_hrs_counter"] != DBNull.Value)
+                        {
+                            pair.IsWrkHrsCounter = Int32.Parse(row["is_wrk_hrs_counter"].ToString().Trim());
+                        }
+                        if (row["pass_type_id"] != DBNull.Value)
+                        {
+                            pair.PassTypeID = Int32.Parse(row["pass_type_id"].ToString().Trim());
+                        }
+                        if (row["start_time"] != DBNull.Value)
+                        {
+                            pair.StartTime = (DateTime)row["start_time"];
+                        }
+                        if (row["end_time"] != DBNull.Value)
+                        {
+                            pair.EndTime = (DateTime)row["end_time"];
+                        }
+                        if (row["manual_created"] != DBNull.Value)
+                        {
+                            pair.ManualCreated = Int32.Parse(row["manual_created"].ToString().Trim());
+                        }
+                        if (row["confirmation_flag"] != DBNull.Value)
+                        {
+                            pair.ConfirmationFlag = Int32.Parse(row["confirmation_flag"].ToString().Trim());
+                        }
+                        if (row["confirmed_by"] != DBNull.Value)
+                        {
+                            pair.ConfirmedBy = row["confirmed_by"].ToString().Trim();
+                        }
+                        if (row["confirmation_time"] != DBNull.Value)
+                        {
+                            pair.ConfirmationTime = DateTime.Parse(row["confirmation_time"].ToString().Trim());
+                        }
+                        if (row["verification_flag"] != DBNull.Value)
+                        {
+                            pair.VerificationFlag = Int32.Parse(row["verification_flag"].ToString().Trim());
+                        }
+                        if (row["verified_by"] != DBNull.Value)
+                        {
+                            pair.VerifiedBy = row["verified_by"].ToString().Trim();
+                        }
+                        if (row["verification_time"] != DBNull.Value)
+                        {
+                            pair.VerifiedTime = DateTime.Parse(row["verification_time"].ToString().Trim());
+                        }
+                        if (row["alert"] != DBNull.Value)
+                        {
+                            pair.Alert = row["alert"].ToString().Trim();
+                        }
+                        if (row["description"] != DBNull.Value)
+                        {
+                            pair.Desc = row["description"].ToString().Trim();
+                        }
+                        if (row["created_by"] != DBNull.Value)
+                        {
+                            pair.CreatedBy = row["created_by"].ToString().Trim();
+                        }
+                        if (row["created_time"] != DBNull.Value)
+                        {
+                            pair.CreatedTime = DateTime.Parse(row["created_time"].ToString().Trim());
+                        }
+                        pairsList.Add(pair);
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                throw new Exception("Exception: " + ex.Message);
+            }
+
+            return pairsList;
+        }
+        public void getDatesForEmplWithNoPairs(DateTime startIntervalTime, DateTime endIntervalTime, Dictionary<int, List<DateTime>> dict)
+        {
+            DataSet dataSet = new DataSet();
+            IOPairProcessedTO pair = new IOPairProcessedTO();
+            List<IOPairProcessedTO> pairsList = new List<IOPairProcessedTO>();
+            string select;
+
+            try
+            {
+                StringBuilder sb = new StringBuilder();
+                sb.Append("SELECT ip.*");
+                sb.Append(" FROM io_pairs_processed ip ");
+                sb.Append(" WHERE io_pair_date > = '" + startIntervalTime.ToString(dateTimeformat) + "' AND io_pair_date <= '" + endIntervalTime.ToString(dateTimeformat) + "' ");
+                sb.Append(" ORDER BY ip.employee_id, ip.io_pair_date, ip.start_time");
+                select = sb.ToString();
+
+                SqlCommand cmd = new SqlCommand(select, conn);
+                cmd.CommandTimeout = Constants.commandTimeout;
+                SqlDataAdapter sqlDataAdapter = new SqlDataAdapter(cmd);
+
+                sqlDataAdapter.Fill(dataSet, "IOPairsProcessed");
+                DataTable table = dataSet.Tables["IOPairsProcessed"];
+
+                if (table.Rows.Count > 0)
+                {
+                    foreach (DataRow row in table.Rows)
+                    {
+                        pair = new IOPairProcessedTO();
+                        pair.RecID = UInt32.Parse(row["rec_id"].ToString().Trim());
+                        if (row["io_pair_id"] != DBNull.Value)
+                        {
+                            pair.IOPairID = Int32.Parse(row["io_pair_id"].ToString().Trim());
+                        }
+                        if (row["io_pair_date"] != DBNull.Value)
+                        {
+                            pair.IOPairDate = (DateTime)row["io_pair_date"];
+                        }
+                        if (row["employee_id"] != DBNull.Value)
+                        {
+                            pair.EmployeeID = Int32.Parse(row["employee_id"].ToString().Trim());
+                        }
+                        if (dict.ContainsKey(pair.EmployeeID))
+                        {
+                            if (dict[pair.EmployeeID].Contains(pair.IOPairDate))
+                                dict[pair.EmployeeID].Remove(pair.IOPairDate);
+                        }
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
+
+        public List<IOPairProcessedTO> getWeekPairs(int emplID, DateTime date, bool includeDate, string ptIDs, IDbTransaction trans)
+        {
+            DataSet dataSet = new DataSet();
+            IOPairProcessedTO pair = new IOPairProcessedTO();
+            List<IOPairProcessedTO> pairsList = new List<IOPairProcessedTO>();
+            List<IOPairProcessedTO> weekPairs = new List<IOPairProcessedTO>();
+            string select = "";
+
+            try
+            {
+                if (emplID == -1 || ptIDs.Length <= 0 || date.Equals(new DateTime()))
+                    return weekPairs;
+
+                int dayNum = 0;
+                switch (date.DayOfWeek)
+                {
+                    case DayOfWeek.Monday:
+                        dayNum = 0;
+                        break;
+                    case DayOfWeek.Tuesday:
+                        dayNum = 1;
+                        break;
+                    case DayOfWeek.Wednesday:
+                        dayNum = 2;
+                        break;
+                    case DayOfWeek.Thursday:
+                        dayNum = 3;
+                        break;
+                    case DayOfWeek.Friday:
+                        dayNum = 4;
+                        break;
+                    case DayOfWeek.Saturday:
+                        dayNum = 5;
+                        break;
+                    case DayOfWeek.Sunday:
+                        dayNum = 6;
+                        break;
+                }
+
+                DateTime weekBegining = date.AddDays(-dayNum).Date; // first day of current week
+                DateTime weekEnd = date.AddDays(7 - dayNum).Date; // first day of next week
+
+                StringBuilder sb = new StringBuilder();
+                sb.Append("SELECT * FROM io_pairs_processed WHERE io_pair_date >= '" + weekBegining.Date.ToString(dateTimeformat) + "' AND io_pair_date <= '" + weekEnd.Date.ToString(dateTimeformat) + "' ");
+                sb.Append("AND employee_id = '" + emplID.ToString().Trim() + "' ");
+                sb.Append("AND pass_type_id IN (" + ptIDs.Trim() + ") ");
+
+                select = sb.ToString();
+
+                SqlCommand cmd;
+                if (trans != null)
+                    cmd = new SqlCommand(select + " ORDER BY io_pair_date, start_time", conn, (SqlTransaction)trans);
+                else
+                    cmd = new SqlCommand(select + " ORDER BY io_pair_date, start_time", conn);
+                cmd.CommandTimeout = Constants.commandTimeout;
+
+                SqlDataAdapter sqlDataAdapter = new SqlDataAdapter(cmd);
+
+                sqlDataAdapter.Fill(dataSet, "IOPairs");
+                DataTable table = dataSet.Tables["IOPairs"];
+
+                if (table.Rows.Count > 0)
+                {
+                    foreach (DataRow row in table.Rows)
+                    {
+                        pair = new IOPairProcessedTO();
+                        pair.RecID = UInt32.Parse(row["rec_id"].ToString().Trim());
+                        if (row["io_pair_id"] != DBNull.Value)
+                        {
+                            pair.IOPairID = Int32.Parse(row["io_pair_id"].ToString().Trim());
+                        }
+                        if (row["io_pair_date"] != DBNull.Value)
+                        {
+                            pair.IOPairDate = (DateTime)row["io_pair_date"];
+                        }
+                        if (row["employee_id"] != DBNull.Value)
+                        {
+                            pair.EmployeeID = Int32.Parse(row["employee_id"].ToString().Trim());
+                        }
+                        if (row["location_id"] != DBNull.Value)
+                        {
+                            pair.LocationID = Int32.Parse(row["location_id"].ToString().Trim());
+                        }
+                        if (row["is_wrk_hrs_counter"] != DBNull.Value)
+                        {
+                            pair.IsWrkHrsCounter = Int32.Parse(row["is_wrk_hrs_counter"].ToString().Trim());
+                        }
+                        if (row["pass_type_id"] != DBNull.Value)
+                        {
+                            pair.PassTypeID = Int32.Parse(row["pass_type_id"].ToString().Trim());
+                        }
+                        if (row["start_time"] != DBNull.Value)
+                        {
+                            pair.StartTime = (DateTime)row["start_time"];
+                        }
+                        if (row["end_time"] != DBNull.Value)
+                        {
+                            pair.EndTime = (DateTime)row["end_time"];
+                        }
+                        if (row["manual_created"] != DBNull.Value)
+                        {
+                            pair.ManualCreated = Int32.Parse(row["manual_created"].ToString().Trim());
+                        }
+                        if (row["confirmation_flag"] != DBNull.Value)
+                        {
+                            pair.ConfirmationFlag = Int32.Parse(row["confirmation_flag"].ToString().Trim());
+                        }
+                        if (row["confirmed_by"] != DBNull.Value)
+                        {
+                            pair.ConfirmedBy = row["confirmed_by"].ToString().Trim();
+                        }
+                        if (row["confirmation_time"] != DBNull.Value)
+                        {
+                            pair.ConfirmationTime = DateTime.Parse(row["confirmation_time"].ToString().Trim());
+                        }
+                        if (row["verification_flag"] != DBNull.Value)
+                        {
+                            pair.VerificationFlag = Int32.Parse(row["verification_flag"].ToString().Trim());
+                        }
+                        if (row["verified_by"] != DBNull.Value)
+                        {
+                            pair.VerifiedBy = row["verified_by"].ToString().Trim();
+                        }
+                        if (row["verification_time"] != DBNull.Value)
+                        {
+                            pair.VerifiedTime = DateTime.Parse(row["verification_time"].ToString().Trim());
+                        }
+                        if (row["alert"] != DBNull.Value)
+                        {
+                            pair.Alert = row["alert"].ToString().Trim();
+                        }
+                        if (row["description"] != DBNull.Value)
+                        {
+                            pair.Desc = row["description"].ToString().Trim();
+                        }
+                        if (row["created_by"] != DBNull.Value)
+                        {
+                            pair.CreatedBy = row["created_by"].ToString().Trim();
+                        }
+                        if (row["created_time"] != DBNull.Value)
+                        {
+                            pair.CreatedTime = DateTime.Parse(row["created_time"].ToString().Trim());
+                        }
+
+                        pairsList.Add(pair);
+                    }
+                }
+                                
+                // remove pairs from first week day that belongs to previous week
+                DateTime lastEndPreviousDay = new DateTime();
+                for (int i = 0; i < pairsList.Count; i++)
+                {
+                    if (pairsList[i].IOPairDate.Date.Equals(weekBegining.Date))
+                    {
+                        if ((pairsList[i].StartTime.Hour == 0 && pairsList[i].StartTime.Minute == 0) || pairsList[i].StartTime.Equals(lastEndPreviousDay))
+                        {
+                            lastEndPreviousDay = pairsList[i].EndTime;
+                            continue;
+                        }                        
+                    }
+                    
+                    if (!includeDate)
+                    {
+                        if (pairsList[i].IOPairDate.Date.Equals(date.Date))
+                        {
+                            if ((pairsList[i].StartTime.Hour == 0 && pairsList[i].StartTime.Minute == 0) || pairsList[i].StartTime.Equals(lastEndPreviousDay))
+                            {
+                                lastEndPreviousDay = pairsList[i].EndTime;
+                                weekPairs.Add(pairsList[i]);
+                                continue;
+                            }
+                            else
+                                continue;
+                        }
+                        if (pairsList[i].IOPairDate.Date.Equals(date.AddDays(1).Date))
+                        {
+                            if ((pairsList[i].StartTime.Hour == 0 && pairsList[i].StartTime.Minute == 0) || pairsList[i].StartTime.Equals(lastEndPreviousDay))
+                            {
+                                lastEndPreviousDay = pairsList[i].EndTime;
+                                continue;
+                            }
+                        }
+                    }
+
+                    if (pairsList[i].IOPairDate.Date.Equals(weekEnd.Date))
+                    {
+                        if ((pairsList[i].StartTime.Hour == 0 && pairsList[i].StartTime.Minute == 0) || pairsList[i].StartTime.Equals(lastEndPreviousDay))
+                        {
+                            lastEndPreviousDay = pairsList[i].EndTime;
+                            weekPairs.Add(pairsList[i]);
+                            continue;
+                        }
+                        else
+                            continue;
+                    }
+
+                    weekPairs.Add(pairsList[i]);
+                }
+            }
+            catch (Exception ex)
+            {
+                throw new Exception("Exception: " + ex.Message);
+            }
+
+            return weekPairs;
+        }
+
+        public List<IOPairProcessedTO> getIOPairsAllForEmpl(string employeeIDString, List<DateTime> datesList, string ptIDs, DateTime lastDate)
+        {
+            DataSet dataSet = new DataSet();
+            IOPairProcessedTO pair = new IOPairProcessedTO();
+            List<IOPairProcessedTO> pairsList = new List<IOPairProcessedTO>();
+            string select;
+
+            try
+            {
+                if (!employeeIDString.Trim().Equals("") || datesList.Count > 0 || !ptIDs.Trim().Equals(""))
+                {
+                    select = "SELECT * FROM io_pairs_processed WHERE start_time <= end_time";
+
+                    if (!employeeIDString.Trim().Equals(""))
+                    {
+                        select += " AND employee_id IN (" + employeeIDString + ") ";
+                    }
+
+                    if (datesList.Count > 0)
+                    {
+                        select += " AND io_pair_date IN (";
+                        foreach (DateTime currentDate in datesList)
+                        {
+                            select += "'" + currentDate.ToString(dateTimeformat) + "', ";
+                        }
+
+                        select = select.Substring(0, select.Length - 2);
+                        select += ")";
+                    }
+
+                    if (!ptIDs.Trim().Equals(""))
+                    {
+                        select += " AND pass_type_id IN (" + ptIDs + ") ";
+                    }
+                    select += " AND end_time<='"+lastDate.AddHours(6).ToString("yyyy-MM-ddTHH:mm:ss")+"' ";
+                    select += " ORDER BY employee_id, io_pair_date, start_time";
+
+                    SqlCommand cmd = new SqlCommand(select, conn);
+                    cmd.CommandTimeout = Constants.commandTimeout;
+                    SqlDataAdapter sqlDataAdapter = new SqlDataAdapter(cmd);
+
+                    sqlDataAdapter.Fill(dataSet, "IOPairsProcessed");
+                    DataTable table = dataSet.Tables["IOPairsProcessed"];
+
+                    if (table.Rows.Count > 0)
+                    {
+                        foreach (DataRow row in table.Rows)
+                        {
+                            pair = new IOPairProcessedTO();
+                            pair.RecID = UInt32.Parse(row["rec_id"].ToString().Trim());
+                            if (row["io_pair_id"] != DBNull.Value)
+                            {
+                                pair.IOPairID = Int32.Parse(row["io_pair_id"].ToString().Trim());
+                            }
+                            if (row["io_pair_date"] != DBNull.Value)
+                            {
+                                pair.IOPairDate = (DateTime)row["io_pair_date"];
+                            }
+                            if (row["employee_id"] != DBNull.Value)
+                            {
+                                pair.EmployeeID = Int32.Parse(row["employee_id"].ToString().Trim());
+                            }
+                            if (row["location_id"] != DBNull.Value)
+                            {
+                                pair.LocationID = Int32.Parse(row["location_id"].ToString().Trim());
+                            }
+                            if (row["is_wrk_hrs_counter"] != DBNull.Value)
+                            {
+                                pair.IsWrkHrsCounter = Int32.Parse(row["is_wrk_hrs_counter"].ToString().Trim());
+                            }
+                            if (row["pass_type_id"] != DBNull.Value)
+                            {
+                                pair.PassTypeID = Int32.Parse(row["pass_type_id"].ToString().Trim());
+                            }
+                            if (row["start_time"] != DBNull.Value)
+                            {
+                                pair.StartTime = (DateTime)row["start_time"];
+                            }
+                            if (row["end_time"] != DBNull.Value)
+                            {
+                                pair.EndTime = (DateTime)row["end_time"];
+                            }
+                            if (row["manual_created"] != DBNull.Value)
+                            {
+                                pair.ManualCreated = Int32.Parse(row["manual_created"].ToString().Trim());
+                            }
+                            if (row["confirmation_flag"] != DBNull.Value)
+                            {
+                                pair.ConfirmationFlag = Int32.Parse(row["confirmation_flag"].ToString().Trim());
+                            }
+                            if (row["confirmed_by"] != DBNull.Value)
+                            {
+                                pair.ConfirmedBy = row["confirmed_by"].ToString().Trim();
+                            }
+                            if (row["confirmation_time"] != DBNull.Value)
+                            {
+                                pair.ConfirmationTime = DateTime.Parse(row["confirmation_time"].ToString().Trim());
+                            }
+                            if (row["verification_flag"] != DBNull.Value)
+                            {
+                                pair.VerificationFlag = Int32.Parse(row["verification_flag"].ToString().Trim());
+                            }
+                            if (row["verified_by"] != DBNull.Value)
+                            {
+                                pair.VerifiedBy = row["verified_by"].ToString().Trim();
+                            }
+                            if (row["verification_time"] != DBNull.Value)
+                            {
+                                pair.VerifiedTime = DateTime.Parse(row["verification_time"].ToString().Trim());
+                            }
+                            if (row["alert"] != DBNull.Value)
+                            {
+                                pair.Alert = row["alert"].ToString().Trim();
+                            }
+                            if (row["description"] != DBNull.Value)
+                            {
+                                pair.Desc = row["description"].ToString().Trim();
+                            }
+                            if (row["created_by"] != DBNull.Value)
+                            {
+                                pair.CreatedBy = row["created_by"].ToString().Trim();
+                            }
+                            if (row["created_time"] != DBNull.Value)
+                            {
+                                pair.CreatedTime = DateTime.Parse(row["created_time"].ToString().Trim());
+                            }
+                            pairsList.Add(pair);
+                        }
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+
+            return pairsList;
+        }
+
+        public List<IOPairProcessedTO> getIOPairsAllForEmpl(string employeeIDString, List<DateTime> datesList, string ptIDs)
+        {
+            DataSet dataSet = new DataSet();
+            IOPairProcessedTO pair = new IOPairProcessedTO();
+            List<IOPairProcessedTO> pairsList = new List<IOPairProcessedTO>();
+            string select;
+
+            try
+            {
+                if (!employeeIDString.Trim().Equals("") || datesList.Count > 0 || !ptIDs.Trim().Equals(""))
+                {
+                    select = "SELECT * FROM io_pairs_processed WHERE start_time <= end_time";
+
+                    if (!employeeIDString.Trim().Equals(""))
+                    {
+                        select += " AND employee_id IN (" + employeeIDString + ") ";
+                    }
+
+                    if (datesList.Count > 0)
+                    {
+                        select += " AND io_pair_date IN (";
+                        foreach (DateTime currentDate in datesList)
+                        {
+                            select += "'" + currentDate.ToString(dateTimeformat) + "', ";
+                        }
+
+                        select = select.Substring(0, select.Length - 2);
+                        select += ")";
+                    }
+
+                    if (!ptIDs.Trim().Equals(""))
+                    {
+                        select += " AND pass_type_id IN (" + ptIDs + ") ";
+                    }
+
+                    select += " ORDER BY employee_id, io_pair_date, start_time";
+
+                    SqlCommand cmd = new SqlCommand(select, conn);
+                    cmd.CommandTimeout = Constants.commandTimeout;
+                    SqlDataAdapter sqlDataAdapter = new SqlDataAdapter(cmd);
+
+                    sqlDataAdapter.Fill(dataSet, "IOPairsProcessed");
+                    DataTable table = dataSet.Tables["IOPairsProcessed"];
+
+                    if (table.Rows.Count > 0)
+                    {
+                        foreach (DataRow row in table.Rows)
+                        {
+                            pair = new IOPairProcessedTO();
+                            pair.RecID = UInt32.Parse(row["rec_id"].ToString().Trim());
+                            if (row["io_pair_id"] != DBNull.Value)
+                            {
+                                pair.IOPairID = Int32.Parse(row["io_pair_id"].ToString().Trim());
+                            }
+                            if (row["io_pair_date"] != DBNull.Value)
+                            {
+                                pair.IOPairDate = (DateTime)row["io_pair_date"];
+                            }
+                            if (row["employee_id"] != DBNull.Value)
+                            {
+                                pair.EmployeeID = Int32.Parse(row["employee_id"].ToString().Trim());
+                            }
+                            if (row["location_id"] != DBNull.Value)
+                            {
+                                pair.LocationID = Int32.Parse(row["location_id"].ToString().Trim());
+                            }
+                            if (row["is_wrk_hrs_counter"] != DBNull.Value)
+                            {
+                                pair.IsWrkHrsCounter = Int32.Parse(row["is_wrk_hrs_counter"].ToString().Trim());
+                            }
+                            if (row["pass_type_id"] != DBNull.Value)
+                            {
+                                pair.PassTypeID = Int32.Parse(row["pass_type_id"].ToString().Trim());
+                            }
+                            if (row["start_time"] != DBNull.Value)
+                            {
+                                pair.StartTime = (DateTime)row["start_time"];
+                            }
+                            if (row["end_time"] != DBNull.Value)
+                            {
+                                pair.EndTime = (DateTime)row["end_time"];
+                            }
+                            if (row["manual_created"] != DBNull.Value)
+                            {
+                                pair.ManualCreated = Int32.Parse(row["manual_created"].ToString().Trim());
+                            }
+                            if (row["confirmation_flag"] != DBNull.Value)
+                            {
+                                pair.ConfirmationFlag = Int32.Parse(row["confirmation_flag"].ToString().Trim());
+                            }
+                            if (row["confirmed_by"] != DBNull.Value)
+                            {
+                                pair.ConfirmedBy = row["confirmed_by"].ToString().Trim();
+                            }
+                            if (row["confirmation_time"] != DBNull.Value)
+                            {
+                                pair.ConfirmationTime = DateTime.Parse(row["confirmation_time"].ToString().Trim());
+                            }
+                            if (row["verification_flag"] != DBNull.Value)
+                            {
+                                pair.VerificationFlag = Int32.Parse(row["verification_flag"].ToString().Trim());
+                            }
+                            if (row["verified_by"] != DBNull.Value)
+                            {
+                                pair.VerifiedBy = row["verified_by"].ToString().Trim();
+                            }
+                            if (row["verification_time"] != DBNull.Value)
+                            {
+                                pair.VerifiedTime = DateTime.Parse(row["verification_time"].ToString().Trim());
+                            }
+                            if (row["alert"] != DBNull.Value)
+                            {
+                                pair.Alert = row["alert"].ToString().Trim();
+                            }
+                            if (row["description"] != DBNull.Value)
+                            {
+                                pair.Desc = row["description"].ToString().Trim();
+                            }
+                            if (row["created_by"] != DBNull.Value)
+                            {
+                                pair.CreatedBy = row["created_by"].ToString().Trim();
+                            }
+                            if (row["created_time"] != DBNull.Value)
+                            {
+                                pair.CreatedTime = DateTime.Parse(row["created_time"].ToString().Trim());
+                            }
+                            pairsList.Add(pair);
+                        }
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+
+            return pairsList;
+        }
+
+        public List<IOPairProcessedTO> getIOPairsAllForEmpl(string employeeIDString, DateTime from, DateTime to, string ptIDs)
+        {
+            DataSet dataSet = new DataSet();
+            IOPairProcessedTO pair = new IOPairProcessedTO();
+            List<IOPairProcessedTO> pairsList = new List<IOPairProcessedTO>();
+            string select;
+
+            try
+            {
+                select = "SELECT * FROM io_pairs_processed WHERE start_time <= end_time";
+
+                if (!employeeIDString.Trim().Equals(""))
+                    select += " AND employee_id IN (" + employeeIDString + ") ";
+
+                if (!from.Equals(new DateTime()))
+                    select += " AND io_pair_date >= '" + from.Date.ToString(dateTimeformat) + "'";
+
+                if (!to.Equals(new DateTime()))
+                    select += " AND io_pair_date < '" + to.Date.AddDays(1).ToString(dateTimeformat) + "'";
+
+                if (!ptIDs.Trim().Equals(""))
+                    select += " AND pass_type_id IN (" + ptIDs + ") ";
+
+                select += " ORDER BY employee_id, io_pair_date, start_time";
+
+                SqlCommand cmd = new SqlCommand(select, conn);
+                SqlDataAdapter sqlDataAdapter = new SqlDataAdapter(cmd);
+
+                sqlDataAdapter.Fill(dataSet, "IOPairsProcessed");
+                DataTable table = dataSet.Tables["IOPairsProcessed"];
+
+                if (table.Rows.Count > 0)
+                {
+                    foreach (DataRow row in table.Rows)
+                    {
+                        pair = new IOPairProcessedTO();
+                        pair.RecID = UInt32.Parse(row["rec_id"].ToString().Trim());
+                        if (row["io_pair_id"] != DBNull.Value)
+                        {
+                            pair.IOPairID = Int32.Parse(row["io_pair_id"].ToString().Trim());
+                        }
+                        if (row["io_pair_date"] != DBNull.Value)
+                        {
+                            pair.IOPairDate = (DateTime)row["io_pair_date"];
+                        }
+                        if (row["employee_id"] != DBNull.Value)
+                        {
+                            pair.EmployeeID = Int32.Parse(row["employee_id"].ToString().Trim());
+                        }
+                        if (row["location_id"] != DBNull.Value)
+                        {
+                            pair.LocationID = Int32.Parse(row["location_id"].ToString().Trim());
+                        }
+                        if (row["is_wrk_hrs_counter"] != DBNull.Value)
+                        {
+                            pair.IsWrkHrsCounter = Int32.Parse(row["is_wrk_hrs_counter"].ToString().Trim());
+                        }
+                        if (row["pass_type_id"] != DBNull.Value)
+                        {
+                            pair.PassTypeID = Int32.Parse(row["pass_type_id"].ToString().Trim());
+                        }
+                        if (row["start_time"] != DBNull.Value)
+                        {
+                            pair.StartTime = (DateTime)row["start_time"];
+                        }
+                        if (row["end_time"] != DBNull.Value)
+                        {
+                            pair.EndTime = (DateTime)row["end_time"];
+                        }
+                        if (row["manual_created"] != DBNull.Value)
+                        {
+                            pair.ManualCreated = Int32.Parse(row["manual_created"].ToString().Trim());
+                        }
+                        if (row["confirmation_flag"] != DBNull.Value)
+                        {
+                            pair.ConfirmationFlag = Int32.Parse(row["confirmation_flag"].ToString().Trim());
+                        }
+                        if (row["confirmed_by"] != DBNull.Value)
+                        {
+                            pair.ConfirmedBy = row["confirmed_by"].ToString().Trim();
+                        }
+                        if (row["confirmation_time"] != DBNull.Value)
+                        {
+                            pair.ConfirmationTime = DateTime.Parse(row["confirmation_time"].ToString().Trim());
+                        }
+                        if (row["verification_flag"] != DBNull.Value)
+                        {
+                            pair.VerificationFlag = Int32.Parse(row["verification_flag"].ToString().Trim());
+                        }
+                        if (row["verified_by"] != DBNull.Value)
+                        {
+                            pair.VerifiedBy = row["verified_by"].ToString().Trim();
+                        }
+                        if (row["verification_time"] != DBNull.Value)
+                        {
+                            pair.VerifiedTime = DateTime.Parse(row["verification_time"].ToString().Trim());
+                        }
+                        if (row["alert"] != DBNull.Value)
+                        {
+                            pair.Alert = row["alert"].ToString().Trim();
+                        }
+                        if (row["description"] != DBNull.Value)
+                        {
+                            pair.Desc = row["description"].ToString().Trim();
+                        }
+                        if (row["created_by"] != DBNull.Value)
+                        {
+                            pair.CreatedBy = row["created_by"].ToString().Trim();
+                        }
+                        if (row["created_time"] != DBNull.Value)
+                        {
+                            pair.CreatedTime = DateTime.Parse(row["created_time"].ToString().Trim());
+                        }
+                        pairsList.Add(pair);
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+
+            return pairsList;
+        }
+
+        //  24.05.2019. BOJAN
+        public List<IOPairProcessedTO> getIOPairsWithManualCreatedByEmployee(string employeeIDString, DateTime from, DateTime to) {
+            DataSet dataSet = new DataSet();
+            IOPairProcessedTO pair = new IOPairProcessedTO();
+            List<IOPairProcessedTO> pairsList = new List<IOPairProcessedTO>();
+            string select;
+
+            DateTime firstDayInMonth = new DateTime(DateTime.Now.Year, DateTime.Now.Month, 1);
+            DateTime dayBefore = DateTime.Now.AddDays(-1).Date;
+
+            try {
+                select = "SELECT l.name,e.employee_id,e.last_name, e.first_name, SUM(manual_created) as COUNTER, pt.description, pt.payment_code, e.organizational_unit_id, ou.name as 'orgName', ";
+                select += " CASE ";
+                select += " WHEN (e.organizational_unit_id IN (SELECT organizational_unit_id FROM organizational_units WHERE parent_organizational_unit_id in (SELECT organizational_unit_id FROM organizational_units WHERE parent_organizational_unit_id IN (SELECT organizational_unit_id FROM organizational_units WHERE parent_organizational_unit_id IN (SELECT organizational_unit_id FROM organizational_units WHERE organizational_unit_id IN (11,28)) OR organizational_unit_id IN (11,28)) OR organizational_unit_id IN (11,28)) OR organizational_unit_id in (11,28)) OR e.organizational_unit_id IN (11,28)) THEN 'FUEL' ";
+                select += " WHEN (e.organizational_unit_id IN (SELECT organizational_unit_id FROM organizational_units WHERE parent_organizational_unit_id IN (SELECT organizational_unit_id FROM organizational_units WHERE parent_organizational_unit_id IN (SELECT organizational_unit_id FROM organizational_units WHERE parent_organizational_unit_id IN (SELECT organizational_unit_id FROM organizational_units WHERE organizational_unit_id IN (10,48)) OR organizational_unit_id IN (10,48)) OR organizational_unit_id in (10,48)) OR organizational_unit_id in (10,48)) OR e.organizational_unit_id IN (10,48)) THEN 'WATER' "; //10 je WATER
+                select += " ELSE 'COMMON' ";
+                select += " END AS 'Divizija' ";
+                select += " , ip.io_pair_date "; //    06.08.2019. BOJAN
+                select += " FROM (((io_pairs_processed  ip INNER JOIN employees e on e.employee_id = ip.employee_id) INNER JOIN locations l on l.location_id = ip.location_id) INNER JOIN pass_types pt on pt.pass_type_id = ip.pass_type_id) INNER JOIN organizational_units ou on ou.organizational_unit_id = e.organizational_unit_id ";
+                select += " WHERE ";
+
+                if (!employeeIDString.Trim().Equals(""))
+                    select += " ip.employee_id IN (" + employeeIDString + ") AND ";
+                select += " ip.io_pair_date BETWEEN '" + firstDayInMonth.ToString() + "' AND '" + dayBefore.ToString() + "' ";
+                //if (!from.Equals(new DateTime()))
+                //    select += " AND io_pair_date >= '" + from.Date.ToString(dateTimeformat) + "'";
+
+                //if (!to.Equals(new DateTime()))
+                //    select += " AND io_pair_date < '" + to.Date.AddDays(1).ToString(dateTimeformat) + "'";
+
+                select += " GROUP BY l.name,e.employee_id,e.last_name, e.first_name, pt.description, pt.payment_code, e.organizational_unit_id, ou.name, ip.io_pair_date  ";  //    06.08.2019. BOJAN ubacen ip.io_pair_date 
+                select += " HAVING SUM(manual_created) > 0 ";
+                select += " ORDER BY ip.io_pair_date, e.last_name, e.first_name ";  //    06.08.2019. BOJAN ubacen ip.io_pair_date 
+
+                SqlCommand cmd = new SqlCommand(select, conn);
+                SqlDataAdapter sqlDataAdapter = new SqlDataAdapter(cmd);
+
+                sqlDataAdapter.Fill(dataSet, "IOPairsProcessed");
+                DataTable table = dataSet.Tables["IOPairsProcessed"];
+
+                if (table.Rows.Count > 0) {
+                    foreach (DataRow row in table.Rows) {
+                        pair = new IOPairProcessedTO();
+                        //pair.RecID = UInt32.Parse(row["rec_id"].ToString().Trim());
+                        //if (row["io_pair_id"] != DBNull.Value) {
+                        //    pair.IOPairID = Int32.Parse(row["io_pair_id"].ToString().Trim());
+                        //}
+                        //if (row["location_id"] != DBNull.Value) {
+                        //    pair.Location = Int32.Parse(row["location_id"].ToString().Trim());
+                        //}
+                        //if (row["is_wrk_hrs_counter"] != DBNull.Value) {
+                        //    pair.IsWrkHrsCounter = Int32.Parse(row["is_wrk_hrs_counter"].ToString().Trim());
+                        //}
+                        //if (row["pass_type_id"] != DBNull.Value) {
+                        //    pair.PassTypeID = Int32.Parse(row["pass_type_id"].ToString().Trim());
+                        //}
+                        //if (row["start_time"] != DBNull.Value) {
+                        //    pair.StartTime = (DateTime)row["start_time"];
+                        //}
+                        //if (row["end_time"] != DBNull.Value) {
+                        //    pair.EndTime = (DateTime)row["end_time"];
+                        //}
+                        if (row["employee_id"] != DBNull.Value) {
+                            pair.EmployeeID = Int32.Parse(row["employee_id"].ToString().Trim());
+                        }
+                        if (row["name"] != DBNull.Value) {
+                            pair.LocationName = row["name"].ToString().Trim();
+                        }
+                        if (row["first_name"] != DBNull.Value) {
+                            pair.FirstName = row["first_name"].ToString().Trim();
+                        }
+                        if (row["last_name"] != DBNull.Value) {
+                            pair.LastName = row["last_name"].ToString().Trim();
+                        }
+                        if (row["COUNTER"] != DBNull.Value) {
+                            pair.ManualCreated = Int32.Parse(row["COUNTER"].ToString().Trim());
+                        }
+                        if (row["description"] != DBNull.Value) {
+                            pair.PTDesc = row["description"].ToString().Trim();
+                        }
+                        if (row["payment_code"] != DBNull.Value) {
+                            pair.PassTypePaymentCode = row["payment_code"].ToString().Trim();
+                        }
+                        if (row["Divizija"] != DBNull.Value) {
+                            pair.Division = row["Divizija"].ToString().Trim();
+                        }
+                        if (row["orgName"] != DBNull.Value) {
+                            pair.OrgName = row["orgName"].ToString().Trim();
+                        }
+                        if (row["io_pair_date"] != DBNull.Value) {
+                            pair.IOPairDate = (DateTime)row["io_pair_date"];
+                        }
+                        //if (row["confirmation_flag"] != DBNull.Value) {
+                        //    pair.ConfirmationFlag = Int32.Parse(row["confirmation_flag"].ToString().Trim());
+                        //}
+                        //if (row["confirmed_by"] != DBNull.Value) {
+                        //    pair.ConfirmedBy = row["confirmed_by"].ToString().Trim();
+                        //}
+                        //if (row["confirmation_time"] != DBNull.Value) {
+                        //    pair.ConfirmationTime = DateTime.Parse(row["confirmation_time"].ToString().Trim());
+                        //}
+                        //if (row["verification_flag"] != DBNull.Value) {
+                        //    pair.VerificationFlag = Int32.Parse(row["verification_flag"].ToString().Trim());
+                        //}
+                        //if (row["verified_by"] != DBNull.Value) {
+                        //    pair.VerifiedBy = row["verified_by"].ToString().Trim();
+                        //}
+                        //if (row["verification_time"] != DBNull.Value) {
+                        //    pair.VerifiedTime = DateTime.Parse(row["verification_time"].ToString().Trim());
+                        //}
+                        //if (row["alert"] != DBNull.Value) {
+                        //    pair.Alert = row["alert"].ToString().Trim();
+                        //}
+                        //if (row["description"] != DBNull.Value) {
+                        //    pair.Desc = row["description"].ToString().Trim();
+                        //}
+                        //if (row["created_by"] != DBNull.Value) {
+                        //    pair.CreatedBy = row["created_by"].ToString().Trim();
+                        //}
+                        //if (row["created_time"] != DBNull.Value) {
+                        //    pair.CreatedTime = DateTime.Parse(row["created_time"].ToString().Trim());
+                        //}
+                        pairsList.Add(pair);
+                    }
+                }
+            }
+            catch (Exception ex) {
+                throw ex;
+            }
+
+            return pairsList;
+        }
+
+        public int getCollectiveAnnualLeaves(int emplID, int ptID, DateTime fromDate, List<DateTime> exceptDates)
+        {
+            DataSet dataSet = new DataSet();
+            string select;
+            int numOfDays = 0;
+
+            try
+            {
+                if (emplID == -1 || ptID == -1)
+                    return numOfDays;
+
+                select = "SELECT * FROM io_pairs_processed WHERE start_time <= end_time AND employee_id = '" + emplID.ToString().Trim() + "' AND pass_type_id = '" + ptID.ToString().Trim() + "'";
+
+                if (!fromDate.Equals(new DateTime()))
+                    select += " AND io_pair_date >= '" + fromDate.Date.ToString(dateTimeformat) + "'";
+
+                if (exceptDates.Count > 0)
+                {
+                    select += " AND io_pair_date NOT IN (";
+                    foreach (DateTime date in exceptDates)
+                    {
+                        select += "'" + date.Date.ToString(dateTimeformat) + "', ";
+                    }
+                    select = select.Substring(0, select.Length - 2);
+                    select += ")";
+                }
+
+                SqlCommand cmd = new SqlCommand(select, conn);
+                SqlDataAdapter sqlDataAdapter = new SqlDataAdapter(cmd);
+
+                sqlDataAdapter.Fill(dataSet, "IOPairsProcessed");
+                DataTable table = dataSet.Tables["IOPairsProcessed"];
+
+                if (table.Rows.Count > 0)
+                {
+                    foreach (DataRow row in table.Rows)
+                    {
+                        DateTime startTime = new DateTime();
+                        if (row["start_time"] != DBNull.Value)
+                        {
+                            startTime = (DateTime)row["start_time"];
+                        }
+
+                        if (startTime.TimeOfDay != new TimeSpan(0, 0, 0))
+                            numOfDays++;
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+
+            return numOfDays;
+        }
+
+        public int getEarnedHours(int emplID, int ptID, DateTime fromDate, DateTime exceptDate)
+        {
+            DataSet dataSet = new DataSet();
+            IOPairProcessedTO pair = new IOPairProcessedTO();            
+            string select;
+            int duration = 0;
+
+            try
+            {
+                select = "SELECT * FROM io_pairs_processed WHERE start_time <= end_time AND employee_id = '" + emplID.ToString().Trim() + "' AND pass_type_id = '" + ptID.ToString().Trim()
+                    + "' AND io_pair_date >= '" + fromDate.ToString(dateTimeformat) + "'";
+
+                if (!exceptDate.Equals(new DateTime()))
+                    select += " AND io_pair_date <> '" + exceptDate.Date.ToString(dateTimeformat) + "'";
+                
+                SqlCommand cmd = new SqlCommand(select, conn);
+                cmd.CommandTimeout = Constants.commandTimeout;
+                SqlDataAdapter sqlDataAdapter = new SqlDataAdapter(cmd);
+
+                sqlDataAdapter.Fill(dataSet, "IOPairsProcessed");
+                DataTable table = dataSet.Tables["IOPairsProcessed"];
+
+                if (table.Rows.Count > 0)
+                {
+                    foreach (DataRow row in table.Rows)
+                    {
+                        pair = new IOPairProcessedTO();                        
+                        if (row["start_time"] != DBNull.Value)
+                        {
+                            pair.StartTime = (DateTime)row["start_time"];
+                        }
+                        if (row["end_time"] != DBNull.Value)
+                        {
+                            pair.EndTime = (DateTime)row["end_time"];
+                        }                       
+
+                        duration += (int)pair.EndTime.TimeOfDay.Subtract(pair.StartTime.TimeOfDay).TotalMinutes;
+
+                        if (pair.EndTime.Hour == 23 && pair.EndTime.Minute == 59)
+                            duration++;
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+
+            return duration;
+        }
+
+        public int getUsedHours(int emplID, int ptID, int ptRounding, DateTime fromDate, DateTime exceptDate)
+        {
+            DataSet dataSet = new DataSet();
+            IOPairProcessedTO pair = new IOPairProcessedTO();
+            string select;
+            int duration = 0;
+
+            try
+            {
+                select = "SELECT * FROM io_pairs_processed WHERE start_time <= end_time AND employee_id = '" + emplID.ToString().Trim() + "' AND pass_type_id = '" + ptID.ToString().Trim()
+                    + "' AND io_pair_date >= '" + fromDate.ToString(dateTimeformat) + "'";
+
+                if (!exceptDate.Equals(new DateTime()))
+                    select += " AND io_pair_date <> '" + exceptDate.Date.ToString(dateTimeformat) + "'";
+                
+                SqlCommand cmd = new SqlCommand(select, conn);
+                cmd.CommandTimeout = Constants.commandTimeout;
+                SqlDataAdapter sqlDataAdapter = new SqlDataAdapter(cmd);
+
+                sqlDataAdapter.Fill(dataSet, "IOPairsProcessed");
+                DataTable table = dataSet.Tables["IOPairsProcessed"];
+
+                if (table.Rows.Count > 0)
+                {
+                    foreach (DataRow row in table.Rows)
+                    {
+                        pair = new IOPairProcessedTO();
+                        if (row["start_time"] != DBNull.Value)
+                        {
+                            pair.StartTime = (DateTime)row["start_time"];
+                        }
+                        if (row["end_time"] != DBNull.Value)
+                        {
+                            pair.EndTime = (DateTime)row["end_time"];
+                        }
+
+                        int pairDuration = (int)pair.EndTime.TimeOfDay.Subtract(pair.StartTime.TimeOfDay).TotalMinutes;
+
+                        if (pair.EndTime.Hour == 23 && pair.EndTime.Minute == 59)
+                            pairDuration++;
+
+                        if (pairDuration % ptRounding != 0)
+                            pairDuration += ptRounding - (pairDuration % ptRounding);
+
+                        duration += pairDuration;
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+
+            return duration;
+        }
+
+        public List<IOPairProcessedTO> getIOPairsToVerifyForEmpl(string employeeIDString, List<DateTime> datesList, string ptIDs)
+        {
+            DataSet dataSet = new DataSet();
+            IOPairProcessedTO pair = new IOPairProcessedTO();
+            List<IOPairProcessedTO> pairsList = new List<IOPairProcessedTO>();
+            string select;
+
+            try
+            {
+                if (!employeeIDString.Trim().Equals("") || datesList.Count > 0 || !ptIDs.Trim().Equals(""))
+                {
+                    select = "SELECT * FROM io_pairs_processed WHERE start_time <= end_time AND verification_flag = '" + ((int)Constants.Verification.NotVerified).ToString() + "'";
+
+                    if (!employeeIDString.Trim().Equals(""))
+                    {
+                        select += " AND employee_id IN (" + employeeIDString + ") ";
+                    }
+
+                    if (datesList.Count > 0)
+                    {
+                        select += " AND io_pair_date IN (";
+                        foreach (DateTime currentDate in datesList)
+                        {
+                            select += "'" + currentDate.ToString(dateTimeformat) + "', ";
+                        }
+
+                        select = select.Substring(0, select.Length - 2);
+                        select += ")";
+                    }
+
+                    if (!ptIDs.Trim().Equals(""))
+                    {
+                        select += " AND pass_type_id IN (" + ptIDs + ")";
+                    }
+
+                    select += " ORDER BY employee_id, io_pair_date, start_time";
+
+                    SqlCommand cmd = new SqlCommand(select, conn);
+                    cmd.CommandTimeout = Constants.commandTimeout;
+                    SqlDataAdapter sqlDataAdapter = new SqlDataAdapter(cmd);
+
+                    sqlDataAdapter.Fill(dataSet, "IOPairsProcessed");
+                    DataTable table = dataSet.Tables["IOPairsProcessed"];
+
+                    if (table.Rows.Count > 0)
+                    {
+                        foreach (DataRow row in table.Rows)
+                        {
+                            pair = new IOPairProcessedTO();
+                            pair.RecID = UInt32.Parse(row["rec_id"].ToString().Trim());
+                            if (row["io_pair_id"] != DBNull.Value)
+                            {
+                                pair.IOPairID = Int32.Parse(row["io_pair_id"].ToString().Trim());
+                            }
+                            if (row["io_pair_date"] != DBNull.Value)
+                            {
+                                pair.IOPairDate = (DateTime)row["io_pair_date"];
+                            }
+                            if (row["employee_id"] != DBNull.Value)
+                            {
+                                pair.EmployeeID = Int32.Parse(row["employee_id"].ToString().Trim());
+                            }
+                            if (row["location_id"] != DBNull.Value)
+                            {
+                                pair.LocationID = Int32.Parse(row["location_id"].ToString().Trim());
+                            }
+                            if (row["is_wrk_hrs_counter"] != DBNull.Value)
+                            {
+                                pair.IsWrkHrsCounter = Int32.Parse(row["is_wrk_hrs_counter"].ToString().Trim());
+                            }
+                            if (row["pass_type_id"] != DBNull.Value)
+                            {
+                                pair.PassTypeID = Int32.Parse(row["pass_type_id"].ToString().Trim());
+                            }
+                            if (row["start_time"] != DBNull.Value)
+                            {
+                                pair.StartTime = (DateTime)row["start_time"];
+                            }
+                            if (row["end_time"] != DBNull.Value)
+                            {
+                                pair.EndTime = (DateTime)row["end_time"];
+                            }
+                            if (row["manual_created"] != DBNull.Value)
+                            {
+                                pair.ManualCreated = Int32.Parse(row["manual_created"].ToString().Trim());
+                            }
+                            if (row["confirmation_flag"] != DBNull.Value)
+                            {
+                                pair.ConfirmationFlag = Int32.Parse(row["confirmation_flag"].ToString().Trim());
+                            }
+                            if (row["confirmed_by"] != DBNull.Value)
+                            {
+                                pair.ConfirmedBy = row["confirmed_by"].ToString().Trim();
+                            }
+                            if (row["confirmation_time"] != DBNull.Value)
+                            {
+                                pair.ConfirmationTime = DateTime.Parse(row["confirmation_time"].ToString().Trim());
+                            }
+                            if (row["verification_flag"] != DBNull.Value)
+                            {
+                                pair.VerificationFlag = Int32.Parse(row["verification_flag"].ToString().Trim());
+                            }
+                            if (row["verified_by"] != DBNull.Value)
+                            {
+                                pair.VerifiedBy = row["verified_by"].ToString().Trim();
+                            }
+                            if (row["verification_time"] != DBNull.Value)
+                            {
+                                pair.VerifiedTime = DateTime.Parse(row["verification_time"].ToString().Trim());
+                            }
+                            if (row["alert"] != DBNull.Value)
+                            {
+                                pair.Alert = row["alert"].ToString().Trim();
+                            }
+                            if (row["description"] != DBNull.Value)
+                            {
+                                pair.Desc = row["description"].ToString().Trim();
+                            }
+                            if (row["created_by"] != DBNull.Value)
+                            {
+                                pair.CreatedBy = row["created_by"].ToString().Trim();
+                            }
+                            if (row["created_time"] != DBNull.Value)
+                            {
+                                pair.CreatedTime = DateTime.Parse(row["created_time"].ToString().Trim());
+                            }
+                            pairsList.Add(pair);
+                        }
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+
+            return pairsList;
+        }
+
+        public bool beginTransaction()
+        {
+            bool isStarted = false;
+
+            try
+            {
+                SqlTrans = conn.BeginTransaction(IsolationLevel.RepeatableRead);
+                isStarted = true;
+            }
+            catch (Exception ex)
+            {
+                isStarted = false;
+                throw new Exception(ex.Message);
+            }
+
+            return isStarted;
+        }
+
+        public void commitTransaction()
+        {
+            this.SqlTrans.Commit();
+            this.SqlTrans = null;
+        }
+
+        public void rollbackTransaction()
+        {
+            this.SqlTrans.Rollback();
+            this.SqlTrans = null;
+        }
+
+        public IDbTransaction getTransaction()
+        {
+            return _sqlTrans;
+        }
+
+        public void setTransaction(IDbTransaction trans)
+        {
+            _sqlTrans = (SqlTransaction)trans;
+        }
+
+        //17.08.2017 Miodrag Mitrovic / Zbog mesecnog izvestaja za GoPro
+        public List<IOPairProcessedTO> getProcessedPairsTypesForMonthlyReports(DateTime from, DateTime to)
+        {
+            DataSet dataSet = new DataSet();
+            IOPairProcessedTO pair = new IOPairProcessedTO();
+            List<IOPairProcessedTO> pairsList = new List<IOPairProcessedTO>();
+            string select;
+
+            try
+            {
+                //SELECT
+                select = "  SELECT pp.io_pair_date, e.employee_id,e.first_name , e.last_name ,";
+                select += " e.working_unit_id,e.organizational_unit_id,pp.pass_type_id, pt.description, ";
+                //select += "  SUM(DATEDIFF(MINUTE,pp.start_time,pp.end_time)) vreme ";
+                select += " pp.start_time, pp.end_time ";
+                //FROM
+                // tags t,
+                select += "  FROM  [io_pairs_processed] pp, employees e, pass_types pt ";
+                //WHERE (povezivanje)  t.owner_id=e.employee_id AND
+                select += " WHERE pp.employee_id=e.employee_id AND ";
+                select += " pt.pass_type_id=pp.pass_type_id and ";
+                //WHERE Izbor meseca
+                select += " pp.start_time>'" + from.ToString("MM/dd/yyyy HH:mm") + "' AND ";
+                //select += " pp.start_time!='" + from.ToString("MM/dd/yyyy HH:mm") + "' AND ";
+                select += " start_time<='" + to.ToString("MM/dd/yyyy HH:mm") + "' AND ";
+                select += " (e.employee_id<8000 OR e.employee_id>10000) ";
+                /*
+                //GROUP BY
+                select += " GROUP BY pp.io_pair_date, t.tag_id,e.employee_id,e.first_name ,e.last_name , ";
+                select += " e.working_unit_id,e.organizational_unit_id,pp.pass_type_id,pt.description ";
+                 * */
+                //ORDER BY
+                select += " order by e.first_name,e.last_name,pp.start_time";
+
+                SqlCommand cmd = new SqlCommand(select, conn);
+                SqlDataAdapter sqlDataAdapter = new SqlDataAdapter(cmd);
+
+                sqlDataAdapter.Fill(dataSet, "IOPairsProcessed");
+                DataTable table = dataSet.Tables["IOPairsProcessed"];
+
+                if (table.Rows.Count > 0)
+                {
+                    foreach (DataRow row in table.Rows)
+                    {
+                        pair = new IOPairProcessedTO();
+                       
+                        if (row["io_pair_date"] != DBNull.Value)
+                        {
+                            pair.IOPairDate = (DateTime)row["io_pair_date"];
+                        }                        
+                        //TagID 
+                        /*
+                        if (row["t.tag_id"] != DBNull.Value)
+                        {
+                            pair.RecID = UInt32.Parse(row["t.tag_id"].ToString().Trim());
+                        }   
+                        */
+                        if (row["employee_id"] != DBNull.Value)
+                        {
+                            pair.EmployeeID = Int32.Parse(row["employee_id"].ToString().Trim());
+                        }
+                        //e.first_name
+                        if (row["first_name"] != DBNull.Value)
+                        {
+                            pair.ConfirmedBy = row["first_name"].ToString().Trim();
+                        }
+                        //e.last_name
+                        if (row["last_name"] != DBNull.Value)
+                        {
+                            pair.VerifiedBy = row["last_name"].ToString().Trim();
+                        }
+                        //working unit
+                        if (row["working_unit_id"] != DBNull.Value)
+                        {
+                            pair.LocationID = Int32.Parse(row["working_unit_id"].ToString().Trim());
+                        }
+                        //Organization unit
+                        if (row["organizational_unit_id"] != DBNull.Value)
+                        {
+                            pair.IsWrkHrsCounter = Int32.Parse(row["organizational_unit_id"].ToString().Trim());
+                        }                       
+                        //Pass type
+                        if (row["pass_type_id"] != DBNull.Value)
+                        {
+                            pair.PassTypeID = Int32.Parse(row["pass_type_id"].ToString().Trim());
+                        }
+                        //Description
+                        if (row["description"] != DBNull.Value)
+                        {
+                            pair.Desc = row["description"].ToString().Trim();
+                        }
+                        //Start time
+                        if (row["start_time"] != DBNull.Value)
+                        {
+                            pair.StartTime = (DateTime)row["start_time"];
+                        }                        
+                        //End time
+                        if (row["end_time"] != DBNull.Value)
+                        {
+                            pair.EndTime = (DateTime)row["end_time"];
+                        }
+                        pairsList.Add(pair);
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+            return pairsList;
+        }
+
+        //21.08.2017 Miodrag Mitrovic / Pretraga po tipu prolaska
+        public List<IOPairProcessedTO> getProcessedPairsByPassType(DateTime from, DateTime to, string tipoviProlaska)
+        {
+            DataSet dataSet = new DataSet();
+            IOPairProcessedTO pair = new IOPairProcessedTO();
+            List<IOPairProcessedTO> pairsList = new List<IOPairProcessedTO>();
+            string select;
+
+            try
+            {
+                //SELECT
+                select = "  SELECT  [io_pair_date],[employee_id],[pass_type_id],[start_time],[end_time],[description] ";
+                
+                //FROM
+               
+                select += "  FROM  [io_pairs_processed] pp ";
+                //WHERE (povezivanje)  t.owner_id=e.employee_id AND
+                select += " WHERE pass_type_id in (" + tipoviProlaska + ")";
+                //WHERE Izbor meseca
+                select += " AND start_time>'" + from.ToString("MM/dd/yyyy hh:mm") + "' AND start_time<='" + to.ToString("MM/dd/yyyy hh:mm") + "' ";
+                select += " AND (employee_id<8000 OR employee_id>10000) ";
+                //ORDER BY
+                select += " ORDER BY employee_id, io_pair_date ";
+                SqlCommand cmd = new SqlCommand(select, conn);
+                SqlDataAdapter sqlDataAdapter = new SqlDataAdapter(cmd);
+
+                sqlDataAdapter.Fill(dataSet, "IOPairsProcessed");
+                DataTable table = dataSet.Tables["IOPairsProcessed"];
+
+                if (table.Rows.Count > 0)
+                {
+                    foreach (DataRow row in table.Rows)
+                    {
+                        pair = new IOPairProcessedTO();
+                        
+                        if (row["io_pair_date"] != DBNull.Value)
+                        {
+                            pair.IOPairDate = (DateTime)row["io_pair_date"];
+                        }
+                        if (row["employee_id"] != DBNull.Value)
+                        {
+                            pair.EmployeeID = Int32.Parse(row["employee_id"].ToString().Trim());
+                        }                       
+                        if (row["pass_type_id"] != DBNull.Value)
+                        {
+                            pair.PassTypeID = Int32.Parse(row["pass_type_id"].ToString().Trim());
+                        }
+                        if (row["start_time"] != DBNull.Value)
+                        {
+                            pair.StartTime = (DateTime)row["start_time"];
+                        }
+                        if (row["end_time"] != DBNull.Value)
+                        {
+                            pair.EndTime = (DateTime)row["end_time"];
+                        }                        
+                        if (row["description"] != DBNull.Value)
+                        {
+                            pair.Desc = row["description"].ToString().Trim();
+                        }                        
+                        pairsList.Add(pair);
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+            return pairsList;
+        }
+        public int BankHoursMonthly(int emplID,DateTime month)
+        {
+            int mins=0;
+            DataSet dataSet = new DataSet();
+            string select = "";
+            //select += "select sum(DATEDIFF(minute,start_time,end_time)) as minutes, pass_type_id from actamgr.io_pairs_processed where employee_id="+emplID+" and io_pair_date >= '"+month+"' and io_pair_date<'"+month.AddMonths(1)+"' and pass_type_id in (42,48) group by pass_type_id";
+
+            select += "declare @tmpTable TABLE (minutes int,pass_type_id int) ";
+            select += "insert into @tmpTable select case when cast (end_time as time)='23:59' then sum(datediff(minute,start_time,dateadd(minute,1,end_time))) else sum(datediff(minute,start_time,end_time)) end as minutes, pass_type_id from actamgr.io_pairs_processed where employee_id="+emplID+" and io_pair_date >= '"+month.ToString("yyyy-MM-dd")+"' and io_pair_date<'"+month.AddMonths(1).ToString("yyyy-MM-dd")+"' and pass_type_id in (42,48) group by pass_type_id,end_time ";
+            select += "select sum(minutes) as minutes,pass_type_id from @tmpTable group by pass_type_id";
+
+            SqlCommand cmd = new SqlCommand(select, conn);
+            SqlDataAdapter sqlDataAdapter = new SqlDataAdapter(cmd);
+            sqlDataAdapter.Fill(dataSet, "IOPairsProcessed");
+            DataTable table = dataSet.Tables["IOPairsProcessed"];
+            if (table.Rows.Count > 0)
+            {
+                foreach (DataRow item in table.Rows)
+                {
+                    if (item["pass_type_id"].ToString() == "48")
+                        mins += Int32.Parse(item["minutes"].ToString());
+                    else
+                        mins -= Int32.Parse(item["minutes"].ToString());
+                }
+            }
+            
+
+            return mins;
+        }
+        public int BankHoursPeriodical(int emplID, DateTime fromDate, DateTime toDate)
+        {
+            int mins = 0;
+            DataSet dataSet = new DataSet();
+            string select = "";
+            //select += "select sum(DATEDIFF(minute,start_time,end_time)) as minutes, pass_type_id from actamgr.io_pairs_processed where employee_id="+emplID+" and io_pair_date >= '"+month+"' and io_pair_date<'"+month.AddMonths(1)+"' and pass_type_id in (42,48) group by pass_type_id";
+
+            select += "declare @tmpTable TABLE (minutes int,pass_type_id int) ";
+            select += "insert into @tmpTable select case when cast (end_time as time)='23:59' then sum(datediff(minute,start_time,dateadd(minute,1,end_time))) else sum(datediff(minute,start_time,end_time)) end as minutes, pass_type_id from actamgr.io_pairs_processed where employee_id=" + emplID + " and io_pair_date >= '" + fromDate.ToString("yyyy-MM-dd") + "' and io_pair_date<'" + toDate.ToString("yyyy-MM-dd") + "' and pass_type_id in (42,48) group by pass_type_id,end_time ";
+            select += "select sum(minutes) as minutes,pass_type_id from @tmpTable group by pass_type_id";
+
+            SqlCommand cmd = new SqlCommand(select, conn);
+            SqlDataAdapter sqlDataAdapter = new SqlDataAdapter(cmd);
+            sqlDataAdapter.Fill(dataSet, "IOPairsProcessed");
+            DataTable table = dataSet.Tables["IOPairsProcessed"];
+            if (table.Rows.Count > 0)
+            {
+                foreach (DataRow item in table.Rows)
+                {
+                    if (item["pass_type_id"].ToString() == "48")
+                        mins += Int32.Parse(item["minutes"].ToString());
+                    else
+                        mins -= Int32.Parse(item["minutes"].ToString());
+                }
+            }
+
+
+            return mins;
+        }
+        public int BankHours6Months(int emplID, DateTime month)
+        {
+            if (emplID == 150)
+            {
+            }
+            int mins = 0;
+            DataSet dataSet = new DataSet();
+            string select = "";
+            //select += "select sum(DATEDIFF(minute,start_time,end_time)) as minutes, pass_type_id from actamgr.io_pairs_processed where employee_id=" + emplID + " and io_pair_date >= '" + month.AddMonths(-5) + "' and io_pair_date<'" + month.AddMonths(-4) + "' and pass_type_id in (42,48) group by pass_type_id";
+
+            select += "declare @tmpTable TABLE (minutes int,pass_type_id int) ";
+            select += "insert into @tmpTable select case when cast (end_time as time)='23:59' then sum(datediff(minute,start_time,dateadd(minute,1,end_time))) else sum(datediff(minute,start_time,end_time)) end as minutes, pass_type_id from actamgr.io_pairs_processed where employee_id=" + emplID + " and io_pair_date >= '" + month.AddMonths(-6).ToString("yyyy-MM-dd") + "' and io_pair_date<'" + month.AddMonths(-5).ToString("yyyy-MM-dd") + "' and pass_type_id in (42,48) group by pass_type_id,end_time ";
+            select += "select sum(minutes) as minutes,pass_type_id from @tmpTable group by pass_type_id";
+            
+            SqlCommand cmd = new SqlCommand(select, conn);
+            SqlDataAdapter sqlDataAdapter = new SqlDataAdapter(cmd);
+            sqlDataAdapter.Fill(dataSet, "IOPairsProcessed");
+            DataTable table = dataSet.Tables["IOPairsProcessed"];
+            if (table.Rows.Count > 0)
+            {
+                foreach (DataRow item in table.Rows)
+                {
+                    if (item["pass_type_id"].ToString() == "48")
+                        mins += Int32.Parse(item["minutes"].ToString());
+                    else
+                        mins -= Int32.Parse(item["minutes"].ToString());
+                }
+            }
+
+            return mins;
+        }
+
+        public void BankHours6MonthsPay(int emplID, DateTime mesec)
+        {
+            try
+            {
+                string select = "";
+                select += "declare @tmpTable TABLE (minutes int,pass_type_id int) ";
+                select += "insert into @tmpTable select case when cast (end_time as time)='23:59' then sum(datediff(minute,start_time,dateadd(minute,1,end_time))) else sum(datediff(minute,start_time,end_time)) end as minutes, pass_type_id from actamgr.io_pairs_processed where employee_id=" + emplID + " and io_pair_date >= '" + mesec.AddMonths(-6).ToString("yyyy-MM-dd") + "' and io_pair_date<'" + mesec.AddMonths(-5).ToString("yyyy-MM-dd") + "' and pass_type_id in (42,48) and used_for_pay is null group by pass_type_id,end_time ";
+                select += "select sum(minutes) as minutes,pass_type_id from @tmpTable group by pass_type_id";
+                SqlCommand cmd = new SqlCommand(select, conn);
+                SqlDataAdapter sqlDataAdapter = new SqlDataAdapter(cmd);
+                DataSet dataSet = new DataSet();
+                sqlDataAdapter.Fill(dataSet, "ListBankHours");
+                DataTable table = dataSet.Tables["ListBankHours"];
+                int mins = 0;
+                if (table.Rows.Count > 0)
+                {
+                    foreach (DataRow row in table.Rows)
+                    {
+                        if (row[1].ToString() == "48")
+                            mins += int.Parse(row[0].ToString());
+                        else
+                            mins -= int.Parse(row[0].ToString());
+                    }
+                    select = "UPDATE actamgr.io_pairs_processed SET used_for_pay=1 WHERE io_pair_date between '" + mesec.AddMonths(-6).ToString("yyyy-MM-dd") + "' and '" + mesec.AddMonths(-5).ToString("yyyy-MM-dd") + "' and pass_type_id in (42,48) and employee_id=" + emplID.ToString();
+                    if (mins > 0)
+                    {
+                        int bankHours = 0;
+                        string selBankCounter = "SELECT value FROM actamgr.employee_counter_values WHERE employee_counter_type_id=5 and employee_id="+emplID;
+                        SqlCommand cmdBankCounter = new SqlCommand(selBankCounter, conn);
+                        DataSet dsBankCounter = new DataSet();
+                        SqlDataAdapter sdaBankCounter = new SqlDataAdapter(cmdBankCounter);
+                        sdaBankCounter.Fill(dsBankCounter, "BankCounter");
+                        DataTable bcTable = dsBankCounter.Tables["BankCounter"];
+                        if (bcTable.Rows.Count > 0)
+                        {
+                            foreach (DataRow row in bcTable.Rows)
+                            {
+                                bankHours = int.Parse(row[0].ToString());
+                            }
+                        }
+                        if(bankHours-mins>=0)
+                            select += " UPDATE actamgr.employee_counter_values SET value=value-" + mins + " WHERE employee_counter_type_id=5 and employee_id=" + emplID;
+                    }
+                    SqlCommand cmdUpdate = new SqlCommand(select, conn);
+                    cmdUpdate.ExecuteNonQuery();
+                }
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
+        public int radneSubote(int emplID, DateTime month)
+        {
+            int brRadnihSubota = 0;
+            DataSet dataSet = new DataSet();
+            string select = "SELECT io_pair_date,pass_type_id FROM actamgr.io_pairs_processed WHERE employee_id="+emplID+" and io_pair_date>='"+month.ToString("yyyy-MM-dd")+"' and io_pair_date<'"+month.AddMonths(1).ToString("yyyy-MM-dd")+"'";
+            SqlCommand cmd = new SqlCommand(select, conn);
+            SqlDataAdapter sqlDataAdapter = new SqlDataAdapter(cmd);
+            sqlDataAdapter.Fill(dataSet, "IOPairsProcessed");
+            DataTable table = dataSet.Tables["IOPairsProcessed"];
+            if (table.Rows.Count > 0)
+            {
+                foreach (DataRow item in table.Rows)
+                {
+                    DateTime datum = DateTime.Parse(item["io_pair_date"].ToString());
+                    int tipProlaska=int.Parse(item["pass_type_id"].ToString());
+                    if ((tipProlaska == -1000 && (datum.DayOfWeek == DayOfWeek.Saturday || datum.DayOfWeek == DayOfWeek.Sunday)) || ((tipProlaska==4 || tipProlaska==48) && (datum.DayOfWeek==DayOfWeek.Sunday || datum.DayOfWeek==DayOfWeek.Saturday)))
+                    {
+                        brRadnihSubota++;
+                    }
+                }
+            }
+            return brRadnihSubota;
+        }
+        public List<IOPairProcessedTO> pairsForPeriod(string emplIDs, DateTime from, DateTime to)
+        {
+            List<IOPairProcessedTO> listPairs = new List<IOPairProcessedTO>();
+            try
+            {
+                DataSet dataSet = new DataSet();
+                IOPairProcessedTO pair = new IOPairProcessedTO();
+                string select = "SELECT * FROM actamgr.io_pairs_processed WHERE employee_id in (" + emplIDs + ") and io_pair_date between '" + from.ToString("yyyy-MM-ddT00:00:00") + "' and '" + to.AddDays(1).ToString("yyyy-MM-ddT00:00:00") + "' and end_time<='" + to.Date.AddHours(6).AddDays(1).ToString("yyyy-MM-ddTHH:mm:ss") + "' and start_time>='" + from.Date.AddHours(6).ToString("yyyy-MM-ddTHH:mm:ss") + "' ORDER BY employee_id,io_pair_date,start_time";
+                SqlCommand cmd = new SqlCommand(select, conn);
+                SqlDataAdapter sqlDataAdapter = new SqlDataAdapter(cmd);
+                sqlDataAdapter.Fill(dataSet, "IOPairsProcessed");
+                DataTable table = dataSet.Tables["IOpairsProcessed"];
+                if (table.Rows.Count > 0)
+                {
+                    foreach (DataRow row in table.Rows)
+                    {
+                        pair = new IOPairProcessedTO();
+                        if (row["io_pair_date"] != DBNull.Value)
+                        {
+                            pair.IOPairDate = DateTime.Parse(row["io_pair_date"].ToString());
+                        }
+                        if (row["employee_id"] != DBNull.Value)
+                        {
+                            pair.EmployeeID = int.Parse(row["employee_id"].ToString());
+                        }
+                        if (row["pass_type_id"] != DBNull.Value)
+                        {
+                            pair.PassTypeID = int.Parse(row["pass_type_id"].ToString());
+                        }
+                        if (row["start_time"] != DBNull.Value)
+                        {
+                            pair.StartTime = DateTime.Parse(row["start_time"].ToString());
+                        }
+                        if (row["end_time"] != DBNull.Value)
+                        {
+                            pair.EndTime = DateTime.Parse(row["end_time"].ToString());
+                        }
+                        if (row["location_id"] != DBNull.Value)
+                        {
+                            pair.LocationID = int.Parse(row["location_id"].ToString());
+                        }
+                        if (row["io_pair_id"] != DBNull.Value)
+                        {
+                            pair.IOPairID = int.Parse(row["io_pair_id"].ToString());
+                        }
+                        if (row["is_wrk_hrs_counter"] != DBNull.Value)
+                        {
+                            pair.IsWrkHrsCounter = int.Parse(row["is_wrk_hrs_counter"].ToString());
+                        }
+                        if (row["manual_created"] != DBNull.Value)
+                        {
+                            pair.ManualCreated = int.Parse(row["manual_created"].ToString());
+                        }
+                        if (row["confirmation_flag"] != DBNull.Value)
+                        {
+                            pair.ConfirmationFlag = int.Parse(row["confirmation_flag"].ToString());
+                        }
+                        if (row["confirmed_by"] != DBNull.Value)
+                        {
+                            pair.ConfirmedBy = row["confirmed_by"].ToString();
+                        }
+                        if (row["confirmation_time"] != DBNull.Value)
+                        {
+                            pair.ConfirmationTime = DateTime.Parse(row["confirmation_time"].ToString());
+                        }
+                        if (row["verification_flag"] != DBNull.Value)
+                        {
+                            pair.VerificationFlag = int.Parse(row["verification_flag"].ToString());
+                        }
+                        if (row["verified_by"] != DBNull.Value)
+                        {
+                            pair.VerifiedBy = row["verified_by"].ToString();
+                        }
+                        if (row["verification_time"] != DBNull.Value)
+                        {
+                            pair.VerifiedTime = DateTime.Parse(row["verification_time"].ToString());
+                        }
+                        if (row["alert"] != DBNull.Value)
+                        {
+                            pair.Alert = row["alert"].ToString();
+                        }
+                        if (row["description"] != DBNull.Value)
+                        {
+                            pair.Desc = row["description"].ToString();
+                        }
+                        if (row["created_by"] != DBNull.Value)
+                        {
+                            pair.CreatedBy = row["created_by"].ToString();
+                        }
+                        if (row["modified_by"] != DBNull.Value)
+                        {
+                            pair.ModifiedBy = row["modified_by"].ToString();
+                        }
+                        if (row["created_time"] != DBNull.Value)
+                        {
+                            pair.CreatedTime = DateTime.Parse(row["created_time"].ToString());
+                        }
+                        if (row["modified_time"] != DBNull.Value)
+                        {
+                            pair.ModifiedTime = DateTime.Parse(row["modified_time"].ToString());
+                        }
+                        listPairs.Add(pair);
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+            return listPairs;
+        }
+
+        public List<IOPairProcessedTO> pairsForPeriod(string emplIDs, DateTime from, DateTime to, string passType)
+        {
+            List<IOPairProcessedTO> listPairs = new List<IOPairProcessedTO>();
+            try
+            {
+                DataSet dataSet = new DataSet();
+                IOPairProcessedTO pair = new IOPairProcessedTO();
+                string select = "SELECT * FROM actamgr.io_pairs_processed WHERE employee_id in (" + emplIDs + ") and io_pair_date between '" + from.ToString("yyyy-MM-ddT00:00:00") + "' and '" + to.ToString("yyyy-MM-ddT00:00:00") + "' and pass_type_id in ("+passType+") ORDER BY employee_id,io_pair_date,start_time";
+                SqlCommand cmd = new SqlCommand(select, conn);
+                SqlDataAdapter sqlDataAdapter = new SqlDataAdapter(cmd);
+                sqlDataAdapter.Fill(dataSet, "IOPairsProcessed");
+                DataTable table = dataSet.Tables["IOpairsProcessed"];
+                if (table.Rows.Count > 0)
+                {
+                    foreach (DataRow row in table.Rows)
+                    {
+                        pair = new IOPairProcessedTO();
+                        if (row["io_pair_date"] != DBNull.Value)
+                        {
+                            pair.IOPairDate = DateTime.Parse(row["io_pair_date"].ToString());
+                        }
+                        if (row["employee_id"] != DBNull.Value)
+                        {
+                            pair.EmployeeID = int.Parse(row["employee_id"].ToString());
+                        }
+                        if (row["pass_type_id"] != DBNull.Value)
+                        {
+                            pair.PassTypeID = int.Parse(row["pass_type_id"].ToString());
+                        }
+                        if (row["start_time"] != DBNull.Value)
+                        {
+                            pair.StartTime = DateTime.Parse(row["start_time"].ToString());
+                        }
+                        if (row["end_time"] != DBNull.Value)
+                        {
+                            pair.EndTime = DateTime.Parse(row["end_time"].ToString());
+                        }
+                        if (row["location_id"] != DBNull.Value)
+                        {
+                            pair.LocationID = int.Parse(row["location_id"].ToString());
+                        }
+                        if (row["io_pair_id"] != DBNull.Value)
+                        {
+                            pair.IOPairID = int.Parse(row["io_pair_id"].ToString());
+                        }
+                        if (row["is_wrk_hrs_counter"] != DBNull.Value)
+                        {
+                            pair.IsWrkHrsCounter = int.Parse(row["is_wrk_hrs_counter"].ToString());
+                        }
+                        if (row["manual_created"] != DBNull.Value)
+                        {
+                            pair.ManualCreated = int.Parse(row["manual_created"].ToString());
+                        }
+                        if (row["confirmation_flag"] != DBNull.Value)
+                        {
+                            pair.ConfirmationFlag = int.Parse(row["confirmation_flag"].ToString());
+                        }
+                        if (row["confirmed_by"] != DBNull.Value)
+                        {
+                            pair.ConfirmedBy = row["confirmed_by"].ToString();
+                        }
+                        if (row["confirmation_time"] != DBNull.Value)
+                        {
+                            pair.ConfirmationTime = DateTime.Parse(row["confirmation_time"].ToString());
+                        }
+                        if (row["verification_flag"] != DBNull.Value)
+                        {
+                            pair.VerificationFlag = int.Parse(row["verification_flag"].ToString());
+                        }
+                        if (row["verified_by"] != DBNull.Value)
+                        {
+                            pair.VerifiedBy = row["verified_by"].ToString();
+                        }
+                        if (row["verification_time"] != DBNull.Value)
+                        {
+                            pair.VerifiedTime = DateTime.Parse(row["verification_time"].ToString());
+                        }
+                        if (row["alert"] != DBNull.Value)
+                        {
+                            pair.Alert = row["alert"].ToString();
+                        }
+                        if (row["description"] != DBNull.Value)
+                        {
+                            pair.Desc = row["description"].ToString();
+                        }
+                        if (row["created_by"] != DBNull.Value)
+                        {
+                            pair.CreatedBy = row["created_by"].ToString();
+                        }
+                        if (row["modified_by"] != DBNull.Value)
+                        {
+                            pair.ModifiedBy = row["modified_by"].ToString();
+                        }
+                        if (row["created_time"] != DBNull.Value)
+                        {
+                            pair.CreatedTime = DateTime.Parse(row["created_time"].ToString());
+                        }
+                        if (row["modified_time"] != DBNull.Value)
+                        {
+                            pair.ModifiedTime = DateTime.Parse(row["modified_time"].ToString());
+                        }
+                        listPairs.Add(pair);
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+            return listPairs;
+        }
+
+        public void deleteIoPairProcForAutoTimeSchema(int emplID, DateTime date, bool doCommit)
+        {
+            SqlTransaction sqlTrans = null;
+            if (doCommit)
+            {
+                sqlTrans = conn.BeginTransaction(IsolationLevel.RepeatableRead, "DELETE");
+            }
+            else
+                sqlTrans = this.SqlTrans;
+            try
+            {
+                string delete = "DELETE FROM actamgr.io_pairs_processed WHERE employee_id=" + emplID.ToString() + " and io_pair_date='" + date.Date.ToString("yyyy-MM-dd") + "'";
+                SqlCommand cmd = new SqlCommand(delete, conn, sqlTrans);
+                cmd.CommandTimeout = Constants.commandTimeout;
+                cmd.ExecuteNonQuery();
+                if (doCommit)
+                    sqlTrans.Commit();
+
+            }
+            catch (Exception ex)
+            {
+                if (doCommit)
+                    sqlTrans.Rollback("DELETE");
+                throw new Exception(ex.Message);
+            }
+        }
+
+
+    }
+}

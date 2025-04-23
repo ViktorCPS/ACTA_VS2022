@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="OutstandingDataDS" targetNamespace="http://tempuri.org/OutstandingDataDS.xsd" xmlns:mstns="http://tempuri.org/OutstandingDataDS.xsd" xmlns="http://tempuri.org/OutstandingDataDS.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="OutstandingDataDS" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="OutstandingDataDS" msprop:Generator_DataSetName="OutstandingDataDS" msprop:EnableTableAdapterManager="true">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="OutstandingData" msprop:Generator_UserTableName="OutstandingData" msprop:Generator_RowDeletedName="OutstandingDataRowDeleted" msprop:Generator_RowChangedName="OutstandingDataRowChanged" msprop:Generator_RowClassName="OutstandingDataRow" msprop:Generator_RowChangingName="OutstandingDataRowChanging" msprop:Generator_RowEvArgName="OutstandingDataRowChangeEvent" msprop:Generator_RowEvHandlerName="OutstandingDataRowChangeEventHandler" msprop:Generator_TableClassName="OutstandingDataDataTable" msprop:Generator_TableVarName="tableOutstandingData" msprop:Generator_RowDeletingName="OutstandingDataRowDeleting" msprop:Generator_TablePropName="OutstandingData">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="costcenter" msprop:Generator_UserColumnName="costcenter" msprop:Generator_ColumnPropNameInRow="costcenter" msprop:Generator_ColumnVarNameInTable="columncostcenter" msprop:Generator_ColumnPropNameInTable="costcenterColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="emplname" msprop:Generator_UserColumnName="emplname" msprop:Generator_ColumnPropNameInRow="emplname" msprop:Generator_ColumnVarNameInTable="columnemplname" msprop:Generator_ColumnPropNameInTable="emplnameColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="emplid" msprop:Generator_UserColumnName="emplid" msprop:Generator_ColumnPropNameInRow="emplid" msprop:Generator_ColumnVarNameInTable="columnemplid" msprop:Generator_ColumnPropNameInTable="emplidColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="empldate" msprop:Generator_UserColumnName="empldate" msprop:Generator_ColumnPropNameInRow="empldate" msprop:Generator_ColumnVarNameInTable="columnempldate" msprop:Generator_ColumnPropNameInTable="empldateColumn" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="anomalycategory" msprop:Generator_UserColumnName="anomalycategory" msprop:Generator_ColumnPropNameInRow="anomalycategory" msprop:Generator_ColumnVarNameInTable="columnanomalycategory" msprop:Generator_ColumnPropNameInTable="anomalycategoryColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="empltype" msprop:Generator_UserColumnName="empltype" msprop:Generator_ColumnPropNameInRow="empltype" msprop:Generator_ColumnVarNameInTable="columnempltype" msprop:Generator_ColumnPropNameInTable="empltypeColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="workgroup" msprop:Generator_UserColumnName="workgroup" msprop:Generator_ColumnVarNameInTable="columnworkgroup" msprop:Generator_ColumnPropNameInRow="workgroup" msprop:Generator_ColumnPropNameInTable="workgroupColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="ute" msprop:Generator_UserColumnName="ute" msprop:Generator_ColumnVarNameInTable="columnute" msprop:Generator_ColumnPropNameInRow="ute" msprop:Generator_ColumnPropNameInTable="uteColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="branch" msprop:Generator_UserColumnName="branch" msprop:Generator_ColumnVarNameInTable="columnbranch" msprop:Generator_ColumnPropNameInRow="branch" msprop:Generator_ColumnPropNameInTable="branchColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="groupHrs" msprop:Generator_UserColumnName="groupHrs" msprop:Generator_ColumnPropNameInRow="groupHrs" msprop:Generator_ColumnVarNameInTable="columngroupHrs" msprop:Generator_ColumnPropNameInTable="groupHrsColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="schHrs" msprop:Generator_UserColumnName="schHrs" msprop:Generator_ColumnPropNameInRow="schHrs" msprop:Generator_ColumnVarNameInTable="columnschHrs" msprop:Generator_ColumnPropNameInTable="schHrsColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="pairHrs" msprop:Generator_UserColumnName="pairHrs" msprop:Generator_ColumnPropNameInRow="pairHrs" msprop:Generator_ColumnVarNameInTable="columnpairHrs" msprop:Generator_ColumnPropNameInTable="pairHrsColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="ccDesc" msprop:Generator_UserColumnName="ccDesc" msprop:Generator_ColumnPropNameInRow="ccDesc" msprop:Generator_ColumnVarNameInTable="columnccDesc" msprop:Generator_ColumnPropNameInTable="ccDescColumn" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

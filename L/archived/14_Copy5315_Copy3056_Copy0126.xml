@@ -1,0 +1,47 @@
+<?xml version="1.0"?>
+<ArrayOfLogTO xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <LogTO>
+    <LogID>0</LogID>
+    <ReaderID>1</ReaderID>
+    <TagID>29405244</TagID>
+    <Antenna>0</Antenna>
+    <EventHappened>4</EventHappened>
+    <ActionCommited>22</ActionCommited>
+    <Button>-1</Button>
+    <PassGenUsed>0</PassGenUsed>
+    <EventTime>2020-02-05T14:10:00</EventTime>
+  </LogTO>
+<LogTO>
+    <LogID>0</LogID>
+    <ReaderID>2</ReaderID>
+    <TagID>29405244</TagID>
+    <Antenna>0</Antenna>
+    <EventHappened>4</EventHappened>
+    <ActionCommited>22</ActionCommited>
+    <Button>-1</Button>
+    <PassGenUsed>0</PassGenUsed>
+    <EventTime>2020-02-05T14:20:00</EventTime>
+  </LogTO>
+<LogTO>
+    <LogID>0</LogID>
+    <ReaderID>3</ReaderID>
+    <TagID>29405244</TagID>
+    <Antenna>0</Antenna>
+    <EventHappened>4</EventHappened>
+    <ActionCommited>22</ActionCommited>
+    <Button>-1</Button>
+    <PassGenUsed>0</PassGenUsed>
+    <EventTime>2020-02-05T14:30:00</EventTime>
+  </LogTO>
+<LogTO>
+    <LogID>0</LogID>
+    <ReaderID>4</ReaderID>
+    <TagID>29405244</TagID>
+    <Antenna>0</Antenna>
+    <EventHappened>4</EventHappened>
+    <ActionCommited>22</ActionCommited>
+    <Button>-1</Button>
+    <PassGenUsed>0</PassGenUsed>
+    <EventTime>2020-02-05T14:40:00</EventTime>
+  </LogTO>
+</ArrayOfLogTO>

@@ -1,0 +1,179 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="3.5">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{FD01709E-394B-4EE2-A9B3-4CD4AB9808D1}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SiemensUI</RootNamespace>
+    <AssemblyName>SiemensUI</AssemblyName>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>2.0</OldToolsVersion>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <ApplicationIcon>Data.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CelikWrapper, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\lib\CelikWrapper.dll</HintPath>
+    </Reference>
+    <Reference Include="ReaderInterface, Version=1.0.3.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\lib\ReaderInterface.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BrezaDBConnSetup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BrezaDBConnSetup.Designer.cs">
+      <DependentUpon>BrezaDBConnSetup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="SiemensDataTransfer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SiemensDataTransfer.Designer.cs">
+      <DependentUpon>SiemensDataTransfer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SiemensDBConnSetup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SiemensDBConnSetup.Designer.cs">
+      <DependentUpon>SiemensDBConnSetup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SiemensDevicesControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SiemensDevicesControl.designer.cs">
+      <DependentUpon>SiemensDevicesControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SiemensMapping.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SiemensMapping.designer.cs">
+      <DependentUpon>SiemensMapping.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="BrezaDBConnSetup.resx">
+      <DependentUpon>BrezaDBConnSetup.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <SubType>Designer</SubType>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SiemensDataTransfer.resx">
+      <DependentUpon>SiemensDataTransfer.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SiemensDBConnSetup.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SiemensDBConnSetup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SiemensDevicesControl.resx">
+      <DependentUpon>SiemensDevicesControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SiemensMapping.resx">
+      <DependentUpon>SiemensMapping.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\ACTAConfigManipulation\ACTAConfigManipulation.csproj">
+      <Project>{2D18C79A-3B35-4E6E-9AB1-6FB0373D8167}</Project>
+      <Name>ACTAConfigManipulation</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\ACTAMonitorLib\ACTAMonitorLib.csproj">
+      <Project>{FAFDA198-5686-4E14-A63A-313A87249463}</Project>
+      <Name>ACTAMonitorLib</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Common\Common.csproj">
+      <Project>{BD526A30-C79F-4124-9C13-6B514F82A1CC}</Project>
+      <Name>Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SiemensDataAccess\SiemensDataAccess.csproj">
+      <Project>{D8A5B09D-41F3-4266-A7D0-FBE0CEF49980}</Project>
+      <Name>SiemensDataAccess</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\TransferObjects\TransferObjects.csproj">
+      <Project>{5C8540C2-8781-4EAE-BA2E-1A303779CCE3}</Project>
+      <Name>TransferObjects</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\UI\UI.csproj">
+      <Project>{83CF224E-D9D9-4489-98EC-CA981BD38644}</Project>
+      <Name>UI</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Util\Util.csproj">
+      <Project>{B9716E70-6794-4C27-ABF1-35D52CE595A6}</Project>
+      <Name>Util</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\600px-No-Symbol_svg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="WIA">
+      <Guid>{94A0E92D-43C0-494E-AC29-FD45948A5221}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Data.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

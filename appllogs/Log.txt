@@ -1,0 +1,708 @@
+5/8/2015 2:55:53 PM OPEN SESSIONS NUM: 0
+
+5/12/2015 3:33:22 PM OPEN SESSIONS NUM: 0
+
+5/14/2015 1:23:09 PM OPEN SESSIONS NUM: 0
+
+5/19/2015 3:02:27 PM OPEN SESSIONS NUM: 0
+
+2015-08-25 9:45:25 OPEN SESSIONS NUM: 5
+
+2015-08-25 14:52:54 OPEN SESSIONS NUM: 5
+
+2015-08-27 14:33:52 OPEN SESSIONS NUM: 5
+
+2015-10-07 17:23:36 MealsOrder.setBackgroundPicture(): C:\Back up ACTA 3.0\ACTA-3.0\resources\photos\KeteringPricaBackground.jpg
+
+2015-10-07 17:30:16 MealsOrder.setBackgroundPicture(): C:\Back up ACTA 3.0\ACTA-3.0\resources\photos\KeteringPricaBackground.jpg
+
+2015-10-07 17:30:33 MealsOrder.setBackgroundPicture(): C:\Back up ACTA 3.0\ACTA-3.0\resources\photos\KeteringPricaBackground.jpg
+
+2016-01-05 9:53:51 OPEN SESSIONS NUM: 1
+
+2015-10-21 14:09:32 OPEN SESSIONS NUM: 0
+
+2016-10-07 14:02:16 OPEN SESSIONS NUM: 1
+
+2017-01-11 15:05:58 OPEN SESSIONS NUM: 0
+
+2017-01-13 11:31:56 OPEN SESSIONS NUM: 0
+
+2017-01-18 14:52:25 OPEN SESSIONS NUM: 1
+
+2017-01-20 9:47:07 OPEN SESSIONS NUM: 1
+
+2017-01-21 14:59:41 OPEN SESSIONS NUM: 2
+
+2017-01-25 8:43:57 OPEN SESSIONS NUM: 1
+
+5/18/2017 3:25:04 PM OPEN SESSIONS NUM: 0
+
+22-08-2017 15:47:05 OPEN SESSIONS NUM: 2
+
+09/11/2017 16:19:02 WorkingUnit.Find(): Exception: Exception: Timeout expired.  The timeout period elapsed prior to completion of the operation or the server is not responding.
+
+09/11/2017 16:19:41 WorkingUnit.Find(): Exception: Exception: Timeout expired.  The timeout period elapsed prior to completion of the operation or the server is not responding.
+
+09/13/2017 13:04:38 EmployeesTimeSchedule.SearchEmployeesSchedulesExactDate(): Timeout expired.  The timeout period elapsed prior to completion of the operation or the server is not responding.
+
+09/13/2017 13:05:08 EmployeesTimeSchedule.SearchEmployeesSchedulesExactDate(): Timeout expired.  The timeout period elapsed prior to completion of the operation or the server is not responding.
+
+09/13/2017 13:05:38 EmployeesTimeSchedule.SearchEmployeesSchedulesExactDate(): Timeout expired.  The timeout period elapsed prior to completion of the operation or the server is not responding.
+
+09/13/2017 13:06:08 EmployeesTimeSchedule.SearchEmployeesSchedulesExactDate(): Timeout expired.  The timeout period elapsed prior to completion of the operation or the server is not responding.
+
+09/13/2017 13:06:57 EmployeesTimeSchedule.SearchEmployeesSchedulesExactDate(): Timeout expired.  The timeout period elapsed prior to completion of the operation or the server is not responding.
+
+09/13/2017 13:20:21 EmployeesTimeSchedule.SearchEmployeesSchedulesExactDate(): Timeout expired.  The timeout period elapsed prior to completion of the operation or the server is not responding.
+
+09/13/2017 13:21:11 EmployeesTimeSchedule.SearchEmployeesSchedulesExactDate(): Timeout expired.  The timeout period elapsed prior to completion of the operation or the server is not responding.
+
+09/14/2017 10:47:20 EmployeesTimeSchedule.SearchEmployeesSchedulesExactDate(): Timeout expired.  The timeout period elapsed prior to completion of the operation or the server is not responding.
+
+09/14/2017 10:48:19 EmployeesTimeSchedule.SearchEmployeesSchedulesExactDate(): Timeout expired.  The timeout period elapsed prior to completion of the operation or the server is not responding.
+
+09/14/2017 10:49:13 EmployeesTimeSchedule.SearchEmployeesSchedulesExactDate(): Timeout expired.  The timeout period elapsed prior to completion of the operation or the server is not responding.
+
+09/14/2017 12:11:53 EmployeesTimeSchedule.SearchEmployeesSchedulesExactDate(): Timeout expired.  The timeout period elapsed prior to completion of the operation or the server is not responding.
+
+09/14/2017 13:41:53 PassTypeLimit.Search(): The ConnectionString property has not been initialized.
+
+09/14/2017 13:42:14 PassType.Find(): Exception: The ConnectionString property has not been initialized.
+
+09/14/2017 15:58:58 PassTypeLimit.Search(): The ConnectionString property has not been initialized.
+
+09/14/2017 15:59:01 PassType.Find(): Exception: The ConnectionString property has not been initialized.
+
+09/14/2017 16:15:31 WorkingUnit.Find(): Exception: Exception: Timeout expired.  The timeout period elapsed prior to completion of the operation or the server is not responding.
+
+09/14/2017 16:17:03 WorkingUnit.getWUDictionary(): Exception: Exception: Timeout expired.  The timeout period elapsed prior to completion of the operation or the server is not responding.
+
+09/14/2017 16:17:47 WorkingUnit.Find(): Exception: Exception: Timeout expired.  The timeout period elapsed prior to completion of the operation or the server is not responding.
+
+09/14/2017 16:18:21 WorkingUnit.Find(): Exception: Exception: Timeout expired.  The timeout period elapsed prior to completion of the operation or the server is not responding.
+
+09/14/2017 16:18:56 WorkingUnit.Find(): Exception: Exception: Timeout expired.  The timeout period elapsed prior to completion of the operation or the server is not responding.
+
+09/14/2017 16:19:48 WorkingUnit.Find(): Exception: Exception: Timeout expired.  The timeout period elapsed prior to completion of the operation or the server is not responding.
+
+09/14/2017 16:20:37 WorkingUnit.getWUDictionary(): Exception: Exception: Timeout expired.  The timeout period elapsed prior to completion of the operation or the server is not responding.
+
+09/15/2017 10:25:05 PassTypeLimit.Search(): The ConnectionString property has not been initialized.
+
+09/15/2017 10:25:06 PassType.Find(): Exception: The ConnectionString property has not been initialized.
+
+09/15/2017 11:12:00 EmployeesTimeSchedule.SearchEmployeesSchedulesExactDate(): Timeout expired.  The timeout period elapsed prior to completion of the operation or the server is not responding.
+
+09/26/2017 11:27:40 AM OPEN SESSIONS NUM: 4
+
+11/10/2017 10:58:56 DBConnectionManager.MakeNewDBConnection(): Cannot open database "ACTA HUTCHINSON" requested by the login. The login failed.
+Login failed for user 'actamgr'.
+
+11/10/2017 10:58:56 DBConnectionManager.MakeNewDBConnection(): Cannot open database "ACTA HUTCHINSON" requested by the login. The login failed.
+Login failed for user 'actamgr'.
+
+11/10/2017 10:58:56 DBConnectionManager.MakeNewDBConnection(): Cannot open database "ACTA HUTCHINSON" requested by the login. The login failed.
+Login failed for user 'actamgr'.
+
+11/10/2017 10:58:56 DBConnectionManager.MakeNewDBConnection(): Cannot open database "ACTA HUTCHINSON" requested by the login. The login failed.
+Login failed for user 'actamgr'.
+
+11/10/2017 10:58:57 DBConnectionManager.MakeNewDBConnection(): Cannot open database "ACTA HUTCHINSON" requested by the login. The login failed.
+Login failed for user 'actamgr'.
+
+11/10/2017 10:58:57 DBConnectionManager.MakeNewDBConnection(): Cannot open database "ACTA HUTCHINSON" requested by the login. The login failed.
+Login failed for user 'actamgr'.
+
+11/10/2017 10:58:57 DBConnectionManager.MakeNewDBConnection(): Cannot open database "ACTA HUTCHINSON" requested by the login. The login failed.
+Login failed for user 'actamgr'.
+
+12/10/2017 11:15:26 OrganizationalUnit.Search(): The ConnectionString property has not been initialized.
+
+15-Nov-17 15:30:02 OPEN SESSIONS NUM: 4
+
+11/22/2017 13:38:42 OPEN SESSIONS NUM: 5
+
+11/23/2017 10:53:00 EmployeeGroupsTimeSchedule.Find(): The transaction is either not associated with the current connection or has been completed.
+
+11/23/2017 11:02:06 WorkingGroup.Find(): The transaction is either not associated with the current connection or has been completed.
+
+11/23/2017 11:04:01 IOPairProcessed.UpdateManualCreatedProcessedPairs(): Object reference not set to an instance of an object.
+
+11/23/2017 11:16:37 IOPairProcessed.UpdateManualCreatedProcessedPairs(): Object reference not set to an instance of an object.
+
+11/23/2017 11:21:23 IOPairProcessed.UpdateManualCreatedProcessedPairs(): Object reference not set to an instance of an object.
+
+11/23/2017 11:26:14 IOPairProcessed.UpdateManualCreatedProcessedPairs(): Object reference not set to an instance of an object.
+
+11/23/2017 11:33:24 IOPairProcessed.UpdateManualCreatedProcessedPairs(): Object reference not set to an instance of an object.
+
+11/23/2017 11:42:28 IOPairProcessed.UpdateManualCreatedProcessedPairs(): Object reference not set to an instance of an object.
+
+11/23/2017 11:50:33 IOPairProcessed.UpdateManualCreatedProcessedPairs(): Object reference not set to an instance of an object.
+
+11/27/2017 10:04:21 IOPairProcessed.Save(): Violation of UNIQUE KEY constraint 'UNIQ_io_pairs_processed'. Cannot insert duplicate key in object 'actamgr.io_pairs_processed'. The duplicate key value is (Nov 22 2017 12:00AM, 118, Nov 22 2017  8:00AM, Nov 22 2017  4:00PM).
+The statement has been terminated.
+
+11/27/2017 11:02:38 IOPairProcessed.UpdateManualCreatedProcessedPairs(): Violation of UNIQUE KEY constraint 'UNIQ_io_pairs_processed'. Cannot insert duplicate key in object 'actamgr.io_pairs_processed'. The duplicate key value is (Nov 25 2017 12:00AM, 118, Nov 25 2017 12:00AM, Nov 25 2017 12:00AM).
+The statement has been terminated.
+
+11/27/2017 11:02:38 EmployeesTimeSchedule.CommitTransaction(): This SqlTransaction has completed; it is no longer usable.
+
+11/27/2017 11:07:44 IOPairProcessed.UpdateManualCreatedProcessedPairs(): Violation of UNIQUE KEY constraint 'UNIQ_io_pairs_processed'. Cannot insert duplicate key in object 'actamgr.io_pairs_processed'. The duplicate key value is (Nov 25 2017 12:00AM, 118, Nov 25 2017 12:00AM, Nov 25 2017 12:00AM).
+The statement has been terminated.
+
+11/27/2017 11:07:44 EmployeesTimeSchedule.CommitTransaction(): This SqlTransaction has completed; it is no longer usable.
+
+11/27/2017 11:12:28 IOPairProcessed.UpdateManualCreatedProcessedPairs(): Violation of UNIQUE KEY constraint 'UNIQ_io_pairs_processed'. Cannot insert duplicate key in object 'actamgr.io_pairs_processed'. The duplicate key value is (Nov 25 2017 12:00AM, 118, Nov 25 2017 12:00AM, Nov 25 2017 12:00AM).
+The statement has been terminated.
+
+11/27/2017 11:12:28 EmployeesTimeSchedule.CommitTransaction(): This SqlTransaction has completed; it is no longer usable.
+
+11/27/2017 11:20:14 IOPairProcessed.UpdateManualCreatedProcessedPairs(): Violation of UNIQUE KEY constraint 'UNIQ_io_pairs_processed'. Cannot insert duplicate key in object 'actamgr.io_pairs_processed'. The duplicate key value is (Nov 25 2017 12:00AM, 118, Nov 25 2017 12:00AM, Nov 25 2017 12:00AM).
+The statement has been terminated.
+
+11/27/2017 11:20:14 EmployeesTimeSchedule.CommitTransaction(): This SqlTransaction has completed; it is no longer usable.
+
+11/27/2017 11:25:58 IOPairProcessed.UpdateManualCreatedProcessedPairs(): Violation of UNIQUE KEY constraint 'UNIQ_io_pairs_processed'. Cannot insert duplicate key in object 'actamgr.io_pairs_processed'. The duplicate key value is (Nov 25 2017 12:00AM, 118, Nov 25 2017 12:00AM, Nov 25 2017 12:00AM).
+The statement has been terminated.
+
+11/27/2017 11:25:58 EmployeesTimeSchedule.CommitTransaction(): This SqlTransaction has completed; it is no longer usable.
+
+11/29/2017 14:50:20 EmployeeGroupsTimeSchedule.SearchMonthSchedule(): The conversion of a varchar data type to a datetime data type resulted in an out-of-range value.
+
+11/29/2017 16:31:50 EmployeeGroupsTimeSchedule.SearchMonthSchedule(): The conversion of a varchar data type to a datetime data type resulted in an out-of-range value.
+
+11/29/2017 16:57:00 EmployeesTimeSchedule.SearchMonthSchedule(): ExecuteReader requires the command to have a transaction when the connection assigned to the command is in a pending local transaction.  The Transaction property of the command has not been initialized.
+
+11/29/2017 17:07:00 EmployeeGroupsTimeSchedule.SearchMonthSchedule(): The conversion of a varchar data type to a datetime data type resulted in an out-of-range value.
+
+11/29/2017 17:18:37 EmployeeGroupsTimeSchedule.SearchMonthSchedule(): The conversion of a varchar data type to a datetime data type resulted in an out-of-range value.
+
+11/29/2017 17:27:02 EmployeeGroupsTimeSchedule.SearchMonthSchedule(): The conversion of a varchar data type to a datetime data type resulted in an out-of-range value.
+
+11/29/2017 17:31:22 EmployeeGroupsTimeSchedule.SearchMonthSchedule(): The conversion of a varchar data type to a datetime data type resulted in an out-of-range value.
+
+12/04/2017 14:59:40 OPEN SESSIONS NUM: 7
+
+2017-12-15 12:20:38 DBConnectionManager.MakeNewDBConnection(): A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: SQL Network Interfaces, error: 26 - Error Locating Server/Instance Specified)
+
+2017-12-15 12:20:41 DBConnectionManager.MakeNewDBConnection(): A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: SQL Network Interfaces, error: 26 - Error Locating Server/Instance Specified)
+
+2017-12-15 12:20:42 DBConnectionManager.MakeNewDBConnection(): A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: SQL Network Interfaces, error: 26 - Error Locating Server/Instance Specified)
+
+2017-12-15 12:20:43 DBConnectionManager.MakeNewDBConnection(): A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: SQL Network Interfaces, error: 26 - Error Locating Server/Instance Specified)
+
+2017-12-15 12:21:35 DBConnectionManager.MakeNewDBConnection(): A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: SQL Network Interfaces, error: 26 - Error Locating Server/Instance Specified)
+
+2017-12-15 12:21:35 DBConnectionManager.MakeNewDBConnection(): A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: SQL Network Interfaces, error: 26 - Error Locating Server/Instance Specified)
+
+2017-12-15 12:21:35 DBConnectionManager.MakeNewDBConnection(): A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: SQL Network Interfaces, error: 26 - Error Locating Server/Instance Specified)
+
+2017-12-15 12:21:36 DBConnectionManager.MakeNewDBConnection(): A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: SQL Network Interfaces, error: 26 - Error Locating Server/Instance Specified)
+
+2017-12-15 12:21:36 DBConnectionManager.MakeNewDBConnection(): A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: SQL Network Interfaces, error: 26 - Error Locating Server/Instance Specified)
+
+2017-12-15 15:51:29 OPEN SESSIONS NUM: 6
+
+2017-12-15 15:57:50 OPEN SESSIONS NUM: 6
+
+21/12/2017 14:59:40 OPEN SESSIONS NUM: 7
+
+12/22/2017 11:45:22 SystemClosingEvent.Search(): The SELECT permission was denied on the object 'system_closing_events', database 'ACTA', schema 'actamgr'.
+
+12/22/2017 11:45:22 Licence.FindMAX(): Exception: The SELECT permission was denied on the object 'licence', database 'ACTA', schema 'actamgr'.
+
+12/22/2017 11:45:23 SystemClosingEvent.Search(): The SELECT permission was denied on the object 'system_closing_events', database 'ACTA', schema 'actamgr'.
+
+12/22/2017 11:45:23 Licence.FindMAX(): Exception: The SELECT permission was denied on the object 'licence', database 'ACTA', schema 'actamgr'.
+
+12/22/2017 11:45:23 SystemClosingEvent.Search(): The SELECT permission was denied on the object 'system_closing_events', database 'ACTA', schema 'actamgr'.
+
+12/22/2017 11:45:23 Licence.FindMAX(): Exception: The SELECT permission was denied on the object 'licence', database 'ACTA', schema 'actamgr'.
+
+12/22/2017 11:45:43 SystemClosingEvent.Search(): The SELECT permission was denied on the object 'system_closing_events', database 'ACTA', schema 'actamgr'.
+
+12/22/2017 11:45:43 Licence.FindMAX(): Exception: The SELECT permission was denied on the object 'licence', database 'ACTA', schema 'actamgr'.
+
+12/22/2017 11:45:43 SystemClosingEvent.Search(): The SELECT permission was denied on the object 'system_closing_events', database 'ACTA', schema 'actamgr'.
+
+12/22/2017 11:45:43 Licence.FindMAX(): Exception: The SELECT permission was denied on the object 'licence', database 'ACTA', schema 'actamgr'.
+
+12/22/2017 11:45:43 SystemClosingEvent.Search(): The SELECT permission was denied on the object 'system_closing_events', database 'ACTA', schema 'actamgr'.
+
+12/22/2017 11:45:43 Licence.FindMAX(): Exception: The SELECT permission was denied on the object 'licence', database 'ACTA', schema 'actamgr'.
+
+12/22/2017 11:45:43 SystemClosingEvent.Search(): The SELECT permission was denied on the object 'system_closing_events', database 'ACTA', schema 'actamgr'.
+
+12/22/2017 11:45:43 Licence.FindMAX(): Exception: The SELECT permission was denied on the object 'licence', database 'ACTA', schema 'actamgr'.
+
+12/22/2017 11:55:28 Employee.Update(): The UPDATE statement conflicted with the FOREIGN KEY constraint "FK_employees_employee_groups". The conflict occurred in database "ACTA", table "actamgr.employee_groups", column 'employee_group_id'.
+The statement has been terminated.
+
+12/22/2017 11:56:04 EmployeesTimeSchedule.CommitTransaction(): This SqlTransaction has completed; it is no longer usable.
+
+12/22/2017 12:00:11 Employee.Update(): The UPDATE statement conflicted with the FOREIGN KEY constraint "FK_employees_employee_groups". The conflict occurred in database "ACTA", table "actamgr.employee_groups", column 'employee_group_id'.
+The statement has been terminated.
+
+12/22/2017 12:00:14 EmployeesTimeSchedule.CommitTransaction(): This SqlTransaction has completed; it is no longer usable.
+
+12/22/2017 12:08:32 Employee.Update(): The UPDATE statement conflicted with the FOREIGN KEY constraint "FK_employees_employee_groups". The conflict occurred in database "ACTA", table "actamgr.employee_groups", column 'employee_group_id'.
+The statement has been terminated.
+
+12/22/2017 12:08:33 EmployeesTimeSchedule.CommitTransaction(): This SqlTransaction has completed; it is no longer usable.
+
+12/22/2017 12:14:14 Employee.Update(): The UPDATE statement conflicted with the FOREIGN KEY constraint "FK_employees_employee_groups". The conflict occurred in database "ACTA", table "actamgr.employee_groups", column 'employee_group_id'.
+The statement has been terminated.
+
+12/22/2017 12:14:15 EmployeesTimeSchedule.CommitTransaction(): This SqlTransaction has completed; it is no longer usable.
+
+12/22/2017 12:22:35 Employee.Update(): The UPDATE statement conflicted with the FOREIGN KEY constraint "FK_employees_employee_groups". The conflict occurred in database "ACTA", table "actamgr.employee_groups", column 'employee_group_id'.
+The statement has been terminated.
+
+12/22/2017 12:22:35 EmployeesTimeSchedule.CommitTransaction(): This SqlTransaction has completed; it is no longer usable.
+
+12/22/2017 12:38:29 IOPairProcessed.UpdateManualCreatedProcessedPairs(): Violation of UNIQUE KEY constraint 'UNIQ_io_pairs_processed'. Cannot insert duplicate key in object 'actamgr.io_pairs_processed'. The duplicate key value is (Dec 19 2017 12:00AM, 630, Dec 19 2017 12:00AM, Dec 19 2017  6:00AM).
+The statement has been terminated.
+
+12/22/2017 12:38:29 EmployeesTimeSchedule.CommitTransaction(): This SqlTransaction has completed; it is no longer usable.
+
+12/22/2017 12:45:39 IOPairProcessed.UpdateManualCreatedProcessedPairs(): Violation of UNIQUE KEY constraint 'UNIQ_io_pairs_processed'. Cannot insert duplicate key in object 'actamgr.io_pairs_processed'. The duplicate key value is (Dec 19 2017 12:00AM, 630, Dec 19 2017 12:00AM, Dec 19 2017  6:00AM).
+The statement has been terminated.
+
+12/22/2017 12:46:20 EmployeesTimeSchedule.CommitTransaction(): This SqlTransaction has completed; it is no longer usable.
+
+12/22/2017 12:50:24 IOPairProcessed.UpdateManualCreatedProcessedPairs(): Violation of UNIQUE KEY constraint 'UNIQ_io_pairs_processed'. Cannot insert duplicate key in object 'actamgr.io_pairs_processed'. The duplicate key value is (Dec 19 2017 12:00AM, 630, Dec 19 2017 12:00AM, Dec 19 2017  6:00AM).
+The statement has been terminated.
+
+12/22/2017 12:50:27 EmployeesTimeSchedule.CommitTransaction(): This SqlTransaction has completed; it is no longer usable.
+
+12/22/2017 13:53:36 EmployeeGroupsTimeSchedule.Find(): Object reference not set to an instance of an object.
+
+12/22/2017 15:38:26 IOPairProcessed.UpdateManualCreatedProcessedPairs(): Violation of UNIQUE KEY constraint 'UNIQ_io_pairs_processed'. Cannot insert duplicate key in object 'actamgr.io_pairs_processed'. The duplicate key value is (Dec 19 2017 12:00AM, 630, Dec 19 2017 12:00AM, Dec 19 2017  6:00AM).
+The statement has been terminated.
+
+12/22/2017 15:38:26 EmployeesTimeSchedule.CommitTransaction(): This SqlTransaction has completed; it is no longer usable.
+
+09/01/2018 10:36:41 Employee.Find(): Exception: A transport-level error has occurred when receiving results from the server. (provider: TCP Provider, error: 0 - The semaphore timeout period has expired.)
+
+09/01/2018 10:38:10Common.ApplUserLog.Update: Invalid operation. The connection is closed.
+
+09/01/2018 10:40:49 SystemMessage.Delete(): A transport-level error has occurred when sending the request to the server. (provider: TCP Provider, error: 0 - An existing connection was forcibly closed by the remote host.)
+
+01/11/2018 14:33:25 DBConnectionManager.MakeNewDBConnection(): Cannot open database "ACTA" requested by the login. The login failed.
+Login failed for user 'actamgr'.
+
+01/11/2018 14:33:25 DBConnectionManager.MakeNewDBConnection(): Cannot open database "ACTA" requested by the login. The login failed.
+Login failed for user 'actamgr'.
+
+01/11/2018 14:33:25 DBConnectionManager.MakeNewDBConnection(): Cannot open database "ACTA" requested by the login. The login failed.
+Login failed for user 'actamgr'.
+
+01/11/2018 14:33:26 DBConnectionManager.MakeNewDBConnection(): Cannot open database "ACTA" requested by the login. The login failed.
+Login failed for user 'actamgr'.
+
+01/11/2018 14:33:31 DBConnectionManager.MakeNewDBConnection(): Cannot open database "ACTA" requested by the login. The login failed.
+Login failed for user 'actamgr'.
+
+01/11/2018 14:33:31 DBConnectionManager.MakeNewDBConnection(): Cannot open database "ACTA" requested by the login. The login failed.
+Login failed for user 'actamgr'.
+
+01/11/2018 14:33:31 DBConnectionManager.MakeNewDBConnection(): Cannot open database "ACTA" requested by the login. The login failed.
+Login failed for user 'actamgr'.
+
+01/11/2018 14:33:31 DBConnectionManager.MakeNewDBConnection(): Cannot open database "ACTA" requested by the login. The login failed.
+Login failed for user 'actamgr'.
+
+01/11/2018 14:35:58 OPEN SESSIONS NUM: 7
+
+01/12/2018 9:52:02 DBConnectionManager.MakeNewDBConnection(): A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: Named Pipes Provider, error: 40 - Could not open a connection to SQL Server)
+
+01/12/2018 9:52:02 DBConnectionManager.MakeNewDBConnection(): A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: Named Pipes Provider, error: 40 - Could not open a connection to SQL Server)
+
+01/12/2018 9:52:03 DBConnectionManager.MakeNewDBConnection(): A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: Named Pipes Provider, error: 40 - Could not open a connection to SQL Server)
+
+01/12/2018 9:52:03 DBConnectionManager.MakeNewDBConnection(): A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: Named Pipes Provider, error: 40 - Could not open a connection to SQL Server)
+
+01/15/2018 9:44:04 DBConnectionManager.MakeNewDBConnection(): A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: Named Pipes Provider, error: 40 - Could not open a connection to SQL Server)
+
+01/15/2018 9:44:04 DBConnectionManager.MakeNewDBConnection(): A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: Named Pipes Provider, error: 40 - Could not open a connection to SQL Server)
+
+01/15/2018 9:44:04 DBConnectionManager.MakeNewDBConnection(): A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: Named Pipes Provider, error: 40 - Could not open a connection to SQL Server)
+
+01/15/2018 9:44:04 DBConnectionManager.MakeNewDBConnection(): A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: Named Pipes Provider, error: 40 - Could not open a connection to SQL Server)
+
+01/15/2018 10:19:27 SystemMessage.Delete(): A transport-level error has occurred when sending the request to the server. (provider: TCP Provider, error: 0 - An existing connection was forcibly closed by the remote host.)
+
+01/18/2018 15:03:51 OPEN SESSIONS NUM: 6
+
+01/19/2018 14:31:25 SystemMessage.Delete(): A transport-level error has occurred when sending the request to the server. (provider: Shared Memory Provider, error: 0 - No process is on the other end of the pipe.)
+
+2018-01-25 11:53:31 DBConnectionManager.MakeNewDBConnection(): A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: SQL Network Interfaces, error: 26 - Error Locating Server/Instance Specified)
+
+2018-01-25 11:53:31 DBConnectionManager.MakeNewDBConnection(): A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: SQL Network Interfaces, error: 26 - Error Locating Server/Instance Specified)
+
+2018-01-25 11:53:31 DBConnectionManager.MakeNewDBConnection(): A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: SQL Network Interfaces, error: 26 - Error Locating Server/Instance Specified)
+
+2018-01-25 11:53:32 DBConnectionManager.MakeNewDBConnection(): A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: SQL Network Interfaces, error: 26 - Error Locating Server/Instance Specified)
+
+2018-01-25 11:57:58 OPEN SESSIONS NUM: 8
+
+2018-01-25 17:17:25 OPEN SESSIONS NUM: 8
+
+2018-01-25 21:01:56 OPEN SESSIONS NUM: 8
+
+2018-01-26 9:48:37 DBConnectionManager.MakeNewDBConnection(): A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: SQL Network Interfaces, error: 26 - Error Locating Server/Instance Specified)
+
+2018-01-26 9:48:37 DBConnectionManager.MakeNewDBConnection(): A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: SQL Network Interfaces, error: 26 - Error Locating Server/Instance Specified)
+
+2018-01-26 9:48:38 DBConnectionManager.MakeNewDBConnection(): A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: SQL Network Interfaces, error: 26 - Error Locating Server/Instance Specified)
+
+2018-01-26 9:48:38 DBConnectionManager.MakeNewDBConnection(): A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: SQL Network Interfaces, error: 26 - Error Locating Server/Instance Specified)
+
+2018-01-26 9:50:54 DBConnectionManager.MakeNewDBConnection(): A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: SQL Network Interfaces, error: 26 - Error Locating Server/Instance Specified)
+
+2018-01-26 9:50:54 DBConnectionManager.MakeNewDBConnection(): A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: SQL Network Interfaces, error: 26 - Error Locating Server/Instance Specified)
+
+2018-01-26 9:50:54 DBConnectionManager.MakeNewDBConnection(): A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: SQL Network Interfaces, error: 26 - Error Locating Server/Instance Specified)
+
+2018-01-26 9:50:55 DBConnectionManager.MakeNewDBConnection(): A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: SQL Network Interfaces, error: 26 - Error Locating Server/Instance Specified)
+
+2018-01-26 9:52:51 OPEN SESSIONS NUM: 8
+
+2018-01-26 11:17:02 OPEN SESSIONS NUM: 8
+
+01/31/2018 16:46:42 OPEN SESSIONS NUM: 7
+
+2018-02-01 12:37:36 OPEN SESSIONS NUM: 7
+
+02-26-18 16:54:07 OPEN SESSIONS NUM: 8
+
+02-28-18 16:13:26 OPEN SESSIONS NUM: 6
+
+02-28-18 16:33:07 IOPairProcessed.UpdateManualCreatedProcessedPairs(): Object reference not set to an instance of an object.
+
+02-28-18 16:48:35 IOPairProcessed.UpdateManualCreatedProcessedPairs(): Object reference not set to an instance of an object.
+
+03-01-18 12:36:30 OPEN SESSIONS NUM: 4
+
+03-14-18 16:09:24 OPEN SESSIONS NUM: 7
+
+03-23-18 15:07:19 OPEN SESSIONS NUM: 7
+
+03-23-18 15:48:19 OPEN SESSIONS NUM: 7
+
+04-03-18 14:07:26 OPEN SESSIONS NUM: 5
+
+04-03-18 17:15:42 OPEN SESSIONS NUM: 4
+
+2018-07-02 16:26:58 Rule.Search(): Exception: There is already an open DataReader associated with this Command which must be closed first.
+
+2018-07-02 16:27:14 EmployeeAsco4.Search(): Exception: There is already an open DataReader associated with this Command which must be closed first.
+
+2018-07-02 16:27:24 Rule.Search(): Exception: There is already an open DataReader associated with this Command which must be closed first.
+
+2018-07-02 16:27:28 EmployeeAsco4.Search(): Exception: There is already an open DataReader associated with this Command which must be closed first.
+
+2018-07-02 16:27:38 IOPairProcessed.SearchCollectiveAnnualLeaves(): There is already an open DataReader associated with this Command which must be closed first.
+
+2018-07-02 16:32:37 WorkingUnit.getWUDictionary(): Exception: There is already an open DataReader associated with this Command which must be closed first.
+
+2018-07-02 16:32:37 WorkingUnit.Find(): Exception: There is already an open DataReader associated with this Command which must be closed first.
+
+2018-07-02 16:32:37 WorkingUnit.Find(): Exception: There is already an open DataReader associated with this Command which must be closed first.
+
+2018-07-02 16:32:37 WorkingUnit.getWUDictionary(): Exception: There is already an open DataReader associated with this Command which must be closed first.
+
+2018-07-02 16:32:37 WorkingUnit.getWUDictionary(): Exception: There is already an open DataReader associated with this Command which must be closed first.
+
+2018-07-02 16:32:38 WorkingUnit.getWUDictionary(): Exception: There is already an open DataReader associated with this Command which must be closed first.
+
+2018-07-02 16:32:44 IOPairProcessed.SearchWeekPairs(): Exception: There is already an open DataReader associated with this Command which must be closed first.
+
+2018-07-03 9:35:07 WorkingUnit.getWUDictionary(): Exception: There is already an open DataReader associated with this Command which must be closed first.
+
+2018-07-03 9:35:08 WorkingUnit.getWUDictionary(): Exception: There is already an open DataReader associated with this Command which must be closed first.
+
+2018-07-03 9:35:08 WorkingUnit.Find(): Exception: There is already an open DataReader associated with this Command which must be closed first.
+
+2018-07-03 9:35:08 WorkingUnit.getWUDictionary(): Exception: There is already an open DataReader associated with this Command which must be closed first.
+
+2018-07-03 9:35:19 WorkingUnit.getWUDictionary(): Exception: There is already an open DataReader associated with this Command which must be closed first.
+
+2018-07-03 9:35:21 WorkingUnit.getWUDictionary(): Exception: There is already an open DataReader associated with this Command which must be closed first.
+
+2018-07-03 9:35:22 Rule.Search(): Exception: There is already an open DataReader associated with this Command which must be closed first.
+
+2018-07-03 9:35:24 EmployeeAsco4.Search(): Exception: There is already an open DataReader associated with this Command which must be closed first.
+
+2018-07-03 9:35:24 WorkingUnit.getWUDictionary(): Exception: There is already an open DataReader associated with this Command which must be closed first.
+
+2018-07-03 9:35:25 IOPairProcessed.SearchCollectiveAnnualLeaves(): There is already an open DataReader associated with this Command which must be closed first.
+
+12-11-18 14:10:10 DBConnectionManager.MakeNewDBConnection(): Timeout expired.  The timeout period elapsed prior to completion of the operation or the server is not responding.
+
+12-11-18 14:10:10 DBConnectionManager.MakeNewDBConnection(): Timeout expired.  The timeout period elapsed prior to completion of the operation or the server is not responding.
+
+12-11-18 14:10:10 DBConnectionManager.MakeNewDBConnection(): Timeout expired.  The timeout period elapsed prior to completion of the operation or the server is not responding.
+
+12-11-18 14:10:11 DBConnectionManager.MakeNewDBConnection(): Timeout expired.  The timeout period elapsed prior to completion of the operation or the server is not responding.
+
+12-25-18 10:30:34 PassType.Find(): Exception: A transport-level error has occurred when sending the request to the server. (provider: TCP Provider, error: 0 - An existing connection was forcibly closed by the remote host.)
+
+12-25-18 11:08:17 OPEN SESSIONS NUM: 7
+
+01-09-19 12:31:22 WorkingUnit.getWUDictionary(): Exception: There is already an open DataReader associated with this Command which must be closed first.
+
+01-09-19 12:31:22 WorkingUnit.getWUDictionary(): Exception: There is already an open DataReader associated with this Command which must be closed first.
+
+05/23/2019 15:11:30 OPEN SESSIONS NUM: 6
+
+06/10/2019 12:59:29 OPEN SESSIONS NUM: 6
+
+06/18/2019 9:13:14 OPEN SESSIONS NUM: 0
+
+06/19/2019 11:11:56 DBConnectionManager.MakeNewDBConnection(): Cannot open database "ACTA_HUT" requested by the login. The login failed.
+Login failed for user 'actamgr'.
+
+06/19/2019 11:11:56 DBConnectionManager.MakeNewDBConnection(): Cannot open database "ACTA_HUT" requested by the login. The login failed.
+Login failed for user 'actamgr'.
+
+06/20/2019 10:23:58 OPEN SESSIONS NUM: 0
+
+2019-07-24 15:49:47 Exception in: Common.NotificationController.testLicence() :    at Common.ApplUserLog.SearchOpenSessions(String userID, String host, String chanel) in D:\Bojan\HUTCHINSON najnoviji\HUTCHINSON pmo\Common\ApplUserLog.cs:line 149
+   at Common.NotificationController.testLicence() in D:\Bojan\HUTCHINSON najnoviji\HUTCHINSON pmo\Common\NotificationController.cs:line 546
+
+2019-07-24 15:58:55 Exception in: Common.NotificationController.testLicence() :    at Common.ApplUserLog.SearchOpenSessions(String userID, String host, String chanel) in D:\Bojan\HUTCHINSON najnoviji\HUTCHINSON pmo\Common\ApplUserLog.cs:line 149
+   at Common.NotificationController.testLicence() in D:\Bojan\HUTCHINSON najnoviji\HUTCHINSON pmo\Common\NotificationController.cs:line 546
+
+2019-07-25 8:57:06 OPEN SESSIONS NUM: 1
+
+2019-07-25 11:16:20 Exception in: Common.NotificationController.testLicence() :    at Common.ApplUserLog.SearchOpenSessions(String userID, String host, String chanel) in C:\Tamara\HUTCHINSON pmo\Common\ApplUserLog.cs:line 149
+   at Common.NotificationController.testLicence() in C:\Tamara\HUTCHINSON pmo\Common\NotificationController.cs:line 546
+
+2019-07-25 11:23:48 Exception in: Common.NotificationController.testLicence() :    at Common.ApplUserLog.SearchOpenSessions(String userID, String host, String chanel) in C:\Tamara\HUTCHINSON pmo\Common\ApplUserLog.cs:line 149
+   at Common.NotificationController.testLicence() in C:\Tamara\HUTCHINSON pmo\Common\NotificationController.cs:line 546
+
+2019-07-25 11:27:13 Exception in: Common.NotificationController.testLicence() :    at Common.ApplUserLog.SearchOpenSessions(String userID, String host, String chanel) in C:\Tamara\HUTCHINSON pmo\Common\ApplUserLog.cs:line 149
+   at Common.NotificationController.testLicence() in C:\Tamara\HUTCHINSON pmo\Common\NotificationController.cs:line 546
+
+2019-07-25 11:41:22 Exception in: Common.NotificationController.testLicence() :    at Common.ApplUserLog.SearchOpenSessions(String userID, String host, String chanel) in C:\Tamara\HUTCHINSON pmo\Common\ApplUserLog.cs:line 149
+   at Common.NotificationController.testLicence() in C:\Tamara\HUTCHINSON pmo\Common\NotificationController.cs:line 546
+
+2019-07-25 11:43:38 Exception in: Common.NotificationController.testLicence() :    at Common.ApplUserLog.SearchOpenSessions(String userID, String host, String chanel) in C:\Tamara\HUTCHINSON pmo\Common\ApplUserLog.cs:line 149
+   at Common.NotificationController.testLicence() in C:\Tamara\HUTCHINSON pmo\Common\NotificationController.cs:line 546
+
+08/06/2019 8:47:28 OPEN SESSIONS NUM: 4
+
+08/29/2019 8:55:19 OPEN SESSIONS NUM: 5
+
+08/29/2019 13:52:55 OPEN SESSIONS NUM: 5
+
+2019-09-04 12:19:17 Exception in: Common.NotificationController.testLicence() :    at Common.ApplUserLog.SearchOpenSessions(String userID, String host, String chanel) in D:\Bojan\HUTCHINSON pmo\Common\ApplUserLog.cs:line 149
+   at Common.NotificationController.testLicence() in D:\Bojan\HUTCHINSON pmo\Common\NotificationController.cs:line 546
+
+2019-09-04 12:30:47 Exception in: Common.NotificationController.testLicence() :    at Common.ApplUserLog.SearchOpenSessions(String userID, String host, String chanel) in C:\Tamara\hutch 20190904\HUTCHINSON pmo\Common\ApplUserLog.cs:line 149
+   at Common.NotificationController.testLicence() in C:\Tamara\hutch 20190904\HUTCHINSON pmo\Common\NotificationController.cs:line 546
+
+2019-09-04 13:40:04 Exception in: Common.NotificationController.testLicence() :    at Common.ApplUserLog.SearchOpenSessions(String userID, String host, String chanel) in C:\Tamara\hutch 20190904\HUTCHINSON pmo\Common\ApplUserLog.cs:line 149
+   at Common.NotificationController.testLicence() in C:\Tamara\hutch 20190904\HUTCHINSON pmo\Common\NotificationController.cs:line 546
+
+10/23/2019 3:00:35 PM OPEN SESSIONS NUM: 5
+
+10/25/2019 11:55:32 AM OPEN SESSIONS NUM: 5
+
+10/30/2019 11:17:41 AM DBConnectionManager.MakeNewDBConnection(): Timeout expired.  The timeout period elapsed prior to completion of the operation or the server is not responding.
+
+10/30/2019 11:17:41 AM DBConnectionManager.MakeNewDBConnection(): Timeout expired.  The timeout period elapsed prior to completion of the operation or the server is not responding.
+
+10/30/2019 11:17:41 AM DBConnectionManager.MakeNewDBConnection(): Timeout expired.  The timeout period elapsed prior to completion of the operation or the server is not responding.
+
+10/30/2019 11:17:42 AM DBConnectionManager.MakeNewDBConnection(): Timeout expired.  The timeout period elapsed prior to completion of the operation or the server is not responding.
+
+11/15/2019 9:16:08 AM DBConnectionManager.MakeNewDBConnection(): Timeout expired.  The timeout period elapsed prior to completion of the operation or the server is not responding.
+
+11/15/2019 9:16:08 AM DBConnectionManager.MakeNewDBConnection(): Timeout expired.  The timeout period elapsed prior to completion of the operation or the server is not responding.
+
+11/15/2019 9:16:18 AM DBConnectionManager.MakeNewDBConnection(): Cannot open database "HUT" requested by the login. The login failed.
+Login failed for user 'actamgr'.
+
+11/15/2019 9:16:19 AM DBConnectionManager.MakeNewDBConnection(): Cannot open database "HUT" requested by the login. The login failed.
+Login failed for user 'actamgr'.
+
+11/15/2019 9:26:15 AM OPEN SESSIONS NUM: 2
+
+11/15/2019 12:46:09 PM OPEN SESSIONS NUM: 5
+
+12/19/2019 12:43:43 PM OPEN SESSIONS NUM: 5
+
+12/19/2019 2:27:52 PM OPEN SESSIONS NUM: 6
+
+12/24/2019 3:27:25 PM OPEN SESSIONS NUM: 7
+
+FormNotifier.Notify(Reader crrReader): All observers are notified about changes:25
+
+2020-01-30 10:17:24 OPEN SESSIONS NUM: 0
+
+2020-02-05 13:01:15 DBConnectionManager.MakeNewDBConnection(): Cannot open database "ACTA_HUTCHINSON" requested by the login. The login failed.
+Login failed for user 'actamgr'.
+
+2020-02-05 13:01:15 DBConnectionManager.MakeNewDBConnection(): Cannot open database "ACTA_HUTCHINSON" requested by the login. The login failed.
+Login failed for user 'actamgr'.
+
+2020-02-05 13:01:16 DBConnectionManager.MakeNewDBConnection(): Cannot open database "ACTA_HUTCHINSON" requested by the login. The login failed.
+Login failed for user 'actamgr'.
+
+2020-02-05 13:01:17 DBConnectionManager.MakeNewDBConnection(): Cannot open database "ACTA_HUTCHINSON" requested by the login. The login failed.
+Login failed for user 'actamgr'.
+
+11/15/2023 09:34:12 ApplUser.Find(): Object reference not set to an instance of an object.
+
+11/15/2023 09:34:12 ApplUser.Find(): Internal connection fatal error.
+
+01/16/2024 13:21:12Common.ApplUserLog.btnLogIn_Click(): String or binary data would be truncated.
+The statement has been terminated.
+
+01/16/2024 13:24:25 EmployeeCounterValueHist.Save(): String or binary data would be truncated.
+The statement has been terminated.
+
+01/16/2024 13:30:16 ApplUserXApplUserCategory.Search(): ExecuteReader requires the command to have a transaction when the connection assigned to the command is in a pending local transaction.  The Transaction property of the command has not been initialized.
+
+01/16/2024 13:30:18Common.ApplUserLog.Update: SqlConnection does not support parallel transactions.
+
+01/16/2024 13:31:54Common.ApplUserLog.btnLogIn_Click(): String or binary data would be truncated.
+The statement has been terminated.
+
+01/16/2024 13:34:27 EmployeeCounterValue.Update(): String or binary data would be truncated.
+The statement has been terminated.
+
+02/05/2024 13:32:59 Rule.Search(): Exception: There is already an open DataReader associated with this Command which must be closed first.
+
+02/20/2024 14:15:26 Rule.Search(): Exception: There is already an open DataReader associated with this Command which must be closed first.
+
+02/20/2024 14:22:20 EmployeeAsco4.Search(): Exception: There is already an open DataReader associated with this Command which must be closed first.
+
+02/20/2024 14:29:32 EmployeeAsco4.Search(): Exception: There is already an open DataReader associated with this Command which must be closed first.
+
+02/20/2024 14:29:47 EmployeeAsco4.Search(): Exception: There is already an open DataReader associated with this Command which must be closed first.
+
+02/20/2024 14:29:54 Rule.Search(): Exception: There is already an open DataReader associated with this Command which must be closed first.
+
+02/20/2024 14:31:44 Rule.Search(): Exception: There is already an open DataReader associated with this Command which must be closed first.
+
+02/20/2024 14:41:34 WorkingUnit.Find(): Exception: There is already an open DataReader associated with this Command which must be closed first.
+
+02/20/2024 14:41:54 Rule.Search(): Exception: There is already an open DataReader associated with this Command which must be closed first.
+
+02/20/2024 15:14:24 WorkingUnit.Search(): Exception: Exception: Internal connection fatal error.
+
+02/20/2024 15:14:24 Rule.Search(): Exception: Column 'rule_id' does not belong to table Rules.
+
+02/21/2024 13:27:41 MealsOrder.setBackgroundPicture(): D:\CP Security\ACTA solutions\ACTA verzija sa USB svi browseri Web\HUTCHINSON pmo\resources\photos\KeteringPricaBackground.jpg
+
+02/21/2024 13:31:59 MealsOrder.setBackgroundPicture(): D:\CP Security\ACTA solutions\ACTA verzija sa USB svi browseri Web\HUTCHINSON pmo\resources\photos\KeteringPricaBackground.jpg
+
+02/21/2024 13:35:24 MealsOrder.setBackgroundPicture(): D:\CP Security\ACTA solutions\ACTA verzija sa USB svi browseri Web\HUTCHINSON pmo\resources\photos\KeteringPricaBackground.jpg
+
+02/21/2024 14:06:37 IOPairProcessed.UpdateManualCreatedProcessedPairs(): Object reference not set to an instance of an object.
+
+02/21/2024 14:08:31 IOPairProcessed.UpdateManualCreatedProcessedPairs(): Object reference not set to an instance of an object.
+
+02/21/2024 14:10:12 IOPairProcessed.UpdateManualCreatedProcessedPairs(): Object reference not set to an instance of an object.
+
+02/21/2024 14:11:09 IOPairProcessed.UpdateManualCreatedProcessedPairs(): Object reference not set to an instance of an object.
+
+02/21/2024 14:11:49 IOPairProcessed.UpdateManualCreatedProcessedPairs(): Object reference not set to an instance of an object.
+
+02/21/2024 14:15:51 IOPairProcessed.UpdateManualCreatedProcessedPairs(): Object reference not set to an instance of an object.
+
+02/21/2024 14:16:48 IOPairProcessed.UpdateManualCreatedProcessedPairs(): Object reference not set to an instance of an object.
+
+02/21/2024 14:23:46 IOPairProcessed.UpdateManualCreatedProcessedPairs(): Object reference not set to an instance of an object.
+
+02/22/2024 09:33:41 Rule.Search(): Exception: There is already an open DataReader associated with this Command which must be closed first.
+
+02/23/2024 15:41:01 OPEN SESSIONS NUM: 0
+
+03/06/2024 11:33:20 OPEN SESSIONS NUM: 6
+
+03/08/2024 15:33:54 OPEN SESSIONS NUM: 0
+
+03/22/2024 10:59:48 OPEN SESSIONS NUM: 8
+
+03/27/2024 08:31:46 WorkingUnit.getWUDictionary(): Exception: Object reference not set to an instance of an object.
+
+03/27/2024 08:31:46 WorkingUnit.getWUDictionary(): Exception: Internal connection fatal error.
+
+03/27/2024 08:31:46 Employee.Search(): Exception: Invalid operation. The connection is closed.
+
+04/01/2024 11:06:22 OPEN SESSIONS NUM: 0
+
+04/10/2024 11:50:09 OPEN SESSIONS NUM: 0
+
+05/23/2024 13:02:13 OPEN SESSIONS NUM: 1
+
+05/24/2024 14:20:08 OPEN SESSIONS NUM: 1
+
+05/27/2024 09:19:21 OPEN SESSIONS NUM: 1
+
+06/21/2024 09:46:05 OPEN SESSIONS NUM: 0
+
+FormNotifier.Notify(Reader crrReader): All observers are notified about changes:1
+
+FormNotifier.Notify(Reader crrReader): All observers are notified about changes:2
+
+FormNotifier.Notify(Reader crrReader): All observers are notified about changes:3
+
+FormNotifier.Notify(Reader crrReader): All observers are notified about changes:4
+
+FormNotifier.Notify(Reader crrReader): All observers are notified about changes:5
+
+FormNotifier.Notify(Reader crrReader): All observers are notified about changes:6
+
+07/16/2024 13:13:20 OPEN SESSIONS NUM: 1
+
+07/16/2024 14:19:07 OPEN SESSIONS NUM: 1
+
+08/30/2024 13:48:38 Licence.FindMAX(): Exception: A transport-level error has occurred when sending the request to the server. (provider: Shared Memory Provider, error: 0 - No process is on the other end of the pipe.)
+
+09/04/2024 12:40:55 WorkingUnit.getWUDictionary(): Exception: Exception: Internal connection fatal error.
+
+09/04/2024 12:40:55 IOPairProcessed.Find(): Column 'rec_id' does not belong to table Pairs.
+
+11/08/2024 11:25:29 Employee.listaRadnikaZaWU(): Exception in MSSQLEmployeeDAO.listaRadnikaZaWU() : Internal connection fatal error.
+
+11/08/2024 11:25:29 Employee.listaRadnikaZaWU(): Exception in MSSQLEmployeeDAO.listaRadnikaZaWU() : Object reference not set to an instance of an object.
+
+11/08/2024 12:18:19 IOPairProcessed.pairsForPeriod(): Incorrect syntax near ')'.
+
+11/14/2024 14:53:37 OPEN SESSIONS NUM: 2
+
+11/15/2024 08:41:40 OPEN SESSIONS NUM: 3
+
+11/15/2024 11:39:22 OPEN SESSIONS NUM: 3
+
+11/19/2024 09:53:58 OPEN SESSIONS NUM: 3
+
+11/29/2024 11:59:37 OPEN SESSIONS NUM: 5
+
+12/03/2024 16:07:37 OPEN SESSIONS NUM: 5
+
+12/25/2024 11:49:11 OPEN SESSIONS NUM: 5
+
+12/26/2024 12:15:19 OPEN SESSIONS NUM: 5
+
+12/27/2024 08:38:14 OPEN SESSIONS NUM: 5
+
+01/09/2025 14:55:24 OPEN SESSIONS NUM: 5
+
+01/27/2025 10:22:43 OPEN SESSIONS NUM: 4
+
+02/13/2025 14:14:02 OPEN SESSIONS NUM: 4
+
+03/03/2025 13:42:10 OPEN SESSIONS NUM: 4
+
+03/03/2025 15:03:35 OPEN SESSIONS NUM: 4
+
+03/26/2025 11:37:02 OPEN SESSIONS NUM: 3
+

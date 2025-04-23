@@ -1,0 +1,128 @@
+﻿body { background-color:#EDF2FB; }
+
+.navigationTable { background-color:Transparent; border-style:none; }
+.navigationCell { border-style:none; vertical-align:bottom; }
+.navigationLBtn { font-weight:bold; color:Black; font-family:"Verdana"; font-size:small; }
+
+.hdrTable { background-color:#9BAAC1; border-style:none; height:25px; }
+.hdrCell { border-style:none; vertical-align:middle; }
+.hdrTitle { color:Black; text-align:center; font-weight:bold; text-transform:uppercase; font-family:"Verdana"; font-size:small; }
+.loginUserText { color:Black; text-align:right; font-weight:bold; font-style:italic; font-family:"Verdana"; font-size:small; }
+.loginUserTextLeft { color:Black; text-align:left; font-weight:bold; font-style:italic; font-family:"Verdana"; font-size:small; }
+
+.hdrListTable { background-color:#5C769D; border-style:none; }
+.hdrListCell { border-style:none; vertical-align:middle; }
+.hdrListTitle { color:White; text-align:center; font-family:"Verdana"; font-size:x-small; }
+
+.footerTable { background-color:#9BAAC1; border-style:none; height:25px; }
+.footerCell { border-style:none; vertical-align:middle; }
+
+.errorText { color:Red; text-align:center; font-style:italic; font-family:"Verdana"; font-size:x-small; }
+.infoText { color:Black; text-align:left; font-style:italic; font-family:"Verdana"; font-size:small; }
+.contentErrorTable { background-color:#C2D5F1; border-color:#9BAAC1; border-width:2px; border-left-style:solid; border-bottom-style:solid; border-top-style:none; border-right-style:solid; }
+.contentTable { background-color:#C2D5F1; border-color:#9BAAC1; border-width:2px; border-left-style:solid; border-bottom-style:none; border-top-style:none; border-right-style:solid; }
+.contentSeparatorRow { height:5px; border-style:none; }
+.contentCell { border-style:none; vertical-align:middle; }
+.contentMenuCell { border-style:none; vertical-align:top; }
+.contentLbl { color:Black; text-align:right; font-family:"Verdana"; font-size:x-small; }
+.contentSmallLbl { color:Black; text-align:right; font-family:"Verdana"; font-size:xx-small; }
+.contentLegendLbl { color:Black; text-align:left; font-style:italic; font-family:"Verdana"; font-size:xx-small; }
+.contentLblLeft { color:Black; text-align:left; font-family:"Verdana"; font-size:x-small; }
+.contentLblLeftBold { color:Black;font-weight:bold; text-align:left; font-family:"Verdana"; font-size:x-small; }
+.contentLblRight { color:Black; text-align:right; font-family:"Verdana"; font-size:x-small; }
+.contentLblLeftBorderDay { color:Black; text-align:left; vertical-align:bottom; font-family:"Verdana"; font-size:x-small;border:solid 1px #000099; border-left-style:none }
+.contentLblLeftBorderWeekendDay { color:Black; text-align:left; vertical-align:bottom; font-family:"Verdana"; font-size:x-small;border:solid 1px #000099; border-left-style:none; }
+.contentLblLeftBorderNationalHolidayDay { color:Black; text-align:left; vertical-align:bottom; font-family:"Verdana"; font-size:x-small;border:solid 1px #000099; border-left-style:none; }
+.contentLblLeftBorderPersonalHolidayDay { color:Black; text-align:left; vertical-align:bottom; font-family:"Verdana"; font-size:x-small;border:solid 1px #000099; border-left-style:none; }
+.contentLblLeftDay { color:Black; text-align:left; vertical-align:bottom; font-family:"Verdana"; font-size:x-small; }
+.contentLblCenterBackBlue { color:White;background-color:#5C769D; text-align:center; font-family:"Verdana"; font-size:x-small; }
+.contentBoldBlueLbl { color:Blue; text-align:left; vertical-align:bottom; font-family:"Verdana"; font-size:medium; font-weight:bold; }
+.contentBoldBlueBorderLbl { color:Blue; text-align:left; vertical-align:bottom; font-family:"Verdana"; font-size:medium; font-weight:bold;border:solid 1px #000099; border-right-style:none; }
+.contentBoldBlueBorderWeekendLbl { color:Blue; text-align:left; vertical-align:bottom; font-family:"Verdana"; font-size:medium; font-weight:bold;border:solid 1px #000099; border-right-style:none; }
+.contentBoldBlueBorderNationalHolidayLbl { color:Blue; text-align:left; vertical-align:bottom; font-family:"Verdana"; font-size:medium; font-weight:bold;border:solid 1px #000099; border-right-style:none; }
+.contentBoldBlueBorderPersonalHolidayLbl { color:Blue; text-align:left; vertical-align:bottom; font-family:"Verdana"; font-size:medium; font-weight:bold;border:solid 1px #000099; border-right-style:none; }
+.contentCalendarWorkingDayLbl { background-color:#FFFFB8; text-align:left; vertical-align:bottom; font-family:"Verdana"; font-size:medium; font-weight:bold;border:solid 1px Black; }
+.contentCalendarWeekendLbl { background-color:#FFE6CC; text-align:left; vertical-align:bottom; font-family:"Verdana"; font-size:medium; font-weight:bold;border:solid 1px Black; }
+.contentCalendarNationalHolidayLbl { background-color:#FFCCCC; text-align:left; vertical-align:bottom; font-family:"Verdana"; font-size:medium; font-weight:bold;border:solid 1px Black; }
+.contentCalendarPersonalHolidayLbl { background-color:#CCB2FF; text-align:left; vertical-align:bottom; font-family:"Verdana"; font-size:medium; font-weight:bold;border:solid 1px Black; }
+.contentSmallLblLeft { color:Black; text-align:left; font-family:"Verdana"; font-size:xx-small; }
+.contentLb { color:Black; text-align:left; font-family:"Verdana"; font-size:x-small; }
+.contentRb { color:Black; text-align:left; font-family:"Verdana"; font-size:x-small; }
+.contentRbSmall { color:Black; text-align:left; font-family:"Verdana"; font-size:7pt; }
+.contentHdrLbl { color:Black; text-align:left; font-family:"Verdana"; font-size:x-small; font-weight:bold; }
+.contentBoldLbl { color:Black; text-align:right; font-family:"Verdana"; font-size:x-small; font-weight:bold; }
+.contentGraphPeriodLbl { color:Black; text-align:center; font-family:"Verdana"; font-size:small; font-weight:bold; }
+.contentInfoLbl { color:Black; text-align:left; font-family:"Verdana"; font-size:9pt; font-style:italic; }
+.contentInfoLblRight { color:Black; text-align:right; font-family:"Verdana"; font-size:x-small; font-style:italic; }
+.contentHelpLbl { color:Black; text-align:left; font-family:"Verdana"; font-size:xx-small; font-style:italic; }
+.contentTb { color:Black; text-align:left; font-family:"Verdana"; font-size:x-small; }
+.contentTbSmall { color:Black; text-align:right; font-family:"Verdana"; font-size:xx-small; }
+.contentTbDisabled { color:Black; text-align:left; font-family:"Verdana"; font-size:x-small; background-color:#E6E6E6; }
+.contentTbDisabledRight { color:Black; text-align:right; font-family:"Verdana"; font-size:x-small; background-color:#E6E6E6; }
+.contentTbHidden { color:Black; text-align:left; font-family:"Verdana"; font-size:xx-small; }
+.contentBtn { background-color:#CCCCCC; color:Black; text-align:center; font-family:"Verdana"; font-size:x-small; font-weight:bold; }
+.contentBtn2 { background-color:#CCCCCC; color:Black; text-align:center; font-family:"Verdana"; font-size:x-small; font-weight:bold; margin-left: 10px; }
+.contentBtnSmall { background-color:#CCCCCC; color:Black; text-align:center; font-family:"Verdana"; font-size:xx-small; font-weight:bold; }
+.contentBtnDisabled { background-color:#CCCCCC; color:Gray; text-align:center; font-family:"Verdana"; font-size:x-small; font-weight:bold; }
+.contentInvisibleBtn { background-color:Transparent; border-style:none; color:Black; text-align:center; font-family:"Verdana"; font-size:x-small; font-weight:bold; }
+.contentChb { color:Black; text-align:left; font-family:"Verdana"; font-size:x-small; }
+.contentChbSmall { color:Black; text-align:left; font-family:"Verdana"; font-size:xx-small; height:10px; }
+.contentLBtn { font-weight:bold; color:Black; font-family:"Verdana"; font-size:x-small; }
+.contentImgBtn { height:20px; width:20px; vertical-align:middle; }
+.contentImgBtnWide { height:10px; width:20px; vertical-align:middle; }
+.contentDDList { color:Black; text-align:left; font-family:"Verdana"; font-size:x-small; }
+.counterLbl { color:Gray; text-align:center; font-family:"Verdana"; font-size:small; font-weight:bold; border:solid 1px Grey; }
+.counterSmallLbl { color:Gray; text-align:center; font-family:"Verdana"; font-size:xx-small; font-weight:bold; border:solid 1px Grey; }
+.counterMiddleLblLeft { color:Gray; text-align:left; font-family:"Verdana"; font-size:x-small; font-weight:bold; border:solid 1px Grey; }
+
+.emplWorkingDayUCSeparator { color:Black; text-align:left; font-family:"Verdana"; font-size:8pt; }
+.emplWorkingDayUCEmptyLbl { vertical-align:top; color:Black; text-align:left; font-family:"Verdana"; font-size:8pt; }
+.emplWorkingDayUCLbl { vertical-align:top; color:Black; text-align:left; font-family:"Verdana"; font-size:8pt; border:solid 1px #A9A9A9; border-top-color:White; }
+.emplWorkingDayUCAltLbl { vertical-align:top; color:Black; text-align:left; font-family:"Verdana"; font-size:8pt; border:solid 1px #A9A9A9; border-top-color:#E6E6E6; }
+.emplWorkingDayUCFirstLbl { vertical-align:top; color:Black; text-align:left; font-family:"Verdana"; font-size:8pt; border:solid 1px #A9A9A9; }
+.emplWorkingDayHeaderUCLbl { vertical-align:top; color:Black; text-align:left; font-family:"Verdana"; font-size:8pt; font-style:italic; font-weight:bold; border:solid 1px #A9A9A9; border-top-color:White; }
+.emplWorkingDayHeaderUCAltLbl { vertical-align:top; color:Black; text-align:left; font-family:"Verdana"; font-size:8pt; font-style:italic; font-weight:bold; border:solid 1px #A9A9A9; border-top-color:#E6E6E6; }
+.emplWorkingDayHeaderUCFirstLbl { vertical-align:top; color:Black; text-align:left; font-family:"Verdana"; font-size:8pt; font-style:italic; font-weight:bold; border:solid 1px #A9A9A9; }
+.contentTop { vertical-align:top; }
+
+.emplDataLbl { color:Gray; text-align:left; font-family:"Verdana"; font-size:smaller; border:solid 1px Gray; }
+.counterTb { color:Black; text-align:center; font-family:"Verdana"; font-size:medium; font-weight:bold; }
+.counterTbReadOnly { color:Black; text-align:center; font-family:"Verdana"; font-size:medium; font-weight:bold; background-color:#E6E6E6; }
+.counterSmallLblLeft { color:Black; text-align:left; font-family:"Verdana"; font-size:xx-small; }
+.legendLbl { color:Black; text-align:left; font-family:"Verdana"; font-size:x-small; }
+
+.pageIframe { margin:0px; width:100%; }
+.resultPanel { background-color:#C2D5F1; }
+.resultGrid { color:Black; text-align:left; vertical-align:middle; font-family:"Courier New"; font-size:8pt; }
+.resultSelCol { text-align:center; vertical-align:middle; border:solid 1px #E6E6E6; width:30px; }
+.resultItem { background-color:	#E6E6FF; height:15px; }
+.resultAltItem { background-color:White; height:15px; }
+.reportView { background-color:White; }
+
+.calendar { text-align:center; font-family:"Verdana"; font-size:10pt; color:Black; border:solid 1px Gray; }
+.calendarToday { background-color:#AFC0D9; border:solid 2px #8895A9; }
+.calendarSelector { background-color:#AFC0D9; border:solid 1px Gray; }
+.calendarDayHdr { background-color:#8895A9; font-weight:bold; border:solid 1px Gray; }
+.calendarOtherMonth { background-color:#CCCCCC; border:solid 1px Gray; }
+.calendarTitle { font-size:small; font-weight:bold; background-color:#8895A9; border:solid 1px Gray; }
+.calendarDay { border:solid 1px Gray; }
+.calendarNextPrev { text-align:center; font-weight:bold; font-size:small; }
+.calendarWeekend { background-color:#C2D5F1; border:solid 1px Gray; }
+
+.tabTable { background-color:#C2D5F1; border:solid 1px #9BAAC1; }
+.tabNoBorderTable { background-color:#C2D5F1; border-style:none; }
+.tabHdrTable { background-color:#EDF2FB; border-style:none; }
+.tabSeparatorRow { height:5px; border-style:none; }
+.tabCell { border-style:none; vertical-align:top; }
+.tabCellBorder { border:solid 1px #9BAAC1; vertical-align:middle; }
+.tabMidAlignCell { border-style:none; vertical-align:middle; }
+.tabBottomAlignCell { border-style:none; vertical-align:bottom; }
+.nonactiveTab { background-color:#7393C4; height:25px; text-align:right; font-family:"Verdana"; font-size:small; font-weight:bold; color:Black; }
+.activeTab { background-color:#C2D5F1; }
+.menuTab { height:25px; text-align:right; font-family:"Verdana"; font-size:small; font-weight:bold; color:Black; }
+.nonactiveInnerTab { background-color:#C2D5F1; height:25px; text-align:left; font-family:"Verdana"; font-size:x-small; font-style:italic; color:Black; }
+.activeInnerTab { color:Gray; }
+
+.treeViewNode {text-align:left; font-family:"Verdana"; font-size:x-small; font-weight:bold; color:Black; }
+
+

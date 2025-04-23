@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="125d6f6f-35bb-40c0-9de4-6af43c0892e5" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:44456/ACTASurveillanceService" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="ACTASurveillanceService.disco" MetadataType="Disco" ID="2feb7256-74da-4132-81c7-f11cdbe73c6e" SourceId="1" SourceUrl="http://localhost:44456/ACTASurveillanceService?disco" />
+    <MetadataFile FileName="ACTASurveillanceService.xsd" MetadataType="Schema" ID="d99c7e2a-f28c-42a8-9558-a2904c78dfb5" SourceId="1" SourceUrl="http://localhost:44456/ACTASurveillanceService?xsd=xsd0" />
+    <MetadataFile FileName="ACTASurveillanceService1.xsd" MetadataType="Schema" ID="61ff9f2e-0704-4922-8e73-efa455aeb068" SourceId="1" SourceUrl="http://localhost:44456/ACTASurveillanceService?xsd=xsd1" />
+    <MetadataFile FileName="ACTASurveillanceService2.xsd" MetadataType="Schema" ID="903d848d-4142-4c1a-b3c0-5a6c75f2b466" SourceId="1" SourceUrl="http://localhost:44456/ACTASurveillanceService?xsd=xsd2" />
+    <MetadataFile FileName="ACTASurveillanceService.wsdl" MetadataType="Wsdl" ID="45813a63-4fd4-4d28-9961-3a8e26d9ced3" SourceId="1" SourceUrl="http://localhost:44456/ACTASurveillanceService?wsdl" />
+    <MetadataFile FileName="ACTASurveillanceService1.wsdl" MetadataType="Wsdl" ID="1377f5ac-f6be-4e1d-8243-08670f26d566" SourceId="1" SourceUrl="http://localhost:44456/ACTASurveillanceService?wsdl=wsdl0" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

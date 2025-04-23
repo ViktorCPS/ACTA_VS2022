@@ -1,0 +1,158 @@
+using System;
+using System.Collections;
+using System.Collections.Generic;
+using System.Data;
+
+using TransferObjects;
+
+namespace DataAccess
+{
+    /// <summary>
+    /// EmployeeDAO interface is implemented by 
+    /// database specific PassTypes DAO classes
+    /// </summary>
+    public interface EmployeeDAO
+    {
+        int insert(string EmployeeID, string FirstName, string LastName, string WorkingUnitID,
+            string Status, string Password, string AddressID, string Picture, string WorkingGroupID, string type, string accessGroupID, bool doCommit);
+
+        int insert(string EmployeeID, string FirstName, string LastName, string WorkingUnitID,
+            string Status, string Password, string AddressID, string Picture, string WorkingGroupID, string type, string accessGroupID, string user, bool doCommit);
+
+        bool delete(string empolyeeID);
+
+        bool update(string EmployeeID, string FirstName, string LastName, string WorkingUnitID,
+            string Status, string Password, string AddressID, string Picture, string WorkingGroupID, string type, string accessGroupID);
+
+        bool update(string EmployeeID, string FirstName, string LastName, string WorkingUnitID,
+            string Status, string Password, string AddressID, string Picture, string WorkingGroupID, string type, string accessGroupID, bool doCommit);
+
+        bool updateWU(string EmployeeID, string WorkingUnitID, bool doCommit);
+
+        bool updateOU(string EmployeeID, string ouID, bool doCommit);
+
+        bool updatePassword(string employeeID, string password);
+
+        EmployeeTO find(string EmployeeID);
+        
+        EmployeeTO find(string EmployeeID, IDbTransaction trans);
+
+        EmployeeTO findUserEmployee(string userID);
+
+        List<EmployeeTO> getEmployees(EmployeeTO emplTO);
+
+        List<EmployeeTO> getEmployees(string emplIDs);
+
+        string getActiveIDsForScheduling();
+
+        List<int> getEmployeesIDs();
+
+        List<EmployeeTO> getEmployees(EmployeeTO emplTO, IDbTransaction trans);
+
+        List<EmployeeTO> getEmployesWithStatus(EmployeeTO emplTO, List<string> Statuses, string wuString);
+
+        List<EmployeeTO> getEmployesTagsWithStatus(EmployeeTO emplTO, List<string> Statuses, string wUnits, int hasTag);
+
+        EmployeeTO getEmployeesByTag(string tagID);
+
+        List<EmployeeTO> getEmployesWithStatusNotInGroup(List<string> Statuses, string wuString, int groupID);
+
+        List<EmployeeTO> getEmployeesByWU(string wUnits);
+
+        List<EmployeeTO> getEmployeesByOU(string oUnits, int emplID, List<int> typesVisible, DateTime from, DateTime to);
+
+        List<EmployeeTO> getEmployeesByOU(string oUnits);
+
+        List<EmployeeTO> getEmployeesByWULoans(string wUnits, int emplID, List<int> typesVisible, DateTime from, DateTime to);
+
+        List<EmployeeTO> getEmployeesNotInWU(string wUnits);
+
+        List<EmployeeTO> getEmployeesByWUWithStatuses(string wUnits, List<string> statuses);
+
+        List<EmployeeTO> getEmployeesByWUGetAccessGroup(string wUnits);
+
+        List<EmployeeTO> getEmployeesByAccessGroup(string accessGroupID);
+
+        List<EmployeeTO> getEmployeesNotInAccessGroup(string accessGroupID);
+
+        List<EmployeeTO> getEmployeesVisitors(string wUnits, List<string> statuses, string type);
+
+        List<EmployeeTO> getEmployeesByTags(string tags);
+
+        Dictionary<uint, EmployeeTO> getEmployeesByTagsDictionary(string tags);
+
+
+        List<EmployeeTO> getEmployeesByBlockedTags(string tags);
+
+        List<EmployeeTO> getEmployeesWUResponsible(string wuID, List<int> typesVisible, DateTime from, DateTime to);
+
+        List<EmployeeTO> getEmployeesOUResponsible(string ouID, List<int> typesVisible, DateTime from, DateTime to);
+
+        bool beginTransaction();
+
+        void commitTransaction();
+
+        void rollbackTransaction();
+
+        void setTransaction(IDbTransaction trans);
+
+        IDbTransaction getTransaction();
+
+        bool updateAccessGroup(string EmployeeID, string AccessGroupID, bool doCommit);
+
+        TagTO findActive(int ownerID);
+
+        EmployeeTO findEmplMealType(uint tagID);
+
+        void serialize(List<EmployeeTO> employeesTO);
+
+        void SetDBConnection(Object dbConnection);
+
+        bool updatePicture(int employeeID, string picture, bool doCommit);
+
+        List<EmployeeTO> getEmplNumByWUnits();
+
+        List<EmployeeTO> getAllEmployees();
+
+        bool updateSiemens(int employeeID, string firstName, string lastName, int wuID, int addressID);
+
+        string getAddressLine3(int employeeID);
+
+
+        Dictionary<int, EmployeeTO> getEmployeesDictionary(EmployeeTO employeeTO);
+
+        Dictionary<int, EmployeeTO> getEmployeesDictionary(string emplIDs);
+
+        Dictionary<int, EmployeeTO> getEmployeesDictionaryWCSelfService();
+
+
+        Dictionary<int, EmployeeTO> getEmployeesDictionaryWithASCO(EmployeeTO employeeTO);
+
+        bool update(string EmployeeID, string FirstName, string LastName, string WorkingUnitID, string Status, string Password, string AddressID, string Picture, string WorkingGroupID, string type, string accessGroupID, int orgUnitID, bool doCommit);
+
+        int insert(string EmployeeID, string FirstName, string LastName, string WorkingUnitID, string Status, string Password, string AddressID, string Picture, string WorkingGroupID, string type, string accessGroupID, int orgUnitID, bool doCommit);
+
+        bool update(EmployeeTO employeeTO, bool doCommit);
+
+        //NATALIJA08112017
+        bool update(EmployeeTO EmplTO, int workGruopuID, IDbTransaction trans);
+
+        int insert(EmployeeTO employeeTO, bool doCommit);
+
+        Dictionary<int, int> getEmployeesGroups(string emplIDs, IDbTransaction trans);
+
+        List<int> SyncDataWithNav();
+
+
+        List<EmployeeTO> ForKastProlasci(DateTime dateTime);
+
+        List<EmployeeTO> ProlasciZaForKast(DateTime dateTime);
+
+        int BrZaposlenih(DateTime mesec);
+
+        //  10.06.2019. BOJAN
+        List<EmployeeTO> getNumberOfDaysVacationPerEmployees(DateTime date);
+        //  18.06.2019. BOJAN
+        List<EmployeeTO> getEmployeesByOUandWU(int orgUnitID, int workingUnitID);
+    }
+}

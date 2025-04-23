@@ -1,0 +1,525 @@
+BENCHMARK>>> 09/22/2017 11:25:15 09/22/2017 11:25:15 PROCESSING STARTED!
++ ImportLog - STARTED! 11:25:15
+
+Number of files: 1
+
+Number of files mobile: 0
+
+BENCHMARK>>> 09/22/2017 11:25:16  + File Deserialization : STARTED! +
+
+09/22/2017 11:25:16 Log.GetFromFile(): 
+File can't be deserialized. 
+ File: D:\Work\Hutchinson v2\Hutchinson, touch isto kao i u Imlek-u samo obrnut raspored - vidi opis\ACTA 3.0\L\unprocessed\New Text Document.txt There is an error in XML document (0, 0).
+
+
+File: D:\Work\Hutchinson v2\Hutchinson, touch isto kao i u Imlek-u samo obrnut raspored - vidi opis\ACTA 3.0\L\unprocessed\New Text Document.txt 
+File can't be deserialized. 
+ File: D:\Work\Hutchinson v2\Hutchinson, touch isto kao i u Imlek-u samo obrnut raspored - vidi opis\ACTA 3.0\L\unprocessed\New Text Document.txt There is an error in XML document (0, 0).
+
+
+BENCHMARK>>> 09/22/2017 11:25:17  ++++ Move file: D:\Work\Hutchinson v2\Hutchinson, touch isto kao i u Imlek-u samo obrnut raspored - vidi opis\ACTA 3.0\L\unprocessed\New Text Document.txt to archived: STARTED! ++++
+
+ Exception in: ReaderManagement.DataProcessingManager.MoveFileToArchived() : 
+Can't reach directory! 
+    at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.File.Move(String sourceFileName, String destFileName)
+   at ReaderManagement.DataProcessingManager.MoveFileToArchived(String filepath) in D:\Work\Hutchinson v2\Hutchinson, touch isto kao i u Imlek-u samo obrnut raspored - vidi opis\ACTA 3.0\ReaderManagement\DataProcessingManager.cs:line 4670
+Processing will be continued !
+
+- ImportLog - FINISHED! 11:25:17
+
+--- ClassifyPasses - STARTED! 11:25:17
+
+BENCHMARK>>> 09/22/2017 11:25:17  ClassifyPasses(): insert whole day absences: STARTED! +++++
+
+BENCHMARK>>> 09/22/2017 11:25:17  ClassifyPasses(): insert whole day absences: FINISHED! +++++
+
+BENCHMARK>>> 09/22/2017 11:25:17  ClassifyPasses(): update io pairs passes: STARTED! +++++
+
+BENCHMARK>>> 09/22/2017 11:25:17  ClassifyPasses(): update io pairs passes: FINISHED! +++++
+
+BENCHMARK>>> 09/22/2017 11:25:17  ClassifyPasses(): permission passes processing: STARTED! +++++
+
+BENCHMARK>>> 09/22/2017 11:25:17  ClassifyPasses(): permission passes processing: FINISHED! +++++
+
+BENCHMARK>>> 09/22/2017 11:25:17  ClassifyPasses(): auto close pairs: STARTED! +++++
+
+BENCHMARK>>> 09/22/2017 11:25:28  ClassifyPasses(): auto close pairs: FINISHED! +++++
+
+BENCHMARK>>> 09/22/2017 11:25:28  ClassifyPasses(): auto close special out: STARTED! +++++
+
+BENCHMARK>>> 09/22/2017 11:25:28  ClassifyPasses(): auto close special out: FINISHED! +++++
+
+BENCHMARK>>> 09/22/2017 11:25:28  ClassifyPasses(): processing pauses: STARTED! +++++
+
+BENCHMARK>>> 09/22/2017 11:25:34  ClassifyPasses(): processing pauses: FINISHED! +++++
+
+--- ClassifyPasses - FINISHED! 11:25:34
+
+--- ProcessingIOPairs - STARTED! 11:25:34
+
+++++ Processing unprocessed io_pairs STARTED! 11:25:43
+
+---- Processing unprocessed io_pairs FINISHED! 22.09.2017 11:25:46
+++++ Processing unjustified pairs and delayes STARTED! 22.09.2017 11:25:47
+---- Processing unjustified pairs FINISHED! 22.09.2017 11:25:47
+--- ProcessingIOPairs - FINISHED! 11:25:47
+
+--- Auto close night overtime - STARTED! 11:25:47
+
+--- Auto close night overtime - FINISHED! 11:25:48
+
+--- Change unjustified to regular work to extra ordinary employees - STARTED! 11:25:48
+
+--- Change unjustified to regular work to extra ordinary employees - FINISHED! 11:25:48
+
+--- Transfering meals - STARTED! 11:25:48
+
+09/22/2017 11:25:48 MealUsed.Save(): The INSERT statement conflicted with the FOREIGN KEY constraint "FK_online_meals_used_employees". The conflict occurred in database "ACTA HUTCHINSON", table "actamgr.employees", column 'employee_id'.
+The statement has been terminated.
+
+BENCHMARK>>> 09/22/2017 11:25:48 09/22/2017 11:25:48 Exception in: ReaderManagement.DataProcessingManager.TransferingMeals() - Message: The INSERT statement conflicted with the FOREIGN KEY constraint "FK_online_meals_used_employees". The conflict occurred in database "ACTA HUTCHINSON", table "actamgr.employees", column 'employee_id'.
+The statement has been terminated.; StackTrace:    at ReaderManagement.DataProcessingManager.TransferingMeals() in D:\Work\Hutchinson v2\Hutchinson, touch isto kao i u Imlek-u samo obrnut raspored - vidi opis\ACTA 3.0\ReaderManagement\DataProcessingManager.cs:line 679
+--- Transfering meals - FINISHED! 11:25:48
+
+--- Processing visits - STARTED! 11:25:48
+
+--- Processing visits- FINISHED! 11:25:48
+
+BENCHMARK>>> 09/22/2017 11:25:48 09/22/2017 11:25:48 PROCESSING FINISHED! TIMER ENABLED!
+BENCHMARK>>> 09/22/2017 11:28:33 09/22/2017 11:28:33 PROCESSING STARTED!
++ ImportLog - STARTED! 11:28:33
+
+Number of files: 1
+
+Number of files mobile: 0
+
+BENCHMARK>>> 09/22/2017 11:28:33  + File Deserialization : STARTED! +
+
+09/22/2017 11:28:33 Log.GetFromFile(): 
+File can't be deserialized. 
+ File: D:\Work\Hutchinson v2\Hutchinson, touch isto kao i u Imlek-u samo obrnut raspored - vidi opis\ACTA 3.0\L\unprocessed\New Text Document.txt There is an error in XML document (0, 0).
+
+
+File: D:\Work\Hutchinson v2\Hutchinson, touch isto kao i u Imlek-u samo obrnut raspored - vidi opis\ACTA 3.0\L\unprocessed\New Text Document.txt 
+File can't be deserialized. 
+ File: D:\Work\Hutchinson v2\Hutchinson, touch isto kao i u Imlek-u samo obrnut raspored - vidi opis\ACTA 3.0\L\unprocessed\New Text Document.txt There is an error in XML document (0, 0).
+
+
+BENCHMARK>>> 09/22/2017 11:28:33  ++++ Move file: D:\Work\Hutchinson v2\Hutchinson, touch isto kao i u Imlek-u samo obrnut raspored - vidi opis\ACTA 3.0\L\unprocessed\New Text Document.txt to archived: STARTED! ++++
+
+ Exception in: ReaderManagement.DataProcessingManager.MoveFileToArchived() : 
+Can't reach directory! 
+    at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.File.Move(String sourceFileName, String destFileName)
+   at ReaderManagement.DataProcessingManager.MoveFileToArchived(String filepath) in D:\Work\Hutchinson v2\Hutchinson, touch isto kao i u Imlek-u samo obrnut raspored - vidi opis\ACTA 3.0\ReaderManagement\DataProcessingManager.cs:line 4670
+Processing will be continued !
+
+- ImportLog - FINISHED! 11:28:33
+
+--- ClassifyPasses - STARTED! 11:28:33
+
+BENCHMARK>>> 09/22/2017 11:28:33  ClassifyPasses(): insert whole day absences: STARTED! +++++
+
+BENCHMARK>>> 09/22/2017 11:28:33  ClassifyPasses(): insert whole day absences: FINISHED! +++++
+
+BENCHMARK>>> 09/22/2017 11:28:34  ClassifyPasses(): update io pairs passes: STARTED! +++++
+
+BENCHMARK>>> 09/22/2017 11:28:34  ClassifyPasses(): update io pairs passes: FINISHED! +++++
+
+BENCHMARK>>> 09/22/2017 11:28:34  ClassifyPasses(): permission passes processing: STARTED! +++++
+
+BENCHMARK>>> 09/22/2017 11:28:34  ClassifyPasses(): permission passes processing: FINISHED! +++++
+
+BENCHMARK>>> 09/22/2017 11:28:34  ClassifyPasses(): auto close pairs: STARTED! +++++
+
+BENCHMARK>>> 09/22/2017 11:28:44  ClassifyPasses(): auto close pairs: FINISHED! +++++
+
+BENCHMARK>>> 09/22/2017 11:28:44  ClassifyPasses(): auto close special out: STARTED! +++++
+
+BENCHMARK>>> 09/22/2017 11:28:44  ClassifyPasses(): auto close special out: FINISHED! +++++
+
+BENCHMARK>>> 09/22/2017 11:28:44  ClassifyPasses(): processing pauses: STARTED! +++++
+
+BENCHMARK>>> 09/22/2017 11:28:50  ClassifyPasses(): processing pauses: FINISHED! +++++
+
+--- ClassifyPasses - FINISHED! 11:28:50
+
+--- ProcessingIOPairs - STARTED! 11:28:50
+
+++++ Processing unprocessed io_pairs STARTED! 11:28:56
+
+---- Processing unprocessed io_pairs FINISHED! 22.09.2017 11:29:12
+++++ Processing unjustified pairs and delayes STARTED! 22.09.2017 11:29:13
+---- Processing unjustified pairs FINISHED! 22.09.2017 11:29:13
+--- ProcessingIOPairs - FINISHED! 11:29:13
+
+--- Auto close night overtime - STARTED! 11:29:13
+
+--- Auto close night overtime - FINISHED! 11:29:14
+
+--- Change unjustified to regular work to extra ordinary employees - STARTED! 11:29:14
+
+--- Change unjustified to regular work to extra ordinary employees - FINISHED! 11:29:14
+
+--- Transfering meals - STARTED! 11:29:14
+
+09/22/2017 11:29:14 MealUsed.Save(): The INSERT statement conflicted with the FOREIGN KEY constraint "FK_online_meals_used_employees". The conflict occurred in database "ACTA HUTCHINSON", table "actamgr.employees", column 'employee_id'.
+The statement has been terminated.
+
+BENCHMARK>>> 09/22/2017 11:29:14 09/22/2017 11:29:14 Exception in: ReaderManagement.DataProcessingManager.TransferingMeals() - Message: The INSERT statement conflicted with the FOREIGN KEY constraint "FK_online_meals_used_employees". The conflict occurred in database "ACTA HUTCHINSON", table "actamgr.employees", column 'employee_id'.
+The statement has been terminated.; StackTrace:    at ReaderManagement.DataProcessingManager.TransferingMeals() in D:\Work\Hutchinson v2\Hutchinson, touch isto kao i u Imlek-u samo obrnut raspored - vidi opis\ACTA 3.0\ReaderManagement\DataProcessingManager.cs:line 679
+--- Transfering meals - FINISHED! 11:29:14
+
+--- Processing visits - STARTED! 11:29:14
+
+--- Processing visits- FINISHED! 11:29:14
+
+BENCHMARK>>> 09/22/2017 11:29:14 09/22/2017 11:29:14 PROCESSING FINISHED! TIMER ENABLED!
+BENCHMARK>>> 09/22/2017 11:34:29 09/22/2017 11:34:29 PROCESSING STARTED!
++ ImportLog - STARTED! 11:34:29
+
+Number of files: 1
+
+Number of files mobile: 0
+
+BENCHMARK>>> 09/22/2017 11:34:29  + File Deserialization : STARTED! +
+
+09/22/2017 11:34:29 Log.GetFromFile(): 
+File can't be deserialized. 
+ File: D:\Work\Hutchinson v2\Hutchinson, touch isto kao i u Imlek-u samo obrnut raspored - vidi opis\ACTA 3.0\L\unprocessed\New Text Document.txt There is an error in XML document (0, 0).
+
+
+File: D:\Work\Hutchinson v2\Hutchinson, touch isto kao i u Imlek-u samo obrnut raspored - vidi opis\ACTA 3.0\L\unprocessed\New Text Document.txt 
+File can't be deserialized. 
+ File: D:\Work\Hutchinson v2\Hutchinson, touch isto kao i u Imlek-u samo obrnut raspored - vidi opis\ACTA 3.0\L\unprocessed\New Text Document.txt There is an error in XML document (0, 0).
+
+
+BENCHMARK>>> 09/22/2017 11:34:29  ++++ Move file: D:\Work\Hutchinson v2\Hutchinson, touch isto kao i u Imlek-u samo obrnut raspored - vidi opis\ACTA 3.0\L\unprocessed\New Text Document.txt to archived: STARTED! ++++
+
+ Exception in: ReaderManagement.DataProcessingManager.MoveFileToArchived() : 
+Can't reach directory! 
+    at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.File.Move(String sourceFileName, String destFileName)
+   at ReaderManagement.DataProcessingManager.MoveFileToArchived(String filepath) in D:\Work\Hutchinson v2\Hutchinson, touch isto kao i u Imlek-u samo obrnut raspored - vidi opis\ACTA 3.0\ReaderManagement\DataProcessingManager.cs:line 4670
+Processing will be continued !
+
+- ImportLog - FINISHED! 11:34:29
+
+--- ClassifyPasses - STARTED! 11:34:29
+
+BENCHMARK>>> 09/22/2017 11:34:29  ClassifyPasses(): insert whole day absences: STARTED! +++++
+
+BENCHMARK>>> 09/22/2017 11:34:29  ClassifyPasses(): insert whole day absences: FINISHED! +++++
+
+BENCHMARK>>> 09/22/2017 11:34:30  ClassifyPasses(): update io pairs passes: STARTED! +++++
+
+BENCHMARK>>> 09/22/2017 11:34:30  ClassifyPasses(): update io pairs passes: FINISHED! +++++
+
+BENCHMARK>>> 09/22/2017 11:34:30  ClassifyPasses(): permission passes processing: STARTED! +++++
+
+BENCHMARK>>> 09/22/2017 11:34:30  ClassifyPasses(): permission passes processing: FINISHED! +++++
+
+BENCHMARK>>> 09/22/2017 11:34:30  ClassifyPasses(): auto close pairs: STARTED! +++++
+
+BENCHMARK>>> 09/22/2017 11:34:39  ClassifyPasses(): auto close pairs: FINISHED! +++++
+
+BENCHMARK>>> 09/22/2017 11:34:39  ClassifyPasses(): auto close special out: STARTED! +++++
+
+BENCHMARK>>> 09/22/2017 11:34:39  ClassifyPasses(): auto close special out: FINISHED! +++++
+
+BENCHMARK>>> 09/22/2017 11:34:40  ClassifyPasses(): processing pauses: STARTED! +++++
+
+BENCHMARK>>> 09/22/2017 11:34:45  ClassifyPasses(): processing pauses: FINISHED! +++++
+
+--- ClassifyPasses - FINISHED! 11:34:45
+
+--- ProcessingIOPairs - STARTED! 11:34:45
+
+++++ Processing unprocessed io_pairs STARTED! 11:34:51
+
+09/22/2017 11:36:12ReaderManagement.DataProcessingManager.processingUnprocessedIOPairs() : Employee not found employee_id 708
+09/22/2017 11:36:12ReaderManagement.DataProcessingManager.processingUnprocessedIOPairs() : Employee not found employee_id 550
+09/22/2017 11:36:12ReaderManagement.DataProcessingManager.processingUnprocessedIOPairs() : Employee not found employee_id 705
+09/22/2017 11:36:12ReaderManagement.DataProcessingManager.processingUnprocessedIOPairs() : Employee not found employee_id 204
+09/22/2017 11:36:12ReaderManagement.DataProcessingManager.processingUnprocessedIOPairs() : Employee not found employee_id 615
+09/22/2017 11:36:12ReaderManagement.DataProcessingManager.processingUnprocessedIOPairs() : Employee not found employee_id 714
+09/22/2017 11:36:12ReaderManagement.DataProcessingManager.processingUnprocessedIOPairs() : Employee not found employee_id 39
+09/22/2017 11:36:13ReaderManagement.DataProcessingManager.processingUnprocessedIOPairs() : Employee not found employee_id 702
+09/22/2017 11:36:13ReaderManagement.DataProcessingManager.processingUnprocessedIOPairs() : Employee not found employee_id 522
+---- Processing unprocessed io_pairs FINISHED! 22.09.2017 11:36:19
+++++ Processing unjustified pairs and delayes STARTED! 22.09.2017 11:36:20
+---- Processing unjustified pairs FINISHED! 22.09.2017 11:36:21
+--- ProcessingIOPairs - FINISHED! 11:36:21
+
+--- Auto close night overtime - STARTED! 11:36:21
+
+--- Auto close night overtime - FINISHED! 11:36:21
+
+--- Change unjustified to regular work to extra ordinary employees - STARTED! 11:36:21
+
+--- Change unjustified to regular work to extra ordinary employees - FINISHED! 11:36:21
+
+--- Transfering meals - STARTED! 11:36:21
+
+09/22/2017 11:36:21 MealUsed.Save(): The INSERT statement conflicted with the FOREIGN KEY constraint "FK_online_meals_used_employees". The conflict occurred in database "ACTA HUTCHINSON", table "actamgr.employees", column 'employee_id'.
+The statement has been terminated.
+
+BENCHMARK>>> 09/22/2017 11:36:21 09/22/2017 11:36:21 Exception in: ReaderManagement.DataProcessingManager.TransferingMeals() - Message: The INSERT statement conflicted with the FOREIGN KEY constraint "FK_online_meals_used_employees". The conflict occurred in database "ACTA HUTCHINSON", table "actamgr.employees", column 'employee_id'.
+The statement has been terminated.; StackTrace:    at ReaderManagement.DataProcessingManager.TransferingMeals() in D:\Work\Hutchinson v2\Hutchinson, touch isto kao i u Imlek-u samo obrnut raspored - vidi opis\ACTA 3.0\ReaderManagement\DataProcessingManager.cs:line 679
+--- Transfering meals - FINISHED! 11:36:21
+
+--- Processing visits - STARTED! 11:36:21
+
+--- Processing visits- FINISHED! 11:36:21
+
+BENCHMARK>>> 09/22/2017 11:36:21 09/22/2017 11:36:21 PROCESSING FINISHED! TIMER ENABLED!
+++++ Processing Log files Started at:  11:41:12
+
+BENCHMARK>>> 09/22/2017 11:41:27 09/22/2017 11:41:27 PROCESSING STARTED!
++ ImportLog - STARTED! 11:41:27
+
+Number of files: 1
+
+Number of files mobile: 0
+
+BENCHMARK>>> 09/22/2017 11:41:27  + File Deserialization : STARTED! +
+
+09/22/2017 11:41:29 Log.GetFromFile(): 
+File can't be deserialized. 
+ File: D:\Work\Hutchinson v2\Hutchinson, touch isto kao i u Imlek-u samo obrnut raspored - vidi opis\ACTA 3.0\L\unprocessed\New Text Document.txt There is an error in XML document (0, 0).
+
+
+File: D:\Work\Hutchinson v2\Hutchinson, touch isto kao i u Imlek-u samo obrnut raspored - vidi opis\ACTA 3.0\L\unprocessed\New Text Document.txt 
+File can't be deserialized. 
+ File: D:\Work\Hutchinson v2\Hutchinson, touch isto kao i u Imlek-u samo obrnut raspored - vidi opis\ACTA 3.0\L\unprocessed\New Text Document.txt There is an error in XML document (0, 0).
+
+
+BENCHMARK>>> 09/22/2017 11:41:29  ++++ Move file: D:\Work\Hutchinson v2\Hutchinson, touch isto kao i u Imlek-u samo obrnut raspored - vidi opis\ACTA 3.0\L\unprocessed\New Text Document.txt to archived: STARTED! ++++
+
+ Exception in: ReaderManagement.DataProcessingManager.MoveFileToArchived() : 
+Can't reach directory! 
+    at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.File.Move(String sourceFileName, String destFileName)
+   at ReaderManagement.DataProcessingManager.MoveFileToArchived(String filepath) in D:\Work\Hutchinson v2\Hutchinson, touch isto kao i u Imlek-u samo obrnut raspored - vidi opis\ACTA 3.0\ReaderManagement\DataProcessingManager.cs:line 4670
+Processing will be continued !
+
+- ImportLog - FINISHED! 11:41:29
+
+--- ClassifyPasses - STARTED! 11:41:29
+
+BENCHMARK>>> 09/22/2017 11:41:29  ClassifyPasses(): insert whole day absences: STARTED! +++++
+
+BENCHMARK>>> 09/22/2017 11:41:30  ClassifyPasses(): insert whole day absences: FINISHED! +++++
+
+BENCHMARK>>> 09/22/2017 11:41:30  ClassifyPasses(): update io pairs passes: STARTED! +++++
+
+BENCHMARK>>> 09/22/2017 11:41:30  ClassifyPasses(): update io pairs passes: FINISHED! +++++
+
+BENCHMARK>>> 09/22/2017 11:41:30  ClassifyPasses(): permission passes processing: STARTED! +++++
+
+BENCHMARK>>> 09/22/2017 11:41:30  ClassifyPasses(): permission passes processing: FINISHED! +++++
+
+BENCHMARK>>> 09/22/2017 11:41:30  ClassifyPasses(): auto close pairs: STARTED! +++++
+
+BENCHMARK>>> 09/22/2017 11:41:40  ClassifyPasses(): auto close pairs: FINISHED! +++++
+
+BENCHMARK>>> 09/22/2017 11:41:40  ClassifyPasses(): auto close special out: STARTED! +++++
+
+BENCHMARK>>> 09/22/2017 11:41:40  ClassifyPasses(): auto close special out: FINISHED! +++++
+
+BENCHMARK>>> 09/22/2017 11:41:40  ClassifyPasses(): processing pauses: STARTED! +++++
+
+BENCHMARK>>> 09/22/2017 11:41:46  ClassifyPasses(): processing pauses: FINISHED! +++++
+
+--- ClassifyPasses - FINISHED! 11:41:46
+
+--- ProcessingIOPairs - STARTED! 11:41:46
+
+++++ Processing Log files Started at:  11:43:52
+
+11:43:52 A new processing is started: 1
+
+BENCHMARK>>> 09/22/2017 11:44:08 09/22/2017 11:44:08 PROCESSING STARTED!
++ ImportLog - STARTED! 11:44:08
+
+Number of files: 1
+
+Number of files mobile: 0
+
+BENCHMARK>>> 09/22/2017 11:44:08  + File Deserialization : STARTED! +
+
+09/22/2017 11:44:09 Log.GetFromFile(): 
+File can't be deserialized. 
+ File: D:\Work\Hutchinson v2\Hutchinson, touch isto kao i u Imlek-u samo obrnut raspored - vidi opis\ACTA 3.0\L\unprocessed\New Text Document.txt There is an error in XML document (0, 0).
+
+
+File: D:\Work\Hutchinson v2\Hutchinson, touch isto kao i u Imlek-u samo obrnut raspored - vidi opis\ACTA 3.0\L\unprocessed\New Text Document.txt 
+File can't be deserialized. 
+ File: D:\Work\Hutchinson v2\Hutchinson, touch isto kao i u Imlek-u samo obrnut raspored - vidi opis\ACTA 3.0\L\unprocessed\New Text Document.txt There is an error in XML document (0, 0).
+
+
+BENCHMARK>>> 09/22/2017 11:44:09  ++++ Move file: D:\Work\Hutchinson v2\Hutchinson, touch isto kao i u Imlek-u samo obrnut raspored - vidi opis\ACTA 3.0\L\unprocessed\New Text Document.txt to archived: STARTED! ++++
+
+ Exception in: ReaderManagement.DataProcessingManager.MoveFileToArchived() : 
+Can't reach directory! 
+    at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.File.Move(String sourceFileName, String destFileName)
+   at ReaderManagement.DataProcessingManager.MoveFileToArchived(String filepath) in D:\Work\Hutchinson v2\Hutchinson, touch isto kao i u Imlek-u samo obrnut raspored - vidi opis\ACTA 3.0\ReaderManagement\DataProcessingManager.cs:line 4670
+Processing will be continued !
+
+- ImportLog - FINISHED! 11:44:09
+
+--- ClassifyPasses - STARTED! 11:44:09
+
+BENCHMARK>>> 09/22/2017 11:44:09  ClassifyPasses(): insert whole day absences: STARTED! +++++
+
+BENCHMARK>>> 09/22/2017 11:44:10  ClassifyPasses(): insert whole day absences: FINISHED! +++++
+
+BENCHMARK>>> 09/22/2017 11:44:10  ClassifyPasses(): update io pairs passes: STARTED! +++++
+
+BENCHMARK>>> 09/22/2017 11:44:10  ClassifyPasses(): update io pairs passes: FINISHED! +++++
+
+BENCHMARK>>> 09/22/2017 11:44:10  ClassifyPasses(): permission passes processing: STARTED! +++++
+
+BENCHMARK>>> 09/22/2017 11:44:10  ClassifyPasses(): permission passes processing: FINISHED! +++++
+
+BENCHMARK>>> 09/22/2017 11:44:10  ClassifyPasses(): auto close pairs: STARTED! +++++
+
+BENCHMARK>>> 09/22/2017 11:44:26  ClassifyPasses(): auto close pairs: FINISHED! +++++
+
+BENCHMARK>>> 09/22/2017 11:44:26  ClassifyPasses(): auto close special out: STARTED! +++++
+
+BENCHMARK>>> 09/22/2017 11:44:26  ClassifyPasses(): auto close special out: FINISHED! +++++
+
+BENCHMARK>>> 09/22/2017 11:44:26  ClassifyPasses(): processing pauses: STARTED! +++++
+
+BENCHMARK>>> 09/22/2017 11:44:32  ClassifyPasses(): processing pauses: FINISHED! +++++
+
+--- ClassifyPasses - FINISHED! 11:44:32
+
+--- ProcessingIOPairs - STARTED! 11:44:32
+
+++++ Processing unprocessed io_pairs STARTED! 11:44:48
+
+---- Processing unprocessed io_pairs FINISHED! 22.09.2017 11:44:57
+++++ Processing unjustified pairs and delayes STARTED! 22.09.2017 11:44:59
+09/22/2017 11:47:06ReaderManagement.DataProcessingManager.OverlopValidation() EmloyeeID: 702; Date: 06.09.2017; StartTime: 06.09.2017 02:30:00; EndTime: 06.09.2017 06:00:00; Overlop processed pair StartTime 06.09.2017 02:30:00; EndTime: 06.09.2017 06:00:00
+---- Processing unjustified pairs FINISHED! 22.09.2017 11:47:07
+--- ProcessingIOPairs - FINISHED! 11:47:07
+
+--- Auto close night overtime - STARTED! 11:47:07
+
+--- Auto close night overtime - FINISHED! 11:47:08
+
+--- Change unjustified to regular work to extra ordinary employees - STARTED! 11:47:08
+
+--- Change unjustified to regular work to extra ordinary employees - FINISHED! 11:47:08
+
+--- Transfering meals - STARTED! 11:47:08
+
+09/22/2017 11:47:08 MealUsed.Save(): The INSERT statement conflicted with the FOREIGN KEY constraint "FK_online_meals_used_employees". The conflict occurred in database "ACTA HUTCHINSON", table "actamgr.employees", column 'employee_id'.
+The statement has been terminated.
+
+BENCHMARK>>> 09/22/2017 11:47:08 09/22/2017 11:47:08 Exception in: ReaderManagement.DataProcessingManager.TransferingMeals() - Message: The INSERT statement conflicted with the FOREIGN KEY constraint "FK_online_meals_used_employees". The conflict occurred in database "ACTA HUTCHINSON", table "actamgr.employees", column 'employee_id'.
+The statement has been terminated.; StackTrace:    at ReaderManagement.DataProcessingManager.TransferingMeals() in D:\Work\Hutchinson v2\Hutchinson, touch isto kao i u Imlek-u samo obrnut raspored - vidi opis\ACTA 3.0\ReaderManagement\DataProcessingManager.cs:line 679
+--- Transfering meals - FINISHED! 11:47:08
+
+--- Processing visits - STARTED! 11:47:08
+
+--- Processing visits- FINISHED! 11:47:08
+
+BENCHMARK>>> 09/22/2017 11:47:08 09/22/2017 11:47:08 PROCESSING FINISHED! TIMER ENABLED!
+++++ Processing Log files Started at:  12:05:22
+
+12:05:22 A new processing is started: 1
+
+BENCHMARK>>> 09/22/2017 12:05:52 09/22/2017 12:05:52 PROCESSING STARTED!
++ ImportLog - STARTED! 12:05:52
+
+Number of files: 1
+
+Number of files mobile: 0
+
+BENCHMARK>>> 09/22/2017 12:05:52  + File Deserialization : STARTED! +
+
+09/22/2017 12:05:53 Log.GetFromFile(): 
+File can't be deserialized. 
+ File: D:\Work\Hutchinson v2\Hutchinson, touch isto kao i u Imlek-u samo obrnut raspored - vidi opis\ACTA 3.0\L\unprocessed\New Text Document.txt There is an error in XML document (0, 0).
+
+
+File: D:\Work\Hutchinson v2\Hutchinson, touch isto kao i u Imlek-u samo obrnut raspored - vidi opis\ACTA 3.0\L\unprocessed\New Text Document.txt 
+File can't be deserialized. 
+ File: D:\Work\Hutchinson v2\Hutchinson, touch isto kao i u Imlek-u samo obrnut raspored - vidi opis\ACTA 3.0\L\unprocessed\New Text Document.txt There is an error in XML document (0, 0).
+
+
+BENCHMARK>>> 09/22/2017 12:05:53  ++++ Move file: D:\Work\Hutchinson v2\Hutchinson, touch isto kao i u Imlek-u samo obrnut raspored - vidi opis\ACTA 3.0\L\unprocessed\New Text Document.txt to archived: STARTED! ++++
+
+ Exception in: ReaderManagement.DataProcessingManager.MoveFileToArchived() : 
+Can't reach directory! 
+    at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.File.Move(String sourceFileName, String destFileName)
+   at ReaderManagement.DataProcessingManager.MoveFileToArchived(String filepath) in D:\Work\Hutchinson v2\Hutchinson, touch isto kao i u Imlek-u samo obrnut raspored - vidi opis\ACTA 3.0\ReaderManagement\DataProcessingManager.cs:line 4672
+Processing will be continued !
+
+- ImportLog - FINISHED! 12:05:53
+
+--- ClassifyPasses - STARTED! 12:05:53
+
+BENCHMARK>>> 09/22/2017 12:05:53  ClassifyPasses(): insert whole day absences: STARTED! +++++
+
+BENCHMARK>>> 09/22/2017 12:05:53  ClassifyPasses(): insert whole day absences: FINISHED! +++++
+
+BENCHMARK>>> 09/22/2017 12:05:53  ClassifyPasses(): update io pairs passes: STARTED! +++++
+
+BENCHMARK>>> 09/22/2017 12:05:53  ClassifyPasses(): update io pairs passes: FINISHED! +++++
+
+BENCHMARK>>> 09/22/2017 12:05:53  ClassifyPasses(): permission passes processing: STARTED! +++++
+
+BENCHMARK>>> 09/22/2017 12:05:53  ClassifyPasses(): permission passes processing: FINISHED! +++++
+
+BENCHMARK>>> 09/22/2017 12:05:53  ClassifyPasses(): auto close pairs: STARTED! +++++
+
+BENCHMARK>>> 09/22/2017 12:06:03  ClassifyPasses(): auto close pairs: FINISHED! +++++
+
+BENCHMARK>>> 09/22/2017 12:06:03  ClassifyPasses(): auto close special out: STARTED! +++++
+
+BENCHMARK>>> 09/22/2017 12:06:03  ClassifyPasses(): auto close special out: FINISHED! +++++
+
+BENCHMARK>>> 09/22/2017 12:06:03  ClassifyPasses(): processing pauses: STARTED! +++++
+
+BENCHMARK>>> 09/22/2017 12:06:09  ClassifyPasses(): processing pauses: FINISHED! +++++
+
+--- ClassifyPasses - FINISHED! 12:06:09
+
+--- ProcessingIOPairs - STARTED! 12:06:09
+
+++++ Processing unprocessed io_pairs STARTED! 12:08:58
+
+---- Processing unprocessed io_pairs FINISHED! 22.09.2017 12:09:06
+++++ Processing unjustified pairs and delayes STARTED! 22.09.2017 12:09:07
+---- Processing unjustified pairs FINISHED! 22.09.2017 12:09:08
+--- ProcessingIOPairs - FINISHED! 12:09:08
+
+--- Auto close night overtime - STARTED! 12:09:08
+
+--- Auto close night overtime - FINISHED! 12:09:09
+
+--- Change unjustified to regular work to extra ordinary employees - STARTED! 12:09:09
+
+--- Change unjustified to regular work to extra ordinary employees - FINISHED! 12:09:09
+
+--- Transfering meals - STARTED! 12:09:09
+
+09/22/2017 12:09:09 MealUsed.Save(): The INSERT statement conflicted with the FOREIGN KEY constraint "FK_online_meals_used_employees". The conflict occurred in database "ACTA HUTCHINSON", table "actamgr.employees", column 'employee_id'.
+The statement has been terminated.
+
+BENCHMARK>>> 09/22/2017 12:09:09 09/22/2017 12:09:09 Exception in: ReaderManagement.DataProcessingManager.TransferingMeals() - Message: The INSERT statement conflicted with the FOREIGN KEY constraint "FK_online_meals_used_employees". The conflict occurred in database "ACTA HUTCHINSON", table "actamgr.employees", column 'employee_id'.
+The statement has been terminated.; StackTrace:    at ReaderManagement.DataProcessingManager.TransferingMeals() in D:\Work\Hutchinson v2\Hutchinson, touch isto kao i u Imlek-u samo obrnut raspored - vidi opis\ACTA 3.0\ReaderManagement\DataProcessingManager.cs:line 679
+--- Transfering meals - FINISHED! 12:09:09
+
+--- Processing visits - STARTED! 12:09:09
+
+--- Processing visits- FINISHED! 12:09:09
+
+BENCHMARK>>> 09/22/2017 12:09:09 09/22/2017 12:09:09 PROCESSING FINISHED! TIMER ENABLED!

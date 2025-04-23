@@ -1,0 +1,1242 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+
+
+
+
+
+  <title>An Overview of Forms Authentication: The Official Microsoft ASP.NET Site</title>
+  
+  <meta content="text/html; charset=UTF-8" http-equiv="Content-Type">
+  <link href="http://i1.asp.net/common/www-css/i/favicon.ico?cdn_id=2011-06-16-001" rel="shortcut icon">
+  <link href="FormsAuthentication_files/main.css" rel="stylesheet" type="text/css" media="screen">
+  <link href="FormsAuthentication_files/titanoverrides.css" rel="stylesheet" type="text/css" media="screen">
+  
+  <script src="FormsAuthentication_files/avg_ls_dom.js" type="text/javascript"></script><script src="FormsAuthentication_files/jquery-1.js" type="text/javascript"></script>
+  <script src="FormsAuthentication_files/msc_all.js" type="text/javascript"></script><script type="text/javascript" src="FormsAuthentication_files/analyticsid.htm"></script>  
+  
+
+	
+  <link href="FormsAuthentication_files/shCore.css" rel="stylesheet" type="text/css" media="screen">
+  <link href="FormsAuthentication_files/shThemeDefault.css" rel="stylesheet" type="text/css" media="screen">
+  <script type="text/javascript" src="FormsAuthentication_files/shComposite.js"></script>
+  <script type="text/javascript">SyntaxHighlighter.defaults['gutter'] = false; SyntaxHighlighter.defaults['toolbar'] = true; SyntaxHighlighter.all();</script>
+  <script type="text/javascript">function initTutorialTooltip(){$("div.syntaxhighlighter").mouseover(function(){ShowMscTooltip(this, 'To preserve the line breaks in a code block, place your mouse pointer within the block and double-click to select the block before you copy it.');});$("div.syntaxhighlighter").mouseout(function(){HideMscTooltip();});}window.setTimeout(initTutorialTooltip,2000);</script>
+  
+  <link href="FormsAuthentication_files/prettify.css" rel="stylesheet" type="text/css" media="screen">
+  <script type="text/javascript" src="FormsAuthentication_files/prettify.js"></script>
+  <script type="text/javascript">$(document).ready(function(){if($("[class='prettyprint']")!= null){prettyPrint();}});</script>
+
+
+
+</head><body>
+<form method="post" action="/security/tutorials/an-overview-of-forms-authentication-cs?" id="form1">
+<div class="aspNetHidden">
+<input name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUENTM4MQ9kFgJmD2QWAmYPZBYCZg9kFgJmD2QWAmYPZBYCZg9kFgICBRBkZBYCAg0PZBYCAgEPZBYCZg9kFgJmDxYCHgdWaXNpYmxlZ2RktqQmrcLHo0/KSomLABiV1Ib+w+Y=" type="hidden">
+</div>
+
+<div id="content_container" class="content_container">
+<div class="header_container">
+    <div class="header_top"><div class="header_top_right">&nbsp;</div></div>
+    
+    <div class="header_content">
+        <div class="header_content_right">
+            <a href="http://www.asp.net/" title="Home Page">
+                <img class="logo" style="border-width: 0px;" alt="" src="FormsAuthentication_files/logo.png" title="Microsoft ASP.NET">
+            </a>
+        <div id="WLSearchBoxDiv"><div id="WLSearchBoxPlaceholder"><input class="search_box" id="WLSearchBoxInput" name="WLSearchBoxInput" value="Search"><input class="search_button" id="WLSearchBoxButton" value="" name="WLSearchBoxButton" type="button"></div></div><div id="mainnav"><ul class="nav_main"><li class="first"><a href="http://www.asp.net/home">Home</a></li><li><a href="http://www.asp.net/get-started">Get Started</a></li><li><a href="http://www.asp.net/downloads">Downloads</a></li><li><a href="http://www.asp.net/web-pages">Web Pages</a></li><li><a href="http://www.asp.net/web-forms">Web Forms</a></li><li><a href="http://www.asp.net/mvc">MVC</a></li><li><a href="http://www.asp.net/community">Community</a></li><li><a href="http://forums.asp.net/">Forums</a></li></ul></div>            
+      <div class="nav_login_user"><ul><li class="first"><a href="http://login.asp.net/login/signin.aspx?ReturnUrl=http://www.asp.net/security/tutorials/an-overview-of-forms-authentication-cs">Sign In</a></li><li><a href="http://login.asp.net/login/createuser.aspx?ReturnUrl=http://www.asp.net/security/tutorials/an-overview-of-forms-authentication-cs">Join</a></li></ul></div>
+        </div>
+    </div>
+    <div class="header_breadcrumb_top">
+  <div class="header_breadcrumb_top_right"></div>
+</div>
+<div class="header_breadcrumb_content">
+  <div class="header_breadcrumb_content_right"><span><span><a href="http://www.asp.net/home">Home</a></span><span> › </span><span><a href="http://www.asp.net/security/tutorials">Security Tutorials</a></span><span> › </span><span>An Overview of Forms Authentication</span></span></div>
+</div>
+<div class="header_breadcrumb_bottom">
+  <div class="header_breadcrumb_bottom_right"></div>
+</div>
+</div>
+
+<div class="center top_banner"><iframe src="FormsAuthentication_files/adbanner.htm" marginheight="0" marginwidth="0" frameborder="0" height="90" width="728" scrolling="no">&nbsp;</iframe></div>
+
+
+<div class="columns_container">
+ <div class="columns_left">
+  <div class="columns_left_padding">
+
+
+
+<div class="heading_container"><div class="heading_right_top">&nbsp;</div>
+   <h1>An Overview of Forms Authentication</h1>
+   
+</div>
+<div class="heading_bottom heading_bottom_connected"><span></span></div>
+<div class="rounded_box_top_connected"><span></span></div>
+<div class="rounded_box blue_rounded_box rounded_box_connected">
+     <div class="rounded_box_content">
+	
+  <p>This is the <strong>C#</strong> tutorial
+	  
+                (<a href="http://www.asp.net/security/tutorials/an-overview-of-forms-authentication-vb">Switch to the Visual Basic tutorial</a>) 
+              </p>
+
+	<p class="first introduction"></p><p>In this tutorial we will turn from
+ mere discussion to implementation; in particular, we will look at 
+implementing forms authentication. The web application we start 
+constructing in this tutorial will continue to be built upon in 
+subsequent tutorials, as we move from simple forms authentication to 
+membership and roles.</p>
+<p>Please see this video for more information on this topic: <a href="http://www.asp.net/security/videos/using-basic-forms-authentication-in-aspnet" title="using-basic-forms-authentication-in-aspnet">Using Basic Forms Authentication in ASP.NET</a>.</p>
+	<p class="submit_buttons"><span class="first"><a href="http://download.microsoft.com/download/2/F/7/2F705A34-F9DE-4112-BBDE-60098089645E/ASPNET_Security_Tutorial_02_CS.zip">Download the code for this tutorial</a></span><span class="light">&nbsp;&nbsp;|&nbsp;&nbsp;</span><span><a href="http://download.microsoft.com/download/2/F/7/2F705A34-F9DE-4112-BBDE-60098089645E/aspnet_tutorial02_FormsAuth_cs.pdf">Download the tutorial in PDF format</a></span></p>
+	
+  <div class="pagination"><a href="http://www.asp.net/security/tutorials/security-basics-and-asp-net-support-cs">« Previous Tutorial </a><span class="light"> | </span><a href="http://www.asp.net/security/tutorials/forms-authentication-configuration-and-advanced-topics-cs"> Next Tutorial »</a></div>
+
+     </div>
+     <div class="rounded_box_bottom"><span></span></div>
+</div>
+
+
+
+	
+
+  <h2>Introduction</h2>
+<p>In the <a href="http://www.asp.net/Learn/Security/tutorial-01-cs.aspx">preceding tutorial</a>
+ we discussed the various authentication, authorization, and user 
+account options provided by ASP.NET. In this tutorial we will turn from 
+mere discussion to implementation; in particular, we will look at 
+implementing forms authentication. The web application we start 
+constructing in this tutorial will continue to be built upon in 
+subsequent tutorials, as we move from simple forms authentication to 
+membership and roles.</p>
+<p>This tutorial begins with an in-depth look at the forms 
+authentication workflow, a topic we touched upon in the previous 
+tutorial. Following that, we will create an ASP.NET website through 
+which to demo the concepts of forms authentication. Next, we will 
+configure the site to use forms authentication, create a simple login 
+page, and see how to determine, in code, whether a user is authenticated
+ and, if so, the username they logged in with.</p>
+<p>Understanding the forms authentication workflow, enabling it in a web
+ application, and creating the login and logoff pages are all vital 
+steps in building an ASP.NET application that supports user accounts and
+ authenticates users through a web page. Because of this – and because 
+these tutorials build upon one another - I would encourage you to work 
+through this tutorial in full before moving on to the next one even if 
+you already have had experience configuring forms authentication in past
+ projects.</p>
+<h2>Understanding the Forms Authentication Workflow</h2>
+<p>When the ASP.NET runtime processes a request for an ASP.NET resource,
+ such as an ASP.NET page or ASP.NET Web service, the request raises a 
+number of events during its lifecycle. There are events raised at the 
+very beginning and very end of the request, ones raised when the request
+ is being authenticated and authorized, an event raised in the case of 
+an unhandled exception, and so forth. To see a complete listing of the 
+events, refer to the <a href="http://msdn2.microsoft.com/en-us/library/system.web.httpapplication_events.aspx">HttpApplication object’s events</a>.</p>
+<p><em>HTTP Modules</em> are managed classes whose code is executed in 
+response to a particular event in the request lifecycle. ASP.NET ships 
+with a number of HTTP Modules that perform essential tasks behind the 
+scenes. Two built-in HTTP Modules that are especially relevant to our 
+discussion are:</p>
+<ul>
+<li><strong><a href="http://msdn2.microsoft.com/en-us/library/system.web.security.formsauthenticationmodule.aspx"><code>FormsAuthenticationModule</code></a></strong>
+ – authenticates the user by inspecting the forms authentication ticket,
+ which is typically included in the user’s cookies collection. If no 
+forms authentication ticket is present, the user is anonymous. </li>
+<li><strong><a href="http://msdn2.microsoft.com/en-us/library/system.web.security.urlauthorizationmodule.aspx"><code>UrlAuthorizationModule</code></a></strong>
+ – determines whether or not the current user is authorized to access 
+the requested URL. This module determines the authority by consulting 
+the authorization rules specified in the application’s configuration 
+files. ASP.NET also includes the <a href="http://msdn2.microsoft.com/en-us/library/system.web.security.fileauthorizationmodule.aspx"><code>FileAuthorizationModule</code></a> that determines authority by consulting the requested file(s) ACLs. </li>
+</ul>
+<p>The <code>FormsAuthenticationModule</code> attempts to authenticate the user prior to the <code>UrlAuthorizationModule</code> (and <code>FileAuthorizationModule</code>)
+ executing. If the user making the request is not authorized to access 
+the requested resource, the authorization module terminates the request 
+and returns an <a href="http://www.checkupdown.com/status/E401.html">HTTP 401 Unauthorized</a>
+ status. In Windows authentication scenarios, the HTTP 401 status is 
+returned to the browser. This status code causes the browser to prompt 
+the user for their credentials via a modal dialog box. With forms 
+authentication, however, the HTTP 401 Unauthorized status is never sent 
+to the browser because the FormsAuthenticationModule detects this status
+ and modifies it to redirect the user to the login page instead (via an <a href="http://www.checkupdown.com/status/E302.html">HTTP 302 Redirect</a> status).</p>
+<p>The login page’s responsibility is to determine if the user’s 
+credentials are valid and, if so, to create a forms authentication 
+ticket and redirect the user back to the page they were attempting to 
+visit. The authentication ticket is included in subsequent requests to 
+the pages on the website, which the <code>FormsAuthenticationModule</code> uses to identify the user.</p>
+<div class="photo_container">
+<div class="photo_container_inner">
+<div class="photo_border"><img src="FormsAuthentication_files/aspnet_tutorial02_FormsAuth_cs_figure01.png" alt="The Forms Authentication Workflow" style="width: 517px; height: 592px;"></div>
+<p class="caption"><strong>Figure 1</strong>: The Forms Authentication Workflow</p>
+</div>
+<div class="clear"></div>
+</div>
+<h3>Remembering the Authentication Ticket Across Page Visits</h3>
+<p>After logging in, the forms authentication ticket must be sent back 
+to the web server on each request so that the user remains logged in as 
+they browse the site. This is typically accomplished by placing the 
+authentication ticket in the user’s cookies collection. <a href="http://en.wikipedia.org/wiki/HTTP_cookie">Cookies</a>
+ are small text files that reside on the user’s computer and are 
+transmitted in the HTTP headers on each request to the website that 
+created the cookie. Therefore, once the forms authentication ticket has 
+been created and stored in the browser’s cookies, each subsequent visit 
+to that site sends the authentication ticket along with the request, 
+thereby identifying the user.</p>
+<p>One aspect of cookies is their expiration, which is the date and time
+ at which the browser discards the cookie. When the forms authentication
+ cookie expires, the user can no longer be authenticated and therefore 
+become anonymous. When a user is visiting from a public terminal, 
+chances are they want their authentication ticket to expire when they 
+close their browser. When visiting from home, however, that same user 
+might want the authentication ticket to be remembered across browser 
+restarts so that they do not have to re-log in each time they visit the 
+site. This decision is often made by the user in the form of a “Remember
+ me” checkbox on the login page. In Step 3 we will examine how to 
+implement a “Remember me” checkbox in the login page. The following 
+tutorial addresses the authentication ticket timeout settings in detail.</p>
+<blockquote>
+<p><strong>Note: </strong>It is possible that the user agent used to log
+ on to the website may not support cookies. In such a case, ASP.NET can 
+use cookieless forms authentication tickets. In this mode, the 
+authentication ticket is encoded into the URL. We will look at when 
+cookieless authentication tickets are used and how they are created and 
+managed in the next tutorial.</p>
+</blockquote>
+<h3>The Scope of Forms Authentication</h3>
+<p>The <code>FormsAuthenticationModule</code> is managed code that is part of the ASP.NET runtime. Prior to version 7 of Microsoft’s <a href="http://www.iis.net/">Internet Information Services (IIS)</a>
+ web server, there was a distinct barrier between IIS’s HTTP pipeline 
+and the ASP.NET runtime’s pipeline. In short, in IIS 6 and earlier, the <code>FormsAuthenticationModule</code>
+ only executes when a request is delegated from IIS to the ASP.NET 
+runtime. By default, IIS processes static content itself – like HTML 
+pages and CSS and image files – and only hands off requests to the 
+ASP.NET runtime when a page with an extension of .aspx, .asmx, or .ashx 
+is requested. </p>
+<p>IIS 7, however, allows for integrated IIS and ASP.NET pipelines. With
+ a few configuration settings you can setup IIS 7 to invoke the 
+FormsAuthenticationModule for <em>all</em> requests. Furthermore, with IIS 7 you can define URL authorization rules for files of any type. For more information, see <a href="http://learn.iis.net/page.aspx/110/changes-between-iis6-and-iis7-security">Changes Between IIS6 and IIS7 Security</a>, <a href="http://learn.iis.net/page.aspx/139/your-web-platform-security">Your Web Platform Security</a>, and <a href="http://www.iis.net/articles/view.aspx/IIS7/Managing-IIS7/Configuring-Security/URL-Authorization/Understanding-IIS7-URL-Authorization">Understanding IIS7 URL Authorization</a>.</p>
+<p>Long story short, in versions prior to IIS 7, you can only use forms 
+authentication to protect resources handled by the ASP.NET runtime. 
+Likewise, URL authorization rules are only applied to resources handled 
+by the ASP.NET runtime. But with IIS 7 it is possible to integrate the 
+FormsAuthenticationModule and UrlAuthorizationModule into IIS’s HTTP 
+pipeline, thereby extending this functionality to all requests.</p>
+<h2>Step 1: Creating an ASP.NET Website for this Tutorial Series</h2>
+<p>In order to reach the widest possible audience, the ASP.NET website 
+we will be building throughout this series will be created with 
+Microsoft’s free version of Visual Studio 2008, <a href="http://www.microsoft.com/express/vwd/">Visual Web Developer 2008</a>. We will implement the <code>SqlMembershipProvider</code> user store in a <a href="http://msdn2.microsoft.com/en-us/sql/Aa336346.aspx">Microsoft SQL Server 2005 Express Edition</a>
+ database. If you are using Visual Studio 2005 or a different edition of
+ Visual Studio 2008 or SQL Server, don’t worry - the steps will be 
+nearly identical and any non-trivial differences will be pointed out.</p>
+<blockquote>
+<p><strong>Note:</strong> The demo web application used in each tutorial
+ is available as a download. This downloadable application was created 
+with Visual Web Developer 2008 targeted for the .NET Framework version 
+3.5. Since the application is targeted for .NET 3.5, its Web.config file
+ includes additional, 3.5-specific configuration elements. Long story 
+short, if you have yet to install .NET 3.5 on your computer then the 
+downloadable web application will not work without first removing the 
+3.5-specific markup from Web.config.</p>
+</blockquote>
+<p>Before we can configure forms authentication, we first need an 
+ASP.NET website. Start by creating a new file system-based ASP.NET 
+website. To accomplish this, launch Visual Web Developer and then go to 
+the File menu and choose New Web Site, displaying the New Web Site 
+dialog box. Choose the ASP.NET Web Site template, set the Location 
+drop-down list to File System, choose a folder to place the web site, 
+and set the language to C#. This will create a new web site with a 
+Default.aspx ASP.NET page, an App_Data folder, and a Web.config file.</p>
+<blockquote>
+<p><strong>Note:</strong> Visual Studio supports two modes of project 
+management: Web Site Projects and Web Application Projects. Web Site 
+Projects lack a project file, whereas Web Application Projects mimic the
+ project architecture in Visual Studio .NET 2002/2003 – they include a 
+project file and compile the project’s source code into a single 
+assembly, which is placed in the /bin folder. Visual Studio 2005 
+initially only supported Web Site Projects, although the Web Application
+ Project model was reintroduced with Service Pack 1; Visual Studio 2008 
+offers both project models. The Visual Web Developer 2005 and 2008 
+editions, however, only support Web Site Projects. I will be using the 
+Web Site Project model. If you are using a non-Express edition and want 
+to use the <a href="http://msdn2.microsoft.com/en-us/library/aa730880%28vs.80%29.aspx">Web Application Project model</a>
+ instead, feel free to do so but be aware that there may be some 
+discrepancies between what you see on your screen and the steps you must
+ take versus the screen shots shown and instructions provided in these 
+tutorials. </p>
+</blockquote>
+<div class="photo_container">
+<div class="photo_container_inner">
+<div class="photo_border"><a href="http://static.asp.net/asp.net/images/security/02/images/aspnet_tutorial02_FormsAuth_cs_figure02.png"><img src="FormsAuthentication_files/aspnet_tutorial02_FormsAuth_cs_figure02s.png" alt="Create a New File System-Based Web Site" style="width: 550px; height: 364px;"></a></div>
+<p class="caption"><strong>Figure 2</strong>: Create a New File System-Based Web Site <span class="nobreak">(<a href="http://static.asp.net/asp.net/images/security/02/images/aspnet_tutorial02_FormsAuth_cs_figure02.png">Click to view full-size image</a>)</span></p>
+</div>
+<div class="clear"></div>
+</div>
+<h3>Adding a Master Page</h3>
+<p>Next, add a new Master Page to the site in the root directory named Site.master. <a href="http://msdn2.microsoft.com/en-us/library/wtxbf3hh.aspx">Master pages</a>
+ enable a page developer to define a site-wide template that can be 
+applied to ASP.NET pages. The main benefit of master pages is that the 
+site’s overall appearance can be defined in a single location, thereby 
+making it easy to update or tweak the site’s layout.</p>
+<div class="photo_container">
+<div class="photo_container_inner">
+<div class="photo_border"><a href="http://static.asp.net/asp.net/images/security/02/images/aspnet_tutorial02_FormsAuth_cs_figure03.png"><img src="FormsAuthentication_files/aspnet_tutorial02_FormsAuth_cs_figure03s.png" alt="Add a Master Page Named Site.master to the Website" style="width: 683px; height: 370px;"></a></div>
+<p class="caption"><strong>Figure 3</strong>: Add a Master Page Named Site.master to the Website <span class="nobreak">(<a href="http://static.asp.net/asp.net/images/security/02/images/aspnet_tutorial02_FormsAuth_cs_figure03.png">Click to view full-size image</a>)</span></p>
+</div>
+<div class="clear"></div>
+</div>
+<p>Define the site-wide page layout here in the master page. You can use
+ the Design view and add whatever Layout or Web controls you need, or 
+you can manually add the markup by hand in the Source view. I structured
+ my master page’s layout to mimic the layout used in my <em><a href="http://asp.net/learn/data-access/">Working with Data in ASP.NET 2.0</a></em> tutorial series (see Figure 4). The master page uses <a href="http://www.w3schools.com/css/default.asp">cascading style sheets</a>
+ for positioning and styles with the CSS settings defined in the file 
+Style.css (which is included in this tutorial’s associated download). 
+While you cannot tell from the markup shown below, the CSS rules are 
+defined such that the navigation &lt;div&gt;’s content is absolutely 
+positioned so that it appears on the left and has a fixed width of 200 
+pixels.</p>
+<p>
+    
+            <code id="code1" class="code_block">&lt;%@ Master Language="C#" AutoEventWireup="true" CodeFile="Site.master.cs" Inherits="Site" %&gt;
+&lt;!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"&gt;
+&lt;html xmlns="http://www.w3.org/1999/xhtml" &gt;
+&lt;head id="Head1" runat="server"&gt;
+    &lt;title&gt;Forms Authentication, Authorization, and User Accounts&lt;/title&gt;
+    &lt;link href="Styles.css" rel="stylesheet" type="text/css" /&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;div id="wrapper"&gt;
+        &lt;form id="form1" runat="server"&gt;
+        
+            &lt;div id="header"&gt;
+                &lt;span class="title"&gt;User Account Tutorials&lt;/span&gt;
+            &lt;/div&gt;
+        
+            &lt;div id="content"&gt;
+                &lt;asp:contentplaceholder id="MainContent" runat="server"&gt;
+                  &lt;!-- Page-specific content will go here... --&gt;
+                &lt;/asp:contentplaceholder&gt;
+            &lt;/div&gt;
+            
+            &lt;div id="navigation"&gt;
+                TODO: Menu will go here...
+            &lt;/div&gt;
+        &lt;/form&gt;
+    &lt;/div&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></p>
+<p>A master page defines both the static page layout and the regions 
+that can be edited by the ASP.NET pages that use the master page. These 
+content editable regions are indicated by the <code>ContentPlaceHolder</code> control, which can be seen within the content &lt;div&gt;. Our master page has a single <code>ContentPlaceHolder</code> (MainContent), but master page’s may have multiple ContentPlaceHolders.</p>
+<p>With the markup entered above, switching to the Design view shows the
+ master page’s layout. Any ASP.NET pages that use this master page will 
+have this uniform layout, with the ability to specify the markup for the
+ <code>MainContent</code> region.</p>
+<div class="photo_container">
+<div class="photo_container_inner">
+<div class="photo_border"><a href="http://static.asp.net/asp.net/images/security/02/images/aspnet_tutorial02_FormsAuth_cs_figure04.png"><img src="FormsAuthentication_files/aspnet_tutorial02_FormsAuth_cs_figure04s.png" alt="The Master Page, When Viewed Through the Design View" style="width: 550px; height: 445px;"></a></div>
+<p class="caption"><strong>Figure 4</strong>: The Master Page, When Viewed Through the Design View <span class="nobreak">(<a href="http://static.asp.net/asp.net/images/security/02/images/aspnet_tutorial02_FormsAuth_cs_figure04.png">Click to view full-size image</a>)</span></p>
+</div>
+<div class="clear"></div>
+</div>
+<h3>Creating Content Pages</h3>
+<p>At this point we have a Default.aspx page in our website, but it does
+ not use the master page we just created. While it is possible to 
+manipulate the declarative markup of a web page to use a master page, if
+ the page doesn’t contain any content yet it is easier to just delete 
+the page and re-add it to the project, specifying the master page to 
+use. Therefore, start by deleting Default.aspx from the project.</p>
+<p>Next, right-click on the project name in the Solution Explorer and 
+choose to add a new Web Form named Default.aspx. This time, check the 
+“Select master page” checkbox and choose the Site.master master page 
+from the list.</p>
+<div class="photo_container">
+<div class="photo_container_inner">
+<div class="photo_border"><a href="http://static.asp.net/asp.net/images/security/02/images/aspnet_tutorial02_FormsAuth_cs_figure05.png"><img src="FormsAuthentication_files/aspnet_tutorial02_FormsAuth_cs_figure05s.png" alt="Add a New Default.aspx Page Choosing to Select a Master Page" style="width: 550px; height: 370px;"></a></div>
+<p class="caption"><strong>Figure 5</strong>: Add a New Default.aspx Page Choosing to Select a Master Page <span class="nobreak">(<a href="http://static.asp.net/asp.net/images/security/02/images/aspnet_tutorial02_FormsAuth_cs_figure05.png">Click to view full-size image</a>)</span></p>
+</div>
+<div class="clear"></div>
+</div>
+<div class="photo_container">
+<div class="photo_container_inner">
+<div class="photo_border"><img src="FormsAuthentication_files/aspnet_tutorial02_FormsAuth_cs_figure06.png" alt="Use the Site.master Master Page" style="width: 561px; height: 350px;"></div>
+<p class="caption"><strong>Figure 6</strong>: Use the Site.master Master Page</p>
+</div>
+<div class="clear"></div>
+</div>
+<blockquote>
+<p><strong>Note:</strong> If you are using the Web Application Project 
+Model the Add New Item dialog box does not include a “Select master 
+page” checkbox. Instead, you need to add an item of type “Web Content 
+Form.” After choosing the “Web Content Form” option and clicking Add, 
+Visual Studio will display the same Select a Master dialog box shown in 
+Figure 6.</p>
+</blockquote>
+<p>The new Default.aspx page’s declarative markup includes just a @Page 
+directive specifying the path to the master page file and a Content 
+control for the master page’s MainContent ContentPlaceHolder.</p>
+<p>
+
+            <code id="code2" class="code_block">&lt;%@ Page 
+Language="C#" MasterPageFile="/Site.master" AutoEventWireup="true" 
+CodeFile="Default.aspx.cs" Inherits="_Default" Title="Untitled Page" 
+%&gt;
+&lt;asp:Content ID="Content1" ContentPlaceHolderID="MainContent" 
+Runat="Server"&gt;
+&lt;/asp:Content&gt;</code></p>
+<p>For now, leave Default.aspx empty. We will return to it later in this tutorial to add content.</p>
+<p><strong>Note:</strong> Our master page includes a section for a menu 
+or some other navigation interface. We will create such an interface in a
+ future tutorial.</p>
+<h2>Step 2: Enabling Forms Authentication</h2>
+<p>With the ASP.NET website created, our next task is to enable forms 
+authentication. The application’s authentication configuration is 
+specified through the <a href="http://msdn2.microsoft.com/en-us/library/532aee0e.aspx"><code>&lt;authentication&gt;</code> element</a> in Web.config. The <code>&lt;authentication&gt;</code>
+ element contains a single attribute named mode that specifies the 
+authentication model used by the application. This attribute can have 
+one of the following four values:</p>
+<ul>
+<li><strong>Windows</strong> – as discussed in the preceding tutorial, 
+when an application uses Windows authentication it is the web server’s 
+responsibility to authenticate the visitor, and this is usually done 
+through Basic, Digest, or Integrated Windows authentication. </li>
+<li><strong>Forms </strong>– users are authenticated via a form on a web page. </li>
+<li><strong>Passport </strong>– users are authenticated using Microsoft’s Passport Network. </li>
+<li><strong>None </strong>– no authentication model is used; all visitors are anonymous. </li>
+</ul>
+<p>By default, ASP.NET applications use Windows authentication. To 
+change the authentication type to forms authentication, then, we need to
+ modify the <code>&lt;authentication&gt;</code> element’s mode attribute to Forms.</p>
+<p>If your project does not yet contain a Web.config file, add one now 
+by right-clicking on the project name in the Solution Explorer, choosing
+ Add New Item, and then adding a Web Configuration file.</p>
+<div class="photo_container">
+<div class="photo_container_inner">
+<div class="photo_border"><a href="http://static.asp.net/asp.net/images/security/02/images/aspnet_tutorial02_FormsAuth_cs_figure07.png"><img src="FormsAuthentication_files/aspnet_tutorial02_FormsAuth_cs_figure07s.png" alt="If Your Project Does Not Yet Include Web.config, Add It Now" style="width: 550px; height: 370px;"></a></div>
+<p class="caption"><strong>Figure 7</strong>: If Your Project Does Not Yet Include Web.config, Add It Now <span class="nobreak">(<a href="http://static.asp.net/asp.net/images/security/02/images/aspnet_tutorial02_FormsAuth_cs_figure07.png">Click to view full-size image</a>)</span></p>
+</div>
+<div class="clear"></div>
+</div>
+<p>Next, locate the <code>&lt;authentication&gt;</code> element and 
+update it to use forms authentication. After this change, your 
+Web.config file’s markup should look similar to the following:</p>
+<p>
+
+            <code id="code3" class="code_block">&lt;configuration&gt;
+    &lt;system.web&gt;
+        ... Unrelated configuration settings and comments removed for brevity ...
+        &lt;!--
+            The &lt;authentication&gt; section enables configuration 
+            of the security authentication mode used by 
+            ASP.NET to identify an incoming user. 
+        --&gt;
+        &lt;authentication mode="Forms" /&gt;
+    &lt;/system.web&gt;
+&lt;/configuration&gt;</code></p>
+<blockquote>
+<p><strong>Note: </strong>Since Web.config is an XML file, casing is 
+important. Make sure that you set the mode attribute to Forms, with a 
+capital “F”. If you use a different casing, such as “forms”, you’ll 
+receive a configuration error when visiting the site through a browser.</p>
+</blockquote>
+<p>The <code>&lt;authentication&gt;</code> element may optionally include a <code>&lt;forms&gt;</code>
+ child element that contains forms authentication-specific settings. For
+ now, let’s just use the default forms authentication settings. We will 
+explore the <code>&lt;forms&gt;</code> child element in more detail in the next tutorial.</p>
+<h2>Step 3: Building the Login Page</h2>
+<p>In order to support forms authentication our website needs a login 
+page. As discussed in the “Understanding the Forms Authentication 
+Workflow” section, the <code>FormsAuthenticationModule</code> will 
+automatically redirect the user to the login page if they attempt to 
+access a page that they are not authorized to view. There are also 
+ASP.NET Web controls that will display a link to the login page to 
+anonymous users. This begs the question, “What is the URL of the login 
+page?”</p>
+<p>By default, the forms authentication system expects the login page to
+ be named Login.aspx and placed in the root directory of the web 
+application. If you want to use a different login page URL, you can do 
+so by specifying it in Web.config. We will see how to do this in the 
+subsequent tutorial.</p>
+<p>The login page has three responsibilities:</p>
+<ol>
+<li>Provide an interface that allows the visitor to enter their credentials. </li>
+<li>Determine if the submitted credentials are valid. </li>
+<li>“Log in” the user by creating the forms authentication ticket. </li>
+</ol>
+<h3>Creating the Login Page’s User Interface</h3>
+<p>Let’s get started with the first task. Add a new ASP.NET page to the 
+site’s root directory named Login.aspx and associate it with the 
+Site.master master page.</p>
+<div class="photo_container">
+<div class="photo_container_inner">
+<div class="photo_border"><a href="http://static.asp.net/asp.net/images/security/02/images/aspnet_tutorial02_FormsAuth_cs_figure08.png"><img src="FormsAuthentication_files/aspnet_tutorial02_FormsAuth_cs_figure08s.png" alt="Add a New ASP.NET Page Named Login.aspx" style="width: 550px; height: 370px;"></a></div>
+<p class="caption"><strong>Figure 8</strong>: Add a New ASP.NET Page Named Login.aspx <span class="nobreak">(<a href="http://static.asp.net/asp.net/images/security/02/images/aspnet_tutorial02_FormsAuth_cs_figure08.png">Click to view full-size image</a>)</span></p>
+</div>
+<div class="clear"></div>
+</div>
+<p>The typical login page interface consists of two textboxes – one for 
+the user’s name, one for their password – and a button to submit the 
+form. Websites oftentimes include a “Remember me” checkbox that, if 
+checked, persists the resulting authentication ticket across browser 
+restarts.</p>
+<p>Add two TextBoxes to Login.aspx and set their <code>ID</code> properties to UserName and Password, respectively. Also set Password’s <code>TextMode</code> property to Password. Next, add a CheckBox control, setting its <code>ID</code> property to RememberMe and its <code>Text</code> property to “Remember Me”. Following that, add a Button named LoginButton whose <code>Text</code> property is set to “Login”. And finally, add a Label Web control and set its <code>ID</code> property to InvalidCredentialsMessage, its <code>Text</code> property to “Your username or password is invalid. Please try again.”, its <code>ForeColor</code> property to Red, and its <code>Visible</code> property to False.</p>
+<p>At this point your screen should look similar to the screen shot in 
+Figure 9, and your page’s declarative syntax should like the following:</p>
+<p>
+
+            <code id="code4" class="code_block">&lt;%@ Page 
+Language="C#" MasterPageFile="/Site.master" AutoEventWireup="true" 
+CodeFile="Login.aspx.cs" Inherits="Login" %&gt;
+&lt;asp:Content ID="Content1" ContentPlaceHolderID="MainContent" 
+Runat="Server"&gt;
+    &lt;h1&gt;
+        Login&lt;/h1&gt;
+    &lt;p&gt;
+        Username:
+        &lt;asp:TextBox ID="UserName" 
+runat="server"&gt;&lt;/asp:TextBox&gt;&lt;/p&gt;
+    &lt;p&gt;
+        Password:
+        &lt;asp:TextBox ID="Password" runat="server" 
+TextMode="Password"&gt;&lt;/asp:TextBox&gt;&lt;/p&gt;
+    &lt;p&gt;
+        &lt;asp:CheckBox ID="RememberMe" runat="server" Text="Remember 
+Me" /&gt;&nbsp;&lt;/p&gt;
+    &lt;p&gt;
+        &lt;asp:Button ID="LoginButton" runat="server" Text="Login" 
+OnClick="LoginButton_Click" /&gt;&nbsp;&lt;/p&gt;
+    &lt;p&gt;
+        &lt;asp:Label ID="InvalidCredentialsMessage" runat="server" 
+ForeColor="Red" Text="Your username or password is invalid. Please try 
+again."
+            Visible="False"&gt;&lt;/asp:Label&gt;&nbsp;&lt;/p&gt;
+&lt;/asp:Content&gt;</code></p>
+<div class="photo_container">
+<div class="photo_container_inner">
+<div class="photo_border"><a href="http://static.asp.net/asp.net/images/security/02/images/aspnet_tutorial02_FormsAuth_cs_figure09.png"><img src="FormsAuthentication_files/aspnet_tutorial02_FormsAuth_cs_figure09s.png" alt=" The Login Page Contains Two TextBoxes, a CheckBox, a Button, and a Label" style="width: 550px; height: 518px;"></a></div>
+<p class="caption"><strong>Figure 9</strong>:  The Login Page Contains Two TextBoxes, a CheckBox, a Button, and a Label <span class="nobreak">(<a href="http://static.asp.net/asp.net/images/security/02/images/aspnet_tutorial02_FormsAuth_cs_figure09.png">Click to view full-size image</a>)</span></p>
+</div>
+<div class="clear"></div>
+</div>
+<p>Finally, create an event handler for the LoginButton’s Click event. 
+From the Designer, simply double-click the Button control to create this
+ event handler.</p>
+<h3>Determining If the Supplied Credentials are Valid</h3>
+<p>We now need to implement task 2 in the Button’s Click event handler –
+ determining whether the supplied credentials are valid. In order to do 
+this there needs to be a user store that holds all of the users’ 
+credentials so that we can determine if the supplied credentials match 
+up with any known credentials.</p>
+<p>Prior to ASP.NET 2.0, developers were responsible for implementing 
+both their own user stores and writing the code to validate the supplied
+ credentials against the store. Most developers would implement the user
+ store in a database, creating a table named Users with columns like 
+UserName, Password, Email, LastLoginDate, and so forth. This table, 
+then, would have one record per user account. Verifying a user’s 
+supplied credentials would involve querying the database for a matching 
+username and then ensuring that the password in the database 
+corresponded to the supplied password.</p>
+<p>With ASP.NET 2.0, developers should use one of the Membership 
+providers to manage the user store. In this tutorial series we will be 
+using the SqlMembershipProvider, which uses a SQL Server database for 
+the user store. When using the SqlMembershipProvider we need to 
+implement a specific database schema that includes the tables, views, 
+and stored procedures expected by the provider. We will examine how to 
+implement this schema in the <em><strong>Creating the Membership Schema in SQL Server</strong></em> tutorial. With the Membership provider in place, validating the user’s credentials is as simple as calling the <a href="http://msdn2.microsoft.com/en-us/library/system.web.security.membership.aspx">Membership class</a>’s <a href="http://msdn2.microsoft.com/en-us/library/system.web.security.membership.validateuser.aspx">ValidateUser(<em>username</em>, <em>password</em>) method</a>, which returns a Boolean value indicating whether the validity of the <em>username</em> and <em>password</em>
+ combination. Seeing as we have not yet implemented the 
+SqlMembershipProvider’s user store, we cannot use the Membership class’s
+ ValidateUser method at this time. </p>
+<p>Rather than take the time to build our own custom Users database 
+table (which would be obsolete once we implemented the 
+SqlMembershipProvider), let’s instead hard-code the valid credentials 
+within the login page itself. In the LoginButton’s Click event handler, 
+add the following code:</p>
+<p>
+
+            <code id="code5" class="code_block">protected void LoginButton_Click(object sender, EventArgs e)
+{
+    // Three valid username/password pairs: Scott/password, Jisun/password, and Sam/password.
+    string[] users = { "Scott", "Jisun", "Sam" };
+    string[] passwords = { "password", "password", "password" };
+    for (int i = 0; i &lt; users.Length; i++)
+    {
+        bool validUsername = (string.Compare(UserName.Text, users[i], true) == 0);
+        bool validPassword = (string.Compare(Password.Text, passwords[i], false) == 0);
+        if (validUsername &amp;&amp; validPassword)
+        {
+            // TODO: Log in the user...
+            // TODO: Redirect them to the appropriate page
+        }
+    }
+    // If we reach here, the user's credentials were invalid
+    InvalidCredentialsMessage.Visible = true;
+}</code></p>
+<p>As you can see, there are three valid user accounts – Scott, Jisun, 
+and Sam – and all three have the same password (“password”). The code 
+loops through the users and passwords arrays looking for a valid 
+username and password match. If both the username and password are 
+valid, we need to login the user and then redirect them to the 
+appropriate page. If the credentials are invalid, then we display the 
+InvalidCredentialsMessage Label.</p>
+<p>When a user enters valid credentials, I mentioned that they are then 
+redirected to the “appropriate page.” What is the appropriate page, 
+though? Recall that when a user visits a page they are not authorized to
+ view, the FormsAuthenticationModule automatically redirects them to the
+ login page. In doing so, it includes the requested URL in the 
+querystring via the ReturnUrl parameter. That is, if a user attempted to
+ visit ProtectedPage.aspx, and they were not authorized to do so, the 
+FormsAuthenticationModule would redirect them to:</p>
+<p>Login.aspx?ReturnUrl=ProtectedPage.aspx</p>
+<p>Upon successfully logging in, the user should be redirected back to 
+ProtectedPage.aspx. Alternatively, users may visit the login page on 
+their own volition. In that case, after logging in the user they should 
+be sent to the root folder’s Default.aspx page.</p>
+<h3>Logging In the User</h3>
+<p>Assuming that the supplied credentials are valid, we need to create a
+ forms authentication ticket, thereby logging in the user to the site. 
+The <a href="http://msdn2.microsoft.com/en-us/library/system.web.security.formsauthentication.aspx">FormsAuthentication class</a> in the <a href="http://msdn2.microsoft.com/en-us/library/system.web.security.aspx">System.Web.Security namespace</a>
+ provides assorted methods for logging in and logging out users via the 
+forms authentication system. While there are several methods in the 
+FormsAuthentication class, the three we are interested in at this 
+juncture are:</p>
+<ul>
+<li><a href="http://msdn2.microsoft.com/en-us/library/system.web.security.formsauthentication.getauthcookie.aspx">GetAuthCookie(<em>username</em>, <em>persistCookie</em>)</a> – creates a forms authentication ticket for the supplied name <em>username</em>. Next, this method creates and returns an HttpCookie object that holds the contents of the authentication ticket. If <em>persistCookie</em> is true, a persistent cookie is created. </li>
+<li><a href="http://msdn2.microsoft.com/en-us/library/system.web.security.formsauthentication.setauthcookie.aspx">SetAuthCookie(<em>username</em>, <em>persistCookie</em>)</a> – calls the GetAuthCookie(<em>username</em>, <em>persistCookie</em>)
+ method to generate the forms authentication cookie. This method then 
+adds the cookie returned by GetAuthCookie to the Cookies collection 
+(assuming cookies-based forms authentication is being used; otherwise, 
+this method calls an internal class that handles the cookieless ticket 
+logic). </li>
+<li><a href="http://msdn2.microsoft.com/en-us/library/system.web.security.formsauthentication.redirectfromloginpage.aspx">RedirectFromLoginPage(<em>username</em>, <em>persistCookie</em>)</a> – this method calls SetAuthCookie(<em>username</em>, <em>persistCookie</em>), and then redirects the user to the appropriate page. </li>
+</ul>
+<p>GetAuthCookie is handy when you need to modify the authentication 
+ticket before writing the cookie out to the Cookies collection. 
+SetAuthCookie is useful if you want to create the forms authentication 
+ticket and add it to the Cookies collection, but do not want to redirect
+ the user to the appropriate page. Perhaps you want to keep them on the 
+login page or send them to some alternate page.</p>
+<p>Since we want to log in the user and redirect them to the appropriate
+ page, let’s use RedirectFromLoginPage. Update the LoginButton’s Click 
+event handler, replacing the two commented TODO lines with the following
+ line of code:</p>
+<p>FormsAuthentication.RedirectFromLoginPage(UserName.Text, RememberMe.Checked);</p>
+<p>When creating the forms authentication ticket we use the UserName TextBox’s Text property for the forms authentication ticket <em>username</em> parameter, and the checked state of the RememberMe CheckBox for the <em>persistCookie</em> parameter.</p>
+<p>To test the login page, visit it in a browser. Start by entering 
+invalid credentials, such as a username of “Nope” and a password of 
+“wrong”. Upon clicking the Login button a postback will occur and the 
+InvalidCredentialsMessage Label will be displayed.</p>
+<div class="photo_container">
+<div class="photo_container_inner">
+<div class="photo_border"><a href="http://static.asp.net/asp.net/images/security/02/images/aspnet_tutorial02_FormsAuth_cs_figure10.png"><img src="FormsAuthentication_files/aspnet_tutorial02_FormsAuth_cs_figure10s.png" alt=" The InvalidCredentialsMessage Label is Displayed When Entering Invalid Credentials" style="width: 550px; height: 373px;"></a></div>
+<p class="caption"><strong>Figure 10</strong>:  The InvalidCredentialsMessage Label is Displayed When Entering Invalid Credentials <span class="nobreak">(<a href="http://static.asp.net/asp.net/images/security/02/images/aspnet_tutorial02_FormsAuth_cs_figure10.png">Click to view full-size image</a>)</span></p>
+</div>
+<div class="clear"></div>
+</div>
+<p>Next, enter valid credentials and click the Login button. This time 
+when the postback occurs a forms authentication ticket is created and 
+you are automatically redirected back to Default.aspx. At this point you
+ have logged in to the website, although there are no visual cues to 
+indicate that you are currently logged in. In Step 4 we will see how to 
+programmatically determine whether a user is logged in or not as well as
+ how to identify the user visiting the page.</p>
+<p>Step 5 examines techniques for logging a user out of the website.</p>
+<h3>Securing the Login Page</h3>
+<p>When the user enters her credentials and submits the login page form,
+ the credentials – including her password – are transmitted over the 
+Internet to the web server in <em>plain text</em>. That means any hacker
+ sniffing the network traffic can see the username and password. To 
+prevent this, it is essential to encrypt the network traffic by using <a href="http://en.wikipedia.org/wiki/Secure_Sockets_Layer">Secure Socket Layers (SSL)</a>.
+ This will ensure that the credentials (as well as the entire page’s 
+HTML markup) are encrypted from the moment they leave the browser until 
+they are received by the web server.</p>
+<p>Unless your website contains sensitive information, you will only 
+need to use SSL on the login page and on other pages where the user’s 
+password would otherwise be sent over the wire in plain text. You do not
+ need to worry about securing the forms authentication ticket since, by 
+default, it is both encrypted and digitally signed (to prevent 
+tampering). A more thorough discussion on forms authentication ticket 
+security is presented in the following tutorial.</p>
+<blockquote>
+<p><strong>Note:</strong> Many financial and medical websites are configured to use SSL on <em>all</em>
+ pages accessible to authenticated users. If you are building such a 
+website you can configure the forms authentication system so that the 
+forms authentication ticket is only transmitted over a secure 
+connection. We will look at the various forms authentication 
+configuration options in the next tutorial, <em><a href="http://www.asp.net/Learn/Security/tutorial-03-cs.aspx">Forms Authentication Configuration and Advanced Topics</a></em>.</p>
+</blockquote>
+<h2>Step 4: Detecting Authenticated Visitors and Determining Their Identity</h2>
+<p>At this point we have enabled forms authentication and created a 
+rudimentary login page, but we have yet to examine how we can determine 
+whether a user is authenticated or anonymous. In certain scenarios we 
+may wish to display different data or information depending on whether 
+an authenticated or anonymous user is visiting the page. Moreover, we 
+oftentimes need to know the identity of the authenticated user.</p>
+<p>Let’s augment the existing Default.aspx page to illustrate these 
+techniques. In Default.aspx add two Panel controls, one named 
+AuthenticatedMessagePanel and another named AnonymousMessagePanel. Add a
+ Label control named WelcomeBackMessage in the first Panel. In the 
+second Panel add a HyperLink control, set its Text property to “Log In” 
+and its NavigateUrl property to “/Login.aspx”. At this point the 
+declarative markup for Default.aspx should look similar to the 
+following:</p>
+<p>
+
+            <code id="code6" class="code_block">&lt;%@ Page 
+Language="C#" MasterPageFile="/Site.master" AutoEventWireup="true" 
+CodeFile="Default.aspx.cs" Inherits="_Default" Title="Untitled Page" 
+%&gt;
+&lt;asp:Content ID="Content1" ContentPlaceHolderID="MainContent" 
+Runat="Server"&gt;
+    &lt;asp:Panel runat="server" ID="AuthenticatedMessagePanel"&gt;
+        &lt;asp:Label runat="server" 
+ID="WelcomeBackMessage"&gt;&lt;/asp:Label&gt;
+    &lt;/asp:Panel&gt;
+    
+    &lt;asp:Panel runat="Server" ID="AnonymousMessagePanel"&gt;
+        &lt;asp:HyperLink runat="server" ID="lnkLogin" Text="Log In" 
+NavigateUrl="/Login.aspx"&gt;&lt;/asp:HyperLink&gt;
+    &lt;/asp:Panel&gt;
+&lt;/asp:Content&gt;</code></p>
+<p>As you have probably guessed by now, the idea here is to display just
+ the AuthenticatedMessagePanel to authenticated visitors and just the 
+AnonymousMessagePanel to anonymous visitors. To accomplish this we need 
+to set these Panels’ Visible properties depending on whether the user is
+ logged in or not. </p>
+<p>The <a href="http://msdn2.microsoft.com/en-us/library/system.web.httprequest.isauthenticated.aspx">Request.IsAuthenticated property</a>
+ returns a Boolean value indicating whether the request has been 
+authenticated. Enter the following code into the Page_Load event handler
+ code:</p>
+<p>
+
+            <code id="code7" class="code_block">protected void Page_Load(object sender, EventArgs e)
+{
+    if (Request.IsAuthenticated)
+    {
+        WelcomeBackMessage.Text = "Welcome back!";
+    
+        AuthenticatedMessagePanel.Visible = true;
+        AnonymousMessagePanel.Visible = false;
+    }
+    else
+    {
+        AuthenticatedMessagePanel.Visible = false;
+        AnonymousMessagePanel.Visible = true;
+    }
+}</code></p>
+<p>With this code in place, visit Default.aspx through a browser. 
+Assuming that you have yet to log in, you will see a link to the login 
+page (see Figure 11). Click this link and log in to the site. As we saw 
+in Step 3, after entering your credentials you will be returned to 
+Default.aspx, but this time the page shows the “Welcome back!” message 
+(see Figure 12).</p>
+<div class="photo_container">
+<div class="photo_container_inner">
+<div class="photo_border"><img src="FormsAuthentication_files/aspnet_tutorial02_FormsAuth_cs_figure11.png" alt="When Visiting Anonymously, a Log In Link is Displayed" style="width: 495px; height: 341px;"></div>
+<p class="caption"><strong>Figure 11</strong>: When Visiting Anonymously, a Log In Link is Displayed</p>
+</div>
+<div class="clear"></div>
+</div>
+<div class="photo_container">
+<div class="photo_container_inner">
+<div class="photo_border"><img src="FormsAuthentication_files/aspnet_tutorial02_FormsAuth_cs_figure12.png" alt="Authenticated Users are Shown the “Welcome back!” Message" style="width: 495px; height: 341px;"></div>
+<p class="caption"><strong>Figure 12</strong>: Authenticated Users are Shown the “Welcome back!” Message</p>
+</div>
+<div class="clear"></div>
+</div>
+<p>We can determine the currently logged on user’s identity via the <a href="http://msdn2.microsoft.com/en-us/library/system.web.httpcontext.aspx">HttpContext object</a>’s <a href="http://msdn2.microsoft.com/en-us/library/system.web.httpcontext.user.aspx">User property</a>.
+ The HttpContext object represents information about the current 
+request, and is the home for such common ASP.NET objects as Response, 
+Request, and Session, among others. The User property represents the 
+security context of the current HTTP request and implements the <a href="http://msdn2.microsoft.com/en-us/library/system.security.principal.iprincipal.aspx">IPrincipal interface</a>.</p>
+<p>The User property is set by the FormsAuthenticationModule. 
+Specifically, when the FormsAuthenticationModule finds a forms 
+authentication ticket in the incoming request, it creates a new 
+GenericPrincipal object and assigns it to the User property. </p>
+<p>Principal objects (like GenericPrincipal) provide information on the 
+user’s identity and the roles to which they belong. The IPrincipal 
+interface defines two members:</p>
+<ul>
+<li><a href="http://msdn2.microsoft.com/en-us/library/system.security.principal.iprincipal.isinrole.aspx">IsInRole(<em>roleName</em>)</a> – a method that returns a Boolean value indicating if the principal belongs to the specified role. </li>
+<li><a href="http://msdn2.microsoft.com/en-us/library/system.security.principal.iprincipal.identity.aspx">Identity</a> – a property that returns an object that implements the <a href="http://msdn2.microsoft.com/en-us/library/system.security.principal.iidentity.aspx">IIdentity interface</a>. The IIdentity interface defines three properties: <a href="http://msdn2.microsoft.com/en-us/library/system.security.principal.iidentity.authenticationtype.aspx">AuthenticationType</a>, <a href="http://msdn2.microsoft.com/en-us/library/system.security.principal.iidentity.isauthenticated.aspx">IsAuthenticated</a>, and <a href="http://msdn2.microsoft.com/en-us/library/system.security.principal.iidentity.name.aspx">Name</a>. </li>
+</ul>
+<p>We can determine the name of the current visitor using the following code:</p>
+<p>string currentUsersName = User.Identity.Name;</p>
+<p>When using forms authentication, a <a href="http://msdn2.microsoft.com/en-us/library/system.web.security.formsidentity.aspx">FormsIdentity object</a>
+ is created for the GenericPrincipal’s Identity property. The 
+FormsIdentity class always returns the string “Forms” for its 
+AuthenticationType property and true for its IsAuthenticated property. 
+The Name property returns the username specified when creating the forms
+ authentication ticket. In addition to these three properties, 
+FormsIdentity includes access to the underlying authentication ticket 
+via its <a href="http://msdn2.microsoft.com/en-us/library/system.web.security.formsidentity.ticket.aspx">Ticket property</a>. The Ticket property returns an object of type <a href="http://msdn2.microsoft.com/en-us/library/system.web.security.formsauthenticationticket.aspx">FormsAuthenticationTicket</a>, which has properties like Expiration, IsPersistent, IssueDate, Name, and so on.</p>
+<p>The important point to take away here is that the <em>username</em> parameter specified in the FormsAuthentication.GetAuthCookie(<em>username</em>, <em>persistCookie</em>), FormsAuthentication.SetAuthCookie(<em>username</em>, <em>persistCookie</em>), and FormsAuthentication.RedirectFromLoginPage(<em>username</em>, <em>persistCookie</em>)
+ methods is the same value returned by User.Identity.Name. Moreover, the
+ authentication ticket created by these methods is available by casting 
+User.Identity to a FormsIdentity object and then accessing the Ticket 
+property:</p>
+<p>
+
+            <code id="code8" class="code_block">FormsIdentity ident = User.Identity as FormsIdentity;
+FormsAuthenticationTicket authTicket = ident.Ticket;</code></p>
+<p>Let’s provide a more personalized message in Default.aspx. Update the
+ Page_Load event handler so that the WelcomeBackMessage Label’s Text 
+property is assigned the string “Welcome back, <em>username</em>!”</p>
+<p>WelcomeBackMessage.Text = "Welcome back, " + User.Identity.Name + "!";</p>
+<p>Figure 13 shows the effect of this modification (when logging in as user Scott).</p>
+<div class="photo_container">
+<div class="photo_container_inner">
+<div class="photo_border"><img src="FormsAuthentication_files/aspnet_tutorial02_FormsAuth_cs_figure13.png" alt="The Welcome Message Includes the Currently Logged In User’s Name" style="width: 509px; height: 341px;"></div>
+<p class="caption"><strong>Figure 13</strong>: The Welcome Message Includes the Currently Logged In User’s Name</p>
+</div>
+<div class="clear"></div>
+</div>
+<h3>Using the LoginView and LoginName Controls</h3>
+<p>Displaying different content to authenticated and anonymous users is a
+ common requirement; so is displaying the name of the currently logged 
+on user. For that reason, ASP.NET includes two Web controls that provide
+ the same functionality shown in Figure 13, but without the need to 
+write a single line of code.</p>
+<p>The <a href="http://msdn2.microsoft.com/en-us/library/system.web.ui.webcontrols.loginview.aspx">LoginView control</a>
+ is a template-based Web control that makes it easy to display different
+ data to authenticated and anonymous users. The LoginView includes two 
+predefined templates:</p>
+<ul>
+<li>AnonymousTemplate – any markup added to this template is only displayed to anonymous visitors. </li>
+<li>LoggedInTemplate – this template’s markup is shown only to authenticated users. </li>
+</ul>
+<p>Let’s add the LoginView control to our site’s master page, 
+Site.master. Rather than adding just the LoginView control, though, 
+let’s add both a new ContentPlaceHolder control and then put the 
+LoginView control within that new ContentPlaceHolder. The rationale for 
+this decision will become apparent shortly.</p>
+<blockquote>
+<p><strong>Note:</strong> In addition to the AnonymousTemplate and 
+LoggedInTemplate, the LoginView control can include role-specific 
+templates. Role-specific templates show markup only to those users that 
+belong to a specified role. We will examine the role-based features of 
+the LoginView control in a future tutorial.</p>
+</blockquote>
+<p>Start by adding a ContentPlaceHolder named LoginContent into the 
+master page within the navigation &lt;div&gt; element. You can simply 
+drag a ContentPlaceHolder control from the Toolbox onto the Source view,
+ placing the resulting markup right above the “TODO: Menu will go here…”
+ text.</p>
+<p>
+
+            <code id="code9" class="code_block">&lt;div id="navigation"&gt;
+    &lt;asp:ContentPlaceHolder ID="LoginContent" runat="server"&gt;
+    &lt;/asp:ContentPlaceHolder&gt;
+   
+    TODO: Menu will go here...
+&lt;/div&gt;</code></p>
+<p>Next, add a LoginView control within the LoginContent 
+ContentPlaceHolder. Content placed into the master page’s 
+ContentPlaceHolder controls are considered <em>default content</em> for 
+the ContentPlaceHolder. That is, ASP.NET pages that use this master page
+ can specify their own content for each ContentPlaceHolder or use the 
+master page’s default content.</p>
+<p>The LoginView and other login-related controls are located in the Toolbox’s Login tab.</p>
+<div class="photo_container">
+<div class="photo_container_inner">
+<div class="photo_border"><img src="FormsAuthentication_files/aspnet_tutorial02_FormsAuth_cs_figure14.png" alt="The LoginView Control in the Toolbox" style="width: 157px; height: 335px;"></div>
+<p class="caption"><strong>Figure 14</strong>: The LoginView Control in the Toolbox</p>
+</div>
+<div class="clear"></div>
+</div>
+<p>Next, add two &lt;br /&gt; elements immediately after the LoginView 
+control, but still within the ContentPlaceHolder. At this point, the 
+navigation &lt;div&gt; element’s markup should look like the following:</p>
+<p>
+
+            <code id="code10" class="code_block">&lt;div id="navigation"&gt;
+    &lt;asp:ContentPlaceHolder ID="LoginContent" runat="server"&gt;
+        &lt;asp:LoginView ID="LoginView1" runat="server"&gt;
+        &lt;/asp:LoginView&gt;
+        &lt;br /&gt;&lt;br /&gt;
+    &lt;/asp:ContentPlaceHolder&gt;
+   
+    TODO: Menu will go here...
+&lt;/div&gt;</code></p>
+<p>The LoginView’s templates can be defined from the Designer or the 
+declarative markup. From Visual Studio’s Designer, expand the 
+LoginView’s smart tag, which lists the configured templates in a 
+drop-down list. Type in the text “Hello, stranger” into the 
+AnonymousTemplate; next, add a HyperLink control and set its Text and 
+NavigateUrl properties to “Log In” and “/Login.aspx”, respectively.</p>
+<p>After configuring the AnonymousTemplate, switch to the 
+LoggedInTemplate and enter the text, "Welcome back, ". Then drag a 
+LoginName control from the Toolbox into the LoggedInTemplate, placing it
+ immediately after the "Welcome back, " text. The <a href="http://msdn2.microsoft.com/en-us/library/system.web.ui.webcontrols.loginname.aspx">LoginName control</a>,
+ as its name implies, displays the name of the currently logged in user.
+ Internally, the LoginName control simply outputs the User.Identity.Name
+ property</p>
+<p>After making these additions to the LoginView’s templates, the markup should look similar to the following:</p>
+<p>
+
+            <code id="code11" class="code_block">&lt;div id="navigation"&gt;
+    &lt;asp:ContentPlaceHolder ID="LoginContent" runat="server"&gt;
+        &lt;asp:LoginView ID="LoginView1" runat="server"&gt;
+            &lt;LoggedInTemplate&gt;
+                Welcome back,
+                &lt;asp:LoginName ID="LoginName1" runat="server" /&gt;.
+            &lt;/LoggedInTemplate&gt;
+            &lt;AnonymousTemplate&gt;
+                Hello, stranger.
+                &lt;asp:HyperLink ID="lnkLogin" runat="server" NavigateUrl="/Login.aspx"&gt;Log In&lt;/asp:HyperLink&gt;
+            &lt;/AnonymousTemplate&gt;
+        &lt;/asp:LoginView&gt;
+        
+        &lt;br /&gt;&lt;br /&gt;
+    &lt;/asp:ContentPlaceHolder&gt;
+   
+    TODO: Menu will go here...
+&lt;/div&gt;</code></p>
+<p>With this addition to the Site.master master page, each page in our 
+website will display a different message depending on whether the user 
+is authenticated. Figure 15 shows the Default.aspx page when visited 
+through a browser by user Jisun. The “Welcome back, Jisun” message is 
+repeated twice: once in the master page’s navigation section on the left
+ (via the LoginView control we just added) and once in the 
+Default.aspx’s content area (via Panel controls and programmatic logic).</p>
+<div class="photo_container">
+<div class="photo_container_inner">
+<div class="photo_border"><img src="FormsAuthentication_files/aspnet_tutorial02_FormsAuth_cs_figure15.png" alt="The LoginView Control Displays “Welcome back, Jisun.”" style="width: 509px; height: 341px;"></div>
+<p class="caption"><strong>Figure 15</strong>: The LoginView Control Displays “Welcome back, Jisun.”</p>
+</div>
+<div class="clear"></div>
+</div>
+<p>Because we added the LoginView to the master page, it can appear in 
+every page on our site. However, there may be web pages where we don’t 
+want to show this message. One such page is the login page, since a link
+ to the login page seems out of place there. Since we placed the 
+LoginView control in a ContentPlaceHolder in the master page, we can 
+override this default markup in our content page. Open Login.aspx and go
+ to the Designer. Since we have not explicitly defined a Content control
+ in Login.aspx for the LoginContent ContentPlaceHolder in the master 
+page, the login page will show the master page’s default markup for this
+ ContentPlaceHolder. You can see this through the Designer – the 
+LoginContent ContentPlaceHolder shows the default markup (the LoginView 
+control).</p>
+<div class="photo_container">
+<div class="photo_container_inner">
+<div class="photo_border"><a href="http://static.asp.net/asp.net/images/security/02/images/aspnet_tutorial02_FormsAuth_cs_figure16.png"><img src="FormsAuthentication_files/aspnet_tutorial02_FormsAuth_cs_figure16s.png" alt="The Login Page Shows the Default Content for the Master Page’s LoginContent ContentPlaceHolder" style="width: 550px; height: 341px;"></a></div>
+<p class="caption"><strong>Figure 16</strong>: The Login Page Shows the Default Content for the Master Page’s LoginContent ContentPlaceHolder <span class="nobreak">(<a href="http://static.asp.net/asp.net/images/security/02/images/aspnet_tutorial02_FormsAuth_cs_figure16.png">Click to view full-size image</a>)</span></p>
+</div>
+<div class="clear"></div>
+</div>
+<p>To override the default markup for the LoginContent 
+ContentPlaceHolder, simply right-click on the region in the Designer and
+ choose the Create Custom Content option from the context menu. (When 
+using Visual Studio 2008 the ContentPlaceHolder includes a smart tag 
+that, when selected, offers the same option.) This adds a new Content 
+control to the page’s markup and thereby allows us to define custom 
+content for this page. You could add a custom message here, such as 
+“Please log in…”, but let’s just leave this blank.</p>
+<blockquote>
+<p><strong>Note:</strong> In Visual Studio 2005, creating custom content
+ creates an empty Content control in the ASP.NET page. In Visual Studio 
+2008, however, creating custom content copies the master page’s default 
+content into the newly created Content control. If you are using Visual 
+Studio 2008, then, after creating the new Content control make sure to 
+clear out the content copied over from the master page.</p>
+</blockquote>
+<p>Figure 17 shows the Login.aspx page when visited from a browser after
+ making this change. Note that there is no “Hello, stranger” or “Welcome
+ back, <em>username</em>” message in the left navigation &lt;div&gt; as there is when visiting Default.aspx.</p>
+<div class="photo_container">
+<div class="photo_container_inner">
+<div class="photo_border"><a href="http://static.asp.net/asp.net/images/security/02/images/aspnet_tutorial02_FormsAuth_cs_figure17.png"><img src="FormsAuthentication_files/aspnet_tutorial02_FormsAuth_cs_figure17s.png" alt="The Login Page Hides the Default LoginContent ContentPlaceHolder’s Markup" style="width: 550px; height: 401px;"></a></div>
+<p class="caption"><strong>Figure 17</strong>: The Login Page Hides the Default LoginContent ContentPlaceHolder’s Markup <span class="nobreak">(<a href="http://static.asp.net/asp.net/images/security/02/images/aspnet_tutorial02_FormsAuth_cs_figure17.png">Click to view full-size image</a>)</span></p>
+</div>
+<div class="clear"></div>
+</div>
+<h2>Step 5: Logging Out</h2>
+<p>In Step 3 we looked at building a login page to log a user in to the 
+site, but we have yet to see how to log a user out. In addition to 
+methods for logging a user in, the FormsAuthentication class also 
+provides a <a href="http://msdn2.microsoft.com/en-us/library/system.web.security.formsauthentication.signout.aspx">SignOut method</a>. The SignOut method simply destroys the forms authentication ticket, thereby logging the user out of the site.</p>
+<p>Offering a log out link is such a common feature that ASP.NET includes a control specifically designed to log a user out. The <a href="http://msdn2.microsoft.com/en-us/library/system.web.ui.webcontrols.loginstatus.aspx">LoginStatus control</a>
+ displays either a “Login” LinkButton or a “Logout” LinkButton, 
+depending on the user’s authentication status. A “Login” LinkButton is 
+rendered for anonymous users, whereas a “Logout” LinkButton is displayed
+ to authenticated users. The text for the “Login” and “Logout” 
+LinkButtons can be configured via the LoginStatus’s LoginText and 
+LogoutText properties.</p>
+<p>Clicking the “Login” LinkButton causes a postback, from which a 
+redirect is issued to the login page. Clicking the “Logout” LinkButton 
+causes the LoginStatus control to invoke the FormsAuthentication.SignOff
+ method and then redirects the user to a page. The page the logged off 
+user is redirected to depends on the LogoutAction property, which can be
+ assigned to one of the three following values:</p>
+<ul>
+<li>Refresh – the default; redirects the user to the page they were just
+ visiting. If the page they were just visiting does not allow anonymous 
+users, then the FormsAuthenticationModule will automatically redirect 
+the user to the login page. </li>
+</ul>
+<p>You may be curious as to why a redirect is performed here. If the 
+user wants to remain on the same page, why the need for the explicit 
+redirect? The reason is because when the “Logoff” LinkButton is clicked,
+ the user still has the forms authentication ticket in their cookies 
+collection. Consequently, the postback request is an authenticated 
+request. The LoginStatus control calls the SignOut method, but that 
+happens after the FormsAuthenticationModule has authenticated the user. 
+Therefore, an explicit redirect causes the browser to re-request the 
+page. By the time the browser re-requests the page, the forms 
+authentication ticket has been removed and therefore the incoming 
+request is anonymous.</p>
+<ul>
+<li>Redirect – the user is redirected to the URL specified by the LoginStatus’s LogoutPageUrl property. </li>
+<li>RedirectToLoginPage – the user is redirected to the login page. </li>
+</ul>
+<p>Let’s add a LoginStatus control to the master page and configure it 
+to use the Redirect option to send the user to a page that displays a 
+message confirming that they have been signed out. Start by creating a 
+page in the root directory named Logout.aspx. Don’t forget to associate 
+this page with the Site.master master page. Next, enter a message in the
+ page’s markup explaining to the user that they have been logged out. </p>
+<p>Next, return to the Site.master master page and add a LoginStatus 
+control beneath the LoginView in the LoginContent ContentPlaceHolder. 
+Set the LoginStatus control’s LogoutAction property to Redirect and its 
+LogoutPageUrl property to “/Logout.aspx”.</p>
+<p>
+            <code id="code12" class="code_block">&lt;div id="navigation"&gt;
+    &lt;asp:ContentPlaceHolder ID="LoginContent" runat="server"&gt;
+        &lt;asp:LoginView ID="LoginView1" runat="server"&gt;
+            &lt;LoggedInTemplate&gt;
+                Welcome back,
+                &lt;asp:LoginName ID="LoginName1" runat="server" /&gt;.
+            &lt;/LoggedInTemplate&gt;
+            &lt;AnonymousTemplate&gt;
+                Hello, stranger.
+                &lt;asp:HyperLink ID="lnkLogin" runat="server" NavigateUrl="/Login.aspx"&gt;Log In&lt;/asp:HyperLink&gt;
+            &lt;/AnonymousTemplate&gt;
+        &lt;/asp:LoginView&gt;
+        &lt;br /&gt;
+        &lt;asp:LoginStatus ID="LoginStatus1" runat="server" LogoutAction="Redirect" LogoutPageUrl="/Logout.aspx" /&gt;
+        
+        &lt;br /&gt;&lt;br /&gt;
+    &lt;/asp:ContentPlaceHolder&gt;
+   
+    TODO: Menu will go here...
+&lt;/div&gt;</code></p>
+<p>Since the LoginStatus is outside of the LoginView control, it will 
+appear for both anonymous and authenticated users, but that’s OK because
+ the LoginStatus will correctly display a “Login” or “Logout” 
+LinkButton. With the addition of the LoginStatus control, the “Log In” 
+HyperLink in the AnonymousTemplate is superfluous, so remove it.</p>
+<p>Figure 18 shows Default.aspx when Jisun visits. Note that the left 
+column displays the message, “Welcome back, Jisun” along with a link to 
+log out. Clicking the log out LinkButton causes a postback, signs Jisun 
+out of the system, and then redirects her to Logout.aspx. As Figure 19 
+shows, by the time Jisun reaches Logout.aspx she has already been signed
+ out and is therefore anonymous. Consequently, the left column shows the
+ text “Welcome, stranger” and a link to the login page.</p>
+<div class="photo_container">
+<div class="photo_container_inner">
+<div class="photo_border"><a href="http://static.asp.net/asp.net/images/security/02/images/aspnet_tutorial02_FormsAuth_cs_figure18.png"><img src="FormsAuthentication_files/aspnet_tutorial02_FormsAuth_cs_figure18s.png" alt="Default.aspx Shows “Welcome Back, Jisun” Along with a “Logout” LinkButton" style="width: 550px; height: 318px;"></a></div>
+<p class="caption"><strong>Figure 18</strong>: Default.aspx Shows “Welcome Back, Jisun” Along with a “Logout” LinkButton <span class="nobreak">(<a href="http://static.asp.net/asp.net/images/security/02/images/aspnet_tutorial02_FormsAuth_cs_figure18.png">Click to view full-size image</a>)</span></p>
+</div>
+<div class="clear"></div>
+</div>
+<div class="photo_container">
+<div class="photo_container_inner">
+<div class="photo_border"><a href="http://static.asp.net/asp.net/images/security/02/images/aspnet_tutorial02_FormsAuth_cs_figure19.png"><img src="FormsAuthentication_files/aspnet_tutorial02_FormsAuth_cs_figure19s.png" alt="Logout.aspx Shows “Welcome, stranger” Along with a “Login” LinkButton" style="width: 550px; height: 293px;"></a></div>
+<p class="caption"><strong>Figure 19</strong>: Logout.aspx Shows “Welcome, stranger” Along with a “Login” LinkButton <span class="nobreak">(<a href="http://static.asp.net/asp.net/images/security/02/images/aspnet_tutorial02_FormsAuth_cs_figure19.png">Click to view full-size image</a>)</span></p>
+</div>
+<div class="clear"></div>
+</div>
+<blockquote>
+<p><strong>Note:</strong> I encourage you to customize the Logout.aspx 
+page to hide the master page’s LoginContent ContentPlaceHolder (like we 
+did for Login.aspx in Step 4). The reason is because the “Login” 
+LinkButton rendered by the LoginStatus control (the one beneath “Hello, 
+stranger”) sends the user to the login page passing the current URL in 
+the ReturnUrl querystring parameter. In short, if a user who has logged 
+out clicks this LoginStatus’s “Login” LinkButton, and then logs in, they
+ will be redirected back to Logout.aspx, which could easily confuse the 
+user.</p>
+</blockquote>
+<h2>Summary</h2>
+<p>In this tutorial we started with an examination of the forms 
+authentication workflow and then turned to implementing forms 
+authentication in an ASP.NET application. Forms authentication is 
+powered by the FormsAuthenticationModule, which has two 
+responsibilities: identifying users based on their forms authentication 
+ticket, and redirecting unauthorized users to the login page.</p>
+<p>The .NET Framework’s FormsAuthentication class includes methods for 
+creating, inspecting, and removing forms authentication tickets. The 
+Request.IsAuthenticated property and User object provide additional 
+programmatic support for determining whether a request is authenticated 
+and information about the user’s identity. There are also the LoginView,
+ LoginStatus, and LoginName Web controls, which give developers a quick,
+ code-free way for performing many common login-related tasks. We will 
+examine these and other login-related Web controls in greater detail in 
+future tutorials.</p>
+<p>This tutorial provided a cursory overview of forms authentication. We
+ did not examine the assorted configuration options, look at how 
+cookieless forms authentication tickets work, or explore how ASP.NET 
+protects the contents of the forms authentication ticket. We will 
+discuss these topics and more in the <a href="http://www.asp.net/Learn/Security/tutorial-03-cs.aspx">next tutorial</a>. </p>
+<p>Happy Programming!</p>
+<h3>Further Reading</h3>
+<p>For more information on the topics discussed in this tutorial, refer to the following resources:</p>
+<ul>
+<li><a href="http://www.iis.net/articles/view.aspx/IIS7/Managing-IIS7/Configuring-Security/Changes-between-IIS6-and-IIS7-Security">Changes Between IIS6 and IIS7 Security</a> </li>
+<li><a href="http://msdn2.microsoft.com/en-us/library/d51ttbhx.aspx">Login ASP.NET Controls</a> </li>
+<li><a href="http://www.wrox.com/WileyCDA/WroxTitle/productCd-0764596985.html">Professional ASP.NET 2.0 Security, Membership, and Role Management</a> (ISBN: 978-0-7645-9698-8) </li>
+<li><a href="http://msdn2.microsoft.com/en-us/library/532aee0e.aspx">The <code>&lt;authentication&gt;</code> Element</a> </li>
+<li><a href="http://msdn2.microsoft.com/en-us/library/1d3t3c61.aspx">The <code>&lt;forms&gt;</code> Element for <code>&lt;authentication&gt;</code></a> </li>
+</ul>
+<h3>Video Training on Topics Contained in this Tutorial</h3>
+<ul>
+<li> <a href="http://www.asp.net/learn/security-videos/video-376.aspx">Using Basic Forms Authentication in ASP.NET</a></li>
+</ul>
+<h2>About the Author</h2>
+<p><a href="http://www.4guysfromrolla.com/ScottMitchell.shtml">Scott
+                        Mitchell</a>, author of seven ASP/ASP.NET books and founder of 
+                        <a href="http://www.4guysfromrolla.com/">4GuysFromRolla.com</a>, 
+                        has been working with Microsoft Web technologies since 1998. Scott works 
+                        as an independent consultant, trainer, and writer.  His latest book is 
+                        <a href="http://www.amazon.com/exec/obidos/ASIN/0672327384/4guysfromrollaco"><em>Sams 
+                        Teach Yourself ASP.NET&nbsp;2.0 in 24 Hours</em></a>.  He can be reached at 
+                        <a href="mailto:mitchell@4GuysFromRolla.com">mitchell@4GuysFromRolla.com.</a> 
+                        or via his blog, which can be found at 
+                        <a href="http://scottonwriting.net/">http://ScottOnWriting.NET</a>.</p>
+<h2>Special Thanks To…</h2>
+<p>This tutorial series was reviewed by many helpful reviewers. Lead 
+reviewer for this tutorial was 
+This tutorial series was reviewed by many helpful reviewers. Lead 
+reviewers for this tutorial include Alicja Maziarz, John Suru, and 
+Teresa Murphy. Interested in reviewing my upcoming MSDN articles? If so,
+ drop me a line at <a href="http://mce_host/mitchell@4GuysFromRolla.com">mitchell@4guysfromrolla.com</a>. . Interested in reviewing my upcoming MSDN articles? If&nbsp;so, drop me a line at <a href="mailto:mitchell@4GuysFromRolla.com">mitchell@4GuysFromRolla.com.</a></p>
+  <div class="pagination"><a href="http://www.asp.net/security/tutorials/security-basics-and-asp-net-support-cs">« Previous Tutorial </a><span class="light"> | </span><a href="http://www.asp.net/security/tutorials/forms-authentication-configuration-and-advanced-topics-cs"> Next Tutorial »</a></div>
+  <div class="heading_container"><div class="heading_right_top">&nbsp;</div><h1>Comments (<span id="spanCommentCount">13</span>)</h1><a class="icon_rss_header" target="_blank" href="http://www.asp.net/rss/comments/13674">&nbsp;</a></div><div class="bucket_container"><div class="bucket_top"><span>&nbsp;</span></div><div class="bucket_content region_absminheight"><div><table cellpadding="5" cellspacing="0" width="100%"><tbody id="mscCommentOutput"><tr><td class="icon_contract"><a href="#" onclick="initComments();return false;"><strong>Show all 13 comments</strong></a></td></tr></tbody></table></div><div><p style="padding-left: 10px;">You must be logged in to leave a comment.&nbsp;<a href="http://login.asp.net/login/signin.aspx?ReturnUrl=http://www.asp.net/security/tutorials/an-overview-of-forms-authentication-cs">Click here</a> to log in.</p></div></div><div class="bucket_bottom"><span>&nbsp;</span></div></div><script type="text/javascript"> 
+  var umbCurrentNodeId = 13674;
+  function initComments() {
+	BindTemplateData("mscCommentTemplate","mscCommentOutput",
+	    "/base/MscComment/GetCommentsForDocument/13674", "initCommentsCallback");
+	$("#txtNewComment").val("");
+  }
+  function initCommentsCallback(json){
+	if( json != null ) { $("#spanCommentCount").html(json.length); }
+  }
+  function submitComment() {
+    var url = "/base/MscComment/CreateComment/" + umbCurrentNodeId + ""; 
+    var comment = $("#txtNewComment").val();
+    if (comment != "") {
+      $("#pCommentError").html("");
+      jQuery.post(url, { comment: $("#txtNewComment").val() }, function(data) { initComments(); });
+    }
+    else { 
+	$("#pCommentError").html("Comment is empty. Please enter comment and try submitting again.");
+    }
+  }
+
+</script>  
+
+
+
+      
+  </div>
+ </div>
+ <div class="columns_right">
+	
+  <div id="firstregion"><div class="heading_container"><div class="heading_right_top">&nbsp;</div><h2 id="mscTutorialSideBarTitle">C# Tutorials</h2></div><div class="heading_bottom heading_bottom_connected"><span>&nbsp;</span></div><div class="rounded_box_top_connected"><span>&nbsp;</span></div><div class="rounded_box blue_rounded_box rounded_box_connected"><div class="rounded_box_content"><p>
+              (<a id="mscTutorialSideBarSwitchLang" href="#" onclick="swapTutorialSidebarLanguage();return false;">Switch to Visual Basic tutorials</a>)
+            </p></div><div class="rounded_box_content sub_nav" id="mscTutorialSidebarVb" style="display: none;"><h3 id="Introduction">Introduction</h3><ul><li><a href="http://www.asp.net/security/tutorials/security-basics-and-asp-net-support-vb">Security Basics and ASP.NET Support</a></li><li><a href="http://www.asp.net/security/tutorials/an-overview-of-forms-authentication-vb">An Overview of Forms Authentication</a></li><li><a href="http://www.asp.net/security/tutorials/forms-authentication-configuration-and-advanced-topics-vb">Forms Authentication Configuration and Advanced Topics</a></li></ul><h3 id="Membership">Membership</h3><ul><li><a href="http://www.asp.net/security/tutorials/creating-the-membership-schema-in-sql-server-vb">Creating the Membership Schema in SQL Server</a></li><li><a href="http://www.asp.net/security/tutorials/creating-user-accounts-vb">Creating User Accounts</a></li><li><a href="http://www.asp.net/security/tutorials/validating-user-credentials-against-the-membership-user-store-vb">Validating User Credentials Against the Membership User Store</a></li><li><a href="http://www.asp.net/security/tutorials/user-based-authorization-vb">User-Based Authorization</a></li><li><a href="http://www.asp.net/security/tutorials/storing-additional-user-information-vb">Storing Additional User Information</a></li></ul><h3 id="Roles">Roles</h3><ul><li><a href="http://www.asp.net/security/tutorials/creating-and-managing-roles-vb">Creating and Managing Roles</a></li><li><a href="http://www.asp.net/security/tutorials/assigning-roles-to-users-vb">Assigning Roles to Users</a></li><li><a href="http://www.asp.net/security/tutorials/role-based-authorization-vb">Role-Based Authorization</a></li></ul><h3 id="Administrative Tasks">Administrative Tasks</h3><ul><li><a href="http://www.asp.net/security/tutorials/building-an-interface-to-select-one-user-account-from-many-vb">Building an Interface to Select One User Account from Many</a></li><li><a href="http://www.asp.net/security/tutorials/recovering-and-changing-passwords-vb">Recovering and Changing Passwords</a></li><li><a href="http://www.asp.net/security/tutorials/unlocking-and-approving-user-accounts-vb">Unlocking and Approving User Accounts</a></li></ul></div><div class="rounded_box_content sub_nav" id="mscTutorialSidebarCs"><h3 id="Introduction">Introduction</h3><ul><li><a href="http://www.asp.net/security/tutorials/security-basics-and-asp-net-support-cs">Security Basics and ASP.NET Support</a></li><li class="active"><a href="http://www.asp.net/security/tutorials/an-overview-of-forms-authentication-cs">An Overview of Forms Authentication</a></li><li><a href="http://www.asp.net/security/tutorials/forms-authentication-configuration-and-advanced-topics-cs">Forms Authentication Configuration and Advanced Topics</a></li></ul><h3 id="Membership">Membership</h3><ul><li><a href="http://www.asp.net/security/tutorials/creating-the-membership-schema-in-sql-server-cs">Creating the Membership Schema in SQL Server</a></li><li><a href="http://www.asp.net/security/tutorials/creating-user-accounts-cs">Creating User Accounts</a></li><li><a href="http://www.asp.net/security/tutorials/validating-user-credentials-against-the-membership-user-store-cs">Validating User Credentials Against the Membership User Store</a></li><li><a href="http://www.asp.net/security/tutorials/user-based-authorization-cs">User-Based Authorization</a></li><li><a href="http://www.asp.net/security/tutorials/storing-additional-user-information-cs">Storing Additional User Information</a></li></ul><h3 id="Roles">Roles</h3><ul><li><a href="http://www.asp.net/security/tutorials/creating-and-managing-roles-cs">Creating and Managing Roles</a></li><li><a href="http://www.asp.net/security/tutorials/assigning-roles-to-users-cs">Assigning Roles to Users</a></li><li><a href="http://www.asp.net/security/tutorials/role-based-authorization-cs">Role-Based Authorization</a></li></ul><h3 id="Administrative Tasks">Administrative Tasks</h3><ul><li><a href="http://www.asp.net/security/tutorials/building-an-interface-to-select-one-user-account-from-many-cs">Building an Interface to Select One User Account from Many</a></li><li><a href="http://www.asp.net/security/tutorials/recovering-and-changing-passwords-cs">Recovering and Changing Passwords</a></li><li><a href="http://www.asp.net/security/tutorials/unlocking-and-approving-user-accounts-cs">Unlocking and Approving User Accounts</a></li></ul></div><div class="rounded_box_bottom"><span>&nbsp;</span></div></div></div><script type="text/javascript">
+      function swapTutorialSidebarLanguage() {
+      $("#mscTutorialSidebarVb").toggle();
+      $("#mscTutorialSidebarCs").toggle();
+      if ($("#mscTutorialSidebarCs").is(":visible")) {
+      $("#mscTutorialSideBarTitle").html("C# Tutorials");
+      $("#mscTutorialSideBarSwitchLang").html("Switch to Visual Basic tutorials");
+      }
+      else {
+      $("#mscTutorialSideBarTitle").html("Visual Basic Tutorials");
+      $("#mscTutorialSideBarSwitchLang").html("Switch to Visual C# tutorials");
+      }
+      }
+
+      </script>
+  
+    
+
+	<iframe style="border: medium none; margin: 0pt;" src="FormsAuthentication_files/adchain.htm" frameborder="0" height="283" width="300" scrolling="no"></iframe>
+	
+	
+  
+
+
+ </div>
+</div>     
+
+    <div style="clear: both;">&nbsp;</div>
+    <div class="center bottom_banner"><iframe src="FormsAuthentication_files/adbanner_002.htm" marginheight="0" marginwidth="0" frameborder="0" height="90" width="728" scrolling="no">&nbsp;</iframe>&nbsp;</div>
+    <div class="footer_container"> 
+        <div class="footer_content">
+        <p class="footer_links">
+            <a href="http://www.asp.net/feedback/">Contact</a> | 
+            <a href="http://www.neudesicmediagroup.com/Advertising.aspx?site=ASP">Advertise</a> |
+      <a href="http://umbraco.org/" target="_blank">Powered by Umbraco</a>
+          <br>
+            <a href="http://www.asp.net/Terms-Of-Use">Terms of Use</a> | 
+            <a href="http://www.microsoft.com/library/toolbar/3.0/trademarks/en-us.mspx">Trademarks</a> | 
+          <a href="http://www.asp.net/privacy/">Privacy Statement</a><br>
+            © 2011 Microsoft Corporation. All Rights Reserved.
+        </p>
+        <ul class="footer_site_logos">
+      <li class="footer_site_logos"><a href="http://msdn.microsoft.com/" class="footer_site_logos logo-footer-msdn"></a></li>           
+            <li class="footer_site_logos"><a href="http://www.silverlight.net/" class="footer_site_logos logo-footer-silverlight"></a></li>
+            <li class="footer_site_logos"><a href="http://channel9.msdn.com/" class="footer_site_logos logo-footer-ch9"></a></li>
+            <li class="footer_site_logos"><a href="http://www.iis.net/" class="footer_site_logos logo-footer-iis"></a></li>
+            <li class="footer_site_logos"><a href="http://visitmix.com/" class="footer_site_logos logo-footer-mix"></a></li>
+            <li class="footer_site_logos"><a href="http://windowsclient.net/" class="footer_site_logos logo-footer-wc"></a></li>
+        </ul>
+      </div>
+    </div>
+</div>
+
+                    <noscript><a href="http://www.omniture.com" title="Web Analytics"><img
+                    src="http://msstonojsaspnet.112.2O7.net/b/ss/msstonojsaspnet/1/H.20.2--NS/0"
+                    height="1" width="1" border="0" alt="" /></a></noscript>
+<div style="position: absolute; display: none;" id="mscTooltip">
+  <div></div>
+</div>               
+
+
+    <script id="mscCommentTemplate" type="text/html">
+        <# 
+            for(var i=0; i < obj.length && obj[i] != null; i++)
+            {
+                var item = obj[i];             
+        #>
+        <tr>
+            <td valign="top" style="border-top: 1px solid black;width:105px;"><img style="border-width: 0px;" alt="<#= item.username #>" src="<#= item.avatar #>" /></td>
+            <td width="100%" valign="top" align="left" style="border-top: 1px solid black;">
+                <table style="table-layout:fixed;">
+                <tr>
+                    <# if( item.time.Hours > 0 || item.time.Minutes > 0 || item.time.Seconds > 0 ) { #>
+                        <p>Posted at <a href="javascript:SetPlayerTime('<#= item.time.Hours #>:<#= item.time.Minutes #>:<#= item.time.Seconds #>');"><#= ( item.time.Hours > 0 ) ? item.time.Hours + ":" : ""#><#= item.time.Minutes #>:<#= item.time.Seconds #></a> in the video</p>
+                    <# } #>
+                    <td style="padding-bottom: 5px;width:500px;">
+                        <a href="http://forums.asp.net/members/<#= item.username#>.aspx"><#= item.username #></a> : <font style="font-style: italic;">On <span><#= item.created #></span> said: </font>
+                    </td>
+                </tr>
+                <tr>
+                    <td><div style="word-wrap:break-word;width:515px;"><#= item.comment #></div></td>
+                </tr>
+                </table>
+            </td>
+        </tr>
+        <#
+            }
+        #>  
+    </script>
+
+
+
+
+
+
+
+</form>
+</body></html>

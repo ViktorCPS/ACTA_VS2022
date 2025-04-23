@@ -1,0 +1,577 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Report xmlns="http://schemas.microsoft.com/sqlserver/reporting/2005/01/reportdefinition" xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner">
+  <DataSources>
+    <DataSource Name="DummyDataSource">
+      <rd:DataSourceID>0c344625-2d91-41ea-bbf8-1e760339b4ec</rd:DataSourceID>
+      <ConnectionProperties>
+        <DataProvider>SQL</DataProvider>
+        <ConnectString />
+      </ConnectionProperties>
+    </DataSource>
+  </DataSources>
+  <InteractiveHeight>11in</InteractiveHeight>
+  <rd:DrawGrid>true</rd:DrawGrid>
+  <InteractiveWidth>8.5in</InteractiveWidth>
+  <rd:SnapToGrid>true</rd:SnapToGrid>
+  <LeftMargin>1in</LeftMargin>
+  <rd:ReportID>5d3d46fc-ce6a-4046-94b1-2f7262883202</rd:ReportID>
+  <DataSets>
+    <DataSet Name="AnnualLeave_payedLeave">
+      <Fields>
+        <Field Name="employee">
+          <DataField>employee</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="working_unit">
+          <DataField>working_unit</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="length">
+          <DataField>length</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="start">
+          <DataField>start</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="end">
+          <DataField>end</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="entry_date">
+          <DataField>entry_date</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="pass_type">
+          <DataField>pass_type</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="contract">
+          <DataField>contract</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="hiring_date">
+          <DataField>hiring_date</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="reason">
+          <DataField>reason</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="description">
+          <DataField>description</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+      </Fields>
+      <Query>
+        <DataSourceName>DummyDataSource</DataSourceName>
+        <CommandText />
+        <rd:UseGenericDesigner>true</rd:UseGenericDesigner>
+      </Query>
+      <rd:DataSetInfo>
+        <rd:DataSetName>AnnualLeave</rd:DataSetName>
+        <rd:TableName>payedLeave</rd:TableName>
+      </rd:DataSetInfo>
+    </DataSet>
+    <DataSet Name="VisitAsco4">
+      <Fields>
+        <Field Name="NVarcharValue10">
+          <DataField>NVarcharValue10</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="NVarcharValue9">
+          <DataField>NVarcharValue9</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="NVarcharValue8">
+          <DataField>NVarcharValue8</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="NVarcharValue7">
+          <DataField>NVarcharValue7</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="NVarcharValue6">
+          <DataField>NVarcharValue6</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="NVarcharValue5">
+          <DataField>NVarcharValue5</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="NVarcharValue4">
+          <DataField>NVarcharValue4</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="NVarcharValue3">
+          <DataField>NVarcharValue3</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="NVarcharValue2">
+          <DataField>NVarcharValue2</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="NVarcharValue1">
+          <DataField>NVarcharValue1</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="DatetimeValue10">
+          <DataField>DatetimeValue10</DataField>
+          <rd:TypeName>System.DateTime</rd:TypeName>
+        </Field>
+        <Field Name="DatetimeValue9">
+          <DataField>DatetimeValue9</DataField>
+          <rd:TypeName>System.DateTime</rd:TypeName>
+        </Field>
+        <Field Name="DatetimeValue8">
+          <DataField>DatetimeValue8</DataField>
+          <rd:TypeName>System.DateTime</rd:TypeName>
+        </Field>
+        <Field Name="DatetimeValue7">
+          <DataField>DatetimeValue7</DataField>
+          <rd:TypeName>System.DateTime</rd:TypeName>
+        </Field>
+        <Field Name="DatetimeValue6">
+          <DataField>DatetimeValue6</DataField>
+          <rd:TypeName>System.DateTime</rd:TypeName>
+        </Field>
+        <Field Name="DatetimeValue5">
+          <DataField>DatetimeValue5</DataField>
+          <rd:TypeName>System.DateTime</rd:TypeName>
+        </Field>
+        <Field Name="DatetimeValue4">
+          <DataField>DatetimeValue4</DataField>
+          <rd:TypeName>System.DateTime</rd:TypeName>
+        </Field>
+        <Field Name="DatetimeValue3">
+          <DataField>DatetimeValue3</DataField>
+          <rd:TypeName>System.DateTime</rd:TypeName>
+        </Field>
+        <Field Name="DatetimeValue2">
+          <DataField>DatetimeValue2</DataField>
+          <rd:TypeName>System.DateTime</rd:TypeName>
+        </Field>
+        <Field Name="DatetimeValue1">
+          <DataField>DatetimeValue1</DataField>
+          <rd:TypeName>System.DateTime</rd:TypeName>
+        </Field>
+        <Field Name="IntegerValue10">
+          <DataField>IntegerValue10</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="IntegerValue9">
+          <DataField>IntegerValue9</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="IntegerValue8">
+          <DataField>IntegerValue8</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="IntegerValue7">
+          <DataField>IntegerValue7</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="IntegerValue6">
+          <DataField>IntegerValue6</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="IntegerValue5">
+          <DataField>IntegerValue5</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="IntegerValue4">
+          <DataField>IntegerValue4</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="IntegerValue3">
+          <DataField>IntegerValue3</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="IntegerValue2">
+          <DataField>IntegerValue2</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="IntegerValue1">
+          <DataField>IntegerValue1</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="VisitID">
+          <DataField>VisitID</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+      </Fields>
+      <Query>
+        <DataSourceName>DummyDataSource</DataSourceName>
+        <CommandText />
+        <rd:UseGenericDesigner>true</rd:UseGenericDesigner>
+      </Query>
+      <rd:DataSetInfo>
+        <rd:ObjectDataSourceType>Common.VisitAsco4, Common, Version=1.0.8973.14453, Culture=neutral, PublicKeyToken=null</rd:ObjectDataSourceType>
+        <rd:ObjectDataSourceSelectMethod>Search</rd:ObjectDataSourceSelectMethod>
+        <rd:ObjectDataSourceSelectMethodSignature>System.Collections.Generic.List`1[Common.VisitAsco4] Search(System.String, System.String, System.String, System.String, System.String)</rd:ObjectDataSourceSelectMethodSignature>
+      </rd:DataSetInfo>
+    </DataSet>
+    <DataSet Name="FormsDS_Forms">
+      <Fields>
+        <Field Name="name">
+          <DataField>name</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="ID">
+          <DataField>ID</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="department">
+          <DataField>department</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="costcentre">
+          <DataField>costcentre</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="email">
+          <DataField>email</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="jmbg">
+          <DataField>jmbg</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="company">
+          <DataField>company</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+      </Fields>
+      <Query>
+        <DataSourceName>DummyDataSource</DataSourceName>
+        <CommandText />
+        <rd:UseGenericDesigner>true</rd:UseGenericDesigner>
+      </Query>
+      <rd:DataSetInfo>
+        <rd:DataSetName>FormsDS</rd:DataSetName>
+        <rd:TableName>Forms</rd:TableName>
+      </rd:DataSetInfo>
+    </DataSet>
+  </DataSets>
+  <Code />
+  <Width>7.125in</Width>
+  <Body>
+    <ReportItems>
+      <List Name="list1">
+        <DataSetName>AnnualLeave_payedLeave</DataSetName>
+        <ReportItems>
+          <Textbox Name="textbox17">
+            <rd:DefaultName>textbox17</rd:DefaultName>
+            <Top>4.25in</Top>
+            <Width>3.5in</Width>
+            <Style>
+              <FontFamily>Calibri</FontFamily>
+              <FontSize>11pt</FontSize>
+              <FontWeight>700</FontWeight>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+            <ZIndex>16</ZIndex>
+            <CanGrow>true</CanGrow>
+            <Left>1.6875in</Left>
+            <Height>0.25in</Height>
+            <Value>=Fields!pass_type.Value + "."</Value>
+          </Textbox>
+          <Textbox Name="textbox16">
+            <rd:DefaultName>textbox16</rd:DefaultName>
+            <Top>4.625in</Top>
+            <Width>6.375in</Width>
+            <Style>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+            <ZIndex>15</ZIndex>
+            <CanGrow>true</CanGrow>
+            <Left>0.125in</Left>
+            <Height>0.625in</Height>
+            <Value>= "Na osnovu zahteva, a u skladu sa članom 77 Zakona o radu i članom 7 Ugovora o radu br. " + Fields!contract.Value + ", zaključenim između zaposlenog i poslodavca dana " + Fields!hiring_date.Value + " godine, doneto je rešenje kao u dispozitivu."</Value>
+          </Textbox>
+          <Textbox Name="textbox15">
+            <Top>7.75in</Top>
+            <Width>3in</Width>
+            <Style>
+              <FontFamily>Calibri</FontFamily>
+              <FontSize>11pt</FontSize>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+            <ZIndex>14</ZIndex>
+            <CanGrow>true</CanGrow>
+            <Left>3.625in</Left>
+            <Height>0.5in</Height>
+            <Value>="___________________________  " + System.Environment.NewLine + "Zaposleni (" + Fields!employee.Value + ")"</Value>
+          </Textbox>
+          <Textbox Name="textbox14">
+            <rd:DefaultName>textbox14</rd:DefaultName>
+            <Top>7.75in</Top>
+            <Width>2.25in</Width>
+            <Style>
+              <FontFamily>Calibri</FontFamily>
+              <FontSize>11pt</FontSize>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+            <ZIndex>13</ZIndex>
+            <CanGrow>true</CanGrow>
+            <Left>0.25in</Left>
+            <Height>0.5in</Height>
+            <Value>___________________________  
+                 Supervizor                                                                                                                 
+</Value>
+          </Textbox>
+          <Textbox Name="textbox13">
+            <rd:DefaultName>textbox13</rd:DefaultName>
+            <Top>7.125in</Top>
+            <Width>3.125in</Width>
+            <Style>
+              <FontFamily>Calibri</FontFamily>
+              <FontSize>12pt</FontSize>
+              <FontWeight>700</FontWeight>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+            <ZIndex>12</ZIndex>
+            <CanGrow>true</CanGrow>
+            <Left>0.125in</Left>
+            <Height>0.5in</Height>
+            <Value>="POSLODAVAC" + System.Environment.NewLine + "PMC Automotive d.o.o. Kragujevac"</Value>
+          </Textbox>
+          <Textbox Name="textbox12">
+            <rd:DefaultName>textbox12</rd:DefaultName>
+            <Top>6.5in</Top>
+            <Width>3.25in</Width>
+            <Style>
+              <FontFamily>Calibri</FontFamily>
+              <FontSize>11pt</FontSize>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+            <ZIndex>11</ZIndex>
+            <CanGrow>true</CanGrow>
+            <Left>0.125in</Left>
+            <Height>0.5in</Height>
+            <Value>-     Zaposlenom ______________________
+-     Odeljenju ljudskih resursa</Value>
+          </Textbox>
+          <Textbox Name="textbox11">
+            <rd:DefaultName>textbox11</rd:DefaultName>
+            <Top>6.25in</Top>
+            <Width>1in</Width>
+            <Style>
+              <FontFamily>Calibri</FontFamily>
+              <FontSize>11pt</FontSize>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+            <ZIndex>10</ZIndex>
+            <CanGrow>true</CanGrow>
+            <Left>0.125in</Left>
+            <Height>0.25in</Height>
+            <Value>Dostavljeno:</Value>
+          </Textbox>
+          <Textbox Name="textbox10">
+            <rd:DefaultName>textbox10</rd:DefaultName>
+            <Top>5.75in</Top>
+            <Width>6.375in</Width>
+            <Style>
+              <FontFamily>Calibri</FontFamily>
+              <FontSize>11pt</FontSize>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+            <ZIndex>9</ZIndex>
+            <CanGrow>true</CanGrow>
+            <Left>0.125in</Left>
+            <Height>0.5in</Height>
+            <Value>Protiv ovog rešenja  zaposleni ima pravo da pokrene spor pred nadležnim sudom, u roku od 60 dana od dana dostavljanja.</Value>
+          </Textbox>
+          <Textbox Name="textbox9">
+            <rd:DefaultName>textbox9</rd:DefaultName>
+            <Top>5.5in</Top>
+            <Width>2.125in</Width>
+            <Style>
+              <FontFamily>Calibri</FontFamily>
+              <FontSize>12pt</FontSize>
+              <FontWeight>700</FontWeight>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+            <ZIndex>8</ZIndex>
+            <CanGrow>true</CanGrow>
+            <Left>0.125in</Left>
+            <Height>0.25in</Height>
+            <Value>POUKA O PRAVNOM LEKU:</Value>
+          </Textbox>
+          <Textbox Name="textbox7">
+            <Top>3.25in</Top>
+            <Width>1.1875in</Width>
+            <Style>
+              <FontStyle>Italic</FontStyle>
+              <FontFamily>Calibri</FontFamily>
+              <FontSize>12pt</FontSize>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+            <ZIndex>7</ZIndex>
+            <CanGrow>true</CanGrow>
+            <Left>2.8125in</Left>
+            <Height>0.375in</Height>
+            <Value>="Obrazloženje"</Value>
+          </Textbox>
+          <Textbox Name="textbox6">
+            <Top>2.625in</Top>
+            <Width>6.375in</Width>
+            <Style>
+              <FontFamily>Calibri</FontFamily>
+              <FontSize>11pt</FontSize>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+            <ZIndex>6</ZIndex>
+            <CanGrow>true</CanGrow>
+            <Left>0.375in</Left>
+            <Height>0.5in</Height>
+            <Value>="3.    Za vreme plaćenog odsustva zaposleni ima pravo na naknadu zarade u visini zarade koju bi ostvario da radi."</Value>
+          </Textbox>
+          <Textbox Name="textbox5">
+            <Top>2.125in</Top>
+            <Width>6.375in</Width>
+            <Style>
+              <FontFamily>Calibri</FontFamily>
+              <FontSize>11pt</FontSize>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+            <ZIndex>5</ZIndex>
+            <CanGrow>true</CanGrow>
+            <Left>0.375in</Left>
+            <Height>0.5in</Height>
+            <Value>="2.    Odsustvo iz tačke 1 ovog rešenja zaposleni će koristiti od " + Fields!start.Value + " do " + Fields!end.Value + " godine."</Value>
+          </Textbox>
+          <Textbox Name="textbox4">
+            <rd:DefaultName>textbox4</rd:DefaultName>
+            <Top>1.625in</Top>
+            <Width>6.375in</Width>
+            <Style>
+              <FontFamily>Calibri</FontFamily>
+              <FontSize>11pt</FontSize>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+            <ZIndex>4</ZIndex>
+            <CanGrow>true</CanGrow>
+            <Left>0.375in</Left>
+            <Height>0.5in</Height>
+            <Value>="1.    Zaposlenom " + Fields!employee.Value + ", na poziciji " + Fields!working_unit.Value + " odobrava se korišćenje plaćenog odsustva u trajanju od " + Fields!length.Value + " radni dan."</Value>
+          </Textbox>
+          <Textbox Name="textbox3">
+            <rd:DefaultName>textbox3</rd:DefaultName>
+            <Top>1.25in</Top>
+            <Width>2.5in</Width>
+            <Style>
+              <FontFamily>Calibri</FontFamily>
+              <FontSize>12pt</FontSize>
+              <FontWeight>700</FontWeight>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+            <ZIndex>3</ZIndex>
+            <CanGrow>true</CanGrow>
+            <Left>2.125in</Left>
+            <Height>0.25in</Height>
+            <Value>o korišćenju plaćenog odsustva</Value>
+          </Textbox>
+          <Textbox Name="textbox2">
+            <rd:DefaultName>textbox2</rd:DefaultName>
+            <Top>0.875in</Top>
+            <Width>0.8125in</Width>
+            <Style>
+              <FontFamily>Calibri</FontFamily>
+              <FontSize>14pt</FontSize>
+              <FontWeight>700</FontWeight>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+            <ZIndex>2</ZIndex>
+            <CanGrow>true</CanGrow>
+            <Left>2.9375in</Left>
+            <Height>0.25in</Height>
+            <Value>REŠENJE</Value>
+          </Textbox>
+          <Textbox Name="textbox1">
+            <rd:DefaultName>textbox1</rd:DefaultName>
+            <Width>6.625in</Width>
+            <Style>
+              <FontFamily>Calibri</FontFamily>
+              <FontSize>11pt</FontSize>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+            <ZIndex>1</ZIndex>
+            <CanGrow>true</CanGrow>
+            <Height>0.625in</Height>
+            <Value>="Na osnovu člana 77, 114 i 192  Zakona o radu (Sl. glasnik RS, br. 24/2005, 61/2005, 54/2009, 32/2013 i 75/2014) PMC Automotive d.o.o. Kragujevac, dana " + Fields!entry_date.Value + ". godine, donosi sledeće"</Value>
+          </Textbox>
+          <Textbox Name="textbox8">
+            <rd:DefaultName>textbox8</rd:DefaultName>
+            <Top>3.75in</Top>
+            <Width>6.625in</Width>
+            <Style>
+              <FontFamily>Calibri</FontFamily>
+              <FontSize>11pt</FontSize>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+            <CanGrow>true</CanGrow>
+            <Left>0.125in</Left>
+            <Height>0.5in</Height>
+            <Value>="Zaposleni " + Fields!employee.Value + " podneo je dana " + Fields!entry_date.Value + " godine zahtev da mu se odobri i omogući korišćenje plaćenog odsustva iz razloga:"</Value>
+          </Textbox>
+        </ReportItems>
+        <Top>0.125in</Top>
+      </List>
+    </ReportItems>
+    <Height>8.5in</Height>
+  </Body>
+  <Language>en-US</Language>
+  <TopMargin>0.3in</TopMargin>
+</Report>
