@@ -506,7 +506,7 @@ namespace Reports
                     niz[7] += min;
                     break;
                 //V - Nega deteta do 3 godine
-                case 63:
+                case 28: case 63:
                     niz[8] += min;
                     break;
                 //W - Godisnji odmor

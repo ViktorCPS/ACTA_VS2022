@@ -717,3 +717,35 @@ Parameter name: newDisplayMember
 
 03/26/2025 11:50:55 OPEN SESSIONS NUM: 4
 
+05/05/2025 15:57:57 OPEN SESSIONS NUM: 4
+
+05/06/2025 10:33:44 ACTA.ACTA_Closed(): Cannot open database "ACTA" requested by the login. The login failed.
+Login failed for user 'actamgr'.
+
+05/06/2025 10:34:27 ACTA.ACTA_Closed(): Cannot open database "ACTA" requested by the login. The login failed.
+Login failed for user 'actamgr'.
+
+05/06/2025 11:04:27 ACTA.ACTA_Closed(): Cannot open database "ACTA" requested by the login. The login failed.
+Login failed for user 'actamgr'.
+
+05/06/2025 11:34:52 ACTA.ACTA_Closed(): Cannot open database "ACTA" requested by the login. The login failed.
+Login failed for user 'actamgr'.
+
+05/06/2025 11:36:24 OPEN SESSIONS NUM: 4
+
+05/06/2025 11:45:56 OPEN SESSIONS NUM: 4
+
+05/06/2025 11:51:00 OPEN SESSIONS NUM: 4
+
+05/06/2025 12:23:45 OPEN SESSIONS NUM: 4
+
+05/06/2025 13:07:23 OPEN SESSIONS NUM: 4
+
+05/06/2025 13:13:52 OPEN SESSIONS NUM: 4
+
+05/06/2025 13:18:05 OPEN SESSIONS NUM: 4
+
+05/06/2025 13:37:43 OPEN SESSIONS NUM: 4
+
+05/06/2025 14:36:43 OPEN SESSIONS NUM: 4
+
