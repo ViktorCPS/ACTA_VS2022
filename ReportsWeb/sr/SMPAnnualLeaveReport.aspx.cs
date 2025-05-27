@@ -31,6 +31,7 @@ namespace ReportsWeb.sr
                     DataTable dt = new DataTable();
                     dt.Columns.Add("ID");
                     dt.Columns.Add("Ime i prezime");
+                    dt.Columns.Add("God.Odmor sledovanje ove godine");
                     dt.Columns.Add("God.Odmor trenutna godina");
                     dt.Columns.Add("God.Odmor prethodna godina");
                     dt.Columns.Add("Ukupno preostalo");
@@ -52,6 +53,7 @@ namespace ReportsWeb.sr
                             row["God.Odmor prethodna godina"] = godOdmorPr - godOdmorKor;
                             row["God.Odmor trenutna godina"] = godOdmorTr;
                         }
+                        row["God.Odmor sledovanje ove godine"] = godOdmorTr;
                         row["Ukupno preostalo"] = godOdmorPr + godOdmorTr - godOdmorKor;
                         dt.Rows.Add(row);
                         dt.AcceptChanges();
