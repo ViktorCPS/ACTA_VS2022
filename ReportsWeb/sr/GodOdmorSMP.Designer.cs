@@ -272,6 +272,8 @@ namespace ReportsWeb.sr {
             
             private global::System.Data.DataColumn columnUkupno_preostalo;
             
+            private global::System.Data.DataColumn _columnGod_Odmor_sledovanje_ove_godine;
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             public emplAnnualLeaveDataTable() {
                 this.TableName = "emplAnnualLeave";
@@ -338,6 +340,13 @@ namespace ReportsWeb.sr {
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            public global::System.Data.DataColumn _God_Odmor_sledovanje_ove_godineColumn {
+                get {
+                    return this._columnGod_Odmor_sledovanje_ove_godine;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.ComponentModel.Browsable(false)]
             public int Count {
                 get {
@@ -366,14 +375,15 @@ namespace ReportsWeb.sr {
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            public emplAnnualLeaveRow AddemplAnnualLeaveRow(string ID, string Ime_i_prezime, string _God_Odmor_trenutna_godina, string _God_Odmor_prethodna_godina, string Ukupno_preostalo) {
+            public emplAnnualLeaveRow AddemplAnnualLeaveRow(string ID, string Ime_i_prezime, string _God_Odmor_trenutna_godina, string _God_Odmor_prethodna_godina, string Ukupno_preostalo, string _God_Odmor_sledovanje_ove_godine) {
                 emplAnnualLeaveRow rowemplAnnualLeaveRow = ((emplAnnualLeaveRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         ID,
                         Ime_i_prezime,
                         _God_Odmor_trenutna_godina,
                         _God_Odmor_prethodna_godina,
-                        Ukupno_preostalo};
+                        Ukupno_preostalo,
+                        _God_Odmor_sledovanje_ove_godine};
                 rowemplAnnualLeaveRow.ItemArray = columnValuesArray;
                 this.Rows.Add(rowemplAnnualLeaveRow);
                 return rowemplAnnualLeaveRow;
@@ -404,6 +414,7 @@ namespace ReportsWeb.sr {
                 this._columnGod_Odmor_trenutna_godina = base.Columns["God.Odmor trenutna godina"];
                 this._columnGod_Odmor_prethodna_godina = base.Columns["God.Odmor prethodna godina"];
                 this.columnUkupno_preostalo = base.Columns["Ukupno preostalo"];
+                this._columnGod_Odmor_sledovanje_ove_godine = base.Columns["God.Odmor sledovanje ove godine"];
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -422,6 +433,10 @@ namespace ReportsWeb.sr {
                 base.Columns.Add(this._columnGod_Odmor_prethodna_godina);
                 this.columnUkupno_preostalo = new global::System.Data.DataColumn("Ukupno preostalo", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnUkupno_preostalo);
+                this._columnGod_Odmor_sledovanje_ove_godine = new global::System.Data.DataColumn("God.Odmor sledovanje ove godine", typeof(string), null, global::System.Data.MappingType.Element);
+                this._columnGod_Odmor_sledovanje_ove_godine.ExtendedProperties.Add("Generator_ColumnVarNameInTable", "_columnGod_Odmor_sledovanje_ove_godine");
+                this._columnGod_Odmor_sledovanje_ove_godine.ExtendedProperties.Add("Generator_UserColumnName", "God.Odmor sledovanje ove godine");
+                base.Columns.Add(this._columnGod_Odmor_sledovanje_ove_godine);
                 this.Constraints.Add(new global::System.Data.UniqueConstraint("Constraint1", new global::System.Data.DataColumn[] {
                                 this.columnID}, true));
                 this.columnID.AllowDBNull = false;
@@ -630,6 +645,22 @@ namespace ReportsWeb.sr {
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            public string _God_Odmor_sledovanje_ove_godine {
+                get {
+                    try {
+                        return ((string)(this[this.tableemplAnnualLeave._God_Odmor_sledovanje_ove_godineColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'God.Odmor sledovanje ove godine\' in table \'emplAnnualLeave\'" +
+                                " is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableemplAnnualLeave._God_Odmor_sledovanje_ove_godineColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             public bool IsIme_i_prezimeNull() {
                 return this.IsNull(this.tableemplAnnualLeave.Ime_i_prezimeColumn);
             }
@@ -667,6 +698,16 @@ namespace ReportsWeb.sr {
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             public void SetUkupno_preostaloNull() {
                 this[this.tableemplAnnualLeave.Ukupno_preostaloColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            public bool Is_God_Odmor_sledovanje_ove_godineNull() {
+                return this.IsNull(this.tableemplAnnualLeave._God_Odmor_sledovanje_ove_godineColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            public void Set_God_Odmor_sledovanje_ove_godineNull() {
+                this[this.tableemplAnnualLeave._God_Odmor_sledovanje_ove_godineColumn] = global::System.Convert.DBNull;
             }
         }
         

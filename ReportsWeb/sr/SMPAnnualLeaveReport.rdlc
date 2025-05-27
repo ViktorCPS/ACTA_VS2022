@@ -40,6 +40,10 @@
           <DataField>Ukupno preostalo</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
+        <Field Name="God_Odmor_sledovanje_ove_godine">
+          <DataField>God.Odmor sledovanje ove godine</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
       </Fields>
       <Query>
         <DataSourceName>DummyDataSource</DataSourceName>
@@ -52,14 +56,14 @@
       </rd:DataSetInfo>
     </DataSet>
   </DataSets>
-  <Width>6.75in</Width>
+  <Width>8.375in</Width>
   <Body>
     <ReportItems>
       <Table Name="table1">
         <ZIndex>1</ZIndex>
         <DataSetName>GodOdmorSMP_emplAnnualLeave</DataSetName>
         <Top>1in</Top>
-        <Width>6.5in</Width>
+        <Width>8in</Width>
         <Details>
           <TableRows>
             <TableRow>
@@ -77,7 +81,7 @@
                         <PaddingTop>2pt</PaddingTop>
                         <PaddingBottom>2pt</PaddingBottom>
                       </Style>
-                      <ZIndex>4</ZIndex>
+                      <ZIndex>5</ZIndex>
                       <CanGrow>true</CanGrow>
                       <Value>=Fields!ID.Value</Value>
                     </Textbox>
@@ -96,9 +100,28 @@
                         <PaddingTop>2pt</PaddingTop>
                         <PaddingBottom>2pt</PaddingBottom>
                       </Style>
-                      <ZIndex>3</ZIndex>
+                      <ZIndex>4</ZIndex>
                       <CanGrow>true</CanGrow>
                       <Value>=Fields!Ime_i_prezime.Value</Value>
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="God_Odmor_sledovanje_ove_godine">
+                      <rd:DefaultName>God_Odmor_sledovanje_ove_godine</rd:DefaultName>
+                      <Style>
+                        <BorderStyle>
+                          <Default>Solid</Default>
+                        </BorderStyle>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingBottom>2pt</PaddingBottom>
+                      </Style>
+                      <ZIndex>3</ZIndex>
+                      <CanGrow>true</CanGrow>
+                      <Value>=Fields!God_Odmor_sledovanje_ove_godine.Value</Value>
                     </Textbox>
                   </ReportItems>
                 </TableCell>
@@ -180,7 +203,7 @@
                         <PaddingTop>2pt</PaddingTop>
                         <PaddingBottom>2pt</PaddingBottom>
                       </Style>
-                      <ZIndex>9</ZIndex>
+                      <ZIndex>11</ZIndex>
                       <CanGrow>true</CanGrow>
                       <Value>ID</Value>
                     </Textbox>
@@ -199,9 +222,27 @@
                         <PaddingTop>2pt</PaddingTop>
                         <PaddingBottom>2pt</PaddingBottom>
                       </Style>
-                      <ZIndex>8</ZIndex>
+                      <ZIndex>10</ZIndex>
                       <CanGrow>true</CanGrow>
                       <Value>Ime i prezime</Value>
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="textbox9">
+                      <Style>
+                        <BorderStyle>
+                          <Default>Solid</Default>
+                        </BorderStyle>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingBottom>2pt</PaddingBottom>
+                      </Style>
+                      <ZIndex>9</ZIndex>
+                      <CanGrow>true</CanGrow>
+                      <Value>="Dani odmora za "+Now().ToString("yyyy.")</Value>
                     </Textbox>
                   </ReportItems>
                 </TableCell>
@@ -218,7 +259,7 @@
                         <PaddingTop>2pt</PaddingTop>
                         <PaddingBottom>2pt</PaddingBottom>
                       </Style>
-                      <ZIndex>7</ZIndex>
+                      <ZIndex>8</ZIndex>
                       <CanGrow>true</CanGrow>
                       <Value>="God. odmor za "+Now().ToString("yyyy.")</Value>
                     </Textbox>
@@ -237,7 +278,7 @@
                         <PaddingTop>2pt</PaddingTop>
                         <PaddingBottom>2pt</PaddingBottom>
                       </Style>
-                      <ZIndex>6</ZIndex>
+                      <ZIndex>7</ZIndex>
                       <CanGrow>true</CanGrow>
                       <Value>="God. odmor za "+DateAdd(DateInterval.Year,-1,Today()).ToString("yyyy.")</Value>
                     </Textbox>
@@ -256,7 +297,7 @@
                         <PaddingTop>2pt</PaddingTop>
                         <PaddingBottom>2pt</PaddingBottom>
                       </Style>
-                      <ZIndex>5</ZIndex>
+                      <ZIndex>6</ZIndex>
                       <CanGrow>true</CanGrow>
                       <Value>Ukupno preostalo</Value>
                     </Textbox>
@@ -269,7 +310,10 @@
         </Header>
         <TableColumns>
           <TableColumn>
-            <Width>0.875in</Width>
+            <Width>0.75in</Width>
+          </TableColumn>
+          <TableColumn>
+            <Width>1.625in</Width>
           </TableColumn>
           <TableColumn>
             <Width>1.625in</Width>
