@@ -781,7 +781,7 @@ namespace UI {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Add map.
+        ///   Looks up a localized string similar to .
         /// </summary>
         public static string addMap {
             get {
@@ -790,7 +790,7 @@ namespace UI {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Add map.
+        ///   Looks up a localized string similar to .
         /// </summary>
         public static string addMap1 {
             get {
@@ -799,7 +799,7 @@ namespace UI {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Add organizational unit.
+        ///   Looks up a localized string similar to .
         /// </summary>
         public static string addOU {
             get {
@@ -808,7 +808,7 @@ namespace UI {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Add organizational unit.
+        ///   Looks up a localized string similar to .
         /// </summary>
         public static string addOU1 {
             get {
@@ -817,7 +817,7 @@ namespace UI {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Add pass type.
+        ///   Looks up a localized string similar to .
         /// </summary>
         public static string addPassType {
             get {
@@ -826,7 +826,7 @@ namespace UI {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Add pass type.
+        ///   Looks up a localized string similar to .
         /// </summary>
         public static string addPassType1 {
             get {
@@ -835,7 +835,7 @@ namespace UI {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Add terminal.
+        ///   Looks up a localized string similar to .
         /// </summary>
         public static string addReader {
             get {
@@ -844,7 +844,7 @@ namespace UI {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Add terminal.
+        ///   Looks up a localized string similar to .
         /// </summary>
         public static string addReader1 {
             get {
@@ -853,7 +853,7 @@ namespace UI {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Add reader.
+        ///   Looks up a localized string similar to .
         /// </summary>
         public static string addReaderMode {
             get {
@@ -862,7 +862,7 @@ namespace UI {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Add reader.
+        ///   Looks up a localized string similar to .
         /// </summary>
         public static string addReaderMode1 {
             get {
@@ -871,7 +871,7 @@ namespace UI {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Add role.
+        ///   Looks up a localized string similar to .
         /// </summary>
         public static string addRole {
             get {
@@ -880,7 +880,7 @@ namespace UI {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Add role.
+        ///   Looks up a localized string similar to .
         /// </summary>
         public static string addRole1 {
             get {
@@ -889,7 +889,7 @@ namespace UI {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to You must enter role name..
+        ///   Looks up a localized string similar to .
         /// </summary>
         public static string addRoleNameEmpty {
             get {
@@ -898,7 +898,7 @@ namespace UI {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to You must enter role name..
+        ///   Looks up a localized string similar to .
         /// </summary>
         public static string addRoleNameEmpty1 {
             get {
@@ -907,7 +907,7 @@ namespace UI {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Add weekly access schedule.
+        ///   Looks up a localized string similar to .
         /// </summary>
         public static string addTimeAccessProfile {
             get {
@@ -916,7 +916,7 @@ namespace UI {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Add weekly access schedule.
+        ///   Looks up a localized string similar to .
         /// </summary>
         public static string addTimeAccessProfile1 {
             get {
@@ -925,7 +925,7 @@ namespace UI {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to You must enter weekly access schedule name..
+        ///   Looks up a localized string similar to .
         /// </summary>
         public static string addTimeAccessProfileNameEmpty {
             get {
@@ -934,7 +934,7 @@ namespace UI {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to You must enter weekly access schedule name..
+        ///   Looks up a localized string similar to .
         /// </summary>
         public static string addTimeAccessProfileNameEmpty1 {
             get {
@@ -943,7 +943,7 @@ namespace UI {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Add pause.
+        ///   Looks up a localized string similar to .
         /// </summary>
         public static string addTimeSchemaPause {
             get {
@@ -952,7 +952,7 @@ namespace UI {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Add pause.
+        ///   Looks up a localized string similar to .
         /// </summary>
         public static string addTimeSchemaPause1 {
             get {
@@ -961,7 +961,7 @@ namespace UI {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to You must enter description!.
+        ///   Looks up a localized string similar to .
         /// </summary>
         public static string addTSPauseDescEmpty {
             get {
@@ -970,7 +970,7 @@ namespace UI {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to You must enter description!.
+        ///   Looks up a localized string similar to .
         /// </summary>
         public static string addTSPauseDescEmpty1 {
             get {
@@ -979,7 +979,7 @@ namespace UI {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to You must enter earliest use time!.
+        ///   Looks up a localized string similar to .
         /// </summary>
         public static string addTSPauseETimeNotNull {
             get {
@@ -988,7 +988,7 @@ namespace UI {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to You must enter earliest use time!.
+        ///   Looks up a localized string similar to .
         /// </summary>
         public static string addTSPauseETimeNotNull1 {
             get {
@@ -997,7 +997,7 @@ namespace UI {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Earliest use time must be positive number or zero!.
+        ///   Looks up a localized string similar to .
         /// </summary>
         public static string addTSPauseETimeNotNumber {
             get {
@@ -1006,7 +1006,7 @@ namespace UI {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Earliest use time must be positive number or zero!.
+        ///   Looks up a localized string similar to .
         /// </summary>
         public static string addTSPauseETimeNotNumber1 {
             get {
@@ -1015,7 +1015,7 @@ namespace UI {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to You must enter latest use time!.
+        ///   Looks up a localized string similar to .
         /// </summary>
         public static string addTSPauseLTimeNotNull {
             get {
@@ -1024,7 +1024,7 @@ namespace UI {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to You must enter latest use time!.
+        ///   Looks up a localized string similar to .
         /// </summary>
         public static string addTSPauseLTimeNotNull1 {
             get {
@@ -1033,7 +1033,7 @@ namespace UI {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Latest use time must be positive number or zero!.
+        ///   Looks up a localized string similar to .
         /// </summary>
         public static string addTSPauseLTimeNotNumber {
             get {
@@ -1042,7 +1042,7 @@ namespace UI {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Latest use time must be positive number or zero!.
+        ///   Looks up a localized string similar to .
         /// </summary>
         public static string addTSPauseLTimeNotNumber1 {
             get {
@@ -1051,7 +1051,7 @@ namespace UI {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to You must enter pause offset!.
+        ///   Looks up a localized string similar to .
         /// </summary>
         public static string addTSPauseOffsetNotNull {
             get {
@@ -1060,7 +1060,7 @@ namespace UI {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to You must enter pause offset!.
+        ///   Looks up a localized string similar to .
         /// </summary>
         public static string addTSPauseOffsetNotNull1 {
             get {
@@ -1069,7 +1069,7 @@ namespace UI {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Pause offset must be positive number or zero!.
+        ///   Looks up a localized string similar to .
         /// </summary>
         public static string addTSPauseOffsetNotNumber {
             get {
@@ -1078,7 +1078,7 @@ namespace UI {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Pause offset must be positive number or zero!.
+        ///   Looks up a localized string similar to .
         /// </summary>
         public static string addTSPauseOffsetNotNumber1 {
             get {
@@ -1087,7 +1087,7 @@ namespace UI {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Pause duration and short break duration can&apos;t both be zero! .
+        ///   Looks up a localized string similar to .
         /// </summary>
         public static string addTSPausePauseSBDurationBothZero {
             get {
@@ -1096,7 +1096,7 @@ namespace UI {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Pause duration and short break duration can&apos;t both be zero! .
+        ///   Looks up a localized string similar to .
         /// </summary>
         public static string addTSPausePauseSBDurationBothZero1 {
             get {
@@ -1105,7 +1105,7 @@ namespace UI {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to You must enter pause duration!.
+        ///   Looks up a localized string similar to .
         /// </summary>
         public static string addTSPausePDurationNotNull {
             get {
@@ -1114,7 +1114,7 @@ namespace UI {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to You must enter pause duration!.
+        ///   Looks up a localized string similar to .
         /// </summary>
         public static string addTSPausePDurationNotNull1 {
             get {
@@ -1123,7 +1123,7 @@ namespace UI {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Pause duration must be positive number or zero!.
+        ///   Looks up a localized string similar to .
         /// </summary>
         public static string addTSPausePDurationNotNumber {
             get {
@@ -1132,7 +1132,7 @@ namespace UI {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Pause duration must be positive number or zero!.
+        ///   Looks up a localized string similar to .
         /// </summary>
         public static string addTSPausePDurationNotNumber1 {
             get {
@@ -1141,7 +1141,7 @@ namespace UI {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to You must enter pause ID! .
+        ///   Looks up a localized string similar to .
         /// </summary>
         public static string addTSPausePIDNotNull {
             get {
@@ -1150,7 +1150,7 @@ namespace UI {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to You must enter pause ID! .
+        ///   Looks up a localized string similar to .
         /// </summary>
         public static string addTSPausePIDNotNull1 {
             get {
@@ -1159,7 +1159,7 @@ namespace UI {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Pause ID must be positive number or zero!.
+        ///   Looks up a localized string similar to .
         /// </summary>
         public static string addTSPausePIDNotNumber {
             get {
@@ -1168,7 +1168,7 @@ namespace UI {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Pause ID must be positive number or zero!.
+        ///   Looks up a localized string similar to .
         /// </summary>
         public static string addTSPausePIDNotNumber1 {
             get {
@@ -1177,7 +1177,7 @@ namespace UI {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Short break duration can&apos;t be greater than or equal to pause duration!.
+        ///   Looks up a localized string similar to .
         /// </summary>
         public static string addTSPauseSBDurationGreaterPause {
             get {
@@ -1186,7 +1186,7 @@ namespace UI {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Short break duration can&apos;t be greater than or equal to pause duration!.
+        ///   Looks up a localized string similar to .
         /// </summary>
         public static string addTSPauseSBDurationGreaterPause1 {
             get {
@@ -1195,7 +1195,7 @@ namespace UI {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to You must enter short break duration!.
+        ///   Looks up a localized string similar to .
         /// </summary>
         public static string addTSPauseSBDurationNotNull {
             get {
@@ -1204,7 +1204,7 @@ namespace UI {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to You must enter short break duration!.
+        ///   Looks up a localized string similar to .
         /// </summary>
         public static string addTSPauseSBDurationNotNull1 {
             get {
@@ -1213,7 +1213,7 @@ namespace UI {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Short break duration must be positive number or zero!.
+        ///   Looks up a localized string similar to .
         /// </summary>
         public static string addTSPauseSBDurationNotNumber {
             get {
@@ -1222,7 +1222,7 @@ namespace UI {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Short break duration must be positive number or zero!.
+        ///   Looks up a localized string similar to .
         /// </summary>
         public static string addTSPauseSBDurationNotNumber1 {
             get {
@@ -1231,7 +1231,7 @@ namespace UI {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Add user.
+        ///   Looks up a localized string similar to .
         /// </summary>
         public static string addUser {
             get {
@@ -1240,7 +1240,7 @@ namespace UI {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Add user.
+        ///   Looks up a localized string similar to .
         /// </summary>
         public static string addUser1 {
             get {
@@ -1249,7 +1249,7 @@ namespace UI {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Add working unit.
+        ///   Looks up a localized string similar to .
         /// </summary>
         public static string addWU {
             get {
@@ -1258,7 +1258,7 @@ namespace UI {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Add working unit.
+        ///   Looks up a localized string similar to .
         /// </summary>
         public static string addWU1 {
             get {
@@ -1267,7 +1267,7 @@ namespace UI {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to You can not change permissions for admin role..
+        ///   Looks up a localized string similar to .
         /// </summary>
         public static string adminRoleNoUpd {
             get {
@@ -1276,7 +1276,7 @@ namespace UI {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to You can not change permissions for admin role..
+        ///   Looks up a localized string similar to .
         /// </summary>
         public static string adminRoleNoUpd1 {
             get {
@@ -1285,7 +1285,7 @@ namespace UI {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Only users from ADMIN role can open this window..
+        ///   Looks up a localized string similar to .
         /// </summary>
         public static string adminRoleSeeInfo {
             get {
@@ -1294,7 +1294,7 @@ namespace UI {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Only users from ADMIN role can open this window..
+        ///   Looks up a localized string similar to .
         /// </summary>
         public static string adminRoleSeeInfo1 {
             get {
@@ -1303,7 +1303,7 @@ namespace UI {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Terminal advance settings.
+        ///   Looks up a localized string similar to .
         /// </summary>
         public static string advanceReaderSettings {
             get {
@@ -1312,7 +1312,7 @@ namespace UI {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Terminal advance settings.
+        ///   Looks up a localized string similar to .
         /// </summary>
         public static string advanceReaderSettings1 {
             get {
@@ -1321,7 +1321,7 @@ namespace UI {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to *.
+        ///   Looks up a localized string similar to .
         /// </summary>
         public static string all {
             get {
@@ -1330,7 +1330,7 @@ namespace UI {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to *.
+        ///   Looks up a localized string similar to .
         /// </summary>
         public static string all1 {
             get {
@@ -1339,7 +1339,7 @@ namespace UI {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to all locations.
+        ///   Looks up a localized string similar to .
         /// </summary>
         public static string allLocations {
             get {
@@ -1348,7 +1348,7 @@ namespace UI {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to all locations.
+        ///   Looks up a localized string similar to .
         /// </summary>
         public static string allLocations1 {
             get {
@@ -1357,7 +1357,7 @@ namespace UI {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Some meals could not be validated..
+        ///   Looks up a localized string similar to .
         /// </summary>
         public static string allMealsNotValidate {
             get {
@@ -1366,7 +1366,7 @@ namespace UI {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Some meals could not be validated..
+        ///   Looks up a localized string similar to .
         /// </summary>
         public static string allMealsNotValidate1 {
             get {
@@ -1375,7 +1375,7 @@ namespace UI {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to All meals are successufully validate..
+        ///   Looks up a localized string similar to .
         /// </summary>
         public static string allMealsValidate {
             get {
@@ -1384,7 +1384,7 @@ namespace UI {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to All meals are successufully validate..
+        ///   Looks up a localized string similar to .
         /// </summary>
         public static string allMealsValidate1 {
             get {
@@ -1393,7 +1393,7 @@ namespace UI {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to All roles are already used..
+        ///   Looks up a localized string similar to .
         /// </summary>
         public static string allRolesUsed {
             get {
@@ -1402,7 +1402,7 @@ namespace UI {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to All roles are already used..
+        ///   Looks up a localized string similar to .
         /// </summary>
         public static string allRolesUsed1 {
             get {
@@ -1411,7 +1411,7 @@ namespace UI {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to All.
+        ///   Looks up a localized string similar to .
         /// </summary>
         public static string allVisits {
             get {
@@ -1420,7 +1420,7 @@ namespace UI {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to All.
+        ///   Looks up a localized string similar to .
         /// </summary>
         public static string allVisits1 {
             get {
@@ -1429,7 +1429,7 @@ namespace UI {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Data already locked..
+        ///   Looks up a localized string similar to .
         /// </summary>
         public static string alreadyLocked {
             get {
@@ -1438,7 +1438,7 @@ namespace UI {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Data already locked..
+        ///   Looks up a localized string similar to .
         /// </summary>
         public static string alreadyLocked1 {
             get {
@@ -1447,7 +1447,7 @@ namespace UI {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Data already unlocked..
+        ///   Looks up a localized string similar to .
         /// </summary>
         public static string alreadyUnlocked {
             get {
@@ -1456,7 +1456,7 @@ namespace UI {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Data already unlocked..
+        ///   Looks up a localized string similar to .
         /// </summary>
         public static string alreadyUnlocked1 {
             get {
@@ -1465,7 +1465,7 @@ namespace UI {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Alternativni naziv.
+        ///   Looks up a localized string similar to .
         /// </summary>
         public static string AltName {
             get {
@@ -1474,7 +1474,7 @@ namespace UI {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Alternativni naziv.
+        ///   Looks up a localized string similar to .
         /// </summary>
         public static string AltName1 {
             get {
@@ -1483,7 +1483,7 @@ namespace UI {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Annual leave.
+        ///   Looks up a localized string similar to .
         /// </summary>
         public static string ANNUAL_LEAVE {
             get {
@@ -1492,7 +1492,7 @@ namespace UI {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Annual leave.
+        ///   Looks up a localized string similar to .
         /// </summary>
         public static string ANNUAL_LEAVE1 {
             get {
@@ -1501,7 +1501,7 @@ namespace UI {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Ant0 location: .
+        ///   Looks up a localized string similar to .
         /// </summary>
         public static string Ant0Loc {
             get {
@@ -1510,7 +1510,7 @@ namespace UI {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Ant0 location: .
+        ///   Looks up a localized string similar to .
         /// </summary>
         public static string Ant0Loc1 {
             get {
@@ -1519,7 +1519,7 @@ namespace UI {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Ant1 location:.
+        ///   Looks up a localized string similar to .
         /// </summary>
         public static string Ant1Loc {
             get {
@@ -1528,7 +1528,7 @@ namespace UI {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Ant1 location:.
+        ///   Looks up a localized string similar to .
         /// </summary>
         public static string Ant1Loc1 {
             get {
@@ -1537,7 +1537,7 @@ namespace UI {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to If you want antenna number search, you must enter integer..
+        ///   Looks up a localized string similar to .
         /// </summary>
         public static string antennaNotInt {
             get {
@@ -1546,7 +1546,7 @@ namespace UI {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to If you want antenna number search, you must enter integer..
+        ///   Looks up a localized string similar to .
         /// </summary>
         public static string antennaNotInt1 {
             get {
@@ -1555,7 +1555,7 @@ namespace UI {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to AOP.
+        ///   Looks up a localized string similar to .
         /// </summary>
         public static string AOP {
             get {
@@ -1564,7 +1564,7 @@ namespace UI {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to AOP.
+        ///   Looks up a localized string similar to .
         /// </summary>
         public static string AOP1 {
             get {
@@ -1573,7 +1573,7 @@ namespace UI {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to AP.
+        ///   Looks up a localized string similar to .
         /// </summary>
         public static string AP {
             get {
@@ -1582,7 +1582,7 @@ namespace UI {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to AP.
+        ///   Looks up a localized string similar to .
         /// </summary>
         public static string AP1 {
             get {
@@ -1591,7 +1591,7 @@ namespace UI {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Anti pass back saving faild..
+        ///   Looks up a localized string similar to .
         /// </summary>
         public static string apbNotSaved {
             get {
@@ -1600,7 +1600,7 @@ namespace UI {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Anti pass back saving faild..
+        ///   Looks up a localized string similar to .
         /// </summary>
         public static string apbNotSaved1 {
             get {
@@ -1609,7 +1609,7 @@ namespace UI {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Application running already..
+        ///   Looks up a localized string similar to .
         /// </summary>
         public static string applRunning {
             get {
@@ -1618,7 +1618,7 @@ namespace UI {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Application running already..
+        ///   Looks up a localized string similar to .
         /// </summary>
         public static string applRunning1 {
             get {
@@ -1627,7 +1627,7 @@ namespace UI {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to You must enter user category ID..
+        ///   Looks up a localized string similar to .
         /// </summary>
         public static string applUserCategoryIDNotSet {
             get {
@@ -1636,7 +1636,7 @@ namespace UI {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to You must enter user category ID..
+        ///   Looks up a localized string similar to .
         /// </summary>
         public static string applUserCategoryIDNotSet1 {
             get {
@@ -1645,7 +1645,7 @@ namespace UI {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to You must enter category name..
+        ///   Looks up a localized string similar to .
         /// </summary>
         public static string applUserCategoryNameNotSet {
             get {
@@ -1654,7 +1654,7 @@ namespace UI {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to You must enter category name..
+        ///   Looks up a localized string similar to .
         /// </summary>
         public static string applUserCategoryNameNotSet1 {
             get {
@@ -1663,7 +1663,7 @@ namespace UI {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Users categories.
+        ///   Looks up a localized string similar to .
         /// </summary>
         public static string ApplUsersCategories {
             get {
@@ -1672,7 +1672,7 @@ namespace UI {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Users categories.
+        ///   Looks up a localized string similar to .
         /// </summary>
         public static string ApplUsersCategories1 {
             get {
@@ -1681,7 +1681,7 @@ namespace UI {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Change tracking table.
+        ///   Looks up a localized string similar to .
         /// </summary>
         public static string ApplUsersLoginChangesTbl {
             get {
@@ -1690,7 +1690,7 @@ namespace UI {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Change tracking table.
+        ///   Looks up a localized string similar to .
         /// </summary>
         public static string ApplUsersLoginChangesTbl1 {
             get {
@@ -1699,7 +1699,7 @@ namespace UI {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Changes successufully saved. Changes will be seen after next log in..
+        ///   Looks up a localized string similar to .
         /// </summary>
         public static string applUserXRoleSaved {
             get {
@@ -1708,7 +1708,7 @@ namespace UI {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Changes successufully saved. Changes will be seen after next log in..
+        ///   Looks up a localized string similar to .
         /// </summary>
         public static string applUserXRoleSaved1 {
             get {
@@ -1717,7 +1717,7 @@ namespace UI {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Changes are not saved..
+        ///   Looks up a localized string similar to .
         /// </summary>
         public static string applUserXWUNotSaved {
             get {
@@ -1726,7 +1726,7 @@ namespace UI {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Changes are not saved..
+        ///   Looks up a localized string similar to .
         /// </summary>
         public static string applUserXWUNotSaved1 {
             get {
@@ -1735,7 +1735,7 @@ namespace UI {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Changes successfully saved..
+        ///   Looks up a localized string similar to .
         /// </summary>
         public static string applUserXWUSaved {
             get {
@@ -1744,7 +1744,7 @@ namespace UI {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Changes successfully saved..
+        ///   Looks up a localized string similar to .
         /// </summary>
         public static string applUserXWUSaved1 {
             get {
@@ -1753,7 +1753,7 @@ namespace UI {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to There are days without time schema assigned. Please assign time schema to each day..
+        ///   Looks up a localized string similar to .
         /// </summary>
         public static string assignEachDay {
             get {
@@ -1762,7 +1762,7 @@ namespace UI {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to There are days without time schema assigned. Please assign time schema to each day..
+        ///   Looks up a localized string similar to .
         /// </summary>
         public static string assignEachDay1 {
             get {
@@ -1771,7 +1771,7 @@ namespace UI {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Selected bans successfully caceled..
+        ///   Looks up a localized string similar to .
         /// </summary>
         public static string banCanceled {
             get {
@@ -1780,7 +1780,7 @@ namespace UI {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Selected bans successfully caceled..
+        ///   Looks up a localized string similar to .
         /// </summary>
         public static string banCanceled1 {
             get {
@@ -1789,7 +1789,7 @@ namespace UI {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Ban successfuly entered for visitor:.
+        ///   Looks up a localized string similar to .
         /// </summary>
         public static string banEnter {
             get {
@@ -1798,7 +1798,7 @@ namespace UI {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Ban successfuly entered for visitor:.
+        ///   Looks up a localized string similar to .
         /// </summary>
         public static string banEnter1 {
             get {
@@ -1807,7 +1807,7 @@ namespace UI {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Visitors whoes enterance is baned.
+        ///   Looks up a localized string similar to .
         /// </summary>
         public static string banForm {
             get {
@@ -1816,7 +1816,7 @@ namespace UI {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Visitors whoes enterance is baned.
+        ///   Looks up a localized string similar to .
         /// </summary>
         public static string banForm1 {
             get {
@@ -1825,7 +1825,7 @@ namespace UI {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Some visits has allready  baned..
+        ///   Looks up a localized string similar to .
         /// </summary>
         public static string banIsActive {
             get {
@@ -1834,7 +1834,7 @@ namespace UI {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Some visits has allready  baned..
+        ///   Looks up a localized string similar to .
         /// </summary>
         public static string banIsActive1 {
             get {
@@ -1843,7 +1843,7 @@ namespace UI {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Bank hours.
+        ///   Looks up a localized string similar to .
         /// </summary>
         public static string BANK_HOURS {
             get {
@@ -1852,7 +1852,7 @@ namespace UI {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Using bank hours.
+        ///   Looks up a localized string similar to .
         /// </summary>
         public static string BANK_HOURS_USED {
             get {
@@ -1861,7 +1861,7 @@ namespace UI {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Using bank hours.
+        ///   Looks up a localized string similar to .
         /// </summary>
         public static string BANK_HOURS_USED1 {
             get {
@@ -1870,7 +1870,7 @@ namespace UI {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Bank hours.
+        ///   Looks up a localized string similar to .
         /// </summary>
         public static string BANK_HOURS1 {
             get {
@@ -1879,7 +1879,7 @@ namespace UI {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to People counter - basic report.
+        ///   Looks up a localized string similar to .
         /// </summary>
         public static string basicCounter {
             get {
@@ -1888,7 +1888,7 @@ namespace UI {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to People counter - basic report.
+        ///   Looks up a localized string similar to .
         /// </summary>
         public static string basicCounter1 {
             get {
@@ -1897,7 +1897,7 @@ namespace UI {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Your card is blocked for furhter information see adrimistrator..
+        ///   Looks up a localized string similar to .
         /// </summary>
         public static string blockedCard {
             get {
@@ -1906,7 +1906,7 @@ namespace UI {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Your card is blocked for furhter information see adrimistrator..
+        ///   Looks up a localized string similar to .
         /// </summary>
         public static string blockedCard1 {
             get {
@@ -1915,7 +1915,7 @@ namespace UI {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Blocking tag.
+        ///   Looks up a localized string similar to .
         /// </summary>
         public static string blockTag {
             get {
@@ -1924,7 +1924,7 @@ namespace UI {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Blocking tag.
+        ///   Looks up a localized string similar to .
         /// </summary>
         public static string blockTag1 {
             get {
@@ -1933,7 +1933,7 @@ namespace UI {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Blood donation.
+        ///   Looks up a localized string similar to .
         /// </summary>
         public static string BLOOD_DONATION {
             get {
@@ -1942,7 +1942,7 @@ namespace UI {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Blood donation.
+        ///   Looks up a localized string similar to .
         /// </summary>
         public static string BLOOD_DONATION1 {
             get {
@@ -1951,7 +1951,7 @@ namespace UI {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Browse photo.
+        ///   Looks up a localized string similar to .
         /// </summary>
         public static string browsePhoto {
             get {
@@ -1960,7 +1960,7 @@ namespace UI {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Browse photo.
+        ///   Looks up a localized string similar to .
         /// </summary>
         public static string browsePhoto1 {
             get {
@@ -1969,7 +1969,7 @@ namespace UI {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Absenteeism.
+        ///   Looks up a localized string similar to .
         /// </summary>
         public static string btnAbsent {
             get {
@@ -1978,7 +1978,7 @@ namespace UI {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Absenteeism.
+        ///   Looks up a localized string similar to .
         /// </summary>
         public static string btnAbsent1 {
             get {
@@ -1987,7 +1987,7 @@ namespace UI {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Access group maintenance.
+        ///   Looks up a localized string similar to .
         /// </summary>
         public static string btnAccessGroupMaintenance {
             get {
@@ -1996,7 +1996,7 @@ namespace UI {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Access group maintenance.
+        ///   Looks up a localized string similar to .
         /// </summary>
         public static string btnAccessGroupMaintenance1 {
             get {
@@ -2005,7 +2005,7 @@ namespace UI {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Add.
+        ///   Looks up a localized string similar to .
         /// </summary>
         public static string btnAdd {
             get {
@@ -2014,7 +2014,7 @@ namespace UI {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Add.
+        ///   Looks up a localized string similar to .
         /// </summary>
         public static string btnAdd1 {
             get {
@@ -2023,7 +2023,7 @@ namespace UI {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Additional data &gt;&gt;&gt;.
+        ///   Looks up a localized string similar to .
         /// </summary>
         public static string btnAddData {
             get {
@@ -2032,7 +2032,7 @@ namespace UI {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Additional data &gt;&gt;&gt;.
+        ///   Looks up a localized string similar to .
         /// </summary>
         public static string btnAddData1 {
             get {
@@ -2041,7 +2041,7 @@ namespace UI {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Add interval.
+        ///   Looks up a localized string similar to .
         /// </summary>
         public static string btnAddInterval {
             get {
@@ -2050,7 +2050,7 @@ namespace UI {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Add interval.
+        ///   Looks up a localized string similar to .
         /// </summary>
         public static string btnAddInterval1 {
             get {
@@ -2059,7 +2059,7 @@ namespace UI {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Address &gt;&gt;&gt;.
+        ///   Looks up a localized string similar to .
         /// </summary>
         public static string btnAddress {
             get {
@@ -2068,7 +2068,7 @@ namespace UI {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Address &gt;&gt;&gt;.
+        ///   Looks up a localized string similar to .
         /// </summary>
         public static string btnAddress1 {
             get {
@@ -2077,7 +2077,7 @@ namespace UI {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Advance &gt;&gt;&gt;.
+        ///   Looks up a localized string similar to .
         /// </summary>
         public static string btnAddvance {
             get {
@@ -2086,7 +2086,7 @@ namespace UI {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Advance &gt;&gt;&gt;.
+        ///   Looks up a localized string similar to .
         /// </summary>
         public static string btnAddvance1 {
             get {
@@ -2095,7 +2095,7 @@ namespace UI {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Advanced &gt;&gt;.
+        ///   Looks up a localized string similar to .
         /// </summary>
         public static string btnAdvanced1 {
             get {
@@ -2104,7 +2104,7 @@ namespace UI {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to &lt;&lt; Basic.
+        ///   Looks up a localized string similar to .
         /// </summary>
         public static string btnAdvanced2 {
             get {
@@ -2113,7 +2113,7 @@ namespace UI {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to &lt;&lt; Basic.
+        ///   Looks up a localized string similar to .
         /// </summary>
         public static string btnAdvanced3 {
             get {
@@ -2122,7 +2122,7 @@ namespace UI {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Approve.
+        ///   Looks up a localized string similar to .
         /// </summary>
         public static string btnApprove {
             get {
@@ -2131,7 +2131,7 @@ namespace UI {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Approve.
+        ///   Looks up a localized string similar to .
         /// </summary>
         public static string btnApprove1 {
             get {
@@ -2140,7 +2140,7 @@ namespace UI {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Assign.
+        ///   Looks up a localized string similar to .
         /// </summary>
         public static string btnAssign {
             get {
@@ -2149,7 +2149,7 @@ namespace UI {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Assign.
+        ///   Looks up a localized string similar to .
         /// </summary>
         public static string btnAssign1 {
             get {
@@ -2158,7 +2158,7 @@ namespace UI {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Assign new appointed round.
+        ///   Looks up a localized string similar to .
         /// </summary>
         public static string btnAssignRouteSch {
             get {
@@ -2167,7 +2167,7 @@ namespace UI {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Assign new appointed round.
+        ///   Looks up a localized string similar to .
         /// </summary>
         public static string btnAssignRouteSch1 {
             get {
@@ -2176,7 +2176,7 @@ namespace UI {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Auto close pairs.
+        ///   Looks up a localized string similar to .
         /// </summary>
         public static string btnAutoClosePairs {
             get {
@@ -2185,7 +2185,7 @@ namespace UI {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Auto close pairs.
+        ///   Looks up a localized string similar to .
         /// </summary>
         public static string btnAutoClosePairs1 {
             get {
@@ -2194,7 +2194,7 @@ namespace UI {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Browse.
+        ///   Looks up a localized string similar to .
         /// </summary>
         public static string btnBrowse {
             get {
@@ -2203,7 +2203,7 @@ namespace UI {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Browse.
+        ///   Looks up a localized string similar to .
         /// </summary>
         public static string btnBrowse1 {
             get {
@@ -2212,7 +2212,7 @@ namespace UI {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Business trip.
+        ///   Looks up a localized string similar to .
         /// </summary>
         public static string btnBusinessTrip {
             get {
@@ -2221,7 +2221,7 @@ namespace UI {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Business trip.
+        ///   Looks up a localized string similar to .
         /// </summary>
         public static string btnBusinessTrip1 {
             get {
@@ -2230,7 +2230,7 @@ namespace UI {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to By days.
+        ///   Looks up a localized string similar to .
         /// </summary>
         public static string btnByDays {
             get {
@@ -2239,7 +2239,7 @@ namespace UI {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to By days.
+        ///   Looks up a localized string similar to .
         /// </summary>
         public static string btnByDays1 {
             get {
@@ -2248,7 +2248,7 @@ namespace UI {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to By meals.
+        ///   Looks up a localized string similar to .
         /// </summary>
         public static string btnByMeals {
             get {
@@ -2257,7 +2257,7 @@ namespace UI {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to By meals.
+        ///   Looks up a localized string similar to .
         /// </summary>
         public static string btnByMeals1 {
             get {
@@ -2266,7 +2266,7 @@ namespace UI {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Calculate.
+        ///   Looks up a localized string similar to .
         /// </summary>
         public static string btnCalculate {
             get {
@@ -2275,7 +2275,7 @@ namespace UI {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Calculate.
+        ///   Looks up a localized string similar to .
         /// </summary>
         public static string btnCalculate1 {
             get {
@@ -2284,7 +2284,7 @@ namespace UI {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Cancel.
+        ///   Looks up a localized string similar to .
         /// </summary>
         public static string btnCancel {
             get {
@@ -2293,7 +2293,7 @@ namespace UI {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Cancel.
+        ///   Looks up a localized string similar to .
         /// </summary>
         public static string btnCancel1 {
             get {
@@ -2302,7 +2302,7 @@ namespace UI {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Cancel ban.
+        ///   Looks up a localized string similar to .
         /// </summary>
         public static string btnCancelBan {
             get {
@@ -2311,7 +2311,7 @@ namespace UI {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Cancel ban.
+        ///   Looks up a localized string similar to .
         /// </summary>
         public static string btnCancelBan1 {
             get {
@@ -2320,7 +2320,7 @@ namespace UI {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Change.
+        ///   Looks up a localized string similar to .
         /// </summary>
         public static string btnChange {
             get {
@@ -2329,7 +2329,7 @@ namespace UI {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Change.
+        ///   Looks up a localized string similar to .
         /// </summary>
         public static string btnChange1 {
             get {
@@ -2338,7 +2338,7 @@ namespace UI {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Change name.
+        ///   Looks up a localized string similar to .
         /// </summary>
         public static string btnChangeName {
             get {
@@ -2347,7 +2347,7 @@ namespace UI {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Change name.
+        ///   Looks up a localized string similar to .
         /// </summary>
         public static string btnChangeName1 {
             get {
@@ -2356,7 +2356,7 @@ namespace UI {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Check All.
+        ///   Looks up a localized string similar to .
         /// </summary>
         public static string btnCheckAll {
             get {
@@ -2365,7 +2365,7 @@ namespace UI {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Check All.
+        ///   Looks up a localized string similar to .
         /// </summary>
         public static string btnCheckAll1 {
             get {
@@ -2374,7 +2374,7 @@ namespace UI {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Clear.
+        ///   Looks up a localized string similar to .
         /// </summary>
         public static string btnClear {
             get {
@@ -2383,7 +2383,7 @@ namespace UI {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Clear.
+        ///   Looks up a localized string similar to .
         /// </summary>
         public static string btnClear1 {
             get {
@@ -2392,7 +2392,7 @@ namespace UI {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Clear last enter.
+        ///   Looks up a localized string similar to .
         /// </summary>
         public static string btnClearLast {
             get {
@@ -2401,7 +2401,7 @@ namespace UI {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Clear last enter.
+        ///   Looks up a localized string similar to .
         /// </summary>
         public static string btnClearLast1 {
             get {
@@ -2410,7 +2410,7 @@ namespace UI {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Clear selected days.
+        ///   Looks up a localized string similar to .
         /// </summary>
         public static string btnClearSelectedDays {
             get {
@@ -2419,7 +2419,7 @@ namespace UI {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Clear selected days.
+        ///   Looks up a localized string similar to .
         /// </summary>
         public static string btnClearSelectedDays1 {
             get {
@@ -2428,7 +2428,7 @@ namespace UI {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Close.
+        ///   Looks up a localized string similar to .
         /// </summary>
         public static string btnClose {
             get {
@@ -2437,7 +2437,7 @@ namespace UI {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Close.
+        ///   Looks up a localized string similar to .
         /// </summary>
         public static string btnClose1 {
             get {
@@ -2446,7 +2446,7 @@ namespace UI {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Close [Esc].
+        ///   Looks up a localized string similar to .
         /// </summary>
         public static string btnCloseEsc {
             get {
@@ -2455,7 +2455,7 @@ namespace UI {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Close [Esc].
+        ///   Looks up a localized string similar to .
         /// </summary>
         public static string btnCloseEsc1 {
             get {
@@ -2464,7 +2464,7 @@ namespace UI {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Close opened sessions.
+        ///   Looks up a localized string similar to .
         /// </summary>
         public static string btnCloseSessions {
             get {
@@ -2473,7 +2473,7 @@ namespace UI {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Close opened sessions.
+        ///   Looks up a localized string similar to .
         /// </summary>
         public static string btnCloseSessions1 {
             get {
@@ -2482,7 +2482,7 @@ namespace UI {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Database connection setup.
+        ///   Looks up a localized string similar to .
         /// </summary>
         public static string btnDBSetup {
             get {
@@ -2491,7 +2491,7 @@ namespace UI {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Database connection setup.
+        ///   Looks up a localized string similar to .
         /// </summary>
         public static string btnDBSetup1 {
             get {
@@ -2500,7 +2500,7 @@ namespace UI {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Delete.
+        ///   Looks up a localized string similar to .
         /// </summary>
         public static string btnDelete {
             get {
@@ -2509,7 +2509,7 @@ namespace UI {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Delete.
+        ///   Looks up a localized string similar to .
         /// </summary>
         public static string btnDelete1 {
             get {
@@ -2518,7 +2518,7 @@ namespace UI {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Delete interval.
+        ///   Looks up a localized string similar to .
         /// </summary>
         public static string btnDeleteInterval {
             get {
@@ -2527,7 +2527,7 @@ namespace UI {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Delete interval.
+        ///   Looks up a localized string similar to .
         /// </summary>
         public static string btnDeleteInterval1 {
             get {
@@ -2536,7 +2536,7 @@ namespace UI {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Delete.
+        ///   Looks up a localized string similar to .
         /// </summary>
         public static string btnDeleteStatus {
             get {
@@ -2545,7 +2545,7 @@ namespace UI {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Delete.
+        ///   Looks up a localized string similar to .
         /// </summary>
         public static string btnDeleteStatus1 {
             get {
@@ -2554,7 +2554,7 @@ namespace UI {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Detailes....
+        ///   Looks up a localized string similar to .
         /// </summary>
         public static string btnDetailes {
             get {
@@ -2563,7 +2563,7 @@ namespace UI {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Detailes....
+        ///   Looks up a localized string similar to .
         /// </summary>
         public static string btnDetailes1 {
             get {
@@ -2572,7 +2572,7 @@ namespace UI {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Details  &gt;&gt;&gt;.
+        ///   Looks up a localized string similar to .
         /// </summary>
         public static string btnDetails {
             get {
@@ -2581,7 +2581,7 @@ namespace UI {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Details  &gt;&gt;&gt;.
+        ///   Looks up a localized string similar to .
         /// </summary>
         public static string btnDetails1 {
             get {
@@ -2590,7 +2590,7 @@ namespace UI {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Employee &lt;-&gt; Access groups.
+        ///   Looks up a localized string similar to .
         /// </summary>
         public static string btnEmployeeAccessGroups {
             get {
@@ -2599,7 +2599,7 @@ namespace UI {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Employee &lt;-&gt; Access groups.
+        ///   Looks up a localized string similar to .
         /// </summary>
         public static string btnEmployeeAccessGroups1 {
             get {
@@ -2608,7 +2608,7 @@ namespace UI {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Employees &lt;-&gt; Organizational units.
+        ///   Looks up a localized string similar to .
         /// </summary>
         public static string btnEmplXOU {
             get {
@@ -2617,7 +2617,7 @@ namespace UI {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Employees &lt;-&gt; Organizational units.
+        ///   Looks up a localized string similar to .
         /// </summary>
         public static string btnEmplXOU1 {
             get {
@@ -2626,7 +2626,7 @@ namespace UI {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Employees &lt;-&gt; Working units.
+        ///   Looks up a localized string similar to .
         /// </summary>
         public static string btnEmplXWU {
             get {
@@ -2635,7 +2635,7 @@ namespace UI {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Employees &lt;-&gt; Working units.
+        ///   Looks up a localized string similar to .
         /// </summary>
         public static string btnEmplXWU1 {
             get {
@@ -2644,7 +2644,7 @@ namespace UI {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to End.
+        ///   Looks up a localized string similar to .
         /// </summary>
         public static string btnEnd {
             get {
@@ -2653,7 +2653,7 @@ namespace UI {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to End.
+        ///   Looks up a localized string similar to .
         /// </summary>
         public static string btnEnd1 {
             get {
@@ -2662,7 +2662,7 @@ namespace UI {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Enter absence.
+        ///   Looks up a localized string similar to .
         /// </summary>
         public static string btnEnterAbsence {
             get {
@@ -2671,7 +2671,7 @@ namespace UI {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Enter absence.
+        ///   Looks up a localized string similar to .
         /// </summary>
         public static string btnEnterAbsence1 {
             get {
@@ -2680,7 +2680,7 @@ namespace UI {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Enter ban.
+        ///   Looks up a localized string similar to .
         /// </summary>
         public static string btnEnterBan {
             get {
@@ -2689,7 +2689,7 @@ namespace UI {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Enter ban.
+        ///   Looks up a localized string similar to .
         /// </summary>
         public static string btnEnterBan1 {
             get {
@@ -2698,7 +2698,7 @@ namespace UI {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to EXIT.
+        ///   Looks up a localized string similar to .
         /// </summary>
         public static string btnExit {
             get {
@@ -2707,7 +2707,7 @@ namespace UI {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to EXIT.
+        ///   Looks up a localized string similar to .
         /// </summary>
         public static string btnExit1 {
             get {
@@ -2716,7 +2716,7 @@ namespace UI {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Exit permissions verification &gt;&gt;.
+        ///   Looks up a localized string similar to .
         /// </summary>
         public static string btnExitPermVer {
             get {
@@ -2725,7 +2725,7 @@ namespace UI {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Exit permissions verification &gt;&gt;.
+        ///   Looks up a localized string similar to .
         /// </summary>
         public static string btnExitPermVer1 {
             get {
@@ -2734,7 +2734,7 @@ namespace UI {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Export data.
+        ///   Looks up a localized string similar to .
         /// </summary>
         public static string btnExport {
             get {
@@ -2743,7 +2743,7 @@ namespace UI {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Export data.
+        ///   Looks up a localized string similar to .
         /// </summary>
         public static string btnExport1 {
             get {
@@ -2752,7 +2752,7 @@ namespace UI {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Export preview.
+        ///   Looks up a localized string similar to .
         /// </summary>
         public static string btnExportPreview {
             get {
@@ -2761,7 +2761,7 @@ namespace UI {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Export preview.
+        ///   Looks up a localized string similar to .
         /// </summary>
         public static string btnExportPreview1 {
             get {
@@ -2770,7 +2770,7 @@ namespace UI {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Forgoten card.
+        ///   Looks up a localized string similar to .
         /// </summary>
         public static string btnForgotenCard {
             get {
@@ -2779,7 +2779,7 @@ namespace UI {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Forgoten card.
+        ///   Looks up a localized string similar to .
         /// </summary>
         public static string btnForgotenCard1 {
             get {
@@ -2788,7 +2788,7 @@ namespace UI {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Clear.
+        ///   Looks up a localized string similar to .
         /// </summary>
         public static string btnFormClear {
             get {
@@ -2797,7 +2797,7 @@ namespace UI {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Clear.
+        ///   Looks up a localized string similar to .
         /// </summary>
         public static string btnFormClear1 {
             get {
@@ -2806,7 +2806,7 @@ namespace UI {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Read tag from terminal.
+        ///   Looks up a localized string similar to .
         /// </summary>
         public static string btnFromReader {
             get {
@@ -2815,7 +2815,7 @@ namespace UI {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Read tag from terminal.
+        ///   Looks up a localized string similar to .
         /// </summary>
         public static string btnFromReader1 {
             get {
@@ -2824,7 +2824,7 @@ namespace UI {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Gate parameters setup.
+        ///   Looks up a localized string similar to .
         /// </summary>
         public static string btnGateSetup {
             get {
@@ -2833,7 +2833,7 @@ namespace UI {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Gate parameters setup.
+        ///   Looks up a localized string similar to .
         /// </summary>
         public static string btnGateSetup1 {
             get {
@@ -2842,7 +2842,7 @@ namespace UI {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Generate.
+        ///   Looks up a localized string similar to .
         /// </summary>
         public static string btnGenerate {
             get {
@@ -2851,7 +2851,7 @@ namespace UI {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Generate.
+        ///   Looks up a localized string similar to .
         /// </summary>
         public static string btnGenerate1 {
             get {
@@ -2860,7 +2860,7 @@ namespace UI {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Generate data.
+        ///   Looks up a localized string similar to .
         /// </summary>
         public static string btnGenerateData {
             get {
@@ -2869,7 +2869,7 @@ namespace UI {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Generate data.
+        ///   Looks up a localized string similar to .
         /// </summary>
         public static string btnGenerateData1 {
             get {
@@ -2878,7 +2878,7 @@ namespace UI {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Generate empty file.
+        ///   Looks up a localized string similar to .
         /// </summary>
         public static string btnGenerateFile {
             get {
@@ -2887,7 +2887,7 @@ namespace UI {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Generate empty file.
+        ///   Looks up a localized string similar to .
         /// </summary>
         public static string btnGenerateFile1 {
             get {
@@ -2896,7 +2896,7 @@ namespace UI {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Generate licence.
+        ///   Looks up a localized string similar to .
         /// </summary>
         public static string btnGenerateLicence {
             get {
@@ -2905,7 +2905,7 @@ namespace UI {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Generate licence.
+        ///   Looks up a localized string similar to .
         /// </summary>
         public static string btnGenerateLicence1 {
             get {
@@ -2914,7 +2914,7 @@ namespace UI {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Generate licence request.
+        ///   Looks up a localized string similar to .
         /// </summary>
         public static string btnGenerateLicReq {
             get {
@@ -2923,7 +2923,7 @@ namespace UI {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Generate licence request.
+        ///   Looks up a localized string similar to .
         /// </summary>
         public static string btnGenerateLicReq1 {
             get {
@@ -2932,7 +2932,7 @@ namespace UI {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Generate preview.
+        ///   Looks up a localized string similar to .
         /// </summary>
         public static string btnGeneratePreview {
             get {
@@ -2941,7 +2941,7 @@ namespace UI {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Generate preview.
+        ///   Looks up a localized string similar to .
         /// </summary>
         public static string btnGeneratePreview1 {
             get {
@@ -2950,7 +2950,7 @@ namespace UI {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Generate report.
+        ///   Looks up a localized string similar to .
         /// </summary>
         public static string btnGenerateReport {
             get {
@@ -2959,7 +2959,7 @@ namespace UI {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Generate report.
+        ///   Looks up a localized string similar to .
         /// </summary>
         public static string btnGenerateReport1 {
             get {
@@ -2968,7 +2968,7 @@ namespace UI {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Graphic reports.
+        ///   Looks up a localized string similar to .
         /// </summary>
         public static string btnGraphicReports {
             get {
@@ -2977,7 +2977,7 @@ namespace UI {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Graphic reports.
+        ///   Looks up a localized string similar to .
         /// </summary>
         public static string btnGraphicReports1 {
             get {
@@ -2986,7 +2986,7 @@ namespace UI {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to History of change.
+        ///   Looks up a localized string similar to .
         /// </summary>
         public static string btnHistoryOfChange {
             get {
@@ -2995,7 +2995,7 @@ namespace UI {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to History of change.
+        ///   Looks up a localized string similar to .
         /// </summary>
         public static string btnHistoryOfChange1 {
             get {
@@ -3004,7 +3004,7 @@ namespace UI {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Import.
+        ///   Looks up a localized string similar to .
         /// </summary>
         public static string btnImport {
             get {
@@ -3013,7 +3013,7 @@ namespace UI {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Import.
+        ///   Looks up a localized string similar to .
         /// </summary>
         public static string btnImport1 {
             get {
@@ -3022,7 +3022,7 @@ namespace UI {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Legend.
+        ///   Looks up a localized string similar to .
         /// </summary>
         public static string btnLegend {
             get {
@@ -3031,7 +3031,7 @@ namespace UI {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Legend.
+        ///   Looks up a localized string similar to .
         /// </summary>
         public static string btnLegend1 {
             get {
@@ -3040,7 +3040,7 @@ namespace UI {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to List view.
+        ///   Looks up a localized string similar to .
         /// </summary>
         public static string btnListView {
             get {
@@ -3049,7 +3049,7 @@ namespace UI {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to List view.
+        ///   Looks up a localized string similar to .
         /// </summary>
         public static string btnListView1 {
             get {
@@ -3058,7 +3058,7 @@ namespace UI {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Lock.
+        ///   Looks up a localized string similar to .
         /// </summary>
         public static string btnLock {
             get {
@@ -3067,7 +3067,7 @@ namespace UI {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Lock.
+        ///   Looks up a localized string similar to .
         /// </summary>
         public static string btnLock1 {
             get {
@@ -3076,7 +3076,7 @@ namespace UI {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Log in.
+        ///   Looks up a localized string similar to .
         /// </summary>
         public static string btnLogIn {
             get {
@@ -3085,7 +3085,7 @@ namespace UI {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Log in.
+        ///   Looks up a localized string similar to .
         /// </summary>
         public static string btnLogIn1 {
             get {
@@ -3094,7 +3094,7 @@ namespace UI {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Login View.
+        ///   Looks up a localized string similar to .
         /// </summary>
         public static string btnLogView {
             get {
@@ -3103,7 +3103,7 @@ namespace UI {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Login View.
+        ///   Looks up a localized string similar to .
         /// </summary>
         public static string btnLogView1 {
             get {
@@ -3112,7 +3112,7 @@ namespace UI {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Maps.
+        ///   Looks up a localized string similar to .
         /// </summary>
         public static string btnMaps {
             get {
@@ -3121,7 +3121,7 @@ namespace UI {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Maps.
+        ///   Looks up a localized string similar to .
         /// </summary>
         public static string btnMaps1 {
             get {
@@ -3130,7 +3130,7 @@ namespace UI {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Massive input.
+        ///   Looks up a localized string similar to .
         /// </summary>
         public static string btnMassiveInput {
             get {
@@ -3139,7 +3139,7 @@ namespace UI {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Massive input.
+        ///   Looks up a localized string similar to .
         /// </summary>
         public static string btnMassiveInput1 {
             get {
@@ -3148,7 +3148,7 @@ namespace UI {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Monthly menu.
+        ///   Looks up a localized string similar to .
         /// </summary>
         public static string btnMonthlyMenu {
             get {
@@ -3157,7 +3157,7 @@ namespace UI {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Monthly menu.
+        ///   Looks up a localized string similar to .
         /// </summary>
         public static string btnMonthlyMenu1 {
             get {
@@ -3166,7 +3166,7 @@ namespace UI {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to New tag.
+        ///   Looks up a localized string similar to .
         /// </summary>
         public static string btnNew {
             get {
@@ -3175,7 +3175,7 @@ namespace UI {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to New tag.
+        ///   Looks up a localized string similar to .
         /// </summary>
         public static string btnNew1 {
             get {
@@ -3184,7 +3184,7 @@ namespace UI {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Next.
+        ///   Looks up a localized string similar to .
         /// </summary>
         public static string btnNext {
             get {
@@ -3193,7 +3193,7 @@ namespace UI {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Next.
+        ///   Looks up a localized string similar to .
         /// </summary>
         public static string btnNext1 {
             get {
@@ -3202,7 +3202,7 @@ namespace UI {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Not approve.
+        ///   Looks up a localized string similar to .
         /// </summary>
         public static string btnNotApprove {
             get {
@@ -3211,7 +3211,7 @@ namespace UI {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Not approve.
+        ///   Looks up a localized string similar to .
         /// </summary>
         public static string btnNotApprove1 {
             get {
@@ -3220,7 +3220,7 @@ namespace UI {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to OK.
+        ///   Looks up a localized string similar to .
         /// </summary>
         public static string btnOK {
             get {
@@ -3229,7 +3229,7 @@ namespace UI {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to OK.
+        ///   Looks up a localized string similar to .
         /// </summary>
         public static string btnOK1 {
             get {
@@ -3238,7 +3238,7 @@ namespace UI {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Pass ticket.
+        ///   Looks up a localized string similar to .
         /// </summary>
         public static string btnPassTicket {
             get {
@@ -3247,7 +3247,7 @@ namespace UI {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Pass ticket.
+        ///   Looks up a localized string similar to .
         /// </summary>
         public static string btnPassTicket1 {
             get {
@@ -3256,7 +3256,7 @@ namespace UI {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Preview photos.
+        ///   Looks up a localized string similar to .
         /// </summary>
         public static string btnPhotoPreview {
             get {
@@ -3265,7 +3265,7 @@ namespace UI {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Preview photos.
+        ///   Looks up a localized string similar to .
         /// </summary>
         public static string btnPhotoPreview1 {
             get {
@@ -3274,7 +3274,7 @@ namespace UI {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Show camera photos.
+        ///   Looks up a localized string similar to .
         /// </summary>
         public static string btnPhotos {
             get {
@@ -3283,7 +3283,7 @@ namespace UI {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Show camera photos.
+        ///   Looks up a localized string similar to .
         /// </summary>
         public static string btnPhotos1 {
             get {
@@ -3292,7 +3292,7 @@ namespace UI {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Configuration_Passes photos.
+        ///   Looks up a localized string similar to .
         /// </summary>
         public static string btnPhotosMenuItemID {
             get {
@@ -3301,7 +3301,7 @@ namespace UI {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Configuration_Passes photos.
+        ///   Looks up a localized string similar to .
         /// </summary>
         public static string btnPhotosMenuItemID1 {
             get {
@@ -3310,7 +3310,7 @@ namespace UI {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Preview.
+        ///   Looks up a localized string similar to .
         /// </summary>
         public static string btnPrev {
             get {
@@ -3319,7 +3319,7 @@ namespace UI {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Preview.
+        ///   Looks up a localized string similar to .
         /// </summary>
         public static string btnPrev1 {
             get {
@@ -3328,7 +3328,7 @@ namespace UI {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Preview.
+        ///   Looks up a localized string similar to .
         /// </summary>
         public static string btnPreview {
             get {
@@ -3337,7 +3337,7 @@ namespace UI {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Preview.
+        ///   Looks up a localized string similar to .
         /// </summary>
         public static string btnPreview1 {
             get {
@@ -3346,7 +3346,7 @@ namespace UI {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Print.
+        ///   Looks up a localized string similar to .
         /// </summary>
         public static string btnPrint {
             get {
@@ -3355,7 +3355,7 @@ namespace UI {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Print.
+        ///   Looks up a localized string similar to .
         /// </summary>
         public static string btnPrint1 {
             get {
@@ -3364,7 +3364,7 @@ namespace UI {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Print request.
+        ///   Looks up a localized string similar to .
         /// </summary>
         public static string btnPrintRequest {
             get {

@@ -767,3 +767,15 @@ Login failed for user 'actamgr'.
 
 06/02/2025 11:21:27 ACTA.checkVisibility(): Object reference not set to an instance of an object.Interventions_
 
+06/02/2025 15:30:20 OPEN SESSIONS NUM: 4
+
+06/02/2025 15:49:07 OPEN SESSIONS NUM: 4
+
+06/02/2025 15:49:55 OPEN SESSIONS NUM: 4
+
+06/02/2025 15:54:13 OPEN SESSIONS NUM: 4
+
+06/02/2025 15:58:59 OPEN SESSIONS NUM: 4
+
+06/02/2025 15:59:50 OPEN SESSIONS NUM: 4
+
