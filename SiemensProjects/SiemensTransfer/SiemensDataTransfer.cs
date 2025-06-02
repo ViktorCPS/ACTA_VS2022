@@ -6,6 +6,7 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
+using SiemensUI;
 
 namespace SiemensTransfer
 {
@@ -23,19 +24,19 @@ namespace SiemensTransfer
 
         private void mappingToolStripMenuItem1_Click(object sender, EventArgs e)
         {
-            SiemensUI.SiemensMapping mapping = new SiemensUI.SiemensMapping();
+            SiemensMapping mapping = new SiemensMapping();
             mapping.ShowDialog();
         }
 
         private void brezaDBSetupToolStripMenuItem1_Click(object sender, EventArgs e)
         {
-            SiemensUI.BrezaDBConnSetup brezaDb = new SiemensUI.BrezaDBConnSetup();
+            BrezaDBConnSetup brezaDb = new BrezaDBConnSetup();
             brezaDb.ShowDialog();
         }
 
         private void ascoDBSetupToolStripMenuItem1_Click(object sender, EventArgs e)
         {
-            SiemensUI.SiemensDBConnSetup asco = new SiemensUI.SiemensDBConnSetup();
+            SiemensDBConnSetup asco = new SiemensDBConnSetup();
             asco.ShowDialog();
         }
 

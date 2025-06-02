@@ -1,4 +1,4 @@
-﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="3.5">
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="Current">
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
@@ -20,9 +20,11 @@
     <ApplicationIcon>..\resources\icons\ReaderControl.ico</ApplicationIcon>
     <FileUpgradeFlags>
     </FileUpgradeFlags>
-    <OldToolsVersion>2.0</OldToolsVersion>
+    <OldToolsVersion>3.5</OldToolsVersion>
     <UpgradeBackupLocation>
     </UpgradeBackupLocation>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -46,8 +48,12 @@
     <Reference Include="System.Data" />
     <Reference Include="System.Deployment" />
     <Reference Include="System.Drawing" />
-    <Reference Include="System.Runtime.Serialization, Version=3.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL" />
-    <Reference Include="System.ServiceModel, Version=3.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL" />
+    <Reference Include="System.Runtime.Serialization">
+      <HintPath>C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\v3.0\System.Runtime.Serialization.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ServiceModel">
+      <HintPath>C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\v3.0\System.ServiceModel.dll</HintPath>
+    </Reference>
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
   </ItemGroup>
@@ -101,6 +107,10 @@
       <Project>{BD526A30-C79F-4124-9C13-6B514F82A1CC}</Project>
       <Name>Common</Name>
     </ProjectReference>
+    <ProjectReference Include="..\..\UI\UI.csproj">
+      <Project>{83cf224e-d9d9-4489-98ec-ca981bd38644}</Project>
+      <Name>UI</Name>
+    </ProjectReference>
     <ProjectReference Include="..\ReaderInterfaceSManagement\ReaderInterfaceSManagement.csproj">
       <Project>{1FD76872-4CEB-4BEA-9A4B-549FF647C626}</Project>
       <Name>ReaderInterfaceSManagement</Name>
@@ -108,10 +118,6 @@
     <ProjectReference Include="..\..\TransferObjects\TransferObjects.csproj">
       <Project>{5C8540C2-8781-4EAE-BA2E-1A303779CCE3}</Project>
       <Name>TransferObjects</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\..\UI\UI.csproj">
-      <Project>{83CF224E-D9D9-4489-98EC-CA981BD38644}</Project>
-      <Name>UI</Name>
     </ProjectReference>
     <ProjectReference Include="..\..\Util\Util.csproj">
       <Project>{B9716E70-6794-4C27-ABF1-35D52CE595A6}</Project>

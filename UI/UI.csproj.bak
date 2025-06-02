@@ -1,0 +1,2249 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="Current">
+  <PropertyGroup>
+    <ProjectType>Local</ProjectType>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{83CF224E-D9D9-4489-98EC-CA981BD38644}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ApplicationIcon>App.ico</ApplicationIcon>
+    <AssemblyKeyContainerName>
+    </AssemblyKeyContainerName>
+    <AssemblyName>UI</AssemblyName>
+    <AssemblyOriginatorKeyFile>
+    </AssemblyOriginatorKeyFile>
+    <DefaultClientScript>JScript</DefaultClientScript>
+    <DefaultHTMLPageLayout>Grid</DefaultHTMLPageLayout>
+    <DefaultTargetSchema>IE50</DefaultTargetSchema>
+    <DelaySign>false</DelaySign>
+    <OutputType>Library</OutputType>
+    <RootNamespace>UI</RootNamespace>
+    <RunPostBuildEvent>OnBuildSuccess</RunPostBuildEvent>
+    <StartupObject>UI.ACTA</StartupObject>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DocumentationFile>
+    </DocumentationFile>
+    <DebugSymbols>true</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn>
+    </NoWarn>
+    <Optimize>false</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>full</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+    <UseVSHostingProcess>true</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>TRACE</DefineConstants>
+    <DocumentationFile>
+    </DocumentationFile>
+    <DebugSymbols>false</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn>
+    </NoWarn>
+    <Optimize>true</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>none</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CelikWrapper, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\lib\CelikWrapper.dll</HintPath>
+    </Reference>
+    <Reference Include="Interop.WIA, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\lib\Interop.WIA.dll</HintPath>
+    </Reference>
+    <Reference Include="Ionic.Zip, Version=1.9.1.8, Culture=neutral, PublicKeyToken=edbe51ad942a3f5c, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\lib\Ionic.Zip.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=12.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c" />
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="MySql.Data, Version=1.0.2.18525, Culture=neutral, PublicKeyToken=c5687fc88969c44d">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\lib\MySql.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="PieChart, Version=1.4.0.7, Culture=neutral">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\lib\PieChart.dll</HintPath>
+    </Reference>
+    <Reference Include="ReaderInterface, Version=1.0.3.0, Culture=neutral">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\lib\ReaderInterface.dll</HintPath>
+    </Reference>
+    <Reference Include="SerialPorts, Version=1.0.2587.25048, Culture=neutral">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\lib\SerialPorts.dll</HintPath>
+    </Reference>
+    <Reference Include="System">
+      <Name>System</Name>
+      <HintPath>C:\WINDOWS\Microsoft.NET\Framework\v2.0.50727\System.dll</HintPath>
+    </Reference>
+    <Reference Include="System.configuration">
+      <HintPath>C:\WINDOWS\Microsoft.NET\Framework\v2.0.50727\System.configuration.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Core">
+      <HintPath>C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\v3.5\System.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Data">
+      <Name>System.Data</Name>
+      <HintPath>C:\WINDOWS\Microsoft.NET\Framework\v2.0.50727\System.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Design" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Drawing">
+      <Name>System.Drawing</Name>
+      <HintPath>C:\WINDOWS\Microsoft.NET\Framework\v2.0.50727\System.Drawing.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Windows.Forms">
+      <Name>System.Windows.Forms</Name>
+      <HintPath>C:\WINDOWS\Microsoft.NET\Framework\v2.0.50727\System.Windows.Forms.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml">
+      <Name>System.XML</Name>
+      <HintPath>C:\WINDOWS\Microsoft.NET\Framework\v2.0.50727\System.XML.dll</HintPath>
+    </Reference>
+    <Reference Include="XKWrapper, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\lib\XKWrapper.dll</HintPath>
+    </Reference>
+    <Reference Include="ZedGraph, Version=5.0.9.41461, Culture=neutral, PublicKeyToken=02a83cbd123fcd60, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\lib\ZedGraph.dll</HintPath>
+    </Reference>
+    <ProjectReference Include="..\ACTAConfigManipulation\ACTAConfigManipulation.csproj">
+      <Project>{2D18C79A-3B35-4E6E-9AB1-6FB0373D8167}</Project>
+      <Name>ACTAConfigManipulation</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ACTAMonitorLib\ACTAMonitorLib.csproj">
+      <Project>{FAFDA198-5686-4E14-A63A-313A87249463}</Project>
+      <Name>ACTAMonitorLib</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ACTAWorkAnalysisReports\ACTAWorkAnalysisReports.csproj">
+      <Project>{2bf25639-7885-4374-a91f-9826dd2f7c0b}</Project>
+      <Name>ACTAWorkAnalysisReports</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Common\Common.csproj">
+      <Name>Common</Name>
+      <Project>{BD526A30-C79F-4124-9C13-6B514F82A1CC}</Project>
+      <Package>{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</Package>
+    </ProjectReference>
+    <ProjectReference Include="..\DataAccess\DataAccess.csproj">
+      <Project>{6cac101d-949e-4f27-aaef-53bd52672368}</Project>
+      <Name>DataAccess</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ReaderManagement\ReaderManagement.csproj">
+      <Name>ReaderManagement</Name>
+      <Project>{DC390DFC-245F-4873-BD35-67C3349A764E}</Project>
+      <Package>{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</Package>
+    </ProjectReference>
+    <ProjectReference Include="..\Reports\Reports.csproj">
+      <Project>{BE11A9DE-C796-4D46-8C78-962D189E76DD}</Project>
+      <Name>Reports</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\RFIDDevice\DeviceRFID.csproj">
+      <Project>{01FBE6AA-D0F2-49B8-A543-5796AAC21C5E}</Project>
+      <Name>DeviceRFID</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SynchronizationProjects\SyncDataAccess\SyncDataAccess.csproj">
+      <Project>{9ad7aec7-84f4-40b7-a76e-69dce7783635}</Project>
+      <Name>SyncDataAccess</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\TransferObjects\TransferObjects.csproj">
+      <Project>{5c8540c2-8781-4eae-ba2e-1a303779cce3}</Project>
+      <Name>TransferObjects</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\UIFeatures\UIFeatures.csproj">
+      <Project>{64C8ABE2-9B49-4FB2-9C24-B2949F162F41}</Project>
+      <Name>UIFeatures</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Util\Util.csproj">
+      <Project>{b9716e70-6794-4c27-abf1-35d52ce595a6}</Project>
+      <Name>Util</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Winforms.Components\Winforms.Components.csproj">
+      <Project>{C93CD6B7-7890-48D9-98AA-9F447F519654}</Project>
+      <Name>Winforms.Components</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AboutBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AboutBox.Designer.cs">
+      <DependentUpon>AboutBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AbsenceMassiveInput.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AbsenceMassiveInput.Designer.cs">
+      <DependentUpon>AbsenceMassiveInput.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AccessControlStatus.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AccessControlStatus.Designer.cs">
+      <DependentUpon>AccessControlStatus.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AccessGroupsXGates.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ACTASplashScreen.cs" />
+    <Compile Include="ACTASplashScreenForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ACTASplashScreenForm.Designer.cs">
+      <DependentUpon>ACTASplashScreenForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Addresses.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Antenna.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ApplRoles.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ApplRolesAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ApplUsers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ApplUsersAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ApplUsersCategories.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ApplUsersCategories.Designer.cs">
+      <DependentUpon>ApplUsersCategories.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ApplUsersCategoriesAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ApplUsersCategoriesAdd.Designer.cs">
+      <DependentUpon>ApplUsersCategoriesAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ApplUsersLog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ApplUsersLoginChangesTbls.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ApplUsersLoginChangesTbls.Designer.cs">
+      <DependentUpon>ApplUsersLoginChangesTbls.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ApplUsersXRoles.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ApplUserXWU.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="BarChartControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="BarChartControl.designer.cs">
+      <DependentUpon>BarChartControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BarSegment.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="BarSegment.Designer.cs">
+      <DependentUpon>BarSegment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BarSegments.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="BarSegments.Designer.cs">
+      <DependentUpon>BarSegments.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CameraAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CameraAdd.Designer.cs">
+      <DependentUpon>CameraAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cameras.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cameras.Designer.cs">
+      <DependentUpon>Cameras.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CameraSnapshots.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CameraSnapshots.Designer.cs">
+      <DependentUpon>CameraSnapshots.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CamSnapshotMaintenance.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CamSnapshotMaintenance.Designer.cs">
+      <DependentUpon>CamSnapshotMaintenance.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChangePassword.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CheckCard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DocumentDownload.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DocumentAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EmployeesDocuments.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EmployeeDocMaintenance.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EmployeeDocMaintenance.Designer.cs">
+      <DependentUpon>EmployeeDocMaintenance.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CostumerVisitReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CostumerVisitReport.Designer.cs">
+      <DependentUpon>CostumerVisitReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CreateAndroidFiles.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CreateAndroidFiles.Designer.cs">
+      <DependentUpon>CreateAndroidFiles.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CustomVisitGraphAdv.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CustomVisitGraphAdv.Designer.cs">
+      <DependentUpon>CustomVisitGraphAdv.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DailyPresence.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DailyPresence.Designer.cs">
+      <DependentUpon>DailyPresence.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DailyTimeGrid.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DailyTimeGrid.Designer.cs">
+      <DependentUpon>DailyTimeGrid.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DataTreeView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="DayOfCalendar.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Design\DropDownTypeEditor.cs" />
+    <Compile Include="Design\FieldTypeEditor.cs" />
+    <Compile Include="DetailedDataPage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DetailedDataPage.Designer.cs">
+      <DependentUpon>DetailedDataPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EmployeeAbsenceAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EmployeeAbsences.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EmployeeAccessGroupAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EmployeeAccessGroups.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EmployeeAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EmployeeAdditionalData.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EmployeeAdditionalData.Designer.cs">
+      <DependentUpon>EmployeeAdditionalData.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EmployeeCounterTypes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EmployeeCounterTypes.Designer.cs">
+      <DependentUpon>EmployeeCounterTypes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EmployeeCounterTypesAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EmployeeCounterTypesAdd.Designer.cs">
+      <DependentUpon>EmployeeCounterTypesAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EmployeeLocations.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EmployeeLocationsSummary.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EmployeeLocationsSummary.Designer.cs">
+      <DependentUpon>EmployeeLocationsSummary.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EmployeePresenceGraphicReports.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EmployeePresenceGraphicReports.Designer.cs">
+      <DependentUpon>EmployeePresenceGraphicReports.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Employees.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EmployeesCountersBalances.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EmployeesCountersBalances.Designer.cs">
+      <DependentUpon>EmployeesCountersBalances.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EmployeesResponsibilities.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EmployeesResponsibilities.Designer.cs">
+      <DependentUpon>EmployeesResponsibilities.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EmployeesXAccessGroups.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EmployeesXOrganizationalUnits.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EmployeesXOrganizationalUnits.Designer.cs">
+      <DependentUpon>EmployeesXOrganizationalUnits.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EmployeesXWorkingUnits.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EmployeesXWorkingUnits.Designer.cs">
+      <DependentUpon>EmployeesXWorkingUnits.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EmployeeTransportData.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="EmployeeTransportData.Designer.cs">
+      <DependentUpon>EmployeeTransportData.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EmployeeWorkingDayView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="EmplPersonalRecordsMDI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EmplPersonalRecordsMDI.Designer.cs">
+      <DependentUpon>EmplPersonalRecordsMDI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EmplPhotosMaintenance.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EmplPhotosMaintenance.Designer.cs">
+      <DependentUpon>EmplPhotosMaintenance.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EmplWorkingGroupChanged.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ExitPermControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ExitPermControl.Designer.cs">
+      <DependentUpon>ExitPermControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ExitPermDaysSelection.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ExitPermDaysSelection.Designer.cs">
+      <DependentUpon>ExitPermDaysSelection.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ExitPermHeaderControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ExitPermHeaderControl.Designer.cs">
+      <DependentUpon>ExitPermHeaderControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ExitPermissionPasses.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ExitPermissions.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ExitPermissionsAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ExitPermissionsAddAdvanced.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ExitPermissionsAddAdvanced.Designer.cs">
+      <DependentUpon>ExitPermissionsAddAdvanced.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ExitPermissionsPreview.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ExitPermissionsPreview.Designer.cs">
+      <DependentUpon>ExitPermissionsPreview.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ExitPermissionsVerification.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ExitPermissionsWorkingDayBeginning.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ExitPermRowControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ExitPermRowControl.Designer.cs">
+      <DependentUpon>ExitPermRowControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ExtraHours.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ExtraHoursCalculation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GateResource.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>GateResource.resx</DependentUpon>
+    </Compile>
+    <Compile Include="GateResource.sr.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>GateResource.sr.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Gates.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GatesAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GatesXGateTimeProfile.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GatesXGateTimeProfileUpd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GateTimeAccessProfileAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GateTimeAccessProfiles.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GroupChangedMassiveInput.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GroupChangedMassiveInput.Designer.cs">
+      <DependentUpon>GroupChangedMassiveInput.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Holidays.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HolidaysAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HolidaysExtendedAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HolidaysExtendedAdd.Designer.cs">
+      <DependentUpon>HolidaysExtendedAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HolidaysExtendedPreview.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HolidaysExtendedPreview.Designer.cs">
+      <DependentUpon>HolidaysExtendedPreview.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ImportLog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ImportLog.Designer.cs">
+      <DependentUpon>ImportLog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LastTerminalReading.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LastTerminalReading.designer.cs">
+      <DependentUpon>LastTerminalReading.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LicenceGenerate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LicenceGenerate.Designer.cs">
+      <DependentUpon>LicenceGenerate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LocationsTreeView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LocationsTreeView.Designer.cs">
+      <DependentUpon>LocationsTreeView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Lockings.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Lockings.Designer.cs">
+      <DependentUpon>Lockings.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Machines.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Machines.Designer.cs">
+      <DependentUpon>Machines.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MachinesAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MachinesAdd.Designer.cs">
+      <DependentUpon>MachinesAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MachinesXEmployees.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MachinesXEmployees.Designer.cs">
+      <DependentUpon>MachinesXEmployees.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MachinesXEmployeesAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MachinesXEmployeesAdd.Designer.cs">
+      <DependentUpon>MachinesXEmployeesAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MachinesXEmployeesEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MachinesXEmployeesEdit.Designer.cs">
+      <DependentUpon>MachinesXEmployeesEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MapAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MapAdd.Designer.cs">
+      <DependentUpon>MapAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MapControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MapControl.Designer.cs">
+      <DependentUpon>MapControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MapObjects.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MapObjects.Designer.cs">
+      <DependentUpon>MapObjects.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Maps.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Maps.Designer.cs">
+      <DependentUpon>Maps.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MapView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MapView.Designer.cs">
+      <DependentUpon>MapView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MCDisabilities.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MCDisabilities.Designer.cs">
+      <DependentUpon>MCDisabilities.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MCDisabilitiesAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MCDisabilitiesAdd.Designer.cs">
+      <DependentUpon>MCDisabilitiesAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MCRisks.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MCRisks.Designer.cs">
+      <DependentUpon>MCRisks.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MCRisksPositions.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MCRisksPositions.Designer.cs">
+      <DependentUpon>MCRisksPositions.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MCVaccines.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MCVaccines.Designer.cs">
+      <DependentUpon>MCVaccines.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MCVaccinesAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MCVaccinesAdd.Designer.cs">
+      <DependentUpon>MCVaccinesAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MealAssignedAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MealAssignedAdd.Designer.cs">
+      <DependentUpon>MealAssignedAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MealControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MealControl.Designer.cs">
+      <DependentUpon>MealControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MealDayControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MealDayControl.Designer.cs">
+      <DependentUpon>MealDayControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MealEmployeeSchedulePreview.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MealEmployeeSchedulePreview.Designer.cs">
+      <DependentUpon>MealEmployeeSchedulePreview.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MealOrderControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MealOrderControl.Designer.cs">
+      <DependentUpon>MealOrderControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MealPictureControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MealPictureControl.Designer.cs">
+      <DependentUpon>MealPictureControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MealPointAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MealPointAdd.Designer.cs">
+      <DependentUpon>MealPointAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MealPointAddII.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MealPointAddII.Designer.cs">
+      <DependentUpon>MealPointAddII.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MealPoints.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MealPoints.Designer.cs">
+      <DependentUpon>MealPoints.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MealPointsII.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MealPointsII.Designer.cs">
+      <DependentUpon>MealPointsII.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MealsAssigned.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MealsAssigned.Designer.cs">
+      <DependentUpon>MealsAssigned.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MealsOrder.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MealsOrder.Designer.cs">
+      <DependentUpon>MealsOrder.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MealsOrderPIN.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MealsOrderPIN.Designer.cs">
+      <DependentUpon>MealsOrderPIN.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MealsUsed.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MealsUsed.Designer.cs">
+      <DependentUpon>MealsUsed.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MealsWorkingUnitSchedules.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MealsWorkingUnitSchedules.Designer.cs">
+      <DependentUpon>MealsWorkingUnitSchedules.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MealTypeEmplAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MealTypeEmplAdd.Designer.cs">
+      <DependentUpon>MealTypeEmplAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MealTypeEmployees.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MealTypeEmployees.Designer.cs">
+      <DependentUpon>MealTypeEmployees.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MealTypes.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MealTypes.Designer.cs">
+      <DependentUpon>MealTypes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MealTypesAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MealTypesAdd.Designer.cs">
+      <DependentUpon>MealTypesAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MealTypesAddII.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MealTypesAddII.Designer.cs">
+      <DependentUpon>MealTypesAddII.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MealTypesAdditionalData.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MealTypesAdditionalData.Designer.cs">
+      <DependentUpon>MealTypesAdditionalData.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MealTypeSchDayControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MealTypeSchDayControl.Designer.cs">
+      <DependentUpon>MealTypeSchDayControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MealTypeSchedules.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MealTypeSchedules.Designer.cs">
+      <DependentUpon>MealTypeSchedules.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MealTypesII.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MealTypesII.Designer.cs">
+      <DependentUpon>MealTypesII.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MedicalCheck.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MedicalCheck.Designer.cs">
+      <DependentUpon>MedicalCheck.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MessageForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MessageForm.Designer.cs">
+      <DependentUpon>MessageForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MessagesPanel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MessagesPanel.Designer.cs">
+      <DependentUpon>MessagesPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MonthlyMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MonthlyMenu.Designer.cs">
+      <DependentUpon>MonthlyMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OnlineMealPoint.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="OnlineMealPoint.Designer.cs">
+      <DependentUpon>OnlineMealPoint.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OnlineMealPointAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OnlineMealPointAdd.Designer.cs">
+      <DependentUpon>OnlineMealPointAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OnlineMealReports.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="OnlineMealReports.Designer.cs">
+      <DependentUpon>OnlineMealReports.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OnlineMealRestaurant.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="OnlineMealRestaurant.Designer.cs">
+      <DependentUpon>OnlineMealRestaurant.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OnlineMealRestaurantAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OnlineMealRestaurantAdd.Designer.cs">
+      <DependentUpon>OnlineMealRestaurantAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OnlineMealsUsedAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OnlineMealsUsedAdd.Designer.cs">
+      <DependentUpon>OnlineMealsUsedAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OnlineMealTypes.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="OnlineMealTypes.Designer.cs">
+      <DependentUpon>OnlineMealTypes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OnlineMealTypesAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OnlineMealTypesAdd.Designer.cs">
+      <DependentUpon>OnlineMealTypesAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OnlineMealUsed.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="OnlineMealUsed.Designer.cs">
+      <DependentUpon>OnlineMealUsed.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OnlineMealUsedHist.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OnlineMealUsedHist.Designer.cs">
+      <DependentUpon>OnlineMealUsedHist.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OrganizationalUnits.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OrganizationalUnits.Designer.cs">
+      <DependentUpon>OrganizationalUnits.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OrganizationalUnitsAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OrganizationalUnitsAdd.Designer.cs">
+      <DependentUpon>OrganizationalUnitsAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PassesHist.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Info.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IOPairs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IOPairsAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LibrariesExportImport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Locations.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LocationsAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LogDownload.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LogInForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Monitor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Passes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PassesAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PassesSnapshots.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PassesSnapshots.Designer.cs">
+      <DependentUpon>PassesSnapshots.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PassTypeAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PassTypes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PresenceGraphForDayControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PresenceGraphForDayControl.Designer.cs">
+      <DependentUpon>PresenceGraphForDayControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PresenceGraphForEmplControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PresenceGraphForEmplControl.Designer.cs">
+      <DependentUpon>PresenceGraphForEmplControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProlongTS.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PYIntegration.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PYIntegration.Designer.cs">
+      <DependentUpon>PYIntegration.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReaderActivity.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReaderAdvanceSettings.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Readers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReadersAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReaderSetup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RecordsOfBreaks.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RecordsOfBreaks.Designer.cs">
+      <DependentUpon>RecordsOfBreaks.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Resource.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resource.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Resource.fi.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resource.fi.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Resource.sr.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resource.sr.resx</DependentUpon>
+    </Compile>
+    <Compile Include="RestartCounters.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RestartCounters.Designer.cs">
+      <DependentUpon>RestartCounters.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Restaurant.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Restaurant.Designer.cs">
+      <DependentUpon>Restaurant.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RestaurantII.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RestaurantII.Designer.cs">
+      <DependentUpon>RestaurantII.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RestaurantIII.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RestaurantIII.Designer.cs">
+      <DependentUpon>RestaurantIII.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MCRisksAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MCRisksAdd.Designer.cs">
+      <DependentUpon>MCRisksAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RolePermissionCell.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="RolesPermissions.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Rules.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Rules.Designer.cs">
+      <DependentUpon>Rules.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RulesAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RulesAdd.Designer.cs">
+      <DependentUpon>RulesAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RulesCutOffDate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RulesCutOffDate.Designer.cs">
+      <DependentUpon>RulesCutOffDate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SecurityRoutes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SecurityRoutes.Designer.cs">
+      <DependentUpon>SecurityRoutes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SecurityRoutesAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SecurityRoutesAdd.Designer.cs">
+      <DependentUpon>SecurityRoutesAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SecurityRoutesPointsAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SecurityRoutesPointsAdd.Designer.cs">
+      <DependentUpon>SecurityRoutesPointsAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SecurityRoutesReadersAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SecurityRoutesReadersAdd.Designer.cs">
+      <DependentUpon>SecurityRoutesReadersAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SecurityRoutesScheduleAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SecurityRoutesScheduleAdd.Designer.cs">
+      <DependentUpon>SecurityRoutesScheduleAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SiemensDevicesControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SiemensDevicesControl.Designer.cs">
+      <DependentUpon>SiemensDevicesControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Snapshots.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Snapshots.Designer.cs">
+      <DependentUpon>Snapshots.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StatisticReportViewMultiWUControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="StatisticReportViewMultiWUControl.Designer.cs">
+      <DependentUpon>StatisticReportViewMultiWUControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StatisticGraphicReports.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StatisticGraphicReports.Designer.cs">
+      <DependentUpon>StatisticGraphicReports.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StatisticReportViewControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="StatisticReportViewControl.Designer.cs">
+      <DependentUpon>StatisticReportViewControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StatisticReportViewSingleWUControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="StatisticReportViewSingleWUControl.Designer.cs">
+      <DependentUpon>StatisticReportViewSingleWUControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SynchronizationPreview.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SynchronizationPreview.Designer.cs">
+      <DependentUpon>SynchronizationPreview.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SystemClosingEventAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SystemClosingEventAdd.Designer.cs">
+      <DependentUpon>SystemClosingEventAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SystemClosingEvents.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SystemClosingEvents.Designer.cs">
+      <DependentUpon>SystemClosingEvents.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SystemMessageAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SystemMessageAdd.Designer.cs">
+      <DependentUpon>SystemMessageAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SystemMessages.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SystemMessages.Designer.cs">
+      <DependentUpon>SystemMessages.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tags.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TagsPreview.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TagsPreview.Designer.cs">
+      <DependentUpon>TagsPreview.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TimeAccessProfileAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TimeAccessProfileCell.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="TimeAccessProfiles.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TimeSchemaPauseAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TimeSchemaPauses.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TMTypeAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TMTypeAdd.Designer.cs">
+      <DependentUpon>TMTypeAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TMTypes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TMTypes.Designer.cs">
+      <DependentUpon>TMTypes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TransportData.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TransportData.Designer.cs">
+      <DependentUpon>TransportData.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UnregularDataPreview.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UnregularDataPreview.Designer.cs">
+      <DependentUpon>UnregularDataPreview.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UsingMeals.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UsingMeals.Designer.cs">
+      <DependentUpon>UsingMeals.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VacationAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VacationAdd.Designer.cs">
+      <DependentUpon>VacationAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VacationDetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VacationDetails.Designer.cs">
+      <DependentUpon>VacationDetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VacationEvidence.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VacationEvidence.Designer.cs">
+      <DependentUpon>VacationEvidence.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Visitors.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CustomersVisitGraph.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CustomersVisitGraph.Designer.cs">
+      <DependentUpon>CustomersVisitGraph.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VisitorsMaintenance.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VisitorsMaintenance.Designer.cs">
+      <DependentUpon>VisitorsMaintenance.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VisitorsView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WorkingUnits.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WorkingUnitsAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WorkingUnitsTreeView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WorkingUnitsTreeView.Designer.cs">
+      <DependentUpon>WorkingUnitsTreeView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WTEmployeesTimeSchedule.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WTGroups.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WTGroupsAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WTSchema.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WTSchemaAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WTSchemaAdvance.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WTSchemaPeriod.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WTWorkingGroupTimeSchedules.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <EmbeddedResource Include="AboutBox.resx">
+      <DependentUpon>AboutBox.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AbsenceMassiveInput.resx">
+      <DependentUpon>AbsenceMassiveInput.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AccessControlStatus.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>AccessControlStatus.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AccessGroupsXGates.resx">
+      <DependentUpon>AccessGroupsXGates.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ACTASplashScreenForm.resx">
+      <DependentUpon>ACTASplashScreenForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Addresses.resx">
+      <DependentUpon>Addresses.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Antenna.resx">
+      <DependentUpon>Antenna.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ApplRoles.resx">
+      <DependentUpon>ApplRoles.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ApplRolesAdd.resx">
+      <DependentUpon>ApplRolesAdd.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ApplUsers.resx">
+      <DependentUpon>ApplUsers.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ApplUsersAdd.resx">
+      <DependentUpon>ApplUsersAdd.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ApplUsersCategories.resx">
+      <DependentUpon>ApplUsersCategories.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ApplUsersCategoriesAdd.resx">
+      <DependentUpon>ApplUsersCategoriesAdd.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ApplUsersLog.resx">
+      <DependentUpon>ApplUsersLog.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ApplUsersLoginChangesTbls.resx">
+      <DependentUpon>ApplUsersLoginChangesTbls.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ApplUsersXRoles.resx">
+      <DependentUpon>ApplUsersXRoles.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ApplUserXWU.resx">
+      <DependentUpon>ApplUserXWU.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BarChartControl.resx">
+      <DependentUpon>BarChartControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CameraAdd.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>CameraAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cameras.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Cameras.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CameraSnapshots.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>CameraSnapshots.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CamSnapshotMaintenance.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>CamSnapshotMaintenance.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChangePassword.resx">
+      <DependentUpon>ChangePassword.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CheckCard.resx">
+      <DependentUpon>CheckCard.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DocumentDownload.resx">
+      <DependentUpon>DocumentDownload.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DocumentAdd.resx">
+      <DependentUpon>DocumentAdd.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EmployeesDocuments.resx">
+      <DependentUpon>EmployeesDocuments.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EmployeeDocMaintenance.resx">
+      <DependentUpon>EmployeeDocMaintenance.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CostumerVisitReport.resx">
+      <DependentUpon>CostumerVisitReport.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CreateAndroidFiles.resx">
+      <DependentUpon>CreateAndroidFiles.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CustomersVisitGraph.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>CustomersVisitGraph.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CustomVisitGraphAdv.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>CustomVisitGraphAdv.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DailyPresence.resx">
+      <DependentUpon>DailyPresence.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DayOfCalendar.resx">
+      <DependentUpon>DayOfCalendar.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DetailedDataPage.resx">
+      <DependentUpon>DetailedDataPage.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EmployeeAbsenceAdd.resx">
+      <DependentUpon>EmployeeAbsenceAdd.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EmployeeAbsences.resx">
+      <DependentUpon>EmployeeAbsences.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EmployeeAccessGroupAdd.resx">
+      <DependentUpon>EmployeeAccessGroupAdd.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EmployeeAccessGroups.resx">
+      <DependentUpon>EmployeeAccessGroups.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EmployeeAdd.resx">
+      <DependentUpon>EmployeeAdd.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EmployeeAdditionalData.resx">
+      <DependentUpon>EmployeeAdditionalData.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EmployeeCounterTypes.resx">
+      <DependentUpon>EmployeeCounterTypes.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EmployeeCounterTypesAdd.resx">
+      <DependentUpon>EmployeeCounterTypesAdd.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EmployeeLocations.resx">
+      <DependentUpon>EmployeeLocations.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EmployeeLocationsSummary.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>EmployeeLocationsSummary.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EmployeePresenceGraphicReports.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>EmployeePresenceGraphicReports.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EmployeesCountersBalances.resx">
+      <DependentUpon>EmployeesCountersBalances.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EmployeesResponsibilities.resx">
+      <DependentUpon>EmployeesResponsibilities.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EmployeesXOrganizationalUnits.resx">
+      <DependentUpon>EmployeesXOrganizationalUnits.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EmployeeTransportData.resx">
+      <DependentUpon>EmployeeTransportData.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EmplPersonalRecordsMDI.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>EmplPersonalRecordsMDI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EmplPhotosMaintenance.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>EmplPhotosMaintenance.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ExitPermControl.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ExitPermControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ExitPermDaysSelection.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ExitPermDaysSelection.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ExitPermHeaderControl.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ExitPermHeaderControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ExitPermissionsAddAdvanced.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ExitPermissionsAddAdvanced.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ExitPermissionsPreview.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ExitPermissionsPreview.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ExitPermRowControl.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ExitPermRowControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GroupChangedMassiveInput.resx">
+      <DependentUpon>GroupChangedMassiveInput.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HolidaysExtendedAdd.resx">
+      <DependentUpon>HolidaysExtendedAdd.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HolidaysExtendedPreview.resx">
+      <DependentUpon>HolidaysExtendedPreview.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ImportLog.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ImportLog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LastTerminalReading.resx">
+      <DependentUpon>LastTerminalReading.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LocationsTreeView.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>LocationsTreeView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Lockings.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Lockings.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MachinesXEmployees.resx">
+      <DependentUpon>MachinesXEmployees.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MapAdd.resx">
+      <DependentUpon>MapAdd.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MapControl.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>MapControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MapObjects.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>MapObjects.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Maps.resx">
+      <DependentUpon>Maps.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MapView.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>MapView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MCDisabilities.resx">
+      <DependentUpon>MCDisabilities.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MCDisabilitiesAdd.resx">
+      <DependentUpon>MCDisabilitiesAdd.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MCRisks.resx">
+      <DependentUpon>MCRisks.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MCRisksAdd.resx">
+      <DependentUpon>MCRisksAdd.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MCRisksPositions.resx">
+      <DependentUpon>MCRisksPositions.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MCVaccines.resx">
+      <DependentUpon>MCVaccines.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MCVaccinesAdd.resx">
+      <DependentUpon>MCVaccinesAdd.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MealAssignedAdd.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>MealAssignedAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MealControl.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>MealControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MealDayControl.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>MealDayControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MealEmployeeSchedulePreview.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>MealEmployeeSchedulePreview.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MealOrderControl.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>MealOrderControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MealPictureControl.resx">
+      <DependentUpon>MealPictureControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MealPointAdd.resx">
+      <DependentUpon>MealPointAdd.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MealPointAddII.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>MealPointAddII.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MealPoints.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>MealPoints.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MealPointsII.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>MealPointsII.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MealsAssigned.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>MealsAssigned.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MealsOrder.resx">
+      <DependentUpon>MealsOrder.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MealsOrderPIN.resx">
+      <DependentUpon>MealsOrderPIN.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MealsUsed.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>MealsUsed.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MealsWorkingUnitSchedules.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>MealsWorkingUnitSchedules.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MealTypeEmplAdd.resx">
+      <DependentUpon>MealTypeEmplAdd.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MealTypeEmployees.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>MealTypeEmployees.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MealTypes.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>MealTypes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MealTypesAdd.resx">
+      <DependentUpon>MealTypesAdd.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MealTypesAddII.resx">
+      <DependentUpon>MealTypesAddII.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MealTypesAdditionalData.resx">
+      <DependentUpon>MealTypesAdditionalData.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MealTypeSchDayControl.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>MealTypeSchDayControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MealTypeSchedules.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>MealTypeSchedules.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MealTypesII.resx">
+      <DependentUpon>MealTypesII.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MedicalCheck.resx">
+      <DependentUpon>MedicalCheck.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MessageForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>MessageForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MessagesPanel.resx">
+      <DependentUpon>MessagesPanel.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MonthlyMenu.resx">
+      <DependentUpon>MonthlyMenu.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OnlineMealPoint.resx">
+      <DependentUpon>OnlineMealPoint.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OnlineMealPointAdd.resx">
+      <DependentUpon>OnlineMealPointAdd.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OnlineMealReports.resx">
+      <DependentUpon>OnlineMealReports.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OnlineMealRestaurant.resx">
+      <DependentUpon>OnlineMealRestaurant.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OnlineMealRestaurantAdd.resx">
+      <DependentUpon>OnlineMealRestaurantAdd.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OnlineMealsUsedAdd.resx">
+      <DependentUpon>OnlineMealsUsedAdd.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OnlineMealTypes.resx">
+      <DependentUpon>OnlineMealTypes.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OnlineMealTypesAdd.resx">
+      <DependentUpon>OnlineMealTypesAdd.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OnlineMealUsed.resx">
+      <DependentUpon>OnlineMealUsed.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OnlineMealUsedHist.resx">
+      <DependentUpon>OnlineMealUsedHist.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OrganizationalUnits.resx">
+      <DependentUpon>OrganizationalUnits.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OrganizationalUnitsAdd.resx">
+      <DependentUpon>OrganizationalUnitsAdd.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PresenceGraphForDayControl.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>PresenceGraphForDayControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Employees.resx">
+      <DependentUpon>Employees.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EmployeesXAccessGroups.resx">
+      <DependentUpon>EmployeesXAccessGroups.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EmployeesXWorkingUnits.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>EmployeesXWorkingUnits.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EmplWorkingGroupChanged.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>EmplWorkingGroupChanged.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ExitPermissionPasses.resx">
+      <DependentUpon>ExitPermissionPasses.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ExitPermissions.resx">
+      <DependentUpon>ExitPermissions.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ExitPermissionsAdd.resx">
+      <DependentUpon>ExitPermissionsAdd.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ExitPermissionsVerification.resx">
+      <DependentUpon>ExitPermissionsVerification.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ExitPermissionsWorkingDayBeginning.resx">
+      <DependentUpon>ExitPermissionsWorkingDayBeginning.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ExtraHours.resx">
+      <DependentUpon>ExtraHours.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ExtraHoursCalculation.resx">
+      <DependentUpon>ExtraHoursCalculation.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GateResource.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>GateResource.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GateResource.sr.resx">
+      <SubType>Designer</SubType>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>GateResource.sr.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gates.resx">
+      <DependentUpon>Gates.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GatesAdd.resx">
+      <DependentUpon>GatesAdd.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GatesXGateTimeProfile.resx">
+      <DependentUpon>GatesXGateTimeProfile.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GatesXGateTimeProfileUpd.resx">
+      <DependentUpon>GatesXGateTimeProfileUpd.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GateTimeAccessProfileAdd.resx">
+      <DependentUpon>GateTimeAccessProfileAdd.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GateTimeAccessProfiles.resx">
+      <DependentUpon>GateTimeAccessProfiles.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Holidays.resx">
+      <DependentUpon>Holidays.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HolidaysAdd.resx">
+      <DependentUpon>HolidaysAdd.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LicenceGenerate.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>LicenceGenerate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PassesHist.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>PassesHist.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Info.resx">
+      <DependentUpon>Info.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IOPairs.resx">
+      <DependentUpon>IOPairs.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IOPairsAdd.resx">
+      <DependentUpon>IOPairsAdd.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LibrariesExportImport.resx">
+      <DependentUpon>LibrariesExportImport.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Locations.resx">
+      <DependentUpon>Locations.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LocationsAdd.resx">
+      <DependentUpon>LocationsAdd.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LogDownload.resx">
+      <DependentUpon>LogDownload.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LogInForm.resx">
+      <DependentUpon>LogInForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Monitor.resx">
+      <DependentUpon>Monitor.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Passes.resx">
+      <DependentUpon>Passes.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PassesAdd.resx">
+      <DependentUpon>PassesAdd.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PassesSnapshots.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>PassesSnapshots.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PassTypeAdd.resx">
+      <DependentUpon>PassTypeAdd.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PassTypes.resx">
+      <DependentUpon>PassTypes.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PresenceGraphForEmplControl.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>PresenceGraphForEmplControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProlongTS.resx">
+      <DependentUpon>ProlongTS.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PYIntegration.resx">
+      <DependentUpon>PYIntegration.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReaderActivity.resx">
+      <DependentUpon>ReaderActivity.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReaderAdvanceSettings.resx">
+      <DependentUpon>ReaderAdvanceSettings.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Readers.resx">
+      <DependentUpon>Readers.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReadersAdd.resx">
+      <DependentUpon>ReadersAdd.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReaderSetup.resx">
+      <DependentUpon>ReaderSetup.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RecordsOfBreaks.resx">
+      <DependentUpon>RecordsOfBreaks.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resource.fi.resx">
+      <SubType>Designer</SubType>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resource.fi.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resource.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resource.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resource.sr.resx">
+      <SubType>Designer</SubType>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resource.sr.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RestartCounters.resx">
+      <DependentUpon>RestartCounters.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Restaurant.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Restaurant.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RestaurantII.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>RestaurantII.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RestaurantIII.resx">
+      <DependentUpon>RestaurantIII.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RolePermissionCell.resx">
+      <DependentUpon>RolePermissionCell.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RolesPermissions.resx">
+      <DependentUpon>RolesPermissions.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Rules.resx">
+      <DependentUpon>Rules.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RulesAdd.resx">
+      <DependentUpon>RulesAdd.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RulesCutOffDate.resx">
+      <DependentUpon>RulesCutOffDate.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SecurityRoutes.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SecurityRoutes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SecurityRoutesAdd.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SecurityRoutesAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SecurityRoutesPointsAdd.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SecurityRoutesPointsAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SecurityRoutesReadersAdd.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SecurityRoutesReadersAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SecurityRoutesScheduleAdd.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SecurityRoutesScheduleAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SiemensDevicesControl.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SiemensDevicesControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Snapshots.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Snapshots.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StatisticGraphicReports.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>StatisticGraphicReports.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StatisticReportViewControl.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>StatisticReportViewControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StatisticReportViewMultiWUControl.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>StatisticReportViewMultiWUControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SynchronizationPreview.resx">
+      <DependentUpon>SynchronizationPreview.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SystemClosingEventAdd.resx">
+      <DependentUpon>SystemClosingEventAdd.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SystemClosingEvents.resx">
+      <DependentUpon>SystemClosingEvents.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SystemMessageAdd.resx">
+      <DependentUpon>SystemMessageAdd.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SystemMessages.resx">
+      <DependentUpon>SystemMessages.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tags.resx">
+      <DependentUpon>Tags.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TagsPreview.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>TagsPreview.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TimeAccessProfileAdd.resx">
+      <DependentUpon>TimeAccessProfileAdd.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TimeAccessProfileCell.resx">
+      <DependentUpon>TimeAccessProfileCell.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TimeAccessProfiles.resx">
+      <DependentUpon>TimeAccessProfiles.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TimeSchemaPauseAdd.resx">
+      <DependentUpon>TimeSchemaPauseAdd.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TimeSchemaPauses.resx">
+      <DependentUpon>TimeSchemaPauses.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TMTypeAdd.resx">
+      <DependentUpon>TMTypeAdd.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TMTypes.resx">
+      <DependentUpon>TMTypes.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TransportData.resx">
+      <DependentUpon>TransportData.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UnregularDataPreview.resx">
+      <DependentUpon>UnregularDataPreview.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UsingMeals.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>UsingMeals.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VacationAdd.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>VacationAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VacationDetails.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>VacationDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VacationEvidence.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>VacationEvidence.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Visitors.resx">
+      <DependentUpon>Visitors.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VisitorsMaintenance.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>VisitorsMaintenance.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VisitorsView.resx">
+      <DependentUpon>VisitorsView.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WorkingUnits.resx">
+      <DependentUpon>WorkingUnits.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WorkingUnitsAdd.resx">
+      <DependentUpon>WorkingUnitsAdd.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WorkingUnitsTreeView.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>WorkingUnitsTreeView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WTEmployeesTimeSchedule.resx">
+      <DependentUpon>WTEmployeesTimeSchedule.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WTGroups.resx">
+      <DependentUpon>WTGroups.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WTGroupsAdd.resx">
+      <DependentUpon>WTGroupsAdd.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WTSchema.resx">
+      <DependentUpon>WTSchema.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WTSchemaAdd.resx">
+      <DependentUpon>WTSchemaAdd.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WTSchemaAdvance.resx">
+      <DependentUpon>WTSchemaAdvance.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WTSchemaPeriod.resx">
+      <DependentUpon>WTSchemaPeriod.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WTWorkingGroupTimeSchedules.resx">
+      <DependentUpon>WTWorkingGroupTimeSchedules.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Content Include="App.ico" />
+    <None Include="Resources\600px-No-Symbol_svg.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PreBuildEvent>
+    </PreBuildEvent>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+</Project>

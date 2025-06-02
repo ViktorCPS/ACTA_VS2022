@@ -714,3 +714,5 @@ FormNotifier.Notify(Reader crrReader): All observers are notified about changes:
 
 05/07/2025 09:15:30 OPEN SESSIONS NUM: 4
 
+06/02/2025 11:21:24 OPEN SESSIONS NUM: 4
+

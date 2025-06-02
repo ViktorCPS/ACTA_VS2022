@@ -1,7 +1,9 @@
-﻿namespace ReportsWeb {
-    
-    
-    public partial class IOPairsDS {
+﻿namespace ReportsWeb
+{
+
+
+    public partial class IOPairsDS
+    {
     }
 }
 namespace ReportsWeb.IOPairsDSTableAdapters

@@ -749,3 +749,21 @@ Login failed for user 'actamgr'.
 
 05/06/2025 14:36:43 OPEN SESSIONS NUM: 4
 
+06/02/2025 11:21:24 ACTA.checkVisibility(): Object reference not set to an instance of an object.Libraries_
+
+06/02/2025 11:21:25 ACTA.checkVisibility(): Object reference not set to an instance of an object.Reports_Standard reports_Presence reports_Reports for units
+
+06/02/2025 11:21:25 ACTA.checkVisibility(): Object reference not set to an instance of an object.Reports_Standard reports_Presence reports_Monthly Presence Tracking Reports
+
+06/02/2025 11:21:25 ACTA.checkVisibility(): Object reference not set to an instance of an object.Reports_Standard reports_Presence reports_Report for salary (Forecast)
+
+06/02/2025 11:21:26 ACTA.checkVisibility(): Object reference not set to an instance of an object.Reports_Standard reports_Presence reports_
+
+06/02/2025 11:21:26 ACTA.checkVisibility(): Object reference not set to an instance of an object.Reports_Standard reports_Presence reports_Report for SMP --- Broj prisutnih i odsutnih
+
+06/02/2025 11:21:26 ACTA.checkVisibility(): Object reference not set to an instance of an object.Reports_Standard reports_Time schedule reports_Reports for Vacation
+
+06/02/2025 11:21:27 ACTA.checkVisibility(): Object reference not set to an instance of an object.Reports_Document manipulation
+
+06/02/2025 11:21:27 ACTA.checkVisibility(): Object reference not set to an instance of an object.Interventions_
+

@@ -1,4 +1,4 @@
-﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="3.5">
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="Current">
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
@@ -19,10 +19,12 @@
     </SccProvider>
     <FileUpgradeFlags>
     </FileUpgradeFlags>
-    <OldToolsVersion>2.0</OldToolsVersion>
+    <OldToolsVersion>3.5</OldToolsVersion>
     <UpgradeBackupLocation>
     </UpgradeBackupLocation>
     <ApplicationIcon>Data.ico</ApplicationIcon>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -45,10 +47,6 @@
     <Reference Include="CelikWrapper, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\lib\CelikWrapper.dll</HintPath>
-    </Reference>
-    <Reference Include="ReaderInterface, Version=1.0.3.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\lib\ReaderInterface.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.configuration" />
@@ -135,6 +133,10 @@
       <Project>{BD526A30-C79F-4124-9C13-6B514F82A1CC}</Project>
       <Name>Common</Name>
     </ProjectReference>
+    <ProjectReference Include="..\..\UI\UI.csproj">
+      <Project>{83cf224e-d9d9-4489-98ec-ca981bd38644}</Project>
+      <Name>UI</Name>
+    </ProjectReference>
     <ProjectReference Include="..\SiemensDataAccess\SiemensDataAccess.csproj">
       <Project>{D8A5B09D-41F3-4266-A7D0-FBE0CEF49980}</Project>
       <Name>SiemensDataAccess</Name>
@@ -142,10 +144,6 @@
     <ProjectReference Include="..\..\TransferObjects\TransferObjects.csproj">
       <Project>{5C8540C2-8781-4EAE-BA2E-1A303779CCE3}</Project>
       <Name>TransferObjects</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\..\UI\UI.csproj">
-      <Project>{83CF224E-D9D9-4489-98EC-CA981BD38644}</Project>
-      <Name>UI</Name>
     </ProjectReference>
     <ProjectReference Include="..\..\Util\Util.csproj">
       <Project>{B9716E70-6794-4C27-ABF1-35D52CE595A6}</Project>

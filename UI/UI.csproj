@@ -1,4 +1,4 @@
-﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="3.5">
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="Current">
   <PropertyGroup>
     <ProjectType>Local</ProjectType>
     <ProductVersion>9.0.21022</ProductVersion>
@@ -19,7 +19,6 @@
     <OutputType>Library</OutputType>
     <RootNamespace>UI</RootNamespace>
     <RunPostBuildEvent>OnBuildSuccess</RunPostBuildEvent>
-    <StartupObject>UI.ACTA</StartupObject>
     <FileUpgradeFlags>
     </FileUpgradeFlags>
     <UpgradeBackupLocation>
@@ -33,6 +32,8 @@
     <SccProvider>
     </SccProvider>
     <OldToolsVersion>2.0</OldToolsVersion>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <OutputPath>bin\Debug\</OutputPath>
@@ -57,6 +58,7 @@
     <DebugType>full</DebugType>
     <ErrorReport>prompt</ErrorReport>
     <UseVSHostingProcess>true</UseVSHostingProcess>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <OutputPath>bin\Release\</OutputPath>
@@ -80,6 +82,7 @@
     <WarningLevel>4</WarningLevel>
     <DebugType>none</DebugType>
     <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="CelikWrapper, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
@@ -96,7 +99,6 @@
     </Reference>
     <Reference Include="Microsoft.Office.Interop.Excel, Version=12.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c" />
     <Reference Include="Microsoft.VisualBasic" />
-    <Reference Include="Microsoft.VisualBasic.PowerPacks.Vs, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
     <Reference Include="MySql.Data, Version=1.0.2.18525, Culture=neutral, PublicKeyToken=c5687fc88969c44d">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\lib\MySql.Data.dll</HintPath>
@@ -120,7 +122,9 @@
     <Reference Include="System.configuration">
       <HintPath>C:\WINDOWS\Microsoft.NET\Framework\v2.0.50727\System.configuration.dll</HintPath>
     </Reference>
-    <Reference Include="System.Core, Version=3.5.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL" />
+    <Reference Include="System.Core">
+      <HintPath>C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\v3.5\System.Core.dll</HintPath>
+    </Reference>
     <Reference Include="System.Data">
       <Name>System.Data</Name>
       <HintPath>C:\WINDOWS\Microsoft.NET\Framework\v2.0.50727\System.Data.dll</HintPath>
@@ -156,7 +160,7 @@
       <Name>ACTAMonitorLib</Name>
     </ProjectReference>
     <ProjectReference Include="..\ACTAWorkAnalysisReports\ACTAWorkAnalysisReports.csproj">
-      <Project>{2BF25639-7885-4374-A91F-9826DD2F7C0B}</Project>
+      <Project>{2bf25639-7885-4374-a91f-9826dd2f7c0b}</Project>
       <Name>ACTAWorkAnalysisReports</Name>
     </ProjectReference>
     <ProjectReference Include="..\Common\Common.csproj">
@@ -182,7 +186,7 @@
       <Name>DeviceRFID</Name>
     </ProjectReference>
     <ProjectReference Include="..\SynchronizationProjects\SyncDataAccess\SyncDataAccess.csproj">
-      <Project>{9AD7AEC7-84F4-40B7-A76E-69DCE7783635}</Project>
+      <Project>{9ad7aec7-84f4-40b7-a76e-69dce7783635}</Project>
       <Name>SyncDataAccess</Name>
     </ProjectReference>
     <ProjectReference Include="..\TransferObjects\TransferObjects.csproj">

@@ -34,7 +34,7 @@
             this.labelMessage = new System.Windows.Forms.Label();
             this.btnGenerateReport = new System.Windows.Forms.Button();
             this.dtpMesec = new System.Windows.Forms.DateTimePicker();
-            this.clockDataDS1 = new ReportsWeb.ClockDataDS();
+            //this.clockDataDS1 = new ReportsWeb.ClockDataDS();
             this.gbPeriodical = new System.Windows.Forms.GroupBox();
             this.progressBar2 = new System.Windows.Forms.ProgressBar();
             this.btnPeriodicalReport = new System.Windows.Forms.Button();
@@ -43,7 +43,7 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.gbChooseMonth.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.clockDataDS1)).BeginInit();
+            //((System.ComponentModel.ISupportInitialize)(this.clockDataDS1)).BeginInit();
             this.gbPeriodical.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -112,8 +112,8 @@
             // 
             // clockDataDS1
             // 
-            this.clockDataDS1.DataSetName = "ClockDataDS";
-            this.clockDataDS1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            //this.clockDataDS1.DataSetName = "ClockDataDS";
+            //this.clockDataDS1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // gbPeriodical
             // 
@@ -196,7 +196,7 @@
             this.Name = "ReportForSalaryForecast";
             this.Text = "ReportForSalaryForecast";
             this.gbChooseMonth.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.clockDataDS1)).EndInit();
+            //((System.ComponentModel.ISupportInitialize)(this.clockDataDS1)).EndInit();
             this.gbPeriodical.ResumeLayout(false);
             this.gbPeriodical.PerformLayout();
             this.ResumeLayout(false);
@@ -210,7 +210,6 @@
         private System.Windows.Forms.Button btnGenerateReport;
         private System.Windows.Forms.DateTimePicker dtpMesec;
         private System.Windows.Forms.Label labelMessage;
-        private ReportsWeb.ClockDataDS clockDataDS1;
         private System.Windows.Forms.ProgressBar progressBar1;
         private System.Windows.Forms.Button btnSmanjiBankuSati;
         private System.Windows.Forms.GroupBox gbPeriodical;

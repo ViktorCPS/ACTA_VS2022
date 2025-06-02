@@ -981,7 +981,7 @@ namespace ACTASurveillanceServiceWinClient
         uint tag = 0;
         private void timer3_Tick(object sender, EventArgs e)
         {
-            CardOwnerTO cardOwnerTO = client.GetCurrentOwner();
+            CardOwnerTO cardOwnerTO = (CardOwnerTO)client.GetCurrentOwner();
             if (cardOwnerTO != null)
             {               
                

@@ -1,6 +1,8 @@
-﻿namespace ReportsWeb {
-    
-    
-    public partial class AnnualLeave {
+﻿namespace ReportsWeb
+{
+
+
+    public partial class AnnualLeave
+    {
     }
 }

@@ -11,6 +11,7 @@ using Util;
 using Common;
 using TransferObjects;
 using System.Collections;
+using UI;
 
 namespace ACTASelftService
 {
@@ -42,7 +43,7 @@ namespace ACTASelftService
             try
             {
                 culture = CultureInfo.CreateSpecificCulture(NotificationController.GetLanguage());
-                rm = new ResourceManager("UI.Resource", typeof(UI.Employees).Assembly);
+                rm = new ResourceManager("UI.Resource", typeof(Employees).Assembly);
 
                 setLanguage();
 
@@ -80,7 +81,7 @@ namespace ACTASelftService
         {
             try
             {
-                UI.EmployeeAbsencesAdd abs = new UI.EmployeeAbsencesAdd(empl);
+                EmployeeAbsencesAdd abs = new EmployeeAbsencesAdd(empl);
                 abs.ShowDialog();
             }
             catch (Exception ex)
@@ -93,7 +94,7 @@ namespace ACTASelftService
         {
             try
             {
-                UI.PassesAdd pass = new UI.PassesAdd(empl);
+                PassesAdd pass = new PassesAdd(empl);
                 pass.ShowDialog();
             }
             catch (Exception ex)

@@ -7,7 +7,6 @@ using System.Windows.Forms;
 using System.Configuration;
 using System.Resources;
 using System.Globalization;
-using Microsoft.ReportingServices.ReportRendering;
 using System.Data;
 
 using TransferObjects;

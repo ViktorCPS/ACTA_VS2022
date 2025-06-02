@@ -1,6 +1,7 @@
 ﻿
 
-namespace Reports {
+namespace Reports
+{
 
 
     partial class SecurityRoutesSchedules
