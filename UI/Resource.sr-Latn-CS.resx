@@ -8773,210 +8773,6 @@
   <data name="VacationReport" xml:space="preserve">
     <value>Izveštaj o godišnjim odmorima zaposlenih</value>
   </data>
-  <data name="lblAltName" xml:space="preserve">
-    <value>Alternativni naziv:</value>
-  </data>
-  <data name="msgSchemaIsUsed" xml:space="preserve">
-    <value>Selektovanu satnicu koriste jedan ili više zaposlenih. </value>
-  </data>
-  <data name="isWrkHrsCounter" xml:space="preserve">
-    <value>Redovan rad</value>
-  </data>
-  <data name="msgInterExists" xml:space="preserve">
-    <value>Interval već postoji.</value>
-  </data>
-  <data name="msgSelectIOPair" xml:space="preserve">
-    <value>Morate selektovati podatke iz liste.</value>
-  </data>
-  <data name="selDayToAddSchedule" xml:space="preserve">
-    <value> Za zadavanje vrste obroka izaberite jedan ili više dana označenih plavom bojom...</value>
-  </data>
-  <data name="addEmployeeCounterTypes" xml:space="preserve">
-    <value>Dodavanje tipa brojača</value>
-  </data>
-  <data name="deleteUserCategories" xml:space="preserve">
-    <value>Da li ste sigurni da želite izbrisati selektovanu kategoriju?</value>
-  </data>
-  <data name="noReader" xml:space="preserve">
-    <value>Ne postoji čitač.</value>
-  </data>
-  <data name="tpClearHistory" xml:space="preserve">
-    <value>Brisanje istorije</value>
-  </data>
-  <data name="lblUsingAhead" xml:space="preserve">
-    <value>Korišćenje unapred</value>
-  </data>
-  <data name="noEmplInWU" xml:space="preserve">
-    <value>Nisu pronađeni zaposleni za selektovanu radnu jedinicu.</value>
-  </data>
-  <data name="selEmple" xml:space="preserve">
-    <value />
-  </data>
-  <data name="banNote" xml:space="preserve">
-    <value>Podaci koje ste uneli o posetiocu odgovaraju nekim podacima zabranjenih poseta. Pogledajte pregled zabranjenih poseta koji odgovaraju unetim podacima.</value>
-  </data>
-  <data name="visitNoCardZIN" xml:space="preserve">
-    <value>Morate izabrati bedž posetioca</value>
-  </data>
-  <data name="tabSchEmployees" xml:space="preserve">
-    <value>Zaposleni - obilasci sa terminalom</value>
-  </data>
-  <data name="messageOUSearch1" xml:space="preserve">
-    <value>Nema pronađenih organizacionih jedinica za zadati kriterijum pretrage.</value>
-  </data>
-  <data name="messageOUUpd4" xml:space="preserve">
-    <value>ID roditeljske organizacione jedinice je promenjen. Ažuriraju se prava pristupa ovoj organizacionoj jedinici...</value>
-  </data>
-  <data name="applUserXOUSaved" xml:space="preserve">
-    <value />
-  </data>
-  <data name="gbDocSearch" xml:space="preserve">
-    <value>Pretraga dokumenata</value>
-  </data>
-  <data name="lblDocument" xml:space="preserve">
-    <value>Dokument:</value>
-  </data>
-  <data name="lblDocDesc" xml:space="preserve">
-    <value>Opis dokumenta:</value>
-  </data>
-  <data name="lblDocName" xml:space="preserve">
-    <value>Naziv dokumenta:</value>
-  </data>
-  <data name="gbDocuments" xml:space="preserve">
-    <value>Dokumenti</value>
-  </data>
-  <data name="addDocument" xml:space="preserve">
-    <value>Dodavanje dokumenata</value>
-  </data>
-  <data name="lblInputWarning" xml:space="preserve">
-    <value>Morate dodeliti vrednost za polje</value>
-  </data>
-  <data name="messageDocumentDescNotInserted" xml:space="preserve">
-    <value>Morate uneti opis dokumenta.</value>
-  </data>
-  <data name="messageDocumentFileNotInserted" xml:space="preserve">
-    <value>Morate izabrati odgovarajuci fajl.</value>
-  </data>
-  <data name="messageDocumentNameNotInserted" xml:space="preserve">
-    <value>Morate uneti naziv dokumenta.</value>
-  </data>
-  <data name="hdrDocumentName" xml:space="preserve">
-    <value>Naziv dokumenta</value>
-  </data>
-  <data name="btnUpload" xml:space="preserve">
-    <value />
-  </data>
-  <data name="hdrAddingDate" xml:space="preserve">
-    <value>Datum dodavanja</value>
-  </data>
-  <data name="btnDownload" xml:space="preserve">
-    <value>Preuzimanje</value>
-  </data>
-  <data name="btnBrowseDest" xml:space="preserve">
-    <value>Izaberite odrediste</value>
-  </data>
-  <data name="messageDuplicateInsertForDocument" xml:space="preserve">
-    <value>Svi podaci o zaposlenom i dokumentu se ponavljaju. </value>
-  </data>
-  <data name="messageDownloadDocuments" xml:space="preserve">
-    <value>Dokument je uspesno preuzet.</value>
-  </data>
-  <data name="noOUGranted" xml:space="preserve">
-    <value />
-  </data>
-  <data name="menuReportsForOpenPairsByEmployee" xml:space="preserve">
-    <value>Izveštaji o otvorenim parovima zaposlenih</value>
-  </data>
-  <data name="addMachine" xml:space="preserve">
-    <value>Dodavanje mašine</value>
-  </data>
-  <data name="applEmployeeXMachineSaved" xml:space="preserve">
-    <value>Izmene su uspešno sačuvane.</value>
-  </data>
-  <data name="btnMachineXEmployee" xml:space="preserve">
-    <value>Mašine &lt; - - &gt; Zaposleni</value>
-  </data>
-  <data name="defaultMachine" xml:space="preserve">
-    <value>Podrazumevana mašina ne može biti obrisana.</value>
-  </data>
-  <data name="deleteEmployeesFromMachine" xml:space="preserve">
-    <value>Da li ste sigurni da želite da uklonite radnike sa izabrane mašine?</value>
-  </data>
-  <data name="deleteMachines" xml:space="preserve">
-    <value>Da li ste sigurni da želite izbrisati selektovane mašine?</value>
-  </data>
-  <data name="employeesDelFromMachine" xml:space="preserve">
-    <value>Selektovani radnici su uklonjeni sa mašine.</value>
-  </data>
-  <data name="formMachineXEmployee" xml:space="preserve">
-    <value>Mašine &lt;-&gt; Zaposleni</value>
-  </data>
-  <data name="gbMachines" xml:space="preserve">
-    <value>Mašine</value>
-  </data>
-  <data name="lblEmployeesForMachine" xml:space="preserve">
-    <value>Zaposleni kojima nije dodeljena selektovana mašina.</value>
-  </data>
-  <data name="lblMachine" xml:space="preserve">
-    <value>Mašina:</value>
-  </data>
-  <data name="lblMachineID" xml:space="preserve">
-    <value>ID mašine:</value>
-  </data>
-  <data name="lblSelEmployees" xml:space="preserve">
-    <value>Zaposleni kojima je dodeljena selektovana mašina:</value>
-  </data>
-  <data name="machineForm" xml:space="preserve">
-    <value>Mašine</value>
-  </data>
-  <data name="machineHasEmployee" xml:space="preserve">
-    <value>Mašina je dodeljena nekom radniku ili radnicima i ne može biti izbrisana.</value>
-  </data>
-  <data name="machineNameExists" xml:space="preserve">
-    <value>Mašina sa unetim imenom već postoji.</value>
-  </data>
-  <data name="machineSaved" xml:space="preserve">
-    <value>Podaci o mašini su uspešno dodati.</value>
-  </data>
-  <data name="machinesDel" xml:space="preserve">
-    <value>Selektovane mašine su uspešno izbrisane.</value>
-  </data>
-  <data name="machineUpdated" xml:space="preserve">
-    <value>Podaci o mašini su uspešno izmenjeni.</value>
-  </data>
-  <data name="menuMachines" xml:space="preserve">
-    <value>Mašine</value>
-  </data>
-  <data name="menuRecordsOfBreaks" xml:space="preserve">
-    <value>Evidencija pauza</value>
-  </data>
-  <data name="noEmployeeDelFromMachine" xml:space="preserve">
-    <value>Neki radnici nisu mogli biti uklonjeni sa mašine.</value>
-  </data>
-  <data name="noMachineDel" xml:space="preserve">
-    <value>Neke mašine nisu mogle biti izbrisane.</value>
-  </data>
-  <data name="noMachinesFound" xml:space="preserve">
-    <value>Nema pronađenih mašina za zadati kriterijum pretrage.</value>
-  </data>
-  <data name="noSelEmployeeDel" xml:space="preserve">
-    <value>Nema selektovanih zaposlenih za brisanje.</value>
-  </data>
-  <data name="noSelMachineDel" xml:space="preserve">
-    <value>Nema selektovanih mašina za brisanje.</value>
-  </data>
-  <data name="SelectMachine" xml:space="preserve">
-    <value>Najpre izaberite mašinu.</value>
-  </data>
-  <data name="selOneMachine" xml:space="preserve">
-    <value>Morate izabrati jednu mašinu koju želite izmeniti.</value>
-  </data>
-  <data name="selOneMachineMust" xml:space="preserve">
-    <value>Morate izabrati jednu mašinu koju želite dodeliti izabranom radniku.</value>
-  </data>
-  <data name="updateMachine" xml:space="preserve">
-    <value>Promena mašine</value>
-  </data>
   <data name="ABSENCE1" xml:space="preserve">
     <value>Neopravdano</value>
   </data>
@@ -9073,14 +8869,8 @@
   <data name="addCameraMode1" xml:space="preserve">
     <value>Dodavanje kamere</value>
   </data>
-  <data name="addDocument1" xml:space="preserve">
-    <value>Dodavanje dokumenata</value>
-  </data>
   <data name="addEmployee1" xml:space="preserve">
     <value>Dodavanje zaposlenog</value>
-  </data>
-  <data name="addEmployeeCounterTypes1" xml:space="preserve">
-    <value>Dodavanje tipa brojača</value>
   </data>
   <data name="addGate1" xml:space="preserve">
     <value>Dodavanje kapije</value>
@@ -9102,9 +8892,6 @@
   </data>
   <data name="addLocationMode1" xml:space="preserve">
     <value>Dodavanje lokacije</value>
-  </data>
-  <data name="addMachine1" xml:space="preserve">
-    <value>Dodavanje mašine</value>
   </data>
   <data name="addMap1" xml:space="preserve">
     <value>Dodavanje mape</value>
@@ -9241,9 +9028,6 @@
   <data name="apbNotSaved1" xml:space="preserve">
     <value>Nije uspelo čuvanje propusnice.</value>
   </data>
-  <data name="applEmployeeXMachineSaved1" xml:space="preserve">
-    <value>Izmene su uspešno sačuvane.</value>
-  </data>
   <data name="applRunning1" xml:space="preserve">
     <value>Program je već pokrenut!</value>
   </data>
@@ -9258,9 +9042,6 @@
   </data>
   <data name="ApplUsersLoginChangesTbl1" xml:space="preserve">
     <value>Tabele praćenja promena</value>
-  </data>
-  <data name="applUserXOUSaved1" xml:space="preserve">
-    <value />
   </data>
   <data name="applUserXRoleSaved1" xml:space="preserve">
     <value>Izmene su uspešno sačuvane. Izmene će biti vidljive nakon idućeg logovanja.</value>
@@ -9291,9 +9072,6 @@
   </data>
   <data name="BANK_HOURS_USED1" xml:space="preserve">
     <value>Korišćenje zarađenih sati</value>
-  </data>
-  <data name="banNote1" xml:space="preserve">
-    <value>Podaci koje ste uneli o posetiocu odgovaraju nekim podacima zabranjenih poseta. Pogledajte pregled zabranjenih poseta koji odgovaraju unetim podacima.</value>
   </data>
   <data name="basicCounter1" xml:space="preserve">
     <value>Brojač prolazaka - osnovni izveštaj</value>
@@ -9332,9 +9110,6 @@
     <value>Dodatna podešavanja &gt;&gt;&gt;</value>
   </data>
   <data name="btnAdvanced3" xml:space="preserve">
-    <value>Napredno &gt;&gt;</value>
-  </data>
-  <data name="btnAdvanced3" xml:space="preserve">
     <value>&lt;&lt; Osnovno</value>
   </data>
   <data name="btnApprove1" xml:space="preserve">
@@ -9351,9 +9126,6 @@
   </data>
   <data name="btnBrowse1" xml:space="preserve">
     <value>Pronađi</value>
-  </data>
-  <data name="btnBrowseDest1" xml:space="preserve">
-    <value>Izaberite odrediste</value>
   </data>
   <data name="btnBusinessTrip1" xml:space="preserve">
     <value>Službeni put</value>
@@ -9417,9 +9189,6 @@
   </data>
   <data name="btnDetails1" xml:space="preserve">
     <value>Detalji &gt;&gt;</value>
-  </data>
-  <data name="btnDownload1" xml:space="preserve">
-    <value>Preuzimanje</value>
   </data>
   <data name="btnEmployeeAccessGroups1" xml:space="preserve">
     <value>Zaposleni &lt;-&gt; Grupa za pristup</value>
@@ -9507,9 +9276,6 @@
   </data>
   <data name="btnLogView1" xml:space="preserve">
     <value>Pregled prijavljivanja</value>
-  </data>
-  <data name="btnMachineXEmployee1" xml:space="preserve">
-    <value>Mašine &lt; - - &gt; Zaposleni</value>
   </data>
   <data name="btnMaps1" xml:space="preserve">
     <value>Mape</value>
@@ -9645,9 +9411,6 @@
   </data>
   <data name="btnUpdateValue1" xml:space="preserve">
     <value>Promeni vrednost</value>
-  </data>
-  <data name="btnUpload1" xml:space="preserve">
-    <value />
   </data>
   <data name="btnUse1" xml:space="preserve">
     <value>Zaduženje</value>
@@ -9816,9 +9579,6 @@
   </data>
   <data name="cbTakeWholeInterval1" xml:space="preserve">
     <value>Uzeti ceo vremenski interval</value>
-  </data>
-  <data name="cbTimeTable3" xml:space="preserve">
-    <value>Radno vreme - normal, flexi</value>
   </data>
   <data name="cbTimeTable3" xml:space="preserve">
     <value>Radno vreme - industrial</value>
@@ -10138,9 +9898,6 @@
   <data name="defaultLocDel1" xml:space="preserve">
     <value>Podrazumevana lokacija ne može biti izbrisana.</value>
   </data>
-  <data name="defaultMachine1" xml:space="preserve">
-    <value>Podrazumevana mašina ne može biti obrisana.</value>
-  </data>
   <data name="defaultOUDel1" xml:space="preserve">
     <value>Podrazumevana organizaciona jedinica ne može biti izbrisana.</value>
   </data>
@@ -10189,9 +9946,6 @@
   <data name="deleteEmplAbsences1" xml:space="preserve">
     <value>Da li ste sigurni da želite izbrisati selektovana odsustva zaposlenih?</value>
   </data>
-  <data name="deleteEmployeesFromMachine1" xml:space="preserve">
-    <value>Da li ste sigurni da želite da uklonite radnike sa izabrane mašine?</value>
-  </data>
   <data name="deleteExitPerm1" xml:space="preserve">
     <value>Da li ste sigurni da želite da izbrišete selektovane propusnice?</value>
   </data>
@@ -10206,9 +9960,6 @@
   </data>
   <data name="deleteIOPairs1" xml:space="preserve">
     <value>Da li ste sigurni da želite izbrisati selektovane parove ulaz/izlaz?</value>
-  </data>
-  <data name="deleteMachines1" xml:space="preserve">
-    <value>Da li ste sigurni da želite izbrisati selektovane mašine?</value>
   </data>
   <data name="deleteMap1" xml:space="preserve">
     <value>Da li ste sigurni da želite izbrisati selektovane mape?</value>
@@ -10236,9 +9987,6 @@
   </data>
   <data name="deleteUsedHours1" xml:space="preserve">
     <value>Da li ste sigurni da želite izbrisati selektovane iskorišćene sate?</value>
-  </data>
-  <data name="deleteUserCategories1" xml:space="preserve">
-    <value>Da li ste sigurni da želite izbrisati selektovanu kategoriju?</value>
   </data>
   <data name="deleteUsers1" xml:space="preserve">
     <value>Da li ste sigurni da želite izbrisati selektovane operatere?</value>
@@ -10422,9 +10170,6 @@
   </data>
   <data name="EmployeesCountersBalances1" xml:space="preserve">
     <value>Balansi brojača zaposlenih</value>
-  </data>
-  <data name="employeesDelFromMachine1" xml:space="preserve">
-    <value>Selektovani radnici su uklonjeni sa mašine.</value>
   </data>
   <data name="employeesTimeSchedule1" xml:space="preserve">
     <value>Satnice zaposlenih</value>
@@ -10696,9 +10441,6 @@
   <data name="forInterval1" xml:space="preserve">
     <value>Po danima</value>
   </data>
-  <data name="formMachineXEmployee1" xml:space="preserve">
-    <value>Mašine &lt;-&gt; Zaposleni</value>
-  </data>
   <data name="forMonthInterval1" xml:space="preserve">
     <value>Po mesecima</value>
   </data>
@@ -10829,9 +10571,6 @@
     <value>Napredna pretraga</value>
   </data>
   <data name="gbAntenna2" xml:space="preserve">
-    <value>Antena 0</value>
-  </data>
-  <data name="gbAntenna2" xml:space="preserve">
     <value>Antena 1</value>
   </data>
   <data name="gbApplUsersCategories1" xml:space="preserve">
@@ -10938,12 +10677,6 @@
   </data>
   <data name="gbDetails1" xml:space="preserve">
     <value>Detalji</value>
-  </data>
-  <data name="gbDocSearch1" xml:space="preserve">
-    <value>Pretraga dokumenata</value>
-  </data>
-  <data name="gbDocuments1" xml:space="preserve">
-    <value>Dokumenti</value>
   </data>
   <data name="gbEmpl1" xml:space="preserve">
     <value>Podaci o korisniku</value>
@@ -11076,9 +10809,6 @@
   </data>
   <data name="gbLocations1" xml:space="preserve">
     <value>Pretraga lokacija</value>
-  </data>
-  <data name="gbMachines1" xml:space="preserve">
-    <value>Mašine</value>
   </data>
   <data name="gbManualInput1" xml:space="preserve">
     <value>Ručni unos</value>
@@ -11405,21 +11135,6 @@
     <value>Za neke zaposlene izmene nisu mogle biti izvršene.</value>
   </data>
   <data name="grpScheduleAdd7" xml:space="preserve">
-    <value>Novi raspored satnica za grupu će važiti od:</value>
-  </data>
-  <data name="grpScheduleAdd7" xml:space="preserve">
-    <value>do:</value>
-  </data>
-  <data name="grpScheduleAdd7" xml:space="preserve">
-    <value>do sledeće izmene.</value>
-  </data>
-  <data name="grpScheduleAdd7" xml:space="preserve">
-    <value>Uzeti u obzir da će se na mesece posle ovog primenjivati poslednja satnica iz ovog meseca, a ne čitav mesečni raspored, u slučaju da raspored u ovom mesecu ima više satnica!</value>
-  </data>
-  <data name="grpScheduleAdd7" xml:space="preserve">
-    <value>Izmene će se primeniti na sve zaposlene koji su u ovoj grupi, na isti vremenski period, pri čemu će se izgubiti sve pojedinačne korekcije, ukoliko postoje!</value>
-  </data>
-  <data name="grpScheduleAdd7" xml:space="preserve">
     <value>Da li želite da nastavite?</value>
   </data>
   <data name="grpScheduleNotSaved1" xml:space="preserve">
@@ -11436,9 +11151,6 @@
   </data>
   <data name="hdrAbsUsed1" xml:space="preserve">
     <value>Procesirano</value>
-  </data>
-  <data name="hdrAddingDate1" xml:space="preserve">
-    <value>Datum dodavanja</value>
   </data>
   <data name="hdrAddress1" xml:space="preserve">
     <value>Adresa</value>
@@ -11610,12 +11322,6 @@
   </data>
   <data name="hdrDocument1" xml:space="preserve">
     <value>Dokument</value>
-  </data>
-  <data name="hdrDocumentName1" xml:space="preserve">
-    <value>Naziv dokumenta</value>
-  </data>
-  <data name="hdrDocumentNum2" xml:space="preserve">
-    <value>Broj dokumenta</value>
   </data>
   <data name="hdrDocumentNum2" xml:space="preserve">
     <value>Broj dok.</value>
@@ -12023,9 +11729,6 @@
     <value>Raspored obilazaka</value>
   </data>
   <data name="hdrRuleDate3" xml:space="preserve">
-    <value>Datum 1</value>
-  </data>
-  <data name="hdrRuleDate3" xml:space="preserve">
     <value>Datum 2</value>
   </data>
   <data name="hdrRuleType1" xml:space="preserve">
@@ -12269,9 +11972,6 @@
     <value>Licenca nije validna.</value>
   </data>
   <data name="invalidLicenceADMIN3" xml:space="preserve">
-    <value>Licenca nije validna.</value>
-  </data>
-  <data name="invalidLicenceADMIN3" xml:space="preserve">
     <value>Da biste licencirali proizvod, pošaljite e-mail zahtev za licenciranjem sa prikačenim fajlom </value>
   </data>
   <data name="invalidLicenceReq1" xml:space="preserve">
@@ -12321,9 +12021,6 @@
   </data>
   <data name="isPassWholeDayAbsence1" xml:space="preserve">
     <value>Celodnevno odsustvo</value>
-  </data>
-  <data name="isWrkHrsCounter1" xml:space="preserve">
-    <value>Redovan rad</value>
   </data>
   <data name="jmbgForm1" xml:space="preserve">
     <value>Posetioci sa istim JMBG - om</value>
@@ -12377,19 +12074,10 @@
     <value>ID adrese:</value>
   </data>
   <data name="lblAddrLine4" xml:space="preserve">
-    <value>Adresa 1:</value>
-  </data>
-  <data name="lblAddrLine4" xml:space="preserve">
-    <value>Adresa 2:</value>
-  </data>
-  <data name="lblAddrLine4" xml:space="preserve">
     <value>E-mail:</value>
   </data>
   <data name="lblAll1" xml:space="preserve">
     <value>Svi</value>
-  </data>
-  <data name="lblAltName1" xml:space="preserve">
-    <value>Alternativni naziv:</value>
   </data>
   <data name="lblAmount1" xml:space="preserve">
     <value>Iznos:</value>
@@ -12512,12 +12200,6 @@
     <value>Informacije o bazi :</value>
   </data>
   <data name="lblDate3" xml:space="preserve">
-    <value>Datum:</value>
-  </data>
-  <data name="lblDate3" xml:space="preserve">
-    <value>Datum 1:</value>
-  </data>
-  <data name="lblDate3" xml:space="preserve">
     <value>Datum 2:</value>
   </data>
   <data name="lblDateAndTime1" xml:space="preserve">
@@ -12567,15 +12249,6 @@
   </data>
   <data name="lblDiseabled1" xml:space="preserve">
     <value>- Dani koji se ne mogu menjati</value>
-  </data>
-  <data name="lblDocDesc1" xml:space="preserve">
-    <value>Opis dokumenta:</value>
-  </data>
-  <data name="lblDocName1" xml:space="preserve">
-    <value>Naziv dokumenta:</value>
-  </data>
-  <data name="lblDocument1" xml:space="preserve">
-    <value>Dokument:</value>
   </data>
   <data name="lblDocumentName1" xml:space="preserve">
     <value>Naziv dokumenta:</value>
@@ -12658,9 +12331,6 @@
   <data name="lblEmployeesForCategory1" xml:space="preserve">
     <value>Zaposleni kojima je dodeljena selektovana kategorija:</value>
   </data>
-  <data name="lblEmployeesForMachine1" xml:space="preserve">
-    <value>Zaposleni kojima nije dodeljena selektovana mašina.</value>
-  </data>
   <data name="lblEmployeesForOU1" xml:space="preserve">
     <value>Zaposleni koji ne pripadaju selektovanoj organizacionoj jedinici</value>
   </data>
@@ -12713,12 +12383,6 @@
     <value>Potvrđivanje propusnica:</value>
   </data>
   <data name="lblFaxNum4" xml:space="preserve">
-    <value>Fax 1:</value>
-  </data>
-  <data name="lblFaxNum4" xml:space="preserve">
-    <value>Fax 2:</value>
-  </data>
-  <data name="lblFaxNum4" xml:space="preserve">
     <value>Fax 3:</value>
   </data>
   <data name="lblFileCrTime1" xml:space="preserve">
@@ -12767,9 +12431,6 @@
     <value>Vrsta prikaza:</value>
   </data>
   <data name="lblGreen2" xml:space="preserve">
-    <value>Terminal sadrži poslednja podešavanja</value>
-  </data>
-  <data name="lblGreen2" xml:space="preserve">
     <value>Intervali satnice koji važe na današnji dan</value>
   </data>
   <data name="lblGroup1" xml:space="preserve">
@@ -12792,9 +12453,6 @@
   </data>
   <data name="lblInfoAddData1" xml:space="preserve">
     <value>*-1 označava nedefinisanu celobrojnu vrednost, 01.01.1900. označava nedefinisanu datumsku vrednost</value>
-  </data>
-  <data name="lblInputWarning1" xml:space="preserve">
-    <value>Morate dodeliti vrednost za polje</value>
   </data>
   <data name="lblInterval1" xml:space="preserve">
     <value>Važenje:</value>
@@ -12892,12 +12550,6 @@
   <data name="lblLPath1" xml:space="preserve">
     <value>L putanja:</value>
   </data>
-  <data name="lblMachine1" xml:space="preserve">
-    <value>Mašina:</value>
-  </data>
-  <data name="lblMachineID1" xml:space="preserve">
-    <value>ID mašine:</value>
-  </data>
   <data name="lblManual1" xml:space="preserve">
     <value>Ručno</value>
   </data>
@@ -12909,9 +12561,6 @@
   </data>
   <data name="lblMapID1" xml:space="preserve">
     <value>Šifra mape:</value>
-  </data>
-  <data name="lblMeal2" xml:space="preserve">
-    <value>obroka</value>
   </data>
   <data name="lblMeal2" xml:space="preserve">
     <value>Obrok:</value>
@@ -12957,9 +12606,6 @@
   </data>
   <data name="lblMoreThan1" xml:space="preserve">
     <value>Sa više od:</value>
-  </data>
-  <data name="lblName2" xml:space="preserve">
-    <value>Ime:</value>
   </data>
   <data name="lblName2" xml:space="preserve">
     <value>Naziv:</value>
@@ -13017,9 +12663,6 @@
   </data>
   <data name="lblOperator1" xml:space="preserve">
     <value>Operater:</value>
-  </data>
-  <data name="lblOrange2" xml:space="preserve">
-    <value>Poslednja podešavanja se šalju na terminal</value>
   </data>
   <data name="lblOrange2" xml:space="preserve">
     <value>Intervali satnice koji važe prvog dana sledećeg meseca</value>
@@ -13151,51 +12794,6 @@
     <value>* Odnosi se na procesirane podatke</value>
   </data>
   <data name="lblProfile16" xml:space="preserve">
-    <value>Nedeljni raspored 0:</value>
-  </data>
-  <data name="lblProfile16" xml:space="preserve">
-    <value>Nedeljni raspored 1:</value>
-  </data>
-  <data name="lblProfile16" xml:space="preserve">
-    <value>Nedeljni raspored 10:</value>
-  </data>
-  <data name="lblProfile16" xml:space="preserve">
-    <value>Nedeljni raspored 11:</value>
-  </data>
-  <data name="lblProfile16" xml:space="preserve">
-    <value>Nedeljni raspored 12:</value>
-  </data>
-  <data name="lblProfile16" xml:space="preserve">
-    <value>Nedeljni raspored 13:</value>
-  </data>
-  <data name="lblProfile16" xml:space="preserve">
-    <value>Nedeljni raspored 14:</value>
-  </data>
-  <data name="lblProfile16" xml:space="preserve">
-    <value>Nedeljni raspored 15:</value>
-  </data>
-  <data name="lblProfile16" xml:space="preserve">
-    <value>Nedeljni raspored 2:</value>
-  </data>
-  <data name="lblProfile16" xml:space="preserve">
-    <value>Nedeljni raspored 3:</value>
-  </data>
-  <data name="lblProfile16" xml:space="preserve">
-    <value>Nedeljni raspored 4:</value>
-  </data>
-  <data name="lblProfile16" xml:space="preserve">
-    <value>Nedeljni raspored 5:</value>
-  </data>
-  <data name="lblProfile16" xml:space="preserve">
-    <value>Nedeljni raspored 6:</value>
-  </data>
-  <data name="lblProfile16" xml:space="preserve">
-    <value>Nedeljni raspored 7:</value>
-  </data>
-  <data name="lblProfile16" xml:space="preserve">
-    <value>Nedeljni raspored 8:</value>
-  </data>
-  <data name="lblProfile16" xml:space="preserve">
     <value>Nedeljni raspored 9:</value>
   </data>
   <data name="lblProfileDescr1" xml:space="preserve">
@@ -13251,9 +12849,6 @@
   </data>
   <data name="lblReason1" xml:space="preserve">
     <value>Razlog:</value>
-  </data>
-  <data name="lblRed2" xml:space="preserve">
-    <value>Poslednja podešavanja ne mogu da se pošalju na terminal</value>
   </data>
   <data name="lblRed2" xml:space="preserve">
     <value>Intervali satnice koji važe za neku kombinaciju ovih dana</value>
@@ -13329,9 +12924,6 @@
   </data>
   <data name="lblSelectProfileToAsign1" xml:space="preserve">
     <value>Izaberite profil koji će biti dodeljen kapiji:</value>
-  </data>
-  <data name="lblSelEmployees1" xml:space="preserve">
-    <value>Zaposleni kojima je dodeljena selektovana mašina:</value>
   </data>
   <data name="lblSelReaders1" xml:space="preserve">
     <value>Lista terminala koji su dodeljeni kameri:</value>
@@ -13415,12 +13007,6 @@
     <value>Tehnologija:</value>
   </data>
   <data name="lblTelNum4" xml:space="preserve">
-    <value>Telefon 1:</value>
-  </data>
-  <data name="lblTelNum4" xml:space="preserve">
-    <value>Telefon 2:</value>
-  </data>
-  <data name="lblTelNum4" xml:space="preserve">
     <value>Telefon 3:</value>
   </data>
   <data name="lblTerminalLogs1" xml:space="preserve">
@@ -13461,9 +13047,6 @@
   </data>
   <data name="lblTue1" xml:space="preserve">
     <value>Uto:</value>
-  </data>
-  <data name="lblType2" xml:space="preserve">
-    <value>Tip:</value>
   </data>
   <data name="lblType2" xml:space="preserve">
     <value>Tip:</value>
@@ -13546,9 +13129,6 @@
   <data name="lblUsersLogTo1" xml:space="preserve">
     <value>Do:</value>
   </data>
-  <data name="lblUsingAhead1" xml:space="preserve">
-    <value>Korišćenje unapred</value>
-  </data>
   <data name="lblUsingDate1" xml:space="preserve">
     <value>Datum korišćenja:</value>
   </data>
@@ -13616,9 +13196,6 @@
     <value>Radne jedinice:</value>
   </data>
   <data name="lblWorkTime2" xml:space="preserve">
-    <value>Redovan rad</value>
-  </data>
-  <data name="lblWorkTime2" xml:space="preserve">
     <value>Radno vreme:</value>
   </data>
   <data name="lblWS1" xml:space="preserve">
@@ -13638,9 +13215,6 @@
   </data>
   <data name="lblYear1" xml:space="preserve">
     <value>Godina:</value>
-  </data>
-  <data name="lblYellow2" xml:space="preserve">
-    <value>Podešavanja za terminal su zadata sa statusom "na čekanju"</value>
   </data>
   <data name="lblYellow2" xml:space="preserve">
     <value>Intervali satnice koji važe na izabrani dan</value>
@@ -13747,24 +13321,6 @@
   <data name="lvUnlimited1" xml:space="preserve">
     <value>Neograničeno</value>
   </data>
-  <data name="machineForm1" xml:space="preserve">
-    <value>Mašine</value>
-  </data>
-  <data name="machineHasEmployee1" xml:space="preserve">
-    <value>Mašina je dodeljena nekom radniku ili radnicima i ne može biti izbrisana.</value>
-  </data>
-  <data name="machineNameExists1" xml:space="preserve">
-    <value>Mašina sa unetim imenom već postoji.</value>
-  </data>
-  <data name="machineSaved1" xml:space="preserve">
-    <value>Podaci o mašini su uspešno dodati.</value>
-  </data>
-  <data name="machinesDel1" xml:space="preserve">
-    <value>Selektovane mašine su uspešno izbrisane.</value>
-  </data>
-  <data name="machineUpdated1" xml:space="preserve">
-    <value>Podaci o mašini su uspešno izmenjeni.</value>
-  </data>
   <data name="makeReservation1" xml:space="preserve">
     <value>REZERVIŠI</value>
   </data>
@@ -13806,9 +13362,6 @@
   </data>
   <data name="maxConnNumExceeeded1" xml:space="preserve">
     <value>Maksimalan broj konekcija je dostignut.</value>
-  </data>
-  <data name="maxConnNumExceeededADMIN3" xml:space="preserve">
-    <value>Maksimalan broj konekcija je dostignut. </value>
   </data>
   <data name="maxConnNumExceeededADMIN3" xml:space="preserve">
     <value>Da biste licencirali proizvod, pošaljite e-mail zahtev za licenciranjem sa prikačenim fajlom </value>
@@ -14001,9 +13554,6 @@
   </data>
   <data name="menuAccessProfiles1" xml:space="preserve">
     <value>Profili</value>
-  </data>
-  <data name="menuAdvancedReport2" xml:space="preserve">
-    <value>Napredni izveštaji</value>
   </data>
   <data name="menuAdvancedReport2" xml:space="preserve">
     <value>Napredni izveštaji</value>
@@ -14419,9 +13969,6 @@
   <data name="menuLogToPasses1" xml:space="preserve">
     <value>Log -&gt; Passes</value>
   </data>
-  <data name="menuMachines1" xml:space="preserve">
-    <value>Mašine</value>
-  </data>
   <data name="menuMaintaining1" xml:space="preserve">
     <value>Održavanje</value>
   </data>
@@ -14515,9 +14062,6 @@
   <data name="menuReadersSettings1" xml:space="preserve">
     <value>Podešavanje terminala</value>
   </data>
-  <data name="menuRecordsOfBreaks1" xml:space="preserve">
-    <value>Evidencija pauza</value>
-  </data>
   <data name="menuRegister1" xml:space="preserve">
     <value>Registruj Prolazak</value>
   </data>
@@ -14532,9 +14076,6 @@
   </data>
   <data name="menuReports1" xml:space="preserve">
     <value>Izveštaji</value>
-  </data>
-  <data name="menuReportsForOpenPairsByEmployee1" xml:space="preserve">
-    <value>Izveštaji o otvorenim parovima zaposlenih</value>
   </data>
   <data name="menuReportsForSalaryForecast1" xml:space="preserve">
     <value>Izveštaj za plate (Forecast)</value>
@@ -14642,15 +14183,6 @@
     <value>Adresa mora biti označena brojem.</value>
   </data>
   <data name="messageAddrSave5" xml:space="preserve">
-    <value>Morate uneti ID adrese.</value>
-  </data>
-  <data name="messageAddrSave5" xml:space="preserve">
-    <value>ID adrese mora biti broj.</value>
-  </data>
-  <data name="messageAddrSave5" xml:space="preserve">
-    <value>Podaci o adresi su uspešno sačuvani.</value>
-  </data>
-  <data name="messageAddrSave5" xml:space="preserve">
     <value>Za uneti ID već postoji adresa.</value>
   </data>
   <data name="messageAddrUpd2" xml:space="preserve">
@@ -14676,21 +14208,6 @@
   </data>
   <data name="messageDeleteRestaurant1" xml:space="preserve">
     <value>Da li ste sigurni da želite da izbrišete selektovane restorane?</value>
-  </data>
-  <data name="messageDocumentDescNotInserted1" xml:space="preserve">
-    <value>Morate uneti opis dokumenta.</value>
-  </data>
-  <data name="messageDocumentFileNotInserted1" xml:space="preserve">
-    <value>Morate izabrati odgovarajuci fajl.</value>
-  </data>
-  <data name="messageDocumentNameNotInserted1" xml:space="preserve">
-    <value>Morate uneti naziv dokumenta.</value>
-  </data>
-  <data name="messageDownloadDocuments1" xml:space="preserve">
-    <value>Dokument je uspesno preuzet.</value>
-  </data>
-  <data name="messageDuplicateInsertForDocument1" xml:space="preserve">
-    <value>Svi podaci o zaposlenom i dokumentu se ponavljaju. </value>
   </data>
   <data name="messageEmployeeAddrMustBeNum1" xml:space="preserve">
     <value>Adresa zaposlenog mora biti broj.</value>
@@ -14740,43 +14257,13 @@
     <comment>more</comment>
   </data>
   <data name="messageLocDel5" xml:space="preserve">
-    <value>Da li ste sigurni da želite da izbrišete selektovane lokacije?</value>
-  </data>
-  <data name="messageLocDel5" xml:space="preserve">
-    <value>Na ovoj lokaciji postoje terminali.</value>
-  </data>
-  <data name="messageLocDel5" xml:space="preserve">
-    <value>Ovo je nadređena lokacija. Najpre uklonite njene podlokacije.</value>
-  </data>
-  <data name="messageLocDel5" xml:space="preserve">
     <value>Nema selektovanih lokacija za brisanje.</value>
-  </data>
-  <data name="messageLocSave7" xml:space="preserve">
-    <value>Morate uneti ID lokacije.</value>
-  </data>
-  <data name="messageLocSave7" xml:space="preserve">
-    <value>ID lokacije mora biti broj.</value>
-  </data>
-  <data name="messageLocSave7" xml:space="preserve">
-    <value>ID adrese mora biti broj.</value>
-  </data>
-  <data name="messageLocSave7" xml:space="preserve">
-    <value>Morate izabrati podrazumevanu ili validnu roditeljsku lokaciju.</value>
-  </data>
-  <data name="messageLocSave7" xml:space="preserve">
-    <value>Podaci o lokaciji su uspešno sačuvani.</value>
   </data>
   <data name="messageLocSave7" xml:space="preserve">
     <value>Za uneti ID već postoji lokacija.</value>
   </data>
   <data name="messageLocSearch2" xml:space="preserve">
     <value>Nema pronađenih lokacija za zadati kriterijum pretrage.</value>
-  </data>
-  <data name="messageLocUpd4" xml:space="preserve">
-    <value>Najpre morate selektovati lokaciju koju želite izmeniti.</value>
-  </data>
-  <data name="messageLocUpd4" xml:space="preserve">
-    <value>Izabrano je više lokacija. Izaberite jednu lokaciju koju želite izmeniti. </value>
   </data>
   <data name="messageLocUpd4" xml:space="preserve">
     <value>Podaci o lokaciji su uspešno izmenjeni.</value>
@@ -14806,43 +14293,13 @@
     <value>Poruka nije mogla biti izmenjena.</value>
   </data>
   <data name="messageOUDel5" xml:space="preserve">
-    <value>Da li ste sigurni da želite da obrišete selektovane organizacione jedinice?</value>
-  </data>
-  <data name="messageOUDel5" xml:space="preserve">
-    <value>Organizaciona jedinica sadrži zaposlene i ne može se izbrisati.</value>
-  </data>
-  <data name="messageOUDel5" xml:space="preserve">
-    <value>Ova organizaciona jedinica sadrži pod jedinice. Najpre izbrišite njih.</value>
-  </data>
-  <data name="messageOUDel5" xml:space="preserve">
     <value>Nema selektovanih organizacionih jedinica za brisanje.</value>
   </data>
   <data name="messageOUIDExists1" xml:space="preserve">
     <value>Organizaciona jedinica sa ovim ID već postoji u bazi.</value>
   </data>
   <data name="messageOUSave5" xml:space="preserve">
-    <value>Morate uneti ID organizacione jedinice.</value>
-  </data>
-  <data name="messageOUSave5" xml:space="preserve">
-    <value>ID organizacione jedinice mora biti broj.</value>
-  </data>
-  <data name="messageOUSave5" xml:space="preserve">
-    <value>Morate izabrati podrazumevanu ili validnu roditeljsku organizacionu jedinicu.</value>
-  </data>
-  <data name="messageOUSave5" xml:space="preserve">
     <value>Podaci o organizacionoj jedinici su uspešno sačuvani.</value>
-  </data>
-  <data name="messageOUSearch2" xml:space="preserve">
-    <value>Nema pronađenih organizacionih jedinica za zadati kriterijum pretrage.</value>
-  </data>
-  <data name="messageOUUpd5" xml:space="preserve">
-    <value>Nema selektovane organizacione jedinice koju želite izmeniti.</value>
-  </data>
-  <data name="messageOUUpd5" xml:space="preserve">
-    <value>Izabrano je više organizacionih jedinica. Izaberite jednu organizacionu jedinicu koju želite izmeniti.</value>
-  </data>
-  <data name="messageOUUpd5" xml:space="preserve">
-    <value>Podaci o organizacionoj jedinici su uspešno izmenjeni.</value>
   </data>
   <data name="messageOUUpd5" xml:space="preserve">
     <value>ID roditeljske organizacione jedinice je promenjen. Ažuriraju se prava pristupa ovoj organizacionoj jedinici...</value>
@@ -14944,12 +14401,6 @@
     <value>Zaposleni već ima aktivnu karticu. Najpre deaktivirajte postojeću karticu.</value>
   </data>
   <data name="messageTagSave4" xml:space="preserve">
-    <value>ID kartice mora biti pozitivan broj.</value>
-  </data>
-  <data name="messageTagSave4" xml:space="preserve">
-    <value>Za uneti ID već postoji kartica.</value>
-  </data>
-  <data name="messageTagSave4" xml:space="preserve">
     <value>Kartica sa istim ID je već zauzeta.</value>
   </data>
   <data name="messageTypeNotSet1" xml:space="preserve">
@@ -14959,43 +14410,16 @@
     <value>Poruka je uspešno izmenjena.</value>
   </data>
   <data name="messageWUDel5" xml:space="preserve">
-    <value>Da li ste sigurni da želite da obrišete selektovane radne jedinice?</value>
-  </data>
-  <data name="messageWUDel5" xml:space="preserve">
-    <value>Radna jedinica sadrži zaposlene i ne može se izbrisati.</value>
-  </data>
-  <data name="messageWUDel5" xml:space="preserve">
-    <value>Ova radna jedinica sadrži pod jedinice. Najpre izbrišite njih.</value>
-  </data>
-  <data name="messageWUDel5" xml:space="preserve">
     <value>Nema selektovanih radnih jedinica za brisanje.</value>
   </data>
   <data name="messageWUIDExists1" xml:space="preserve">
     <value>Radna jedinica sa ovim ID već postoji u bazi.</value>
   </data>
   <data name="messageWUSave5" xml:space="preserve">
-    <value>Morate uneti ID radne jedinice.</value>
-  </data>
-  <data name="messageWUSave5" xml:space="preserve">
-    <value>ID radne jedinice mora biti broj.</value>
-  </data>
-  <data name="messageWUSave5" xml:space="preserve">
-    <value>Morate izabrati podrazumevanu ili validnu roditeljsku radnu jedinicu.</value>
-  </data>
-  <data name="messageWUSave5" xml:space="preserve">
     <value>Podaci o radnoj jedinici su uspešno sačuvani. Ažuriraju se prava pristupa ovoj radnoj jedinici...</value>
   </data>
   <data name="messageWUSearch2" xml:space="preserve">
     <value>Nema pronađenih radnih jedinica za zadati kriterijum pretrage.</value>
-  </data>
-  <data name="messageWUUpd5" xml:space="preserve">
-    <value>Nema selektovane radne jedinice koju želite izmeniti.</value>
-  </data>
-  <data name="messageWUUpd5" xml:space="preserve">
-    <value>Izabrano je više radnih jedinica. Izaberite jednu radnu jedinicu koju želite izmeniti. </value>
-  </data>
-  <data name="messageWUUpd5" xml:space="preserve">
-    <value>Podaci o radnoj jedinici su uspešno izmenjeni.</value>
   </data>
   <data name="messageWUUpd5" xml:space="preserve">
     <value>ID roditeljske radne jedinice je promenjen. Ažuriraju se prava pristupa ovoj radnoj jedinici...</value>
@@ -15063,9 +14487,6 @@
   <data name="msgHistoryPassesForecast1" xml:space="preserve">
     <value>Izvestaj na osnovu prolazaka do danasnjeg datuma, a od danasnjeg datuma je predvidjanje!</value>
   </data>
-  <data name="msgInterExists1" xml:space="preserve">
-    <value>Interval već postoji.</value>
-  </data>
   <data name="msgIntervalsNotValid1" xml:space="preserve">
     <value>Dani i intervali moraju uzimati sekvencijalne vrednosti.</value>
   </data>
@@ -15120,17 +14541,11 @@
   <data name="msgRemoveSchema1" xml:space="preserve">
     <value>Da li ste sigurni da želite da obrišete selektovanu satnicu?</value>
   </data>
-  <data name="msgSchemaIsUsed1" xml:space="preserve">
-    <value>Selektovanu satnicu koriste jedan ili više zaposlenih. </value>
-  </data>
   <data name="msgSchemaName1" xml:space="preserve">
     <value>Morate uneti naziv satnice.</value>
   </data>
   <data name="msgSchemaType1" xml:space="preserve">
     <value>Morate selektovati tip satnice.</value>
-  </data>
-  <data name="msgSelectIOPair1" xml:space="preserve">
-    <value>Morate selektovati podatke iz liste.</value>
   </data>
   <data name="msgSelectSchema1" xml:space="preserve">
     <value>Morate prethodno selektovati satnicu radnog vremena.</value>
@@ -15291,9 +14706,6 @@
   <data name="noEmplInGroup1" xml:space="preserve">
     <value>Ova grupa zaposlenih ne sadrži nijednog zaposlenog.</value>
   </data>
-  <data name="noEmplInWU1" xml:space="preserve">
-    <value>Nisu pronađeni zaposleni za selektovanu radnu jedinicu.</value>
-  </data>
   <data name="noEmplIOPairPrivilege1" xml:space="preserve">
     <value>Nemate pravo da vidite parove ulaz/izlaz nijednog zaposlenog.</value>
   </data>
@@ -15305,9 +14717,6 @@
   </data>
   <data name="noEmployeeCounterTypesFound1" xml:space="preserve">
     <value>Nema pronađenih tipova za zadati kriterijum pretrage.</value>
-  </data>
-  <data name="noEmployeeDelFromMachine1" xml:space="preserve">
-    <value>Neki radnici nisu mogli biti uklonjeni sa mašine.</value>
   </data>
   <data name="noEmployeeForTag1" xml:space="preserve">
     <value>Za očitanu karticu nije pronađen nijedan radnik.</value>
@@ -15391,9 +14800,6 @@
     <value>Proizvod nije licenciran.</value>
   </data>
   <data name="noLicenceADMIN3" xml:space="preserve">
-    <value>Proizvod nije licenciran. </value>
-  </data>
-  <data name="noLicenceADMIN3" xml:space="preserve">
     <value>Da biste licencirali proizvod, pošaljite e-mail zahtev za licenciranjem sa prikačenim fajlom </value>
   </data>
   <data name="noLicenceReq1" xml:space="preserve">
@@ -15401,12 +14807,6 @@
   </data>
   <data name="noLogInName1" xml:space="preserve">
     <value>Morate uneti korisnika.</value>
-  </data>
-  <data name="noMachineDel1" xml:space="preserve">
-    <value>Neke mašine nisu mogle biti izbrisane.</value>
-  </data>
-  <data name="noMachinesFound1" xml:space="preserve">
-    <value>Nema pronađenih mašina za zadati kriterijum pretrage.</value>
   </data>
   <data name="noMealAssigned1" xml:space="preserve">
     <value>Nema dodeljenih obroka za današnji dan.</value>
@@ -15456,9 +14856,6 @@
   <data name="noOrder1" xml:space="preserve">
     <value>Nema rezervacije</value>
   </data>
-  <data name="noOUGranted1" xml:space="preserve">
-    <value />
-  </data>
   <data name="noPassDel1" xml:space="preserve">
     <value>Neki prolasci nisu mogli biti izbrisani.</value>
   </data>
@@ -15494,9 +14891,6 @@
   </data>
   <data name="noPwd1" xml:space="preserve">
     <value>Morate uneti šifru.</value>
-  </data>
-  <data name="noReader1" xml:space="preserve">
-    <value>Ne postoji čitač.</value>
   </data>
   <data name="noReaders1" xml:space="preserve">
     <value>Nije pronađen ni jedan terminal.</value>
@@ -15582,9 +14976,6 @@
   <data name="noSelectedRule1" xml:space="preserve">
     <value>Nema izabranog pravila.</value>
   </data>
-  <data name="noSelEmployeeDel1" xml:space="preserve">
-    <value>Nema selektovanih zaposlenih za brisanje.</value>
-  </data>
   <data name="noSelExitPermDel1" xml:space="preserve">
     <value>Nema selektovanih propusnica za brisanje.</value>
   </data>
@@ -15608,9 +14999,6 @@
   </data>
   <data name="noSelIOPairUpd1" xml:space="preserve">
     <value>Morate selektovati jedan par ulaz/izlaz koji želite izmeniti.</value>
-  </data>
-  <data name="noSelMachineDel1" xml:space="preserve">
-    <value>Nema selektovanih mašina za brisanje.</value>
   </data>
   <data name="noSelMapsDel1" xml:space="preserve">
     <value>Nema selektovane mape za brisanje.</value>
@@ -15875,9 +15263,6 @@
   </data>
   <data name="ouNoWUSelected1" xml:space="preserve">
     <value>Morate izabrati radnu jedinicu za koju je organizaciona jedinica vezana.</value>
-  </data>
-  <data name="ouRightsDeletingProblem2" xml:space="preserve">
-    <value>Nije uspelo brisanje prava nad ovom organizacionom jedinicom za svrhu:</value>
   </data>
   <data name="ouRightsDeletingProblem2" xml:space="preserve">
     <value>i operatera:</value>
@@ -16328,9 +15713,6 @@
     <value>Korišćeni obroci i rezervacije - zbirno</value>
   </data>
   <data name="rbWithout2" xml:space="preserve">
-    <value>Bez zatvaranja</value>
-  </data>
-  <data name="rbWithout2" xml:space="preserve">
     <value>Bez</value>
   </data>
   <data name="rbWSDay1" xml:space="preserve">
@@ -16520,9 +15902,6 @@
     <value>Rola je dodeljena nekim operaterima i ne može biti izbrisana.</value>
   </data>
   <data name="roleInsertingProblem2" xml:space="preserve">
-    <value>Nije uspelo dodeljivanje prava nad ovom radnom jedinicom za svrhu:</value>
-  </data>
-  <data name="roleInsertingProblem2" xml:space="preserve">
     <value>i operatera:</value>
   </data>
   <data name="roleNameExists1" xml:space="preserve">
@@ -16651,9 +16030,6 @@
   <data name="selDayInCalendar1" xml:space="preserve">
     <value>Selektujte neki od radnih dana u kaledaru...</value>
   </data>
-  <data name="selDayToAddSchedule1" xml:space="preserve">
-    <value> Za zadavanje vrste obroka izaberite jedan ili više dana označenih plavom bojom...</value>
-  </data>
   <data name="SelectAccessGroup1" xml:space="preserve">
     <value>Najpre selektujte grupu za pristup.</value>
   </data>
@@ -16677,9 +16053,6 @@
   </data>
   <data name="selectGates1" xml:space="preserve">
     <value>Morate prvo izabrati kapiju.</value>
-  </data>
-  <data name="SelectMachine1" xml:space="preserve">
-    <value>Najpre izaberite mašinu.</value>
   </data>
   <data name="SelectMealAssigned1" xml:space="preserve">
     <value>Nema dodeljenog obroka za brisanje.</value>
@@ -16771,9 +16144,6 @@
   <data name="selEmpl1" xml:space="preserve">
     <value>Morate selektovati zaposlenog.</value>
   </data>
-  <data name="selEmple1" xml:space="preserve">
-    <value />
-  </data>
   <data name="selEmployee1" xml:space="preserve">
     <value>Morate selektovati zaposlenog kome dodeljujete dane odmora.</value>
   </data>
@@ -16821,12 +16191,6 @@
   </data>
   <data name="selOneHoliday1" xml:space="preserve">
     <value>Morate izabrati jedan praznik koji želite izmeniti.</value>
-  </data>
-  <data name="selOneMachine1" xml:space="preserve">
-    <value>Morate izabrati jednu mašinu koju želite izmeniti.</value>
-  </data>
-  <data name="selOneMachineMust1" xml:space="preserve">
-    <value>Morate izabrati jednu mašinu koju želite dodeliti izabranom radniku.</value>
   </data>
   <data name="selOneSchemaInt1" xml:space="preserve">
     <value>Selektuje jedan interval satnice koji želite izmeniti.</value>
@@ -17003,9 +16367,6 @@
     <value>NEDELJA</value>
   </data>
   <data name="SUSPENSION_5" xml:space="preserve">
-    <value>Suspenzija - izdržava porodicu</value>
-  </data>
-  <data name="SUSPENSION_5" xml:space="preserve">
     <value>Suspenzija (1/4 ne izdržava porodicu)</value>
   </data>
   <data name="SynchronizationPreview1" xml:space="preserve">
@@ -17127,9 +16488,6 @@
   </data>
   <data name="tabScheduledRoute1" xml:space="preserve">
     <value>Raspored obilazaka</value>
-  </data>
-  <data name="tabSchEmployees1" xml:space="preserve">
-    <value>Zaposleni - obilasci sa terminalom</value>
   </data>
   <data name="tabSettings1" xml:space="preserve">
     <value>Podešavanje</value>
@@ -17253,9 +16611,6 @@
   </data>
   <data name="totalVisitNum1" xml:space="preserve">
     <value>Ukupan broj poseta:</value>
-  </data>
-  <data name="tpClearHistory1" xml:space="preserve">
-    <value>Brisanje istorije</value>
   </data>
   <data name="tpCreateReports1" xml:space="preserve">
     <value>Generisanje kalkulacije za plate</value>
@@ -17473,9 +16828,6 @@
   <data name="updateLocation1" xml:space="preserve">
     <value>Izmena lokacije</value>
   </data>
-  <data name="updateMachine1" xml:space="preserve">
-    <value>Promena mašine</value>
-  </data>
   <data name="updateMap1" xml:space="preserve">
     <value>Izmena mape</value>
   </data>
@@ -17683,9 +17035,6 @@
   <data name="visitNoCard1" xml:space="preserve">
     <value>Morate selektovati karticu posetioca.</value>
   </data>
-  <data name="visitNoCardZIN1" xml:space="preserve">
-    <value>Morate izabrati bedž posetioca</value>
-  </data>
   <data name="visitNoDescr1" xml:space="preserve">
     <value>Morate uneti vrstu posete.</value>
   </data>
@@ -17813,9 +17162,6 @@
     <value>Neke radne jedinice nisu mogle biti izbrisane.</value>
   </data>
   <data name="wuRightsDeletingProblem2" xml:space="preserve">
-    <value>Nije uspelo brisanje prava nad ovom radnom jedinicom za svrhu:</value>
-  </data>
-  <data name="wuRightsDeletingProblem2" xml:space="preserve">
     <value>i operatera:</value>
   </data>
   <data name="wuScheduleNOTSaved1" xml:space="preserve">
@@ -17835,5 +17181,413 @@
   </data>
   <data name="ZINBanAdd1" xml:space="preserve">
     <value>Unos zabrane</value>
+  </data>
+  <data name="lblAltName" xml:space="preserve">
+    <value>Alternativni naziv:</value>
+  </data>
+  <data name="msgSchemaIsUsed" xml:space="preserve">
+    <value>Selektovanu satnicu koriste jedan ili više zaposlenih. </value>
+  </data>
+  <data name="isWrkHrsCounter" xml:space="preserve">
+    <value>Redovan rad</value>
+  </data>
+  <data name="msgInterExists" xml:space="preserve">
+    <value>Interval već postoji.</value>
+  </data>
+  <data name="msgSelectIOPair" xml:space="preserve">
+    <value>Morate selektovati podatke iz liste.</value>
+  </data>
+  <data name="selDayToAddSchedule" xml:space="preserve">
+    <value> Za zadavanje vrste obroka izaberite jedan ili više dana označenih plavom bojom...</value>
+  </data>
+  <data name="addEmployeeCounterTypes" xml:space="preserve">
+    <value>Dodavanje tipa brojača</value>
+  </data>
+  <data name="deleteUserCategories" xml:space="preserve">
+    <value>Da li ste sigurni da želite izbrisati selektovanu kategoriju?</value>
+  </data>
+  <data name="noReader" xml:space="preserve">
+    <value>Ne postoji čitač.</value>
+  </data>
+  <data name="addEmployeeCounterTypes1" xml:space="preserve">
+    <value>Dodavanje tipa brojača</value>
+  </data>
+  <data name="deleteUserCategories1" xml:space="preserve">
+    <value>Da li ste sigurni da želite izbrisati selektovanu kategoriju?</value>
+  </data>
+  <data name="isWrkHrsCounter1" xml:space="preserve">
+    <value>Redovan rad</value>
+  </data>
+  <data name="lblAltName1" xml:space="preserve">
+    <value>Alternativni naziv:</value>
+  </data>
+  <data name="msgInterExists1" xml:space="preserve">
+    <value>Interval već postoji.</value>
+  </data>
+  <data name="msgSchemaIsUsed1" xml:space="preserve">
+    <value>Selektovanu satnicu koriste jedan ili više zaposlenih. </value>
+  </data>
+  <data name="msgSelectIOPair1" xml:space="preserve">
+    <value>Morate selektovati podatke iz liste.</value>
+  </data>
+  <data name="noReader1" xml:space="preserve">
+    <value>Ne postoji čitač.</value>
+  </data>
+  <data name="selDayToAddSchedule1" xml:space="preserve">
+    <value> Za zadavanje vrste obroka izaberite jedan ili više dana označenih plavom bojom...</value>
+  </data>
+  <data name="tpClearHistory" xml:space="preserve">
+    <value>Brisanje istorije</value>
+  </data>
+  <data name="lblUsingAhead" xml:space="preserve">
+    <value>Korišćenje unapred</value>
+  </data>
+  <data name="noEmplInWU" xml:space="preserve">
+    <value>Nisu pronađeni zaposleni za selektovanu radnu jedinicu.</value>
+  </data>
+  <data name="selEmple" xml:space="preserve">
+    <value />
+  </data>
+  <data name="banNote" xml:space="preserve">
+    <value>Podaci koje ste uneli o posetiocu odgovaraju nekim podacima zabranjenih poseta. Pogledajte pregled zabranjenih poseta koji odgovaraju unetim podacima.</value>
+  </data>
+  <data name="visitNoCardZIN" xml:space="preserve">
+    <value>Morate izabrati bedž posetioca</value>
+  </data>
+  <data name="tabSchEmployees" xml:space="preserve">
+    <value>Zaposleni - obilasci sa terminalom</value>
+  </data>
+  <data name="messageOUSearch1" xml:space="preserve">
+    <value>Nema pronađenih organizacionih jedinica za zadati kriterijum pretrage.</value>
+  </data>
+  <data name="messageOUUpd4" xml:space="preserve">
+    <value>ID roditeljske organizacione jedinice je promenjen. Ažuriraju se prava pristupa ovoj organizacionoj jedinici...</value>
+  </data>
+  <data name="applUserXOUSaved" xml:space="preserve">
+    <value />
+  </data>
+  <data name="gbDocSearch" xml:space="preserve">
+    <value>Pretraga dokumenata</value>
+  </data>
+  <data name="lblDocument" xml:space="preserve">
+    <value>Dokument:</value>
+  </data>
+  <data name="lblDocDesc" xml:space="preserve">
+    <value>Opis dokumenta:</value>
+  </data>
+  <data name="lblDocName" xml:space="preserve">
+    <value>Naziv dokumenta:</value>
+  </data>
+  <data name="gbDocuments" xml:space="preserve">
+    <value>Dokumenti</value>
+  </data>
+  <data name="addDocument" xml:space="preserve">
+    <value>Dodavanje dokumenata</value>
+  </data>
+  <data name="lblInputWarning" xml:space="preserve">
+    <value>Morate dodeliti vrednost za polje</value>
+  </data>
+  <data name="messageDocumentDescNotInserted" xml:space="preserve">
+    <value>Morate uneti opis dokumenta.</value>
+  </data>
+  <data name="messageDocumentFileNotInserted" xml:space="preserve">
+    <value>Morate izabrati odgovarajuci fajl.</value>
+  </data>
+  <data name="messageDocumentNameNotInserted" xml:space="preserve">
+    <value>Morate uneti naziv dokumenta.</value>
+  </data>
+  <data name="hdrDocumentName" xml:space="preserve">
+    <value>Naziv dokumenta</value>
+  </data>
+  <data name="btnUpload" xml:space="preserve">
+    <value />
+  </data>
+  <data name="hdrAddingDate" xml:space="preserve">
+    <value>Datum dodavanja</value>
+  </data>
+  <data name="btnDownload" xml:space="preserve">
+    <value>Preuzimanje</value>
+  </data>
+  <data name="btnBrowseDest" xml:space="preserve">
+    <value>Izaberite odrediste</value>
+  </data>
+  <data name="messageDuplicateInsertForDocument" xml:space="preserve">
+    <value>Svi podaci o zaposlenom i dokumentu se ponavljaju. </value>
+  </data>
+  <data name="messageDownloadDocuments" xml:space="preserve">
+    <value>Dokument je uspesno preuzet.</value>
+  </data>
+  <data name="noOUGranted" xml:space="preserve">
+    <value />
+  </data>
+  <data name="menuReportsForOpenPairsByEmployee" xml:space="preserve">
+    <value>Izveštaji o otvorenim parovima zaposlenih</value>
+  </data>
+  <data name="addMachine" xml:space="preserve">
+    <value>Dodavanje mašine</value>
+  </data>
+  <data name="applEmployeeXMachineSaved" xml:space="preserve">
+    <value>Izmene su uspešno sačuvane.</value>
+  </data>
+  <data name="btnMachineXEmployee" xml:space="preserve">
+    <value>Mašine &lt; - - &gt; Zaposleni</value>
+  </data>
+  <data name="defaultMachine" xml:space="preserve">
+    <value>Podrazumevana mašina ne može biti obrisana.</value>
+  </data>
+  <data name="deleteEmployeesFromMachine" xml:space="preserve">
+    <value>Da li ste sigurni da želite da uklonite radnike sa izabrane mašine?</value>
+  </data>
+  <data name="deleteMachines" xml:space="preserve">
+    <value>Da li ste sigurni da želite izbrisati selektovane mašine?</value>
+  </data>
+  <data name="employeesDelFromMachine" xml:space="preserve">
+    <value>Selektovani radnici su uklonjeni sa mašine.</value>
+  </data>
+  <data name="formMachineXEmployee" xml:space="preserve">
+    <value>Mašine &lt;-&gt; Zaposleni</value>
+  </data>
+  <data name="gbMachines" xml:space="preserve">
+    <value>Mašine</value>
+  </data>
+  <data name="lblEmployeesForMachine" xml:space="preserve">
+    <value>Zaposleni kojima nije dodeljena selektovana mašina.</value>
+  </data>
+  <data name="lblMachine" xml:space="preserve">
+    <value>Mašina:</value>
+  </data>
+  <data name="lblMachineID" xml:space="preserve">
+    <value>ID mašine:</value>
+  </data>
+  <data name="lblSelEmployees" xml:space="preserve">
+    <value>Zaposleni kojima je dodeljena selektovana mašina:</value>
+  </data>
+  <data name="machineForm" xml:space="preserve">
+    <value>Mašine</value>
+  </data>
+  <data name="machineHasEmployee" xml:space="preserve">
+    <value>Mašina je dodeljena nekom radniku ili radnicima i ne može biti izbrisana.</value>
+  </data>
+  <data name="machineNameExists" xml:space="preserve">
+    <value>Mašina sa unetim imenom već postoji.</value>
+  </data>
+  <data name="machineSaved" xml:space="preserve">
+    <value>Podaci o mašini su uspešno dodati.</value>
+  </data>
+  <data name="machinesDel" xml:space="preserve">
+    <value>Selektovane mašine su uspešno izbrisane.</value>
+  </data>
+  <data name="machineUpdated" xml:space="preserve">
+    <value>Podaci o mašini su uspešno izmenjeni.</value>
+  </data>
+  <data name="menuMachines" xml:space="preserve">
+    <value>Mašine</value>
+  </data>
+  <data name="menuRecordsOfBreaks" xml:space="preserve">
+    <value>Evidencija pauza</value>
+  </data>
+  <data name="noEmployeeDelFromMachine" xml:space="preserve">
+    <value>Neki radnici nisu mogli biti uklonjeni sa mašine.</value>
+  </data>
+  <data name="noMachineDel" xml:space="preserve">
+    <value>Neke mašine nisu mogle biti izbrisane.</value>
+  </data>
+  <data name="noMachinesFound" xml:space="preserve">
+    <value>Nema pronađenih mašina za zadati kriterijum pretrage.</value>
+  </data>
+  <data name="noSelEmployeeDel" xml:space="preserve">
+    <value>Nema selektovanih zaposlenih za brisanje.</value>
+  </data>
+  <data name="noSelMachineDel" xml:space="preserve">
+    <value>Nema selektovanih mašina za brisanje.</value>
+  </data>
+  <data name="SelectMachine" xml:space="preserve">
+    <value>Najpre izaberite mašinu.</value>
+  </data>
+  <data name="selOneMachine" xml:space="preserve">
+    <value>Morate izabrati jednu mašinu koju želite izmeniti.</value>
+  </data>
+  <data name="selOneMachineMust" xml:space="preserve">
+    <value>Morate izabrati jednu mašinu koju želite dodeliti izabranom radniku.</value>
+  </data>
+  <data name="updateMachine" xml:space="preserve">
+    <value>Promena mašine</value>
+  </data>
+  <data name="addDocument1" xml:space="preserve">
+    <value>Dodavanje dokumenata</value>
+  </data>
+  <data name="addMachine1" xml:space="preserve">
+    <value>Dodavanje mašine</value>
+  </data>
+  <data name="applEmployeeXMachineSaved1" xml:space="preserve">
+    <value>Izmene su uspešno sačuvane.</value>
+  </data>
+  <data name="applUserXOUSaved1" xml:space="preserve">
+    <value />
+  </data>
+  <data name="banNote1" xml:space="preserve">
+    <value>Podaci koje ste uneli o posetiocu odgovaraju nekim podacima zabranjenih poseta. Pogledajte pregled zabranjenih poseta koji odgovaraju unetim podacima.</value>
+  </data>
+  <data name="btnBrowseDest1" xml:space="preserve">
+    <value>Izaberite odrediste</value>
+  </data>
+  <data name="btnDownload1" xml:space="preserve">
+    <value>Preuzimanje</value>
+  </data>
+  <data name="btnMachineXEmployee1" xml:space="preserve">
+    <value>Mašine &lt; - - &gt; Zaposleni</value>
+  </data>
+  <data name="btnUpload1" xml:space="preserve">
+    <value />
+  </data>
+  <data name="defaultMachine1" xml:space="preserve">
+    <value>Podrazumevana mašina ne može biti obrisana.</value>
+  </data>
+  <data name="deleteEmployeesFromMachine1" xml:space="preserve">
+    <value>Da li ste sigurni da želite da uklonite radnike sa izabrane mašine?</value>
+  </data>
+  <data name="deleteMachines1" xml:space="preserve">
+    <value>Da li ste sigurni da želite izbrisati selektovane mašine?</value>
+  </data>
+  <data name="employeesDelFromMachine1" xml:space="preserve">
+    <value>Selektovani radnici su uklonjeni sa mašine.</value>
+  </data>
+  <data name="formMachineXEmployee1" xml:space="preserve">
+    <value>Mašine &lt;-&gt; Zaposleni</value>
+  </data>
+  <data name="gbDocSearch1" xml:space="preserve">
+    <value>Pretraga dokumenata</value>
+  </data>
+  <data name="gbDocuments1" xml:space="preserve">
+    <value>Dokumenti</value>
+  </data>
+  <data name="gbMachines1" xml:space="preserve">
+    <value>Mašine</value>
+  </data>
+  <data name="hdrAddingDate1" xml:space="preserve">
+    <value>Datum dodavanja</value>
+  </data>
+  <data name="hdrDocumentName1" xml:space="preserve">
+    <value>Naziv dokumenta</value>
+  </data>
+  <data name="lblDocDesc1" xml:space="preserve">
+    <value>Opis dokumenta:</value>
+  </data>
+  <data name="lblDocName1" xml:space="preserve">
+    <value>Naziv dokumenta:</value>
+  </data>
+  <data name="lblDocument1" xml:space="preserve">
+    <value>Dokument:</value>
+  </data>
+  <data name="lblEmployeesForMachine1" xml:space="preserve">
+    <value>Zaposleni kojima nije dodeljena selektovana mašina.</value>
+  </data>
+  <data name="lblInputWarning1" xml:space="preserve">
+    <value>Morate dodeliti vrednost za polje</value>
+  </data>
+  <data name="lblMachine1" xml:space="preserve">
+    <value>Mašina:</value>
+  </data>
+  <data name="lblMachineID1" xml:space="preserve">
+    <value>ID mašine:</value>
+  </data>
+  <data name="lblSelEmployees1" xml:space="preserve">
+    <value>Zaposleni kojima je dodeljena selektovana mašina:</value>
+  </data>
+  <data name="lblUsingAhead1" xml:space="preserve">
+    <value>Korišćenje unapred</value>
+  </data>
+  <data name="machineForm1" xml:space="preserve">
+    <value>Mašine</value>
+  </data>
+  <data name="machineHasEmployee1" xml:space="preserve">
+    <value>Mašina je dodeljena nekom radniku ili radnicima i ne može biti izbrisana.</value>
+  </data>
+  <data name="machineNameExists1" xml:space="preserve">
+    <value>Mašina sa unetim imenom već postoji.</value>
+  </data>
+  <data name="machineSaved1" xml:space="preserve">
+    <value>Podaci o mašini su uspešno dodati.</value>
+  </data>
+  <data name="machinesDel1" xml:space="preserve">
+    <value>Selektovane mašine su uspešno izbrisane.</value>
+  </data>
+  <data name="machineUpdated1" xml:space="preserve">
+    <value>Podaci o mašini su uspešno izmenjeni.</value>
+  </data>
+  <data name="menuMachines1" xml:space="preserve">
+    <value>Mašine</value>
+  </data>
+  <data name="menuRecordsOfBreaks1" xml:space="preserve">
+    <value>Evidencija pauza</value>
+  </data>
+  <data name="menuReportsForOpenPairsByEmployee1" xml:space="preserve">
+    <value>Izveštaji o otvorenim parovima zaposlenih</value>
+  </data>
+  <data name="messageDocumentDescNotInserted1" xml:space="preserve">
+    <value>Morate uneti opis dokumenta.</value>
+  </data>
+  <data name="messageDocumentFileNotInserted1" xml:space="preserve">
+    <value>Morate izabrati odgovarajuci fajl.</value>
+  </data>
+  <data name="messageDocumentNameNotInserted1" xml:space="preserve">
+    <value>Morate uneti naziv dokumenta.</value>
+  </data>
+  <data name="messageDownloadDocuments1" xml:space="preserve">
+    <value>Dokument je uspesno preuzet.</value>
+  </data>
+  <data name="messageDuplicateInsertForDocument1" xml:space="preserve">
+    <value>Svi podaci o zaposlenom i dokumentu se ponavljaju. </value>
+  </data>
+  <data name="messageOUSearch2" xml:space="preserve">
+    <value>Nema pronađenih organizacionih jedinica za zadati kriterijum pretrage.</value>
+  </data>
+  <data name="noEmplInWU1" xml:space="preserve">
+    <value>Nisu pronađeni zaposleni za selektovanu radnu jedinicu.</value>
+  </data>
+  <data name="noEmployeeDelFromMachine1" xml:space="preserve">
+    <value>Neki radnici nisu mogli biti uklonjeni sa mašine.</value>
+  </data>
+  <data name="noMachineDel1" xml:space="preserve">
+    <value>Neke mašine nisu mogle biti izbrisane.</value>
+  </data>
+  <data name="noMachinesFound1" xml:space="preserve">
+    <value>Nema pronađenih mašina za zadati kriterijum pretrage.</value>
+  </data>
+  <data name="noOUGranted1" xml:space="preserve">
+    <value />
+  </data>
+  <data name="noSelEmployeeDel1" xml:space="preserve">
+    <value>Nema selektovanih zaposlenih za brisanje.</value>
+  </data>
+  <data name="noSelMachineDel1" xml:space="preserve">
+    <value>Nema selektovanih mašina za brisanje.</value>
+  </data>
+  <data name="SelectMachine1" xml:space="preserve">
+    <value>Najpre izaberite mašinu.</value>
+  </data>
+  <data name="selEmple1" xml:space="preserve">
+    <value />
+  </data>
+  <data name="selOneMachine1" xml:space="preserve">
+    <value>Morate izabrati jednu mašinu koju želite izmeniti.</value>
+  </data>
+  <data name="selOneMachineMust1" xml:space="preserve">
+    <value>Morate izabrati jednu mašinu koju želite dodeliti izabranom radniku.</value>
+  </data>
+  <data name="tabSchEmployees1" xml:space="preserve">
+    <value>Zaposleni - obilasci sa terminalom</value>
+  </data>
+  <data name="tpClearHistory1" xml:space="preserve">
+    <value>Brisanje istorije</value>
+  </data>
+  <data name="updateMachine1" xml:space="preserve">
+    <value>Promena mašine</value>
+  </data>
+  <data name="visitNoCardZIN1" xml:space="preserve">
+    <value>Morate izabrati bedž posetioca</value>
+  </data>
+  <data name="ABSENCE2" xml:space="preserve">
+    <value>Neopravdano</value>
   </data>
 </root>

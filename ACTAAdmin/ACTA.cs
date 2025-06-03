@@ -2397,11 +2397,10 @@ namespace ACTAAdmin
             try
             {
                 this.Text = rm.GetString("ACTAAdminForm", culture);
-
                 // menu Libreries text
                 menuLibraries.Text = rm.GetString("menuLibraries", culture);
                 menuEmployees.Text = rm.GetString("menuEmployees", culture);
-                menuWorkingUnits.Text = rm.GetString("menuWorkingUnits", culture);
+                    menuWorkingUnits.Text = rm.GetString("menuWorkingUnits", culture);
                 menuItemOrganizationalUnits.Text = rm.GetString("menuItemOrganizationalUnits", culture);
                 menuPassTypes.Text = rm.GetString("menuPassTypes", culture);
                 menuLocations.Text = rm.GetString("menuLocations", culture);

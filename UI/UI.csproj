@@ -1059,15 +1059,20 @@
     <Compile Include="RecordsOfBreaks.Designer.cs">
       <DependentUpon>RecordsOfBreaks.cs</DependentUpon>
     </Compile>
+    <Compile Include="Resource.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resource.resx</DependentUpon>
+    </Compile>
     <Compile Include="Resource.fi.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Resource.fi.resx</DependentUpon>
     </Compile>
-    <Compile Include="Resource.sr.Designer.cs">
+    <Compile Include="Resource.sr-Latn-CS.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>Resource.sr.resx</DependentUpon>
+      <DependentUpon>Resource.sr-Latn-CS.resx</DependentUpon>
     </Compile>
     <Compile Include="RestartCounters.cs">
       <SubType>Form</SubType>
@@ -2015,12 +2020,15 @@
     <EmbeddedResource Include="Resource.resx">
       <SubType>Designer</SubType>
       <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resource.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <EmbeddedResource Include="Resource.sr.resx">
+    <EmbeddedResource Include="Resource.sr-Latn-CS.resx">
       <SubType>Designer</SubType>
       <Generator>PublicResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resource.sr.Designer.cs</LastGenOutput>
+      <LastGenOutput>Resource.sr-Latn-CS.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+    <EmbeddedResource Include="Resources\Resource.en.resx" />
+    <EmbeddedResource Include="Resources\Resource.sr.resx" />
     <EmbeddedResource Include="RestartCounters.resx">
       <DependentUpon>RestartCounters.cs</DependentUpon>
       <SubType>Designer</SubType>
