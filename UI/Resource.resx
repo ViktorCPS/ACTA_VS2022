@@ -8806,10 +8806,10 @@
     <value>Ban eneterance</value>
   </data>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="Resource_sr_Latn_CS" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>Resource.sr-Latn-CS.resx;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  <data name="Resource_sr" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resource.sr.resx;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
   </data>
-  <data name="Resource_sr_Latn_CS_Designer" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>Resource.sr-Latn-CS.Designer.cs;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  <data name="Resource_sr_Designer" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resource.sr.Designer.cs;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
   </data>
 </root>

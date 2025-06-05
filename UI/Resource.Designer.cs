@@ -22060,18 +22060,18 @@ namespace UI {
         ///    &lt;resheader name=&quot;resmimetype&quot;&gt;text/microsoft-resx&lt;/resheader&gt;
         ///    &lt;resheader n [rest of string was truncated]&quot;;.
         /// </summary>
-        public static string Resource_sr_Latn_CS {
+        public static string Resource_sr {
             get {
-                return ResourceManager.GetString("Resource_sr_Latn_CS", resourceCulture);
+                return ResourceManager.GetString("Resource_sr", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to .
         /// </summary>
-        public static string Resource_sr_Latn_CS_Designer {
+        public static string Resource_sr_Designer {
             get {
-                return ResourceManager.GetString("Resource_sr_Latn_CS_Designer", resourceCulture);
+                return ResourceManager.GetString("Resource_sr_Designer", resourceCulture);
             }
         }
         

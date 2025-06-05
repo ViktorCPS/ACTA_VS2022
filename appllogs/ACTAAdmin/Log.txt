@@ -793,3 +793,51 @@ Login failed for user 'actamgr'.
 
 06/03/2025 09:28:52 OPEN SESSIONS NUM: 4
 
+06/05/2025 12:49:04Common.ApplUserLog.Update: Object reference not set to an instance of an object.
+
+06/05/2025 12:49:04 Licence.FindMAX(): Object reference not set to an instance of an object.
+
+06/05/2025 12:49:04 ACTA.ACTA_Closed(): Object reference not set to an instance of an object.
+
+06/05/2025 12:50:14 OPEN SESSIONS NUM: 4
+
+06/05/2025 12:50:15 ACTA.checkVisibility(): Object reference not set to an instance of an object.Libraries_
+
+06/05/2025 12:50:16 ACTA.checkVisibility(): Object reference not set to an instance of an object.Reports_Standard reports_Presence reports_Reports for units
+
+06/05/2025 12:50:16 ACTA.checkVisibility(): Object reference not set to an instance of an object.Reports_Standard reports_Presence reports_Monthly Presence Tracking Reports
+
+06/05/2025 12:50:16 ACTA.checkVisibility(): Object reference not set to an instance of an object.Reports_Standard reports_Presence reports_Report for salary (Forecast)
+
+06/05/2025 12:50:17 ACTA.checkVisibility(): Object reference not set to an instance of an object.Reports_Standard reports_Presence reports_
+
+06/05/2025 12:50:17 ACTA.checkVisibility(): Object reference not set to an instance of an object.Reports_Standard reports_Presence reports_Report for SMP --- Broj prisutnih i odsutnih
+
+06/05/2025 12:50:17 ACTA.checkVisibility(): Object reference not set to an instance of an object.Reports_Standard reports_Time schedule reports_Reports for Vacation
+
+06/05/2025 12:50:17 ACTA.checkVisibility(): Object reference not set to an instance of an object.Reports_Document manipulation
+
+06/05/2025 12:50:17 ACTA.checkVisibility(): Object reference not set to an instance of an object.Interventions_
+
+06/05/2025 13:17:54 OPEN SESSIONS NUM: 4
+
+06/05/2025 13:17:54 ACTA.checkVisibility(): Object reference not set to an instance of an object.Libraries_
+
+06/05/2025 13:17:55 ACTA.checkVisibility(): Object reference not set to an instance of an object.Reports_Standard reports_Presence reports_Reports for units
+
+06/05/2025 13:17:55 ACTA.checkVisibility(): Object reference not set to an instance of an object.Reports_Standard reports_Presence reports_Monthly Presence Tracking Reports
+
+06/05/2025 13:17:56 ACTA.checkVisibility(): Object reference not set to an instance of an object.Reports_Standard reports_Presence reports_Report for salary (Forecast)
+
+06/05/2025 13:17:56 ACTA.checkVisibility(): Object reference not set to an instance of an object.Reports_Standard reports_Presence reports_
+
+06/05/2025 13:17:56 ACTA.checkVisibility(): Object reference not set to an instance of an object.Reports_Standard reports_Presence reports_Report for SMP --- Broj prisutnih i odsutnih
+
+06/05/2025 13:17:56 ACTA.checkVisibility(): Object reference not set to an instance of an object.Reports_Standard reports_Time schedule reports_Reports for Vacation
+
+06/05/2025 13:17:56 ACTA.checkVisibility(): Object reference not set to an instance of an object.Reports_Document manipulation
+
+06/05/2025 13:17:57 ACTA.checkVisibility(): Object reference not set to an instance of an object.Interventions_
+
+06/05/2025 13:19:49 OPEN SESSIONS NUM: 4
+

@@ -163,7 +163,7 @@
       <Name>TransferObjects</Name>
     </ProjectReference>
     <ProjectReference Include="..\UI\UI.csproj">
-      <Project>{83CF224E-D9D9-4489-98EC-CA981BD38644}</Project>
+      <Project>{83cf224e-d9d9-4489-98ec-ca981bd38644}</Project>
       <Name>UI</Name>
     </ProjectReference>
     <ProjectReference Include="..\Util\Util.csproj">

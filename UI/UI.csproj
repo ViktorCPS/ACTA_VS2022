@@ -1069,10 +1069,10 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Resource.fi.resx</DependentUpon>
     </Compile>
-    <Compile Include="Resource.sr-Latn-CS.Designer.cs">
+    <Compile Include="Resource.sr.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>Resource.sr-Latn-CS.resx</DependentUpon>
+      <DependentUpon>Resource.sr.resx</DependentUpon>
     </Compile>
     <Compile Include="RestartCounters.cs">
       <SubType>Form</SubType>
@@ -2022,10 +2022,10 @@
       <Generator>PublicResXFileCodeGenerator</Generator>
       <LastGenOutput>Resource.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <EmbeddedResource Include="Resource.sr-Latn-CS.resx">
+    <EmbeddedResource Include="Resource.sr.resx">
       <SubType>Designer</SubType>
       <Generator>PublicResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resource.sr-Latn-CS.Designer.cs</LastGenOutput>
+      <LastGenOutput>Resource.sr.Designer.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="Resources\Resource.en.resx" />
     <EmbeddedResource Include="Resources\Resource.sr.resx" />
